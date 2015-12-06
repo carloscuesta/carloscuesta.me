@@ -1,0 +1,11 @@
+# Logs
+*.log
+
+# Dependencies directory
+node_modules
+
+# Editor config files
+*.sublime-
+
+# OSX Files
+*.DS_Store
