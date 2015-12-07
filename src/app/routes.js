@@ -1,7 +1,10 @@
 'use strict';
 
+require('dotenv').load();
+
 var fetch = require('node-fetch'),
-    ghData;
+    ghData,
+    baseUrl = 'https://api.github.com';
 
 var data = {
     me: {
@@ -23,9 +26,8 @@ var data = {
         description: 'This is the website description'
     }
 };
-
 exports.index = function(req, res) {
-    fetch('https://api.github.com/users/carloscuesta/repos?sort=updated&direction=desc')
+    fetch(baseUrl+'/users/carloscuesta/repos?sort=updated&direction=desc&access_token='+process.env.GITHUB_TOKEN)
         .then(function(res) {
             return res.json();
         }).then(function(json) {
@@ -37,3 +39,4 @@ exports.index = function(req, res) {
             });
         });
 };
+
