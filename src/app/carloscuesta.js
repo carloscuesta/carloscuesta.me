@@ -5,7 +5,6 @@ var express = require('express'),
     sassMiddleware = require('node-sass-middleware'),
     routes = require('./routes');
 
-carloscuesta.set('port', (process.env.PORT || 5000));
 carloscuesta.set('views', __dirname + '/templates');
 carloscuesta.set('view engine', 'jade');
 carloscuesta.engine('jade', require('jade').__express);
@@ -19,10 +18,4 @@ carloscuesta.use(express.static(__dirname+'/styles/css'));
 
 carloscuesta.get('/', routes.index);
 
-function startServer() {
-    carloscuesta.listen(carloscuesta.get('port'), function() {
-      console.log('carloscuesta running @', carloscuesta.get('port'));
-    });
-}
-
-exports.startServer = startServer;
+module.exports = carloscuesta;

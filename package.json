@@ -7,7 +7,8 @@
   "description": "Carlos Cuesta website.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "mocha test/app.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,9 @@
     "node-sass-middleware": "^0.9.7"
   },
   "devDependencies": {
-    "flexboxgrid": "^6.3.0"
+    "flexboxgrid": "^6.3.0",
+    "mocha": "^2.3.4",
+    "should": "^7.1.1",
+    "supertest": "^1.1.0"
   }
 }
