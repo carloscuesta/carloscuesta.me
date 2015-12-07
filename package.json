@@ -29,5 +29,8 @@
     "jade": "^1.11.0",
     "node-fetch": "^1.3.3",
     "node-sass-middleware": "^0.9.7"
+  },
+  "devDependencies": {
+    "flexboxgrid": "^6.3.0"
   }
 }

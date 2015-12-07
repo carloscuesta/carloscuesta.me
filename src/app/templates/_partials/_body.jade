@@ -1,0 +1,16 @@
+h1 Hello #{name}
+div
+    h3 I'm #[a(href='https://github.com/carloscuesta') @carloscuesta] at github.
+    div.row
+      -each github in githubData
+        div
+          a(href=github.html_url): h4.github-title= github.name
+          div.button-container
+            a(href=github.html_url) Open repo
+            a(href=github.homepage) Demo
+          div
+            span
+            b #{github.stargazers_count.toLocaleString() + ', '}
+            span
+            | #{github.forks}, #{github.language}
+          div.description= github.description
