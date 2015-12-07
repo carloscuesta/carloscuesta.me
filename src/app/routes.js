@@ -1,12 +1,11 @@
 'use strict';
 
 require('dotenv').load();
-
 var fetch = require('node-fetch'),
-    ghData,
-    baseUrl = 'https://api.github.com';
+    cache = require('memory-cache'),
+    GithubApiClient = require('./scripts/githubapiclient');
 
-var data = {
+var staticData = {
     me: {
         name: 'Carlos Cuesta',
         bio: 'Front End Developer',
@@ -26,17 +25,21 @@ var data = {
         description: 'This is the website description'
     }
 };
-exports.index = function(req, res) {
-    fetch(baseUrl+'/users/carloscuesta/repos?sort=updated&direction=desc&access_token='+process.env.GITHUB_TOKEN)
-        .then(function(res) {
-            return res.json();
-        }).then(function(json) {
-            ghData = json.slice(0,6);
-            res.render('index', {
-                githubData: ghData,
-                name: data.me.name,
-                title: data.site.title
-            });
-        });
-};
 
+exports.index = function(req, res) {
+
+    var ghUserCCStars = GithubApiClient.getSearch({
+		q: 'user:carloscuesta',
+		sort: 'stars',
+		order: 'desc',
+		per_page: 6
+	});
+
+    Promise.all([ghUserCCStars]).then(function(data) {
+        res.render('index', {
+            githubData: data[0],
+            name: staticData.me.name,
+            title: staticData.site.title
+        });
+    });
+};

@@ -2,7 +2,7 @@ h1 Hello #{name}
 div
     h3 I'm #[a(href='https://github.com/carloscuesta') @carloscuesta] at github.
     div.row
-      -each github in githubData
+      -each github in githubData.items
         div
           a(href=github.html_url): h4.github-title= github.name
           div.button-container

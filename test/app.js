@@ -3,17 +3,23 @@
 var request = require('supertest'),
 	jade = require('jade'),
 	should = require('should'),
-	app = require ('../src/app/carloscuesta');
+	app = require ('../src/app/carloscuesta'),
+	port = process.env.PORT || 5000;
 
-describe('app status', function() {
-	it('should return 200 Ok', function(done) {
-		this.timeout(1000);
-		request(app)
-			.get('/')
-			.end(function(err, res) {
-				res.status.should.equal(200);
-				done();
-			});
+describe('app', function() {
+ 	before(function () {
+        app.listen(port);
+  	});
+
+	describe('status', function() {
+		it('should return 200 Ok', function(done) {
+			request(app)
+				.get('/')
+				.end(function(err, res) {
+					res.status.should.equal(200);
+					done();
+				});
+		});
 	});
 });
 
