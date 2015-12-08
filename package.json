@@ -2,41 +2,41 @@
   "name": "carloscuesta.me",
   "version": "1.0.0",
   "engines": {
-    "node": "5.0.0"
+	"node": "5.0.0"
   },
   "description": "Carlos Cuesta website.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "mocha test/app.js"
+	"start": "node index.js",
+	"test": "mocha test/app.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/carloscuesta/carloscuesta.me.git"
+	"type": "git",
+	"url": "git+https://github.com/carloscuesta/carloscuesta.me.git"
   },
   "keywords": [
-    "Carlos",
-    "Cuesta",
-    "website"
+	"Carlos",
+	"Cuesta",
+	"website"
   ],
   "author": "Carlos Cuesta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/carloscuesta/carloscuesta.me/issues"
+	"url": "https://github.com/carloscuesta/carloscuesta.me/issues"
   },
   "homepage": "https://github.com/carloscuesta/carloscuesta.me#readme",
   "dependencies": {
-    "express": "^4.13.3",
-    "jade": "^1.11.0",
-    "node-fetch": "^1.3.3",
-    "node-sass-middleware": "^0.9.7",
-    "dotenv": "^1.2.0"
+	"express": "^4.13.3",
+	"jade": "^1.11.0",
+	"memory-cache": "^0.1.4",
+	"node-fetch": "^1.3.3",
+	"node-sass-middleware": "^0.9.7",
+	"dotenv": "^1.2.0"
   },
   "devDependencies": {
-    "flexboxgrid": "^6.3.0",
-    "memory-cache": "^0.1.4",
-    "mocha": "^2.3.4",
-    "should": "^7.1.1",
-    "supertest": "^1.1.0"
+	"flexboxgrid": "^6.3.0",
+	"mocha": "^2.3.4",
+	"should": "^7.1.1",
+	"supertest": "^1.1.0"
   }
 }
