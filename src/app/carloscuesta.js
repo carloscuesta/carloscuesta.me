@@ -17,5 +17,7 @@ carloscuesta.use(sassMiddleware({
 carloscuesta.use(express.static(__dirname+'/styles/css'));
 
 carloscuesta.get('/', routes.index);
+carloscuesta.get('/'+process.env.PARAM_CLEAN, routes.cacheClean);
+carloscuesta.get('*', routes.notFound);
 
 module.exports = carloscuesta;

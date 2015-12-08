@@ -1,35 +1,17 @@
 'use strict';
 
 require('dotenv').load();
-var GithubApiClient = require('./scripts/githubapiclient');
 
-var staticData = {
-    me: {
-        name: 'Carlos Cuesta',
-        bio: 'Front End Developer',
-        location: 'Barcelona',
-        aboutme: '',
-        mail: 'hi@carloscuesta.me'
-    },
-
-    social: {
-        twitter: 'crloscuesta',
-        github: 'carloscuesta',
-        dribbble: 'carloscuesta'
-    },
-
-    site: {
-        title: 'Carlos Cuesta | Front End Developer',
-        description: 'This is the website description'
-    }
-};
+var GithubApiClient = require('./scripts/githubapiclient'),
+	cache = require('memory-cache'),
+	staticData = require('./scripts/staticdata');
 
 exports.index = function(req, res) {
-
     var ghUserCCStars = GithubApiClient.getSearch({
 		q: 'user:carloscuesta',
 		sort: 'stars',
 		order: 'desc',
+		access_token: process.env.GITHUB_TOKEN,
 		per_page: 6
 	});
 
@@ -41,3 +23,13 @@ exports.index = function(req, res) {
         });
     });
 };
+
+exports.cacheClean = function(req, res) {
+	cache.clear();
+	console.log('  cache cleaned from URL');
+	res.redirect('/');
+};
+
+exports.notFound = function(req, res) {
+	res.redirect('/');
+}
