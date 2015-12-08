@@ -1,9 +1,7 @@
 'use strict';
 
 require('dotenv').load();
-var fetch = require('node-fetch'),
-    cache = require('memory-cache'),
-    GithubApiClient = require('./scripts/githubapiclient');
+var GithubApiClient = require('./scripts/githubapiclient');
 
 var staticData = {
     me: {
