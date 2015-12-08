@@ -7,7 +7,7 @@ var GithubApiClient = require('./scripts/githubapiclient'),
 	staticData = require('./scripts/staticdata');
 
 exports.index = function(req, res) {
-    var ghUserCCStars = GithubApiClient.getSearch({
+	var ghUserCCStars = GithubApiClient.getSearch({
 		q: 'user:carloscuesta',
 		sort: 'stars',
 		order: 'desc',
@@ -15,13 +15,14 @@ exports.index = function(req, res) {
 		per_page: 6
 	});
 
-    Promise.all([ghUserCCStars]).then(function(data) {
-        res.render('index', {
-            githubData: data[0],
-            name: staticData.me.name,
-            title: staticData.site.title
-        });
-    });
+	Promise.all([ghUserCCStars]).then(function(data) {
+		res.render('index', {
+			githubData: data[0],
+			me: staticData.me,
+			site: staticData.site,
+			social: staticData.social
+		});
+	});
 };
 
 exports.cacheClean = function(req, res) {
@@ -32,4 +33,4 @@ exports.cacheClean = function(req, res) {
 
 exports.notFound = function(req, res) {
 	res.redirect('/');
-}
+};
