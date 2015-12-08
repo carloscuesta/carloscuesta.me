@@ -2,4 +2,4 @@ language: node_js
 node_js:
   - '5'
 script:
-  - node index.js
+  - npm run test
