@@ -11,7 +11,6 @@ carloscuesta.engine('jade', require('jade').__express);
 carloscuesta.use(sassMiddleware({
     src: __dirname+'/styles',
     dest: __dirname+'/styles/css',
-    debug: true,
     outputStyle: 'compressed'
 }));
 carloscuesta.use(express.static(__dirname+'/styles/css'));

@@ -1,13 +1,111 @@
+@import './_partials/_vars.scss';
+
 html, body {
 	margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
-    font-family: 'Helvetica';
+    font-family: 'opensans';
+    font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3,  h4, h5, h6 {
+    line-height: 1.15;
+    margin-top: 0;
+    margin-bottom: .5rem
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.5em
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 1.125em
+}
+
+.wrap {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 1em;
 }
 
 .icon {
 	display: inline-block;
-	width: 1.5rem;
-	height: 1.5rem;
-	fill: currentColor;
+	width: 1.8em;
+	height: 1.8em;
 }
+
+section {
+	padding: 3em 1.5em;
+}
+
+.github {
+	background-color: $blue;
+	color: $white;
+
+	article {
+		margin: 2em 0;
+	}
+
+	.icon {
+		width: .9em;
+		height: .9em;
+		padding-right: .25em;
+	}
+
+	.icon-star {
+		fill: $yellow;
+	}
+
+	.icon-fork {
+		fill: $white;
+		margin-left: .25em;
+	}
+
+	a {
+		color: $white;
+	}
+
+	.description {
+		font-weight: 300;
+		font-size: .9em;
+	}
+}
+
+header.site-header {
+	background-color: #1a1a1a;
+	color: $white;
+	padding: 8em;
+
+	.icon {
+		padding: .5em;
+		fill: rgba(255, 255, 255, .8);
+	}
+	.social {
+		margin-top: 1em;
+
+		.icon:hover {
+			fill: $white;
+		}
+	}
+}
+
+
