@@ -6,6 +6,7 @@ html, body {
     text-rendering: optimizeLegibility;
     font-family: 'opensans';
     font-size: 16px;
+    line-height: 1.5;
 }
 
 a {
@@ -34,7 +35,7 @@ h3 {
 
 h4 {
     font-size: 1.25em;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 h5 {
@@ -63,6 +64,7 @@ section {
 
 	article {
 		margin: 2em 0;
+		padding: 0 2em;
 	}
 
 	.icon {
@@ -82,12 +84,31 @@ section {
 
 	a {
 		color: $white;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	.description {
 		font-weight: 300;
 		font-size: .9em;
 	}
+}
+
+.github-btns {
+	margin: .25em 0 .65em;
+}
+
+.btn {
+	font-size: .8em;
+	margin-right: .5em;
+	display: inline-block;
+	line-height: 1;
+	padding: .5em;
+	border: 1px solid $white;
+	border-radius: 4px;
+	font-weight: 400;
 }
 
 header.site-header {
@@ -108,4 +129,8 @@ header.site-header {
 	}
 }
 
-
+@media(max-width: 768px) {
+	header.site-header {
+		padding: 4em 1.5em 4em 1.5em;
+	}
+}
