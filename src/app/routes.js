@@ -4,7 +4,7 @@ require('dotenv').load();
 
 var GithubApiClient = require('./scripts/githubapiclient'),
 	cache = require('memory-cache'),
-	staticData = require('./scripts/staticdata');
+	staticData = require('./data/staticdata');
 
 exports.index = function(req, res) {
 	var ghUserCCStars = GithubApiClient.getSearch({

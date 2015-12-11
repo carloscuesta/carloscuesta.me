@@ -2,7 +2,7 @@ var staticData = {
 	me: {
 		name: 'Carlos Cuesta',
 		bio: 'Front End Developer',
-		aboutme: 'Front End developer based in Barcelona, Spain. Working at Mediàtic. Coding addicted that enjoys building things with code, I like design, tecnhology and I <span class="heart">♥</span> OpenSource.',
+		aboutme: 'Front End developer based in Barcelona, Spain. Working at <a href="http://mediatic.cat">Mediàtic</a>. Coding addicted that enjoys building things with code, I like design, tecnhology and I <span class="heart">♥</span> OpenSource.',
 		mail: 'hi@carloscuesta.me'
 	},
 
