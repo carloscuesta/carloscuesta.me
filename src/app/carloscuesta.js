@@ -15,6 +15,7 @@ carloscuesta.use(sassMiddleware({
     outputStyle: 'compressed'
 }));
 carloscuesta.use(express.static(__dirname+'/styles/css'));
+carloscuesta.use(express.static(__dirname+'/assets/img'));
 carloscuesta.use(compression());
 
 carloscuesta.get('/', routes.index);
