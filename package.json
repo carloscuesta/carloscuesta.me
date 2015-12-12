@@ -37,7 +37,7 @@
   "devDependencies": {
     "flexboxgrid": "^6.3.0",
     "mocha": "^2.3.4",
-    "should": "^7.1.1",
+    "should": "^8.0.1",
     "supertest": "^1.1.0"
   }
 }
