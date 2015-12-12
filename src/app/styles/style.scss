@@ -4,9 +4,10 @@ html, body {
 	margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
-    font-family: 'opensans';
+    font-family: 'opensans','helvetica';
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 300;
 }
 
 a {
@@ -155,6 +156,10 @@ header.site-header {
 	border: 1px solid $white;
 	border-radius: 4px;
 	font-weight: 400;
+}
+
+.contact {
+	background-color: #eee;
 }
 
 footer {

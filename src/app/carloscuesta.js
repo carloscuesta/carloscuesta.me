@@ -3,7 +3,8 @@
 var express = require('express'),
     carloscuesta = express(),
     sassMiddleware = require('node-sass-middleware'),
-    routes = require('./routes');
+    routes = require('./routes'),
+    compression = require('compression');
 
 carloscuesta.set('views', __dirname + '/templates');
 carloscuesta.set('view engine', 'jade');
@@ -14,6 +15,7 @@ carloscuesta.use(sassMiddleware({
     outputStyle: 'compressed'
 }));
 carloscuesta.use(express.static(__dirname+'/styles/css'));
+carloscuesta.use(compression());
 
 carloscuesta.get('/', routes.index);
 carloscuesta.get('/'+process.env.PARAM_CLEAN, routes.cacheClean);
