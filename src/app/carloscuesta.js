@@ -6,6 +6,7 @@ var express = require('express'),
     routes = require('./routes'),
     compression = require('compression');
 
+carloscuesta.use(compression());
 carloscuesta.set('views', __dirname + '/templates');
 carloscuesta.set('view engine', 'jade');
 carloscuesta.engine('jade', require('jade').__express);
@@ -16,7 +17,6 @@ carloscuesta.use(sassMiddleware({
 }));
 carloscuesta.use(express.static(__dirname+'/styles/css'));
 carloscuesta.use(express.static(__dirname+'/assets/img'));
-carloscuesta.use(compression());
 
 carloscuesta.get('/', routes.index);
 carloscuesta.get('/'+process.env.PARAM_CLEAN, routes.cacheClean);
