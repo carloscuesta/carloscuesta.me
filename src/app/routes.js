@@ -29,7 +29,7 @@ exports.index = function(req, res) {
 
 exports.cacheClean = function(req, res) {
 	cache.clear();
-	console.log('  cache cleaned from URL');
+	console.log('\tcache cleaned from URL');
 	res.redirect('/');
 };
 
