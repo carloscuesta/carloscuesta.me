@@ -18,7 +18,7 @@ exports.index = function(req, res) {
 	});
 
 	Promise.all([ghUserCCStars]).then(function(data) {
-		res.render('index', {
+		res.render('views/index', {
 			githubData: data[0],
 			me: staticData.me,
 			site: staticData.site,
