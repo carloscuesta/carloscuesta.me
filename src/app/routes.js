@@ -34,5 +34,6 @@ exports.cacheClean = function(req, res) {
 };
 
 exports.notFound = function(req, res) {
-	res.redirect('/');
+	res.status(404);
+	res.render('views/errors/404.jade');
 };
