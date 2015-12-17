@@ -15,9 +15,11 @@ carloscuesta.use(sassMiddleware({
     dest: __dirname+'/static/css',
     outputStyle: 'compressed'
 }));
+
+carloscuesta.use(express.static(__dirname+'/static/'));
 carloscuesta.use(express.static(__dirname+'/static/css'));
-carloscuesta.use(express.static(__dirname+'/static/img'));
 carloscuesta.use(express.static(__dirname+'/static/js'));
+carloscuesta.use(express.static(__dirname+'/static/img'));
 
 carloscuesta.get('/', routes.index);
 carloscuesta.get('/'+process.env.PARAM_CLEAN, routes.cacheClean);
