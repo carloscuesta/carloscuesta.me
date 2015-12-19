@@ -182,12 +182,11 @@ header.site-header {
 }
 
 .contact {
-	background-color: #78909C;
+	background-color: $white;
 
 	.mail {
 		margin-bottom: 0;
-		font-size: 1.8em;
-		color: $white;
+		color: $accent;
 	}
 }
 
