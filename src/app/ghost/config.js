@@ -6,6 +6,10 @@
 var path = require('path'),
     config;
 
+if (process.env.NODE_ENV === 'development') {
+	require('dotenv').load();
+}
+
 config = {
     // ### Production
     // When running Ghost in the wild, use the production environment.

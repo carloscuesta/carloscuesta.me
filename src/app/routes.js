@@ -1,6 +1,8 @@
 'use strict';
 
-require('dotenv').load();
+if (process.env.NODE_ENV === 'development') {
+	require('dotenv').load();
+}
 
 var GithubApiClient = require('./scripts/githubapiclient'),
 	cache = require('memory-cache'),
