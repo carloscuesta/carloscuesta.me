@@ -7,7 +7,7 @@
   "description": "Carlos Cuesta website.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js --development",
+    "start": "node index.js",
     "test": "mocha test/app.js"
   },
   "repository": {
