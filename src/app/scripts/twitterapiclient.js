@@ -5,40 +5,22 @@ var ApiClient = require('./apiclient'),
 
 var TwitterApiClient = (function() {
 
-	var oAuth = new OAuth.OAuth (
-		'https://api.twitter.com/oauth/request_token',
-		'https://api.twitter.com/oauth/access_token',
-		process.env.TWITTER_CONSUMER_KEY,
-		process.env.TWITTER_CONSUMER_KEY_SECRET,
-		'1.0A',
-		null,
-		'HMAC-SHA1'
-	);
-
 	var _ApiClient = new ApiClient({
-		'base_url': 'https://api.twitter.com/1.1',
-		'cache': 5,
-		'oauth': oAuth,
-		'accesToken': process.env.TWITTER_CONSUMER_KEY,
-		'accesTokenSecret': process.env.TWITTER_CONSUMER_KEY_SECRET,
-	});
+        base_url: 'https://api.twitter.com/1.1',
+        oauth: {
+            request_token: 'https://api.twitter.com/oauth/request_token',
+            access_token: 'https://api.twitter.com/oauth/access_token',
+            consumer_key: 'vpF1dfWXDHiFaMT7LTFl0TOSq',
+            consumer_secret: 'HwQWzgRDXe4FBKiQXpcoqyOgJhDuo9z4KQqdY8przFNlVgsQcB',
+            access_token: '2974751872-3D4Bb0YFIJBadjAWZ3IP0vgPxOnEUilSiExbWqM',
+            access_token_secret: 'LLMzB5Itdv6i4VaqPVmMmXi2rZXmDxN3v1SDw0bDHwXnl',
+        },
+        debug: true
+    });
 
-	var getOAuthRequestToken = function() {
-		oAuth.getOAuthRequestToken(function (error, oauth_token, oauth_token_secret) {
-			if (error) {
-				console.log(error);
-			} else {
-				var oauth = {};
-				oAuth.token = oauth_token;
-				oAuth.token_secret = oauth_token_secret;
-				next(oauth);
-			}
-		});
-	};
 
 	var getUserTimeline = function(params) {
-		getOAuthRequestToken();
-		return _ApiClient.get('statuses/user_timeline', params);
+		return _ApiClient.get('/statuses/user_timeline.json', params);
 	};
 
 	return {

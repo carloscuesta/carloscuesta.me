@@ -28,6 +28,7 @@ exports.index = function(req, res) {
 	Promise.all([ghUserCCStars, userTimeline]).then(function(data) {
 		res.render('views/index', {
 			githubData: data[0],
+			twitterData: data[1],
 			me: staticData.me,
 			site: staticData.site,
 			social: staticData.social
