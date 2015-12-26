@@ -5,6 +5,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 var GithubApiClient = require('./scripts/githubapiclient'),
+	TwitterApiClient = require('./scripts/twitterapiclient'),
 	cache = require('memory-cache'),
 	staticData = require('./data/staticdata');
 
@@ -19,7 +20,12 @@ exports.index = function(req, res) {
 		per_page: 6
 	});
 
-	Promise.all([ghUserCCStars]).then(function(data) {
+	var userTimeline = TwitterApiClient.getUserTimeline({
+		screen_name: 'crloscuesta',
+		count: 4
+	});
+
+	Promise.all([ghUserCCStars, userTimeline]).then(function(data) {
 		res.render('views/index', {
 			githubData: data[0],
 			me: staticData.me,

@@ -1,3 +1,5 @@
+'use strict';
+
 var ApiClient = require('./apiclient');
 
 var GithubApiClient = (function() {
