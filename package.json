@@ -33,7 +33,8 @@
     "jade": "^1.11.0",
     "memory-cache": "^0.1.4",
     "node-fetch": "^1.3.3",
-    "node-sass-middleware": "^0.9.7"
+    "node-sass-middleware": "^0.9.7",
+    "oauth": "^0.9.14"
   },
   "devDependencies": {
     "mocha": "^2.3.4",
