@@ -1,7 +1,7 @@
 'use strict';
 
 var ApiClient = require('./apiclient'),
-	OAuth = require('oauth');
+	CacheApiClient = require('./cache');
 
 var TwitterApiClient = (function() {
 
@@ -18,9 +18,8 @@ var TwitterApiClient = (function() {
         debug: true
     });
 
-
 	var getUserTimeline = function(params) {
-		return _ApiClient.get('/statuses/user_timeline.json', params);
+		return CacheApiClient.validate.call(_ApiClient,'/statuses/user_timeline.json', params);
 	};
 
 	return {
