@@ -3,6 +3,7 @@
 require('dotenv').load();
 
 var ApiClient = require('./apiclient'),
+	twitterParse = require('twitter-text'),
 	CacheApiClient = require('./cache');
 
 var TwitterApiClient = (function() {
@@ -24,8 +25,19 @@ var TwitterApiClient = (function() {
 		return CacheApiClient.validate.call(_ApiClient,'/statuses/user_timeline.json', params);
 	};
 
+	var parseTweets = function(tweets) {
+		var jsonTweets = [];
+
+		for (var i = 0; i < tweets.length; i++) {
+			jsonTweets.push(twitterParse.autoLink(tweets[i].text));
+		}
+
+		return jsonTweets;
+	};
+
 	return {
-		getUserTimeline: getUserTimeline
+		getUserTimeline: getUserTimeline,
+		parseTweets: parseTweets
 	};
 
 })();

@@ -6,6 +6,7 @@ if (process.env.NODE_ENV === 'development') {
 
 var GithubApiClient = require('./scripts/githubapiclient'),
 	TwitterApiClient = require('./scripts/twitterapiclient'),
+	GhostApiClient = require('./scripts/ghostapiclient'),
 	cache = require('memory-cache'),
 	staticData = require('./data/staticdata');
 
@@ -26,9 +27,10 @@ exports.index = function(req, res) {
 	});
 
 	Promise.all([ghUserCCStars, userTimeline]).then(function(data) {
+		var tweets = TwitterApiClient.parseTweets(data[1]);
 		res.render('views/index', {
 			githubData: data[0],
-			twitterData: data[1],
+			twitterData: tweets,
 			me: staticData.me,
 			site: staticData.site,
 			social: staticData.social,
