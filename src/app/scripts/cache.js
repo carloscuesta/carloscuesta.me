@@ -17,7 +17,7 @@ var CacheApiClient = (function() {
 			_dataCache = nodeCache.get(_url);
 
 		if (!_dataCache) {
-			_self.get(src, params).then(function(data) {
+			return _self.get(src, params).then(function(data) {
 				nodeCache.put(_url, data, _cacheTime);
 				return data;
 			});
