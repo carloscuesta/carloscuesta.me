@@ -13,7 +13,7 @@ var CacheApiClient = (function() {
 	var validate = function(src, params, time) {
 		var _self = this,
 			_url = _self.base_url + src + '?' + _serialize(params),
-			_cacheTime = time * 6000 || 3000,
+			_cacheTime = time * 6000 || 86400000,
 			_dataCache = nodeCache.get(_url);
 
 		if (!_dataCache) {

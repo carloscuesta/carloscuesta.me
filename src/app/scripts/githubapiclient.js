@@ -1,6 +1,7 @@
 'use strict';
 
-var ApiClient = require('./apiclient');
+var ApiClient = require('./apiclient'),
+	CacheApiClient = require('./cache');
 
 var GithubApiClient = (function() {
 
@@ -10,19 +11,19 @@ var GithubApiClient = (function() {
 	});
 
 	var getUserRepos = function(userName, params) {
-		return _ApiClient.get('/users/'+userName+'/repos', params);
+		return CacheApiClient.validate.call(_ApiClient, '/users/'+userName+'/repos', params);
 	};
 
 	var getSearch = function(params){
-		return _ApiClient.get('/search/repositories', params);
+		return CacheApiClient.validate.call(_ApiClient, '/search/repositories', params);
 	};
 
 	var getOrgRepos = function(orgName, params) {
-		return _ApiClient.get('/orgs/'+orgName+'/repos', params);
+		return CacheApiClient.validate.call(_ApiClient, '/orgs/'+orgName+'/repos', params);
 	};
 
 	var getRepo = function(userName, repoName, params){
-		return _ApiClient.get('/repos/'+userName+'/'+repoName, params);
+		return CacheApiClient.validate.call(_ApiClient,'/repos/'+userName+'/'+repoName, params);
 	};
 
 	return {
