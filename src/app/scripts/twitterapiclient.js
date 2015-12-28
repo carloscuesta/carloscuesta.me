@@ -17,7 +17,7 @@ var TwitterApiClient = (function() {
 			access_token: process.env.TWITTER_ACCES_TOKEN,
 			access_token_secret: process.env.TWITTER_ACCES_TOKEN_SECRET,
 		},
-		debug: true
+		debug: false
 	});
 
 	var getUserTimeline = function(params) {
