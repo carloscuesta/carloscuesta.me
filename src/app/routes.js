@@ -31,7 +31,8 @@ exports.index = function(req, res) {
 			twitterData: data[1],
 			me: staticData.me,
 			site: staticData.site,
-			social: staticData.social
+			social: staticData.social,
+			cache: true
 		});
 	});
 };
