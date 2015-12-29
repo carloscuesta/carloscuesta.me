@@ -26,7 +26,12 @@ exports.index = function(req, res) {
 		count: 4
 	});
 
-	Promise.all([ghUserCCStars, userTimeline]).then(function(data) {
+	var lastPosts = GhostApiClient.getLastPosts({
+		client_id: process.env.GHOST_CLIENT_ID,
+		client_secret: process.env.GHOST_CLIENT_SECRET
+	});
+
+	Promise.all([ghUserCCStars, userTimeline, lastPosts]).then(function(data) {
 		var tweets = TwitterApiClient.parseTweets(data[1]);
 		res.render('views/index', {
 			githubData: data[0],

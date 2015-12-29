@@ -1,8 +1,6 @@
 'use strict';
 
 var ApiClient = require('./apiclient'),
-	fetch = require('node-fetch'),
-	FormData = require('form-data'),
 	CacheApiClient = require('./cache');
 
 var GhostApiClient = (function() {
@@ -12,21 +10,12 @@ var GhostApiClient = (function() {
 		'cache': 5
 	});
 
-
-	var ghostLogin = function() {
-
-		return fetch('http://carloscuesta.me/blog/ghost/api/v0.1/authentication/token', {
-				method: 'POST',
-				body: '',
-			})
-			.then(function(res) {
-				console.log(res);
-				return res.json();
-			});
+	var getLastPosts = function(params) {
+		return CacheApiClient.validate.call(_ApiClient,'/posts', params);
 	};
 
 	return {
-		ghostLogin: ghostLogin
+		getLastPosts: getLastPosts
 	};
 })();
 
