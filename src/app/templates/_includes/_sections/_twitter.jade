@@ -1,5 +1,7 @@
 section.twitter
     .wrap
-        h3 Twitter
-        -each tweet in twitterData
-            p !{tweet}
+        h3 I'm @crloscuesta on twitter
+        .row
+            -each tweet in twitterData
+                article.tweet.col-xs-12.col-sm-6
+                    p !{tweet}

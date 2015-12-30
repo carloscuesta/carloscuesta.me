@@ -91,11 +91,20 @@ header.site-header {
 		padding: .5em;
 		fill: rgba(255, 255, 255, .8);
 	}
+
 	.social {
 		margin-top: 1em;
 
-		.icon:hover {
-			fill: $white;
+		.icon-twitter:hover {
+			fill:#55ACEE;
+		}
+
+		.icon-github:hover {
+			fill:#181717;
+		}
+
+		.icon-linkedin:hover {
+			fill:#0077B5;
 		}
 	}
 }
