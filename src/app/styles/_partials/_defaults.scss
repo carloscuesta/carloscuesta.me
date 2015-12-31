@@ -1,0 +1,65 @@
+html, body {
+	margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    font-family: 'opensans','helvetica';
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: $text;
+}
+
+a {
+	text-decoration: none;
+	color: $accent;
+	transition: color .1s ease-in-out;
+}
+
+a:hover {
+	color: $accentlight;
+}
+
+h1, h2, h3,  h4, h5, h6 {
+    line-height: 1.15;
+    margin-top: 0;
+    margin-bottom: .5rem
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.5em
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1.125em
+}
+
+strong, b {
+	font-weight: 400;
+}
+
+p {
+	font-weight: 300;
+}
+
+section {
+	padding: 3em 1.5em;
+
+	h3 {
+		padding: 0 1em;
+	}
+}

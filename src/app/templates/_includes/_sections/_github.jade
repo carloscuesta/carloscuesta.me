@@ -1,6 +1,8 @@
 section.github
     .wrap
         .row
+            .col-xs-12
+                h3 I'm #[a(href='https://github.com/carloscuesta') @carloscuesta] on github.
             -each github in githubData.items
                 article.col-xs-12.col-sm-6.col-md-4
                     a(href=github.html_url): h4.github-title= github.name
@@ -10,8 +12,10 @@ section.github
                     div
                       svg.icon.icon-star
                         use(xlink:href="#icon-star")
-                      span #{github.stargazers_count},
+                      span #{github.stargazers_count}
                       svg.icon.icon-fork
                         use(xlink:href="#icon-fork")
-                      | #{github.forks}, #{github.language}
+                      | #{github.forks}
+                      if github.language
+                        |, #{github.language}
                     div.description= github.description
