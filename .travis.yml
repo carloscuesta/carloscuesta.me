@@ -3,7 +3,7 @@ node_js:
   - '4.2.3'
 script:
   - npm run test
-  - grunt googleps
+  - grunt
 addons:
     code_climate:
         repo_token: 18cef61fdbd957e9d6d94b3b6bf7a07da9321eda1f5dad64ef222d7b8e7f980c
