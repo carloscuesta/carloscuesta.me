@@ -39,6 +39,8 @@
     "twitter-text": "^1.13.2"
   },
   "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-pagespeed": "^2.0.0",
     "mocha": "^2.3.4",
     "should": "^8.0.1",
     "supertest": "^1.1.0"
