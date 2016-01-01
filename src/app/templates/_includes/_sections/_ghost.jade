@@ -1,8 +1,9 @@
 section.ghost
     .wrap
-        h3 I write posts on my #[a(href='http://carloscuesta.me/blog') blog].
-        .row.middle-xs
+        .row
+            .col-xs-12
+                h3 I write posts on my #[a(href='http://carloscuesta.me/blog') blog].
             -each post in ghostData.posts
-                article.col-xs-12.col-sm-6.col-md-6
+                article.post.col-xs-12.col-sm-6
                     h4 #{post.title}
                     a(href="http://carloscuesta.me/blog#{post.url}") Read More

@@ -37,6 +37,9 @@
 
 header.site-header {
 	background-color: $accent;
+	/*background: linear-gradient(rgba(33, 150, 243, 0.8), rgba(33, 150, 243, 0.8)),
+        url("../img/header.jpg") center center;
+	background-size: cover;*/
 	color: $white;
 	padding: 9.5em;
 }
@@ -65,7 +68,6 @@ header.site-header {
 
 	article {
 		margin: 2em 0;
-		padding: 0 2em;
 	}
 
 	.icon {
@@ -126,14 +128,13 @@ header.site-header {
 	background-color: $blacksection;
 	color: $white;
 
-	article {
-		padding: 0 .8em;
-	}
-
 	h5 {
 		font-weight: 300;
-		padding: 1em;
 		line-height: 1.4em;
+	}
+
+	.tweet {
+		margin:2em 0;
 	}
 }
 
@@ -148,7 +149,6 @@ header.site-header {
 
 .ghost {
 	article {
-		padding: 0 2em;
 		margin: 2em 0;
 	}
 
@@ -170,8 +170,21 @@ footer {
 	}
 }
 
+article {
+	padding: 0 2em!important;
+}
+
 @media(max-width: 768px) {
 	header.site-header {
 		padding: 5em 1.5em 5em 1.5em;
+	}
+
+	section h3, article {
+		padding: 0!important;
+	}
+
+	.col-xs-12 {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
