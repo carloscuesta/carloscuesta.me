@@ -4,7 +4,8 @@ require('dotenv').load();
 
 var ApiClient = require('./apiclient'),
 	twitterParse = require('twitter-text'),
-	CacheApiClient = require('./cache');
+	CacheApiClient = require('./cache'),
+	nodeCache = require('memory-cache');
 
 var TwitterApiClient = (function() {
 
@@ -26,13 +27,18 @@ var TwitterApiClient = (function() {
 	};
 
 	var parseTweets = function(tweets) {
-		var jsonTweets = [];
+		var _cacheTime =  86400000,
+			_dataCache = nodeCache.get('parsedTweetText');
 
-		for (var i = 0; i < tweets.length; i++) {
-			jsonTweets.push(twitterParse.autoLink(tweets[i].text));
+		if (!_dataCache) {
+			for (var i = 0; i < tweets.length; i++) {
+				tweets[i].text = twitterParse.autoLink(tweets[i].text);
+			}
+			nodeCache.put('parsedTweetText', tweets, _cacheTime);
+			return tweets;
+		} else {
+			return _dataCache;
 		}
-
-		return jsonTweets;
 	};
 
 	return {

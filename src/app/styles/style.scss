@@ -20,12 +20,6 @@
 	height: 1.8em;
 }
 
-.icon {
-	padding: .5em;
-	fill: rgba(255, 255, 255, .7);
-	transition: fill .2s ease-in-out;
-}
-
 .social {
 	margin-top: 1em;
 
@@ -42,6 +36,12 @@ header.site-header {
 	background-size: cover;*/
 	color: $white;
 	padding: 9.5em;
+
+	.icon {
+		padding: .5em;
+		fill: rgba(255, 255, 255, .7);
+		transition: fill .2s ease-in-out;
+	}
 }
 
 .heart {
@@ -82,7 +82,7 @@ header.site-header {
 
 	.icon-fork {
 		fill: $text;
-		margin-left: .25em;
+		margin-left: .35em;
 	}
 
 	a.btn {
@@ -135,6 +135,21 @@ header.site-header {
 
 	.tweet {
 		margin:2em 0;
+	}
+
+	.icon {
+		width: .9em;
+		height: .9em;
+		padding: 0 .25em 0 0;
+	}
+
+	.icon-heart {
+		fill: $pink;
+		margin-left: .35em;
+	}
+
+	.icon-retweet {
+		fill: $green;
 	}
 }
 
