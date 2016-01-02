@@ -54,7 +54,7 @@ header.site-header {
 	}
 	.avatar {
 		border-radius: 50%;
-		width: 14em;
+		width: 224px;
 	}
 
 	h3 {
@@ -70,6 +70,10 @@ header.site-header {
 		margin: 2em 0;
 	}
 
+	.language, .icon-fork {
+		margin-left: .35em;
+	}
+
 	.icon {
 		width: .9em;
 		height: .9em;
@@ -82,7 +86,6 @@ header.site-header {
 
 	.icon-fork {
 		fill: $text;
-		margin-left: .35em;
 	}
 
 	a.btn {
@@ -189,17 +192,35 @@ article {
 	padding: 0 2em!important;
 }
 
+section h3{
+	padding: 0 1em;
+}
+
 @media(max-width: 768px) {
 	header.site-header {
 		padding: 5em 1.5em 5em 1.5em;
 	}
 
-	section h3, article {
-		padding: 0!important;
+	html, body {
+		font-size: 18px;
+	}
+
+	article {
+		padding: 1.5em!important;
+	}
+
+	section h3 {
+		padding: 0 1em;
 	}
 
 	.col-xs-12 {
 		padding-left: 0;
 		padding-right: 0;
+	}
+}
+
+@media(max-width: 468px) {
+	section h3, article {
+		padding: 0!important;
 	}
 }
