@@ -5,7 +5,7 @@ var app = require('./src/app/carloscuesta.js'),
 	port = process.env.PORT || 5000;
 
 ghost({
-	config: __dirname+'/src/app/ghost/config.js'
+	config: __dirname+'/src/blog/config.js'
 }).then(function (ghostServer) {
 	app.use(ghostServer.config.paths.subdir, ghostServer.rootApp);
 	ghostServer.start(app);
