@@ -54,8 +54,3 @@ exports.cacheClean = function(req, res) {
 	console.log('\tcache cleaned from URL');
 	res.redirect('/');
 };
-
-exports.notFound = function(req, res) {
-	res.status(404);
-	res.render('views/errors/404.jade');
-};

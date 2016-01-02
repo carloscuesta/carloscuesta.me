@@ -8,6 +8,10 @@ ghost({
 	config: __dirname+'/src/blog/config.js'
 }).then(function (ghostServer) {
 	app.use(ghostServer.config.paths.subdir, ghostServer.rootApp);
+	app.use(function(req, res) {
+		res.status(404);
+		res.render('views/errors/404.jade');
+	});
 	ghostServer.start(app);
 });
 
