@@ -33,6 +33,15 @@ config = {
             debug: false
         },
 
+        storage: {
+			active: 'ghost-cloudinary-store',
+			'ghost-cloudinary-store': {
+		    	cloud_name: process.env.CLOUDINARY_NAME,
+		    	api_key: process.env.CLOUDINARY_API_KEY,
+		    	api_secret: process.env.CLOUDINARY_SECRET
+			}
+		},
+
         server: {
             host: '127.0.0.1',
             port: '2368'
@@ -69,6 +78,15 @@ config = {
             },
             debug: false
         },
+
+        storage: {
+			active: 'ghost-cloudinary-store',
+			'ghost-cloudinary-store': {
+		    	cloud_name: process.env.CLOUDINARY_NAME,
+		    	api_key: process.env.CLOUDINARY_API_KEY,
+		    	api_secret: process.env.CLOUDINARY_SECRET
+			}
+		},
 
         server: {
             host: '127.0.0.1',
