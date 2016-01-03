@@ -1,3 +1,5 @@
+'use strict';
+
 var staticData = {
 	me: {
 		name: 'Carlos Cuesta',

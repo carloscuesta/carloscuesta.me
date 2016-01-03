@@ -37,10 +37,12 @@ exports.index = function(req, res) {
 
 	Promise.all([ghUserCCStars, userTimeline, lastPosts]).then(function(data) {
 		var tweets = TwitterApiClient.parseTweets(data[1]);
+		var posts = GhostApiClient.parsePosts(data[2]);
+
 		res.render('views/index', {
 			githubData: data[0],
 			twitterData: tweets,
-			ghostData: data[2],
+			ghostData: posts,
 			me: staticData.me,
 			site: staticData.site,
 			social: staticData.social,

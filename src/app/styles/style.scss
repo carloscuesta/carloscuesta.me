@@ -170,6 +170,37 @@ header.site-header {
 		margin: 2em 0;
 	}
 
+	.title {
+		font-size: 1.35em;
+	}
+
+	.tags {
+		display: inline;
+
+		a {
+			padding: .15rem .25rem;
+			font-size: .72em;
+			text-transform: uppercase;
+			color: #f9f9f9;
+			border-radius: 2px;
+			background-color: $accent;
+			transition: background-color .2s ease-in-out;
+
+			&:first-child {
+				margin-left: .2em;
+			}
+
+			&:last-child {
+				margin-right: .2em;
+			}
+
+			&:hover {
+				background-color: $accentlight;
+				transition: background-color .2s ease-in-out;
+			}
+		}
+	}
+
 	h4 {
 		color: $accent;
 	}
