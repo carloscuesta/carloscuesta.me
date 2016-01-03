@@ -2,7 +2,6 @@
 
 var request = require('supertest'),
 	should = require('should'),
-	githubClient = require('../src/app/scripts/githubapiclient'),
 	app = require ('../src/app/carloscuesta'),
 	port = process.env.PORT || 5000;
 
