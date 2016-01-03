@@ -12,11 +12,21 @@ describe('app', function() {
   	});
 
 	describe('status', function() {
+
 		it('should return 200 Ok', function(done) {
 			request(app)
 				.get('/')
 				.end(function(err, res) {
 					res.status.should.equal(200);
+					done();
+				});
+		});
+
+		it('should return 404 Not found', function(done) {
+			request(app)
+				.get('/404')
+				.end(function(err, res) {
+					res.status.should.equal(404);
 					done();
 				});
 		});

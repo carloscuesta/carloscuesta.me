@@ -1,0 +1,75 @@
+@import './_partials/_flexbox.scss';
+@import './_partials/_vars.scss';
+
+html, body {
+	margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    font-family: 'opensans','helvetica';
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    background-color: #f9f9f9;
+    color: $text;
+}
+
+h1, h2, h3,  h4, h5, h6 {
+    line-height: 1.15;
+    margin-top: 0;
+    margin-bottom: .5rem
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1.125em
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	font-size: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: $accent;
+	transition: color .2s ease-in-out;
+	&:hover {
+		color: $accentlight;
+		transition: color .2s ease-in-out;
+	}
+}
+
+.message {
+	min-height: 100vh;
+	padding: 3em;
+}
+
+@media(max-width: 468px) {
+	.message {
+		padding: 1.5em;
+	}
+
+	html, body {
+		font-size: 14px;
+	}
+}

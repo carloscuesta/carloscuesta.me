@@ -2,6 +2,44 @@ doctype html
 html
     head
         title Carlos Cuesta | Error 404
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="twitter:card", content="summary")
+        meta(name="twitter:description", content="Error 404 Page Nout Found - Carlos Cuesta")
+        meta(name="twitter:creator", content="@crloscuesta")
+        meta(name="twitter:url", content="http://carloscuesta.me")
+        meta(name="twitter:title", content="Carlos Cuesta")
+        link(rel="apple-touch-icon", sizes="57x57", href="apple-icon-57x57.png")
+        link(rel="apple-touch-icon", sizes="60x60", href="apple-icon-60x60.png")
+        link(rel="apple-touch-icon", sizes="72x72", href="apple-icon-72x72.png")
+        link(rel="apple-touch-icon", sizes="76x76", href="apple-icon-76x76.png")
+        link(rel="apple-touch-icon", sizes="114x114", href="apple-icon-114x114.png")
+        link(rel="apple-touch-icon", sizes="120x120", href="apple-icon-120x120.png")
+        link(rel="apple-touch-icon", sizes="144x144", href="apple-icon-144x144.png")
+        link(rel="apple-touch-icon", sizes="152x152", href="apple-icon-152x152.png")
+        link(rel="apple-touch-icon", sizes="180x180", href="apple-icon-180x180.png")
+        link(rel='icon', type='image/png', sizes='192x192', href='android-icon-192x192.png')
+        link(rel='icon', type='image/png', sizes='32x32', href='favicon-32x32.png')
+        link(rel='icon', type='image/png', sizes='96x96', href='favicon-96x96.png')
+        link(rel='icon', type='image/png', sizes='16x16', href='favicon-16x16.png')
+        link(rel='manifest', href='manifest.json')
+        meta(name='msapplication-TileColor', content='#2196F3')
+        meta(name='msapplication-TileImage', content='ms-icon-144x144.png')
+        meta(name='theme-color', content='#2196F3')
+        style
+            include ../../../static/css/error.css
+        script
+            include ../../../static/js/fonts.js
     body
-        h1 Error 404
-        h2 Page not found
+        .container
+            .row.message.middle-xs
+                .col-xs-12
+                    h1 Are you lost?
+                    h2 The page you are looking for doesn't exists.
+                    h3 Here are some helpful links instead:
+                    nav
+                        ul
+                            li #[a(href="http://carloscuesta.me") Home]
+                            li #[a(href="http://carloscuesta.me/blog") Blog]
+                            li #[a(href="") Sitemap]
+                    h4 Error Code: 404
