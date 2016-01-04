@@ -1,13 +1,18 @@
 section.ghost
     .wrap
-        h3 I write posts on my #[a(href='/blog') blog].
-        -each post in ghostData.posts
-            article.post.row.middle-xs
-                .col-xs.col-md-5
-                    a.title(href="/blog#{post.url}") #{post.title}
-                .col-xs.col-md-5
-                    span.tags
-                        -each tag in post.tags
-                            a(href="/blog/tag/#{tag.name}") #{tag.name}
-                .col-xs.col-md-2.end-xs
-                    time(datetime="#{post.published_at}") #{post.published_at}
+        .row
+            .col-xs-12.title
+                h3 I write posts on my #[a(href='/blog') blog].
+        .row
+            -each post in ghostData.posts
+                article.post.col-xs-12.col-sm-6
+                    .row.middle-xs
+                        .col-xs-12.col-sm-12.col-md-6
+                            a.post-title(href="/blog#{post.url}") #{post.title}
+                        .col-xs-12.col-sm-12.col-md-6.end-md.start-xs
+                            span.tags
+                                -each tag in post.tags
+                                    a(href="/blog/tag/#{tag.name}") #{tag.name}
+                            time(datetime="#{post.published_at}") #{post.published_at}
+                    p #{post.html}
+                    a.read-more(href="/blog#{post.url}") Read more

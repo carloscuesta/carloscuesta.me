@@ -1,12 +1,12 @@
 section.github
     .wrap
         .row
-            .col-xs-12
+            .col-xs-12.title
                 h3 I'm #[a(href='https://github.com/carloscuesta') @carloscuesta] on github.
             -each github in githubData.items
                 article.repo.col-xs-12.col-sm-6.col-md-4
                     a(href=github.html_url): h4.github-title= github.name
-                    .github-btns
+                    //-.github-btns
                       a(href=github.html_url).btn.btn-repo Repo
                       a(href=github.homepage).btn.btn-demo Demo
                     div

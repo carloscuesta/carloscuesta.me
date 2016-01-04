@@ -159,28 +159,46 @@ header.site-header {
 
 .ghost {
 
-	.title {
+	.post-title {
 		font-size: 1.35em;
 	}
 
+	h5 {
+		font-weight: 300;
+		line-height: 1.4em;
+	}
+
+	time {
+		box-sizing: border-box;
+		font-size: .67em;
+		border-top-right-radius: 2px;
+		border-bottom-right-radius: 2px;
+		border: 1px solid $accent;
+		padding: 3px .5em;
+		box-sizing: border-box;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
 	.tags {
-		display: inline;
+		display: inline-block;
 
 		a {
-			padding: .15rem .25rem;
-			font-size: .72em;
+			box-sizing: border-box;
+			padding: 4px .5em;
+			font-size: .67em;
 			text-transform: uppercase;
 			color: #f9f9f9;
-			border-radius: 2px;
 			background-color: $accent;
 			transition: background-color .2s ease-in-out;
 
-			&:first-child {
-				margin-left: .2em;
+			&:not(:first-child) {
+				border-left:1px solid $accentlight;
 			}
 
-			&:last-child {
-				margin-right: .2em;
+			&:first-child {
+				border-top-left-radius: 2px;
+				border-bottom-left-radius: 2px;
 			}
 
 			&:hover {
@@ -212,14 +230,9 @@ section h3{
 	padding: 0 1em;
 }
 
-.tweet, .repo {
+.tweet, .repo, .post {
 	padding: 0 2em;
 	margin: 2em 0;
-}
-
-.post {
-	margin: 2em 0;
-	padding: 0 1em;
 }
 
 @media(max-width: 768px) {
@@ -241,14 +254,13 @@ section h3{
 		padding: 0 1em;
 	}
 
-	.col-xs-12, .col-xs {
-		padding-left: 0;
-		padding-right: 0;
+	.col-xs-12.title {
+		padding: 0;
 	}
 }
 
 @media(max-width: 468px) {
-	section h3, .tweet, .repo {
+	section h3, .tweet, .repo, .post {
 		padding: 0!important;
 	}
 }

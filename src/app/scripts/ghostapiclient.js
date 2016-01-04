@@ -3,7 +3,8 @@
 var ApiClient = require('./apiclient'),
 	CacheApiClient = require('./cache'),
 	nodeCache = require('memory-cache'),
-	moment = require('moment');
+	moment = require('moment'),
+	striptags = require('striptags');
 
 var GhostApiClient = (function() {
 
@@ -22,6 +23,7 @@ var GhostApiClient = (function() {
 		if (!_dataCache) {
 			for (var i = 0; i < postData.posts.length; i++) {
 				postData.posts[i].published_at = moment(postData.posts[i].published_at).startOf('day').fromNow();
+				postData.posts[i].html = striptags(postData.posts[i].html).substring(0,120)+' ...';
 			}
 			nodeCache.put('parsedPosts', postData, _cacheTime);
 			return postData;
