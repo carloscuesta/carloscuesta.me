@@ -66,10 +66,6 @@ header.site-header {
 	background-color: $whitesection;
 	color: $text;
 
-	article {
-		margin: 2em 0;
-	}
-
 	.language, .icon-fork {
 		margin-left: .35em;
 	}
@@ -136,10 +132,6 @@ header.site-header {
 		line-height: 1.4em;
 	}
 
-	.tweet {
-		margin:2em 0;
-	}
-
 	.icon {
 		width: .9em;
 		height: .9em;
@@ -166,9 +158,6 @@ header.site-header {
 }
 
 .ghost {
-	article {
-		margin: 2em 0;
-	}
 
 	.title {
 		font-size: 1.35em;
@@ -219,11 +208,17 @@ footer {
 	}
 }
 
-article {
-	padding: 0 2em!important;
+section h3{
+	padding: 0 1em;
 }
 
-section h3{
+.tweet, .repo {
+	padding: 0 2em;
+	margin: 2em 0;
+}
+
+.post {
+	margin: 2em 0;
 	padding: 0 1em;
 }
 
@@ -236,22 +231,24 @@ section h3{
 		font-size: 18px;
 	}
 
-	article {
+	.tweet, .repo, .post {
 		padding: 1.5em!important;
+		margin: 1em 0!important;
 	}
+
 
 	section h3 {
 		padding: 0 1em;
 	}
 
-	.col-xs-12 {
+	.col-xs-12, .col-xs {
 		padding-left: 0;
 		padding-right: 0;
 	}
 }
 
 @media(max-width: 468px) {
-	section h3, article {
+	section h3, .tweet, .repo {
 		padding: 0!important;
 	}
 }

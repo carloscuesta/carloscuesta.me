@@ -1,12 +1,13 @@
 section.ghost
     .wrap
-        .row
-            .col-xs-12
-                h3 I write posts on my #[a(href='/blog') blog].
-            -each post in ghostData.posts
-                article.post.col-xs-12.col-sm-6
+        h3 I write posts on my #[a(href='/blog') blog].
+        -each post in ghostData.posts
+            article.post.row.middle-xs
+                .col-xs.col-md-5
                     a.title(href="/blog#{post.url}") #{post.title}
+                .col-xs.col-md-5
                     span.tags
                         -each tag in post.tags
                             a(href="/blog/tag/#{tag.name}") #{tag.name}
+                .col-xs.col-md-2.end-xs
                     time(datetime="#{post.published_at}") #{post.published_at}

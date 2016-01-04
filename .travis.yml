@@ -5,6 +5,8 @@ before_install: npm install -g grunt-cli
 script:
   - npm run test
   - npm run pagespeed
+after_success:
+  - coveralls
 addons:
     code_climate:
         repo_token: 18cef61fdbd957e9d6d94b3b6bf7a07da9321eda1f5dad64ef222d7b8e7f980c
