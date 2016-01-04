@@ -161,6 +161,7 @@ header.site-header {
 
 	.post-title {
 		font-size: 1.35em;
+		font-weight: 400;
 	}
 
 	h5 {
@@ -169,13 +170,11 @@ header.site-header {
 	}
 
 	time {
-		box-sizing: border-box;
 		font-size: .67em;
 		border-top-right-radius: 2px;
 		border-bottom-right-radius: 2px;
 		border: 1px solid $accent;
-		padding: 3px .5em;
-		box-sizing: border-box;
+		padding: 3px 1em;
 		text-transform: uppercase;
 		font-weight: 400;
 	}
@@ -184,8 +183,7 @@ header.site-header {
 		display: inline-block;
 
 		a {
-			box-sizing: border-box;
-			padding: 4px .5em;
+			padding: 4px 1em;
 			font-size: .67em;
 			text-transform: uppercase;
 			color: #f9f9f9;
