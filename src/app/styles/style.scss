@@ -1,6 +1,7 @@
 @import './_partials/_vars.scss';
 @import './_partials/_defaults.scss';
 @import './_partials/_flexbox.scss';
+@import './_partials/_mixins.scss';
 
 .wrap {
 	max-width: 1140px;
@@ -148,17 +149,8 @@ header.site-header {
 	}
 }
 
-.contact {
-	background-color: $white;
-
-	.mail {
-		margin-bottom: 0;
-		color: $accent;
-	}
-}
 
 .ghost {
-
 	.post-title {
 		font-size: 1.35em;
 		font-weight: 400;
@@ -171,8 +163,8 @@ header.site-header {
 
 	time {
 		font-size: .67em;
-		border-top-right-radius: 2px;
-		border-bottom-right-radius: 2px;
+		border-radius: 2px;
+		color: $accent;
 		border: 1px solid $accent;
 		padding: 3px 1em;
 		text-transform: uppercase;
@@ -180,34 +172,42 @@ header.site-header {
 	}
 
 	.tags {
-		display: inline-block;
-
 		a {
-			padding: 4px 1em;
-			font-size: .67em;
-			text-transform: uppercase;
-			color: #f9f9f9;
-			background-color: $accent;
-			transition: background-color .2s ease-in-out;
-
-			&:not(:first-child) {
-				border-left:1px solid $accentlight;
-			}
-
 			&:first-child {
 				border-top-left-radius: 2px;
 				border-bottom-left-radius: 2px;
 			}
 
-			&:hover {
-				background-color: $accentlight;
-				transition: background-color .2s ease-in-out;
+			&:last-child {
+				border-top-right-radius: 2px;
+				border-bottom-right-radius: 2px;
+				margin-right: .5em;
 			}
 		}
 	}
 
 	h4 {
 		color: $accent;
+	}
+}
+
+.tags {
+	display: inline;
+
+	a {
+		padding: 4px 1em;
+		font-size: .67em;
+		text-transform: uppercase;
+		color: #f9f9f9;
+		transition: background-color .2s ease-in-out;
+
+		&:hover {
+			transition: background-color .2s ease-in-out;
+		}
+	}
+
+	@each $tag, $color in ('personal': $pink, 'life': $green, 'javascript': $javascript, 'html': $html, 'css': $css, 'nodejs': $nodejs) {
+		@include createTag($tag, $color);
 	}
 }
 

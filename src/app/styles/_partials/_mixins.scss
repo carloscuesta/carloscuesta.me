@@ -1,0 +1,21 @@
+@mixin createTag($language, $color) {
+	.#{$language} {
+		background-color: $color;
+	}
+
+	.#{$language}:hover {
+		background-color: darken($color, 10%);
+	}
+}
+
+@mixin small {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin extrasmall {
+    @media (max-width: 468px) {
+        @content;
+    }
+}
