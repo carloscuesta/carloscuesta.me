@@ -11,18 +11,16 @@ section.github
                         .col-xs.end-xs
                             if github.language
                                 span.tags
-                                    a(class="#{github.language}") #{github.language}
+                                    a(href="#", class="#{github.language}") #{github.language}
                         //-.github-btns
                             a(href=github.html_url).btn.btn-repo Repo
                             a(href=github.homepage).btn.btn-demo Demo
-                    .row
-                        .col-xs-3.col-md-2
-                            svg.icon.icon-star
-                                use(xlink:href="#icon-star")
-                            span #{github.stargazers_count}
-                        .col-xs-3.col-md-2
-                            svg.icon.icon-fork
-                                use(xlink:href="#icon-fork")
-                            span #{github.forks}
+                    div
+                        svg.icon.icon-star
+                            use(xlink:href="#icon-star")
+                        span #{github.stargazers_count}
+                        svg.icon.icon-fork
+                            use(xlink:href="#icon-fork")
+                        span #{github.forks}
                     .row
                         div.col-xs-12.description= github.description
