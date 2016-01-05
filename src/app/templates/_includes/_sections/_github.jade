@@ -5,17 +5,24 @@ section.github
                 h3 I'm #[a(href='https://github.com/carloscuesta') @carloscuesta] on github.
             -each github in githubData.items
                 article.repo.col-xs-12.col-sm-6.col-md-4
-                    a(href=github.html_url): h4.github-title= github.name
-                    //-.github-btns
-                      a(href=github.html_url).btn.btn-repo Repo
-                      a(href=github.homepage).btn.btn-demo Demo
-                    div
-                      svg.icon.icon-star
-                        use(xlink:href="#icon-star")
-                      span #{github.stargazers_count}
-                      svg.icon.icon-fork
-                        use(xlink:href="#icon-fork")
-                      | #{github.forks}
-                      if github.language
-                        b.language #{github.language}
-                    div.description= github.description
+                    .row
+                        .col-xs
+                            a(href=github.html_url): h4.github-title= github.name
+                        .col-xs.end-xs
+                            if github.language
+                                span.tags
+                                    a(class="#{github.language}") #{github.language}
+                        //-.github-btns
+                            a(href=github.html_url).btn.btn-repo Repo
+                            a(href=github.homepage).btn.btn-demo Demo
+                    .row
+                        .col-xs-3.col-md-2
+                            svg.icon.icon-star
+                                use(xlink:href="#icon-star")
+                            span #{github.stargazers_count}
+                        .col-xs-3.col-md-2
+                            svg.icon.icon-fork
+                                use(xlink:href="#icon-fork")
+                            span #{github.forks}
+                    .row
+                        div.col-xs-12.description= github.description

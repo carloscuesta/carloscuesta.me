@@ -71,6 +71,10 @@ header.site-header {
 		margin-left: .35em;
 	}
 
+	.github-title {
+		white-space: nowrap;
+	}
+
 	.icon {
 		width: .9em;
 		height: .9em;
@@ -92,6 +96,15 @@ header.site-header {
 	.description {
 		font-weight: 300;
 		font-size: .9em;
+	}
+
+	.tags {
+		a {
+			padding: 1px .5em;
+			border-radius: 2px;
+			margin-left: .5em;
+			font-size: .67em;
+		}
 	}
 }
 
@@ -173,6 +186,8 @@ header.site-header {
 
 	.tags {
 		a {
+			padding: 4px 1em;
+
 			&:first-child {
 				border-top-left-radius: 2px;
 				border-bottom-left-radius: 2px;
@@ -195,7 +210,6 @@ header.site-header {
 	display: inline;
 
 	a {
-		padding: 4px 1em;
 		font-size: .67em;
 		text-transform: uppercase;
 		color: #f9f9f9;
@@ -233,6 +247,12 @@ section h3{
 	margin: 2em 0;
 }
 
+@media(max-width: 1023px) {
+	.post-info {
+		margin-top: .5em;
+	}
+}
+
 @media(max-width: 768px) {
 	header.site-header {
 		padding: 5em 1.5em 5em 1.5em;
@@ -246,7 +266,6 @@ section h3{
 		padding: 1.5em!important;
 		margin: 1em 0!important;
 	}
-
 
 	section h3 {
 		padding: 0 1em;

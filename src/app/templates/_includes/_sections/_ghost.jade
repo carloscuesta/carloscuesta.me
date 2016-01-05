@@ -9,7 +9,7 @@ section.ghost
                     .row.middle-xs
                         .col-xs-12.col-md-6
                             a.post-title(href="/blog#{post.url}") #{post.title}
-                        .col-xs-12.col-md-6.end-md.start-xs
+                        .col-xs-12.col-md-6.end-md.start-xs.post-info
                             span.tags
                                 -each tag in post.tags
                                     a(class="#{tag.name}", href="/blog/tag/#{tag.name}") #{tag.name}

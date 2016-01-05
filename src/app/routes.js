@@ -25,7 +25,7 @@ exports.index = function(req, res) {
 		screen_name: 'crloscuesta',
 		count: 4,
 		exclude_replies: true,
-		include_rts: false
+		include_rts: true
 	});
 
 	var lastPosts = GhostApiClient.getLastPosts({
@@ -36,11 +36,12 @@ exports.index = function(req, res) {
 	});
 
 	Promise.all([ghUserCCStars, userTimeline, lastPosts]).then(function(data) {
+		var repos = GithubApiClient.parseRepos(data[0]);
 		var tweets = TwitterApiClient.parseTweets(data[1]);
 		var posts = GhostApiClient.parsePosts(data[2]);
 
 		res.render('views/index', {
-			githubData: data[0],
+			githubData: repos,
 			twitterData: tweets,
 			ghostData: posts,
 			me: staticData.me,
