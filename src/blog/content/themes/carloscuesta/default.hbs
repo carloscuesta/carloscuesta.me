@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+    <style></style>
+    {{ghost_head}}
+</head>
+<body class="{{body_class}} nav-closed">
+
+    {{navigation}}
+
+    <div class="site-wrapper">
+
+        {{! Everything else gets inserted here }}
+        {{{body}}}
+
+        <footer class="site-footer col-xs-12 center-xs">
+            <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+	<script>!function(){function d(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function e(){if(window.localStorage&&window.XMLHttpRequest)if(window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===c)f(localStorage.font_css_cache);else{var a=new XMLHttpRequest;a.open("GET",c,!0);d(a,"load",function(){4===a.readyState&&(f(a.responseText),localStorage.font_css_cache=a.responseText,localStorage.font_css_cache_file=c)});a.send()}else{var b=document.createElement("link");b.href=c;b.rel="stylesheet";b.type="text/css";document.getElementsByTagName("head")[0].appendChild(b);document.cookie="font_css_cache"}}function f(a){var b=document.createElement("style");b.innerHTML=a;document.getElementsByTagName("head")[0].appendChild(b)}var c="{{asset "css/font.css"}}";window.localStorage&&localStorage.font_css_cache||-1<document.cookie.indexOf("font_css_cache")?e():d(window,"load",e)}();</script>
+    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
+</body>
+</html>

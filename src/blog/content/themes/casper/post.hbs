@@ -22,6 +22,8 @@
             <h1 class="post-title">{{title}}</h1>
             <section class="post-meta">
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
+                	{{#if tags}}on {{tags}}{{/if}}
+    				<a href="{{url}}#disqus_thread">Comments</a>
             </section>
         </header>
 

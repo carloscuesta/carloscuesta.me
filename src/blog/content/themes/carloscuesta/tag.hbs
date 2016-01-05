@@ -1,0 +1,16 @@
+{{!< default}}
+
+<header class="tag-head {{tag.name}} center-xs">
+	<h1 class="tag-title {{tag.name}}">{{tag.name}}</h1>
+	<h2 class="tag-description">
+    	{{#if tag.description}}
+    	    {{tag.description}}
+    	{{else}}
+    	    A {{pagination.total}}-post collection
+    	{{/if}}
+    </h2>
+</header>
+
+<main class="content tag" role="main">
+    {{> "loop"}}
+</main>
