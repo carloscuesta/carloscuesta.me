@@ -3,6 +3,8 @@
 /* Normalize */
 img,legend{border:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body,figure{margin:0}a{background:0 0}a:focus{outline:dotted thin}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#FF0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
 
+/* GENERAL */
+
 html, body {
 	margin: 0;
     padding: 0;
@@ -52,9 +54,10 @@ a:hover {
 	transition: color .2s ease-in-out;
 }
 
-article.post {
+.post {
 	padding: 2.5em 1.5em;
 	border-bottom: 1px solid #eee;
+	word-wrap: break-word;
 }
 
 main {
@@ -69,11 +72,6 @@ main {
 
 header {
 	color: #f9f9f9;
-}
-
-header.tag-head {
-	background-color: #f9f9f9;
-	padding: 9.5em;
 }
 
 header.tag-head.personal, .tags .tag-personal {
@@ -124,7 +122,6 @@ header.tag-head.css, .tags .tag-css {
 	background-color:#128EF2;
 }
 
-
 article h2 a {
 	color: #1a1a1a;
 }
@@ -138,24 +135,8 @@ article .read-more {
 	font-size: 1em;
 }
 
-article .read-more:hover {
+article a.read-more:hover {
 	color: #64B5F6;
-}
-
-.tag-template {
-	background-color: #ffffff;
-}
-
-.tag-title {
-	text-transform: capitalize;
-}
-
-.tag-description {
-	font-weight: 300;
-}
-
-.tag-title.css {
-	text-transform: uppercase;
 }
 
 .tags {
@@ -216,6 +197,7 @@ article .date {
 	margin-top: .60em;
 }
 
+
 .pagination {
 	margin: 2.5em auto;
 	color: #9EABB3;
@@ -231,16 +213,23 @@ article .date {
 
 .site-footer .icon {
 	fill: rgba(255, 255, 255, 0.8);
+	padding: 0 .5em;
+	transition: fill .2s ease-in-out;
 	width: 1.25em;
 	height: 1.25em;
-	padding: 0 .5em
+}
+
+.icon {
+	width: 1em;
+	height: 1em;
 }
 
 .site-footer .icon:hover {
 	fill: #ffffff;
 	width: 1.25em;
 	height: 1.25em;
-	padding: 0 .5em
+	padding: 0 .5em;
+	transition: fill .2s ease-in-out;
 }
 
 .site-footer a {
@@ -248,8 +237,84 @@ article .date {
 }
 
 .site-footer a:hover {
-	color:;
+	color: #2196F3;
 }
+
+/* END GENERAL */
+
+/* TAG */
+
+header.tag-head {
+	background-color: #f9f9f9;
+	padding: 9.5em;
+}
+
+.tag-template {
+	background-color: #ffffff;
+}
+
+.tag-title {
+	text-transform: capitalize;
+}
+
+.tag-description {
+	font-weight: 300;
+}
+
+.tag-title.css {
+	text-transform: uppercase;
+}
+
+/* END TAG */
+
+/* AUTHOR TEMPLATE*/
+
+.author-image {
+	width: 125px;
+	height: 125px;
+}
+
+.author-image .img {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	border-radius: 100%;
+}
+
+.author-title {
+}
+
+.author-bio {
+	font-size: 1.4em;
+	font-weight: 300;
+	line-height: 1.25em;
+	text-indent: 0;
+	color: #50585D;
+}
+
+.icon-bio {
+	fill: #9EABB3;
+}
+
+.author-meta {
+	margin: 1em 0;
+	color: #9EABB3;
+}
+
+.author-meta a {
+	color: #9EABB3;
+}
+
+.author-meta a:hover {
+	color: #2196F3;
+}
+
+/* END AUTHOR TEMPLATE*/
+
+/* MEDIA QUERIES GENERAL */
 
 @media (max-width: 768px) {
 	header.tag-head {
@@ -278,3 +343,5 @@ article .date {
 		padding: 1.5em .5em;
 	}
 }
+
+/* END MEDIA QUERIES GENERAL */

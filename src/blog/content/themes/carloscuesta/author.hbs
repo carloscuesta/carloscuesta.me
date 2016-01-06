@@ -1,41 +1,38 @@
 {{!< default}}
-{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-{{! The big featured header }}
+<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs><symbol id="icon-link" viewBox="0 0 1024 1024"><title>link</title><path class="link" d="M725.333 42.667q50.333 0 97.167 19t83.833 56 56 83.833 19 97.167q0 50-19.167 97.167t-55.833 83.833l-128 128q-3.667 3.667-11 10.333-35.667 31.667-79.667 48.167t-90.333 16.5q-58.333 0-110.333-25-39-18.333-70.667-50t-50-70.667q25-25 60.333-25 12.333 0 25 3.667 21.667 35 56.667 56.667 41 25 89 25 33.333 0 64.667-12.667t56-37.333l128-128q24.667-24.667 37.333-56t12.667-64.667-12.667-64.667-37.333-56-56-37.333-64.667-12.667-64.667 12.667-56 37.333l-89.667 89.667q-42.667-11.667-88.333-11.667-7.333 0-20.667 0.667 6.667-7.333 10.333-11l128-128q36.667-36.667 83.833-55.833t97.167-19.167zM426.667 341.333q58.333 0 110.333 25 39 18.333 70.667 50t50 70.667q-25 25-60.333 25-12.333 0-25-3.667-21.667-35-56.667-56.667-41-25-89-25-33.333 0-64.667 12.667t-56 37.333l-128 128q-24.667 24.667-37.333 56t-12.667 64.667 12.667 64.667 37.333 56 56 37.333 64.667 12.667 64.667-12.667 56-37.333l89.667-89.667q42.667 11.667 88.333 11.667 7.333 0 20.667-0.667-6.667 7.333-10.333 11l-128 128q-37 37-83.833 56t-97.167 19q-50 0-97.167-19.167t-83.833-55.833q-37-37-56-83.833t-19-97.167 19-97.167 56-83.833l128-128q3.667-3.667 11-10.333 35.667-31.667 79.667-48.167t90.333-16.5z"></path></symbol><symbol id="icon-location" viewBox="0 0 640 1024"><title>location</title><path class="location" d="M320 0c-177 0-320 143-320 320s160 416 320 704c160-288 320-527 320-704s-143-320-320-320zM320 448c-71 0-128-57-128-128s57-128 128-128 128 57 128 128-57 128-128 128z"></path></symbol><symbol id="icon-note" viewBox="0 0 878 1024"><title>note</title><path class="note" d="M800 731.429h-141.714v141.714q16.571-5.714 23.429-12.571l105.714-105.714q6.857-6.857 12.571-23.429zM640 658.286h164.571v-512h-731.429v731.429h512v-164.571q0-22.857 16-38.857t38.857-16zM877.714 128v585.143q0 22.857-11.429 50.286t-27.429 43.429l-105.143 105.143q-16 16-43.429 27.429t-50.286 11.429h-585.143q-22.857 0-38.857-16t-16-38.857v-768q0-22.857 16-38.857t38.857-16h768q22.857 0 38.857 16t16 38.857z"></path></symbol></defs></svg>
 
-{{! Everything inside the #author tags pulls data from the author }}
 {{#author}}
+
     <header class="main-header author-head {{#if cover}}" style="background-image: url({{cover}}){{else}}no-cover{{/if}}">
         <nav class="main-nav overlay clearfix">
-            {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+            <!--{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}-->
             {{#if @blog.navigation}}
                 <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
             {{/if}}
         </nav>
     </header>
 
-    <section class="author-profile inner">
-        {{#if image}}
-        <figure class="author-image">
-            <div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
-        </figure>
-        {{/if}}
-        <h1 class="author-title">{{name}}</h1>
-        {{#if bio}}
-            <h2 class="author-bio">{{bio}}</h2>
-        {{/if}}
-        <div class="author-meta">
-            {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-            {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-            <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
-        </div>
-    </section>
+    <div class="wrap">
+    	<section class="row middle-xs center-xs author-profile inner">
+    	    {{#if image}}
+    	    <figure class="author-image">
+    	        <div class="img" style="background-image: url({{image}})"></div>
+    	    </figure>
+    	    {{/if}}
+    	    <h1 class="author-title col-xs-12">{{name}}</h1>
+    	    {{#if bio}}
+    	        <h2 class="author-bio col-xs-12">{{bio}}</h2>
+    	    {{/if}}
+    	    <div class="author-meta col-xs-12">
+    	        {{#if location}}<span class="author-location col-xs-4"><svg class="icon icon-bio icon-location"><use xlink:href="#icon-location"></use></svg> {{location}}</span>{{/if}}
+    	        {{#if website}}<span class="author-link col-xs-4"><svg class="icon icon-bio icon-link"><use xlink:href="#icon-link"></use></svg> <a href="{{website}}">{{website}}</a></span>{{/if}}
+    	        <span class="author-stats col-xs-4"><svg class="icon icon-bio icon-note"><use xlink:href="#icon-note"></use></svg> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+    	    </div>
+    	</section>
+    </div>
 {{/author}}
 
-{{! The main content area on the homepage }}
 <main class="content" role="main">
-
-    {{! The tag below includes the post loop - partials/loop.hbs }}
     {{> "loop"}}
-
 </main>
