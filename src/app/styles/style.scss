@@ -58,7 +58,7 @@ header.site-header {
 		width: 224px;
 	}
 
-	h3 {
+	h1 {
 		padding: 0;
 	}
 }
@@ -167,6 +167,7 @@ header.site-header {
 	.post-title {
 		font-size: 1.35em;
 		font-weight: 400;
+		line-height: 0;
 	}
 
 	h5 {
@@ -239,8 +240,10 @@ footer {
 	}
 }
 
-section h3{
+section h1{
 	padding: 0 1em;
+	font-size: 1.5em;
+	font-weight: 300;
 }
 
 .tweet, .repo, .post {
@@ -250,7 +253,7 @@ section h3{
 
 @media(max-width: 1023px) {
 	.post-info {
-		margin-top: .5em;
+		margin-top: .65em;
 	}
 }
 
@@ -268,7 +271,7 @@ section h3{
 		margin: 1em 0!important;
 	}
 
-	section h3 {
+	section h1 {
 		padding: 0 1em;
 	}
 

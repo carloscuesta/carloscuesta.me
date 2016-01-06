@@ -2,22 +2,35 @@
 <div class="wrap">
 	{{#foreach posts}}
 		<article class="col-xs-12 {{post_class}} post">
-		    <header>
-		        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+		    <header class="row">
+		    	<div class="col-xs-12 col-sm-8">
+		        	<h2 class="post-title">
+		        		<a href="{{url}}">{{{title}}}</a>
+		        	</h2>
+		        </div>
+		        <div class="col-xs-12 col-sm-4 end-sm start-xs date">
+		        	<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+		        </div>
 		    </header>
 		    <section class="post-excerpt">
-		        <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+		        <p>{{excerpt words="26"}} ...
+		    	<a class="read-more" href="{{url}}">&raquo;</a></p>
 		    </section>
-		    <footer class="post-meta">
-		        {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
-		        {{author}}
-		        {{tags prefix=" on "}}
-		        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+		    <footer class="post-meta row">
+		    	<div class="col-xs-4 col-md-3">
+		        	<span class="author">{{author}}</span>
+		        </div>
+		        <div class="col-xs-8 col-md-9 end-xs">
+		        	<span class="tags">
+		        		{{#foreach tags}}
+        					<a href="{{url}}" title="{{name}}" class="tag-{{name}}">{{name}}</a>
+    					{{/foreach}}
+    				</span>
+		        </div>
 		    </footer>
 		</article>
 	{{/foreach}}
-</div>
-
-<div class="pagination col-xs-12 center-xs">
-	{{pagination}}
+	<nav class="pagination col-xs-12 center-xs" role="navigation">
+		{{pagination}}
+	</nav>
 </div>
