@@ -138,6 +138,10 @@ article .read-more {
 	font-size: 1em;
 }
 
+article .read-more:hover {
+	color: #64B5F6;
+}
+
 .tag-template {
 	background-color: #ffffff;
 }
