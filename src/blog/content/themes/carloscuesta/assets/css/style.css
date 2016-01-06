@@ -196,10 +196,6 @@ article .read-more {
 	color: #64B5F6;
 }
 
-article footer {
-	color:#9EABB3;
-}
-
 time {
 	font-size: .67em;
 	border-radius: 2px;
@@ -223,10 +219,32 @@ article .date {
 	font-weight: 400;
 }
 
-footer.site-footer {
+.site-footer {
 	background-color: #232323;
 	color: #f9f9f9;
 	padding: 2em;
+}
+
+.site-footer .icon {
+	fill: rgba(255, 255, 255, 0.8);
+	width: 1.25em;
+	height: 1.25em;
+	padding: 0 .5em
+}
+
+.site-footer .icon:hover {
+	fill: #ffffff;
+	width: 1.25em;
+	height: 1.25em;
+	padding: 0 .5em
+}
+
+.site-footer a {
+	color: #f9f9f9;
+}
+
+.site-footer a:hover {
+	color:;
 }
 
 @media (max-width: 768px) {
