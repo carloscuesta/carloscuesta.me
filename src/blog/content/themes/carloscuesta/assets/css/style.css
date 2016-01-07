@@ -253,6 +253,23 @@ article .date {
 
 /* END GENERAL */
 
+/* INDEX */
+
+.home-template .main-header {
+	background-color: #2196F3;
+	min-height: 50vh;
+}
+
+.home-template {
+	overflow-x: hidden;
+}
+
+.header-info {
+	padding: 1.5em;
+}
+
+/* END INDEX */
+
 /* TAG */
 
 header.tag-head {
@@ -297,9 +314,6 @@ header.tag-head {
 	background-size: cover;
 	background-position: center center;
 	border-radius: 100%;
-}
-
-.author-title {
 }
 
 .author-profile {

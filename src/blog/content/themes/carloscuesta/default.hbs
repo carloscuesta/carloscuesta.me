@@ -23,35 +23,30 @@
 
     {{navigation}}
 
-    <div class="site-wrapper">
+    {{{body}}}
 
-        {{! Everything else gets inserted here }}
-        {{{body}}}
-
-		<footer class="site-footer center-xs">
-			<h3>
-        		<a href="{{@blog.url}}">{{@blog.title}}</a>
-			</h3>
-		    <div class="social">
-		        <a href="https://twitter.com/crloscuesta">
-		            <svg class="icon icon-linkedin">
-		                <use xlink:href="#icon-twitter"></use>
-		            </svg>
-		        </a>
-		        <a href="https://github.com/carloscuesta">
-		            <svg class="icon icon-github">
-		                <use xlink:href="#icon-github"></use>
-		            </svg>
-		        </a>
-		        <a href="https://es.linkedin.com/in/crloscuesta">
-		            <svg class="icon icon-linkedin">
-		                <use xlink:href="#icon-linkedin"></use>
-		            </svg>
-		        </a>
-		    </div>
-		</footer>
-
-    </div>
+	<footer class="site-footer center-xs">
+		<h3>
+    		<a href="{{@blog.url}}">{{@blog.title}}</a>
+		</h3>
+	    <div class="social">
+	        <a href="https://twitter.com/crloscuesta">
+	            <svg class="icon icon-linkedin">
+	                <use xlink:href="#icon-twitter"></use>
+	            </svg>
+	        </a>
+	        <a href="https://github.com/carloscuesta">
+	            <svg class="icon icon-github">
+	                <use xlink:href="#icon-github"></use>
+	            </svg>
+	        </a>
+	        <a href="https://es.linkedin.com/in/crloscuesta">
+	            <svg class="icon icon-linkedin">
+	                <use xlink:href="#icon-linkedin"></use>
+	            </svg>
+	        </a>
+	    </div>
+	</footer>
 
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
