@@ -329,6 +329,10 @@ header.tag-head {
 	color: #9EABB3;
 }
 
+.author-location, .author-link, .author-stats {
+	padding: .5em;
+}
+
 .author-meta a:hover {
 	color: #2196F3;
 }
@@ -353,11 +357,19 @@ header.tag-head {
 	.main-header {
 		min-height: 20vh;
 	}
+
+	.author-title {
+		font-size: 2.25em;
+	}
+
+	.author-bio {
+		font-size: 1em;
+	}
 }
 
 @media (max-width: 568px) {
 	header.tag-head {
-		padding: 5em;
+		padding: 1.75em;
 	}
 
 	article footer {
@@ -366,6 +378,11 @@ header.tag-head {
 
 	article.post {
 		padding: 1.5em .5em;
+	}
+
+	.author-location, .author-link, .author-stats {
+		display: block;
+		padding: 0;
 	}
 }
 

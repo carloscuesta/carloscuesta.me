@@ -24,10 +24,10 @@
     	    {{#if bio}}
     	        <h2 class="author-bio col-xs-12">{{bio}}</h2>
     	    {{/if}}
-    	    <div class="author-meta col-xs-12">
-    	        {{#if location}}<span class="author-location col-xs-4"><svg class="icon icon-bio icon-location"><use xlink:href="#icon-location"></use></svg> {{location}}</span>{{/if}}
-    	        {{#if website}}<span class="author-link col-xs-4"><svg class="icon icon-bio icon-link"><use xlink:href="#icon-link"></use></svg> <a href="{{website}}">{{website}}</a></span>{{/if}}
-    	        <span class="author-stats col-xs-4"><svg class="icon icon-bio icon-note"><use xlink:href="#icon-note"></use></svg> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+    	    <div class="author-meta">
+    	        {{#if location}}<span class="author-location"><svg class="icon icon-bio icon-location"><use xlink:href="#icon-location"></use></svg> {{location}}</span>{{/if}}
+    	        {{#if website}}<span class="author-link"><svg class="icon icon-bio icon-link"><use xlink:href="#icon-link"></use></svg> <a href="{{website}}">{{website}}</a></span>{{/if}}
+    	        <span class="author-stats"><svg class="icon icon-bio icon-note"><use xlink:href="#icon-note"></use></svg> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
     	    </div>
     	</section>
     </div>
