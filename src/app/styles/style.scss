@@ -284,4 +284,8 @@ section h1{
 	section h1, .tweet, .repo, .post {
 		padding: 0!important;
 	}
+
+	.github .tags {
+		display: none!important;
+	}
 }

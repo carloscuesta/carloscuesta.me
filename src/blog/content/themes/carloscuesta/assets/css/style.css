@@ -74,6 +74,13 @@ header {
 	color: #f9f9f9;
 }
 
+.main-header {
+	background-repeat:  no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 40vh;
+}
+
 header.tag-head.personal, .tags .tag-personal {
 	background-color: #EC407A;
 }
@@ -137,6 +144,10 @@ article .read-more {
 
 article a.read-more:hover {
 	color: #64B5F6;
+}
+
+.post-title {
+	font-weight: 700;
 }
 
 .tags {
@@ -274,8 +285,12 @@ header.tag-head {
 	height: 125px;
 }
 
+.author-image {
+	border: 4px solid #fff;
+	border-radius: 50%;
+}
+
 .author-image .img {
-	position: relative;
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -287,12 +302,18 @@ header.tag-head {
 .author-title {
 }
 
+.author-profile {
+	border-bottom: 1px solid #eee;
+	margin-top: -75px;
+}
+
 .author-bio {
 	font-size: 1.4em;
 	font-weight: 300;
-	line-height: 1.25em;
+	line-height: 1.35em;
 	text-indent: 0;
 	color: #50585D;
+	padding: .5em 1em;
 }
 
 .icon-bio {
@@ -300,7 +321,7 @@ header.tag-head {
 }
 
 .author-meta {
-	margin: 1em 0;
+	margin: 0 0 2em 0;
 	color: #9EABB3;
 }
 
@@ -327,6 +348,10 @@ header.tag-head {
 
 	html, body {
 		font-size: 18px;
+	}
+
+	.main-header {
+		min-height: 20vh;
 	}
 }
 
