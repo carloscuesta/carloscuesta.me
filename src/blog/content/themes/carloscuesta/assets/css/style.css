@@ -148,6 +148,7 @@ article a.read-more:hover {
 
 .post-title {
 	font-weight: 700;
+	color: #1a1a1a;
 }
 
 .tags {
@@ -274,7 +275,7 @@ article .date {
 
 header.tag-head {
 	background-color: #f9f9f9;
-	padding: 9.5em;
+	padding: 6em;
 }
 
 .tag-template {
@@ -383,7 +384,7 @@ header.tag-head {
 
 @media (max-width: 568px) {
 	header.tag-head {
-		padding: 1.75em;
+		padding: 2em;
 	}
 
 	article footer {
