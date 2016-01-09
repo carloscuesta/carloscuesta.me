@@ -12,9 +12,9 @@
 </header>
 <div class="wrap">
 <main class="content" role="main">
-    <article class="{{post_class}} row">
+    <article class="{{post_class}}">
 
-        <header class="post-header">
+        <header class="post-header row">
             <h1 class="post-title col-xs-12">{{title}}</h1>
             <section class="post-meta col-xs-12">
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
@@ -29,54 +29,46 @@
             </section>
         </header>
 
-        <section class="post-content col-xs-12">
+        <section class="post-content row col-xs-12">
             {{content}}
         </section>
 
-        <footer class="post-footer col-xs-12">
+        <footer class="post-footer row">
 
         {{#author}}
 
-            {{#if image}}
-            <figure class="author-image">
-                <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
-            </figure>
-            {{/if}}
-
-            <section class="author">
-                <h4><a href="{{url}}">{{name}}</a></h4>
+            <section class="author col-xs-12 col-sm-8">
+                <h3><a href="{{url}}">{{name}}</a></h3>
 
                 {{#if bio}}
                     <p>{{bio}}</p>
                 {{else}}
                     <p>Read <a href="{{url}}">more posts</a> by this author.</p>
                 {{/if}}
-                <div class="author-meta">
-                    {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                    {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-                </div>
             </section>
 
         {{/author}}
 
-            <section class="share">
-                <h4>Share this post</h4>
-                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+            <section class="share col-xs-12 col-sm-4 center-sm">
+                <h3>Share this post</h3>
+                <a href="https://twitter.com/intent/tweet?text={{encode title}}+by+@crloscuesta&amp;url={{url absolute="true"}}"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <svg class="icon icon-twitter">
+	                	<use xlink:href="#icon-twitter"></use>
+	            	</svg>
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <span class="hidden">Facebook</span>
-                </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <span class="hidden">Google+</span>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;title={{encode title}}&amp;url={{url absolute="true"}}&amp;source=http://carloscuesta.me"
+                   onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;">
+                   <svg class="icon icon-linkedin">
+	                	<use xlink:href="#icon-linkedin"></use>
+	            	</svg>
+                    <span class="hidden">LinkedIn</span>
                 </a>
             </section>
 
         </footer>
-    	<div id="disqus_thread" class="col-xs-12"></div>
+    	<div id="disqus_thread" class="disqus-comments col-xs-12"></div>
     </article>
 </main>
 
