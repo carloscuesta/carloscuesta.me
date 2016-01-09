@@ -12,12 +12,12 @@
 </header>
 <div class="wrap">
 <main class="content" role="main">
-    <article class="{{post_class}}">
+    <article class="{{post_class}} row">
 
-        <header class="post-header row">
+        <header class="post-header">
             <h1 class="post-title col-xs-12">{{title}}</h1>
-            <section class="post-meta">
-                <time class="post-date " datetime="{{date format='YYYY-MM-DD'}}">
+            <section class="post-meta col-xs-12">
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
                 	{{date format="DD MMMM YYYY"}}
                 </time>{{#if tags}}
                 	<span class="tags">
@@ -25,15 +25,15 @@
         					<a href="{{url}}" title="{{name}}" class="tag-{{name}}">{{name}}</a>
     					{{/foreach}}
     				</span>{{/if}}
-    				<a href="{{url}}#disqus_thread">Comments</a>
+    				<a class="post-comments" href="{{url}}#disqus_thread">Comments</a>
             </section>
         </header>
 
-        <section class="post-content">
+        <section class="post-content col-xs-12">
             {{content}}
         </section>
 
-        <footer class="post-footer">
+        <footer class="post-footer col-xs-12">
 
         {{#author}}
 
@@ -76,7 +76,7 @@
             </section>
 
         </footer>
-    <div id="disqus_thread"></div>
+    	<div id="disqus_thread" class="col-xs-12"></div>
     </article>
 </main>
 

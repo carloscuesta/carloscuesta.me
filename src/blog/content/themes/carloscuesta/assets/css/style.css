@@ -196,9 +196,8 @@ article a.read-more:hover {
 time {
 	font-size: .67em;
 	border-radius: 2px;
-	color: $accent;
-	border: 1px solid #2196F3;
 	color: #2196F3;
+	border: 1px solid #2196F3;
 	padding: 3px 1em;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -353,6 +352,36 @@ header.tag-head {
 }
 
 /* END AUTHOR TEMPLATE*/
+
+/* POST */
+
+.post-meta .post-date {
+	margin-right: .5em;
+}
+
+.post-comments {
+	font-size: .67em;
+	border-radius: 2px;
+	border: 1px solid #9EABB3;
+	color: #9EABB3;
+	padding: 3px 1em;
+	text-transform: uppercase;
+	font-weight: 400;
+	white-space: nowrap;
+}
+
+.post-comments:hover {
+	color:#2f3335;
+}
+
+.post-content {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #eee;
+	font-size: 1.15em;
+}
+
+/* END POST */
 
 /* MEDIA QUERIES GENERAL */
 
