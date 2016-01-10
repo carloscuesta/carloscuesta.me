@@ -75,7 +75,7 @@
 </div>
 <aside class="read-next">
     {{#next_post}}
-    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+    <a class="read-next-story prev center-xs {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>
@@ -83,8 +83,8 @@
     </a>
     {{/next_post}}
     {{#prev_post}}
-    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post"
+    <a class="read-next-story center-xs {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+        <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>
         </section>
