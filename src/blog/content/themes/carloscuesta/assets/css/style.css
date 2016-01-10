@@ -392,11 +392,6 @@ header.no-cover {
 	border-bottom: 1px solid #eee;
 }
 
-.disqus-comments {
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
-}
-
 .post-content a {
 	color: #2196F3;
 }
@@ -650,35 +645,33 @@ iframe, .fluid-width-video-wrapper {
     position: relative;
     text-align: center;
     color: #fff;
-    background: #222 no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
-.read-next-story:hover:before {
-    background: rgba(0,0,0,0.8);
-    transition: all 0.2s ease;
-}
-.read-next-story:hover .post:before {
-    color: #222;
-    background: #fff;
-    transition: all 0.2s ease;
+
+.read-next-story.next {
+    background: #fd5c63;
 }
 
-.read-next-story:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.7);
-    transition: all .2s ease;
+.read-next-story.next,.read-next-story.next:hover,.read-next-story.prev,.read-next-story.prev:hover {
+    transition: background-color .2s ease-in-out;
+}
+
+.read-next-story.next:hover {
+	background-color: #e35259;
+}
+
+.read-next-story.prev {
+    background: #00bce4;
+}
+
+.read-next-story.prev:hover {
+	background-color: #00a9cd;
 }
 
 .read-next-story .post {
-    padding-top: 6em;
-    padding-bottom: 6em;
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 
 .read-next-story .post:before {
@@ -705,35 +698,23 @@ iframe, .fluid-width-video-wrapper {
     color: rgba(255,255,255,0.8);
 }
 
-.read-next-story.no-cover {
-    background: #f5f8fa;
+.read-next-story.next.no-cover {
+    background: #fd5c63;
+}
+
+.read-next-story.prev.no-cover {
+    background: #00bce4;
 }
 
 .read-next-story.no-cover:before {
     display: none;
 }
 
-.read-next-story.no-cover .post:before {
-    color: rgba(0,0,0,0.5);
-    border-color: rgba(0,0,0,0.2);
-}
-
-.read-next-story.no-cover h2 {
-    color: rgba(0,0,0,0.8);
-}
-
-.read-next-story.no-cover p {
-    color: rgba(0,0,0,0.5);
-}
-
-.read-next-story.no-cover + .read-next-story.no-cover {
-    border-left: rgba(0,0,100,0.04) 1px solid;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 /* END POST */
+
+.page-description {
+	font-weight: 300;
+}
 
 /* MEDIA QUERIES GENERAL */
 
