@@ -32,9 +32,6 @@
 
 header.site-header {
 	background-color: $accent;
-	/*background: linear-gradient(rgba(33, 150, 243, 0.8), rgba(33, 150, 243, 0.8)),
-        url("../img/header.jpg") center center;
-	background-size: cover;*/
 	color: $white;
 	padding: 9.5em;
 
@@ -167,7 +164,7 @@ header.site-header {
 	.post-title {
 		font-size: 1.35em;
 		font-weight: 400;
-		line-height: 0;
+		line-height: 1.15;
 	}
 
 	h5 {
@@ -184,6 +181,7 @@ header.site-header {
 		text-transform: uppercase;
 		font-weight: 400;
 		white-space: nowrap;
+		margin-right: .5em;
 	}
 
 	.tags {
@@ -251,10 +249,8 @@ section h1{
 	margin: 2em 0;
 }
 
-@media(max-width: 1023px) {
-	.post-info {
-		margin-top: .65em;
-	}
+.post-info {
+	margin-top: .5em;
 }
 
 @media(max-width: 768px) {

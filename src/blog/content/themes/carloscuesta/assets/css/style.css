@@ -434,8 +434,18 @@ header.no-cover {
 	max-width: 100%
 }
 
+.post h1 {
+    font-size: 3.5em;
+}
+
+article.post h2, article.post h3, article.post h4, article.post h5 {
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
 article .post-meta {
-	padding-bottom: 2.5em;
+	padding-bottom: .15em;
+	padding-top: .65em
 }
 
 .share h3 {

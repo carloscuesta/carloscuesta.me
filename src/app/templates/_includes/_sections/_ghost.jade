@@ -7,13 +7,13 @@ section.ghost
             -each post in ghostData.posts
                 article.post.col-xs-12.col-sm-6
                     .row.middle-xs
-                        header.col-xs-12.col-md-6
+                        header.col-xs-12
                             h2.post-title
                                 a(href="/blog#{post.url}") #{post.title}
-                        .col-xs-12.col-md-6.end-md.start-xs.post-info
+                        .col-xs-12.post-info
+                            time(datetime="#{post.published_at}") #{post.published_at}
                             span.tags
                                 -each tag in post.tags
                                     a(class="#{tag.name}", href="/blog/tag/#{tag.name}") #{tag.name}
-                            time(datetime="#{post.published_at}") #{post.published_at}
                     p #{post.html}
                     a.read-more(href="/blog#{post.url}") Read more
