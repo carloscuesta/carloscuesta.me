@@ -13,7 +13,7 @@ html, body {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
-    color: $text;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -48,6 +48,29 @@ h1, h2, h3,  h4, h5, h6 {
 a {
 	text-decoration: none;
 	transition: color .2s ease-in-out;
+}
+
+nav.nav {
+	padding: 1em 2em;
+	background-color: #232323;
+}
+
+.nav a {
+	color: #ffffff;
+}
+
+.nav a:hover {
+	color: #2196F3;
+}
+
+.item {
+	padding: .5em;
+	font-size: 1.15em;
+}
+
+nav h3 {
+	padding: 0;
+	margin: 0;
 }
 
 strong, b {
@@ -745,6 +768,10 @@ iframe, .fluid-width-video-wrapper {
 
 	.author-bio {
 		font-size: 1em;
+	}
+
+	.nav-items {
+		padding-top: .5em;
 	}
 }
 

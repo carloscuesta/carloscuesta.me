@@ -1,13 +1,12 @@
-<div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
-        {{#foreach navigation}}
-            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
-        {{/foreach}}
-    </ul>
-    <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-</div>
+<nav class="nav row middle-xs">
+    <h3 class="col-xs-12 col-sm-4 col-md-3 nav-title center-xs start-sm">
+    	<a href="http://carloscuesta.me">Carlos Cuesta</a>
+    </h3>
+    <div class="col-xs-12 col-sm-8 col-md-9 center-xs end-sm nav-items">
+    	{{#foreach navigation}}
+    	    <span class="item nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></span>
+    	{{/foreach}}
+        <a class="item subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+    </div>
+</nav>
 <span class="nav-cover"></span>
