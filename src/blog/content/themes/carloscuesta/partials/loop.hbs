@@ -1,33 +1,26 @@
-{{! This is the post loop - each post will be output using this markup }}
 <div class="wrap">
 	{{#foreach posts}}
 		<article class="col-xs-12 {{post_class}} post">
 		    <header class="row">
-		    	<div class="col-xs-12 col-sm-8">
-		        	<h2 class="post-title">
+		    	<div class="col-xs-12">
+		        	<h2 class="post-title preview">
 		        		<a href="{{url}}">{{{title}}}</a>
 		        	</h2>
 		        </div>
-		        <div class="col-xs-12 col-sm-4 end-sm start-xs date">
+		        <div class="col-xs-12 post-info">
 		        	<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+		        	<span class="tags">
+		        		{{#foreach tags}}
+        					<a href="{{url}}" title="{{name}}" class="tag-{{name}}">{{name}}</a>
+    					{{/foreach}}
+    				</span>
+		        	<span class="author">{{author}}</span>
 		        </div>
 		    </header>
 		    <section class="post-excerpt">
 		        <p>{{excerpt words="26"}} ...
 		    	<a class="read-more" href="{{url}}"> Read more &raquo;</a></p>
 		    </section>
-		    <footer class="post-meta row">
-		    	<div class="col-xs-4 col-md-3">
-		        	<span class="author">{{author}}</span>
-		        </div>
-		        <div class="col-xs-8 col-md-9 end-xs">
-		        	<span class="tags">
-		        		{{#foreach tags}}
-        					<a href="{{url}}" title="{{name}}" class="tag-{{name}}">{{name}}</a>
-    					{{/foreach}}
-    				</span>
-		        </div>
-		    </footer>
 		</article>
 	{{/foreach}}
 	<nav class="pagination col-xs-12 center-xs" role="navigation">

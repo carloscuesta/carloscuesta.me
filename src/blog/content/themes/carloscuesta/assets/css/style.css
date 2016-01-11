@@ -59,7 +59,7 @@ a:hover {
 }
 
 .post {
-	padding-top: 2.5em;
+	padding-top: 1.5em;
 	border-bottom: 1px solid #eee;
 	word-wrap: break-word;
 }
@@ -159,6 +159,10 @@ article a.read-more:hover {
 	color: #1a1a1a;
 }
 
+.post-title.preview {
+	margin-bottom: .25em;
+}
+
 .tags {
 	display: inline;
 }
@@ -190,17 +194,6 @@ article a.read-more:hover {
 	border-bottom-right-radius: 2px;
 }
 
-.post-meta .author a {
-	color: #2196F3;
-	text-transform: uppercase;
-	font-size: .76em;
-	font-weight: 400;
-}
-
-.author a:hover {
-	color: #64B5F6;
-}
-
 time {
 	font-size: .67em;
 	border-radius: 2px;
@@ -216,6 +209,9 @@ article .date {
 	margin-top: .60em;
 }
 
+.post-info {
+	margin-bottom: 1em;
+}
 
 .pagination {
 	margin: 2.5em auto;
@@ -371,7 +367,7 @@ header.no-cover {
 	display: none;
 }
 
-.post-comments {
+.post-comments , .post-info .author a{
 	font-size: .67em;
 	border-radius: 2px;
 	border: 1px solid #9EABB3;
@@ -410,7 +406,7 @@ header.no-cover {
 	font-size: 14px;
 }
 
-.post-footer h3, .post-footer .author a {
+.post-footer h3, .post-footer .author a, .post-info .author a:hover {
 	color: #1a1a1a;
 }
 
@@ -438,7 +434,7 @@ header.no-cover {
     font-size: 3.5em;
 }
 
-article.post h2, article.post h3, article.post h4, article.post h5 {
+.post-template article.post h2, .post-template .post-template article.post h3, .post-template article.post h4, .post-template article.post h5 {
     font-weight: 700;
     margin-bottom: 1em;
 }
@@ -634,11 +630,8 @@ iframe, .fluid-width-video-wrapper {
     margin: 0;
 }
 
-
 .read-next {
-
     display: flex;
-
 }
 
 .read-next-story {
@@ -680,8 +673,8 @@ iframe, .fluid-width-video-wrapper {
 }
 
 .read-next-story .post {
-    padding-top: 4em;
-    padding-bottom: 4em;
+	max-width: 710px;
+    padding: 4em 2em;
 }
 
 .read-next-story .post:before {
@@ -760,15 +753,27 @@ iframe, .fluid-width-video-wrapper {
 		padding: 2em;
 	}
 
+	header {
+		font-size: 14px;
+	}
+
+	html,body {
+		font-size: 15px;
+	}
+
 	.main-header {
 		min-height: 20vh;
+	}
+
+	h1.post-title, h2.post-title {
+		font-size: 2em;
 	}
 
 	.read-next {
 		display: block;
 	}
 
-	article footer.post-meta, .post-template .post-meta {
+	article footer.post-meta, .post-template .post-meta, .post-info {
 		display: none!important;
 	}
 
@@ -783,11 +788,6 @@ iframe, .fluid-width-video-wrapper {
 
 	.share h3 {
 		margin-bottom: .75em;
-	}
-
-	.read-next-story .post {
-    	padding-top: 4em;
-    	padding-bottom: 4em;
 	}
 
 	.read-next {
