@@ -42,6 +42,22 @@ header.site-header {
 	}
 }
 
+nav.nav {
+	padding: 1em 2.5em;
+
+	h3 {
+		margin: 0;
+		padding: 0;
+	}
+
+	.item {
+		padding: .5em;
+		font-size: 1.15em;
+	}
+
+	background-color: #eee;
+}
+
 .heart {
 	color: $pink;
 }

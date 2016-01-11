@@ -1,0 +1,7 @@
+nav.nav.row.middle-xs
+    h3.nav-title.col-xs-12.col-sm-4.col-md-3.start-sm.center-xs
+        a(href="http://carloscuesta.me") Carlos Cuesta
+    .nav-items.col-xs-12.col-sm-8.col-md-9.center-xs.end-sm
+        -each item in site.menu
+            span.item #[a(href='http://carloscuesta.me/#{item}') #{item}]
+        span.item #[a(href='mailto:crloscuesta@gmail.com?subject=Hi! I saw your web') Contact]

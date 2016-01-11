@@ -19,7 +19,7 @@ var staticData = {
 	site: {
 		title: 'Carlos Cuesta | Front End Developer',
 		description: 'Carlos Cuesta, Front End developer based in Barcelona, Spain. Coding addicted that enjoys building things with code, I like design, tecnhology and OpenSource.',
-		keywords: ''
+		menu: ['Home', 'Blog']
 	}
 };
 
