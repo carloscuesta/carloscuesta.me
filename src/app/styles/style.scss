@@ -2,6 +2,7 @@
 @import './_partials/_defaults.scss';
 @import './_partials/_flexbox.scss';
 @import './_partials/_mixins.scss';
+@import './_partials/_button.scss';
 
 .wrap {
 	max-width: 1140px;
@@ -43,19 +44,24 @@ header.site-header {
 }
 
 nav.nav {
-	padding: 1em 2.5em;
+	.navigation {
+	    position: absolute;
+    	left: 0%;
+    	width: 100%;
+    	top: 40%;
+	}
 
-	h3 {
+	ul, li {
 		margin: 0;
 		padding: 0;
 	}
 
 	.item {
-		padding: .5em;
-		font-size: 1.15em;
+		text-transform: capitalize;
+		font-size: 3em;
+		list-style: none;
+		font-weight: 400;
 	}
-
-	background-color: #eee;
 }
 
 .heart {
