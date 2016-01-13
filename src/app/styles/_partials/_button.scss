@@ -23,7 +23,7 @@
     	left: 18px;
     	right: 18px;
     	height: 8px;
-    	background: white;
+    	background: #fff;
 
     	&::before, &::after {
     		position: absolute;
@@ -50,7 +50,8 @@
 }
 
 .c-hamburger--htx {
-    background-color: #1a1a1a;
+    left: auto;
+    right: 30px;
 
     span {
 	    transition: background 0s 0.3s;
@@ -71,7 +72,6 @@
 }
 
 .c-hamburger__input:checked + .c-hamburger--htx {
-    background-color: #262626;
 
     span {
     	background: none;
