@@ -1,12 +1,10 @@
 {{!< default}}
 
-<header class="row middle-xs center-xs main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
-    <!--<nav class="main-nav overlay clearfix">
-        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-    </nav>-->
+<header class="row middle-xs center-xs main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{/if}}">
     <div class="header-info">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         <h1 class="page-title col-xs-12">{{@blog.title}}</h1>
-        <h2 class="page-description col-xs-12">{{@blog.description}}</h2>
+        <h3 class="page-description col-xs-12">{{@blog.description}}</h3>
     </div>
 </header>
 

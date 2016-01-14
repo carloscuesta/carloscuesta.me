@@ -114,7 +114,14 @@ header {
 	background-repeat:  no-repeat;
 	background-position: center center;
 	background-size: cover;
+	padding: 2.5em;
 	min-height: 40vh;
+}
+
+.blog-logo img {
+	border-radius: 50%;
+	width: 140px;
+	height: 140px;
 }
 
 header.tag-head.personal, .tags .tag-personal {
@@ -170,7 +177,7 @@ header.tag-head.css, .tags .tag-css {
 }
 
 article h2 a {
-	color: #1a1a1a;
+	color: #32353C;
 }
 
 article h2 a:hover {
@@ -188,7 +195,11 @@ article a.read-more:hover {
 
 .post-title {
 	font-weight: 700;
-	color: #1a1a1a;
+	color: #32353C;
+}
+
+.post-excerpt {
+	color: #32353C;
 }
 
 .post-title.preview {
@@ -439,7 +450,7 @@ header.no-cover {
 }
 
 .post-footer h3, .post-footer .author a, .post-info .author a:hover {
-	color: #1a1a1a;
+	color: #3F404B;
 }
 
 .post-footer .author a:hover {
@@ -448,11 +459,13 @@ header.no-cover {
 
 .post-template .post {
 	border: none;
+	color: #3F404B;
 }
 
 .post .icon {
 	width: 1.5em;
 	height: 1.5em;
+	fill: #3F404B;
 }
 
 .post img {
@@ -815,6 +828,10 @@ iframe, .fluid-width-video-wrapper {
 
 	article.post {
 		padding-top: 1.5em .5em;
+	}
+
+	.blog-logo {
+		display: none;
 	}
 
 	.author-location, .author-link, .author-stats {
