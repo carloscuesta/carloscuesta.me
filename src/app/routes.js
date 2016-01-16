@@ -47,7 +47,7 @@ exports.index = function(req, res) {
 			me: staticData.me,
 			site: staticData.site,
 			social: staticData.social,
-			cache: false
+			cache: true
 		});
 	});
 };

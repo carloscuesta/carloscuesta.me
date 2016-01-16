@@ -1,8 +1,14 @@
 section.github
     .wrap
         .row
-            .col-xs-12.title
+            .col-xs-12.col-sm-9.title
                 h1 I'm #[a(href='https://github.com/carloscuesta') @carloscuesta] on github.
+            .col-xs-12.col-sm-3.end-sm.follow-me
+                a(href="https://github.com/carloscuesta", target="_blank").follow-btn
+                    span.github.end-xs
+                        svg.icon.icon-github
+                            use(xlink:href="#icon-github")
+                        span Follow @carloscuesta
             -each github in githubData.items
                 article.repo.col-xs-12.col-sm-6.col-md-4
                     .row

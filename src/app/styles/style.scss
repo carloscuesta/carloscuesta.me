@@ -68,6 +68,49 @@ nav.nav {
 	color: $pink;
 }
 
+.follow-btn {
+	font-size: 0.80em;
+	font-weight: 400;
+
+	.twitter {
+
+		background-color: #1b95e0;
+		padding: .25em;
+		border-radius: 2px;
+		border: 1px solid #55acee;
+		transition: background .2s ease-in-out;
+
+		.icon-twitter {
+			fill: $white;
+			font-size: 18px;
+			margin-bottom: -3px;
+		}
+
+		&:hover {
+			background-color: #1886c9;
+		}
+	}
+
+	.github {
+	    background-color: #fcfcfc;
+		padding: .25em;
+		border-radius: 2px;
+		border: 1px solid #d5d5d5;
+		transition: background .2s ease-in-out;
+
+		.icon-github {
+			fill:$blacksection;
+			font-size: 18px;
+			margin-bottom: -3px;
+		}
+
+		&:hover {
+			background-color: #eee;
+			transition: background .2s ease-in-out;
+		}
+	}
+}
+
 .aboutme {
 	.bio {
 		padding: 1em 0.5em;
@@ -296,6 +339,10 @@ section h1{
 	.col-xs-12.title {
 		padding: 0;
 	}
+
+	.follow-me {
+		padding: .5em 1.5em;
+	}
 }
 
 @media(max-width: 468px) {
@@ -305,5 +352,9 @@ section h1{
 
 	.github .tags {
 		display: none!important;
+	}
+
+	.follow-me {
+		padding: .5em 0;
 	}
 }
