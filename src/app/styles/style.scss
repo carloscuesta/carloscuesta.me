@@ -71,6 +71,8 @@ nav.nav {
 			display: block;
 			height: 100px;
 			line-height: 100px;
+			transition: all 400ms cubic-bezier(.17,.67,.38,1.46);
+    		transform: scale(0.3);
 		}
 		&:hover a {
 			color: $white!important;
