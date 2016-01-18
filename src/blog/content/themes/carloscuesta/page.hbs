@@ -1,28 +1,36 @@
 {{!< default}}
 
-{{! This is a page template. A page outputs content just like any other post, and has all the same
-    attributes by default, but you can also customise it to behave differently if you prefer. }}
-
-{{! Everything inside the #post tags pulls data from the page }}
 {{#post}}
 
 <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
-        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        <!--{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}-->
     </nav>
 </header>
-
+<div class="wrap">
 <main class="content" role="main">
     <article class="{{post_class}}">
-
-        <header class="post-header">
-            <h1 class="post-title">{{title}}</h1>
+        <header class="post-header row">
+            <h1 class="post-title col-xs-12">{{title}}</h1>
+            <section class="post-meta col-xs-12">
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+                	{{date format="DD MMMM YYYY"}}
+                </time>{{#if tags}}
+                	<span class="tags">
+		        		{{#foreach tags}}
+        					<a href="{{url}}" title="{{name}}" class="tag-{{name}}">{{name}}</a>
+    					{{/foreach}}
+    				</span>{{/if}}
+    				<a class="post-comments" href="{{url}}#disqus_thread">Comments</a>
+            </section>
         </header>
 
-        <section class="post-content">
+        <section class="post-content row col-xs-12">
             {{content}}
         </section>
-
     </article>
 </main>
+
+</div>
+
 {{/post}}

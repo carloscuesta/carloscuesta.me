@@ -45,10 +45,15 @@ header.site-header {
 
 nav.nav {
 	.navigation {
-	    position: absolute;
-    	left: 0%;
-    	width: 100%;
-    	top: 40%;
+		position: absolute;
+		left: 0%;
+		width: 100%;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateY(-50%);
 	}
 
 	ul, li {
@@ -61,6 +66,19 @@ nav.nav {
 		font-size: 3em;
 		list-style: none;
 		font-weight: 400;
+		transition: all .2s ease-in-out;
+		a {
+			display: block;
+			height: 100px;
+			line-height: 100px;
+		}
+		&:hover a {
+			color: $white!important;
+		}
+
+		&:hover {
+			background-color: $accent;
+		}
 	}
 }
 
@@ -168,35 +186,6 @@ nav.nav {
 			font-size: .67em;
 		}
 	}
-}
-
-.github-btns {
-	margin: .25em 0 .65em;
-}
-
-.btn {
-	font-size: .8em;
-	margin-right: .5em;
-	display: inline-block;
-	line-height: 1;
-	padding: .5em;
-	border-radius: 2px;
-	font-weight: 400;
-	text-decoration: none;
-	transition: background-color 0.3s ease-out;
-}
-
-.btn-repo {
-	background-color: $accent;
-
-	&:hover {
-		background-color: $accentlight;
-	}
-}
-
-.btn-demo {
-	background-color: #fff;
-	color: $accent!important;
 }
 
 .twitter {
