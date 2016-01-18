@@ -974,19 +974,21 @@ iframe, .fluid-width-video-wrapper {
     left: 0;
     right: 0;
     z-index: 1;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
+    visibility: hidden;
 }
 
 .modal__content {
     background-color: #FFF;
     height: 300px;
     width: 200px;
-    margin: 20px auto
+    margin: 20px auto;
 }
 
 .c-hamburger__input:checked ~ .modal {
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.9)
+    background-color: rgba(0, 0, 0, 0.9);
+    visibility: visible;
 }
 
 .c-hamburger__input:checked ~ .modal .item a {
