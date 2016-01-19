@@ -35,13 +35,21 @@
         {{#author}}
 
             <section class="author col-xs-12 col-sm-8">
-                <h3 itemprop="name"><a href="{{url}}">{{name}}</a></h3>
-
-                {{#if bio}}
-                    <p itemprop="description">{{bio}}</p>
-                {{else}}
-                    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-                {{/if}}
+            	<div class="row top-xs">
+                	{{#if bio}}
+            			{{#if image}}
+	    	    			<figure class="col-xs-3 center-xs">
+	    	    			    <img itemprop="image" src="{{image}}" class="author-img-post" alt="{{name}}">
+	    	    			</figure>
+    	    			{{/if}}
+    	    			<div class="col-xs-12 col-sm-9">
+    	    			    <h3 itemprop="name" class="author-name col-xs-12"><a href="{{url}}">{{name}}</a></h3>
+                	    	<p itemprop="description" class="col-xs-10">{{bio}}</p>
+                	    </div>
+                	{{else}}
+                	    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                	{{/if}}
+                </div>
             </section>
 
         {{/author}}
