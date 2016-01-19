@@ -11,19 +11,19 @@
     </header>
 
     <div class="wrap">
-    	<section class="row middle-xs center-xs author-profile inner">
+    	<section itemprop="author" itemscope itemtype="http://schema.org/Person" class="row middle-xs center-xs author-profile inner">
     	    {{#if image}}
-    	    <figure class="author-image">
-    	        <div class="img" style="background-image: url({{image}})"></div>
-    	    </figure>
+	    	    <figure class="author-image">
+	    	        <img itemprop="image" src="{{image}}" class="img" alt="{{name}}">
+	    	    </figure>
     	    {{/if}}
-    	    <h1 class="author-title col-xs-12">{{name}}</h1>
+    	    <h1 itemprop="name" class="author-title col-xs-12">{{name}}</h1>
     	    {{#if bio}}
-    	        <h2 class="author-bio col-xs-12">{{bio}}</h2>
+    	        <h2 itemprop="description" class="author-bio col-xs-12">{{bio}}</h2>
     	    {{/if}}
     	    <div class="author-meta">
     	        {{#if location}}<span class="author-location"><svg class="icon icon-bio icon-location"><use xlink:href="#icon-location"></use></svg> {{location}}</span>{{/if}}
-    	        {{#if website}}<span class="author-link"><svg class="icon icon-bio icon-link"><use xlink:href="#icon-link"></use></svg> <a href="{{website}}">{{website}}</a></span>{{/if}}
+    	        {{#if website}}<span class="author-link"><svg class="icon icon-bio icon-link"><use xlink:href="#icon-link"></use></svg> <a itemprop="url" href="{{website}}">{{website}}</a></span>{{/if}}
     	        <span class="author-stats"><svg class="icon icon-bio icon-note"><use xlink:href="#icon-note"></use></svg> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
     	    </div>
     	</section>

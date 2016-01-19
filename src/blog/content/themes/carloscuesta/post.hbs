@@ -9,12 +9,12 @@
 </header>
 <div class="wrap">
 <main class="content" role="main">
-    <article class="{{post_class}}">
+    <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="{{post_class}}">
 
         <header class="post-header row">
-            <h1 class="post-title col-xs-12">{{title}}</h1>
+            <h1 itemprop="name headline" class="post-title col-xs-12">{{title}}</h1>
             <section class="post-meta col-xs-12">
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">
                 	{{date format="DD MMMM YYYY"}}
                 </time>{{#if tags}}
                 	<span class="tags">
@@ -26,19 +26,19 @@
             </section>
         </header>
 
-        <section class="post-content row col-xs-12">
+        <section itemprop="articleBody" class="post-content row col-xs-12">
             {{content}}
         </section>
 
-        <footer class="post-footer row">
+        <footer itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-footer row">
 
         {{#author}}
 
             <section class="author col-xs-12 col-sm-8">
-                <h3><a href="{{url}}">{{name}}</a></h3>
+                <h3 itemprop="name"><a href="{{url}}">{{name}}</a></h3>
 
                 {{#if bio}}
-                    <p>{{bio}}</p>
+                    <p itemprop="description">{{bio}}</p>
                 {{else}}
                     <p>Read <a href="{{url}}">more posts</a> by this author.</p>
                 {{/if}}
@@ -65,7 +65,7 @@
             </section>
 
         </footer>
-    	<div id="disqus_thread" class="disqus-comments col-xs-12"></div>
+    	<div itemprop="comment" id="disqus_thread" class="disqus-comments col-xs-12"></div>
     </article>
 </main>
 

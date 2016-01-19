@@ -10,12 +10,18 @@
     <meta name="description" content="{{meta_description}}" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="{{@blog.url}}"/>
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="{{meta_title}}" />
+	<meta property="og:description" content="{{meta_description}}"/>
+	{{#post}}{{#if image}}
+	<meta property="og:image" content="{{image}}" />
+   	<meta name="twitter:image:src" content="{{image}}" />
+	{{/if}}{{/post}}
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:description" content="{{meta_description}}" />
-    <meta name="og:image" content="http://carloscuesta.me/carloscuesta.jpeg" />
-   	<meta name="twitter:image:src" content="http://carloscuesta.me/carloscuesta.jpeg" />
    	<meta name="twitter:creator" content="@crloscuessta" />
-   	<meta name="twitter:url" content="http://carloscuesta.me/blog" />
+   	<meta name="twitter:url" content="{{@blog.url}}" />
    	<meta name="twitter:title" content="{{meta_title}}" />
 	<link rel="apple-touch-icon" sizes="57x57" href="http://carloscuesta.me/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="http://carloscuesta.me/apple-icon-57x57.png">

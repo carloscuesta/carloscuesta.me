@@ -1,14 +1,14 @@
 <div class="wrap">
 	{{#foreach posts}}
-		<article class="col-xs-12 {{post_class}} post">
+		<article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="col-xs-12 {{post_class}} post">
 		    <header class="row">
 		    	<div class="col-xs-12">
-		        	<h2 class="post-title preview">
-		        		<a href="{{url}}">{{{title}}}</a>
+		        	<h2 itemprop="name headline" class="post-title preview">
+		        		<a itemprop="url" href="{{url}}">{{{title}}}</a>
 		        	</h2>
 		        </div>
 		        <div class="col-xs-12 post-info">
-		        	<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+		        	<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">{{date published_at timeago="true"}}</time>
 		        	<span class="tags">
 		        		{{#foreach tags}}
         					<a href="{{url}}" title="{{name}}" class="tag-{{name}}">{{name}}</a>
@@ -17,8 +17,8 @@
 		        	<span class="author">{{author}}</span>
 		        </div>
 		    </header>
-		    <section class="post-excerpt">
-		        <p>{{excerpt words="26"}} ...
+		    <section itemprop="description" class="post-excerpt">
+		        <p>{{excerpt words="30"}} ...
 		    	<a class="read-more" href="{{url}}"> Read more &raquo;</a></p>
 		    </section>
 		</article>
