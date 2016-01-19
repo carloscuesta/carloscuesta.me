@@ -430,7 +430,7 @@ header.tag-head {
 }
 
 header.no-cover {
-	display: none;
+	background-color: #2196F3;
 }
 
 .post-comments , .post-info .author a{

@@ -14,7 +14,8 @@
         					<a href="{{url}}" title="{{name}}" class="tag-{{name}}">{{name}}</a>
     					{{/foreach}}
     				</span>
-		        	<span class="author">{{author}}</span>
+		        	<span itemprop="author" itemscope itemtype="http://schema.org/Person" class="author">
+		        	<span itemprop="name">{{author}}</span></span>
 		        </div>
 		    </header>
 		    <section itemprop="description" class="post-excerpt">
