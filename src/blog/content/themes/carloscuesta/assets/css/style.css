@@ -141,6 +141,10 @@ header {
 	min-height: 40vh;
 }
 
+.author-template .main-header {
+	min-height: 30vh;
+}
+
 .blog-logo img {
 	border-radius: 50%;
 	width: 140px;
@@ -831,6 +835,10 @@ iframe, .fluid-width-video-wrapper {
 
 	.author-img-post {
 		display: none;
+	}
+
+	.c-hamburger--htx {
+    	right: 15px
 	}
 }
 
