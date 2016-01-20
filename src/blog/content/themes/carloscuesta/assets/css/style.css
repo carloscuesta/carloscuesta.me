@@ -199,6 +199,14 @@ header.tag-head.css, .tags .tag-css {
 	background-color:#128EF2;
 }
 
+header.tag-head.npm, .tags .tag-npm {
+	background-color: #E53935;
+}
+
+.tags .tag-npm:hover{
+	background-color:#D32F2F;
+}
+
 .hidden {
 	display: none;
 }
