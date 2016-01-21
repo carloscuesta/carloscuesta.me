@@ -1,14 +1,14 @@
 include _nav.jade
-header.site-header.center-xs
-    h1 #{me.name}
-    h3 #{me.bio}
+header.site-header.center-xs(itemprop="author" itemscope itemtype="http://schema.org/Person")
+    h1(itemprop="name") #{me.name}
+    h3(itemprop="description") #{me.bio}
     .social
-        a(href="https://twitter.com/#{social.twitter}")
+        a(itemprop="sameAs", href="https://twitter.com/#{social.twitter}")
             svg.icon.icon-twitter
                 use(xlink:href="#icon-twitter")
-        a(href="https://github.com/#{social.github}")
+        a(itemprop="sameAs", href="https://github.com/#{social.github}")
             svg.icon.icon-github
                 use(xlink:href="#icon-github")
-        a(href="https://es.linkedin.com/in/#{social.linkedin}")
+        a(itemprop="sameAs", href="https://es.linkedin.com/in/#{social.linkedin}")
             svg.icon.icon-linkedin
                 use(xlink:href="#icon-linkedin")
