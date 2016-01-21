@@ -21,7 +21,8 @@
             <section class="post-meta col-xs-12">
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">
                 	{{date format="DD MMMM YYYY"}}
-                </time>{{#if tags}}
+                </time>
+                <meta itemprop="dateModified" content="{{updated_at}}"/>{{#if tags}}
                 	<span class="tags">
 		        		{{#foreach tags}}
         					<a href="{{url}}" title="{{name}}" class="tag-{{name}}">{{name}}</a>
@@ -44,7 +45,7 @@
                 	{{#if bio}}
             			{{#if image}}
 	    	    			<figure class="col-xs-3 center-xs">
-	    	    			    <img itemprop="image logo" src="{{image}}" class="author-img-post" alt="{{name}}">
+	    	    			    <img itemprop="image" src="{{image}}" class="author-img-post" alt="{{name}}">
 	    	    			</figure>
     	    			{{/if}}
     	    			<div class="col-xs-12 col-sm-9">
