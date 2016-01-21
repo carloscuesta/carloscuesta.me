@@ -95,7 +95,7 @@
 </div>
 <aside class="read-next">
     {{#next_post}}
-    <a class="read-next-story next center-xs" href="{{url}}">
+    <a rel="next" class="read-next-story next center-xs" href="{{url}}">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>
@@ -103,7 +103,7 @@
     </a>
     {{/next_post}}
     {{#prev_post}}
-    <a class="read-next-story prev center-xs" href="{{url}}">
+    <a rel="prev" class="read-next-story prev center-xs" href="{{url}}">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>

@@ -9,6 +9,7 @@
 		        </div>
 		        <div class="col-xs-12 post-info">
 		        	<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">{{date published_at timeago="true"}}</time>
+		        	<meta itemprop="dateModified" content="{{updated_at}}"/>
 		        	<span class="tags">
 		        		{{#foreach tags}}
         					<a href="{{url}}" title="{{name}}" class="tag-{{name}}">{{name}}</a>
