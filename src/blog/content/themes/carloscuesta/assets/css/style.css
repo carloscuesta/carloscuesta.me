@@ -114,13 +114,12 @@ a:hover {
 }
 
 .post {
-	padding-top: 1.5em;
 	border-bottom: 1px solid #eee;
 	word-wrap: break-word;
 }
 
 main {
-	padding: 1.5em 0;
+	padding: 2.5em 0;
 }
 
 .wrap {
@@ -877,10 +876,6 @@ iframe, .fluid-width-video-wrapper {
 
 	article footer.post-meta, .post-template .post-meta, .post-info {
 		display: none!important;
-	}
-
-	article.post {
-		padding-top: 1.5em .5em;
 	}
 
 	.blog-logo {
