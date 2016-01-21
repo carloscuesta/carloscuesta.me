@@ -506,6 +506,10 @@ header.no-cover {
 	color: #3F404B;
 }
 
+.post-template .content h1, .post-template .content h2, .post-template .content h3, .post-template .content h4, .post-template .content h5, .post-template .content h6,{
+	margin-bottom: .5em;
+}
+
 .post .icon {
 	width: 1.5em;
 	height: 1.5em;
