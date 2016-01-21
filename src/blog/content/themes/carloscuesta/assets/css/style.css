@@ -238,6 +238,7 @@ article a.read-more:hover {
 
 .post-title.preview {
 	margin-bottom: .25em;
+	margin-top: .5em;
 }
 
 .tags {
@@ -470,8 +471,7 @@ header.no-cover {
 }
 
 .post-content, .post-footer {
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	padding: 1.5em 0;
 	border-bottom: 1px solid #eee;
 }
 
@@ -485,6 +485,7 @@ header.no-cover {
 
 .post-content {
 	font-size: 1.15em;
+	margin: 0;
 }
 
 .post-footer {
