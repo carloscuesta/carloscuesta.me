@@ -17,6 +17,19 @@
 		        	<span itemprop="author" itemscope itemtype="http://schema.org/Person" class="author">
 		        	<span itemprop="name">{{author}}</span></span>
 		        </div>
+		        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+  					<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+						<meta itemprop="url" content="{{author.image}}">
+  					  	<meta itemprop="width" content="450">
+  					  	<meta itemprop="height" content="450">
+  					</div>
+  					<meta itemprop="name" content="{{author.name}}">
+  				</div>
+  				<div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+				    <meta itemprop="url" content="{{image}}">
+    				<meta itemprop="width" content="3000">
+    				<meta itemprop="height" content="1350">
+  				</div>
 		    </header>
 		    <section itemprop="description" class="post-excerpt">
 		        <p>{{excerpt words="30"}} ...

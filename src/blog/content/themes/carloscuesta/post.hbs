@@ -7,6 +7,8 @@
 <header itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="main-header post-head{{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
 	{{#if image}}
 	<meta itemprop="url" content="{{image}}">
+	<meta itemprop="width" content="3000">
+  	<meta itemprop="height" content="1350">
 	{{/if}}
 </header>
 <div class="wrap">
@@ -37,7 +39,7 @@
 
         {{#author}}
 
-            <section class="author col-xs-12 col-sm-8" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <section class="author col-xs-12 col-sm-8">
             	<div class="row top-xs">
                 	{{#if bio}}
             			{{#if image}}
@@ -54,6 +56,15 @@
                 	{{/if}}
                 </div>
             </section>
+
+            <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+  				<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="{{image}}">
+  				  	<meta itemprop="width" content="450">
+  				  	<meta itemprop="height" content="450">
+  				</div>
+  				<meta itemprop="name" content="{{name}}">
+  			</div>
 
         {{/author}}
 
