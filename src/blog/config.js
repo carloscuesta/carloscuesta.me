@@ -7,7 +7,7 @@ require('dotenv').load();
 
 config = {
     production: {
-        url: '//carloscuesta.me/blog',
+        url: 'http://carloscuesta.me/blog',
 
         mail: {
     		transport: 'SMTP',
