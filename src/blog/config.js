@@ -8,8 +8,6 @@ require('dotenv').load();
 config = {
     production: {
         url: 'http://carloscuesta.me/blog',
-        urlSSL: 'https://carloscuesta.me/blog',
-        forceAdminSSL: true,
 
         mail: {
     		transport: 'SMTP',
