@@ -206,6 +206,15 @@ header.tag-head.npm, .tags .tag-npm {
 	background-color:#D32F2F;
 }
 
+
+header.tag-head.tools, .tags .tag-tools {
+	background-color: #3367D6;
+}
+
+.tags .tag-tools:hover{
+	background-color:#4688F1;
+}
+
 .hidden {
 	display: none;
 }
@@ -548,10 +557,6 @@ article .post-excerpt p {
 
 .share h3 {
 	margin-bottom: 1.65em;
-}
-
-ul, ol, dl {
-    margin: 0 0 1.75em 0;
 }
 
 ol, ul {

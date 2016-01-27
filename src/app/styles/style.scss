@@ -277,7 +277,7 @@ nav.nav {
 		}
 	}
 
-	@each $tag, $color in ('personal': $pink, 'life': $green, 'javascript': $javascript, 'html': $html, 'css': $css, 'nodejs': $nodejs, 'npm': $npm) {
+	@each $tag, $color in ('personal': $pink, 'life': $green, 'javascript': $javascript, 'html': $html, 'css': $css, 'nodejs': $nodejs, 'npm': $npm, 'tools': $tools) {
 		@include createTag($tag, $color);
 	}
 }
