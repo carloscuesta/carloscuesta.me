@@ -333,7 +333,32 @@ section h1{
 	}
 
 	.c-hamburger--htx {
-		right: 15px;
+	    right: 20px;
+    	top: 15px;
+	}
+
+	.c-hamburger {
+		width: 40px;
+		height: 40px;
+	}
+
+	.c-hamburger span {
+	    left: 0;
+    	right: 0;
+		height: 3px;
+		top: 22px;
+
+		&::after, &::before {
+			height: 3px;
+		}
+
+		&::before {
+			top: -15px;
+		}
+
+		&::after {
+			bottom: -15px;
+		}
 	}
 }
 
