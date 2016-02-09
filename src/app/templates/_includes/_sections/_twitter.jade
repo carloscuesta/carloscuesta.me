@@ -2,9 +2,9 @@ section.twitter
     .wrap
         .row
             .col-xs-12.col-sm-8.col-md-9.title
-                h1 I'm #[a(href='https://twitter.com/crloscuesta') @crloscuesta] on twitter.
+                h1 I'm #[a(href='https://twitter.com/crloscuesta', onclick="ga('send', 'event', 'Link', 'Twitter Name');",target="_blank") @crloscuesta] on twitter.
             .col-xs-12.col-sm-4.col-md-3.end-sm.follow-me
-                a(href="https://twitter.com/intent/follow?screen_name=crloscuesta", target="_blank").follow-btn
+                a(href="https://twitter.com/intent/follow?screen_name=crloscuesta", onclick="ga('send', 'event', 'Button', 'Twitter Follow');", target="_blank").follow-btn
                     span.twitter.end-xs
                         svg.icon.icon-twitter
                             use(xlink:href="#icon-twitter")

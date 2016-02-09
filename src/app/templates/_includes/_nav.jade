@@ -1,16 +1,16 @@
 nav.nav.row.middle-xs
     input#hamburger-menu.c-hamburger__input(type="checkbox")
-    label.c-hamburger.c-hamburger--htx(for="hamburger-menu")
+    label.c-hamburger.c-hamburger--htx(onclick="ga('send', 'event', 'Menu', 'Open/Close');", for="hamburger-menu")
         span
     .modal
         .modal-content
             ul.navigation
                 li.item
-                    a(href='https://carloscuesta.me')
+                    a(href='https://carloscuesta.me', onclick="ga('send', 'event', 'Menu', 'Home');", target="_blank")
                         |Home
                 li.item
-                    a(href='https://carloscuesta.me/blog')
+                    a(href='https://carloscuesta.me/blog', onclick="ga('send', 'event', 'Menu', 'Blog');", target="_blank")
                         |Blog
                 li.item
-                    a(href='mailto:crloscuesta@gmail?subject=Hello!')
+                    a(href='mailto:crloscuesta@gmail?subject=Hello!', onclick="ga('send', 'event', 'Menu', 'Mail');", target="_blank")
                         |Contact

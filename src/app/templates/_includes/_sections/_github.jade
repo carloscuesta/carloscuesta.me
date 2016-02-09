@@ -2,9 +2,9 @@ section.github
     .wrap
         .row
             .col-xs-12.col-sm-8.col-md-9.title
-                h1 I'm #[a(href='https://github.com/carloscuesta') @carloscuesta] on github.
+                h1 I'm #[a(href='https://github.com/carloscuesta', onclick="ga('send', 'event', 'Link', 'GitHub Name');", target="_blank") @carloscuesta] on github.
             .col-xs-12.col-sm-4.col-md-3.end-sm.follow-me
-                a(href="https://github.com/carloscuesta", target="_blank").follow-btn
+                a(href="https://github.com/carloscuesta", onclick="ga('send', 'event', 'Button', 'GitHub Follow');", target="_blank").follow-btn
                     span.github.end-xs
                         svg.icon.icon-github
                             use(xlink:href="#icon-github")
@@ -13,7 +13,7 @@ section.github
                 article.repo.col-xs-12.col-sm-6.col-md-4
                     .row
                         .col-xs
-                            a(href=github.html_url): h4.github-title= github.name
+                            a(href=github.html_url, onclick="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank"): h4.github-title= github.name
                         .col-xs.end-xs
                             if github.language
                                 span.tags
