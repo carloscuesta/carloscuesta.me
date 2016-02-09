@@ -25,10 +25,10 @@
                 <meta itemprop="dateModified" content="{{updated_at}}"/>{{#if tags}}
                 	<span class="tags">
 		        		{{#foreach tags}}
-        					<a href="{{url}}" title="{{name}}" class="tag-{{name}}">{{name}}</a>
+        					<a href="{{url}}" title="{{name}}" class="tag-{{name}}" onclick="ga('send', 'event', 'Blog', 'Post - tag-{{name}}');">{{name}}</a>
     					{{/foreach}}
     				</span>{{/if}}
-    				<a class="post-comments" href="{{url}}#disqus_thread">Comments</a>
+    				<a class="post-comments" href="{{url}}#disqus_thread" onclick="ga('send', 'event', 'Blog', 'Post - Comments');">Comments</a>
             </section>
         </header>
 
@@ -49,11 +49,11 @@
 	    	    			</figure>
     	    			{{/if}}
     	    			<div class="col-xs-12 col-sm-9">
-    	    			    <h3 itemprop="name" class="author-name col-xs-12"><a href="{{url}}">{{name}}</a></h3>
+    	    			    <h3 itemprop="name" class="author-name col-xs-12"><a href="{{url}}" onclick="ga('send', 'event', 'Blog', 'Post - Author Name');">{{name}}</a></h3>
                 	    	<p itemprop="description" class="col-xs-12 col-sm-10">{{bio}}</p>
                 	    </div>
                 	{{else}}
-                	    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                	    <p>Read <a href="{{url}}" onclick="ga('send', 'event', 'Blog', 'Post - Read More');">more posts</a> by this author.</p>
                 	{{/if}}
                 </div>
             </section>
@@ -72,14 +72,14 @@
             <section class="share col-xs-12 col-sm-4 center-sm">
                 <h3>Share this post</h3>
                 <a href="https://twitter.com/intent/tweet?text={{encode title}}+by+@crloscuesta&amp;url={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    onclick="ga('send', 'event', 'Blog', 'Post - Share Twitter');window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <svg class="icon icon-twitter">
 	                	<use xlink:href="#icon-twitter"></use>
 	            	</svg>
                     <span class="hidden">Twitter</span>
                 </a>
                 <a href="https://www.linkedin.com/shareArticle?mini=true&amp;title={{encode title}}&amp;url=	{url absolute="true"}&amp;source=http://carloscuesta.me"
-                   onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;">
+                   onclick="ga('send', 'event', 'Blog', 'Post - Share LinkedIn');window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;">
                    <svg class="icon icon-linkedin">
 	                	<use xlink:href="#icon-linkedin"></use>
 	            	</svg>
@@ -95,7 +95,7 @@
 </div>
 <aside class="read-next">
     {{#next_post}}
-    <a rel="next" class="read-next-story next center-xs" href="{{url}}">
+    <a rel="next" class="read-next-story next center-xs" href="{{url}}" onclick="ga('send', 'event', 'Blog', 'Post - Read Next');">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>
@@ -103,7 +103,7 @@
     </a>
     {{/next_post}}
     {{#prev_post}}
-    <a rel="prev" class="read-next-story prev center-xs" href="{{url}}">
+    <a rel="prev" class="read-next-story prev center-xs" href="{{url}}" onclick="ga('send', 'event', 'Blog', 'Post - Read Previous');">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>
