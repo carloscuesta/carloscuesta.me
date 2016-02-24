@@ -23,7 +23,7 @@ exports.index = function(req, res) {
 
 	var userTimeline = TwitterApiClient.getUserTimeline({
 		screen_name: 'crloscuesta',
-		count: 4,
+		count: 5,
 		exclude_replies: false,
 		include_rts: true
 	});
