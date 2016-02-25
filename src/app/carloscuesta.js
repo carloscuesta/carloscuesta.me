@@ -7,7 +7,8 @@ var express = require('express'),
     compression = require('compression');
 
 carloscuesta.use(compression());
-carloscuesta.use(express.static(__dirname+'/static'));
+carloscuesta.use(express.static(__dirname+'/static/'));
+carloscuesta.use(express.static(__dirname+'/static/img'));
 carloscuesta.set('views', __dirname + '/templates');
 carloscuesta.set('view engine', 'jade');
 carloscuesta.engine('jade', require('jade').__express);
