@@ -5,7 +5,7 @@ var staticData = {
 		name: 'Carlos Cuesta',
 		bio: 'Front End Developer',
 		aboutme: 'Front End developer based in Barcelona, Spain. Working at <a href="http://mediatic.cat" target="_blank" onclick="ga(\'send\', \'event\', \'Link\', \'Company\');",>Mediàtic</a>. Coding addicted that enjoys building things with code, I like design, tecnhology and I <span class="heart">♥</span> OpenSource.',
-		mail: 'crloscuesta@gmail.com',
+		mail: 'hi@carloscuesta.me',
 		avatar: 'carloscuesta.jpeg'
 	},
 
