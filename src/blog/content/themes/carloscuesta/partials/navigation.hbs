@@ -1,6 +1,6 @@
 <nav class="nav row middle-xs">
 	<input id="hamburger-menu" type="checkbox" class="c-hamburger__input">
-	<label for="hamburger-menu" class="c-hamburger c-hamburger--htx" onclick="ga('send', 'event', 'Blog', 'Menu - Open/Close');">
+	<label for="hamburger-menu" class="c-hamburger c-hamburger--htx" onmousedown="ga('send', 'event', 'Blog', 'Menu - Open/Close');">
 		<span></span>
 	</label>
 	<div class="modal">
@@ -8,7 +8,7 @@
 			<ul class="navigation">
 			{{#foreach navigation}}
     	    	<li class="item nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation">
-    	    		<a href="{{url absolute="true"}}" onclick="ga('send', 'event', 'Blog', 'Menu - {{label}}');">{{label}}</a>
+    	    		<a href="{{url absolute="true"}}" onmousedown="ga('send', 'event', 'Blog', 'Menu - {{label}}');">{{label}}</a>
     	    	</li>
     		{{/foreach}}
 			</ul>

@@ -4,7 +4,7 @@
 		    <header class="row">
 		    	<div class="col-xs-12">
 		        	<h2 itemprop="name headline" class="post-title preview">
-		        		<a itemprop="url mainEntityOfPage" href="{{url absolute="true"}}" onclick="ga('send', 'event', 'Blog', '{{{title}}}');">{{{title}}}</a>
+		        		<a itemprop="url mainEntityOfPage" href="{{url absolute="true"}}" onmousedown="ga('send', 'event', 'Blog', '{{{title}}}');">{{{title}}}</a>
 		        	</h2>
 		        </div>
 		        <div class="col-xs-12 post-info">
@@ -12,12 +12,12 @@
 		        	<meta itemprop="dateModified" content="{{updated_at}}"/>
 		        	<span class="tags">
 		        		{{#foreach tags}}
-        					<a href="{{url}}" title="{{name}}" onclick="ga('send', 'event', 'Blog', 'tag-{{name}}');" class="tag-{{name}}">{{name}}</a>
+        					<a href="{{url}}" title="{{name}}" onmousedown="ga('send', 'event', 'Blog', 'tag-{{name}}');" class="tag-{{name}}">{{name}}</a>
     					{{/foreach}}
     				</span>
 		        	<span itemprop="author" itemscope itemtype="http://schema.org/Person" class="author">
 		        		<span itemprop="name">
-		        			{{#author}}<a href="{{url}}" onclick="ga('send', 'event', 'Blog', 'Author - {{name}}');">{{name}}</a>{{/author}}
+		        			{{#author}}<a href="{{url}}" onmousedown="ga('send', 'event', 'Blog', 'Author - {{name}}');">{{name}}</a>{{/author}}
 		        		</span>
 		        	</span>
 		        </div>
@@ -37,7 +37,7 @@
 		    </header>
 		    <section itemprop="description" class="post-excerpt">
 		        <p>{{excerpt words="30"}} ...
-		    	<a class="read-more" href="{{url}}" onclick="ga('send', 'event', 'Blog', 'Read More - {{{title}}}');"> Read more &raquo;</a></p>
+		    	<a class="read-more" href="{{url}}" onmousedown="ga('send', 'event', 'Blog', 'Read More - {{{title}}}');"> Read more &raquo;</a></p>
 		    </section>
 		</article>
 	{{/foreach}}

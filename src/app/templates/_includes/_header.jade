@@ -3,12 +3,12 @@ header.site-header.center-xs(itemprop="author", itemscope, itemtype="http://sche
     h1(itemprop="name") #{me.name}
     h3(itemprop="description") #{me.bio}
     .social
-        a(itemprop="sameAs", onclick="ga('send', 'event', 'Social Icons', 'GitHub');", href="https://twitter.com/#{social.twitter}", target="_blank")
+        a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'GitHub');", href="https://twitter.com/#{social.twitter}", target="_blank")
             svg.icon.icon-twitter
                 use(xlink:href="#icon-twitter")
-        a(itemprop="sameAs", onclick="ga('send', 'event', 'Social Icons', 'Twitter');", href="https://github.com/#{social.github}", target="_blank")
+        a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'Twitter');", href="https://github.com/#{social.github}", target="_blank")
             svg.icon.icon-github
                 use(xlink:href="#icon-github")
-        a(itemprop="sameAs", onclick="ga('send', 'event', 'Social Icons', 'LinkedIn');", href="https://es.linkedin.com/in/#{social.linkedin}", target="_blank")
+        a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'LinkedIn');", href="https://es.linkedin.com/in/#{social.linkedin}", target="_blank")
             svg.icon.icon-linkedin
                 use(xlink:href="#icon-linkedin")
