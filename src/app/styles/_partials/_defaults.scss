@@ -2,12 +2,14 @@ html, body {
 	margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
-    font-family: 'opensans','helvetica';
+    font-family: 'Montserrat';
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
+    background-color: $white;
     color: $text;
     overflow-x: hidden;
+    font-weight: 300;
 }
 
 a {
@@ -21,7 +23,7 @@ a:hover {
 }
 
 h1, h2, h3,  h4, h5, h6 {
-    line-height: 1.15;
+    line-height: 1.5;
     margin-top: 0;
     margin-bottom: .5rem
 }

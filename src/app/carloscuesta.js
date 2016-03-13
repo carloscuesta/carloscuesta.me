@@ -18,6 +18,7 @@ carloscuesta.use(sassMiddleware({
     dest: __dirname+'/static/css',
     outputStyle: 'compressed'
 }));
+carloscuesta.use(express.static(__dirname+'/static/css'));
 
 
 carloscuesta.get('/', routes.index);

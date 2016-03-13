@@ -1,7 +1,7 @@
 include _nav.jade
 header.site-header.center-xs(itemprop="author", itemscope, itemtype="http://schema.org/Person")
     h1(itemprop="name") #{me.name}
-    h3(itemprop="description") #{me.bio}
+    h3(itemprop="description") #{me.job}
     .social
         a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'GitHub');", href="https://twitter.com/#{social.twitter}", target="_blank")
             svg.icon.icon-twitter

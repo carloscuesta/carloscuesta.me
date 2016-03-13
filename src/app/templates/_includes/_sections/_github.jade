@@ -10,23 +10,14 @@ section.github
                             use(xlink:href="#icon-github")
                         span Follow @carloscuesta
             -each github in githubData.items
-                article.repo.col-xs-12.col-sm-6.col-md-4
-                    .row
-                        .col-xs
-                            a(href=github.html_url, onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank"): h4.github-title= github.name
-                        .col-xs.end-xs
-                            if github.language
-                                span.tags
-                                    a(href="#", class="#{github.language}") #{github.language}
-                        //-.github-btns
-                            a(href=github.html_url).btn.btn-repo Repo
-                            a(href=github.homepage).btn.btn-demo Demo
-                    div
-                        svg.icon.icon-star
-                            use(xlink:href="#icon-star")
-                        span #{github.stargazers_count}
-                        svg.icon.icon-fork
-                            use(xlink:href="#icon-fork")
-                        span #{github.forks}
-                    .row
-                        div.col-xs-12.description= github.description
+                article(class="col-xs-12 col-sm-6 col-md-4")
+                    div(class="repo language-#{github.language}")
+                        a(href=github.html_url, onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank"): h4.github-title= github.name
+                        div
+                            svg.icon.icon-star
+                                use(xlink:href="#icon-star")
+                            span #{github.stargazers_count}
+                            svg.icon.icon-fork
+                                use(xlink:href="#icon-fork")
+                            span #{github.forks}
+                        .description= github.description
