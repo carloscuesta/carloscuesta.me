@@ -29,18 +29,33 @@
 	}
 }
 
+.btn:hover {
+	box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
+}
+
 .btn {
-	display: inline-block;
 	font-family: 'Montserrat';
 	font-weight: 400;
 	padding: .35em .95em;
 	border-radius: 50px;
 	transition: all .3s ease-out;
 	letter-spacing: .015em;
-}
+	display: flex;
+	align-items: center;
 
-.btn:hover {
-	box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
+	&-red {
+		background-color: #ff5252;
+		color: #fff;
+	}
+
+	&-blue {
+		background-color: #2196F3;
+		color: #fff;
+
+		&:hover {
+			box-shadow: 0 .5em 1.5em rgba(33, 150, 243, .45);
+		}
+	}
 }
 
 .btn.btn-large {
@@ -104,49 +119,6 @@ nav.nav {
 	color: $pink;
 }
 
-.follow-btn {
-	font-size: 0.80em;
-	font-weight: 400;
-
-	.twitter {
-
-		background-color: #1b95e0;
-		padding: .25em;
-		border-radius: 2px;
-		border: 1px solid #55acee;
-		transition: background .2s ease-in-out;
-
-		.icon-twitter {
-			fill: $white;
-			font-size: 18px;
-			margin-bottom: -3px;
-		}
-
-		&:hover {
-			background-color: #1886c9;
-		}
-	}
-
-	.github {
-	    background-color: #fcfcfc;
-		padding: .25em;
-		border-radius: 2px;
-		border: 1px solid #d5d5d5;
-		transition: background .2s ease-in-out;
-
-		.icon-github {
-			fill:$blacksection;
-			font-size: 18px;
-			margin-bottom: -3px;
-		}
-
-		&:hover {
-			background-color: #eee;
-			transition: background .2s ease-in-out;
-		}
-	}
-}
-
 .aboutme {
 	background-color: #3F51B5;
 	color:#fff;
@@ -156,11 +128,7 @@ nav.nav {
 		justify-content: space-between;
 		align-items: center;
 		padding-top: .75em;
-	}
-
-	.btn {
-		background-color: #ff5252;
-		color: #fff;
+		flex-wrap: wrap;
 	}
 
 	.name {
@@ -231,14 +199,6 @@ nav.nav {
 		fill: $text;
 	}
 
-	.btn.follow {
-		background-color: #2196F3;
-
-		&:hover {
-			box-shadow: 0 .5em 1.5em rgba(33, 150, 243, .45);
-		}
-	}
-
 	a.btn {
 		color: $white;
 	}
@@ -285,6 +245,15 @@ nav.nav {
 
 
 .ghost {
+
+	.post:hover {
+		box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
+	}
+
+	.post-image {
+		max-width: 100%;
+	}
+
 	.post-title {
 		font-size: 1.35em;
 		font-weight: 400;
@@ -386,7 +355,6 @@ section h1{
 }
 
 .tweet, .repo, .post {
-	padding: 0 2em;
 	margin: 2em 0;
 }
 
@@ -414,11 +382,6 @@ section h1{
 
 	html, body {
 		font-size: 18px;
-	}
-
-	.tweet, .repo, .post {
-		padding: 1.5em!important;
-		margin: 1em 0!important;
 	}
 
 	section h1 {
@@ -462,6 +425,10 @@ section h1{
 	    position: relative!important;
 	}
 
+	.github .repo {
+		height: 155px;
+		padding: 40px 20px!important;
+	}
 }
 
 @media(max-width: 767px) {
@@ -473,6 +440,10 @@ section h1{
 @media (max-width: 468px) {
 	section h1, .tweet, .repo, .post {
 		padding: 0!important;
+	}
+
+	.social {
+		margin-top: 1.5em;
 	}
 
 	.github .tags {

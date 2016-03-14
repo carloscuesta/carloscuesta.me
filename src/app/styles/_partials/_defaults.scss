@@ -14,11 +14,14 @@ html, body {
 
 a {
 	text-decoration: none;
+}
+
+p a {
 	color: $accent;
 	transition: color .1s ease-in-out;
 }
 
-a:hover {
+p a:hover {
 	color: $accentlight;
 }
 
