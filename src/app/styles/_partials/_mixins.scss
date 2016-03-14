@@ -8,6 +8,12 @@
 	}
 }
 
+@mixin createLanguageCard($language, $color) {
+	.language-#{$language} {
+		border-bottom-color: $color;
+	}
+}
+
 @mixin small {
     @media (max-width: 768px) {
         @content;

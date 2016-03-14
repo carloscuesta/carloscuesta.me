@@ -1,16 +1,9 @@
 section.github
     .wrap
-        .row
-            .col-xs-12.col-sm-8.col-md-9.title
-                h1 I'm #[a(href='https://github.com/carloscuesta', onmousedown="ga('send', 'event', 'Link', 'GitHub Name');", target="_blank") @carloscuesta] on github.
-            .col-xs-12.col-sm-4.col-md-3.end-sm.follow-me
-                a(href="https://github.com/carloscuesta", onmousedown="ga('send', 'event', 'Button', 'GitHub Follow');", target="_blank").follow-btn
-                    span.github.end-xs
-                        svg.icon.icon-github
-                            use(xlink:href="#icon-github")
-                        span Follow @carloscuesta
+        h2 GitHub
+        .row.around-xs
             -each github in githubData.items
-                article(class="col-xs-12 col-sm-6 col-md-4")
+                article(class="github-repo col-xs-12 col-sm-6 col-md-4")
                     div(class="repo language-#{github.language}")
                         a(href=github.html_url, onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank"): h4.github-title= github.name
                         div
@@ -21,3 +14,4 @@ section.github
                                 use(xlink:href="#icon-fork")
                             span #{github.forks}
                         .description= github.description
+            a.btn.btn-large.follow(href="#") Follow @carloscuesta

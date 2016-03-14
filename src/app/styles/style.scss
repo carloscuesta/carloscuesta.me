@@ -29,8 +29,25 @@
 	}
 }
 
+.btn {
+	display: inline-block;
+	font-family: 'Montserrat';
+	font-weight: 400;
+	padding: .35em .95em;
+	border-radius: 50px;
+	transition: all .3s ease-out;
+	letter-spacing: .015em;
+}
+
+.btn:hover {
+	box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
+}
+
+.btn.btn-large {
+	padding: .45em 1.5em;
+}
+
 header.site-header {
-	background-color: $accent;
 	color: $white;
 	padding: 9.5em;
 
@@ -131,24 +148,40 @@ nav.nav {
 }
 
 .aboutme {
-	background-color: #fff;
+	background-color: #3F51B5;
+	color:#fff;
+
+	.getintouch {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: .75em;
+	}
+
+	.btn {
+		background-color: #ff5252;
+		color: #fff;
+	}
 
 	.name {
 		font-weight: 700;
 		font-size: 2.75em;
 	}
 
+	.block {
+	    position: absolute;
+	    right: -10%;
+	    margin-top: -62px;
+	    width: 50%;
+	}
+
 	.avatar {
-		width: 300px;
+		width: 385px;
 		border-radius: 2px;
 	}
 
 	h1 {
 		padding: 0;
-	}
-
-	.social {
-		margin-top:1.5em;
 	}
 
 	.icon {
@@ -157,7 +190,7 @@ nav.nav {
 }
 
 .github {
-	background-color: $whitesection;
+	background-color: #fff;
 	color: $text;
 
 	.repo {
@@ -165,17 +198,15 @@ nav.nav {
 		border-bottom: 3px solid;
 		border-bottom-color: rgba(0, 0, 0, 0.2);
 		transition: all .3s ease-out;
+		height: 100px;
 
 		&:hover {
-			box-shadow: 0 21px 65px 0 rgba(0, 0, 0, 0.18);
-			-moz-box-shadow: 0 21px 65px 0 rgba(0, 0, 0, 0.18);
-			-webkit-box-shadow: 0 21px 65px 0 rgba(0, 0, 0, 0.18);
-			-o-box-shadow: 0 21px 65px 0 rgba(0, 0, 0, 0.18);
+			box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
 		}
 	}
 
-	.language-javascript {
-		border-bottom-color: $javascript;
+	@each $tag, $color in ('javascript': $javascript, 'html': $html, 'css': $css) {
+		@include createLanguageCard($tag, $color);
 	}
 
 	.language, .icon-fork {
@@ -198,6 +229,14 @@ nav.nav {
 
 	.icon-fork {
 		fill: $text;
+	}
+
+	.btn.follow {
+		background-color: #2196F3;
+
+		&:hover {
+			box-shadow: 0 .5em 1.5em rgba(33, 150, 243, .45);
+		}
 	}
 
 	a.btn {
@@ -355,6 +394,19 @@ section h1{
 	margin-top: .5em;
 }
 
+@media (max-width: 1140px) {
+	.block {
+		display: none;
+	}
+
+	.bio {
+	    -webkit-flex-basis: 100%;
+	    -ms-flex-preferred-size: 100%;
+	    flex-basis: 100%;
+	    max-width: 100%;
+	}
+}
+
 @media (max-width: 768px) {
 	header.site-header {
 		padding: 5em 1.5em 5em 1.5em;
@@ -405,6 +457,11 @@ section h1{
 			bottom: -15px;
 		}
 	}
+
+	.block {
+	    position: relative!important;
+	}
+
 }
 
 @media(max-width: 767px) {
