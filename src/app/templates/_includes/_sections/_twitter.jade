@@ -11,7 +11,8 @@ section.twitter
                         span Follow @crloscuesta
             -each tweet in twitterData
                 article.tweet.col-xs-12.col-sm-6
-                    h5 !{tweet.text}
+                    h5 !{tweet.text_parsed}
+                    img(src="#{tweet.image}")
                     div
                         a(href="https://twitter.com/intent/retweet?tweet_id=#{tweet.id_str}")
                             svg.icon.icon-retweet

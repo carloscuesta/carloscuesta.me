@@ -28,14 +28,21 @@ var TwitterApiClient = (function() {
 
 	var parseTweets = function(tweets) {
 		var _cacheTime =  86400000,
-			_dataCache = nodeCache.get('parsedTweetText');
+			_dataCache = nodeCache.get('parsedTweets');
 
 		if (!_dataCache) {
-			for (var i = 0; i < tweets.length; i++) {
-				tweets[i].text = twitterParse.autoLink(tweets[i].text);
-			}
-			nodeCache.put('parsedTweetText', tweets, _cacheTime);
-			return tweets;
+			var twits = tweets.map(function(tweet){
+				var media = tweet.entities.media;
+				var parsedText = twitterParse.autoLink(tweet.text);
+
+				return Object.assign({
+					image: (media && media.length > 0) ? media[0].media_url_https : '',
+					text_parsed: parsedText
+				}, tweet);
+			});
+
+			nodeCache.put('parsedTweets', twits, _cacheTime);
+			return twits;
 		} else {
 			return _dataCache;
 		}

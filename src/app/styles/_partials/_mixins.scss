@@ -10,7 +10,7 @@
 
 @mixin createLanguageCard($language, $color) {
 	.language-#{$language} {
-		border-bottom-color: $color;
+		border-top-color: $color;
 	}
 }
 

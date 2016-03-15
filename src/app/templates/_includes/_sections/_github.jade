@@ -6,13 +6,16 @@ section.github
                 article(class="github-repo col-xs-12 col-sm-6 col-md-4")
                     div(class="repo language-#{github.language}")
                         a(href=github.html_url, onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank"): h4.github-title= github.name
-                        div
-                            svg.icon.icon-star
-                                use(xlink:href="#icon-star")
-                            span #{github.stargazers_count}
-                            svg.icon.icon-fork
-                                use(xlink:href="#icon-fork")
-                            span #{github.forks}
+                        .github-stats
+                            a.starred(href=github.html_url)
+                                svg.icon.icon-star
+                                    use(xlink:href="#icon-star")
+                            span.stars #{github.stargazers_count}
+                            if github.forks
+                                a.forked(href="#{github.html_url}/fork")
+                                    svg.icon.icon-fork
+                                        use(xlink:href="#icon-fork")
+                                    span.forks #{github.forks}
                         .description= github.description
             a.btn.btn-large.btn-blue(href="#")
                 svg.icon.icon-github

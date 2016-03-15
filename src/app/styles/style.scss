@@ -43,8 +43,12 @@
 	display: flex;
 	align-items: center;
 
+	.icon {
+		fill: #fff;
+	}
+
 	&-red {
-		background-color: #ff5252;
+		background-color: $accent;
 		color: #fff;
 	}
 
@@ -60,17 +64,29 @@
 
 .btn.btn-large {
 	padding: .45em 1.5em;
+	margin: 1.5em 0;
+
+	.icon {
+		width: 1.5em;
+		height: 1.5em;
+	}
 }
 
 header.site-header {
-	color: $white;
-	padding: 9.5em;
+	color: $text;
+	background: #f9f9f9;
+	padding: 4.5em;
 
 	.icon {
 		padding: .5em;
-		fill: rgba(255, 255, 255, .7);
+		fill: $text;
 		transition: fill .2s ease-in-out;
 	}
+
+	.job {
+		font-weight: 400;
+	}
+
 }
 
 nav.nav {
@@ -119,6 +135,11 @@ nav.nav {
 	color: $pink;
 }
 
+
+.my-name {
+	color: $accent;
+}
+
 .aboutme {
 	background-color: #3F51B5;
 	color:#fff;
@@ -132,7 +153,6 @@ nav.nav {
 	}
 
 	.name {
-		font-weight: 700;
 		font-size: 2.75em;
 	}
 
@@ -163,10 +183,12 @@ nav.nav {
 
 	.repo {
 		padding: 60px 40px;
-		border-bottom: 3px solid;
-		border-bottom-color: rgba(0, 0, 0, 0.2);
+		border-radius: 2px;
+		border-top: 3px solid;
+		border-top-color: rgba(0, 0, 0, 0.2);
 		transition: all .3s ease-out;
 		height: 100px;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
 
 		&:hover {
 			box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
@@ -177,18 +199,44 @@ nav.nav {
 		@include createLanguageCard($tag, $color);
 	}
 
-	.language, .icon-fork {
+	.icon-fork {
 		margin-left: .35em;
+	}
+
+	.github-stats {
+		display: flex;
+		align-items: center;
+		margin-top: .75em;
+		margin-bottom: .75em;
 	}
 
 	.github-title {
 		white-space: nowrap;
+		color: $text;
+		transition: color .2s ease-out;
+
+		&:hover {
+			color: lighten($text, 20%);
+		}
 	}
 
 	.icon {
-		width: .9em;
-		height: .9em;
+		width: 1.15em;
+		height: 1.15em;
 		padding: 0 .25em 0 0;
+	}
+
+	.starred, .forked {
+	    display: flex;
+		align-items: center;
+	}
+
+	.stars {
+		color:#FFD600;
+	}
+
+	.forks {
+		color: $text;
 	}
 
 	.icon-star {
@@ -197,6 +245,18 @@ nav.nav {
 
 	.icon-fork {
 		fill: $text;
+	}
+
+	.icon-star, .icon-fork {
+		transition: all .2s ease-out;
+
+		&:hover {
+			transform: scale(1.25);
+		}
+
+		&:active {
+			transform: scale(.95);
+		}
 	}
 
 	a.btn {
@@ -247,7 +307,20 @@ nav.nav {
 .ghost {
 
 	.post:hover {
-		box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
+		box-shadow: 0 30px 45px rgba(0, 0, 0, .15);
+	}
+
+	.post {
+		padding: 0;
+		transition: all .3s ease-out;
+		border-radius: 2px;
+		margin: 0 1.25rem;
+		overflow: hidden;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+	}
+
+	.post-content {
+		padding: 1em;
 	}
 
 	.post-image {
@@ -348,11 +421,6 @@ footer {
 	}
 }
 
-section h1{
-	padding: 0 1em;
-	font-size: 1.5em;
-	font-weight: 300;
-}
 
 .tweet, .repo, .post {
 	margin: 2em 0;
@@ -440,6 +508,10 @@ section h1{
 @media (max-width: 468px) {
 	section h1, .tweet, .repo, .post {
 		padding: 0!important;
+	}
+
+	html, body {
+		font-size: 15px;
 	}
 
 	.social {

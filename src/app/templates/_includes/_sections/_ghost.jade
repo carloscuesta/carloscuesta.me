@@ -1,16 +1,17 @@
 section.ghost
     .wrap
-        .row
+        .row.between-xs
             -each post in ghostData.posts
-                article.post.col-sm-6
+                article.post.col-sm-5
                     img.post-image(src="#{post.image}")
-                    header.col-xs-12
-                        h2.post-title
-                            a(href="/blog#{post.url}", onmousedown="ga('send', 'event', 'Post', '#{post.title}');", target="_blank") #{post.title}
-                    .col-xs-12.post-info
-                        time(datetime="#{post.published_at}") #{post.published_at}
-                        span.tags
-                            -each tag in post.tags
-                                a(class="#{tag.name}", href="/blog/tag/#{tag.name}", onmousedown="ga('send', 'event', 'Post', 'tag-#{tag.name}');", target="_blank") #{tag.name}
-                    p #{post.html}
-                    a.read-more(href="/blog#{post.url}", onmousedown="ga('send', 'event', 'Post', 'Read More');", target="_blank") Read more
+                    .post-content
+                        header
+                            h2.post-title
+                                a(href="/blog#{post.url}", onmousedown="ga('send', 'event', 'Post', '#{post.title}');", target="_blank") #{post.title}
+                        .post-info
+                            time(datetime="#{post.published_at}") #{post.published_at}
+                            span.tags
+                                -each tag in post.tags
+                                    a(class="#{tag.name}", href="/blog/tag/#{tag.name}", onmousedown="ga('send', 'event', 'Post', 'tag-#{tag.name}');", target="_blank") #{tag.name}
+                        p #{post.html}
+                        a.read-more(href="/blog#{post.url}", onmousedown="ga('send', 'event', 'Post', 'Read More');", target="_blank") Read more
