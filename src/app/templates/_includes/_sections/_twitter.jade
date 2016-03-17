@@ -1,19 +1,17 @@
 section.twitter
     .wrap
+        h2 Twitter
         .row
-            .col-xs-12.col-sm-8.col-md-9.title
-                h1 I'm #[a(href='https://twitter.com/crloscuesta', onmousedown="ga('send', 'event', 'Link', 'Twitter Name');",target="_blank") @crloscuesta] on twitter.
-            .col-xs-12.col-sm-4.col-md-3.end-sm.follow-me
-                a(href="https://twitter.com/intent/follow?screen_name=crloscuesta", onmousedown="ga('send', 'event', 'Button', 'Twitter Follow');", target="_blank").follow-btn
-                    span.twitter.end-xs
-                        svg.icon.icon-twitter
-                            use(xlink:href="#icon-twitter")
-                        span Follow @crloscuesta
             -each tweet in twitterData
-                article.tweet.col-xs-12.col-sm-6
+                article.tweet.col-xs-12
+                    h4 #{tweet.user.name} - @#{tweet.user.screen_name}
                     h5 !{tweet.text_parsed}
-                    img(src="#{tweet.image}")
-                    div
+                    if tweet.image
+                        img(src="#{tweet.image}")
+                    .tweet-actions
+                        a(href="https://twitter.com/intent/tweet?in_reply_to=#{tweet.id_str}")
+                            svg.icon.icon-reply
+                                use(xlink:href="#icon-reply")
                         a(href="https://twitter.com/intent/retweet?tweet_id=#{tweet.id_str}")
                             svg.icon.icon-retweet
                                 use(xlink:href="#icon-retweet")

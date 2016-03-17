@@ -30,7 +30,7 @@
 }
 
 .btn:hover {
-	box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
+	box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .15);
 }
 
 .btn {
@@ -44,21 +44,26 @@
 	align-items: center;
 
 	.icon {
-		fill: #fff;
+		fill: $white;
 	}
 
 	&-red {
 		background-color: $accent;
-		color: #fff;
+		color: $white;
 	}
 
 	&-blue {
 		background-color: #2196F3;
-		color: #fff;
+		color: $white;
 
 		&:hover {
 			box-shadow: 0 .5em 1.5em rgba(33, 150, 243, .45);
 		}
+	}
+
+	&-secondary {
+		background-color: $text;
+		color: $white;
 	}
 }
 
@@ -135,38 +140,13 @@ nav.nav {
 	color: $pink;
 }
 
-
 .my-name {
 	color: $accent;
 }
 
 .aboutme {
 	background-color: #3F51B5;
-	color:#fff;
-
-	.getintouch {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding-top: .75em;
-		flex-wrap: wrap;
-	}
-
-	.name {
-		font-size: 2.75em;
-	}
-
-	.block {
-	    position: absolute;
-	    right: -10%;
-	    margin-top: -62px;
-	    width: 50%;
-	}
-
-	.avatar {
-		width: 385px;
-		border-radius: 2px;
-	}
+	color:$white;
 
 	h1 {
 		padding: 0;
@@ -177,47 +157,130 @@ nav.nav {
 	}
 }
 
+.getintouch {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: .75em;
+	flex-wrap: wrap;
+}
+
+.name {
+	font-size: 2.75em;
+}
+
+.block {
+    position: absolute;
+    right: -8%;
+    margin-top: -62px;
+    width: 50%;
+}
+
+.avatar {
+	width: 385px;
+	border-radius: 2px;
+}
+
 .github {
-	background-color: #fff;
+	background-color: $white;
 	color: $text;
 
-	.repo {
-		padding: 60px 40px;
-		border-radius: 2px;
-		border-top: 3px solid;
-		border-top-color: rgba(0, 0, 0, 0.2);
-		transition: all .3s ease-out;
-		height: 100px;
-		box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	.icon {
+		width: 1.15em;
+		height: 1.15em;
+		padding: 0 .25em 0 0;
+	}
+}
 
-		&:hover {
-			box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
-		}
+.repo {
+	padding: 60px 40px;
+	border-radius: 2px;
+	border-top: 3px solid;
+	border-top-color: rgba(0, 0, 0, 0.2);
+	transition: all .3s ease-out;
+	height: 100px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+
+	&:hover {
+		box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
+	}
+}
+
+@each $tag, $color in ('javascript': $javascript, 'html': $html, 'css': $css) {
+	@include createLanguageCard($tag, $color);
+}
+
+.icon-fork {
+	margin-left: .35em;
+}
+
+.github-stats {
+	display: flex;
+	align-items: center;
+	margin-top: .75em;
+	margin-bottom: .75em;
+}
+
+.github-title {
+	white-space: nowrap;
+	color: $text;
+	transition: color .2s ease-out;
+
+	&:hover {
+		color: $textHover;
+	}
+}
+
+.starred, .forked {
+    display: flex;
+	align-items: center;
+}
+
+.stars {
+	color:#FFD600;
+}
+
+.forks {
+	color: $text;
+}
+
+.icon-star {
+	fill: $yellow;
+}
+
+.icon-fork {
+	fill: $text;
+}
+
+.icon-star, .icon-fork {
+	transition: all .2s ease-out;
+
+	&:hover {
+		transform: scale(1.25);
 	}
 
-	@each $tag, $color in ('javascript': $javascript, 'html': $html, 'css': $css) {
-		@include createLanguageCard($tag, $color);
+	&:active {
+		transform: scale(.95);
+	}
+}
+
+.description {
+	font-weight: 300;
+	font-size: .95em;
+}
+
+.twitter {
+	background-color: #f8f8f8;
+	color: $text;
+
+	h5 {
+		font-weight: 300;
+		line-height: 1.4em;
 	}
 
-	.icon-fork {
-		margin-left: .35em;
-	}
-
-	.github-stats {
+	.tweet-actions, .tweet-actions a {
 		display: flex;
 		align-items: center;
-		margin-top: .75em;
-		margin-bottom: .75em;
-	}
-
-	.github-title {
-		white-space: nowrap;
-		color: $text;
-		transition: color .2s ease-out;
-
-		&:hover {
-			color: lighten($text, 20%);
-		}
 	}
 
 	.icon {
@@ -226,164 +289,93 @@ nav.nav {
 		padding: 0 .25em 0 0;
 	}
 
-	.starred, .forked {
-	    display: flex;
-		align-items: center;
-	}
-
-	.stars {
-		color:#FFD600;
-	}
-
-	.forks {
-		color: $text;
-	}
-
-	.icon-star {
-		fill: $yellow;
-	}
-
-	.icon-fork {
-		fill: $text;
-	}
-
-	.icon-star, .icon-fork {
-		transition: all .2s ease-out;
-
-		&:hover {
-			transform: scale(1.25);
-		}
-
-		&:active {
-			transform: scale(.95);
-		}
-	}
-
-	a.btn {
-		color: $white;
-	}
-
-	.description {
-		font-weight: 300;
-		font-size: .9em;
-	}
-
-	.tags {
-		a {
-			padding: 1px .5em;
-			border-radius: 2px;
-			margin-left: .5em;
-			font-size: .67em;
-		}
-	}
-}
-
-.twitter {
-	background-color: $blacksection;
-	color: $white;
-
-	h5 {
-		font-weight: 300;
-		line-height: 1.4em;
-	}
-
-	.icon {
-		width: .9em;
-		height: .9em;
-		padding: 0 .25em 0 0;
-	}
-
 	.icon-heart {
 		fill: $pink;
 		margin-left: .35em;
 	}
 
+	.icon-reply {
+		fill: $white;
+	}
+
 	.icon-retweet {
 		fill: $green;
 	}
-}
 
-
-.ghost {
-
-	.post:hover {
-		box-shadow: 0 30px 45px rgba(0, 0, 0, .15);
-	}
-
-	.post {
-		padding: 0;
-		transition: all .3s ease-out;
-		border-radius: 2px;
-		margin: 0 1.25rem;
-		overflow: hidden;
-		box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
-	}
-
-	.post-content {
-		padding: 1em;
-	}
-
-	.post-image {
-		max-width: 100%;
-	}
-
-	.post-title {
-		font-size: 1.35em;
-		font-weight: 400;
-		line-height: 1.15;
-	}
-
-	h5 {
-		font-weight: 300;
-		line-height: 1.4em;
-	}
-
-	time {
-		font-size: .67em;
-		border-radius: 2px;
-		color: $accent;
-		border: 1px solid $accent;
-		padding: 3px 1em;
-		text-transform: uppercase;
-		font-weight: 400;
-		white-space: nowrap;
-		margin-right: .5em;
-	}
-
-	.tags {
-		a {
-			padding: 4px 1em;
-
-			&:first-child {
-				border-top-left-radius: 2px;
-				border-bottom-left-radius: 2px;
-			}
-
-			&:last-child {
-				border-top-right-radius: 2px;
-				border-bottom-right-radius: 2px;
-				margin-right: .5em;
-			}
-		}
-	}
-
-	h4 {
-		color: $accent;
+	.tweet {
+		text-align: center;
+		max-width: 768px;
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
 
-.tags {
-	display: inline;
+.ghost time {
+	font-size: .75em;
+	color: $text;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-right: 1em;
+}
+
+.post {
+	padding: 0;
+	transition: all .3s ease-out;
+	border-radius: 2px;
+	margin: 0 1.25rem;
+	overflow: hidden;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+
+	header {
+		width: 100%;
+	}
+
+	&:hover {
+		box-shadow: 0 15px 45px rgba(0, 0, 0, .15);
+	}
+}
+
+.post-content {
+	padding: 2.5em;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.post-image {
+	max-width: 100%;
+}
+
+.post-title {
+	font-size: 1.35em;
+	font-weight: 400;
+	line-height: 1.15;
 
 	a {
-		font-size: .67em;
-		text-transform: uppercase;
-		color: #f9f9f9;
-		transition: background-color .2s ease-in-out;
+		color: $text;
+		transition: color .2s ease-out;
 
 		&:hover {
-			transition: background-color .2s ease-in-out;
+			color: $textHover;
 		}
+	}
+}
+
+.post-info {
+	display: flex;
+	align-items: center;
+	margin-top: .45em;
+}
+
+
+.tags {
+	a {
+		padding: 0 .25em .25em .25em;
+		font-size: .75em;
+		text-transform: uppercase;
+		margin-right: .85em;
+		position: relative;
+		text-decoration: none;
 	}
 
 	@each $tag, $color in ('personal': $pink, 'life': $green, 'javascript': $javascript, 'html': $html, 'css': $css, 'nodejs': $nodejs, 'npm': $npm, 'tools': $tools) {
@@ -393,7 +385,7 @@ nav.nav {
 
 footer {
 	color: $text;
-	background-color: #fff;
+	background-color: $white;
 	padding: 3em 1.5em;
 	text-align: center;
 
@@ -424,10 +416,6 @@ footer {
 
 .tweet, .repo, .post {
 	margin: 2em 0;
-}
-
-.post-info {
-	margin-top: .5em;
 }
 
 @media (max-width: 1140px) {
@@ -499,12 +487,6 @@ footer {
 	}
 }
 
-@media(max-width: 767px) {
-	.follow-me {
-		padding: .5em 1.5em;
-	}
-}
-
 @media (max-width: 468px) {
 	section h1, .tweet, .repo, .post {
 		padding: 0!important;
@@ -516,13 +498,5 @@ footer {
 
 	.social {
 		margin-top: 1.5em;
-	}
-
-	.github .tags {
-		display: none!important;
-	}
-
-	.follow-me {
-		padding: .5em 0;
 	}
 }

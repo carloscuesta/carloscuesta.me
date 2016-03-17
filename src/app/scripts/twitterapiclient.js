@@ -4,6 +4,7 @@ require('dotenv').load();
 
 var ApiClient = require('./apiclient'),
 	twitterParse = require('twitter-text'),
+	moment = require('moment'),
 	CacheApiClient = require('./cache'),
 	nodeCache = require('memory-cache');
 

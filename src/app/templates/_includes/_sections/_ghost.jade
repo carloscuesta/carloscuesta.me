@@ -14,4 +14,5 @@ section.ghost
                                 -each tag in post.tags
                                     a(class="#{tag.name}", href="/blog/tag/#{tag.name}", onmousedown="ga('send', 'event', 'Post', 'tag-#{tag.name}');", target="_blank") #{tag.name}
                         p #{post.html}
-                        a.read-more(href="/blog#{post.url}", onmousedown="ga('send', 'event', 'Post', 'Read More');", target="_blank") Read more
+                        
+                        a.btn.btn-secondary(href="/blog#{post.url}", onmousedown="ga('send', 'event', 'Post', 'Read More');", target="_blank") Read more
