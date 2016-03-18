@@ -68,7 +68,7 @@
 }
 
 .btn.btn-large {
-	padding: .45em 1.5em;
+	padding: .55em 1.5em;
 	margin: 1.5em 0;
 
 	.icon {
@@ -77,10 +77,16 @@
 	}
 }
 
-header.site-header {
+.site-header {
 	color: $text;
 	background: #f9f9f9;
 	padding: 4.5em;
+	text-align: center;
+
+	.buttons {
+		display: flex;
+		justify-content: center;
+	}
 
 	.icon {
 		padding: .5em;
@@ -91,7 +97,6 @@ header.site-header {
 	.job {
 		font-weight: 400;
 	}
-
 }
 
 nav.nav {
@@ -312,7 +317,7 @@ nav.nav {
 
 .ghost time {
 	font-size: .75em;
-	color: $text;
+	color: $accentgray;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin-right: 1em;
@@ -367,8 +372,30 @@ nav.nav {
 	margin-top: .45em;
 }
 
-
 .tags {
+	.tag {
+
+		&:hover:before {
+			visibility: visible;
+			-webkit-transform: scaleX(1);
+			transform: scaleX(1);
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			bottom: 0;
+			left: 0;
+			visibility: hidden;
+			-webkit-transform: scaleX(0);
+			transform: scaleX(0);
+			-webkit-transition: all 0.3s ease-in-out 0s;
+			transition: all 0.3s ease-in-out 0s;
+		}
+	}
+
 	a {
 		padding: 0 .25em .25em .25em;
 		font-size: .75em;
@@ -390,7 +417,7 @@ footer {
 	text-align: center;
 
 	h3 {
-		font-weight: 400;
+		font-weight: 700;
 		color: #37474F;
 	}
 

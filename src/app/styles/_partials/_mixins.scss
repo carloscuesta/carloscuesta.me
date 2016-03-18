@@ -1,15 +1,10 @@
-@mixin createTag($language, $color) {
-	.#{$language} {
+@mixin createTag($tag, $color) {
+	.#{$tag} {
 		color: $color;
 
 		&:before {
-			content: '#';
+			background-color: $color;
 		}
-
-	}
-
-	.#{$language}:hover {
-		border-bottom: 2px solid $color;
 	}
 }
 

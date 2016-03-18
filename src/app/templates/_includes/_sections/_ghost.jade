@@ -1,8 +1,9 @@
 section.ghost
     .wrap
-        .row.between-xs
+        h2 Blog
+        .row.around-xs
             -each post in ghostData.posts
-                article.post.col-sm-5
+                article.post.col-xs-12.col-md-5
                     img.post-image(src="#{post.image}")
                     .post-content
                         header
@@ -12,7 +13,7 @@ section.ghost
                             time(datetime="#{post.published_at}") #{post.published_at}
                             span.tags
                                 -each tag in post.tags
-                                    a(class="#{tag.name}", href="/blog/tag/#{tag.name}", onmousedown="ga('send', 'event', 'Post', 'tag-#{tag.name}');", target="_blank") #{tag.name}
+                                    a(class="tag #{tag.name}", href="/blog/tag/#{tag.name}", onmousedown="ga('send', 'event', 'Post', 'tag-#{tag.name}');", target="_blank") ##{tag.name}
                         p #{post.html}
                         
                         a.btn.btn-secondary(href="/blog#{post.url}", onmousedown="ga('send', 'event', 'Post', 'Read More');", target="_blank") Read more

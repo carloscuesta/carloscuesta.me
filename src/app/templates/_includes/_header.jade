@@ -1,16 +1,8 @@
 include _nav.jade
 header.site-header(itemprop="author", itemscope, itemtype="http://schema.org/Person")
     .wrap
-        h1(itemprop="name") Hi! I'm
+        h1 Hi! I'm
             span.my-name  #{me.name}
-        h2.job(itemprop="description") #{me.job}
-        .social
-            a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'GitHub');", href="https://twitter.com/#{social.twitter}", target="_blank")
-                svg.icon.icon-twitter
-                    use(xlink:href="#icon-twitter")
-            a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'Twitter');", href="https://github.com/#{social.github}", target="_blank")
-                svg.icon.icon-github
-                    use(xlink:href="#icon-github")
-            a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'LinkedIn');", href="https://es.linkedin.com/in/#{social.linkedin}", target="_blank")
-                svg.icon.icon-linkedin
-                    use(xlink:href="#icon-linkedin")
+        h2.job #{me.job}
+        .buttons
+            a.btn.btn-large.btn-blue(href="#") Get in touch
