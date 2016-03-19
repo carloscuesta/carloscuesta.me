@@ -4,10 +4,13 @@ section.twitter
         .row
             -each tweet in twitterData
                 article.tweet.col-xs-12
-                    h4 #{tweet.user.name} - @#{tweet.user.screen_name}
+                    h4 #{tweet.user.name} -
+                        span.handle 
+                            a(href="https://twitter.com/#{tweet.user.screen_name}") @#{tweet.user.screen_name}
                     h5 !{tweet.text_parsed}
                     if tweet.image
-                        img(src="#{tweet.image}")
+                        a(href="#{tweet.image}")
+                            img.tweet-img(src="#{tweet.image}:thumb")
                     .tweet-actions
                         a(href="https://twitter.com/intent/tweet?in_reply_to=#{tweet.id_str}")
                             svg.icon.icon-reply
@@ -15,8 +18,12 @@ section.twitter
                         a(href="https://twitter.com/intent/retweet?tweet_id=#{tweet.id_str}")
                             svg.icon.icon-retweet
                                 use(xlink:href="#icon-retweet")
-                            span #{tweet.retweet_count}
+                            span.rts #{tweet.retweet_count}
                         a(href="https://twitter.com/intent/favorite?tweet_id=#{tweet.id_str}")
                             svg.icon.icon-heart
                                 use(xlink:href="#icon-heart")
-                            span #{tweet.favorite_count}
+                            span.likes #{tweet.favorite_count}
+            a.btn.btn-large.btn-blue(href="https://twitter.com/#{social.twitter}", onmousedown="ga('send', 'event', 'Social', 'Follow Twitter');", target="_blank")
+                svg.icon.icon-github
+                        use(xlink:href="#icon-twitter")
+                | Follow @#{social.twitter}

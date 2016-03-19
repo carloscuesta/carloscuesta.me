@@ -20,12 +20,13 @@
 	display: inline-block;
 	width: 1.8em;
 	height: 1.8em;
+	transition: all .2s ease-out;
 }
 
 .social {
 	.icon:hover {
 		fill: $white;
-		transition: fill .2s ease-in-out;
+		transition: all .2s ease-out;
 	}
 }
 
@@ -80,7 +81,7 @@
 .site-header {
 	color: $text;
 	background: #f9f9f9;
-	padding: 4.5em;
+	padding: 5em;
 	text-align: center;
 
 	.buttons {
@@ -283,28 +284,50 @@ nav.nav {
 		line-height: 1.4em;
 	}
 
+	.tweet-img {
+		border-radius: 4px;
+	}
+
 	.tweet-actions, .tweet-actions a {
 		display: flex;
 		align-items: center;
+		justify-content: center;
+		margin: .5em;
 	}
 
 	.icon {
-		width: 1.15em;
-		height: 1.15em;
+		width: 1.5em;
+		height: 1.5em;
 		padding: 0 .25em 0 0;
+		transition: all .2s ease-out;
+
+		&:hover {
+			transform: scale(1.25);
+		}
+
+		&:active {
+			transform: scale(.95);
+		}
 	}
 
 	.icon-heart {
-		fill: $pink;
-		margin-left: .35em;
+		fill: #E81C4F;
+	}
+
+	.likes {
+		color: #E81C4F;
 	}
 
 	.icon-reply {
-		fill: $white;
+		fill: $accentlight;
 	}
 
 	.icon-retweet {
-		fill: $green;
+		fill: #19CF86;
+	}
+
+	.rts {
+		color: #19CF86;
 	}
 
 	.tweet {
@@ -391,8 +414,8 @@ nav.nav {
 			visibility: hidden;
 			-webkit-transform: scaleX(0);
 			transform: scaleX(0);
-			-webkit-transition: all 0.3s ease-in-out 0s;
-			transition: all 0.3s ease-in-out 0s;
+			-webkit-transition: all .2s ease-in-out 0s;
+			transition: all .2s ease-in-out 0s;
 		}
 	}
 
@@ -445,13 +468,26 @@ footer {
 	margin: 2em 0;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1035px) {
+	.block {
+		position: absolute;
+//		right: -4%;
+		margin-top: -48px;
+		width: 50%;
+	}
+
+	.avatar {
+		width: 381px;
+	}
+}
+
+@media (max-width: 845px) {
 	.block {
 		display: none;
 	}
 
 	.bio {
-	    -webkit-flex-basis: 100%;
+		-webkit-flex-basis: 100%;
 	    -ms-flex-preferred-size: 100%;
 	    flex-basis: 100%;
 	    max-width: 100%;

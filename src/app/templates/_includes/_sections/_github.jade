@@ -5,7 +5,8 @@ section.github
             -each github in githubData.items
                 article.github-repo.col-xs-12.col-sm-6.col-md-4
                     div(class="repo language-#{github.language}")
-                        a(href=github.html_url, onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank"): h4.github-title= github.name
+                        a(href="#{github.html_url}", onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank") 
+                            h4.github-title #{github.name}
                         .github-stats
                             a.starred(href=github.html_url)
                                 svg.icon.icon-star
@@ -16,8 +17,8 @@ section.github
                                     svg.icon.icon-fork
                                         use(xlink:href="#icon-fork")
                                     span.forks #{github.forks}
-                        .description= github.description
-            a.btn.btn-large.btn-blue(href="#")
+                        .description #{github.description}
+            a.btn.btn-large.btn-blue(href="https://github.com/#{social.github}", onmousedown="ga('send', 'event', 'Social', 'Follow GitHub');", target="_blank")
                 svg.icon.icon-github
                         use(xlink:href="#icon-github")
-                | Follow @carloscuesta
+                | Follow @#{social.github}
