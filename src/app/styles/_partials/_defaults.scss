@@ -65,3 +65,12 @@ p {
 section {
 	padding: 3em 1.5em;
 }
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}

@@ -10,28 +10,24 @@
 	padding: 0 1em;
 }
 
-.wrap-small {
-	max-width: 740px;
-	margin: 0 auto;
-	padding: 0 1em;
-}
-
-.icon {
+.social .icon {
 	display: inline-block;
 	width: 1.8em;
 	height: 1.8em;
 	transition: all .2s ease-out;
-}
 
-.social {
-	.icon:hover {
+	&:hover {
 		fill: $white;
-		transition: all .2s ease-out;
 	}
 }
 
 .btn:hover {
 	box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .15);
+}
+
+.more-btn {
+	display: flex;
+	justify-content: center;
 }
 
 .btn {
@@ -91,20 +87,20 @@
 	padding: 5em;
 	text-align: center;
 
-	.buttons {
-		display: flex;
-		justify-content: center;
-	}
-
 	.icon {
 		padding: .5em;
 		fill: $text;
 		transition: fill .2s ease-in-out;
 	}
+}
 
-	.job {
-		font-weight: 400;
-	}
+.job {
+	font-weight: 400;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
 }
 
 nav.nav {
@@ -298,23 +294,14 @@ nav.nav {
 }
 
 .twitter {
+	display: flex;
 	background-color: #f8f8f8;
 	color: $text;
+	justify-content: center;
 
 	h5 {
 		font-weight: 300;
 		line-height: 1.4em;
-	}
-
-	.tweet-img {
-		border-radius: 4px;
-	}
-
-	.tweet-actions, .tweet-actions a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: .5em;
 	}
 
 	.icon {
@@ -331,36 +318,47 @@ nav.nav {
 			transform: scale(.95);
 		}
 	}
-
-	.icon-heart {
-		fill: #E81C4F;
-	}
-
-	.likes {
-		color: #E81C4F;
-	}
-
-	.icon-reply {
-		fill: $accentlight;
-	}
-
-	.icon-retweet {
-		fill: #19CF86;
-	}
-
-	.rts {
-		color: #19CF86;
-	}
-
-	.tweet {
-		text-align: center;
-		max-width: 768px;
-		margin-right: auto;
-		margin-left: auto;
-	}
 }
 
-.ghost time {
+.tweet-img {
+	border-radius: 4px;
+}
+
+.tweet-actions, .tweet-actions a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: .5em;
+}
+
+.icon-heart {
+	fill: #E81C4F;
+}
+
+.likes {
+	color: #E81C4F;
+}
+
+.icon-reply {
+	fill: $accentlight;
+}
+
+.icon-retweet {
+	fill: #19CF86;
+}
+
+.rts {
+	color: #19CF86;
+}
+
+.tweet {
+	text-align: center;
+	max-width: 768px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.blog time {
 	font-size: .75em;
 	color: $accentgray;
 	text-transform: uppercase;
@@ -372,7 +370,7 @@ nav.nav {
 	padding: 0;
 	transition: all .3s ease-out;
 	border-radius: 2px;
-	margin: 0 1.25rem;
+	margin: 2.75em 0;
 	overflow: hidden;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
 
@@ -409,6 +407,11 @@ nav.nav {
 			color: $textHover;
 		}
 	}
+}
+
+.section-title {
+	text-align: center;
+	font-weight: 400;
 }
 
 .post-info {
@@ -485,15 +488,13 @@ footer {
 	}
 }
 
-
-.tweet, .repo, .post {
+.tweet, .repo {
 	margin: 2em 0;
 }
 
 @media (max-width: 1035px) {
 	.block {
 		position: absolute;
-//		right: -4%;
 		margin-top: -48px;
 		width: 50%;
 	}

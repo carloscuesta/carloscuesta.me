@@ -1,6 +1,6 @@
-section.ghost
+section.blog
     .wrap
-        h2 Blog
+        h2.section-title Blog
         .row.around-xs
             -each post in ghostData.posts
                 article.post.col-xs-12.col-md-5
@@ -17,3 +17,5 @@ section.ghost
                         p #{post.html}
                         
                         a.btn.btn-secondary(href="/blog#{post.url}", onmousedown="ga('send', 'event', 'Post', 'Read More');", target="_blank") Read more
+        .more-btn
+            a.btn.btn-large.btn-blue(href="https://carloscuesta.me/blog" onmousedown="ga('send', 'event', 'Button', 'Click', 'Read more posts');", target="_blank") See more posts
