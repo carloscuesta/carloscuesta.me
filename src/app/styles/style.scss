@@ -48,6 +48,13 @@
 		fill: $white;
 	}
 
+	&-flat {
+		background: #fff;
+		color: $text;
+		padding: .25em .5em;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	}
+
 	&-red {
 		background-color: $accent;
 		color: $white;
@@ -204,7 +211,7 @@ nav.nav {
 	border-top: 3px solid;
 	border-top-color: rgba(0, 0, 0, 0.2);
 	transition: all .3s ease-out;
-	height: 100px;
+	height: 115px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
 
 	&:hover {
@@ -214,6 +221,13 @@ nav.nav {
 
 @each $tag, $color in ('javascript': $javascript, 'html': $html, 'css': $css) {
 	@include createLanguageCard($tag, $color);
+}
+
+.repo-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: .5em;
 }
 
 .icon-fork {
@@ -231,13 +245,14 @@ nav.nav {
 	white-space: nowrap;
 	color: $text;
 	transition: color .2s ease-out;
+	margin: 0;
 
 	&:hover {
 		color: $textHover;
 	}
 }
 
-.starred, .forked {
+.starred, .forked, .web {
     display: flex;
 	align-items: center;
 }
@@ -245,6 +260,7 @@ nav.nav {
 .stars {
 	color:#FFD600;
 }
+
 
 .forks {
 	color: $text;
@@ -254,11 +270,17 @@ nav.nav {
 	fill: $yellow;
 }
 
+.icon-globe {
+	fill: $accentlight;
+	width: 1.35em!important;
+	height: 1.35em!important;
+}
+
 .icon-fork {
 	fill: $text;
 }
 
-.icon-star, .icon-fork {
+.icon-star, .icon-fork, .web {
 	transition: all .2s ease-out;
 
 	&:hover {
@@ -545,7 +567,7 @@ footer {
 	}
 
 	.github .repo {
-		height: 155px;
+		height: 115px;
 		padding: 40px 20px!important;
 	}
 }

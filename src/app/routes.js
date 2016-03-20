@@ -40,8 +40,6 @@ exports.index = function(req, res) {
 		var tweets = TwitterApiClient.parseTweets(data[1]);
 		var posts = GhostApiClient.parsePosts(data[2]);
 
-		console.log(repos);
-
 		res.render('views/index', {
 			githubData: repos,
 			twitterData: tweets,

@@ -12,18 +12,19 @@ section.twitter
                         a(href="#{tweet.image}")
                             img.tweet-img(src="#{tweet.image}:thumb")
                     .tweet-actions
-                        a(href="https://twitter.com/intent/tweet?in_reply_to=#{tweet.id_str}")
+                        a(href="https://twitter.com/intent/tweet?in_reply_to=#{tweet.id_str}", onmousedown="ga('send', 'event', 'Twitter', 'Reply');", target="_blank")
                             svg.icon.icon-reply
                                 use(xlink:href="#icon-reply")
-                        a(href="https://twitter.com/intent/retweet?tweet_id=#{tweet.id_str}")
+                        a(href="https://twitter.com/intent/retweet?tweet_id=#{tweet.id_str}", onmousedown="ga('send', 'event', 'Twitter', 'Retweet');", target="_blank")
                             svg.icon.icon-retweet
                                 use(xlink:href="#icon-retweet")
                             span.rts #{tweet.retweet_count}
-                        a(href="https://twitter.com/intent/favorite?tweet_id=#{tweet.id_str}")
+                        a(href="https://twitter.com/intent/favorite?tweet_id=#{tweet.id_str}", onmousedown="ga('send', 'event', 'Twitter', 'Favorite');", target="_blank")
                             svg.icon.icon-heart
                                 use(xlink:href="#icon-heart")
                             span.likes #{tweet.favorite_count}
-            a.btn.btn-large.btn-blue(href="https://twitter.com/#{social.twitter}", onmousedown="ga('send', 'event', 'Social', 'Follow Twitter');", target="_blank")
+        div(style="display:flex;")
+            a.btn.btn-large.btn-blue(href="https://twitter.com/intent/follow?screen_name=#{social.twitter}", onmousedown="ga('send', 'event', 'Social', 'Follow Twitter');", target="_blank")
                 svg.icon.icon-github
                         use(xlink:href="#icon-twitter")
                 | Follow @#{social.twitter}

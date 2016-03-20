@@ -5,8 +5,13 @@ section.github
             -each github in githubData.items
                 article.github-repo.col-xs-12.col-sm-6.col-md-4
                     div(class="repo language-#{github.language}")
-                        a(href="#{github.html_url}", onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank") 
-                            h4.github-title #{github.name}
+                        .repo-title
+                            a(href="#{github.html_url}", onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank") 
+                                h4.github-title #{github.name}
+                            if github.homepage
+                                a.web(href="#{github.homepage}", target="_blank", onmousedown="ga('send', 'event', 'GitHub Page', '#{github.name}');",)
+                                    svg.icon.icon-globe
+                                        use(xlink:href="#icon-globe")
                         .github-stats
                             a.starred(href=github.html_url)
                                 svg.icon.icon-star
