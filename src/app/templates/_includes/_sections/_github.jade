@@ -3,7 +3,7 @@ section.github
         h2.section-title GitHub
         .row.around-xs
             -each github in githubData.items
-                article.github-repo.col-xs-12.col-sm-6.col-md-4
+                article.col-xs-12.col-sm-6.col-md-4.github-repo
                     div(class="repo language-#{github.language}")
                         .repo-title
                             a(href="#{github.html_url}", onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank") 

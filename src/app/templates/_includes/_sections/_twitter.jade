@@ -14,14 +14,14 @@ section.twitter
                                 a(href="#{tweet.image}")
                                     img.tweet-img(src="#{tweet.image}:thumb")
                             .tweet-actions
-                                a(href="https://twitter.com/intent/tweet?in_reply_to=#{tweet.id_str}", onmousedown="ga('send', 'event', 'Twitter', 'Reply');", target="_blank")
+                                a(href="https://twitter.com/intent/tweet?in_reply_to=#{tweet.id_str}", onmousedown="ga('send', 'event', 'Twitter', 'Click', 'Reply');", target="_blank")
                                     svg.icon.icon-reply
                                         use(xlink:href="#icon-reply")
-                                a(href="https://twitter.com/intent/retweet?tweet_id=#{tweet.id_str}", onmousedown="ga('send', 'event', 'Twitter', 'Retweet');", target="_blank")
+                                a(href="https://twitter.com/intent/retweet?tweet_id=#{tweet.id_str}", onmousedown="ga('send', 'event', 'Twitter', 'Click', 'Retweet');", target="_blank")
                                     svg.icon.icon-retweet
                                         use(xlink:href="#icon-retweet")
                                     span.rts #{tweet.retweet_count}
-                                a(href="https://twitter.com/intent/favorite?tweet_id=#{tweet.id_str}", onmousedown="ga('send', 'event', 'Twitter', 'Favorite');", target="_blank")
+                                a(href="https://twitter.com/intent/favorite?tweet_id=#{tweet.id_str}", onmousedown="ga('send', 'event', 'Twitter', 'Click', 'Favorite');", target="_blank")
                                     svg.icon.icon-heart
                                         use(xlink:href="#icon-heart")
                                     span.likes #{tweet.favorite_count}

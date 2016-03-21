@@ -33,7 +33,7 @@
 .btn {
 	font-family: 'Montserrat';
 	font-weight: 400;
-	padding: .35em .95em;
+	padding: .45em 1em;
 	border-radius: 50px;
 	transition: all .3s ease-out;
 	letter-spacing: .015em;
@@ -42,6 +42,7 @@
 
 	.icon {
 		fill: $white;
+		transform: none!important;
 	}
 
 	&-flat {
@@ -83,7 +84,7 @@
 
 .site-header {
 	color: $text;
-	background: #f9f9f9;
+	background: #fff;
 	padding: 5em;
 	text-align: center;
 
@@ -91,6 +92,10 @@
 		padding: .5em;
 		fill: $text;
 		transition: fill .2s ease-in-out;
+	}
+
+	.btn-large {
+		font-size: 1.15em;
 	}
 }
 
@@ -156,7 +161,7 @@ nav.nav {
 .aboutme {
 	background-color: #3F51B5;
 	color:$white;
-
+	
 	h1 {
 		padding: 0;
 	}
@@ -180,7 +185,6 @@ nav.nav {
 
 .block {
     position: absolute;
-    right: -8%;
     margin-top: -62px;
     width: 50%;
 }
@@ -188,6 +192,7 @@ nav.nav {
 .avatar {
 	width: 385px;
 	border-radius: 2px;
+	margin-left: 22.5%;
 }
 
 .github {
@@ -201,13 +206,17 @@ nav.nav {
 	}
 }
 
+.github-repo {
+	display: flex;
+}
+
 .repo {
 	padding: 60px 40px;
 	border-radius: 2px;
 	border-top: 3px solid;
 	border-top-color: rgba(0, 0, 0, 0.2);
 	transition: all .3s ease-out;
-	height: 115px;
+	flex: 1;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
 
 	&:hover {
@@ -492,19 +501,15 @@ footer {
 	margin: 2em 0;
 }
 
-@media (max-width: 1035px) {
+@media (max-width: 1046px) {
 	.block {
 		position: absolute;
 		margin-top: -48px;
 		width: 50%;
 	}
-
-	.avatar {
-		width: 381px;
-	}
 }
 
-@media (max-width: 845px) {
+@media (max-width: 856px) {
 	.block {
 		display: none;
 	}
