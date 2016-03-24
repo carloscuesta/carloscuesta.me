@@ -15,9 +15,9 @@
 		display: inline-block;
 		width: 1.8em;
 		height: 1.8em;
-		transition: all .2s ease-out;
 		fill: $text;
 		margin-right: 1em;
+		transition: fill .2s ease-in-out;
 	}
 }
 
@@ -167,7 +167,7 @@ nav.nav {
 }
 
 .aboutme {
-	background-color: $aboutme;
+	background-color: $sectionHighlight;
 	color: $text;
 
 	h1 {
@@ -218,7 +218,7 @@ nav.nav {
 	padding: 60px 40px;
 	border-radius: 2px;
 	border-top: 3px solid;
-	border-top-color: rgba(0, 0, 0, 0.2);
+	border-top-color: $textLight;
 	transition: all .3s ease-out;
 	flex: 1;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
@@ -251,7 +251,6 @@ nav.nav {
 }
 
 .github-title {
-	white-space: nowrap;
 	color: $text;
 	transition: color .2s ease-out;
 	margin: 0;
@@ -267,7 +266,7 @@ nav.nav {
 }
 
 .stars {
-	color:#FFD600;
+	color: $stars;
 }
 
 
@@ -276,11 +275,11 @@ nav.nav {
 }
 
 .icon-star {
-	fill: $yellow;
+	fill: $stars;
 }
 
 .icon-globe {
-	fill: $accentlight;
+	fill: $web;
 	width: 1.35em!important;
 	height: 1.35em!important;
 }
@@ -333,6 +332,13 @@ nav.nav {
 	}
 }
 
+.tweet {
+	background-color: $white;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	border-radius: 2px;
+	padding: 3em 1.5em;
+}
+
 .tweet-img {
 	border-radius: 4px;
 }
@@ -353,7 +359,7 @@ nav.nav {
 }
 
 .icon-reply {
-	fill: $accentlight;
+	fill: $web;
 }
 
 .icon-retweet {
@@ -373,7 +379,7 @@ nav.nav {
 
 .blog time {
 	font-size: .75em;
-	color: $accentgray;
+	color: $textLight;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin-right: 1em;
@@ -429,6 +435,7 @@ nav.nav {
 
 .section-subtitle {
 	font-weight: 300;
+	color: $textHover;
 }
 
 .post-info {
@@ -470,7 +477,7 @@ nav.nav {
 		text-decoration: none;
 	}
 
-	@each $tag, $color in ('personal': $pink, 'life': $green, 'javascript': $javascript, 'html': $html, 'css': $css, 'nodejs': $nodejs, 'npm': $npm, 'tools': $tools) {
+	@each $tag, $color in ('personal': $personal, 'life': $life, 'javascript': $javascript, 'html': $html, 'css': $css, 'nodejs': $nodejs, 'npm': $npm, 'tools': $tools) {
 		@include createTag($tag, $color);
 	}
 }
@@ -484,13 +491,6 @@ footer {
 	h3 {
 		font-weight: 700;
 		color: #37474F;
-	}
-
-	.icon {
-		fill: #37474F;
-		width: 1.25em;
-		height: 1.25em;
-		padding:0 .5em;
 	}
 
 	.navigation {
@@ -531,13 +531,20 @@ footer {
 }
 
 @media (max-width: 768px) {
-	header.site-header {
+	.site-header {
 		padding: 5em 1.5em 5em 1.5em;
-		font-size: 15px
 	}
 
-	html, body {
-		font-size: 18px;
+	.salute {
+		display: none;
+	}
+
+	.site-header h1 {
+		font-size: 3.25em;
+	}
+
+	.job {
+		font-size: 2em;
 	}
 
 	section h1 {
@@ -586,6 +593,14 @@ footer {
 @media (max-width: 468px) {
 	section h1, .tweet, .repo, .post {
 		padding: 0!important;
+	}
+
+	.site-header h1 {
+		font-size: 2.95em;
+	}
+
+	.job {
+		font-size: 1.75em;
 	}
 
 	html, body {

@@ -12,7 +12,6 @@ carloscuesta.use(express.static(__dirname+'/static/img'));
 carloscuesta.use(express.static(__dirname+'/static/js'));
 carloscuesta.set('views', __dirname + '/templates');
 carloscuesta.set('view engine', 'jade');
-carloscuesta.engine('jade', require('jade').__express);
 carloscuesta.use(sassMiddleware({
     src: __dirname+'/styles',
     dest: __dirname+'/static/css',

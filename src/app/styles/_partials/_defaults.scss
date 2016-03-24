@@ -1,8 +1,7 @@
 html, body {
 	margin: 0;
     padding: 0;
-    text-rendering: optimizeLegibility;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat','Helvetica';
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
@@ -14,15 +13,16 @@ html, body {
 
 a {
 	text-decoration: none;
+	color: $accent;
 }
 
 p a {
 	color: $accent;
-	transition: color .1s ease-in-out;
+	transition: color .2s ease-out;
 }
 
 p a:hover {
-	color: $accentlight;
+	color: $web;
 }
 
 h1, h2, h3,  h4, h5, h6 {

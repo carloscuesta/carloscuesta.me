@@ -116,7 +116,7 @@
 
 .c-hamburger__input:checked ~ .modal {
     opacity: 1;
-    background-color: rgba(55, 71, 79, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     visibility: visible;
 
     .item {
@@ -125,11 +125,11 @@
     	}
 
     	&:nth-child(1) a {
-    		transition-delay: 0;
+    		transition-delay: 0s;
     	}
 
     	&:nth-child(2) a {
-    		transition-delay: 0.025s;
+    		transition-delay: 0.035s;
     	}
 
     	&:nth-child(3) a {
