@@ -20,8 +20,19 @@ var GhostApiClient = (function() {
 	var parsePosts = function(postData) {
 		var _cacheTime =  86400000,
 			_dataCache = nodeCache.get('parsedPosts');
+
+		Array.prototype.insert = function (index, item) {
+			this.splice(index, 0, item);
+		};
+
 		if (!_dataCache) {
 			for (var i = 0; i < postData.posts.length; i++) {
+				var image = postData.posts[i].image.split('/'),
+					params = 'w_500';
+					image.insert(6, params);
+				var parsedImages = image.join('/');
+
+				postData.posts[i].image = parsedImages;
 				postData.posts[i].published_at = moment(postData.posts[i].updated_at).startOf('hour').fromNow();
 				postData.posts[i].html = striptags(postData.posts[i].html).substring(0,120)+' ...';
 			}
