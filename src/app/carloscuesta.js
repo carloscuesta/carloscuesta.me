@@ -8,7 +8,7 @@ var express = require('express'),
 
 carloscuesta.use(function (req, res, next) {
     req.headers['cache-control'] = 'max-age=86400, public';
-    req.headers['if-none-match'] = 'no-match-for-this';
+    // req.headers['if-none-match'] = 'no-match-for-this';
 	res.setHeader('cache-control', 'public, max-age=86400');
     next();
 });
