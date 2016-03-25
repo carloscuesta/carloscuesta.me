@@ -81,6 +81,10 @@
 	&-secondary {
 		background-color: $text;
 		color: $white;
+
+		&:hover {
+			box-shadow: 0 .5em 1.5em rgba(55, 71, 79, .45);
+		}
 	}
 }
 
@@ -311,11 +315,6 @@ nav.nav {
 	color: $text;
 	justify-content: center;
 
-	h5 {
-		font-weight: 300;
-		line-height: 1.4em;
-	}
-
 	.icon {
 		width: 1.5em;
 		height: 1.5em;
@@ -334,13 +333,19 @@ nav.nav {
 
 .tweet {
 	background-color: $white;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
 	border-radius: 2px;
-	padding: 3em 1.5em;
+	padding: 3em 1.5em 0;
 }
 
-.tweet-img {
-	border-radius: 4px;
+.tweet-text {
+	font-weight: 300;
+	padding-top: 1em;
+}
+
+.tweet-actions {
+	padding-top: 1em;
+	padding-bottom: 2em;
 }
 
 .tweet-actions, .tweet-actions a {
@@ -484,7 +489,7 @@ nav.nav {
 
 footer {
 	color: $text;
-	background-color: $white;
+	background-color: $sectionHighlight;
 	padding: 3em 1.5em;
 	text-align: center;
 
@@ -492,16 +497,16 @@ footer {
 		font-weight: 700;
 		color: #37474F;
 	}
+}
 
-	.navigation {
-		padding:0;
-		margin:0;
-		li {
-			display: inline-block;
-			padding-right: .95em;
-			font-size: .75em;
-			text-transform: uppercase;
-		}
+.footer-navigation {
+	padding:0;
+	margin:0;
+	li {
+		display: inline-block;
+		padding-right: .95em;
+		font-size: .75em;
+		text-transform: uppercase;
 	}
 }
 

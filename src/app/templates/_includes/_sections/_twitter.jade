@@ -10,8 +10,8 @@ section.twitter
                             h4 #{tweet.user.name} -
                                 span.handle 
                                     a(href="https://twitter.com/#{tweet.user.screen_name}") @#{tweet.user.screen_name}
-                            h5 !{tweet.text_parsed}
-                            if tweet.image
+                            h5.tweet-text !{tweet.text_parsed}
+                            //-if tweet.image
                                 a(href="#{tweet.image}")
                                     img.tweet-img(src="#{tweet.image}:thumb")
                             .tweet-actions
