@@ -12,6 +12,7 @@ var GithubApiClient = require('./scripts/githubapiclient'),
 
 exports.index = function(req, res) {
 
+	req.headers['cache-control'] = 'max-age=86400, public';
 	res.setHeader('Cache-Control', 'public, max-age=86400');
 
 	var ghUserCCStars = GithubApiClient.getSearch({
