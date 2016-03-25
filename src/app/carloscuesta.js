@@ -6,11 +6,6 @@ var express = require('express'),
     routes = require('./routes'),
     compression = require('compression');
 
-carloscuesta.use(function (req, res, next) {
-    req.headers['cache-control'] = 'max-age=86400, public';
-	res.setHeader('cache-control', 'public, max-age=86400');
-    next();
-});
 carloscuesta.use(compression());
 carloscuesta.set('etag', false);
 carloscuesta.set('views', __dirname + '/templates');
