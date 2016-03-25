@@ -4,8 +4,8 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
-    width: 96px;
-    height: 96px;
+    width: 90px;
+    height: 90px;
     font-size: 0;
     text-indent: -9999px;
     appearance: none;
@@ -22,16 +22,18 @@
     	top: 44px;
     	left: 18px;
     	right: 18px;
-    	height: 6px;
-    	background: #fff;
+    	height: 3px;
+    	background: $menu;
+        border-radius: 50px;
 
     	&::before, &::after {
     		position: absolute;
     		display: block;
     		left: 0;
     		width: 100%;
-    		height: 6px;
-    		background-color: #fff;
+    		height: 3px;
+            border-radius: 50px;
+    		background-color: $menu;
     		content: "";
     	}
 
@@ -51,7 +53,7 @@
 
 .c-hamburger--htx {
     left: auto;
-    right: 30px;
+    right: 20px;
 
     span {
 	    transition: background 0s 0.2s;
@@ -106,7 +108,7 @@
 }
 
 .modal__content {
-    background-color: #FFF;
+    background-color: $menu;
     height: 300px;
     width: 200px;
     margin: 20px auto;
@@ -114,7 +116,7 @@
 
 .c-hamburger__input:checked ~ .modal {
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     visibility: visible;
 
     .item {
@@ -123,11 +125,11 @@
     	}
 
     	&:nth-child(1) a {
-    		transition-delay: 0;
+    		transition-delay: 0s;
     	}
 
     	&:nth-child(2) a {
-    		transition-delay: 0.025s;
+    		transition-delay: 0.035s;
     	}
 
     	&:nth-child(3) a {

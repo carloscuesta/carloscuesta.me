@@ -1,34 +1,39 @@
 html, body {
 	margin: 0;
     padding: 0;
-    text-rendering: optimizeLegibility;
-    font-family: 'opensans','helvetica';
+    font-family: 'Montserrat','Helvetica';
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
+    background-color: $white;
     color: $text;
     overflow-x: hidden;
+    font-weight: 300;
 }
 
 a {
 	text-decoration: none;
 	color: $accent;
-	transition: color .1s ease-in-out;
 }
 
-a:hover {
-	color: $accentlight;
+p a {
+	color: $accent;
+	transition: color .2s ease-out;
+}
+
+p a:hover {
+	color: $web;
 }
 
 h1, h2, h3,  h4, h5, h6 {
-    line-height: 1.15;
+    line-height: 1.5;
     margin-top: 0;
-    margin-bottom: .5rem
+    margin-bottom: .5rem;
 }
 
 h1 {
     font-size: 4em;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 h2 {
@@ -59,4 +64,13 @@ p {
 
 section {
 	padding: 3em 1.5em;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
 }

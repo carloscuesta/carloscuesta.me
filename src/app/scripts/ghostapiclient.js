@@ -22,7 +22,7 @@ var GhostApiClient = (function() {
 			_dataCache = nodeCache.get('parsedPosts');
 		if (!_dataCache) {
 			for (var i = 0; i < postData.posts.length; i++) {
-				postData.posts[i].published_at = moment(postData.posts[i].published_at).startOf('day').fromNow();
+				postData.posts[i].published_at = moment(postData.posts[i].updated_at).startOf('hour').fromNow();
 				postData.posts[i].html = striptags(postData.posts[i].html).substring(0,120)+' ...';
 			}
 			nodeCache.put('parsedPosts', postData, _cacheTime);

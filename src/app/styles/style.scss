@@ -10,37 +10,118 @@
 	padding: 0 1em;
 }
 
-.wrap-small {
-	max-width: 740px;
-	margin: 0 auto;
-	padding: 0 1em;
-}
-
-.icon {
-	display: inline-block;
-	width: 1.8em;
-	height: 1.8em;
-}
-
 .social {
-	margin-top: 1em;
-
-	.icon:hover {
-		fill: $white;
+	.icon {
+		display: inline-block;
+		width: 1.8em;
+		height: 1.8em;
+		fill: $text;
+		margin-right: 1em;
 		transition: fill .2s ease-in-out;
 	}
 }
 
-header.site-header {
-	background-color: $accent;
-	color: $white;
-	padding: 9.5em;
+.icon-twitter:hover {
+	fill: #55acee;
+}
+
+.icon-github:hover {
+	fill: #000;
+}
+
+.icon-linkedin:hover {
+	fill: #0077B5;
+}
+
+.more-btn {
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	padding: .45em 1em;
+	border-radius: 50px;
+	transition: all .3s ease-out;
+	letter-spacing: .015em;
+	display: flex;
+	align-items: center;
+
+	.icon {
+		fill: $white;
+		transform: none!important;
+	}
+
+	&-flat {
+		background: #fff;
+		color: $text;
+		padding: .25em .5em;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	}
+
+	&-red {
+		background-color: $accent;
+		color: $white;
+
+		&:hover, &-raised {
+			box-shadow: 0 .5em 1.5em rgba(255, 82, 82, .45);
+		}
+	}
+
+	&-blue {
+		background-color: #2196F3;
+		color: $white;
+
+		&:hover {
+			box-shadow: 0 .5em 1.5em rgba(33, 150, 243, .45);
+		}
+	}
+
+	&-secondary {
+		background-color: $text;
+		color: $white;
+
+		&:hover {
+			box-shadow: 0 .5em 1.5em rgba(55, 71, 79, .45);
+		}
+	}
+}
+
+.btn.btn-large {
+	padding: .55em 1.5em;
+	margin: 1.5em 0;
+
+	.icon {
+		width: 1.5em;
+		height: 1.5em;
+	}
+}
+
+.site-header {
+	color: $text;
+	background: $white;
+	padding: 5em;
+	text-align: center;
 
 	.icon {
 		padding: .5em;
-		fill: rgba(255, 255, 255, .7);
+		fill: $text;
 		transition: fill .2s ease-in-out;
 	}
+
+	.btn-large {
+		font-size: 1.15em;
+	}
+}
+
+.job {
+	font-weight: 400;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
 }
 
 nav.nav {
@@ -85,251 +166,394 @@ nav.nav {
 	}
 }
 
-.heart {
-	color: $pink;
-}
-
-.follow-btn {
-	font-size: 0.80em;
-	font-weight: 400;
-
-	.twitter {
-
-		background-color: #1b95e0;
-		padding: .25em;
-		border-radius: 2px;
-		border: 1px solid #55acee;
-		transition: background .2s ease-in-out;
-
-		.icon-twitter {
-			fill: $white;
-			font-size: 18px;
-			margin-bottom: -3px;
-		}
-
-		&:hover {
-			background-color: #1886c9;
-		}
-	}
-
-	.github {
-	    background-color: #fcfcfc;
-		padding: .25em;
-		border-radius: 2px;
-		border: 1px solid #d5d5d5;
-		transition: background .2s ease-in-out;
-
-		.icon-github {
-			fill:$blacksection;
-			font-size: 18px;
-			margin-bottom: -3px;
-		}
-
-		&:hover {
-			background-color: #eee;
-			transition: background .2s ease-in-out;
-		}
-	}
+.my-name, .heart {
+	color: $accent;
 }
 
 .aboutme {
-	.bio {
-		padding: 1em 0.5em;
-	}
-	.avatar {
-		border-radius: 50%;
-		width: 224px;
-	}
+	background-color: $sectionHighlight;
+	color: $text;
 
 	h1 {
 		padding: 0;
 	}
 }
 
+.getintouch {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: .75em;
+	flex-wrap: wrap;
+}
+
+.name {
+	font-size: 2.75em;
+}
+
+.block {
+    position: absolute;
+    margin-top: -60px;
+    width: 50%;
+}
+
+.avatar {
+	width: 385px;
+	border-radius: 2px;
+	margin-left: 22.5%;
+}
+
 .github {
-	background-color: $whitesection;
+	background-color: $white;
 	color: $text;
 
-	.language, .icon-fork {
-		margin-left: .35em;
-	}
-
-	.github-title {
-		white-space: nowrap;
-	}
-
 	.icon {
-		width: .9em;
-		height: .9em;
+		width: 1.15em;
+		height: 1.15em;
 		padding: 0 .25em 0 0;
 	}
+}
 
-	.icon-star {
-		fill: $yellow;
+.github-repo {
+	display: flex;
+}
+
+.repo {
+	padding: 60px 40px;
+	border-radius: 2px;
+	border-top: 3px solid;
+	border-top-color: $textLight;
+	transition: all .3s ease-out;
+	flex: 1;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+
+	&:hover {
+		box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
+	}
+}
+
+@each $tag, $color in ('javascript': $javascript, 'html': $html, 'css': $css) {
+	@include createLanguageCard($tag, $color);
+}
+
+.repo-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: .5em;
+}
+
+.icon-fork {
+	margin-left: .35em;
+}
+
+.github-stats {
+	display: flex;
+	align-items: center;
+	margin-top: .75em;
+	margin-bottom: .75em;
+}
+
+.github-title {
+	color: $text;
+	transition: color .2s ease-out;
+	margin: 0;
+
+	&:hover {
+		color: $textHover;
+	}
+}
+
+.starred, .forked, .web {
+    display: flex;
+	align-items: center;
+}
+
+.stars {
+	color: $stars;
+}
+
+
+.forks {
+	color: $text;
+}
+
+.icon-star {
+	fill: $stars;
+}
+
+.icon-globe {
+	fill: $web;
+	width: 1.35em!important;
+	height: 1.35em!important;
+}
+
+.icon-fork {
+	fill: $text;
+}
+
+.icon-star, .icon-fork, .web {
+	transition: all .2s ease-out;
+
+	&:hover {
+		transform: scale(1.25);
 	}
 
-	.icon-fork {
-		fill: $text;
+	&:active {
+		transform: scale(.95);
 	}
+}
 
-	a.btn {
-		color: $white;
-	}
-
-	.description {
-		font-weight: 300;
-		font-size: .9em;
-	}
-
-	.tags {
-		a {
-			padding: 1px .5em;
-			border-radius: 2px;
-			margin-left: .5em;
-			font-size: .67em;
-		}
-	}
+.description {
+	font-weight: 300;
+	font-size: .95em;
 }
 
 .twitter {
-	background-color: $blacksection;
-	color: $white;
-
-	h5 {
-		font-weight: 300;
-		line-height: 1.4em;
-	}
+	display: flex;
+	background-color: #f8f8f8;
+	color: $text;
+	justify-content: center;
 
 	.icon {
-		width: .9em;
-		height: .9em;
+		width: 1.5em;
+		height: 1.5em;
 		padding: 0 .25em 0 0;
-	}
+		transition: all .2s ease-out;
 
-	.icon-heart {
-		fill: $pink;
-		margin-left: .35em;
-	}
+		&:hover {
+			transform: scale(1.25);
+		}
 
-	.icon-retweet {
-		fill: $green;
+		&:active {
+			transform: scale(.95);
+		}
 	}
 }
 
+.tweet {
+	background-color: $white;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+	border-radius: 2px;
+	padding: 3em 1.5em 0;
+}
 
-.ghost {
-	.post-title {
-		font-size: 1.35em;
-		font-weight: 400;
-		line-height: 1.15;
+.tweet-text {
+	font-weight: 300;
+	padding-top: 1em;
+}
+
+.tweet-actions {
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.tweet-actions, .tweet-actions a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: .5em;
+}
+
+.icon-heart {
+	fill: #E81C4F;
+}
+
+.likes {
+	color: #E81C4F;
+}
+
+.icon-reply {
+	fill: $web;
+}
+
+.icon-retweet {
+	fill: #19CF86;
+}
+
+.rts {
+	color: #19CF86;
+}
+
+.tweet {
+	text-align: center;
+	max-width: 768px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.blog time {
+	font-size: .75em;
+	color: $textLight;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-right: 1em;
+}
+
+.post {
+	padding: 0;
+	transition: all .3s ease-out;
+	border-radius: 2px;
+	margin: 2.75em 0;
+	overflow: hidden;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+
+	header {
+		width: 100%;
 	}
 
-	h5 {
-		font-weight: 300;
-		line-height: 1.4em;
+	&:hover {
+		box-shadow: 0 15px 45px rgba(0, 0, 0, .15);
 	}
+}
 
-	time {
-		font-size: .67em;
-		border-radius: 2px;
-		color: $accent;
-		border: 1px solid $accent;
-		padding: 3px 1em;
-		text-transform: uppercase;
-		font-weight: 400;
-		white-space: nowrap;
-		margin-right: .5em;
-	}
+.post-content {
+	padding: 2.5em;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
 
-	.tags {
-		a {
-			padding: 4px 1em;
+.post-image {
+	max-width: 100%;
+}
 
-			&:first-child {
-				border-top-left-radius: 2px;
-				border-bottom-left-radius: 2px;
-			}
+.post-title {
+	font-size: 1.35em;
+	font-weight: 400;
+	line-height: 1.15;
 
-			&:last-child {
-				border-top-right-radius: 2px;
-				border-bottom-right-radius: 2px;
-				margin-right: .5em;
-			}
+	a {
+		color: $text;
+		transition: color .2s ease-out;
+
+		&:hover {
+			color: $textHover;
 		}
 	}
+}
 
-	h4 {
-		color: $accent;
-	}
+.section-title, .section-subtitle {
+	text-align: center;
+	font-weight: 400;
+}
+
+.section-subtitle {
+	font-weight: 300;
+	color: $textHover;
+}
+
+.post-info {
+	display: flex;
+	align-items: center;
+	margin-top: .45em;
 }
 
 .tags {
-	display: inline;
+	.tag {
 
-	a {
-		font-size: .67em;
-		text-transform: uppercase;
-		color: #f9f9f9;
-		transition: background-color .2s ease-in-out;
+		&:hover:before {
+			visibility: visible;
+			-webkit-transform: scaleX(1);
+			transform: scaleX(1);
+		}
 
-		&:hover {
-			transition: background-color .2s ease-in-out;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			bottom: 0;
+			left: 0;
+			visibility: hidden;
+			-webkit-transform: scaleX(0);
+			transform: scaleX(0);
+			-webkit-transition: all .2s ease-in-out 0s;
+			transition: all .2s ease-in-out 0s;
 		}
 	}
 
-	@each $tag, $color in ('personal': $pink, 'life': $green, 'javascript': $javascript, 'html': $html, 'css': $css, 'nodejs': $nodejs, 'npm': $npm, 'tools': $tools) {
+	a {
+		padding: 0 .25em .25em .25em;
+		font-size: .75em;
+		text-transform: uppercase;
+		margin-right: .85em;
+		position: relative;
+		text-decoration: none;
+	}
+
+	@each $tag, $color in ('personal': $personal, 'life': $life, 'javascript': $javascript, 'html': $html, 'css': $css, 'nodejs': $nodejs, 'npm': $npm, 'tools': $tools) {
 		@include createTag($tag, $color);
 	}
 }
 
 footer {
-	background-color: $accent;
-	color: $white;
-	padding: 2em 1.5em;
+	color: $text;
+	background-color: $sectionHighlight;
+	padding: 3em 1.5em;
+	text-align: center;
 
-	.icon {
-		fill: rgba(255, 255, 255, .8);
-		width: 1.25em;
-		height: 1.25em;
-		padding:0 .5em;
+	h3 {
+		font-weight: 700;
+		color: #37474F;
 	}
 }
 
-section h1{
-	padding: 0 1em;
-	font-size: 1.5em;
-	font-weight: 300;
+.footer-navigation {
+	padding:0;
+	margin:0;
+	li {
+		display: inline-block;
+		padding-right: .95em;
+		font-size: .75em;
+		text-transform: uppercase;
+	}
 }
 
-.tweet, .repo, .post {
-	padding: 0 2em;
+.tweet, .repo {
 	margin: 2em 0;
 }
 
-.post-info {
-	margin-top: .5em;
+@media (max-width: 1046px) {
+	.block {
+		position: absolute;
+		margin-top: -48px;
+		width: 50%;
+	}
+}
+
+@media (max-width: 856px) {
+	.block {
+		display: none;
+	}
+
+	.bio {
+		-webkit-flex-basis: 100%;
+	    -ms-flex-preferred-size: 100%;
+	    flex-basis: 100%;
+	    max-width: 100%;
+	}
 }
 
 @media (max-width: 768px) {
-	header.site-header {
+	.site-header {
 		padding: 5em 1.5em 5em 1.5em;
 	}
 
-	html, body {
-		font-size: 18px;
+	.salute {
+		display: none;
 	}
 
-	.tweet, .repo, .post {
-		padding: 1.5em!important;
-		margin: 1em 0!important;
+	.site-header h1 {
+		font-size: 3.25em;
+	}
+
+	.job {
+		font-size: 2em;
 	}
 
 	section h1 {
 		padding: 0 1em;
-	}
-
-	.col-xs-12.title {
-		padding: 0;
 	}
 
 	.c-hamburger--htx {
@@ -360,11 +584,14 @@ section h1{
 			bottom: -15px;
 		}
 	}
-}
 
-@media(max-width: 767px) {
-	.follow-me {
-		padding: .5em 1.5em;
+	.block {
+	    position: relative!important;
+	}
+
+	.github .repo {
+		height: 115px;
+		padding: 40px 20px!important;
 	}
 }
 
@@ -373,11 +600,19 @@ section h1{
 		padding: 0!important;
 	}
 
-	.github .tags {
-		display: none!important;
+	.site-header h1 {
+		font-size: 2.95em;
 	}
 
-	.follow-me {
-		padding: .5em 0;
+	.job {
+		font-size: 1.75em;
+	}
+
+	html, body {
+		font-size: 15px;
+	}
+
+	.social {
+		margin-top: 1.5em;
 	}
 }

@@ -11,7 +11,8 @@ var GithubApiClient = require('./scripts/githubapiclient'),
 	staticData = require('./data/staticdata');
 
 exports.index = function(req, res) {
-	res.header('Cache-Control', 'public, max-age=86400');
+
+	res.setHeader('Cache-Control', 'public, max-age=86400');
 
 	var ghUserCCStars = GithubApiClient.getSearch({
 		q: 'user:carloscuesta',
@@ -23,7 +24,7 @@ exports.index = function(req, res) {
 
 	var userTimeline = TwitterApiClient.getUserTimeline({
 		screen_name: 'crloscuesta',
-		count: 4,
+		count: 1,
 		exclude_replies: false,
 		include_rts: true
 	});
@@ -47,7 +48,7 @@ exports.index = function(req, res) {
 			me: staticData.me,
 			site: staticData.site,
 			social: staticData.social,
-			cache: true
+			cache: false
 		});
 	});
 };

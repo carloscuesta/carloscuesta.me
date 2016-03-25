@@ -1,10 +1,16 @@
-@mixin createTag($language, $color) {
-	.#{$language} {
-		background-color: $color;
-	}
+@mixin createTag($tag, $color) {
+	.#{$tag} {
+		color: $color;
 
-	.#{$language}:hover {
-		background-color: darken($color, 10%);
+		&:before {
+			background-color: $color;
+		}
+	}
+}
+
+@mixin createLanguageCard($language, $color) {
+	.language-#{$language} {
+		border-top-color: $color;
 	}
 }
 

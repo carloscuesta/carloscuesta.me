@@ -1,32 +1,30 @@
 section.github
     .wrap
-        .row
-            .col-xs-12.col-sm-8.col-md-9.title
-                h1 I'm #[a(href='https://github.com/carloscuesta', onmousedown="ga('send', 'event', 'Link', 'GitHub Name');", target="_blank") @carloscuesta] on github.
-            .col-xs-12.col-sm-4.col-md-3.end-sm.follow-me
-                a(href="https://github.com/carloscuesta", onmousedown="ga('send', 'event', 'Button', 'GitHub Follow');", target="_blank").follow-btn
-                    span.github.end-xs
-                        svg.icon.icon-github
-                            use(xlink:href="#icon-github")
-                        span Follow @carloscuesta
+        h2.section-title GitHub
+        h4.section-subtitle The most popular projects of my github.
+        .row.around-xs
             -each github in githubData.items
-                article.repo.col-xs-12.col-sm-6.col-md-4
-                    .row
-                        .col-xs
-                            a(href=github.html_url, onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank"): h4.github-title= github.name
-                        .col-xs.end-xs
-                            if github.language
-                                span.tags
-                                    a(href="#", class="#{github.language}") #{github.language}
-                        //-.github-btns
-                            a(href=github.html_url).btn.btn-repo Repo
-                            a(href=github.homepage).btn.btn-demo Demo
-                    div
-                        svg.icon.icon-star
-                            use(xlink:href="#icon-star")
-                        span #{github.stargazers_count}
-                        svg.icon.icon-fork
-                            use(xlink:href="#icon-fork")
-                        span #{github.forks}
-                    .row
-                        div.col-xs-12.description= github.description
+                article.col-xs-12.col-sm-6.col-md-4.github-repo
+                    div(class="repo language-#{github.language}")
+                        .repo-title
+                            a(href="#{github.html_url}", onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank") 
+                                h4.github-title #{github.name}
+                            if github.homepage
+                                a.web(href="#{github.homepage}", target="_blank", onmousedown="ga('send', 'event', 'GitHub Page', '#{github.name}');",)
+                                    svg.icon.icon-globe
+                                        use(xlink:href="#icon-globe")
+                        .github-stats
+                            a.starred(href=github.html_url)
+                                svg.icon.icon-star
+                                    use(xlink:href="#icon-star")
+                            span.stars #{github.stargazers_count}
+                            if github.forks
+                                a.forked(href="#{github.html_url}/fork")
+                                    svg.icon.icon-fork
+                                        use(xlink:href="#icon-fork")
+                                    span.forks #{github.forks}
+                        .description #{github.description}
+            a.btn.btn-large.btn-blue(href="https://github.com/#{social.github}", onmousedown="ga('send', 'event', 'Social', 'Follow GitHub');", target="_blank")
+                svg.icon.icon-github
+                        use(xlink:href="#icon-github")
+                | Follow @#{social.github}
