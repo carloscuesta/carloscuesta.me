@@ -7,7 +7,7 @@ var express = require('express'),
     compression = require('compression');
 
 carloscuesta.use(compression());
-carloscuesta.set('etag', false);
+
 carloscuesta.set('views', __dirname + '/templates');
 carloscuesta.set('view engine', 'jade');
 carloscuesta.use(sassMiddleware({
@@ -15,20 +15,22 @@ carloscuesta.use(sassMiddleware({
     dest: __dirname+'/static/css',
     outputStyle: 'compressed'
 }));
+carloscuesta.disable('etag');
 
-carloscuesta.use(express.static(__dirname +  '/static/img', {maxage: 86400000}));
-carloscuesta.use(express.static(__dirname +  '/static/js/', {
-    maxage: 86400000,
+carloscuesta.use(express.static(__dirname +  '/static/', {
+    maxAge: 86400000,
     setHeaders: function(res) {
-        res.setHeader('Expires', new Date(Date.now() + 86400000*30).toUTCString());
+        res.setHeader('Cache-Control', 'public, max-age=86400');
+        res.setHeader('Expires', new Date(Date.now() + 86400000).toUTCString());
     }
 }));
-carloscuesta.use(express.static(__dirname +  '/static/css/', {
-    maxage: 86400000,
-    setHeaders: function(res) {
-        res.setHeader('Expires', new Date(Date.now() + 86400000*30).toUTCString());
-    }
-}));
+
+carloscuesta.use(function (req, res, next) {
+	res.setHeader('Cache-Control', 'public, max-age=86400');
+    res.setHeader('Expires', new Date(Date.now() + 86400000).toUTCString());
+    next();
+});
+
 carloscuesta.get('/', routes.index);
 carloscuesta.get('/'+process.env.PARAM_CLEAN, routes.cacheClean);
 
