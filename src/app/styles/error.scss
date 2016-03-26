@@ -5,23 +5,51 @@ html, body {
 	margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
-    font-family: 'Montserrat','helvetica';
+    font-family: 'Montserrat','Helvetica Neue';
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
-    background-color: #f9f9f9;
+    background-color: $sectionHighlight;
     color: $text;
+	overflow-x: hidden;
+}
+
+.status-code, a, h1 {
+	color: $accent;
+}
+
+.btn {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	padding: .45em 1em;
+	border-radius: 50px;
+	transition: all .3s ease-out;
+	letter-spacing: .015em;
+	display: flex;
+	align-items: center;
+	background-color: $accent;
+	color: $white;
+	text-decoration: none!important;
+
+	&-raised {
+		box-shadow: 0 .5em 1.5em rgba(255, 82, 82, .45);
+	}
+}
+
+.btn-return {
+	display:flex;
+	padding-top:1em;
 }
 
 h1, h2, h3,  h4, h5, h6 {
     line-height: 1.15;
     margin-top: 0;
-    margin-bottom: .5rem
+    margin-bottom: 1rem
 }
 
 h1 {
-    font-size: 4em;
-    font-weight: 400;
+    font-size: 4.5em;
+    font-weight: 700;
 }
 
 h2 {
@@ -49,13 +77,12 @@ ul {
 	font-size: 1.5em;
 }
 
-a {
+li a {
 	text-decoration: none;
-	color: $accent;
 	transition: color .2s ease-in-out;
+
 	&:hover {
-		color: $accentlight;
-		transition: color .2s ease-in-out;
+		color: $textHover;
 	}
 }
 

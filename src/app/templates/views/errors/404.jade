@@ -5,7 +5,7 @@ html
         meta(charset="utf-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(name="twitter:card", content="summary")
-        meta(name="twitter:description", content="Error 404 Page Nout Found - Carlos Cuesta")
+        meta(name="twitter:description", content="Error 404 Page Not Found - Carlos Cuesta")
         meta(name="twitter:creator", content="@crloscuesta")
         meta(name="twitter:url", content="http://carloscuesta.me")
         meta(name="twitter:title", content="Carlos Cuesta")
@@ -23,9 +23,9 @@ html
         link(rel='icon', type='image/png', sizes='96x96', href='favicon-96x96.png')
         link(rel='icon', type='image/png', sizes='16x16', href='favicon-16x16.png')
         link(rel='manifest', href='manifest.json')
-        meta(name='msapplication-TileColor', content='#2196F3')
+        meta(name='msapplication-TileColor', content='#FF5252')
         meta(name='msapplication-TileImage', content='ms-icon-144x144.png')
-        meta(name='theme-color', content='#2196F3')
+        meta(name='theme-color', content='#FF5252')
         style
             include ../../../static/css/error.css
         script
@@ -39,7 +39,12 @@ html
                     h3 Here are some helpful links instead:
                     nav
                         ul
-                            li #[a(href="http://carloscuesta.me") Home]
-                            li #[a(href="http://carloscuesta.me/blog") Blog]
-                            li #[a(href="http://carloscuesta.me/sitemap.xml") Sitemap]
-                    h4 Error Code: 404
+                            li #[a(href="http://carloscuesta.me", onmousedown="ga('send', 'event', '404','Click', 'Link Home');") Home]
+                            li #[a(href="http://carloscuesta.me/blog", onmousedown="ga('send', 'event', '404','Click', 'Link Blog');") Blog]
+                            li #[a(href="http://carloscuesta.me/sitemap.xml", onmousedown="ga('send', 'event', '404','Click', 'Link Sitemap');") Sitemap]
+                    h4 Error Code: 
+                        span.status-code 404
+                    div.btn-return
+                        a(href="https://carloscuesta.me", onmousedown="ga('send', 'event', '404','Click', 'Return Button');").btn.btn-raised Return to carloscuesta
+        script.
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67824860-3', 'auto');ga('send', 'pageview');
