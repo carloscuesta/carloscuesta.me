@@ -491,7 +491,11 @@ footer {
 	color: $text;
 	background-color: $sectionHighlight;
 	padding: 3em 1.5em;
-	text-align: center;
+	text-align: left;
+
+	.social {
+		text-align: right;
+	}
 
 	h3 {
 		font-weight: 700;
@@ -592,6 +596,14 @@ footer {
 	.github .repo {
 		height: 115px;
 		padding: 40px 20px!important;
+	}
+
+	footer {
+		padding: 1.5em .5em;
+	}
+
+	footer, footer .social {
+		text-align: center;
 	}
 }
 
