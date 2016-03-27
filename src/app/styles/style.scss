@@ -445,8 +445,9 @@ nav.nav {
 
 .post-info {
 	display: flex;
-	align-items: center;
-	margin-top: .45em;
+    flex-wrap: wrap;
+    margin-top: .45em;
+    align-items: center;
 }
 
 .tags {
