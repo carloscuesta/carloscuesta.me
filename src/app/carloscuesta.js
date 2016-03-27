@@ -16,9 +16,9 @@ carloscuesta.use(sassMiddleware({
     outputStyle: 'compressed'
 }));
 
-carloscuesta.use(express.static(__dirname +  '/static/', {maxAge: 86400000}));
-carloscuesta.use(express.static(__dirname +  '/static/css/', {maxAge: 86400000}));
-carloscuesta.use(express.static(__dirname +  '/static/js/', {maxAge: 86400000}));
+carloscuesta.use(express.static(__dirname +  '/static/'));
+carloscuesta.use(express.static(__dirname +  '/static/css/'));
+carloscuesta.use(express.static(__dirname +  '/static/js/'));
 
 carloscuesta.get('/', routes.index);
 carloscuesta.get('/'+process.env.PARAM_CLEAN, routes.cacheClean);
