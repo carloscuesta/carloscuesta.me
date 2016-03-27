@@ -6,9 +6,9 @@ module.exports = function(grunt) {
         pagespeed: {
             options: {
                 nokey: true,
-                url: "http://carloscuesta.me",
+                url: "https://carloscuesta.me",
                 locale: "en_GB",
-                threshold: 99
+                threshold: 90
             },
             desktop: {
                 options: {
