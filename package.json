@@ -2,14 +2,15 @@
   "name": "carloscuesta.me",
   "version": "1.0.0",
   "engines": {
-    "node": "4.4.0"
+    "node": "4.4.1"
   },
   "description": "Carlos Cuesta website.",
   "main": "index.js",
   "scripts": {
     "start": "forever index.js",
     "pagespeed": "grunt",
-    "test": "mocha test/app.js && npm run pagespeed"
+    "coveralls": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
+    "test": "mocha test/app.js && npm run pagespeed && npm run coveralls"
   },
   "repository": {
     "type": "git",
@@ -43,8 +44,10 @@
     "twitter-text": "^1.13.3"
   },
   "devDependencies": {
+    "coveralls": "^2.11.9",
     "grunt": "^0.4.5",
     "grunt-pagespeed": "^2.0.0",
+    "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
     "should": "^8.2.2",
     "supertest": "^1.1.0"
