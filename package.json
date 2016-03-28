@@ -10,7 +10,7 @@
     "start": "forever index.js",
     "pagespeed": "grunt",
     "coveralls": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
-    "test": "mocha test/app.js && npm run pagespeed && npm run coveralls"
+    "test": "npm run coveralls && npm run pagespeed"
   },
   "repository": {
     "type": "git",

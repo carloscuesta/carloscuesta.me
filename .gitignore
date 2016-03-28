@@ -4,6 +4,9 @@
 # Dependencies directory
 node_modules
 
+# Coverage
+coverage
+
 # Editor config files
 *.sublime-
 
