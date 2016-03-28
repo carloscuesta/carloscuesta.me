@@ -24,4 +24,9 @@ carloscuesta.get('/', routes.index);
 carloscuesta.get('/aboutme', routes.aboutme);
 carloscuesta.get('/'+process.env.PARAM_CLEAN, routes.cacheClean);
 
+carloscuesta.use(function(error, req, res, next) {
+    res.status(500);
+    res.render('views/errors/500.jade', {error: error});
+});
+
 module.exports = carloscuesta;

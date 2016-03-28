@@ -3,6 +3,27 @@
 @import './_partials/_flexbox.scss';
 @import './_partials/_menu.scss';
 
+.site-header {
+	color: $text;
+	background: $white;
+	padding: 5em;
+	text-align: center;
+
+	.icon {
+		padding: .5em;
+		fill: $text;
+		transition: fill .2s ease-in-out;
+	}
+
+	.btn-large {
+		font-size: 1.15em;
+	}
+}
+
+.job {
+	font-weight: 400;
+}
+
 nav.nav {
 	.navigation {
 		position: absolute;
@@ -80,5 +101,115 @@ footer {
 		fill: $text;
 		margin-right: 1em;
 		transition: fill .2s ease-in-out;
+	}
+}
+
+.section-title, .section-subtitle {
+	text-align: center;
+	font-weight: 400;
+}
+
+.section-subtitle {
+	font-weight: 300;
+	color: $textHover;
+}
+
+.aboutme {
+	background-color: $sectionHighlight;
+	color: $text;
+
+	h1 {
+		padding: 0;
+	}
+
+	.social {
+		margin-top: 1.5em;
+	}
+
+	.icon {
+		width: 1.5em;
+		height: 1.5em;
+	}
+}
+
+.profile-item {
+	padding: .35em 0;
+}
+
+.my-name {
+	color: $accent;
+}
+
+strong {
+	font-weight: 400;
+}
+
+@media (max-width: 768px) {
+	.site-header {
+		padding: 5em 1.5em 5em 1.5em;
+	}
+
+	.about {
+		display: block;
+	}
+
+	.site-header h1 {
+		font-size: 3.25em;
+	}
+
+	.job {
+		font-size: 2em;
+	}
+
+	.c-hamburger--htx {
+	    right: 20px;
+    	top: 15px;
+	}
+
+	.c-hamburger {
+		width: 40px;
+		height: 40px;
+	}
+
+	.c-hamburger span {
+	    left: 0;
+    	right: 0;
+		height: 3px;
+		top: 22px;
+
+		&::after, &::before {
+			height: 3px;
+		}
+
+		&::before {
+			top: -15px;
+		}
+
+		&::after {
+			bottom: -15px;
+		}
+	}
+
+	footer {
+		padding: 1.5em .5em;
+	}
+
+	footer, footer .social {
+		text-align: center;
+	}
+}
+
+
+@media (max-width: 468px) {
+	.site-header h1 {
+		font-size: 2.95em;
+	}
+
+	.job {
+		font-size: 1.75em;
+	}
+
+	html, body {
+		font-size: 15px;
 	}
 }
