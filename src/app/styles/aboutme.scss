@@ -66,33 +66,6 @@ nav.nav {
 	}
 }
 
-footer {
-	color: $text;
-	background-color: $sectionHighlight;
-	padding: 3em 1.5em;
-	text-align: left;
-
-	.social {
-		text-align: right;
-	}
-
-	h3 {
-		font-weight: 700;
-		color: #37474F;
-	}
-}
-
-.footer-navigation {
-	padding:0;
-	margin:0;
-	li {
-		display: inline-block;
-		padding-right: .95em;
-		font-size: .75em;
-		text-transform: uppercase;
-	}
-}
-
 .social {
 	.icon {
 		display: inline-block;
@@ -142,6 +115,45 @@ footer {
 
 strong {
 	font-weight: 400;
+}
+
+.icon-twitter:hover {
+	fill: #55acee;
+}
+
+.icon-github:hover {
+	fill: #000;
+}
+
+.icon-linkedin:hover {
+	fill: #0077B5;
+}
+
+footer {
+	color: $text;
+	background-color: $sectionHighlight;
+	padding: 3em 1.5em;
+	text-align: left;
+
+	.social {
+		text-align: right;
+	}
+
+	h3 {
+		font-weight: 700;
+		color: #37474F;
+	}
+}
+
+.footer-navigation {
+	padding:0;
+	margin:0;
+	li {
+		display: inline-block;
+		padding-right: .95em;
+		font-size: .75em;
+		text-transform: uppercase;
+	}
 }
 
 @media (max-width: 768px) {

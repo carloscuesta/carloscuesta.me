@@ -1,13 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>http://www.carloscuesta.me</loc>
-    <image:image>
-       <image:loc>http://carloscuesta.me/carloscuesta.jpeg</image:loc>
-       <image:caption>Carlos Cuesta</image:caption>
-    </image:image>
-  </url>
-  <url>
-  	<loc>http://www.carloscuesta.me/blog</loc>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://carloscuesta.me</loc>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+		<image:image>
+			<image:loc>https://carloscuesta.me/img/carloscuesta.jpeg</image:loc>
+			<image:caption>Carlos Cuesta</image:caption>
+    	</image:image>
+	</url>
+	<url>
+		<loc>https://carloscuesta.me/aboutme</loc>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://carloscuesta.me/blog</loc>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
 </urlset>
