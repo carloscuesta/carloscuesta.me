@@ -1,0 +1,22 @@
+section.aboutme
+    .wrap
+        .row.middle-xs
+            .col-xs-12.col-md-4
+                h2 Carlos Cuesta
+                ul
+                    li.profile-item #[strong Age]: #{me.age}
+                    li.profile-item #[strong Job]: #{me.job}
+                    li.profile-item #[strong Company]: #{me.company}
+                    li.profile-item #[strong Hometown]: #{me.hometown}
+                .social
+                    a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'GitHub');", href="https://twitter.com/#{social.twitter}", target="_blank")
+                        svg.icon.icon-twitter
+                            use(xlink:href="#icon-twitter")
+                    a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'Twitter');", href="https://github.com/#{social.github}", target="_blank")
+                        svg.icon.icon-github
+                            use(xlink:href="#icon-github")
+                    a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'LinkedIn');", href="https://es.linkedin.com/in/#{social.linkedin}", target="_blank")
+                        svg.icon.icon-linkedin
+                            use(xlink:href="#icon-linkedin")
+            .col-xs-12.col-md-8
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

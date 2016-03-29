@@ -1,6 +1,7 @@
 @import './_partials/_vars.scss';
 @import './_partials/_defaults.scss';
 @import './_partials/_flexbox.scss';
+@import './_partials/_mixins.scss';
 @import './_partials/_menu.scss';
 
 .site-header {
@@ -20,7 +21,7 @@
 	}
 }
 
-.job {
+.position-title {
 	font-weight: 400;
 }
 
@@ -129,6 +130,59 @@ strong {
 	fill: #0077B5;
 }
 
+.job-card {
+	margin: 2em 0;
+}
+
+.job {
+	padding: 50px 45px;
+	border-radius: 2px;
+	border-top: 3px solid;
+	border-top-color: $textLight;
+	transition: all .3s ease-out;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+
+	&:hover {
+		box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
+	}
+}
+
+.job-header {
+	padding-bottom: .75em;
+}
+
+.start, .end {
+	color: $textHover;
+	padding-bottom: .5em;
+}
+
+.company, .start, .end {
+	font-weight: 300;
+}
+
+.end {
+	margin-left: .25em;
+}
+
+.position {
+	font-weight: 400;
+	padding: .5em 0;
+}
+
+.company-logo {
+	display: flex;
+	height: 50px;
+	width: 17em;
+}
+
+.position, .company, .dates, .job-header {
+	display: flex;
+}
+
+@each $company, $color in ('mc': #ffdd00, 'fr': #26ACDD) {
+	@include createCompanyBorder($company, $color);
+}
+
 footer {
 	color: $text;
 	background-color: $sectionHighlight;
@@ -169,7 +223,7 @@ footer {
 		font-size: 3.25em;
 	}
 
-	.job {
+	.position {
 		font-size: 2em;
 	}
 
@@ -217,7 +271,7 @@ footer {
 		font-size: 2.95em;
 	}
 
-	.job {
+	.position {
 		font-size: 1.75em;
 	}
 

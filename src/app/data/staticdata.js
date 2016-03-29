@@ -9,7 +9,51 @@ var staticData = {
 		hometown: 'Badalona',
 		aboutme: 'Front End developer based in Barcelona, Spain. Working at <a href="http://mediatic.cat" target="_blank" onmousedown="ga(\'send\', \'event\', \'Link\', \'Company\');",>Mediàtic</a>. Coding addicted that enjoys building things with code, I like design, tecnhology and I <span class="heart">&#9829;</span> OpenSource.',
 		mail: 'hi@carloscuesta.me',
-		avatar: 'carloscuesta.jpeg'
+		avatar: 'carloscuesta.jpeg',
+		jobs: [
+			{
+        		position: {
+					title: '',
+					dates: {
+	        			start: '2016-XX',
+						finish: ''
+	        		}
+				},
+				company: {
+					name: 'Friendly Rentals',
+					logo: '',
+					color: 'fr'
+				},
+			},
+			{
+        		position: {
+					title: 'Front End Developer',
+					dates: {
+	        			start: '2016-03',
+						finish: 'Present'
+	        		}
+				},
+				company: {
+					name: 'Mediàtic',
+					logo: 'mediatic',
+					color: 'mc'
+				},
+			},
+			{
+        		position: {
+					title: 'Front End Internship',
+					dates: {
+	        			start: '2015-10',
+						finish: '2016-02'
+	        		}
+				},
+				company: {
+					name: 'Friendly Rentals',
+					logo: '',
+					color: 'fr'
+				},
+			}
+		]
 	},
 
 	social: {
