@@ -15,7 +15,7 @@ var staticData = {
         		position: {
 					title: 'Front End Developer',
 					dates: {
-	        			start: '2016-03',
+	        			start: '2015-03',
 						finish: 'Present'
 	        		}
 				},
@@ -35,7 +35,7 @@ var staticData = {
 				},
 				company: {
 					name: 'Friendly Rentals',
-					logo: '',
+					logo: 'friendlyrentals',
 					color: 'fr'
 				},
 			}

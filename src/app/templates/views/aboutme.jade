@@ -2,8 +2,8 @@ doctype html
 html
     head
         title #{me.name} | About Me | #{me.job}
-        link(rel="stylesheet", type="text/css", href="/aboutme.css")
-        //-style
+        //-link(rel="stylesheet", type="text/css", href="/aboutme.css")
+        style
             include ../../static/css/aboutme.css
         script  
             include ../../static/js/fonts.js
@@ -20,20 +20,20 @@ html
         main
             include ../_includes/_sections/_profile.jade
             include ../_includes/_sections/_experience.jade
-            section.education.col-xs-12
+            //-section.education.col-xs-12
                 .wrap
                     h2.section-title Education
                     h4.section-subtitle Work experience as a Front End developer.
                     .row.around-xs
-            section.awards
+            //-section.awards
                 .wrap
                     h2.section-title Awards
                     h4.section-subtitle Work experience as a Front End developer.
                     .row.around-xs
-            section.skills
+            //-section.skills
                 .wrap
                     h2.section-title Skills
-                    h4.section-subtitle Work experience as a Front End developer.
+                    h4.section-subtitle Things that I use and love.
                     .row.around-xs
         include ../_includes/_footer.jade
         
