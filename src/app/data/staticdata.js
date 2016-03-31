@@ -13,20 +13,6 @@ var staticData = {
 		jobs: [
 			{
         		position: {
-					title: '',
-					dates: {
-	        			start: '2016-XX',
-						finish: ''
-	        		}
-				},
-				company: {
-					name: 'Friendly Rentals',
-					logo: '',
-					color: 'fr'
-				},
-			},
-			{
-        		position: {
 					title: 'Front End Developer',
 					dates: {
 	        			start: '2016-03',

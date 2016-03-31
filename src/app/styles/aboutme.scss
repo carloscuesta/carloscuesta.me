@@ -132,15 +132,17 @@ strong {
 
 .job-card {
 	margin: 2em 0;
+	display: flex;
 }
 
 .job {
-	padding: 50px 45px;
+	padding: 60px 40px;
 	border-radius: 2px;
 	border-top: 3px solid;
 	border-top-color: $textLight;
 	transition: all .3s ease-out;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	flex: 1;
 
 	&:hover {
 		box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
@@ -152,8 +154,8 @@ strong {
 }
 
 .start, .end {
-	color: $textHover;
 	padding-bottom: .5em;
+	font-weight: 300;
 }
 
 .company, .start, .end {
@@ -172,7 +174,7 @@ strong {
 .company-logo {
 	display: flex;
 	height: 50px;
-	width: 17em;
+	max-width: 80%;
 }
 
 .position, .company, .dates, .job-header {
@@ -264,7 +266,6 @@ footer {
 		text-align: center;
 	}
 }
-
 
 @media (max-width: 468px) {
 	.site-header h1 {

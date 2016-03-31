@@ -18,27 +18,13 @@ html
                     span.my-name  #{me.name}
                 h2.position-title #{me.job}
         main
-            include ../_includes/_sections/_profile.jade 
-            section.experience
+            include ../_includes/_sections/_profile.jade
+            include ../_includes/_sections/_experience.jade
+            section.education.col-xs-12
                 .wrap
-                    h2.section-title Experience
-                    h4.section-subtitle Jobs as a Front End developer.
+                    h2.section-title Education
+                    h4.section-subtitle Work experience as a Front End developer.
                     .row.around-xs
-                        -each job in me.jobs
-                            article.col-xs-12.col-sm-6.col-md-4.job-card
-                                div(class="job #{job.company.color}")
-                                    header.job-header
-                                        svg(class="company-logo")
-                                            use(xlink:href="#logo-#{job.company.logo}")
-                                    span.position-title #{job.position.title}
-                                    .dates
-                                        time.start(datetime="#{job.position.dates.start}") #{job.position.dates.start}
-                                        time.end(datetime="#{job.position.dates.finish}") #{job.position.dates.finish}
-                section.education.col-xs-12
-                    .wrap
-                        h2.section-title Education
-                        h4.section-subtitle Work experience as a Front End developer.
-                        .row.around-xs
             section.awards
                 .wrap
                     h2.section-title Awards
