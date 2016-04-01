@@ -39,7 +39,37 @@ var staticData = {
 					color: 'fr'
 				},
 			}
+		],
+		education: [
+			{
+				title: 'Desenvolupament d\'Aplicacions Web',
+				dates: {
+					start: '2013-09',
+					finish: '2015-06',
+					time: '2 years'
+				},
+				school: 'ETP El Clot'
+			},
+			{
+				title: 'Batxillerat Tecnològic',
+				dates: {
+					start: '2011-09',
+					finish: '2013-06',
+					time: '2 years'
+				},
+				school: 'Col·legi Sant Andreu'
+			}
+		],
+
+		awards: [
+			{
+				title: 'Best Final Project - DAW',
+				project: 'Wireframe Builder',
+				year: '2015',
+				organization: 'ETP El Clot'
+			}
 		]
+
 	},
 
 	social: {

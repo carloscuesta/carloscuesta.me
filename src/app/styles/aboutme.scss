@@ -130,12 +130,12 @@ strong {
 	fill: #0077B5;
 }
 
-.job-card {
+.job-card, .education-card, .award-card {
 	margin: 2em 0;
 	display: flex;
 }
 
-.job {
+.job, .grade, .award {
 	padding: 60px 40px;
 	border-radius: 2px;
 	border-top: 3px solid;
@@ -147,6 +147,10 @@ strong {
 	&:hover {
 		box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
 	}
+}
+
+.grade, .award {
+	border-top: none;
 }
 
 .job-header {
@@ -177,8 +181,27 @@ strong {
 	max-width: 80%;
 }
 
-.position, .company, .dates, .job-header {
+.position, .company, .dates, .job-header, .project {
 	display: flex;
+}
+
+section .row {
+	justify-content: center;
+}
+
+.icon-education, .icon-award {
+	width: 2.5em;
+	height: 2.5em;
+	display: block;
+	padding-bottom: .75em
+}
+
+.icon-education {
+	fill: $web;
+}
+
+.icon-award {
+	fill: $stars;
 }
 
 @each $company, $color in ('mc': #ffdd00, 'fr': #26ACDD) {
