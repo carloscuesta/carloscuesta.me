@@ -66,10 +66,9 @@
 	&-blue {
 		background-color: #2196F3;
 		color: $white;
-		box-shadow: 0 .5em 1.5em rgba(33, 150, 243, .45);
 
 		&:hover {
-			box-shadow: none;
+			box-shadow: 0 .5em 1.5em rgba(33, 150, 243, .45);
 		}
 	}
 
