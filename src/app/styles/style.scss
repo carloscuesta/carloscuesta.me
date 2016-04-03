@@ -47,13 +47,6 @@
 		transform: none!important;
 	}
 
-	&-flat {
-		background: #fff;
-		color: $text;
-		padding: .25em .5em;
-		box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
-	}
-
 	&-red {
 		background-color: $accent;
 		color: $white;
@@ -61,14 +54,19 @@
 		&:hover, &-raised {
 			box-shadow: 0 .5em 1.5em rgba(255, 82, 82, .45);
 		}
+
+		&:active {
+			background-color: #FF6363;
+			transition: .1s;
+		}
 	}
 
 	&-blue {
-		background-color: #2196F3;
+		background-color: #00B0FF;
 		color: $white;
 
 		&:hover {
-			box-shadow: 0 .5em 1.5em rgba(33, 150, 243, .45);
+			box-shadow: 0 .5em 1.5em rgba(0, 176, 255, .45);
 		}
 	}
 
@@ -77,7 +75,7 @@
 		color: $white;
 
 		&:hover {
-			box-shadow: 0 .5em 1.5em rgba(55, 71, 79, .45);
+			box-shadow: 0 .25em 1em rgba(55, 71, 79, .45);
 		}
 	}
 }
@@ -325,11 +323,20 @@ nav.nav {
 	}
 }
 
+.tweet-card {
+	display: flex;
+}
+
 .tweet {
 	background-color: $white;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
 	border-radius: 2px;
 	padding: 3em 1.5em 0;
+	transition: all .3s ease-out;
+
+	&:hover {
+		box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+	}
 }
 
 .tweet-text {
