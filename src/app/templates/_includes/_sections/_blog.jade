@@ -6,7 +6,7 @@ section.blog
             -each post in ghostData.posts
                 .col-xs-12.col-sm-6.col-md-5(style="display:flex;")
                     article.post
-                        img.post-image(src="#{post.image}", width="442", height="200")
+                        img.post-image(src="#{post.image}")
                         .post-content
                             header
                                 h2.post-title
@@ -17,7 +17,7 @@ section.blog
                                     -each tag in post.tags
                                         a(class="tag #{tag.name}", href="/blog/tag/#{tag.name}", onmousedown="ga('send', 'event', 'Post', 'tag-#{tag.name}');", target="_blank") ##{tag.name}
                             p #{post.html}
-                            
-                            a.btn.btn-secondary(href="/blog#{post.url}", onmousedown="ga('send', 'event', 'Post', 'Click', 'Read More');", target="_blank") Read more
+                        footer.post-footer
+                            a(href="/blog#{post.url}", onmousedown="ga('send', 'event', 'Post', 'Click', 'Read More');", target="_blank") Read more
         .more-btn
             a.btn.btn-large.btn-blue(href="https://carloscuesta.me/blog" onmousedown="ga('send', 'event', 'Button', 'Click', 'Read more posts');", target="_blank") See more posts
