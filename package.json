@@ -37,7 +37,7 @@
     "jade": "^1.11.0",
     "memory-cache": "^0.1.4",
     "moment": "^2.12.0",
-    "node-fetch": "^1.4.1",
+    "node-fetch": "^1.5.0",
     "node-sass-middleware": "^0.9.7",
     "oauth": "^0.9.14",
     "striptags": "^2.1.1",
