@@ -11,20 +11,8 @@ var GithubApiClient = (function() {
 		'cache': 5
 	});
 
-	var getUserRepos = function(userName, params) {
-		return CacheApiClient.validate.call(_ApiClient, '/users/'+userName+'/repos', params);
-	};
-
 	var getSearch = function(params){
 		return CacheApiClient.validate.call(_ApiClient, '/search/repositories', params);
-	};
-
-	var getOrgRepos = function(orgName, params) {
-		return CacheApiClient.validate.call(_ApiClient, '/orgs/'+orgName+'/repos', params);
-	};
-
-	var getRepo = function(userName, repoName, params){
-		return CacheApiClient.validate.call(_ApiClient,'/repos/'+userName+'/'+repoName, params);
 	};
 
 	var parseRepos = function(repos) {
@@ -44,10 +32,7 @@ var GithubApiClient = (function() {
 	};
 
 	return {
-		getUserRepos: getUserRepos,
 		getSearch: getSearch,
-		getOrgRepos: getOrgRepos,
-		getRepo: getRepo,
 		parseRepos: parseRepos
 	};
 })();
