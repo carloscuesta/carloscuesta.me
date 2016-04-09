@@ -4,7 +4,7 @@ section.blog
         h4.section-subtitle The latests posts of my blog.
         .row.around-xs
             -each post in ghostData.posts
-                .col-xs-12.col-sm-6.col-md-5(style="display:flex;")
+                .col-xs-12.col-sm-6.col-md-5.post-wrap
                     article.post
                         img.post-image(src="#{post.image}")
                         .post-content
@@ -16,8 +16,10 @@ section.blog
                                 span.tags
                                     -each tag in post.tags
                                         a(class="tag #{tag.name}", href="/blog/tag/#{tag.name}", onmousedown="ga('send', 'event', 'Post', 'tag-#{tag.name}');", target="_blank") ##{tag.name}
-                            p #{post.html}
+                            p.post-excerpt #{post.html}
                         footer.post-footer
-                            a(href="/blog#{post.url}", onmousedown="ga('send', 'event', 'Post', 'Click', 'Read More');", target="_blank") Read more
+                            a.read-more(href="/blog#{post.url}", onmousedown="ga('send', 'event', 'Post', 'Click', 'Read More');", target="_blank") Read more
+                                svg.icon.icon-arrow
+                                    use(xlink:href="#icon-arrow")
         .more-btn
             a.btn.btn-large.btn-blue(href="https://carloscuesta.me/blog" onmousedown="ga('send', 'event', 'Button', 'Click', 'Read more posts');", target="_blank") See more posts

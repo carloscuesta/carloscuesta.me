@@ -1,13 +1,13 @@
 <div class="wrap">
 	{{#foreach posts}}
 		<article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="col-xs-12 {{post_class}} post">
-		    <header class="row">
-		    	<div class="col-xs-12">
+		    <header>
+		    	<div>
 		        	<h2 itemprop="name headline" class="post-title preview">
 		        		<a itemprop="url mainEntityOfPage" href="{{url absolute="true"}}" onmousedown="ga('send', 'event', 'Blog', '{{{title}}}');">{{{title}}}</a>
 		        	</h2>
 		        </div>
-		        <div class="col-xs-12 post-info">
+		        <div class="post-info">
 		        	<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">{{date published_at timeago="true"}}</time>
 		        	<meta itemprop="dateModified" content="{{updated_at}}"/>
 		        	<span class="tags">

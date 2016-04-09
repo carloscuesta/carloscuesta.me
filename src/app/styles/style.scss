@@ -265,6 +265,13 @@ nav.nav {
 	color: $stars;
 }
 
+.icon-arrow {
+	width: 1.25em;
+	height: 1.25em;
+	margin-left: .35em;
+	transition: all .15s ease-out;
+	fill: $accent;
+}
 
 .forks {
 	color: $text;
@@ -391,6 +398,10 @@ nav.nav {
 	margin-right: 1em;
 }
 
+.post-wrap {
+	display: flex;
+}
+
 .post {
 	padding: 0;
 	transition: all .3s ease-out;
@@ -434,6 +445,20 @@ nav.nav {
 	}
 }
 
+.read-more {
+	display: flex;
+	align-items: center;
+	transition: all .3s ease-out;
+
+	&:hover {
+		color: #FF8A80;
+		.icon-arrow {
+			margin-left: .85em;
+			fill: #FF8A80;
+		}
+	}
+}
+
 .section-title, .section-subtitle {
 	text-align: center;
 	font-weight: 400;
@@ -449,6 +474,10 @@ nav.nav {
     flex-wrap: wrap;
     margin-top: .45em;
     align-items: center;
+}
+
+.post-excerpt {
+	margin-bottom: 0;
 }
 
 .post-footer {

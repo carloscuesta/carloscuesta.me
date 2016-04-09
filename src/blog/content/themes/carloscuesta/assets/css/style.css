@@ -121,6 +121,12 @@ main {
 	padding: 0 1em;
 }
 
+.wrap-big {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 1em
+}
+
 header {
 	color: #FF5252;
 }
@@ -129,8 +135,8 @@ header {
 	background-repeat:  no-repeat;
 	background-position: center center;
 	background-size: cover;
-	padding: 2.5em;
-	min-height: 40vh;
+	padding: 5em;
+	text-align: center;
 }
 
 .author-template .main-header {
@@ -344,8 +350,7 @@ article .date {
 /* INDEX */
 
 .home-template .main-header {
-	background-color: #fff;
-	min-height: 40vh;
+	background-color: #F1F6F8;
 }
 
 .home-template {
