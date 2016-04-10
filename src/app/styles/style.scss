@@ -270,7 +270,7 @@ nav.nav {
 	height: 1.25em;
 	margin-left: .35em;
 	transition: all .15s ease-out;
-	fill: $accent;
+	fill: #00B0FF;
 }
 
 .forks {
@@ -449,12 +449,13 @@ nav.nav {
 	display: flex;
 	align-items: center;
 	transition: all .3s ease-out;
+	color: #00B0FF;
 
 	&:hover {
-		color: #FF8A80;
+		color: #76d4ff;
 		.icon-arrow {
 			margin-left: .85em;
-			fill: #FF8A80;
+			fill: #76d4ff;
 		}
 	}
 }

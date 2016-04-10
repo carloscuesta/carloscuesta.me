@@ -106,9 +106,33 @@ a:hover {
 	transition: color .2s ease-in-out;
 }
 
-.post {
-	border-bottom: 1px solid #eee;
+.post-wrap {
+	display: flex;
+}
+
+.post-card {
+	padding: 0;
+	transition: all .3s ease-out;
+	border-radius: 2px;
+	margin: 2.75em 0;
+	overflow: hidden;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 	word-wrap: break-word;
+}
+
+.post-card:hover {
+	box-shadow: 0 15px 45px rgba(0, 0, 0, .15);
+}
+
+.post-card-content {
+	padding: 2.5em;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.post-image {
+	max-width: 100%;
 }
 
 main {
