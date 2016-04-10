@@ -80,3 +80,8 @@ li {
 	margin: 0 auto;
 	padding: 0 1em;
 }
+
+::selection {
+	background: rgba(255, 82, 82, 1);
+	color: #fff
+}

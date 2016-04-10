@@ -2,8 +2,10 @@
 	{{#foreach posts}}
 		<div class="col-xs-12 col-sm-6 post-wrap">
 			<article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post-card {{post_class}}">
-			    <header>
-					<img src="{{image}}">
+			    <header itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+					<img src="{{image}}" itemprop="url" content="{{image}}">
+					<meta itemprop="width" content="3000">
+					<meta itemprop="height" content="1350">
 				</header>
 				<div class="post-card-content">
 					<h2 itemprop="name headline" class="post-title preview">
@@ -14,33 +16,30 @@
 			        	<meta itemprop="dateModified" content="{{updated_at}}"/>
 			        	<span class="tags">
 			        		{{#foreach tags}}
-	        					<a href="{{url}}" title="{{name}}" onmousedown="ga('send', 'event', 'Blog', 'tag-{{name}}');" class="tag-{{name}}">{{name}}</a>
+	        					<a href="{{url}}" title="{{name}}" onmousedown="ga('send', 'event', 'Blog', 'Click', 'Tag {{name}}');" class="tag {{name}}">#{{name}}</a>
 	    					{{/foreach}}
 	    				</span>
 			        	<span itemprop="author" itemscope itemtype="http://schema.org/Person" class="author">
 			        		<span itemprop="name">
-			        			{{#author}}<a href="{{url}}" onmousedown="ga('send', 'event', 'Blog', 'Author - {{name}}');">{{name}}</a>{{/author}}
+			        			{{#author}}<a href="{{url}}" onmousedown="ga('send', 'event', 'Blog', 'Click', 'Author - {{name}}');">{{name}}</a>{{/author}}
 			        		</span>
 			        	</span>
 			        </div>
 			        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-	  					<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+						<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
 							<meta itemprop="url" content="{{author.image}}">
-	  					  	<meta itemprop="width" content="450">
-	  					  	<meta itemprop="height" content="450">
-	  					</div>
-	  					<meta itemprop="name" content="{{author.name}}">
-	  				</div>
-	  				<div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-					    <meta itemprop="url" content="{{image}}">
-	    				<meta itemprop="width" content="3000">
-	    				<meta itemprop="height" content="1350">
-	  				</div>
-			    <section itemprop="description" class="post-excerpt">
-			        <p>{{excerpt words="30"}} ...
-			    	<a class="read-more" href="{{url}}" onmousedown="ga('send', 'event', 'Blog', 'Read More - {{{title}}}');"> Read more &raquo;</a></p>
-			    </section>
-			</div>
+							<meta itemprop="width" content="450">
+							<meta itemprop="height" content="450">
+						</div>
+						<meta itemprop="name" content="{{author.name}}">
+					</div>
+				    <section itemprop="description">
+				        <p class="post-excerpt">{{excerpt words="30"}} ...</p>
+				    </section>
+				</div>
+				<footer class="post-footer">
+					<a class="read-more" href="{{url}}" onmousedown="ga('send', 'event', 'Blog', 'Read More - {{{title}}}');"> Read more<svg class="icon icon-arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+				</footer>
 			</article>
 		</div>
 	{{/foreach}}
