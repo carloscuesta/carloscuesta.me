@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: http://www.carloscuesta.me/sitemap.xml
+Sitemap: https://carloscuesta.me/sitemap.xml
