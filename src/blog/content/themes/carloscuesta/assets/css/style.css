@@ -40,7 +40,7 @@ h5 {
 h1, h2, h3,  h4, h5, h6 {
     line-height: 1.15;
     margin-top: 0;
-    margin-bottom: .5rem;
+    margin: 1.25rem 0;
 }
 
 a {
@@ -112,16 +112,17 @@ a:hover {
 
 .post-card {
 	padding: 0;
-	transition: all .3s ease-out;
 	border-radius: 2px;
 	margin: 2.75em 0;
 	overflow: hidden;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 	word-wrap: break-word;
+	background-color: #fff;
+	transition: all .2s ease-in-out;
 }
 
 .post-card:hover {
-	box-shadow: 0 15px 45px rgba(0, 0, 0, .15);
+	box-shadow: 0 25px 55px rgba(0, 0, 0, .2);
 }
 
 .post-card-content {
@@ -155,6 +156,10 @@ header {
 	color: #FF5252;
 }
 
+.content {
+	background-color: #F1F6F8;
+}
+
 .main-header {
 	background-repeat:  no-repeat;
 	background-position: center center;
@@ -165,6 +170,38 @@ header {
 
 .author-template .main-header {
 	min-height: 30vh;
+}
+
+.newsletter {
+	background-color: #37474F;
+	padding: 2em;
+}
+
+.btn {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	padding: .45em 1em;
+	border-radius: 50px;
+	transition: all .3s ease-out;
+	letter-spacing: .015em;
+	display: flex;
+	align-items: center
+}
+
+.btn-red {
+	background-color: #FF5252;
+	color: #fff;
+}
+
+.btn-red:hover {
+	transition: all .3s ease-out;
+	box-shadow: 0 0.5em 1.5em rgba(255, 82, 82, 0.45)
+}
+
+.newsletter-message {
+	color: #fff;
+	font-weight: 300;
+	font-size: 1.75em;
 }
 
 .blog-logo img {
@@ -193,7 +230,7 @@ header {
 	background-color: #FF5722;
 }
 
-.tag-head.css, .tags .tag-css {
+.tag-head.css {
 	background-color: #42A5F5;
 }
 
@@ -366,7 +403,7 @@ article .date {
 /* INDEX */
 
 .home-template .main-header, .paged .main-header {
-	background-color: #F1F6F8;
+	background-color: #fff;
 }
 
 .home-template {
@@ -481,6 +518,9 @@ h3.author-name {
 /* END AUTHOR TEMPLATE*/
 
 /* POST */
+.post-template .content {
+	background-color: #fff;
+}
 
 .post-meta .post-date {
 	margin-right: .5em;
@@ -488,6 +528,12 @@ h3.author-name {
 
 header.no-cover {
 	background-color: #FF5252;
+}
+
+.wrap-post {
+	max-width: 810px;
+	margin: 0 auto;
+	padding: 0 1em;
 }
 
 .post-head {
@@ -559,11 +605,6 @@ header.no-cover {
 	color: #FF5252;
 }
 
-.post-template .post {
-	border: none;
-	color: #37474F;
-}
-
 .post img {
 	-webkit-flex-basis: 100%;
 	-ms-flex-preferred-size: 100%;
@@ -573,11 +614,6 @@ header.no-cover {
 
 .post h1 {
     font-size: 3.5em;
-}
-
-.post-template article.post h2, .post-template .post-template article.post h3, .post-template article.post h4, .post-template article.post h5 {
-    font-weight: 700;
-    margin-bottom: 1em;
 }
 
 article .post-meta {

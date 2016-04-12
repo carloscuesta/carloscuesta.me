@@ -4,16 +4,16 @@
 
 <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="{{post_class}}">
 
-<header itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="main-header post-head{{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-	{{#if image}}
-	<meta itemprop="url" content="{{image}}">
-	<meta itemprop="width" content="3000">
-  	<meta itemprop="height" content="1350">
-	{{/if}}
-</header>
-<div class="wrap article-card">
-	<main class="content" role="main">
+	<header itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="main-header post-head{{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+		{{#if image}}
+		<meta itemprop="url" content="{{image}}">
+		<meta itemprop="width" content="3000">
+		<meta itemprop="height" content="1350">
+		{{/if}}
+	</header>
 
+<div class="wrap-post article-card">
+	<main class="content" role="main">
         <header class="post-header row">
         	<a itemprop="mainEntityOfPage" href="{{url absolute="true"}}">
             	<h1 itemprop="name headline" class="post-title col-xs-12">{{title}}</h1>
