@@ -56,28 +56,46 @@
 
     {{{body}}}
 
-	<footer class="site-footer center-xs">
-		<h3>
-    		<a href="{{@blog.url}}">{{@blog.title}}</a>
-		</h3>
-	    <div class="social">
-	        <a href="https://twitter.com/crloscuesta">
-	            <svg class="icon icon-twitter">
-	                <use xlink:href="#icon-twitter"></use>
-	            </svg>
-	        </a>
-	        <a href="https://github.com/carloscuesta">
-	            <svg class="icon icon-github">
-	                <use xlink:href="#icon-github"></use>
-	            </svg>
-	        </a>
-	        <a href="https://es.linkedin.com/in/crloscuesta">
-	            <svg class="icon icon-linkedin">
-	                <use xlink:href="#icon-linkedin"></use>
-	            </svg>
-	        </a>
-	    </div>
-	</footer>
+	<footer class="blog-footer">
+        <div class="wrap-big">
+            <div class="row middle-xs">
+                <div class="col-xs-12 col-sm-6">
+                    <h3 class="footer-name">Carlos Cuesta</h3>
+                    <ul class="footer-navigation">
+                        <li class="item">
+                            <a href="https://carloscuesta.me" onmousedown="ga('send', 'event', 'Footer Nav', 'Home');">Home</a>
+                        </li>
+                        <li class="item">
+                            <a href="https://carloscuesta.me/aboutme" onmousedown="ga('send', 'event', 'Footer Nav', 'About me');">About Me</a>
+                        </li>
+                        <li class="item">
+                            <a href="https://carloscuesta.me/blog" onmousedown="ga('send', 'event', 'Footer Nav', 'Blog');" target="_blank">Blog</a>
+                        </li>
+                        <li class="item">
+                            <a href="hi@carloscuesta.me" onmousedown="ga('send', 'event', 'Footer Nav', 'Mail');">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social col-xs-12 col-sm-6">
+                    <a href="https://twitter.com/crloscuesta" target="_blank">
+                        <svg class="icon icon-twitter">
+                            <use xlink:href="#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/carloscuesta" target="_blank">
+                        <svg class="icon icon-github">
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                    </a>
+                    <a href="https://es.linkedin.com/in/crloscuesta" target="_blank">
+                        <svg class="icon icon-linkedin">
+                            <use xlink:href="#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     {{ghost_foot}}
 

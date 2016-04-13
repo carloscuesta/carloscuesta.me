@@ -274,6 +274,7 @@ article .read-more {
 	font-size: 2em;
 	font-weight: 400;
 	color: #37474F;
+    margin-top: 0;
 }
 
 .post-template .post-title {
@@ -347,7 +348,7 @@ article .date {
 .post-info {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: .45em;
+    margin: .45em 0;
 	align-items: center
 }
 
@@ -363,39 +364,41 @@ article .date {
 	color: #00B0FF;
 }
 
-.site-footer {
-	background-color: #232323;
-	color: #f9f9f9;
-	padding: 2em;
+.footer-navigation {
+	padding: 0;
+	margin: 0;
 }
 
-.site-footer .icon {
-	fill: rgba(255, 255, 255, 0.8);
-	padding: 0 .5em;
+.footer-navigation li {
+	display: inline-block;
+	padding-right: .95em;
+	font-size: .75em;
+	text-transform: uppercase;
+}
+
+.blog-footer {
+	color: #37474F;
+	background-color: #fff;
+	padding: 3em 1.5em;
+	text-align: left;
+}
+
+.blog-footer .social {
+	text-align: right;
+}
+
+.blog-footer .icon {
+	display: inline-block;
+	width: 1.8em;
+	height: 1.8em;
+	fill: $text;
+	margin-right: 1em;
 	transition: fill .2s ease-in-out;
-	width: 1.25em;
-	height: 1.25em;
 }
 
-.icon {
-	width: 1em;
-	height: 1em;
-}
-
-.site-footer .icon:hover {
-	fill: #ffffff;
-	width: 1.25em;
-	height: 1.25em;
-	padding: 0 .5em;
-	transition: fill .2s ease-in-out;
-}
-
-.site-footer a {
-	color: #f9f9f9;
-}
-
-.site-footer a:hover {
-	color: #FF5252;
+.footer-name {
+	font-weight: 700;
+	color: #37474F;
 }
 
 /* END GENERAL */
