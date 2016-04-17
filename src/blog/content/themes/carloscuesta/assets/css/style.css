@@ -391,14 +391,67 @@ article .date {
 	display: inline-block;
 	width: 1.8em;
 	height: 1.8em;
-	fill: $text;
+	fill: #37474F;
 	margin-right: 1em;
 	transition: fill .2s ease-in-out;
+}
+
+.blog-footer a {
+	color: #FF5252;
+}
+
+.icon-twitter:hover {
+	fill: #55acee;
+}
+
+.icon-github:hover {
+	fill: #000000;
+}
+
+.icon-linkedin:hover {
+	fill: #0077B5;
 }
 
 .footer-name {
 	font-weight: 700;
 	color: #37474F;
+}
+
+.email-input {
+	flex-basis: 35%;background-color:transparent;border:0;border-bottom: 2px solid #B0BEC5;
+	transition: all .2s ease-out;
+	font-size: 1.25em;
+	font-family: Roboto;
+	font-weight: 300;
+	padding: .25em;
+	color: #fff;
+}
+
+.email-input:focus {
+	outline: none;
+	border-bottom: 2px solid #00B0FF;
+}
+
+.submit-input {
+	border: 0;
+	font-size: 1em;
+	cursor: pointer;
+	display: flex;
+}
+
+::-webkit-input-placeholder {
+    color:    #B0BEC5;
+}
+:-moz-placeholder {
+   color:    #B0BEC5;
+   opacity:  1;
+}
+::-moz-placeholder {
+   color:    #B0BEC5;
+   opacity:  1;
+}
+:-ms-input-placeholder {
+   color:    #B0BEC5;
 }
 
 /* END GENERAL */
@@ -429,6 +482,11 @@ article .date {
     align-items: center;
     justify-content: center;
 	flex-direction: column;
+}
+
+.tag-title {
+	padding: 0;
+	margin: 0;
 }
 
 .tag-template {

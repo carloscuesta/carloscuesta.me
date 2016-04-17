@@ -14,18 +14,18 @@
 
 <div class="wrap-post article-card">
 	<main class="content" role="main">
-        <header class="post-header row">
+        <header class="post-header">
         	<a itemprop="mainEntityOfPage" href="{{url absolute="true"}}">
-            	<h1 itemprop="name headline" class="post-title col-xs-12">{{title}}</h1>
+            	<h1 itemprop="name headline" class="post-title">{{title}}</h1>
             </a>
-            <section class="post-meta col-xs-12">
+            <section class="post-meta">
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">
                 	{{date format="DD MMMM YYYY"}}
                 </time>
                 <meta itemprop="dateModified" content="{{updated_at}}"/>{{#if tags}}
                 	<span class="tags">
 		        		{{#foreach tags}}
-        					<a href="{{url}}" title="{{name}}" class="tag-{{name}}" onmousedown="ga('send', 'event', 'Blog', 'Post - tag-{{name}}');">{{name}}</a>
+        					<a href="{{url}}" title="{{name}}" class="tag {{name}}" onmousedown="ga('send', 'event', 'Blog', 'Post - Tag {{name}}');">{{name}}</a>
     					{{/foreach}}
     				</span>{{/if}}
     				<a class="post-comments" href="{{url}}#disqus_thread" onmousedown="ga('send', 'event', 'Blog', 'Post - Comments');">Comments</a>
