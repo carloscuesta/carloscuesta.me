@@ -1189,9 +1189,7 @@ input#hamburger-menu {
 
 	.post-template .post-title {
 		text-align: left;
-	}
-	.post-title {
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 }
 
@@ -1216,7 +1214,7 @@ input#hamburger-menu {
 		display: block;
 	}
 
-	article footer.post-meta {
+	article footer.post-meta , .post-meta{
 		display: none!important;
 	}
 
