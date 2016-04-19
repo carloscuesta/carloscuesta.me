@@ -25,9 +25,10 @@
                 <meta itemprop="dateModified" content="{{updated_at}}"/>{{#if tags}}
                 	<span class="tags">
 		        		{{#foreach tags}}
-        					<a href="{{url}}" title="{{name}}" class="tag {{name}}" onmousedown="ga('send', 'event', 'Blog', 'Post - Tag {{name}}');">{{name}}</a>
+        					<a href="{{url}}" title="{{name}}" class="tag {{name}}" onmousedown="ga('send', 'event', 'Blog', 'Post - Tag {{name}}');">#{{name}}</a>
     					{{/foreach}}
     				</span>{{/if}}
+					<span class="author-meta-name">{{author.name}}</span>
     				<a class="post-comments" href="{{url}}#disqus_thread" onmousedown="ga('send', 'event', 'Blog', 'Post - Comments');">Comments</a>
             </section>
         </header>
@@ -36,40 +37,38 @@
             {{content}}
         </section>
 
-        <footer class="post-footer row">
+        <!--<footer class="post-footer">
 
-        {{#author}}
+	        {{#author}}
 
-            <section class="author col-xs-12 col-sm-8" itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-footer row">
-            	<div class="row top-xs">
-                	{{#if bio}}
-            			{{#if image}}
-	    	    			<figure class="col-xs-3 center-xs">
-	    	    			    <img itemprop="image" src="{{image}}" class="author-img-post" alt="{{name}}">
-	    	    			</figure>
-    	    			{{/if}}
-    	    			<div class="col-xs-12 col-sm-9">
-    	    			    <h3 itemprop="name" class="author-name col-xs-12"><a href="{{url}}" onmousedown="ga('send', 'event', 'Blog', 'Post - Author Name');">{{name}}</a></h3>
-                	    	<p itemprop="description" class="col-xs-12 col-sm-10">{{bio}}</p>
-                	    </div>
-                	{{else}}
-                	    <p>Read <a href="{{url}}" onmousedown="ga('send', 'event', 'Blog', 'Post - Read More');">more posts</a> by this author.</p>
-                	{{/if}}
-                </div>
-            </section>
+	            <section class="author" itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-footer">
+	            	<div class="row">
+	                	{{#if bio}}
+	            			{{#if image}}
 
-            <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-  				<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-					<meta itemprop="url" content="{{image}}">
-  				  	<meta itemprop="width" content="450">
-  				  	<meta itemprop="height" content="450">
-  				</div>
-  				<meta itemprop="name" content="{{name}}">
-  			</div>
+	    	    			{{/if}}
+	    	    			<div class="col-xs-12">
+	    	    			    <h3 itemprop="name" class="author-name col-xs-12"><a href="{{url}}" onmousedown="ga('send', 'event', 'Blog', 'Post - Author Name');">{{name}}</a></h3>
+	                	    	<p itemprop="description" class="col-xs-12 col-sm-10">{{bio}}</p>
+	                	    </div>
+	                	{{else}}
+	                	    <p>Read <a href="{{url}}" onmousedown="ga('send', 'event', 'Blog', 'Post - Read More');">more posts</a> by this author.</p>
+	                	{{/if}}
+	                </div>
+	            </section>
 
-        {{/author}}
+	            <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+	  				<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+						<meta itemprop="url" content="{{image}}">
+	  				  	<meta itemprop="width" content="450">
+	  				  	<meta itemprop="height" content="450">
+	  				</div>
+	  				<meta itemprop="name" content="{{name}}">
+	  			</div>
 
-            <section class="share col-xs-12 col-sm-4 center-sm">
+	        {{/author}}
+
+            <section class="share">
                 <h3>Share this post</h3>
                 <a href="https://twitter.com/intent/tweet?text={{encode title}}+by+@crloscuesta&amp;url={{url absolute="true"}}"
                     onmousedown="ga('send', 'event', 'Blog', 'Post - Share Twitter');window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
@@ -87,7 +86,7 @@
                 </a>
             </section>
 
-        </footer>
+        </footer>-->
     	<div itemprop="comment" id="disqus_thread" class="disqus-comments col-xs-12"></div>
 	</main>
 </article>

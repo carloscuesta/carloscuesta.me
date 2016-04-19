@@ -277,10 +277,6 @@ article .read-more {
     margin-top: 0;
 }
 
-.post-template .post-title {
-	text-align: center;
-}
-
 .post-excerpt {
 	color: #37474F;
 	margin-bottom: 0;
@@ -328,12 +324,16 @@ article .read-more {
 .tags .personal{color:#FF4081;}.tags .personal:before{background-color:#FF4081;}
 .tags .life{color:#4CAF50}.tags .life:before{background-color:#4CAF50}
 
-time, .author a {
+time, .author a, .post-comments {
 	font-size: .75em;
 	color: #B0BEC5;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin-right: 1em;
+}
+
+.article-card {
+	padding: 0 2.5em!important;
 }
 
 .author a {
@@ -597,6 +597,14 @@ header.no-cover {
 	padding: 0 1em;
 }
 
+.author-meta-name {
+	font-size: .75em;
+	color: #37474F;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-right: 1em;
+}
+
 .post-head {
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -609,17 +617,6 @@ header.no-cover {
 .post-header-image {
 	width:100%;
 	max-height:100%;
-}
-
-.post-comments{
-	font-size: .67em;
-	border-radius: 2px;
-	border: 1px solid #9EABB3;
-	color: #9EABB3;
-	padding: 3px 1em;
-	text-transform: uppercase;
-	font-weight: 400;
-	white-space: nowrap;
 }
 
 .post-comments:hover {
@@ -675,11 +672,13 @@ header.no-cover {
 
 .post h1 {
     font-size: 3.5em;
+	font-weight: 700;
 }
 
-article .post-meta {
-	padding-bottom: .15em;
-	padding-top: .65em
+.post-meta {
+	display: flex;
+	align-items: center;
+	padding-top: 1.65em
 }
 
 article .post-excerpt p {
@@ -1217,7 +1216,7 @@ input#hamburger-menu {
 		display: block;
 	}
 
-	article footer.post-meta, .post-template .post-meta {
+	article footer.post-meta {
 		display: none!important;
 	}
 
