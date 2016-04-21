@@ -1,0 +1,15 @@
+section.experience
+    .wrap
+        h2.section-title Experience
+        h4.section-subtitle Jobs as a Front End developer.
+        .row
+            each job in me.jobs
+                article.col-xs-12.col-sm-6.col-md-4.job-card
+                    div(class='job '+job.company.color)
+                        header.job-header
+                            svg.company-logo
+                                use(xlink:href='#logo-'+job.company.logo)
+                        span.position-title=job.position.title
+                        .dates
+                            time.start(datetime=job.position.dates.start)=job.position.dates.start+' -'
+                            time.end(datetime=job.position.dates.finish)=job.position.dates.finish

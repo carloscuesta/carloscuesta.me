@@ -3,28 +3,28 @@ section.github
         h2.section-title GitHub
         h4.section-subtitle The most popular projects of my github.
         .row.around-xs
-            -each github in githubData.items
+            each github in githubData.items
                 article.col-xs-12.col-sm-6.col-md-4.github-repo
-                    div(class="repo language-#{github.language}")
+                    div(class='repo language-'+github.language)
                         .repo-title
-                            a(href="#{github.html_url}", onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank") 
+                            a(href=github.html_url, onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank")
                                 h4.github-title #{github.name}
                             if github.homepage
-                                a.web(href="#{github.homepage}", target="_blank", onmousedown="ga('send', 'event', 'GitHub Page', '#{github.name}');",)
+                                a.web(href=github.homepage, target="_blank", onmousedown="ga('send', 'event', 'GitHub Page', '#{github.name}');")
                                     svg.icon.icon-globe
                                         use(xlink:href="#icon-globe")
                         .github-stats
                             a.starred(href=github.html_url)
                                 svg.icon.icon-star
                                     use(xlink:href="#icon-star")
-                            span.stars #{github.stargazers_count}
+                            span.stars=github.stargazers_count
                             if github.forks
-                                a.forked(href="#{github.html_url}/fork")
+                                a.forked(href=github.html_url+'/fork')
                                     svg.icon.icon-fork
                                         use(xlink:href="#icon-fork")
-                                    span.forks #{github.forks}
-                        .description #{github.description}
-            a.btn.btn-large.btn-blue(href="https://github.com/#{social.github}", onmousedown="ga('send', 'event', 'Social', 'Follow GitHub');", target="_blank")
+                                    span.forks=github.forks
+                        .description=github.description
+            a.btn.btn-large.btn-blue(href='https://github.com/'+social.github, onmousedown="ga('send', 'event', 'Social', 'Follow GitHub');", target="_blank")
                 svg.icon.icon-github
                         use(xlink:href="#icon-github")
                 | Follow @#{social.github}

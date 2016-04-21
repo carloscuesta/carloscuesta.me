@@ -3,11 +3,11 @@ section.awards
         h2.section-title Awards
         h4.section-subtitle Distinctions and recognitions of my work.
         .row
-            -each award in me.awards
+            each award in me.awards
                 article.col-xs-12.col-sm-6.col-md-4.award-card
                     .award
                         svg(class="icon icon-award")
                             use(xlink:href="#icon-award")
-                        strong #{award.title}
-                        span.project #{award.project}
-                        span #{award.year} - #{award.organization}
+                        strong=award.title
+                        span.project=award.project
+                        span=award.year+' - '+award.organization

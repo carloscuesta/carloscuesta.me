@@ -34,12 +34,12 @@
     "forever": "^0.15.1",
     "ghost": "^0.7.8",
     "ghost-cloudinary-store": "^1.1.2",
-    "jade": "^1.11.0",
     "memory-cache": "^0.1.4",
     "moment": "^2.12.0",
     "node-fetch": "^1.5.1",
     "node-sass-middleware": "^0.9.7",
     "oauth": "^0.9.14",
+    "pug": "^2.0.0-alpha6",
     "striptags": "^2.1.1",
     "twitter-text": "^1.13.4"
   },

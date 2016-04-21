@@ -38,29 +38,28 @@ html
         //-link(rel="stylesheet", type="text/css", href="/aboutme.css")
         style
             include ../../static/css/aboutme.css
-        script  
+        script
             include ../../static/js/fonts.js
     body
-        include ../_includes/_nav.jade
-        include ../_includes/_icons.jade
-        include ../_includes/_logos.jade
+        include ../_includes/_nav.pug
+        include ../_includes/_icons.pug
+        include ../_includes/_logos.pug
         header.site-header(itemprop="author", itemscope, itemtype="http://schema.org/Person")
             .wrap
-                h1 
+                h1
                     span.about About
-                    span.my-name  #{me.name}
-                h2.position-title #{me.job}
+                    span.my-name=me.name
+                h2.position-title=me.job
         main
-            include ../_includes/_sections/_profile.jade
-            include ../_includes/_sections/_experience.jade
-            include ../_includes/_sections/_education.jade
-            include ../_includes/_sections/_awards.jade
+            include ../_includes/_sections/_profile.pug
+            include ../_includes/_sections/_experience.pug
+            include ../_includes/_sections/_education.pug
+            include ../_includes/_sections/_awards.pug
             //-section.skills
                 .wrap
                     h2.section-title Skills
                     h4.section-subtitle Things that I use and love.
                     .row.around-xs
-        include ../_includes/_footer.jade
+        include ../_includes/_footer.pug
         script.
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://carloscuesta.me/ga.js','ga');ga('create', 'UA-67824860-3', 'auto');ga('send', 'pageview');
-        

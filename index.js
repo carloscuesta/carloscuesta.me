@@ -10,7 +10,7 @@ ghost({
 	app.use(ghostServer.config.paths.subdir, ghostServer.rootApp);
 	app.use(function(req, res) {
 		res.status(404);
-		res.render('views/errors/404.jade');
+		res.render('views/errors/404');
 	});
 	ghostServer.start(app);
 });
