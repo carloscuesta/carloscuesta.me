@@ -2,19 +2,19 @@ section.aboutme(itemprop="author" itemscope itemtype="http://schema.org/Person")
     .wrap
         .row.middle-xs
             .col-xs-12.col-sm-6.bio
-                h1.name(itemprop="name") #{me.name}
-                h3 #{me.job}
-                p.bio(itemprop="description") !{me.aboutme}
+                h1.name(itemprop="name")=me.name
+                h3=me.job
+                p.bio(itemprop="description")!=me.aboutme
                 .getintouch
                     a.btn.btn-red(href="mailto:crloscuesta@gmail.com?subject=Hello") About Me
                     .social
-                        a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'GitHub');", href="https://twitter.com/#{social.twitter}", target="_blank")
+                        a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'GitHub');", href='https://twitter.com/'+social.twitter, target="_blank")
                             svg.icon.icon-twitter
                                 use(xlink:href="#icon-twitter")
-                        a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'Twitter');", href="https://github.com/#{social.github}", target="_blank")
+                        a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'Twitter');", href='https://github.com/'+social.github, target="_blank")
                             svg.icon.icon-github
                                 use(xlink:href="#icon-github")
-                        a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'LinkedIn');", href="https://es.linkedin.com/in/#{social.linkedin}", target="_blank")
+                        a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'LinkedIn');", href='https://es.linkedin.com/in/'+social.linkedin, target="_blank")
                             svg.icon.icon-linkedin
                                 use(xlink:href="#icon-linkedin")
             .block.col-xs-12.col-sm-6.start-xs
