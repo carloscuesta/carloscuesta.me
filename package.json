@@ -48,7 +48,7 @@
     "grunt": "^1.0.0",
     "grunt-pagespeed": "^2.0.1",
     "istanbul": "^0.4.3",
-    "mocha": "^2.4.5",
+    "mocha": "^2.5.0",
     "should": "^9.0.2",
     "supertest": "^1.2.0"
   }
