@@ -47,7 +47,7 @@
     "coveralls": "^2.11.9",
     "grunt": "^1.0.0",
     "grunt-pagespeed": "^2.0.1",
-    "istanbul": "^0.4.3",
+    "istanbul": "^0.4.4",
     "mocha": "^2.5.0",
     "should": "^9.0.2",
     "supertest": "^1.2.0"
