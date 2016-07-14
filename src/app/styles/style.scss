@@ -556,15 +556,15 @@ footer {
 	margin: 2em 0;
 }
 
-@media (max-width: 1046px) {
+@media (max-width: 1035px) {
 	.block {
 		position: absolute;
-		margin-top: -48px;
+		top: 434px;
 		width: 50%;
 	}
 }
 
-@media (max-width: 856px) {
+@media (max-width: 870px) {
 	.block {
 		display: none;
 	}
