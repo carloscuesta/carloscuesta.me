@@ -85,7 +85,7 @@ var staticData = {
 		],
 		awards: [
 			{
-				title: 'Best Final Project - DAW',
+				title: 'Best Final Project DAW',
 				project: 'Wireframe Builder',
 				year: '2015',
 				organization: 'ETP El Clot'

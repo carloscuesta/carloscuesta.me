@@ -243,8 +243,28 @@ strong {
 
 .bar {
 	width: 30%;
-	background: #38f;
-	box-shadow: 0 0 10px #59d;
+	background-color: $accent;
+	box-shadow: 0 0 10px $accent;
+}
+
+.award {
+	background-color: #1785F8;
+	padding: 2em;
+	margin: 0 2em;
+	text-align: center;
+	border-radius: 2px;
+	color: $white;
+	box-shadow: 0 .5em 1.5em rgba(23, 133, 248, .45);
+}
+
+.award-title {
+	font-weight: 700;
+	margin-bottom: .5em;
+}
+
+.award-project {
+	font-weight: 300;
+	margin-bottom: 1em;
 }
 
 footer {
