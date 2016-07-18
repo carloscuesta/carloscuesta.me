@@ -22,7 +22,7 @@
 }
 
 .position-title {
-	font-weight: 400;
+	font-weight: 700;
 }
 
 nav.nav {
@@ -131,11 +131,16 @@ strong {
 }
 
 .job-card, .education-card, .award-card {
-	margin: 2em 0;
+	margin: 2.5em 0;
 	display: flex;
 }
 
-.job, .grade, .award {
+.job {
+	flex: 1;
+	padding: 0 1em;
+}
+
+.grade, .award {
 	padding: 60px 40px;
 	border-radius: 2px;
 	border-top: 3px solid;
@@ -175,18 +180,9 @@ strong {
 	padding: .5em 0;
 }
 
-.company-logo {
-	display: flex;
-	height: 50px;
-	max-width: 80%;
-}
-
-.position, .company, .dates, .job-header, .project {
-	display: flex;
-}
-
-section .row {
-	justify-content: center;
+.company-name {
+	font-weight: 300;
+	margin-bottom: 0;
 }
 
 .icon-education, .icon-award {
@@ -204,8 +200,29 @@ section .row {
 	fill: $stars;
 }
 
-@each $company, $color in ('mc': #ffdd00, 'fr': #26ACDD) {
-	@include createCompanyBorder($company, $color);
+.duration {
+	display: flex;
+	padding: 1.5em;
+	text-align: center;
+	align-items: center;
+}
+
+.roles {
+	padding: 0 .65em;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.duration h2 {
+	padding: 1.5em 1em;
+	display: flex;
+	align-items: center;
+	color: $white;
+	border-radius: 2px;
+	font-weight: 700;
+	font-size: 1.5em;
+	background-color: $accent;
+	box-shadow: 0 .5em 1.5em rgba(255, 82, 82, .45);
 }
 
 footer {

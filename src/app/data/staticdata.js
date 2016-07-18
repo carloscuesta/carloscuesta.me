@@ -16,27 +16,32 @@ var staticData = {
 					title: 'Front End Developer',
 					dates: {
 	        			start: '2015-03',
-						finish: 'Present'
-	        		}
+						finish: 'Present',
+						time: '1.5 Years'
+	        		},
+					tasks: [
+						'Web development with, HTML, Jade, Sass, Gulp, Babel, CSS, JavaScript and CMS like Wordpress.',
+						'Development of tools, to improve the company’s developer workflow.'
+					]
 				},
 				company: {
-					name: 'Mediàtic',
-					logo: 'mediatic',
-					color: 'mc'
+					name: 'Mediàtic'
 				},
 			},
 			{
         		position: {
-					title: 'Front End Internship',
+					title: 'Front End Dev Internship',
 					dates: {
 	        			start: '2015-10',
-						finish: '2016-02'
-	        		}
+						finish: '2016-02',
+						time: '5 Months'
+	        		},
+					tasks: [
+						'Front End development using Bootstrap, HTML, CSS, JavaScript and jQuery.'
+					]
 				},
 				company: {
-					name: 'Friendly Rentals',
-					logo: 'friendlyrentals',
-					color: 'fr'
+					name: 'Friendly Rentals'
 				},
 			}
 		],
