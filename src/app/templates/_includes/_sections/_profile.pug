@@ -8,11 +8,14 @@ section.aboutme
                         strong Age:
                         |  #{me.age}
                     li.profile-item
-                        strong Job: #{me.job}
+                        strong Job:
+                        |  #{me.job}
                     li.profile-item
-                        strong Company: #{me.company}
+                        strong Company:
+                        |  #{me.company}
                     li.profile-item
-                        strong Location: #{me.hometown}
+                        strong Location:
+                        |  #{me.hometown}
                 .social
                     a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'GitHub');", href="https://twitter.com/#{social.twitter}", target="_blank")
                         svg.icon.icon-twitter

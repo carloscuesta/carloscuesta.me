@@ -1,15 +1,19 @@
-section.education
+section.experience
     .wrap
         h2.section-title Education
-        h4.section-subtitle Work experience as a Front End developer.
-        .row
-            each grade in me.education
-                article.col-xs-12.col-sm-6.col-md-4.education-card
-                    .grade
-                        svg(class="icon icon-education")
-                            use(xlink:href="#icon-education")
-                        strong=grade.title+' @' 
-                        strong=grade.school
-                        .dates
-                            time.start(datetime=grade.dates.start)=grade.dates.start+' - '
-                            time.end(datetime=grade.dates.finish)=grade.dates.finish
+        h4.section-subtitle Studies
+        each grade in me.education
+            article.row
+                .col-xs-2.duration.grade-duration
+                    h2=grade.dates.time
+                .col-xs-10.job-card
+                    .job
+                        h2.company-name=grade.title
+                        .row.roles
+                            h4.cv-position-title=grade.school
+                            .dates
+                                time.start(datetime=grade.dates.start)=grade.dates.start+' - '
+                                time.end(datetime=grade.dates.finish)=grade.dates.finish
+                        ul
+                            each task in grade.tasks
+                                li=task

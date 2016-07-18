@@ -1,0 +1,11 @@
+section.skills
+    .wrap
+        h2.section-title Skills
+        h4.section-subtitle Things that I use and love.
+        ul.skills-list
+            each skill in me.skills
+                    //-col-xs-12.col-sm-6
+                    li.skill
+                        p=skill.title
+                        .progress-bar
+                            .bar(style='width:'+skill.value+'%;')
