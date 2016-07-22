@@ -338,12 +338,20 @@ nav.nav {
 	background-color: $white;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
 	border-radius: 2px;
-	padding: 3em 1.5em 0;
 	transition: all .3s ease-out;
+
+	.username {
+		font-weight: 700;
+		margin-bottom: 0;
+	}
 
 	&:hover {
 		box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
 	}
+}
+
+.tweet-wrap {
+	padding: 3em 1.5em 0;
 }
 
 .tweet-text {
