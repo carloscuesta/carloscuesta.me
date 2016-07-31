@@ -335,7 +335,7 @@ nav.nav {
 	transition: all .3s ease-out;
 
 	.username {
-		font-weight: 700;
+		font-weight: 400;
 		margin-bottom: 0;
 	}
 
@@ -350,19 +350,36 @@ nav.nav {
 
 .tweet-text {
 	font-weight: 300;
-	padding-top: 1em;
+	padding: 1em;
+}
+
+.tweet-username {
+	font-size: 1.25em;
+	font-weight: 700;
+	margin-top: .75em;
 }
 
 .tweet-actions {
-	padding-top: 1em;
-	padding-bottom: 2em;
+	border-top: 1px solid #eee;
+}
+
+.tweet-img {
+	width: 100%;
+	height: 30vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 .tweet-actions, .tweet-actions a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.tweet-actions a {
 	margin: .5em;
+	margin: .75em .5em;
 }
 
 .icon-heart {
@@ -387,7 +404,7 @@ nav.nav {
 
 .tweet {
 	text-align: center;
-	max-width: 768px;
+	max-width: 468px;
 	margin-right: auto;
 	margin-left: auto;
 }

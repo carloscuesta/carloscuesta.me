@@ -13,11 +13,11 @@ html, body {
 
 a {
 	text-decoration: none;
-	color: $accent;
+	color: $links;
 }
 
 p a {
-	color: $accent;
+	color: $links;
 	transition: color .2s ease-out;
 }
 

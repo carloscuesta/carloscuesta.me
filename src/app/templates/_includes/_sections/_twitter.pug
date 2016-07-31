@@ -6,13 +6,12 @@ section.twitter
             each tweet in twitterData
                 li.tweet-card.col-xs-12
                     article.tweet
-                        h4=tweet.user.name+' - '
-                            span.handle
-                                a(href='https://twitter.com/'+tweet.user.screen_name) @#{tweet.user.screen_name}
-                        h5.tweet-text!=tweet.text_parsed
-                        //-if tweet.image
+                        if tweet.image
                             a(href=tweet.image)
-                                img.tweet-img(src=tweet.image+':thumb')
+                                .tweet-img(style='background-image: url('+tweet.image+')')
+                        div.tweet-username=tweet.user.name
+                        a(href='https://twitter.com/'+tweet.user.screen_name) @#{tweet.user.screen_name}
+                        h5.tweet-text!=tweet.text_parsed
                         .tweet-actions
                             a(href='https://twitter.com/intent/tweet?in_reply_to='+tweet.id_str, onmousedown="ga('send', 'event', 'Twitter', 'Click', 'Reply');", target="_blank")
                                 svg.icon.icon-reply
