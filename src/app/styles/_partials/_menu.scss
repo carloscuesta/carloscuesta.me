@@ -122,6 +122,7 @@
     .item {
     	a {
     		transform: scale(1);
+            color: $menu;
     	}
 
     	&:nth-child(1) a {
