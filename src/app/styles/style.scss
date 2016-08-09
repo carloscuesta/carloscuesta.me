@@ -575,14 +575,6 @@ footer {
 	margin: 2em 0;
 }
 
-@media (max-width: 1035px) {
-	.block {
-		position: absolute;
-		top: 434px;
-		width: 50%;
-	}
-}
-
 @media (max-width: 870px) {
 	.block {
 		display: none;
@@ -644,10 +636,6 @@ footer {
 		&::after {
 			bottom: -15px;
 		}
-	}
-
-	.block {
-	    position: relative!important;
 	}
 
 	.github .repo {
