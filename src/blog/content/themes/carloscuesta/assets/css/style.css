@@ -1017,7 +1017,8 @@ iframe, .fluid-width-video-wrapper {
 
 .c-hamburger--htx {
     left: auto;
-    right: 20px
+    right: 20px;
+    top: 5px;
 }
 
 .c-hamburger--htx span {
