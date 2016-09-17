@@ -44,7 +44,7 @@
     "twitter-text": "^1.13.4"
   },
   "devDependencies": {
-    "coveralls": "^2.11.10",
+    "coveralls": "^2.11.13",
     "grunt": "^1.0.0",
     "grunt-pagespeed": "^2.0.1",
     "istanbul": "^0.4.5",
