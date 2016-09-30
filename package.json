@@ -35,8 +35,8 @@
     "ghost": "^0.10.1",
     "ghost-cloudinary-store": "^1.1.2",
     "memory-cache": "^0.1.4",
-    "moment": "^2.12.0",
-    "node-fetch": "^1.5.1",
+    "moment": "^2.15.0",
+    "node-fetch": "^1.6.3",
     "node-sass-middleware": "^0.9.7",
     "oauth": "^0.9.14",
     "pug": "^2.0.0-beta3",
@@ -44,7 +44,7 @@
     "twitter-text": "^1.13.4"
   },
   "devDependencies": {
-    "coveralls": "^2.11.10",
+    "coveralls": "^2.11.13",
     "grunt": "^1.0.0",
     "grunt-pagespeed": "^2.0.1",
     "istanbul": "^0.4.5",
