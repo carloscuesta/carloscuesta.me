@@ -33,7 +33,7 @@
     "express": "^4.14.0",
     "forever": "^0.15.2",
     "ghost": "^0.9.0",
-    "ghost-cloudinary-store": "^1.1.2",
+    "ghost-cloudinary-store": "mmornati/ghost-cloudinary-store",
     "memory-cache": "^0.1.4",
     "moment": "^2.15.0",
     "node-fetch": "^1.6.3",
