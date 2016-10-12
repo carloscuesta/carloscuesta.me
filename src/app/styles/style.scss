@@ -185,8 +185,7 @@ nav.nav {
 
 .avatar {
 	width: 385px;
-	border-radius: 2px;
-	margin-left: 22.5%;
+	margin-bottom: -55px;
 }
 
 .github {
@@ -575,19 +574,6 @@ footer {
 	margin: 2em 0;
 }
 
-@media (max-width: 870px) {
-	.block {
-		display: none;
-	}
-
-	.bio {
-		-webkit-flex-basis: 100%;
-	    -ms-flex-preferred-size: 100%;
-	    flex-basis: 100%;
-	    max-width: 100%;
-	}
-}
-
 @media (max-width: 768px) {
 	.site-header {
 		padding: 5em 1.5em 5em 1.5em;
@@ -650,6 +636,10 @@ footer {
 	footer, footer .social {
 		text-align: center;
 	}
+
+	.avatar {
+		padding-top: 1em;
+	}
 }
 
 @media (max-width: 468px) {
@@ -671,5 +661,10 @@ footer {
 
 	.social {
 		margin-top: 1.5em;
+	}
+
+	.avatar {
+		margin-bottom: -50px;
+		width: 100%;
 	}
 }
