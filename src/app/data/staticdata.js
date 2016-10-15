@@ -17,7 +17,7 @@ var staticData = {
 					dates: {
 	        			start: '2015-03',
 						finish: 'Present',
-						time: '1.5 Years'
+						time: '1.8 Years'
 	        		},
 					tasks: [
 						'Web development with, HTML, Jade, Sass, Gulp, Babel, CSS, JavaScript and CMS like Wordpress.',
