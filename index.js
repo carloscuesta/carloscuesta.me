@@ -3,7 +3,6 @@
 var app = require('./src/app/carloscuesta.js'),
 	ghost = require('ghost'),
 	port = process.env.PORT || 5000;
-	require("nodejs-dashboard");
 
 ghost({
 	config: __dirname+'/src/blog/config.js'
