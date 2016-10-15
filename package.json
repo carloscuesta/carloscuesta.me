@@ -8,7 +8,6 @@
   "main": "index.js",
   "scripts": {
     "start": "forever index.js",
-	"dev": "nodejs-dashboard node index.js",
     "pagespeed": "grunt",
     "coveralls": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
     "test": "npm run coveralls && npm run pagespeed"
@@ -50,7 +49,6 @@
     "grunt-pagespeed": "^2.0.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.0.0",
-    "nodejs-dashboard": "^0.1.0",
     "should": "^11.1.1",
     "supertest": "^2.0.0"
   }
