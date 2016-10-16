@@ -16,7 +16,7 @@ describe('app', function() {
 		describe('index', function() {
 
 			it('should render and return 200 OK ', function(done) {
-				this.timeout(5000);
+				this.timeout(10000);
 				request(app)
 					.get('/')
 					.end(function(err, res) {
