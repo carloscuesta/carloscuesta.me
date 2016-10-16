@@ -115,15 +115,19 @@
     margin: 20px auto;
 }
 
+.modal a {
+	color: $white;
+}
+
 .c-hamburger__input:checked ~ .modal {
     opacity: 1;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: $menu;
     visibility: visible;
 
     .item {
+
     	a {
     		transform: scale(1);
-            color: $menu;
     	}
 
     	&:nth-child(1) a {
@@ -138,6 +142,10 @@
     		transition-delay: 0.075s;
     	}
     }
+}
+
+.c-hamburger__input:checked ~ .c-hamburger span::after, .c-hamburger__input:checked ~ .c-hamburger span::before {
+	background-color: $white;
 }
 
 input#hamburger-menu {

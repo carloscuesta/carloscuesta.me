@@ -149,11 +149,11 @@ nav.nav {
     		transform: scale(0.3);
 		}
 		&:hover a {
-			color: $white!important;
+			color: $accent;
 		}
 
 		&:hover {
-			background-color: $accent;
+			background-color: $white;
 		}
 	}
 }
