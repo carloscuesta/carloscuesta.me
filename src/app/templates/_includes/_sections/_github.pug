@@ -24,7 +24,6 @@ section.github
                                         use(xlink:href="#icon-fork")
                                     span.forks=github.forks
                         .description=github.description
-            a.btn.btn-large.btn-blue(href='https://github.com/'+social.github, onmousedown="ga('send', 'event', 'Social', 'Follow GitHub');", target="_blank")
+            a.btn.btn-blue.btn-social(href='https://github.com/'+social.github, onmousedown="ga('send', 'event', 'Social', 'Follow GitHub');", target="_blank")
                 svg.icon.icon-github
                         use(xlink:href="#icon-github")
-                | Follow @#{social.github}

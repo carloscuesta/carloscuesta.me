@@ -47,6 +47,18 @@
 		transform: none!important;
 	}
 
+	&-social {
+		width: 4em;
+		height: 4em;
+		padding: 0;
+		margin: 0 auto;
+
+		.icon {
+			margin: 0 auto;
+			padding: 0;
+		}
+	}
+
 	&-red {
 		background-color: $accent;
 		color: $white;
@@ -95,6 +107,8 @@
 	background: $white;
 	padding: 5em;
 	text-align: center;
+	position: relative;
+	overflow: hidden;
 
 	.icon {
 		padding: .5em;
@@ -191,12 +205,17 @@ nav.nav {
 .github {
 	background-color: $white;
 	color: $text;
+}
 
-	.icon {
-		width: 1.15em;
-		height: 1.15em;
-		padding: 0 .25em 0 0;
-	}
+.icon-github {
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.icon-star, .icon-fork {
+	width: 1.15em;
+	height: 1.15em;
+	padding: 0 .25em 0 0;
 }
 
 .github-repo {
@@ -310,7 +329,6 @@ nav.nav {
 	.icon {
 		width: 1.5em;
 		height: 1.5em;
-		padding: 0 .25em 0 0;
 		transition: all .2s ease-out;
 
 		&:hover {
@@ -332,6 +350,7 @@ nav.nav {
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
 	border-radius: 2px;
 	transition: all .3s ease-out;
+	overflow: hidden;
 
 	.username {
 		font-weight: 400;
@@ -349,13 +368,22 @@ nav.nav {
 
 .tweet-text {
 	font-weight: 300;
-	padding: 1em;
+	padding: 1.5em 1em;
+}
+
+.tweet-details {
+	padding: .75em 0;
+	background-color: #00B0FF;
+	color: #fff;
+
+	a {
+		color: #fff;
+	}
 }
 
 .tweet-username {
 	font-size: 1.25em;
 	font-weight: 700;
-	margin-top: .75em;
 }
 
 .tweet-actions {
@@ -648,7 +676,11 @@ footer {
 	}
 
 	.site-header h1 {
-		font-size: 2.95em;
+		font-size: 2.75em;
+	}
+
+	.name {
+		font-size: 2.5em;
 	}
 
 	.job {
