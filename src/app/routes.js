@@ -3,6 +3,7 @@
 var GithubApiClient = require('./scripts/githubapiclient'),
 	TwitterApiClient = require('./scripts/twitterapiclient'),
 	GhostApiClient = require('./scripts/ghostapiclient'),
+	InstagramApiClient = require('./scripts/instagramapiclient'),
 	cache = require('memory-cache'),
 	staticData = require('./data/staticdata');
 
@@ -32,10 +33,16 @@ exports.index = function(req, res) {
 		include: 'tags'
 	});
 
-	Promise.all([ghUserCCStars, userTimeline, lastPosts]).then(function(data) {
+	var lastPictures = InstagramApiClient.getPictures({
+		access_token: process.env.INSTAGRAM_TOKEN,
+		count: 3
+	});
+
+	Promise.all([ghUserCCStars, userTimeline, lastPosts, lastPictures]).then(function(data) {
 		var repos = GithubApiClient.parseRepos(data[0]);
 		var tweets = TwitterApiClient.parseTweets(data[1]);
 		var posts = GhostApiClient.parsePosts(data[2]);
+		var pictures = data[3];
 
 		res.render('views/index', {
 			githubData: repos,
