@@ -32,8 +32,8 @@ var staticData = {
         		position: {
 					title: 'Front End Dev Internship',
 					dates: {
-	        			start: '2015-10',
-						finish: '2016-02',
+	        			start: '2014-10',
+						finish: '2015-02',
 						time: '5 Months'
 	        		},
 					tasks: [
