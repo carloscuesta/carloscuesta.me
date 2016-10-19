@@ -10,6 +10,8 @@ carloscuesta.use(compression());
 
 carloscuesta.set('views', __dirname + '/templates');
 carloscuesta.set('view engine', 'pug');
+carloscuesta.set('view cache', true);
+
 carloscuesta.use(sassMiddleware({
     src: __dirname+'/styles',
     dest: __dirname+'/static/css',
