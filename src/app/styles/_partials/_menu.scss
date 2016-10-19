@@ -151,3 +151,51 @@
 input#hamburger-menu {
     display: none;
 }
+
+nav.nav {
+	.navigation {
+		position: absolute;
+		left: 0%;
+		width: 100%;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateY(-50%);
+	}
+
+	ul, li {
+		margin: 0;
+		padding: 0;
+	}
+
+	.item {
+		text-transform: capitalize;
+		font-size: 3em;
+		list-style: none;
+		font-weight: 400;
+		margin : .4em 0;
+		transition: all .2s ease-in-out;
+
+		a {
+			display: block;
+			height: 100px;
+			line-height: 100px;
+			transition: all 400ms cubic-bezier(.17,.67,.38,1.46);
+    		transform: scale(0.3);
+		}
+
+		&:hover a {
+			color: $accent;
+		}
+
+		&:hover a {
+			color: $accent;
+		}
+
+		&:hover {
+			background-color: $white;
+		}
+	}
+}
