@@ -82,15 +82,15 @@ nav.nav .item a {
 }
 
 nav.nav .item:hover {
-    background-color: #FF5252;
+    background-color: #fff;
 }
 
-.nav a {
+.modal a {
+	color: #fff;
+}
+
+.modal a:hover {
 	color: #FF5252;
-}
-
-.nav a:hover {
-	color: #ffffff;
 }
 
 nav h3 {
@@ -1080,8 +1080,12 @@ iframe, .fluid-width-video-wrapper {
 
 .c-hamburger__input:checked ~ .modal {
     opacity: 1;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #FF5252;
     visibility: visible;
+}
+
+.c-hamburger__input:checked ~ .c-hamburger span::after, .c-hamburger__input:checked ~ .c-hamburger span::before {
+	background-color: #fff;
 }
 
 .c-hamburger__input:checked ~ .modal .item a {
