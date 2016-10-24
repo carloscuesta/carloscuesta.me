@@ -35,7 +35,7 @@
     "ghost": "^0.11.2",
     "ghost-cloudinary-store": "carloscuesta/ghost-cloudinary-store",
     "memory-cache": "^0.1.4",
-    "moment": "^2.15.0",
+    "moment": "^2.15.2",
     "node-fetch": "^1.6.3",
     "node-sass-middleware": "^0.9.7",
     "oauth": "^0.9.14",
