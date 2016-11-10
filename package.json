@@ -37,7 +37,7 @@
     "memory-cache": "^0.1.4",
     "moment": "^2.15.2",
     "node-fetch": "^1.6.3",
-    "node-sass-middleware": "^0.9.7",
+    "node-sass-middleware": "^0.10.0",
     "oauth": "^0.9.14",
     "pug": "^2.0.0-beta3",
     "striptags": "^2.1.1",
