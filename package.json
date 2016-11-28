@@ -2,7 +2,7 @@
   "name": "carloscuesta.me",
   "version": "1.0.0",
   "engines": {
-    "node": "6.9.1"
+    "node": "4.6.1"
   },
   "description": "Carlos Cuesta website.",
   "main": "index.js",
@@ -32,7 +32,7 @@
     "dotenv": "^2.0.0",
     "express": "^4.14.0",
     "forever": "^0.15.2",
-    "ghost": "^0.11.3",
+    "ghost": "^0.11.2",
     "ghost-cloudinary-store": "carloscuesta/ghost-cloudinary-store",
     "memory-cache": "^0.1.4",
     "moment": "^2.15.2",
