@@ -13,9 +13,9 @@ section.blog
                                     a(href='/blog'+post.url, onmousedown="ga('send', 'event', 'Post', 'Click', '#{post.title}');", target="_blank")=post.title
                             .post-info
                                 time(datetime=post.published_at)=post.published_at
-                                span.tags
+                                span.post-tags
                                     each tag in post.tags
-                                        a(class='tag '+tag.name, href='/blog/tag/'+tag.name, onmousedown="ga('send', 'event', 'Post', 'Click' ,'tag-#{tag.name}');", target="_blank")='#'+tag.name
+                                        a(class='post-tag '+tag.name, href='/blog/tag/'+tag.name, onmousedown="ga('send', 'event', 'Post', 'Click' ,'tag-#{tag.name}');", target="_blank")='#'+tag.name
                             p.post-excerpt=post.html
                         footer.post-footer
                             a.read-more(href='/blog'+post.url, onmousedown="ga('send', 'event', 'Post', 'Click', 'Read More');", target="_blank") Read more

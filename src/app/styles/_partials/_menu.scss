@@ -4,8 +4,8 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     font-size: 0;
     text-indent: -9999px;
     appearance: none;
@@ -38,11 +38,11 @@
     	}
 
     	&::before {
-    		top: -20px;
+    		top: -15px;
     	}
 
     	&::after {
-			bottom: -20px;
+			bottom: -15px;
     	}
 	}
 

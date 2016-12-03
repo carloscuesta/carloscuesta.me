@@ -33,7 +33,7 @@
 }
 
 .btn {
-	font-family: 'Montserrat';
+	font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 	font-weight: 400;
 	padding: .45em 1em;
 	border-radius: 50px;
@@ -192,38 +192,44 @@
 	&:hover {
 		box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
 	}
+
+	&-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: .5em;
+
+		h4 {
+			color: #37474F;
+			transition: color .2s ease-out;
+			margin: 0;
+
+			&:hover {
+				color: $textHover;
+			}
+		}
+	}
+
+	&-stats {
+		display: flex;
+		align-items: center;
+		margin-top: .75em;
+		margin-bottom: .75em;
+	}
+
+	&-description {
+		font-weight: 300;
+		font-size: 1.05em;
+	}
+
 }
 
 @each $tag, $color in ('javascript': $javascript, 'html': $html, 'css': $css) {
 	@include createLanguageCard($tag, $color);
 }
 
-.repo-title {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: .5em;
-}
-
 .icon-fork {
 	margin-left: .35em;
-}
-
-.github-stats {
-	display: flex;
-	align-items: center;
-	margin-top: .75em;
-	margin-bottom: .75em;
-}
-
-.github-title {
-	color: $text;
-	transition: color .2s ease-out;
-	margin: 0;
-
-	&:hover {
-		color: $textHover;
-	}
 }
 
 .starred, .forked, .web {
@@ -273,11 +279,6 @@
 	}
 }
 
-.description {
-	font-weight: 300;
-	font-size: .95em;
-}
-
 .twitter {
 	display: flex;
 	background-color: #F1F6F8;
@@ -299,72 +300,76 @@
 	}
 }
 
-.tweet-card {
-	display: flex;
-}
-
 .tweet {
 	background-color: $white;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
 	border-radius: 2px;
 	transition: all .3s ease-out;
 	overflow: hidden;
+	text-align: center;
+	max-width: 468px;
+	margin-right: auto;
+	margin-left: auto;
 
-	.username {
+	&-username {
 		font-weight: 400;
 		margin-bottom: 0;
+	}
+
+	&-card {
+		display: flex;
 	}
 
 	&:hover {
 		box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
 	}
-}
 
-.tweet-wrap {
-	padding: 3em 1.5em 0;
-}
-
-.tweet-text {
-	font-weight: 300;
-	padding: 1.5em 1em;
-}
-
-.tweet-details {
-	padding: .75em 0;
-	background-color: #00B0FF;
-	color: #fff;
-
-	a {
-		color: #fff;
+	&-wrap {
+		padding: 3em 1.5em 0;
 	}
-}
 
-.tweet-username {
-	font-size: 1.25em;
-	font-weight: 700;
-}
+	&-text {
+		font-weight: 300;
+		padding: 1.5em 1em;
+	}
 
-.tweet-actions {
-	border-top: 1px solid #eee;
-}
+	&-details {
+		padding: .75em 0;
+		background-color: #00B0FF;
+		color: #fff;
 
-.tweet-img {
-	width: 100%;
-	height: 30vh;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
+		a {
+			color: #fff;
+		}
+	}
+
+	&-username {
+		font-size: 1.25em;
+		font-weight: 700;
+	}
+
+	&-actions {
+		border-top: 1px solid #eee;
+
+		a {
+			margin: .5em;
+			margin: .75em .5em;
+		}
+	}
+
+	&-img {
+		width: 100%;
+		height: 30vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
 }
 
 .tweet-actions, .tweet-actions a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.tweet-actions a {
-	margin: .5em;
-	margin: .75em .5em;
 }
 
 .icon-heart {
@@ -385,13 +390,6 @@
 
 .rts {
 	color: #19CF86;
-}
-
-.tweet {
-	text-align: center;
-	max-width: 468px;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 .blog time {
@@ -421,30 +419,86 @@
 	&:hover {
 		box-shadow: 0 15px 45px rgba(0, 0, 0, .15);
 	}
-}
 
-.post-content {
-	padding: 2.5em;
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-}
+	&-info {
+		display: flex;
+	    flex-wrap: wrap;
+	    margin-top: .45em;
+	    align-items: center;
+	}
 
-.post-image {
-	width: 100%;
-}
+	&-excerpt {
+		margin-bottom: 0;
+	}
 
-.post-title {
-	font-size: 1.35em;
-	font-weight: 400;
-	line-height: 1.15;
+	&-content {
+		padding: 2.5em;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
 
-	a {
-		color: $text;
-		transition: color .2s ease-out;
+	&-footer {
+		background: #fff;
+		padding: 1em 2.5em;
+		border-top: 1px #eee solid;
+	}
 
-		&:hover {
-			color: $textHover;
+	&-image {
+		width: 100%;
+	}
+
+	&-title {
+		font-size: 1.35em;
+		font-weight: 600;
+		line-height: 1.15;
+
+		a {
+			color: $text;
+			transition: color .2s ease-out;
+
+			&:hover {
+				color: $textHover;
+			}
+		}
+	}
+
+	&-tag {
+		&:hover:before {
+			visibility: visible;
+			-webkit-transform: scaleX(1);
+			transform: scaleX(1);
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			bottom: 0;
+			left: 0;
+			visibility: hidden;
+			-webkit-transform: scaleX(0);
+			transform: scaleX(0);
+			-webkit-transition: all .2s ease-in-out 0s;
+			transition: all .2s ease-in-out 0s;
+		}
+	}
+
+
+	&-tags {
+
+		a {
+			padding: 0 .25em .25em .25em;
+			font-size: .75em;
+			text-transform: uppercase;
+			margin-right: .85em;
+			position: relative;
+			text-decoration: none;
+		}
+
+		@each $tag, $color in ('personal': $personal, 'life': $life, 'javascript': $javascript, 'html': $html, 'css': $css, 'nodejs': $nodejs, 'npm': $npm, 'tools': $tools) {
+			@include createTag($tag, $color);
 		}
 	}
 }
@@ -474,61 +528,6 @@
 	color: $textHover;
 }
 
-.post-info {
-	display: flex;
-    flex-wrap: wrap;
-    margin-top: .45em;
-    align-items: center;
-}
-
-.post-excerpt {
-	margin-bottom: 0;
-}
-
-.post-footer {
-	background: #fff;
-	padding: 1em 2.5em;
-	border-top: 1px #eee solid;
-}
-
-.tag {
-	&:hover:before {
-		visibility: visible;
-		-webkit-transform: scaleX(1);
-		transform: scaleX(1);
-	}
-
-	&:before {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 2px;
-		bottom: 0;
-		left: 0;
-		visibility: hidden;
-		-webkit-transform: scaleX(0);
-		transform: scaleX(0);
-		-webkit-transition: all .2s ease-in-out 0s;
-		transition: all .2s ease-in-out 0s;
-	}
-}
-
-.tags {
-
-	a {
-		padding: 0 .25em .25em .25em;
-		font-size: .75em;
-		text-transform: uppercase;
-		margin-right: .85em;
-		position: relative;
-		text-decoration: none;
-	}
-
-	@each $tag, $color in ('personal': $personal, 'life': $life, 'javascript': $javascript, 'html': $html, 'css': $css, 'nodejs': $nodejs, 'npm': $npm, 'tools': $tools) {
-		@include createTag($tag, $color);
-	}
-}
-
 footer {
 	color: $text;
 	background-color: $sectionHighlight;
@@ -546,8 +545,9 @@ footer {
 }
 
 .footer-navigation {
-	padding:0;
-	margin:0;
+	padding: 0;
+	margin: 0;
+
 	li {
 		display: inline-block;
 		padding-right: .95em;

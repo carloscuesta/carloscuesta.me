@@ -8,12 +8,12 @@ section.github
                     div(class='repo language-'+github.language)
                         .repo-title
                             a(href=github.html_url, onmousedown="ga('send', 'event', 'GitHub', '#{github.name}');", target="_blank")
-                                h4.github-title #{github.name}
+                                h4 #{github.name}
                             if github.homepage
                                 a.web(href=github.homepage, target="_blank", onmousedown="ga('send', 'event', 'GitHub Page', '#{github.name}');")
                                     svg.icon.icon-globe
                                         use(xlink:href="#icon-globe")
-                        .github-stats
+                        .repo-stats
                             a.starred(href=github.html_url)
                                 svg.icon.icon-star
                                     use(xlink:href="#icon-star")
@@ -23,7 +23,7 @@ section.github
                                     svg.icon.icon-fork
                                         use(xlink:href="#icon-fork")
                                     span.forks=github.forks
-                        .description=github.description
+                        .repo-description=github.description
             a.btn.btn-blue.btn-social(href='https://github.com/'+social.github, onmousedown="ga('send', 'event', 'Social', 'Follow GitHub');", target="_blank")
                 svg.icon.icon-github
                         use(xlink:href="#icon-github")
