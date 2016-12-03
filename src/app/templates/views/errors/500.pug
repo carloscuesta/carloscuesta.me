@@ -4,11 +4,7 @@ html
         title Carlos Cuesta | Error 500
         meta(charset="utf-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(name="twitter:card", content="summary")
-        meta(name="twitter:description", content="Error 404 Page Not Found - Carlos Cuesta")
-        meta(name="twitter:creator", content="@crloscuesta")
-        meta(name="twitter:url", content="http://carloscuesta.me")
-        meta(name="twitter:title", content="Carlos Cuesta")
+		meta(name="description", content="Error 500 Internal Server Error - Carlos Cuesta")
         link(rel="apple-touch-icon", sizes="57x57", href="apple-icon-57x57.png")
         link(rel="apple-touch-icon", sizes="60x60", href="apple-icon-60x60.png")
         link(rel="apple-touch-icon", sizes="72x72", href="apple-icon-72x72.png")
@@ -28,8 +24,6 @@ html
         meta(name='theme-color', content='#FF5252')
         style
             include ../../../static/css/error.css
-        script
-            include ../../../static/js/fonts.js
     body
         .container
             .row.message.middle-xs
@@ -43,7 +37,7 @@ html
                             li #[a(href="http://carloscuesta.me/aboutme", onmousedown="ga('send', 'event', '404','Click', 'Link Blog');") About me]
                             li #[a(href="http://carloscuesta.me/blog", onmousedown="ga('send', 'event', '404','Click', 'Link Blog');") Blog]
                             li #[a(href="http://carloscuesta.me/sitemap.xml", onmousedown="ga('send', 'event', '404','Click', 'Link Sitemap');") Sitemap]
-                    h4 Error Code: 
+                    h4 Error Code:
                         span.status-code 500
                     div.btn-return
                         a(href="mailto:hi@carloscuesta.me?Subject=Error @ carloscuesta.me - #{error}", onmousedown="ga('send', 'event', '500','Click', 'Contact');").btn.btn-raised Contact site administrator
