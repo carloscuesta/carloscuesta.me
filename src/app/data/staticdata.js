@@ -3,7 +3,7 @@
 var staticData = {
 	me: {
 		name: 'Carlos Cuesta',
-		age: 20,
+		age: 21,
 		job: 'Front End Developer',
 		company: 'Mediàtic',
 		hometown: 'Badalona',
@@ -16,7 +16,7 @@ var staticData = {
 					title: 'Front End Developer',
 					dates: {
 	        			start: '2015-03',
-						finish: 'Present',
+						finish: '2016-12',
 						time: '1.8 Years'
 	        		},
 					tasks: [
