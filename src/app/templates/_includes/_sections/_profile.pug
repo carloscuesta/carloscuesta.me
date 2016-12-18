@@ -1,33 +1,33 @@
 section.aboutme
-    .wrap
-        .row.middle-xs
-            .col-xs-12.col-md-4
-                h2 Carlos Cuesta
-                ul
-                    li.profile-item
-                        strong Age:
-                        |  #{me.age}
-                    li.profile-item
-                        strong Job:
-                        |  #{me.job}
-                    li.profile-item
-                        strong Company:
-                        |  #{me.company}
-                    li.profile-item
-                        strong Location:
-                        |  #{me.hometown}
-                .social
-                    a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'GitHub');", href="https://twitter.com/#{social.twitter}", target="_blank")
-                        svg.icon.icon-twitter
-                            use(xlink:href="#icon-twitter")
-                    a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'Twitter');", href="https://github.com/#{social.github}", target="_blank")
-                        svg.icon.icon-github
-                            use(xlink:href="#icon-github")
-                    a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'LinkedIn');", href="https://es.linkedin.com/in/#{social.linkedin}", target="_blank")
-                        svg.icon.icon-linkedin
-                            use(xlink:href="#icon-linkedin")
-            .col-xs-12.col-md-8
-                p Hello!
-                | My name is #[strong Carlos Cuesta] I'm a 20 years old #[strong Front End Developer] based in Barcelona. I describe myself as a developer who loves coding, open source, and the web platform. Currently I'm working at a company called Mediàtic, as a Front End Developer.
-                p In my spare time I like to #[strong create] and #[strong contribute] to #[strong open source] projects. That helps me to learn a lots of new stuff, grow as a developer and support other open source projects.
-                p Also, I enjoy writing at my #[a(href="https://carloscuesta.me/blog") blog] and going to developer meetups and conferences around Barcelona.
+	.wrap
+		.row.middle-xs
+			.col-xs-12.col-md-4
+				h2 Carlos Cuesta
+				ul
+					li.profile-item
+						strong Age:
+						| #{me.age}
+					li.profile-item
+						strong Job:
+						| #{me.job}
+					li.profile-item
+						strong Company:
+						| #{me.company}
+					li.profile-item
+						strong Location:
+						| #{me.hometown}
+				.social
+					a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'GitHub');", href="https://twitter.com/#{social.twitter}", target="_blank")
+						svg.icon.icon-twitter
+							use(xlink:href="#icon-twitter")
+					a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'Twitter');", href="https://github.com/#{social.github}", target="_blank")
+						svg.icon.icon-github
+							use(xlink:href="#icon-github")
+					a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'LinkedIn');", href="https://es.linkedin.com/in/#{social.linkedin}", target="_blank")
+						svg.icon.icon-linkedin
+							use(xlink:href="#icon-linkedin")
+			.col-xs-12.col-md-8
+				p Hello!
+				| My name is #[strong Carlos Cuesta] I'm a #{me.age} years old #[strong Front End Developer] based in Barcelona. I describe myself as a developer who loves coding, open source, and the web platform. Currently I'm working at a company called #{me.company}, as a #{me.job}.
+				p In my spare time I like to #[strong create] and #[strong contribute] to #[strong open source] projects. That helps me to learn a lots of new stuff, grow as a developer and support other open source projects.
+				p Also, I enjoy writing at my #[a(href="https://carloscuesta.me/blog") blog] and going to developer meetups and conferences around Barcelona.
