@@ -225,6 +225,17 @@ strong {
 	margin-bottom: 1em;
 }
 
+.profile {
+	padding-top: 1.5em;
+}
+
+.country {
+	font-size: 2.25em;
+	font-family: "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+	margin: 0 .15em;
+	cursor: pointer;
+}
+
 footer {
 	color: $text;
 	background-color: $sectionHighlight;

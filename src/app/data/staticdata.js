@@ -90,8 +90,37 @@ var staticData = {
 				year: '2015',
 				organization: 'ETP El Clot'
 			}
+		],
+		countriesVisited: [
+			{
+				flag: '🇫🇷',
+				name: 'France'
+			},
+			{
+				flag: '🇵🇱',
+				name: 'Poland'
+			},
+			{
+				flag: '🇨🇿',
+				name: 'Czech Republic'
+			},
+			{
+				flag: '🇦🇹',
+				name: 'Austria'
+			},
+			{
+				flag: '🇩🇪',
+				name: 'Germany'
+			},
+			{
+				flag: '🇨🇭',
+				name: 'Switzerland'
+			},
+			{
+				flag: '🇸🇪',
+				name: 'Sweden'
+			}
 		]
-
 	},
 
 	social: {
