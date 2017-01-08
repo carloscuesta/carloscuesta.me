@@ -23,7 +23,7 @@ carloscuesta.use(express.static(__dirname +  '/static/css/'));
 carloscuesta.use(express.static(__dirname +  '/static/js/'));
 
 carloscuesta.get('/', routes.index);
-carloscuesta.get('/aboutme', routes.aboutme);
+carloscuesta.get('/about', routes.about);
 carloscuesta.get('/'+process.env.PARAM_CLEAN, routes.cacheClean);
 
 carloscuesta.use(function(error, req, res, next) {

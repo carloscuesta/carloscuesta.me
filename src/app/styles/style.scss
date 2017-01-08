@@ -200,7 +200,7 @@
 		margin-bottom: .5em;
 
 		h4 {
-			color: #37474F;
+			color: $text;
 			transition: color .2s ease-out;
 			margin: 0;
 
@@ -540,7 +540,7 @@ footer {
 
 	h3 {
 		font-weight: 700;
-		color: #37474F;
+		color: $text;
 	}
 }
 

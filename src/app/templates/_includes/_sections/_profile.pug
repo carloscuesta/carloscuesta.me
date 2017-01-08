@@ -4,18 +4,9 @@ section.aboutme
 			.col-xs-12.col-md-4
 				h2 Carlos Cuesta
 				ul
-					li.profile-item
-						strong Age:
-						| #{me.age}
-					li.profile-item
-						strong Job:
-						| #{me.job}
-					li.profile-item
-						strong Company:
-						| #{me.company}
-					li.profile-item
-						strong Location:
-						| #{me.hometown}
+					li.profile-item #[strong Age:] #{me.age}
+					li.profile-item #[strong Job:] #{me.job}
+					li.profile-item #[strong Company:] #{me.company}
 				.social
 					a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'GitHub');", href="https://twitter.com/#{social.twitter}", target="_blank")
 						svg.icon.icon-twitter

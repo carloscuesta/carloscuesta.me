@@ -56,7 +56,7 @@ exports.index = function(req, res) {
 	});
 };
 
-exports.aboutme = function(req, res) {
+exports.about = function(req, res) {
 
 	res.setHeader('Cache-Control', 'public, max-age=86400');
 
