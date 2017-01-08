@@ -60,7 +60,7 @@ describe('app', function() {
 
 			it('should render and return 200 OK ', function(done) {
 				request(app)
-					.get('/aboutme')
+					.get('/about')
 					.end(function(err, res) {
 						res.status.should.equal(200);
 						done();
