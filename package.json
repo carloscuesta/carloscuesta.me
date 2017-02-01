@@ -40,7 +40,7 @@
     "node-sass-middleware": "^0.10.0",
     "oauth": "^0.9.14",
     "pug": "^2.0.0-beta3",
-    "striptags": "^2.2.1",
+    "striptags": "^3.0.0",
     "twitter-text": "^1.14.3"
   },
   "devDependencies": {
