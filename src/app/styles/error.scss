@@ -5,7 +5,7 @@ html, body {
 	margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
-    font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: $systemFonts;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
@@ -19,7 +19,7 @@ html, body {
 }
 
 .btn {
-	font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-family: $systemFonts;
 	font-weight: 400;
 	padding: .45em 1em;
 	border-radius: 50px;
