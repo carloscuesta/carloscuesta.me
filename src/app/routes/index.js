@@ -1,6 +1,6 @@
-const githubClient = require('../scripts/githubapiclient');
-const twitterClient = require('../scripts/twitterapiclient');
-const ghostClient = require('../scripts/ghostapiclient');
+const githubClient = require('../apiclients/github');
+const twitterClient = require('../apiclients/twitter');
+const ghostClient = require('../apiclients/ghost');
 const staticData = require('../data/staticdata');
 
 const index = (req, res) => {
