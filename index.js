@@ -1,12 +1,12 @@
 'use strict';
 
-var app = require('./src/app/carloscuesta.js'),
-	ghost = require('ghost'),
-	port = process.env.PORT || 5000;
+const app = require('./src/app/carloscuesta');
+const ghost = require('ghost');
+const port = process.env.PORT || 5000;
 
 ghost({
 	config: __dirname+'/src/blog/config.js'
-}).then(function (ghostServer) {
+}).then((ghostServer) => {
 	app.use(ghostServer.config.paths.subdir, ghostServer.rootApp);
 	app.use(function(req, res) {
 		res.status(404);
