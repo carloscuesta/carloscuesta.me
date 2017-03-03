@@ -1,35 +1,30 @@
 'use strict';
 
-var nodeCache = require('memory-cache');
+const nodeCache = require('memory-cache');
+const CACHE_TIME = 86400000;
 
-var CacheApiClient = (function() {
-
-	var _serialize = function(params) {
+class CacheApiClient {
+	serialize(params) {
 		return Object.keys(params).map(function(key) {
 			return key + '=' + params[key];
 		}).join('&');
-	};
+	}
 
-	var validate = function(src, params, time) {
-		var _self = this,
-			_url = _self.base_url + src + '?' + _serialize(params),
-			_cacheTime = time * 6000 || 86400000,
-			_dataCache = nodeCache.get(_url);
+	validate(src, params, time) {
+		const _self = this;
+		const url = `${_self.base_url}${src}?${this.serialize(params)}`
+		const cacheTime = time * 6000 || CACHE_TIME;
+		const dataCache = nodeCache.get(url);
 
-		if (!_dataCache) {
-			return _self.get(src, params).then(function(data) {
-				nodeCache.put(_url, data, _cacheTime);
+		if (!dataCache) {
+			return _self.get(src, params).then((data) => {
+				nodeCache.put(url, data, cacheTime);
 				return data;
 			});
 		} else {
-			return Promise.resolve(_dataCache);
+			return Promise.resolve(dataCache);
 		}
-	};
+	}
+}
 
-	return {
-		validate: validate
-	};
-
-})();
-
-module.exports = CacheApiClient;
+module.exports = new CacheApiClient();
