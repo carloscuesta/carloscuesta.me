@@ -1,4 +1,4 @@
-const staticData = require('../data/staticdata');
+const staticData = require('../data/static');
 
 const about = (req, res) => {
 	res.setHeader('Cache-Control', 'public, max-age=86400');

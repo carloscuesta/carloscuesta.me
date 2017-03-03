@@ -1,7 +1,7 @@
 const githubClient = require('../apiclients/github');
 const twitterClient = require('../apiclients/twitter');
 const ghostClient = require('../apiclients/ghost');
-const staticData = require('../data/staticdata');
+const staticData = require('../data/static');
 
 const index = (req, res) => {
 	res.setHeader('Cache-Control', 'public, max-age=86400');
