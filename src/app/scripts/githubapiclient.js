@@ -1,40 +1,37 @@
 'use strict';
 
-var ApiClient = require('./apiclient'),
-	CacheApiClient = require('./cache'),
-	nodeCache = require('memory-cache');
+const ApiClient = require('./apiclient')
+const CacheApiClient = require('./cache')
+const nodeCache = require('memory-cache')
 
-var GithubApiClient = (function() {
+const CACHE_TIME = 86400000
+const dataCache = nodeCache.get('parsedRepoLangs')
 
-	var _ApiClient = new ApiClient({
-		'base_url': 'https://api.github.com',
-		'cache': 5
-	});
+class GithubApiClient {
+	constructor() {
+		this.apiClient = new ApiClient({
+			'base_url': 'https://api.github.com',
+			'cache': 5
+		});
+	}
 
-	var getSearch = function(params){
-		return CacheApiClient.validate.call(_ApiClient, '/search/repositories', params);
-	};
+	getSearch(params) {
+		return CacheApiClient.validate
+			.call(this.apiClient, '/search/repositories', params)
+	}
 
-	var parseRepos = function(repos) {
-		var _cacheTime =  86400000,
-			_dataCache = nodeCache.get('parsedRepoLangs');
-		if (!_dataCache) {
+	parseRepos(repos) {
+		if (!dataCache) {
 			for (var i = 0; i < repos.items.length; i++) {
-				if (repos.items[i].language!==null) {
+				if (repos.items[i].language) {
 					repos.items[i].language = repos.items[i].language.toLowerCase();
 				}
 			}
-			nodeCache.put('parsedRepoLangs', repos, _cacheTime);
+			nodeCache.put('parsedRepoLangs', repos, CACHE_TIME);
 			return repos;
-		} else {
-			return _dataCache;
 		}
-	};
+		return dataCache;
+	}
+}
 
-	return {
-		getSearch: getSearch,
-		parseRepos: parseRepos
-	};
-})();
-
-module.exports = GithubApiClient;
+module.exports = new GithubApiClient()
