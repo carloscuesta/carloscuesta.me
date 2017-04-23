@@ -134,6 +134,10 @@ var staticData = {
 			{
 				flag: '🇸🇪',
 				name: 'Sweden'
+			},
+			{
+				flag: '🇳🇱',
+				name: 'Netherlands',
 			}
 		]
 	},
