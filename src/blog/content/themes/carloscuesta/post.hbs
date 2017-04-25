@@ -36,57 +36,7 @@
         <section itemprop="articleBody" class="post-content row col-xs-12">
             {{content}}
         </section>
-
-        <!--<footer class="post-footer">
-
-	        {{#author}}
-
-	            <section class="author" itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-footer">
-	            	<div class="row">
-	                	{{#if bio}}
-	            			{{#if image}}
-
-	    	    			{{/if}}
-	    	    			<div class="col-xs-12">
-	    	    			    <h3 itemprop="name" class="author-name col-xs-12"><a href="{{url}}" onmousedown="ga('send', 'event', 'Blog', 'Post - Author Name');">{{name}}</a></h3>
-	                	    	<p itemprop="description" class="col-xs-12 col-sm-10">{{bio}}</p>
-	                	    </div>
-	                	{{else}}
-	                	    <p>Read <a href="{{url}}" onmousedown="ga('send', 'event', 'Blog', 'Post - Read More');">more posts</a> by this author.</p>
-	                	{{/if}}
-	                </div>
-	            </section>
-
-	            <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-	  				<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-						<meta itemprop="url" content="{{image}}">
-	  				  	<meta itemprop="width" content="450">
-	  				  	<meta itemprop="height" content="450">
-	  				</div>
-	  				<meta itemprop="name" content="{{name}}">
-	  			</div>
-
-	        {{/author}}
-
-            <section class="share">
-                <h3>Share this post</h3>
-                <a href="https://twitter.com/intent/tweet?text={{encode title}}+by+@crloscuesta&amp;url={{url absolute="true"}}"
-                    onmousedown="ga('send', 'event', 'Blog', 'Post - Share Twitter');window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <svg class="icon icon-twitter">
-	                	<use xlink:href="#icon-twitter"></use>
-	            	</svg>
-                    <span class="hidden">Twitter</span>
-                </a>
-                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;title={{encode title}}&amp;url=	{url absolute="true"}&amp;source=http://carloscuesta.me"
-                   onmousedown="ga('send', 'event', 'Blog', 'Post - Share LinkedIn');window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;">
-                   <svg class="icon icon-linkedin">
-	                	<use xlink:href="#icon-linkedin"></use>
-	            	</svg>
-                    <span class="hidden">LinkedIn</span>
-                </a>
-            </section>
-
-        </footer>-->
+		<div itemprop="comment" id="disqus_thread" class="disqus-comments col-xs-12"></div>
 		<script>
 		var disqus_config = function () {
 		    this.page.url = {{id}};
@@ -100,7 +50,6 @@
 		})();
 		</script>
 		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    	<div itemprop="comment" id="disqus_thread" class="disqus-comments col-xs-12"></div>
 	</main>
 </article>
 
