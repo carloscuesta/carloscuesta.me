@@ -87,6 +87,19 @@
             </section>
 
         </footer>-->
+		<script>
+		var disqus_config = function () {
+		    this.page.url = {{id}};
+		    this.page.identifier = '{{url absolute="true"}}';
+		};
+		(function() {
+		var d = document, s = d.createElement('script');
+		s.src = '//carloscuesta.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     	<div itemprop="comment" id="disqus_thread" class="disqus-comments col-xs-12"></div>
 	</main>
 </article>
@@ -110,18 +123,5 @@
     </a>
     {{/prev_post}}
 </aside>
-
-<script>
-var disqus_config = function () {
-    this.page.url = {{id}};
-    this.page.identifier = '{{url absolute="true"}}';
-};
-(function() {
-var d = document, s = d.createElement('script');
-s.src = 'https://carloscuesta.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//carloscuesta.disqus.com/count.js" async></script>
 {{/post}}
