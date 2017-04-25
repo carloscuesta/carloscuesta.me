@@ -111,7 +111,17 @@
     {{/prev_post}}
 </aside>
 
-<script type="text/javascript">var disqus_shortname="carloscuesta",disqus_identifier="{{post.id}}";(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="//"+disqus_shortname+".disqus.com/embed.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)})();
+<script>
+var disqus_config = function () {
+    this.page.url = {{id}};
+    this.page.identifier = '{{url absolute="true"}}';
+};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://carloscuesta.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {{/post}}
