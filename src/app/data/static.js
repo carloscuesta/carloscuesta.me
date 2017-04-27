@@ -1,5 +1,7 @@
 'use strict';
 
+const moment = require('moment');
+
 var staticData = {
 	me: {
 		name: 'Carlos Cuesta',
@@ -16,7 +18,7 @@ var staticData = {
 					dates: {
 	        			start: '2017-01',
 						finish: 'Present',
-						time: ''
+						time: moment([2017, 0, 9]).fromNow(true)
 	        		},
 					tasks: [
 						''
@@ -90,7 +92,7 @@ var staticData = {
 				value: '90'
 			},
 			{
-				title: 'JavaScript, Node.js, Npm, Express, MongoDB',
+				title: 'JavaScript, React, React Native, Node.js, Npm, Yarn, Express, MongoDB',
 				value: '80'
 			},
 			{
