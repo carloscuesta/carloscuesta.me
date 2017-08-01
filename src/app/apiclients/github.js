@@ -25,6 +25,7 @@ class GithubApiClient {
 		if (githubDataCache) {
 			return githubDataCache
 		}
+
 		const repositories = payload.items.map((repo) => ({
 			language: repo.language && repo.language.toLowerCase(),
 			url: repo.html_url,
