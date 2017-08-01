@@ -21,7 +21,7 @@ const index = (req, res) => {
 		include_rts: true
 	});
 
-	var blogData = ghostClient.getLastPosts({
+	const blogData = ghostClient.getLastPosts({
 		client_id: process.env.GHOST_CLIENT_ID,
 		client_secret: process.env.GHOST_CLIENT_SECRET,
 		limit: 2,
@@ -31,7 +31,7 @@ const index = (req, res) => {
 	Promise.all([githubData, twitterData, blogData]).then((data) => {
 		const repos = githubClient.mutator(data[0])
 		const tweets = twitterClient.mutator(data[1])
-		var posts = ghostClient.parsePosts(data[2]);
+		const posts = ghostClient.mutator(data[2])
 
 		res.render('views/index', {
 			githubData: repos,

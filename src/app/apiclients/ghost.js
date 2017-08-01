@@ -7,7 +7,8 @@ const moment = require('moment');
 const stripTags = require('striptags');
 
 const CACHE_TIME = 86400000;
-const dataCache = nodeCache.get('parsedPosts')
+const GHOST_CACHE = 'GHOST_CACHE'
+const ghostDataCache = nodeCache.get(GHOST_CACHE)
 
 class GhostApiClient {
 	constructor() {
@@ -22,26 +23,22 @@ class GhostApiClient {
 			.call(this.apiClient, '/posts', params)
 	}
 
-	parsePosts(post) {
-		Array.prototype.insert = function (index, item) {
-			this.splice(index, 0, item);
-		};
-
-		if (!dataCache) {
-			for (var i = 0; i < post.posts.length; i++) {
-				const params = 'w_500';
-				const image = post.posts[i].image.split('/');
-				image.insert(6, params);
-				const parsedImages = image.join('/');
-
-				post.posts[i].image = parsedImages;
-				post.posts[i].published_at = moment(post.posts[i].updated_at).startOf('hour').fromNow();
-				post.posts[i].html = stripTags(post.posts[i].html).substring(0,120)+' ...';
-			}
-			nodeCache.put('parsedPosts', post, CACHE_TIME);
-			return post;
+	mutator(payload) {
+		if (ghostDataCache) {
+			return ghostDataCache
 		}
-		return dataCache;
+
+		const posts = payload.posts.map((post) => ({
+			title: post.title,
+			tags: post.tags,
+			excerpt: `${stripTags(post.html).substring(0, 120)}...`,
+			url: post.url,
+			publishedAt: moment(post.updated_at).startOf('hour').fromNow(),
+			image: post.image.replace('/upload/', '/upload/w_500/'),
+		}))
+
+		nodeCache.put(GHOST_CACHE, posts, CACHE_TIME)
+		return posts
 	}
 }
 
