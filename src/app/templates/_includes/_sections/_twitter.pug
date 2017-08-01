@@ -10,22 +10,22 @@ section.twitter
 							a(href=tweet.image)
 								.tweet-img(style='background-image: url('+tweet.image+')')
 						.tweet-details
-							.tweet-username=tweet.user.name
-							a(href='https://twitter.com/'+tweet.user.screen_name) @#{tweet.user.screen_name}
-						h5.tweet-text!=tweet.text_parsed
+							.tweet-username=tweet.userName
+							a(href='https://twitter.com/'+tweet.screenName) @#{tweet.screenName}
+						h5.tweet-text!=tweet.text
 						.tweet-actions
-							a(href='https://twitter.com/intent/tweet?in_reply_to='+tweet.id_str, onmousedown="ga('send', 'event', 'Twitter', 'Click', 'Reply');", target="_blank")
+							a(href='https://twitter.com/intent/tweet?in_reply_to='+tweet.id, onmousedown="ga('send', 'event', 'Twitter', 'Click', 'Reply');", target="_blank")
 								svg.icon.icon-reply
 									use(xlink:href="#icon-reply")
 
-							a(href='https://twitter.com/intent/retweet?tweet_id='+tweet.id_str, onmousedown="ga('send', 'event', 'Twitter', 'Click', 'Retweet');", target="_blank")
+							a(href='https://twitter.com/intent/retweet?tweet_id='+tweet.id, onmousedown="ga('send', 'event', 'Twitter', 'Click', 'Retweet');", target="_blank")
 								svg.icon.icon-retweet
 									use(xlink:href="#icon-retweet")
-								span.rts=tweet.retweet_count
-							a(href='https://twitter.com/intent/favorite?tweet_id='+tweet.id_str, onmousedown="ga('send', 'event', 'Twitter', 'Click', 'Favorite');", target="_blank")
+								span.rts=tweet.retweets
+							a(href='https://twitter.com/intent/favorite?tweet_id='+tweet.id, onmousedown="ga('send', 'event', 'Twitter', 'Click', 'Favorite');", target="_blank")
 								svg.icon.icon-heart
 									use(xlink:href="#icon-heart")
-								span.likes=tweet.favorite_count
+								span.likes=tweet.favourites
 		//-.more-btn
 			a.btn.btn-blue.btn-social(href='https://twitter.com/intent/follow?screen_name='+social.twitter, onmousedown="ga('send', 'event', 'Social', 'Follow Twitter');", target="_blank")
 				svg.icon.icon-twitter

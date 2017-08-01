@@ -6,7 +6,7 @@ const staticData = require('../data/static');
 const index = (req, res) => {
 	res.setHeader('Cache-Control', 'public, max-age=86400');
 
-	var githubData = githubClient.getSearch({
+	const githubData = githubClient.getSearch({
 		q: 'user:carloscuesta',
 		sort: 'stars',
 		order: 'desc',
@@ -14,14 +14,14 @@ const index = (req, res) => {
 		per_page: 6
 	});
 
-	var twitterData = twitterClient.getUserTimeline({
+	const twitterData = twitterClient.getUserTimeline({
 		screen_name: 'crloscuesta',
 		count: 1,
 		exclude_replies: false,
 		include_rts: true
 	});
 
-	var blogData = ghostClient.getLastPosts({
+	const blogData = ghostClient.getLastPosts({
 		client_id: process.env.GHOST_CLIENT_ID,
 		client_secret: process.env.GHOST_CLIENT_SECRET,
 		limit: 2,
@@ -29,9 +29,9 @@ const index = (req, res) => {
 	});
 
 	Promise.all([githubData, twitterData, blogData]).then((data) => {
-		var repos = githubClient.parseRepos(data[0]);
-		var tweets = twitterClient.parseTweets(data[1]);
-		var posts = ghostClient.parsePosts(data[2]);
+		const repos = githubClient.mutator(data[0])
+		const tweets = twitterClient.mutator(data[1])
+		const posts = ghostClient.mutator(data[2])
 
 		res.render('views/index', {
 			githubData: repos,

@@ -5,7 +5,8 @@ const CacheApiClient = require('./cache')
 const nodeCache = require('memory-cache')
 
 const CACHE_TIME = 86400000
-const dataCache = nodeCache.get('parsedRepoLangs')
+const GITHUB_CACHE = 'GITHUB_CACHE'
+const githubDataCache = nodeCache.get(GITHUB_CACHE)
 
 class GithubApiClient {
 	constructor() {
@@ -20,17 +21,23 @@ class GithubApiClient {
 			.call(this.apiClient, '/search/repositories', params)
 	}
 
-	parseRepos(repos) {
-		if (!dataCache) {
-			for (var i = 0; i < repos.items.length; i++) {
-				if (repos.items[i].language) {
-					repos.items[i].language = repos.items[i].language.toLowerCase();
-				}
-			}
-			nodeCache.put('parsedRepoLangs', repos, CACHE_TIME);
-			return repos;
+	mutator(payload) {
+		if (githubDataCache) {
+			return githubDataCache
 		}
-		return dataCache;
+
+		const repositories = payload.items.map((repo) => ({
+			language: repo.language && repo.language.toLowerCase(),
+			url: repo.html_url,
+			name: repo.name,
+			stars: repo.stargazers_count,
+			forks: repo.forks,
+			description: repo.description,
+			homepage: repo.homepage
+		}))
+
+		nodeCache.put(GITHUB_CACHE, repositories, CACHE_TIME)
+		return repositories
 	}
 }
 
