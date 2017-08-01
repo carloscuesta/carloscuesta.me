@@ -6,7 +6,7 @@ const staticData = require('../data/static');
 const index = (req, res) => {
 	res.setHeader('Cache-Control', 'public, max-age=86400');
 
-	var githubData = githubClient.getSearch({
+	const githubData = githubClient.getSearch({
 		q: 'user:carloscuesta',
 		sort: 'stars',
 		order: 'desc',
@@ -29,7 +29,7 @@ const index = (req, res) => {
 	});
 
 	Promise.all([githubData, twitterData, blogData]).then((data) => {
-		var repos = githubClient.parseRepos(data[0]);
+		const repos = githubClient.mutator(data[0]);
 		var tweets = twitterClient.parseTweets(data[1]);
 		var posts = ghostClient.parsePosts(data[2]);
 
