@@ -14,7 +14,7 @@ const index = (req, res) => {
 		per_page: 6
 	});
 
-	var twitterData = twitterClient.getUserTimeline({
+	const twitterData = twitterClient.getUserTimeline({
 		screen_name: 'crloscuesta',
 		count: 1,
 		exclude_replies: false,
@@ -29,8 +29,8 @@ const index = (req, res) => {
 	});
 
 	Promise.all([githubData, twitterData, blogData]).then((data) => {
-		const repos = githubClient.mutator(data[0]);
-		var tweets = twitterClient.parseTweets(data[1]);
+		const repos = githubClient.mutator(data[0])
+		const tweets = twitterClient.mutator(data[1])
 		var posts = ghostClient.parsePosts(data[2]);
 
 		res.render('views/index', {

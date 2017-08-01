@@ -9,7 +9,8 @@ const CacheApiClient = require('./cache');
 const nodeCache = require('memory-cache');
 
 const CACHE_TIME = 86400000
-const dataCache = nodeCache.get('parsedTweets')
+const TWITTER_CACHE = 'TWITTER_CACHE'
+const twitterDataCache = nodeCache.get(TWITTER_CACHE)
 
 class TwitterApiClient {
 	constructor() {
@@ -32,21 +33,27 @@ class TwitterApiClient {
 			.call(this.apiClient, '/statuses/user_timeline.json', params)
 	}
 
-	parseTweets(tweets) {
-		if (!dataCache) {
-			const tweetMap = tweets.map((tweet) => {
-				const media = tweet.entities.media;
-				const parsedText = twitterParse.autoLink(tweet.text);
-
-				return Object.assign({
-					image: (media && media.length > 0) ? media[0].media_url_https : '',
-					text_parsed: parsedText
-				}, tweet)
-			})
-			nodeCache.put('parsedTweets', tweetMap, CACHE_TIME);
-			return tweetMap;
+	mutator(payload) {
+		if (twitterDataCache) {
+			return twitterDataCache
 		}
-		return dataCache;
+
+		const tweets = payload.map((tweet) => {
+			const media = tweet.entities.media
+
+			return {
+				screenName: tweet.user.screen_name,
+				userName: tweet.user.name,
+				id: tweet.id_str,
+				retweets: tweet.retweet_count,
+				favourites: tweet.favorite_count,
+				image: (media && media.length > 0) ? media[0].media_url_https : '',
+				text: twitterParse.autoLink(tweet.text)
+			}
+		})
+
+		nodeCache.put(TWITTER_CACHE, tweets, CACHE_TIME)
+		return tweets
 	}
 }
 
