@@ -1,0 +1,21 @@
+doctype html
+html
+	head
+		title Carlos Cuesta | Error 500
+		meta(name="description", content="Error 500 Internal Server Error - Carlos Cuesta")
+		include ./_head.pug
+	body
+		.container
+			.row.message.middle-xs
+				.col-xs-12
+					h1 Oops! There's an error
+					h2 #{error}
+					h3 Please try again. Here are some helpful links instead:
+					include ./_nav.pug
+					h4 Error Code:
+						span.status-code 500
+					div.btn-return
+						a(href="mailto:hi@carloscuesta.me?Subject=Error @ carloscuesta.me - #{error}", onmousedown="ga('send', 'event', '500','Click', 'Contact');").btn.btn-raised Contact site administrator
+						a(href="https://carloscuesta.me", onmousedown="ga('send', 'event', '500','Click', 'Return Button');").btn.btn-blue Return to carloscuesta
+		script.
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://carloscuesta.me/ga.js','ga');ga('create', 'UA-67824860-3', 'auto');ga('send', 'pageview');ga('send', 'event', 'Error', '500', '#{error}');

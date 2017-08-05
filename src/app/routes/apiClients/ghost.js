@@ -1,12 +1,10 @@
-const ApiClient = require('./apiclient')
-const CacheApiClient = require('./cache')
 const nodeCache = require('memory-cache')
 const moment = require('moment')
 const stripTags = require('striptags')
-
-const CACHE_TIME = 86400000
-const GHOST_CACHE = 'GHOST_CACHE'
-const ghostDataCache = nodeCache.get(GHOST_CACHE)
+const ApiClient = require('./apiClient')
+const CacheApiClient = require('./cache')
+const CONFIG = require('./config')
+const ghostDataCache = nodeCache.get(CONFIG.GHOST_CACHE)
 
 class GhostApiClient {
   constructor () {
@@ -31,7 +29,7 @@ class GhostApiClient {
       image: post.image.replace('/upload/', '/upload/w_500/')
     }))
 
-    nodeCache.put(GHOST_CACHE, posts, CACHE_TIME)
+    nodeCache.put(CONFIG.GHOST_CACHE, posts, CONFIG.CACHE_TIME)
     return posts
   }
 }

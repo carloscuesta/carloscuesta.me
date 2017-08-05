@@ -1,0 +1,28 @@
+doctype html
+html
+	head
+		title Carlos Cuesta | About Me | Front End Developer
+		//-link(rel="stylesheet", type="text/css", href="/aboutme.css")
+		style
+			include ../public/css/aboutme.css
+		include ./_includes/_head.pug
+		link(rel="canonical", href="https://carloscuesta.me/about")
+		meta(name="og:url", content="https://carloscuesta.me/about")
+		meta(name="twitter:url", content="https://carloscuesta.me/about")
+
+	body
+		include ./_includes/_nav.pug
+		include ./_includes/_icons.pug
+		header.site-header(itemprop="author", itemscope, itemtype="http://schema.org/Person")
+			.wrap
+				h1
+					span.about About
+					span.my-name=' '+me.name
+		main
+			include ./_includes/_sections/_profile.pug
+			include ./_includes/_sections/_experience.pug
+			include ./_includes/_sections/_skills.pug
+			include ./_includes/_sections/_education.pug
+			include ./_includes/_sections/_awards.pug
+		include ./_includes/_footer.pug
+		include ./_includes/_analytics.pug
