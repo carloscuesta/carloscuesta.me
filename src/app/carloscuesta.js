@@ -10,7 +10,7 @@ carloscuesta.use(compression())
 
 carloscuesta.set('views', `${__dirname}/templates`)
 carloscuesta.set('view engine', 'pug')
-carloscuesta.set('view cache', true)
+carloscuesta.set('view cache', false)
 
 carloscuesta.use(sassMiddleware({
   src: `${__dirname}/styles`,
