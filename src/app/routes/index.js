@@ -1,4 +1,4 @@
-const staticData = require('../data/static')
+const staticData = require('./data')
 const githubClient = require('./apiClients/github')
 const twitterClient = require('./apiClients/twitter')
 const ghostClient = require('./apiClients/ghost')
