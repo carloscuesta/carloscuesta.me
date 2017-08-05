@@ -8,6 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "forever index.js",
+    "start:dev": "nodemon index.js",
     "pagespeed": "grunt",
     "coveralls": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
     "test": "npm run coveralls && npm run pagespeed"
@@ -49,6 +50,7 @@
     "grunt-pagespeed": "^2.0.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.0.0",
+    "nodemon": "^1.11.0",
     "should": "^11.1.2",
     "supertest": "^3.0.0"
   }
