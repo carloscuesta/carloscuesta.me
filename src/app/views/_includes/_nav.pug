@@ -1,3 +1,5 @@
+- var isDevelopment = process.env.NODE_ENV === 'development'
+- var baseUrl = isDevelopment ? 'http://localhost:5000' : 'https://carloscuesta.me'
 nav.nav.row.middle-xs
     input#hamburger-menu.c-hamburger__input(type="checkbox")
     label.c-hamburger.c-hamburger--htx(onmousedown="ga('send', 'event', 'Menu', 'Open/Close');", for="hamburger-menu")
@@ -6,11 +8,11 @@ nav.nav.row.middle-xs
         .modal-content
             ul.navigation
                 li.item
-                    a(href='https://carloscuesta.me', onmousedown="ga('send', 'event', 'Menu', 'Home');")
+                    a(href=baseUrl, onmousedown="ga('send', 'event', 'Menu', 'Home');")
                         |Home
                 li.item
-                    a(href='https://carloscuesta.me/about', onmousedown="ga('send', 'event', 'Menu', 'About Me');")
+                    a(href=`${baseUrl}/about`, onmousedown="ga('send', 'event', 'Menu', 'About Me');")
                         |About Me
                 li.item
-                    a(href='https://carloscuesta.me/blog', onmousedown="ga('send', 'event', 'Menu', 'Blog');")
+                    a(href=`${baseUrl}/blog`, onmousedown="ga('send', 'event', 'Menu', 'Blog');")
                         |Blog
