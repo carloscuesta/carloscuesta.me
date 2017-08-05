@@ -33,7 +33,7 @@ const index = (req, res) => {
     const tweets = twitterClient.mutator(data[1])
     const posts = ghostClient.mutator(data[2])
 
-    res.render('views/index', {
+    res.render('index', {
       cache: true,
       ghostData: posts,
       githubData: repos,

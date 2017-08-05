@@ -6,7 +6,7 @@ const compression = require('compression')
 
 carloscuesta.use(compression())
 
-carloscuesta.set('views', `${__dirname}/templates`)
+carloscuesta.set('views', `${__dirname}/views`)
 carloscuesta.set('view engine', 'pug')
 carloscuesta.set('view cache', true)
 
@@ -26,7 +26,7 @@ carloscuesta.get(`/${process.env.PARAM_CLEAN}`, routes.cacheClean)
 
 carloscuesta.use((error, req, res, next) => {
   res.status(500)
-  res.render('views/errors/500', { error: error })
+  res.render('errors/500', { error: error })
 })
 
 module.exports = carloscuesta

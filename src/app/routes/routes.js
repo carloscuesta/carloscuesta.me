@@ -1,3 +1,3 @@
-exports.index = require('./routes/index')
-exports.about = require('./routes/about')
-exports.cacheClean = require('./routes/cache')
+exports.index = require('./index')
+exports.about = require('./about')
+exports.cacheClean = require('./cache')

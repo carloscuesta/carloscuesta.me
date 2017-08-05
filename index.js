@@ -6,7 +6,7 @@ ghost({ config: `${__dirname}/src/blog/config.js` }).then((ghostServer) => {
   app.use(ghostServer.config.paths.subdir, ghostServer.rootApp)
   app.use((req, res) => {
     res.status(404)
-    res.render('/errors/404')
+    res.render('errors/404')
   })
   ghostServer.start(app)
 })
