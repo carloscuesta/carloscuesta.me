@@ -1,5 +1,3 @@
-'use strict'
-
 const express = require('express')
 const carloscuesta = express()
 const sassMiddleware = require('node-sass-middleware')
