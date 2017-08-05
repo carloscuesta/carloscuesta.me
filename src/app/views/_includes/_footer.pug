@@ -10,7 +10,7 @@ footer
                         a(href=baseUrl, onmousedown="ga('send', 'event', 'Footer Nav', 'Home');")
                             |Home
                     li.item
-                        a(href='#{baseUrl}/about', onmousedown="ga('send', 'event', 'Footer Nav', 'About me');")
+                        a(href=`${baseUrl}/about`, onmousedown="ga('send', 'event', 'Footer Nav', 'About me');")
                             |About Me
                     li.item
                         a(href=`${baseUrl}/blog`, onmousedown="ga('send', 'event', 'Footer Nav', 'Blog');", target="_blank")
