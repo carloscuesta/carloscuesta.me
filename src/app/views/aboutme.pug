@@ -28,4 +28,5 @@ html
       include ./_includes/_sections/_education.pug
       include ./_includes/_sections/_awards.pug
       include ./_includes/_footer.pug
-    include ./_includes/_analytics.pug
+    if !isDevelopment
+      include ./_includes/_analytics.pug
