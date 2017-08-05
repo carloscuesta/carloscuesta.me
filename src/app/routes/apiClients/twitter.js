@@ -1,13 +1,10 @@
 require('dotenv').load()
-
-const ApiClient = require('./apiclient')
 const twitterParse = require('twitter-text')
-const CacheApiClient = require('./cache')
 const nodeCache = require('memory-cache')
-
-const CACHE_TIME = 86400000
-const TWITTER_CACHE = 'TWITTER_CACHE'
-const twitterDataCache = nodeCache.get(TWITTER_CACHE)
+const ApiClient = require('./apiClient')
+const CacheApiClient = require('./cache')
+const CONFIG = require('./config')
+const twitterDataCache = nodeCache.get(CONFIG.TWITTER_CACHE)
 
 class TwitterApiClient {
   constructor () {
@@ -48,7 +45,7 @@ class TwitterApiClient {
       }
     })
 
-    nodeCache.put(TWITTER_CACHE, tweets, CACHE_TIME)
+    nodeCache.put(CONFIG.TWITTER_CACHE, tweets, CONFIG.CACHE_TIME)
     return tweets
   }
 }

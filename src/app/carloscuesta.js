@@ -1,8 +1,8 @@
 const express = require('express')
-const carloscuesta = express()
+const compression = require('compression')
 const sassMiddleware = require('node-sass-middleware')
 const routes = require('./routes/routes')
-const compression = require('compression')
+const carloscuesta = express()
 
 carloscuesta.use(compression())
 

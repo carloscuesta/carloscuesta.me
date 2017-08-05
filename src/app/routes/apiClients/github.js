@@ -1,10 +1,8 @@
-const ApiClient = require('./apiclient')
-const CacheApiClient = require('./cache')
 const nodeCache = require('memory-cache')
-
-const CACHE_TIME = 86400000
-const GITHUB_CACHE = 'GITHUB_CACHE'
-const githubDataCache = nodeCache.get(GITHUB_CACHE)
+const ApiClient = require('./apiClient')
+const CacheApiClient = require('./cache')
+const CONFIG = require('./config')
+const githubDataCache = nodeCache.get(CONFIG.GITHUB_CACHE)
 
 class GithubApiClient {
   constructor () {
@@ -31,7 +29,7 @@ class GithubApiClient {
       homepage: repo.homepage
     }))
 
-    nodeCache.put(GITHUB_CACHE, repositories, CACHE_TIME)
+    nodeCache.put(CONFIG.GITHUB_CACHE, repositories, CONFIG.CACHE_TIME)
     return repositories
   }
 }

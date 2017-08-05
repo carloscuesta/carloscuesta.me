@@ -1,5 +1,5 @@
 const nodeCache = require('memory-cache')
-const CACHE_TIME = 86400000
+const CONFIG = require('./config')
 
 class CacheApiClient {
   serialize (params) {
@@ -11,7 +11,7 @@ class CacheApiClient {
   validate (src, params, time) {
     const _self = this
     const url = `${_self.base_url}${src}?${this.serialize(params)}`
-    const cacheTime = time * 6000 || CACHE_TIME
+    const cacheTime = time * 6000 || CONFIG.CACHE_TIME
     const dataCache = nodeCache.get(url)
 
     if (!dataCache) {
