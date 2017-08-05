@@ -13,7 +13,7 @@ footer
                         a(href='#{baseUrl}/about', onmousedown="ga('send', 'event', 'Footer Nav', 'About me');")
                             |About Me
                     li.item
-                        a(href='#{baseUrl}/blog', onmousedown="ga('send', 'event', 'Footer Nav', 'Blog');", target="_blank")
+                        a(href=`${baseUrl}/blog`, onmousedown="ga('send', 'event', 'Footer Nav', 'Blog');", target="_blank")
                             |Blog
                     li.item
                         a(href='mailto:'+me.mail, onmousedown="ga('send', 'event', 'Footer Nav', 'Mail');")
