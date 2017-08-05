@@ -1,8 +1,8 @@
-const cache = require('memory-cache');
+const cache = require('memory-cache')
 
 const cacheClean = (req, res) => {
-	cache.clear();
-	res.redirect('/');
-};
+  cache.clear()
+  res.redirect('/')
+}
 
-module.exports = cacheClean;
+module.exports = cacheClean
