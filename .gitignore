@@ -7,9 +7,6 @@ node_modules
 # Coverage
 coverage
 
-# Editor config files
-*.sublime-
-
 # OSX Files
 *.DS_Store
 
