@@ -12,13 +12,13 @@ carloscuesta.set('view cache', true)
 
 carloscuesta.use(sassMiddleware({
   src: `${__dirname}/styles`,
-  dest: `${__dirname}/static/css`,
+  dest: `${__dirname}/public/css`,
   outputStyle: 'compressed'
 }))
 
-carloscuesta.use(express.static(`${__dirname}/static/`))
-carloscuesta.use(express.static(`${__dirname}/static/css/`))
-carloscuesta.use(express.static(`${__dirname}/static/js/`))
+carloscuesta.use(express.static(`${__dirname}/public/`))
+carloscuesta.use(express.static(`${__dirname}/public/css/`))
+carloscuesta.use(express.static(`${__dirname}/public/js/`))
 
 carloscuesta.get('/', routes.index)
 carloscuesta.get('/about', routes.about)
