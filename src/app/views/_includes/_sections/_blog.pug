@@ -10,12 +10,12 @@ section.blog
                         .post-content
                             header
                                 h2.post-title
-                                    a(href='/blog'+post.url, onmousedown="ga('send', 'event', 'Post', 'Click', '#{post.title}');", target="_blank")=post.title
+                                    a(href='/blog'+post.url, onmousedown="ga('send', 'event', 'Post', 'Click', '" +post.title+ "');", target="_blank")=post.title
                             .post-info
                                 time(datetime=post.published_at)=post.publishedAt
                                 span.post-tags
                                     each tag in post.tags
-                                        a(class='post-tag '+tag.name, href='/blog/tag/'+tag.name, onmousedown="ga('send', 'event', 'Post', 'Click' ,'tag-#{tag.name}');", target="_blank")='#'+tag.name
+                                        a(class='post-tag '+tag.name, href='/blog/tag/'+tag.name, onmousedown="ga('send', 'event', 'Post', 'Click', 'tag-"+tag.name+"');", target="_blank")='#'+tag.name
                             p.post-excerpt=post.excerpt
                         footer.post-footer
                             a.read-more(href='/blog'+post.url, onmousedown="ga('send', 'event', 'Post', 'Click', 'Read More');", target="_blank") Read more
