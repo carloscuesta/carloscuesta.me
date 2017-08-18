@@ -242,6 +242,10 @@ header {
 	background-color: #3367D6;
 }
 
+.tag-head.react {
+	background-color: #00D8FF;
+}
+
 .hidden {
 	display: none;
 }
@@ -323,6 +327,7 @@ article .read-more {
 .tags .nodejs{color:#00E676}.tags .nodejs:before{background-color:#00E676}
 .tags .personal{color:#FF4081;}.tags .personal:before{background-color:#FF4081;}
 .tags .life{color:#4CAF50}.tags .life:before{background-color:#4CAF50}
+.tags .react{color:#00D8FF}.tags .react:before{background-color:#00D8FF}
 
 time, .author a, .post-comments {
 	font-size: .75em;

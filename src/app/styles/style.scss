@@ -501,7 +501,7 @@
 			text-decoration: none;
 		}
 
-		@each $tag, $color in ('personal': $personal, 'life': $life, 'javascript': $javascript, 'html': $html, 'css': $css, 'nodejs': $nodejs, 'npm': $npm, 'tools': $tools) {
+		@each $tag, $color in ('personal': $personal, 'life': $life, 'javascript': $javascript, 'html': $html, 'css': $css, 'nodejs': $nodejs, 'npm': $npm, 'tools': $tools, 'react': $react) {
 			@include createTag($tag, $color);
 		}
 	}
