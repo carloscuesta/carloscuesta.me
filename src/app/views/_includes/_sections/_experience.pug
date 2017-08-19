@@ -10,11 +10,11 @@ section.experience
         .col-xs-10.job-card
           .job
             h2.company-name=position.companyName
-              .row.roles
-                h4.cv-position-title=position.title
-                .dates
-                  time.start(datetime=position.dateStart)=position.dateStart+' -'
-                  time.end(datetime=position.dateFinish)=position.dateFinish
-              ul
-                each task in position.tasks
-                  li=task
+            .row.roles
+              h4.cv-position-title=position.title
+              .dates
+                time.start(datetime=position.dateStart)=position.dateStart+' -'
+                time.end(datetime=position.dateFinish)=position.dateFinish
+            ul
+              each task in position.tasks
+                li=task
