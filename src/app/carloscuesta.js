@@ -24,6 +24,11 @@ carloscuesta.get('/', routes.index)
 carloscuesta.get('/about', routes.about)
 carloscuesta.get(`/${process.env.PARAM_CLEAN}`, routes.cacheClean)
 
+carloscuesta.use((req, res) => {
+  res.status(404)
+  res.render('errors/404')
+})
+
 carloscuesta.use((error, req, res, next) => {
   res.status(500)
   res.render('errors/500', { error: error })
