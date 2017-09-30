@@ -2,7 +2,7 @@
 
 var request = require('supertest'),
 	should = require('should'),
-	app = require ('../src/app/carloscuesta'),
+	app = require ('../src/carloscuesta'),
 	cache = require('memory-cache'),
 	port = process.env.PORT || 3000;
 
