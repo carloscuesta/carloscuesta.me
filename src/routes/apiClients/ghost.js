@@ -26,7 +26,7 @@ class GhostApiClient {
       excerpt: `${stripTags(post.html).substring(0, 120)}...`,
       url: post.url,
       publishedAt: moment(post.updated_at).startOf('hour').fromNow(),
-      image: post.image.replace('/upload/', '/upload/w_500/')
+      image: post.feature_image.replace('/upload/', '/upload/w_500/')
     }))
 
     nodeCache.put(CONFIG.GHOST_CACHE, posts, CONFIG.CACHE_TIME)
