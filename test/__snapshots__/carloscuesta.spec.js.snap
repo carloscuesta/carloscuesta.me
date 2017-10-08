@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`carloscuesta.me views aboutme should render about and set cache 1`] = `"public, max-age=86400"`;
+
+exports[`carloscuesta.me views index should render home and set cache 1`] = `"public, max-age=86400"`;
