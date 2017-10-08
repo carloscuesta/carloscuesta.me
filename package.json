@@ -9,15 +9,14 @@
   "scripts": {
     "start": "pm2 start carloscuesta.js",
     "start:dev": "nodemon carloscuesta.js",
+    "test:unit": "jest --coverage",
     "lint": "standard",
     "pagespeed": "grunt",
-    "coveralls": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
-    "test": "npm run coveralls && npm run pagespeed"
+    "test": "npm run lint && npm run test:unit && npm run pagespeed"
   },
   "standard": {
     "ignore": [
-      "src/public/",
-      "/test/"
+      "src/public/"
     ]
   },
   "repository": {
