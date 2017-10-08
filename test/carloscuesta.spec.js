@@ -1,8 +1,10 @@
-/* global describe, expect, it */
+/* global jest, describe, expect, it */
 const cache = require('memory-cache')
 const request = require('supertest')
 
 const app = require('../src/carloscuesta')
+
+jest.setTimeout(10000)
 
 describe('carloscuesta.me', () => {
   describe('views', () => {
