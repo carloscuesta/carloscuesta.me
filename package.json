@@ -29,17 +29,17 @@
   },
   "homepage": "https://github.com/carloscuesta/carloscuesta.me#readme",
   "dependencies": {
-    "compression": "^1.6.1",
+    "compression": "^1.7.1",
     "dotenv": "^4.0.0",
-    "express": "^4.14.0",
+    "express": "^4.16.1",
     "memory-cache": "^0.2.0",
-    "moment": "^2.17.1",
-    "node-fetch": "^1.6.3",
+    "moment": "^2.18.1",
+    "node-fetch": "^1.7.3",
     "node-sass-middleware": "^0.11.0",
-    "oauth": "^0.9.14",
+    "oauth": "^0.9.15",
     "pug": "^2.0.0-beta3",
-    "striptags": "^3.0.0",
-    "twitter-text": "^1.14.3"
+    "striptags": "^3.1.0",
+    "twitter-text": "^1.14.7"
   },
   "devDependencies": {
     "coveralls": "^3.0.0",
