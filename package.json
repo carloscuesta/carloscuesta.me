@@ -15,7 +15,10 @@
     "test": "npm run coveralls && npm run pagespeed"
   },
   "standard": {
-    "ignore": ["src/public/", "/test/"]
+    "ignore": [
+      "src/public/",
+      "/test/"
+    ]
   },
   "repository": {
     "type": "git",
@@ -50,6 +53,7 @@
     "grunt": "^1.0.0",
     "grunt-pagespeed": "^2.0.1",
     "istanbul": "^0.4.5",
+    "jest": "^21.2.1",
     "mocha": "^4.0.1",
     "nodemon": "^1.12.1",
     "should": "^13.1.1",
