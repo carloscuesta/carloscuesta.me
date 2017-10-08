@@ -13,6 +13,9 @@
     "coveralls": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
     "test": "npm run coveralls && npm run pagespeed"
   },
+  "standard": {
+    "ignore": ["src/public/"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/carloscuesta/carloscuesta.me.git"
@@ -49,6 +52,7 @@
     "mocha": "^4.0.1",
     "nodemon": "^1.12.1",
     "should": "^13.1.1",
+    "standard": "^10.0.3",
     "supertest": "^3.0.0"
   }
 }
