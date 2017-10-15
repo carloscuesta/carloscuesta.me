@@ -224,7 +224,7 @@
 
 }
 
-@each $tag, $color in ('javascript': $javascript, 'html': $html, 'css': $css) {
+@each $tag, $color in ('javascript': $javascript, 'html': $html, 'css': $css, 'shell': $shell) {
 	@include createLanguageCard($tag, $color);
 }
 
