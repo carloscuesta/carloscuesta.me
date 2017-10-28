@@ -15,7 +15,8 @@ const me = {
     { flag: '🇩🇪', name: 'Germany' },
     { flag: '🇨🇭', name: 'Switzerland' },
     { flag: '🇸🇪', name: 'Sweden' },
-    { flag: '🇳🇱', name: 'Netherlands' }
+    { flag: '🇳🇱', name: 'Netherlands' },
+    { flag: '🇸🇰🇱', name: 'Slovakia' }
   ],
   job: 'Front End Developer',
   mail: 'hi@carloscuesta.me',
