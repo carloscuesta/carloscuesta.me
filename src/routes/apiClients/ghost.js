@@ -4,7 +4,6 @@ const stripTags = require('striptags')
 const ApiClient = require('./apiClient')
 const CacheApiClient = require('./cache')
 const CONFIG = require('./config')
-const ghostDataCache = nodeCache.get(CONFIG.GHOST_CACHE)
 
 class GhostApiClient {
   constructor () {
@@ -18,6 +17,8 @@ class GhostApiClient {
   }
 
   mutator (payload) {
+    const ghostDataCache = nodeCache.get(CONFIG.GHOST_CACHE)
+
     if (ghostDataCache) return ghostDataCache
 
     const posts = payload.posts.map((post) => ({

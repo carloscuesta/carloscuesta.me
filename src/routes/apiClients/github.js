@@ -2,7 +2,6 @@ const nodeCache = require('memory-cache')
 const ApiClient = require('./apiClient')
 const CacheApiClient = require('./cache')
 const CONFIG = require('./config')
-const githubDataCache = nodeCache.get(CONFIG.GITHUB_CACHE)
 
 class GithubApiClient {
   constructor () {
@@ -17,6 +16,8 @@ class GithubApiClient {
   }
 
   mutator (payload) {
+    const githubDataCache = nodeCache.get(CONFIG.GITHUB_CACHE)
+
     if (githubDataCache) return githubDataCache
 
     const repositories = payload.items.map((repo) => ({

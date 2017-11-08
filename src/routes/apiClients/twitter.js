@@ -4,7 +4,6 @@ const nodeCache = require('memory-cache')
 const ApiClient = require('./apiClient')
 const CacheApiClient = require('./cache')
 const CONFIG = require('./config')
-const twitterDataCache = nodeCache.get(CONFIG.TWITTER_CACHE)
 
 class TwitterApiClient {
   constructor () {
@@ -25,9 +24,9 @@ class TwitterApiClient {
   }
 
   mutator (payload) {
-    if (twitterDataCache) {
-      return twitterDataCache
-    }
+    const twitterDataCache = nodeCache.get(CONFIG.TWITTER_CACHE)
+
+    if (twitterDataCache) return twitterDataCache
 
     const tweets = payload.map((tweet) => {
       const media = tweet.entities.media
