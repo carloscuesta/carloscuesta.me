@@ -45,13 +45,13 @@
     "oauth": "^0.9.15",
     "pug": "^2.0.0-beta3",
     "striptags": "^3.1.0",
-    "twitter-text": "^1.14.7"
+    "twitter-text": "^2.0.2"
   },
   "devDependencies": {
     "coveralls": "^3.0.0",
     "grunt": "^1.0.0",
     "grunt-pagespeed": "^2.0.1",
-    "jest": "^21.2.1",
+    "jest": "^22.0.4",
     "nodemon": "^1.12.1",
     "standard": "^10.0.3",
     "supertest": "^3.0.0"
