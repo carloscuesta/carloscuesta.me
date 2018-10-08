@@ -45,7 +45,7 @@
     "oauth": "^0.9.15",
     "pug": "^2.0.0-beta3",
     "striptags": "^3.1.0",
-    "twitter-text": "^2.0.2"
+    "twitter-text": "^2.0.5"
   },
   "devDependencies": {
     "coveralls": "^3.0.0",
