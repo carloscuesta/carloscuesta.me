@@ -52,7 +52,7 @@
     "grunt": "^1.0.0",
     "grunt-pagespeed": "^2.0.1",
     "jest": "^22.0.4",
-    "nodemon": "^1.12.1",
+    "nodemon": "^1.18.10",
     "standard": "^10.0.3",
     "supertest": "^4.0.0"
   }
