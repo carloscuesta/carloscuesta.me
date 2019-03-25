@@ -54,6 +54,6 @@
     "jest": "^22.0.4",
     "nodemon": "^1.12.1",
     "standard": "^10.0.3",
-    "supertest": "^4.0.0"
+    "supertest": "^4.0.2"
   }
 }
