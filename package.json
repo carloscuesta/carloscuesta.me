@@ -48,7 +48,7 @@
     "twitter-text": "^2.0.2"
   },
   "devDependencies": {
-    "coveralls": "^3.0.0",
+    "coveralls": "^3.0.6",
     "grunt": "^1.0.0",
     "grunt-pagespeed": "^2.0.1",
     "jest": "^22.0.4",
