@@ -5,7 +5,7 @@ const CONFIG = require('./config')
 
 class GithubApiClient {
   constructor () {
-    this.apiClient = new ApiClient({ 'base_url': 'https://api.github.com' })
+    this.apiClient = new ApiClient({ base_url: 'https://api.github.com' })
   }
 
   getSearch (params) {

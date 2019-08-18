@@ -2,7 +2,7 @@
   "name": "carloscuesta.me",
   "version": "1.0.0",
   "engines": {
-    "node": "8.12.0"
+    "node": "10.16.3"
   },
   "description": "Carlos Cuesta website.",
   "main": "carloscuesta.js",
@@ -35,25 +35,25 @@
   },
   "homepage": "https://github.com/carloscuesta/carloscuesta.me#readme",
   "dependencies": {
-    "compression": "^1.7.1",
-    "dotenv": "^4.0.0",
-    "express": "^4.16.1",
+    "compression": "^1.7.4",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
     "memory-cache": "^0.2.0",
     "moment": "^2.24.0",
-    "node-fetch": "^1.7.3",
+    "node-fetch": "^2.6.0",
     "node-sass-middleware": "^0.11.0",
     "oauth": "^0.9.15",
     "pug": "^2.0.4",
     "striptags": "^3.1.1",
-    "twitter-text": "^2.0.2"
+    "twitter-text": "^3.0.0"
   },
   "devDependencies": {
     "coveralls": "^3.0.6",
-    "grunt": "^1.0.0",
+    "grunt": "^1.0.4",
     "grunt-pagespeed": "^2.0.1",
-    "jest": "^22.0.4",
-    "nodemon": "^1.12.1",
-    "standard": "^10.0.3",
-    "supertest": "^4.0.0"
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.1",
+    "standard": "^13.1.0",
+    "supertest": "^4.0.2"
   }
 }

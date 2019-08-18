@@ -1,9 +1,11 @@
-require('dotenv').load()
 const twitterParse = require('twitter-text')
 const nodeCache = require('memory-cache')
+const dotEnv = require('dotenv')
 const ApiClient = require('./apiClient')
 const CacheApiClient = require('./cache')
 const CONFIG = require('./config')
+
+dotEnv.config()
 
 class TwitterApiClient {
   constructor () {
