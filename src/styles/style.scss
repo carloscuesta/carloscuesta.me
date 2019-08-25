@@ -157,7 +157,8 @@
 
 .avatar {
 	width: 385px;
-	margin-bottom: -55px;
+  border-radius: 50%;
+  max-width: 100%;
 }
 
 .github {
@@ -658,7 +659,6 @@ footer {
 	}
 
 	.avatar {
-		margin-bottom: -50px;
 		width: 100%;
 	}
 }
