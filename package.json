@@ -8,7 +8,7 @@
   "main": "carloscuesta.js",
   "scripts": {
     "start": "pm2 start carloscuesta.js",
-    "start:dev": "nodemon carloscuesta.js",
+    "start:dev": "NODE_ENV=development nodemon carloscuesta.js",
     "test:unit": "jest --coverage",
     "lint": "standard",
     "pagespeed": "grunt",
