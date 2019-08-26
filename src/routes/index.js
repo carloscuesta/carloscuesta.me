@@ -1,6 +1,5 @@
 const staticData = require('./data')
 const githubClient = require('./apiClients/github')
-const twitterClient = require('./apiClients/twitter')
 const ghostClient = require('./apiClients/ghost')
 
 const index = (req, res) => {
@@ -14,13 +13,6 @@ const index = (req, res) => {
     sort: 'stars'
   })
 
-  const twitterData = twitterClient.getUserTimeline({
-    screen_name: 'crloscuesta',
-    count: 1,
-    exclude_replies: false,
-    include_rts: true
-  })
-
   const blogData = ghostClient.getLastPosts({
     client_id: process.env.GHOST_CLIENT_ID,
     client_secret: process.env.GHOST_CLIENT_SECRET,
@@ -28,10 +20,9 @@ const index = (req, res) => {
     limit: 2
   })
 
-  Promise.all([githubData, twitterData, blogData]).then((data) => {
+  Promise.all([githubData, blogData]).then((data) => {
     const repos = githubClient.mutator(data[0])
-    const tweets = twitterClient.mutator(data[1])
-    const posts = ghostClient.mutator(data[2])
+    const posts = ghostClient.mutator(data[1])
 
     res.render('index', {
       cache: true,
@@ -39,8 +30,7 @@ const index = (req, res) => {
       githubData: repos,
       me: staticData.me,
       site: staticData.site,
-      social: staticData.social,
-      twitterData: tweets
+      social: staticData.social
     })
   })
 }

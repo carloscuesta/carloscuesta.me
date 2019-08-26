@@ -1,8 +1,11 @@
 const express = require('express')
 const compression = require('compression')
 const sassMiddleware = require('node-sass-middleware')
+const dotEnv = require('dotenv')
 const routes = require('./routes/routes')
 const carloscuesta = express()
+
+dotEnv.config()
 
 carloscuesta.use(compression())
 
