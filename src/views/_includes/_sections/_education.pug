@@ -1,19 +1,19 @@
 section.experience
-    .wrap
-        h2.section-title Education
-        h4.section-subtitle Studies
-        each grade in me.education
-            article.row
-                .col-xs-2.duration.grade-duration
-                    h2=grade.time
-                .col-xs-10.job-card
-                    .job
-                        h2.company-name=grade.title
-                        .row.roles
-                            h4.cv-position-title=grade.school
-                            .dates
-                                time.start(datetime=grade.dateStart)=grade.dateStart+' - '
-                                time.end(datetime=grade.dateFinish)=grade.dateFinish
-                        ul
-                            each task in grade.tasks
-                                li=task
+  .wrap
+    h2.section-title Education
+    h4.section-subtitle Studies
+    each grade in me.education
+      article.row
+        .col-xs-2.duration.grade-duration
+          h2=grade.time
+        .col-xs-10.job-card
+          .job
+            h2.company-name=grade.title
+            .row.roles
+              h4.cv-position-title=grade.school
+              .dates
+                time.start(datetime=grade.dateStart)=grade.dateStart+' - '
+                time.end(datetime=grade.dateFinish)=grade.dateFinish
+            ul
+              each task in grade.tasks
+                li=task

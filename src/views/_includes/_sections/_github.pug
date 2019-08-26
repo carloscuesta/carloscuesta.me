@@ -1,26 +1,26 @@
 section.github
-    .wrap
-        h2.section-title GitHub
-        h4.section-subtitle The most popular projects of my repo.
-        .row.around-xs
-            each repo in githubData
-                article.col-xs-12.col-sm-6.col-md-4.github-repo
-                    div(class='repo language-'+repo.language)
-                        .repo-title
-                            a(href=repo.url, onmousedown="ga('send', 'event', 'GitHub', '"+repo.name+"');", target="_blank")
-                                h4 #{repo.name}
-                            if repo.homepage
-                                a.web(href=repo.homepage, target="_blank", onmousedown="ga('send', 'event', 'GitHub Page', '"+repo.name+"');")
-                                    svg.icon.icon-globe
-                                        use(xlink:href="#icon-globe")
-                        .repo-stats
-                            a.starred(href=repo.url)
-                                svg.icon.icon-star
-                                    use(xlink:href="#icon-star")
-                            span.stars=repo.stars
-                            if repo.forks
-                                a.forked(href=repo.url+'/fork')
-                                    svg.icon.icon-fork
-                                        use(xlink:href="#icon-fork")
-                                    span.forks=repo.forks
-                        .repo-description=repo.description
+  .wrap
+    h2.section-title GitHub
+    h4.section-subtitle The most popular projects of my repo.
+    .row.around-xs
+      each repo in githubData
+        article.col-xs-12.col-sm-6.col-md-4.github-repo
+          div(class='repo language-'+repo.language)
+            .repo-title
+              a(href=repo.url, onmousedown="ga('send', 'event', 'GitHub', '"+repo.name+"');", target="_blank")
+                h4 #{repo.name}
+              if repo.homepage
+                a.web(href=repo.homepage, target="_blank", onmousedown="ga('send', 'event', 'GitHub Page', '"+repo.name+"');")
+                  svg.icon.icon-globe
+                    use(xlink:href="#icon-globe")
+            .repo-stats
+              a.starred(href=repo.url)
+                svg.icon.icon-star
+                  use(xlink:href="#icon-star")
+              span.stars=repo.stars
+              if repo.forks
+                a.forked(href=repo.url+'/fork')
+                  svg.icon.icon-fork
+                    use(xlink:href="#icon-fork")
+                  span.forks=repo.forks
+            .repo-description=repo.description
