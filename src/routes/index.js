@@ -25,7 +25,7 @@ const index = (req, res) => {
     const posts = ghostClient.mutator(data[1])
 
     res.render('index', {
-      cache: true,
+      cache: process.env.NODE_ENV === 'production',
       ghostData: posts,
       githubData: repos,
       me: staticData.me,

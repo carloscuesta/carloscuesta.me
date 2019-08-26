@@ -3,548 +3,461 @@
 @import './_partials/_flexbox.scss';
 @import './_partials/_mixins.scss';
 @import './_partials/_menu.scss';
-
-.social {
-	.icon {
-		display: inline-block;
-		width: 1.8em;
-		height: 1.8em;
-		fill: $text;
-		margin-right: 1em;
-		transition: fill .2s ease-in-out;
-	}
-}
-
-.icon-twitter:hover {
-	fill: #55acee;
-}
-
-.icon-github:hover {
-	fill: #000;
-}
-
-.icon-linkedin:hover {
-	fill: #0077B5;
-}
+@import './_partials/_theme.scss';
+@import './_partials/_icons.scss';
 
 .more-btn {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
-	font-family: $systemFonts;
-	font-weight: 400;
-	padding: .45em 1em;
-	border-radius: 50px;
-	transition: all .3s ease-out;
-	letter-spacing: .015em;
-	display: flex;
-	align-items: center;
+  font-family: $systemFonts;
+  font-weight: 400;
+  padding: 0.45em 1em;
+  border-radius: 50px;
+  transition: all 0.3s ease-out;
+  letter-spacing: 0.015em;
+  display: flex;
+  align-items: center;
 
-	.icon {
-		fill: $white;
-		transform: none!important;
-	}
+  &-red {
+    background-color: theme($websiteTheme, primary);
+    color: theme($websiteTheme, textOnPrimary);
 
-	&-social {
-		width: 4em;
-		height: 4em;
-		padding: 0;
-		margin: 0 auto;
+    &-raised,
+    &:hover {
+      box-shadow: 0 0.5em 1.5em rgba(theme($websiteTheme, primary), .45);
+    }
+  }
 
-		.icon {
-			margin: 0 auto;
-			padding: 0;
-		}
-	}
+  &-blue {
+    background-color: theme($websiteTheme, secondary);
+    color: theme($websiteTheme, textOnPrimary);
 
-	&-red {
-		background-color: $accent;
-		color: $white;
-
-		&:hover, &-raised {
-			box-shadow: 0 .5em 1.5em rgba(255, 82, 82, .45);
-		}
-
-		&:active {
-			background-color: #FF6363;
-			transition: .1s;
-		}
-	}
-
-	&-blue {
-		background-color: #00B0FF;
-		color: $white;
-
-		&:hover {
-			box-shadow: 0 .5em 1.5em rgba(0, 176, 255, .45);
-		}
-	}
-
-	&-secondary {
-		background-color: $text;
-		color: $white;
-
-		&:hover {
-			box-shadow: 0 .25em 1em rgba(55, 71, 79, .45);
-		}
-	}
+    &:hover {
+      box-shadow: 0 0.5em 1.5em rgba(theme($websiteTheme, secondary), .45);
+    }
+  }
 }
 
 .btn.btn-large {
-	padding: .55em 1.5em;
-	margin: 1.5em 0;
-
-	.icon {
-		width: 1.5em;
-		height: 1.5em;
-	}
+  padding: 0.55em 1.5em;
+  margin: 1.5em 0;
 }
 
 .site-header {
-	color: $text;
-	background: $white;
-	padding: 5em;
-	text-align: center;
-	position: relative;
-	overflow: hidden;
+  color: theme($websiteTheme, text);
+  background: theme($websiteTheme, background);
+  padding: 5em;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 
-	.icon {
-		padding: .5em;
-		fill: $text;
-		transition: fill .2s ease-in-out;
-	}
-
-	.btn-large {
-		font-size: 1.15em;
-	}
+  .btn-large {
+    font-size: 1.15em;
+  }
 }
 
 .job {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 .buttons {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.my-name, .heart {
-	color: $accent;
+.my-name {
+  color: theme($websiteTheme, primary);
 }
 
 .aboutme {
-	background-color: $sectionHighlight;
-	color: $text;
+  background-color: theme($websiteTheme, backgroundSurface);
+  color: theme($websiteTheme, text);
 
-	h1 {
-		padding: 0;
-	}
+  h1 {
+    padding: 0;
+  }
 }
 
 .getintouch {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: .75em;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75em;
+  flex-wrap: wrap;
 }
 
 .name {
-	font-size: 2.75em;
+  font-size: 2.75em;
 }
 
 .avatar {
-	width: 385px;
+  width: 385px;
   border-radius: 50%;
   max-width: 100%;
 }
 
 .github {
-	background-color: $white;
-	color: $text;
+  background-color: theme($websiteTheme, background);
+  color: theme($websiteTheme, text);
 }
 
-.icon-github {
-	width: 1.5em;
-	height: 1.5em;
-}
-
-.icon-star, .icon-fork {
-	width: 1.15em;
-	height: 1.15em;
-	padding: 0 .25em 0 0;
+.icon-fork,
+.icon-star {
+  width: 1.15em;
+  height: 1.15em;
+  padding: 0 0.25em 0 0;
 }
 
 .github-repo {
-	display: flex;
+  display: flex;
 }
 
 .repo {
-	padding: 60px 40px;
-	border-radius: 2px;
-	border-top: 3px solid;
-	border-top-color: $textLight;
-	transition: all .3s ease-out;
-	flex: 1;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+  padding: 60px 40px;
+  border-radius: 2px;
+  border-top: 3px solid;
+  border-top-color: theme($websiteTheme, textSecondary);
+  transition: all 0.3s ease-out;
+  flex: 1;
+  box-shadow: 0 1px 2px rgba(theme($websiteTheme, shadowColor), .15);
 
-	&:hover {
-		box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
-	}
+  &:hover {
+    box-shadow: 0 15px 30px rgba(theme($websiteTheme, shadowColor), .15);
+  }
 
-	&-title {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: .5em;
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
 
-		h4 {
-			color: $text;
-			transition: color .2s ease-out;
-			margin: 0;
+    h4 {
+      color: theme($websiteTheme, text);
+      transition: color 0.2s ease-out;
+      margin: 0;
 
-			&:hover {
-				color: $textHover;
-			}
-		}
-	}
+      &:hover {
+        color: theme($websiteTheme, textSecondary);
+      }
+    }
+  }
 
-	&-stats {
-		display: flex;
-		align-items: center;
-		margin-top: .75em;
-		margin-bottom: .75em;
-	}
+  &-stats {
+    display: flex;
+    align-items: center;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+  }
 
-	&-description {
-		font-weight: 300;
-		font-size: 1.05em;
-	}
-
+  &-description {
+    font-weight: 300;
+    font-size: 1.05em;
+  }
 }
 
 @each $tag, $color in ('javascript': $javascript, 'html': $html, 'css': $css, 'shell': $shell) {
-	@include createLanguageCard($tag, $color);
+  @include createLanguageCard($tag, $color);
 }
 
 .icon-fork {
-	margin-left: .35em;
+  margin-left: 0.35em;
 }
 
-.starred, .forked, .web {
-    display: flex;
-	align-items: center;
+.forked,
+.starred,
+.web {
+  display: flex;
+  align-items: center;
 }
 
 .stars {
-	color: $stars;
+  color: $stars;
 }
 
 .icon-arrow {
-	width: 1.25em;
-	height: 1.25em;
-	margin-left: .35em;
-	transition: all .15s ease-out;
-	fill: #00B0FF;
+  width: 1.25em;
+  height: 1.25em;
+  margin-left: 0.35em;
+  transition: all 0.15s ease-out;
+  fill: theme($websiteTheme, secondary);
 }
 
 .forks {
-	color: $text;
+  color: theme($websiteTheme, text);
 }
 
 .icon-star {
-	fill: $stars;
+  fill: $stars;
 }
 
 .icon-globe {
-	fill: $web;
-	width: 1.35em!important;
-	height: 1.35em!important;
+  fill: $web;
+  width: 1.35em!important;
+  height: 1.35em!important;
 }
 
 .icon-fork {
-	fill: $text;
+  fill: theme($websiteTheme, text);
 }
 
-.icon-star, .icon-fork, .web {
-	transition: all .2s ease-out;
+.icon-fork,
+.icon-star,
+.web {
+  transition: all 0.2s ease-out;
 
-	&:hover {
-		transform: scale(1.25);
-	}
+  &:hover {
+    transform: scale(1.25);
+  }
 
-	&:active {
-		transform: scale(.95);
-	}
+  &:active {
+    transform: scale(.95);
+  }
 }
 
 .blog time {
-	font-size: .75em;
-	color: $textLight;
-	text-transform: uppercase;
-	font-weight: 400;
-	margin-right: 1em;
+  font-size: 0.75em;
+  color: theme($websiteTheme, textSecondary);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-right: 1em;
 }
 
 .post-wrap {
-	display: flex;
+  display: flex;
 }
 
 .post {
-	display: flex;
-	padding: 0;
-	transition: all .3s ease-out;
-	border-radius: 2px;
-	margin: 2.75em 0;
-	overflow: hidden;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
-	flex-direction: column;
-	justify-content: space-between;
+  display: flex;
+  padding: 0;
+  transition: all 0.3s ease-out;
+  border-radius: 2px;
+  margin: 2.75em 0;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(theme($websiteTheme, shadowColor), .15);
+  flex-direction: column;
+  justify-content: space-between;
 
-	header {
-		width: 100%;
-	}
+  header {
+    width: 100%;
+  }
 
-	&:hover {
-		box-shadow: 0 15px 45px rgba(0, 0, 0, .15);
-	}
+  &:hover {
+    box-shadow: 0 15px 45px rgba(theme($websiteTheme, shadowColor), .15);
+  }
 
-	&-info {
-		display: flex;
-	    flex-wrap: wrap;
-	    margin-top: .45em;
-	    align-items: center;
-	}
+  &-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.45em;
+    align-items: center;
+  }
 
-	&-excerpt {
-		margin-bottom: 0;
-	}
+  &-excerpt {
+    margin-bottom: 0;
+  }
 
-	&-content {
-		padding: 2.5em;
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-	}
+  &-content {
+    padding: 2.5em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
-	&-footer {
-		background: #fff;
-		padding: 1em 2.5em;
-		border-top: 1px #eee solid;
-	}
+  &-footer {
+    padding: 1em 2.5em;
+    border-top: 1px theme($websiteTheme, backgroundSurface) solid;
+  }
 
-	&-image {
-		width: 100%;
-	}
+  &-image {
+    width: 100%;
+  }
 
-	&-title {
-		font-size: 1.35em;
-		font-weight: 600;
-		line-height: 1.15;
+  &-title {
+    font-size: 1.35em;
+    font-weight: 600;
+    line-height: 1.15;
 
-		a {
-			color: $text;
-			transition: color .2s ease-out;
+    a {
+      color: theme($websiteTheme, text);
+      transition: color 0.2s ease-out;
 
-			&:hover {
-				color: $textHover;
-			}
-		}
-	}
+      &:hover {
+        color: theme($websiteTheme, textSecondary);
+      }
+    }
+  }
 
-	&-tag {
-		&:hover::before {
-			visibility: visible;
-			-webkit-transform: scaleX(1);
-			transform: scaleX(1);
-		}
+  &-tag {
+    &:hover::before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
 
-		&:before {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			bottom: 0;
-			left: 0;
-			visibility: hidden;
-			-webkit-transform: scaleX(0);
-			transform: scaleX(0);
-			-webkit-transition: all .2s ease-in-out 0s;
-			transition: all .2s ease-in-out 0s;
-		}
-	}
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      transition: all 0.2s ease-in-out 0s;
+    }
+  }
 
+  &-tags {
+    a {
+      padding: 0 0.25em 0.25em;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      margin-right: 0.85em;
+      position: relative;
+      text-decoration: none;
+    }
 
-	&-tags {
-
-		a {
-			padding: 0 .25em .25em .25em;
-			font-size: .75em;
-			text-transform: uppercase;
-			margin-right: .85em;
-			position: relative;
-			text-decoration: none;
-		}
-
-		@each $tag, $color in ('personal': $personal, 'javascript': $javascript, 'nodejs': $nodejs, 'npm': $npm, 'tools': $tools, 'react': $react, 'conferences': $conferences) {
-			@include createTag($tag, $color);
-		}
-	}
+    @each $tag, $color in ('personal': $personal, 'javascript': $javascript, 'nodejs': $nodejs, 'npm': $npm, 'tools': $tools, 'react': $react, 'conferences': $conferences) {
+      @include createTag($tag, $color);
+    }
+  }
 }
 
 .read-more {
-	display: flex;
-	align-items: center;
-	transition: all .3s ease-out;
-	color: #00B0FF;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-out;
+  color: theme($websiteTheme, secondary);
 
-	&:hover {
-		color: #76d4ff;
-		.icon-arrow {
-			margin-left: .85em;
-			fill: #76d4ff;
-		}
-	}
+  &:hover {
+    color: rgba(theme($websiteTheme, secondary), 0.6);
+
+    .icon-arrow {
+      margin-left: 0.85em;
+      fill: rgba(theme($websiteTheme, secondary), 0.6);
+    }
+  }
 }
 
-.section-title, .section-subtitle {
-	text-align: center;
-	font-weight: 400;
+.section-subtitle,
+.section-title {
+  text-align: center;
+  font-weight: 400;
 }
 
 .section-subtitle {
-	font-weight: 300;
-	color: $textHover;
+  font-weight: 300;
+  color: theme($websiteTheme, textSecondary);
 }
 
-footer {
-	color: $text;
-	background-color: $sectionHighlight;
-	padding: 3em 1.5em;
-	text-align: left;
+.site-footer {
+  color: theme($websiteTheme, text);
+  background-color: theme($websiteTheme, backgroundSurface);
+  padding: 3em 1.5em;
+  text-align: left;
 
-	.social {
-		text-align: right;
-	}
+  .social {
+    text-align: right;
+  }
 
-	h3 {
-		font-weight: 700;
-		color: $text;
-	}
+  h3 {
+    font-weight: 700;
+    color: theme($websiteTheme, text);
+  }
 }
 
 .footer-navigation {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 
-	li {
-		display: inline-block;
-		padding-right: .95em;
-		font-size: .75em;
-		text-transform: uppercase;
-	}
+  li {
+    display: inline-block;
+    padding-right: 0.95em;
+    font-size: 0.75em;
+    text-transform: uppercase;
+  }
 }
 
-.tweet, .repo {
-	margin: 2em 0;
+.repo,
+.tweet {
+  margin: 2em 0;
 }
 
-@media (max-width: 768px) {
-	.site-header {
-		padding: 5em 1.5em 5em 1.5em;
-	}
+@include mediaUpToSmallDevices {
+  .site-header {
+    padding: 5em 1.5em;
+  }
 
-	.salute {
-		display: block;
-	}
+  .salute {
+    display: block;
+  }
 
-	.site-header h1 {
-		font-size: 3.25em;
-	}
+  .site-header h1 {
+    font-size: 3.25em;
+  }
 
-	.job {
-		font-size: 2em;
-	}
+  .job {
+    font-size: 2em;
+  }
 
-	section h1 {
-		padding: 0 1em;
-	}
+  section h1 {
+    padding: 0 1em;
+  }
 
-	.c-hamburger--htx {
-	    right: 20px;
-    	top: 15px;
-	}
+  .github .repo {
+    height: 115px;
+    padding: 40px 20px;
+  }
 
-	.c-hamburger {
-		width: 40px;
-		height: 40px;
-	}
+  footer {
+    padding: 1.5em 0.5em;
+  }
 
-	.c-hamburger span {
-	    left: 0;
-    	right: 0;
-		height: 3px;
-		top: 22px;
+  footer,
+  footer .social {
+    text-align: center;
+  }
 
-		&::after, &::before {
-			height: 3px;
-		}
-
-		&::before {
-			top: -15px;
-		}
-
-		&::after {
-			bottom: -15px;
-		}
-	}
-
-	.github .repo {
-		height: 115px;
-		padding: 40px 20px!important;
-	}
-
-	footer {
-		padding: 1.5em .5em;
-	}
-
-	footer, footer .social {
-		text-align: center;
-	}
-
-	.avatar {
-		padding-top: 1em;
-	}
+  .avatar {
+    padding-top: 1em;
+  }
 }
 
-@media (max-width: 468px) {
-	section h1, .tweet, .repo, .post {
-		padding: 0!important;
-	}
+@include mediaUpToMobileDevices {
+  .post,
+  .repo,
+  .tweet,
+  section h1 {
+    padding: 0;
+  }
 
-	.site-header h1 {
-		font-size: 2.75em;
-	}
+  .site-header h1 {
+    font-size: 2.75em;
+  }
 
-	.name {
-		font-size: 2.5em;
-	}
+  .name {
+    font-size: 2.5em;
+  }
 
-	.job {
-		font-size: 1.75em;
-	}
+  .job {
+    font-size: 1.75em;
+  }
 
-	html, body {
-		font-size: 15px;
-	}
+  body,
+  html {
+    font-size: 15px;
+  }
 
-	.social {
-		margin-top: 1.5em;
-	}
+  .social {
+    margin-top: 1.5em;
+  }
 
-	.avatar {
-		width: 100%;
-	}
+  .avatar {
+    width: 100%;
+  }
 }

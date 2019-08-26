@@ -1,33 +1,23 @@
 @mixin createTag($tag, $color) {
-	.#{$tag} {
-		color: $color;
+  .#{$tag} {
+    color: $color;
 
-		&:before {
-			background-color: $color;
-		}
-	}
+    &:before {
+      background-color: $color;
+    }
+  }
 }
 
 @mixin createLanguageCard($language, $color) {
-	.language-#{$language} {
-		border-top-color: $color;
-	}
+  .language-#{$language} {
+    border-top-color: $color;
+  }
 }
 
-@mixin createCompanyBorder($name, $color) {
-	.#{$name} {
-		border-top-color: $color;
-	}
+@mixin mediaUpToSmallDevices {
+  @media (max-width: 768px) { @content; }
 }
 
-@mixin small {
-    @media (max-width: 768px) {
-        @content;
-    }
-}
-
-@mixin extrasmall {
-    @media (max-width: 468px) {
-        @content;
-    }
+@mixin mediaUpToMobileDevices {
+  @media (max-width: 468px) { @content; }
 }
