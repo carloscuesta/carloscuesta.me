@@ -44,8 +44,7 @@
     "node-sass-middleware": "^0.11.0",
     "oauth": "^0.9.15",
     "pug": "^2.0.4",
-    "striptags": "^3.1.1",
-    "twitter-text": "^3.0.0"
+    "striptags": "^3.1.1"
   },
   "devDependencies": {
     "coveralls": "^3.0.6",
