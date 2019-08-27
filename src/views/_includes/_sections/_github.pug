@@ -7,10 +7,10 @@ section.github
         article.col-xs-12.col-sm-6.col-md-4.github-repo
           div(class='repo language-'+repo.language)
             .repo-title
-              a(href=repo.url, onmousedown="ga('send', 'event', 'GitHub', '"+repo.name+"');", target="_blank", aria-label=repo.title)
+              a(href=repo.url, onmousedown="ga('send', 'event', 'GitHub', '"+repo.name+"');", target="_blank", rel="noopener", aria-label=repo.title)
                 h4 #{repo.name}
               if repo.homepage
-                a.web(href=repo.homepage, target="_blank", onmousedown="ga('send', 'event', 'GitHub Page', '"+repo.name+"');", aria-label="'"+repo.name+"' website")
+                a.web(href=repo.homepage, target="_blank", rel="noopener", onmousedown="ga('send', 'event', 'GitHub Page', '"+repo.name+"');", aria-label="'"+repo.name+"' website")
                   svg.icon.icon-globe
                     use(xlink:href="#icon-globe")
             .repo-stats
