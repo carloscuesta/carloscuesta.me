@@ -5,7 +5,7 @@
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 		<image:image>
-			<image:loc>https://carloscuesta.me/img/carloscuesta.jpeg</image:loc>
+			<image:loc>https://carloscuesta.me/img/carloscuesta.jpg</image:loc>
 			<image:caption>Carlos Cuesta</image:caption>
     	</image:image>
 	</url>

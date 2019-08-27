@@ -5,7 +5,7 @@ const moment = require('moment')
 const me = {
   aboutme: 'Front End engineer based in Barcelona, Spain. Working at <strong>Ulabox</strong>. Coding addicted that enjoys building things with code, I like design, technology and I ❤️ OpenSource.',
   age: 22,
-  avatar: 'carloscuesta.jpeg',
+  avatar: 'carloscuesta.jpg',
   companyName: 'Ulabox',
   countriesVisited: [
     { flag: '🇫🇷', name: 'France' },
