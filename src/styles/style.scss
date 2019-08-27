@@ -11,7 +11,7 @@
 .site-header {
   color: theme($websiteTheme, text);
   background: theme($websiteTheme, background);
-  padding: 5em;
+  padding: 4em;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -48,15 +48,20 @@
 .aboutme {
   background-color: theme($websiteTheme, backgroundSurface);
   color: theme($websiteTheme, text);
+  padding-top: 2em;
+  padding-bottom: 2em;
 
   .bio {
     font-size: 1.5em;
+    margin-top: 0;
   }
 
   .avatar {
-    width: 385px;
     border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
     max-width: 100%;
+    width: 385px;
   }
 }
 
@@ -386,7 +391,7 @@
 
 @include mediaUpToSmallDevices {
   .site-header {
-    padding: 5em 1.5em;
+    padding: 4em 1.5em;
   }
 
   .site-header h1 {
@@ -430,10 +435,6 @@
 
   .site-header h1 {
     font-size: 2.75em;
-  }
-
-  .name {
-    font-size: 2.5em;
   }
 
   .job {
