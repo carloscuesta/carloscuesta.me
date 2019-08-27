@@ -17,7 +17,7 @@ const index = (req, res) => {
     client_id: process.env.GHOST_CLIENT_ID,
     client_secret: process.env.GHOST_CLIENT_SECRET,
     include: 'tags',
-    limit: 2
+    limit: 8
   })
 
   Promise.all([githubData, blogData]).then((data) => {

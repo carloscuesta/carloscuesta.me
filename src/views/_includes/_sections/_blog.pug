@@ -1,10 +1,10 @@
 section.blog
   .wrap
-    h2.section-title Blog
+    h2.section-title Writings
     h4.section-subtitle The latests posts of my blog.
-    .row.around-xs
+    .row.blog-posts
       each post in ghostData
-        .col-xs-12.col-sm-6.col-md-5.post-wrap
+        .col-xs-12.col-sm-6.col-md-4.post-wrap
           article.post
             img.post-image(src=post.image, alt=post.title)
             .post-content
@@ -21,5 +21,11 @@ section.blog
               a.read-more(href='/blog'+post.url, onmousedown="ga('send', 'event', 'Post', 'Click', 'Read More');", target="_blank", rel="noopener") Read more
                 svg.icon.icon-arrow
                   use(xlink:href="#icon-arrow")
-    .more-btn
-      a.btn.btn-large.btn-blue(href="https://carloscuesta.me/blog" onmousedown="ga('send', 'event', 'Button', 'Click', 'Read more posts');", target="_blank", rel="noopener") See more posts
+      a(href="https://carloscuesta.me/blog" onmousedown="ga('send', 'event', 'Button', 'Click', 'Read more posts');", target="_blank").col-xs-12.col-sm-6.col-md-4.post-wrap
+        article.post.fake-article
+          .post-content
+            header
+              h2.post-title Did you enjoyed the articles? 👀
+            p.post-excerpt Hello! 👋🏼
+            p.post-excerpt Tap me if you want to read more awesome content on my blog
+            div.btn.btn-large.btn-blue Read more
