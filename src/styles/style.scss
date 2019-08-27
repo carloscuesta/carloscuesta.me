@@ -6,20 +6,63 @@
 @import './_partials/_theme.scss';
 @import './_partials/_icons.scss';
 
+/* Header */
+
+.site-header {
+  color: theme($websiteTheme, text);
+  background: theme($websiteTheme, background);
+  padding: 5em;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  .name {
+    color: theme($websiteTheme, primary);
+  }
+
+  .job {
+    font-weight: 400;
+  }
+
+  .wave-emoji {
+    @keyframes wave {
+      0% { transform: rotate(  0.0deg) }
+      10% { transform: rotate(-10.0deg) }
+      20% { transform: rotate( 12.0deg) }
+      30% { transform: rotate(-10.0deg) }
+      40% { transform: rotate(  9.0deg) }
+      50% { transform: rotate(  0.0deg) }
+      100% { transform: rotate(  0.0deg) }
+    }
+
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-name: wave;
+    display: inline-block;
+    transform-origin: 70% 70%;
+  }
+}
+
 .more-btn {
   display: flex;
   justify-content: center;
 }
 
 .btn {
+  align-items: center;
+  border-radius: 50px;
+  display: flex;
   font-family: $systemFonts;
   font-weight: 400;
-  padding: 0.45em 1em;
-  border-radius: 50px;
-  transition: all 0.3s ease-out;
   letter-spacing: 0.015em;
-  display: flex;
-  align-items: center;
+  padding: 0.45em 1em;
+  transition: all 0.3s ease-out;
+
+  &-large {
+    font-size: 1.15em;
+    margin: 1.5em 0;
+    padding: 0.55em 1.5em;
+  }
 
   &-red {
     background-color: theme($websiteTheme, primary);
@@ -41,37 +84,6 @@
   }
 }
 
-.btn.btn-large {
-  padding: 0.55em 1.5em;
-  margin: 1.5em 0;
-}
-
-.site-header {
-  color: theme($websiteTheme, text);
-  background: theme($websiteTheme, background);
-  padding: 5em;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-
-  .btn-large {
-    font-size: 1.15em;
-  }
-}
-
-.job {
-  font-weight: 400;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-}
-
-.my-name {
-  color: theme($websiteTheme, primary);
-}
-
 .aboutme {
   background-color: theme($websiteTheme, backgroundSurface);
   color: theme($websiteTheme, text);
@@ -87,10 +99,6 @@
   align-items: center;
   padding-top: 0.75em;
   flex-wrap: wrap;
-}
-
-.name {
-  font-size: 2.75em;
 }
 
 .avatar {
@@ -387,10 +395,6 @@
 @include mediaUpToSmallDevices {
   .site-header {
     padding: 5em 1.5em;
-  }
-
-  .salute {
-    display: block;
   }
 
   .site-header h1 {

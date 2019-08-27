@@ -3,8 +3,8 @@
 const moment = require('moment')
 
 const me = {
-  aboutme: 'Front End engineer based in Barcelona, Spain. Working at <strong>Ulabox</strong>. Coding addicted that enjoys building things with code, I like design, technology and I ❤️ OpenSource.',
-  age: 22,
+  aboutme: 'I\'m a 23 years old <strong>Front End Engineer</strong> based in <b>Barcelona</b>, working at <a href="https://ulabox.com" rel="noopener"><strong>Ulabox</strong></a>. I\'m a coding addicted that is focused on JavaScript, specifically in React and React-Native. I like design, technology, sneakers and I ❤️ <b>OpenSource</b>. ',
+  age: 23,
   avatar: 'carloscuesta.jpg',
   companyName: 'Ulabox',
   countriesVisited: [
@@ -19,7 +19,7 @@ const me = {
     { flag: '🇸🇰', name: 'Slovakia' },
     { flag: '🇬🇧', name: 'United Kingdom' }
   ],
-  job: 'Front End Developer',
+  job: 'Front End Engineer',
   mail: 'hi@carloscuesta.me',
   name: 'Carlos Cuesta',
   social: {
