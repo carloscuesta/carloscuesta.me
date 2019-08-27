@@ -7,25 +7,25 @@ footer.site-footer
         h3 #{me.name}
         ul.footer-navigation
           li.item
-            a(href=baseUrl, onmousedown="ga('send', 'event', 'Footer Nav', 'Home');")
+            a(href=baseUrl, onmousedown="ga('send', 'event', 'Footer Nav', 'Home');", aria-label="Carlos Cuesta Web")
               |Home
           li.item
-            a(href=`${baseUrl}/about`, onmousedown="ga('send', 'event', 'Footer Nav', 'About me');")
+            a(href=`${baseUrl}/about`, onmousedown="ga('send', 'event', 'Footer Nav', 'About me');", aria-label="Carlos Cuesta About Me")
               |About Me
           li.item
-            a(href=`${baseUrl}/blog`, onmousedown="ga('send', 'event', 'Footer Nav', 'Blog');", target="_blank")
+            a(href=`${baseUrl}/blog`, onmousedown="ga('send', 'event', 'Footer Nav', 'Blog');", target="_blank", aria-label="Carlos Cuesta Blog")
               |Blog
           li.item
-            a(href='mailto:'+me.mail, onmousedown="ga('send', 'event', 'Footer Nav', 'Mail');")
+            a(href='mailto:'+me.mail, onmousedown="ga('send', 'event', 'Footer Nav', 'Mail');", aria-label="Contact Carlos Cuesta")
               |Contact
 
       .social.col-xs-12.col-sm-6
-        a(href="https://twitter.com/crloscuesta", target="_blank")
+        a(href="https://twitter.com/crloscuesta", target="_blank", aria-label="Carlos Cuesta Twitter")
           svg.icon.icon-twitter
             use(xlink:href="#icon-twitter")
-        a(href="https://github.com/carloscuesta", target="_blank")
+        a(href="https://github.com/carloscuesta", target="_blank", aria-label="Carlos Cuesta GitHub")
           svg.icon.icon-github
             use(xlink:href="#icon-github")
-        a(href="https://es.linkedin.com/in/crloscuesta", target="_blank")
+        a(href="https://es.linkedin.com/in/crloscuesta", target="_blank", aria-label="Carlos Cuesta LinkedIn")
           svg.icon.icon-linkedin
             use(xlink:href="#icon-linkedin")

@@ -7,19 +7,19 @@ section.github
         article.col-xs-12.col-sm-6.col-md-4.github-repo
           div(class='repo language-'+repo.language)
             .repo-title
-              a(href=repo.url, onmousedown="ga('send', 'event', 'GitHub', '"+repo.name+"');", target="_blank")
+              a(href=repo.url, onmousedown="ga('send', 'event', 'GitHub', '"+repo.name+"');", target="_blank", aria-label=repo.title)
                 h4 #{repo.name}
               if repo.homepage
-                a.web(href=repo.homepage, target="_blank", onmousedown="ga('send', 'event', 'GitHub Page', '"+repo.name+"');")
+                a.web(href=repo.homepage, target="_blank", onmousedown="ga('send', 'event', 'GitHub Page', '"+repo.name+"');", aria-label="'"+repo.name+"' website")
                   svg.icon.icon-globe
                     use(xlink:href="#icon-globe")
             .repo-stats
-              a.starred(href=repo.url)
+              a.starred(href=repo.url, aria-label="'"+repo.name+"' github stars")
                 svg.icon.icon-star
                   use(xlink:href="#icon-star")
               span.stars=repo.stars
               if repo.forks
-                a.forked(href=repo.url+'/fork')
+                a.forked(href=repo.url+'/fork', aria-label="fork '"+repo.name+"' on github")
                   svg.icon.icon-fork
                     use(xlink:href="#icon-fork")
                   span.forks=repo.forks
