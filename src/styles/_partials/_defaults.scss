@@ -1,29 +1,27 @@
+@import './_vars.scss';
 @import './_partials/_theme.scss';
 
 body,
 html {
-  margin: 0;
-  padding: 0;
-  font-family: $systemFonts;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 300;
   background-color: theme($websiteTheme, background);
   color: theme($websiteTheme, text);
-  overflow-x: hidden;
+  font-family: $systemFonts;
+  font-size: 16px;
   font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
 }
 
 a {
+  color: theme($websiteTheme, secondary);
   text-decoration: none;
-}
-
-p a {
   transition: color 0.2s ease-out;
-}
 
-p a:hover {
-  color: $web;
+  &:hover {
+    color: rgba(theme($websiteTheme, secondary), 0.6);
+  }
 }
 
 h1,

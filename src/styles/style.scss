@@ -43,6 +43,23 @@
   }
 }
 
+/* About Me */
+
+.aboutme {
+  background-color: theme($websiteTheme, backgroundSurface);
+  color: theme($websiteTheme, text);
+
+  .bio {
+    font-size: 1.5em;
+  }
+
+  .avatar {
+    width: 385px;
+    border-radius: 50%;
+    max-width: 100%;
+  }
+}
+
 .more-btn {
   display: flex;
   justify-content: center;
@@ -51,6 +68,7 @@
 .btn {
   align-items: center;
   border-radius: 50px;
+  color: theme($websiteTheme, textOnPrimary);
   display: flex;
   font-family: $systemFonts;
   font-weight: 400;
@@ -64,9 +82,12 @@
     padding: 0.55em 1.5em;
   }
 
+  &:hover {
+    color: theme($websiteTheme, textOnPrimary);
+  }
+
   &-red {
     background-color: theme($websiteTheme, primary);
-    color: theme($websiteTheme, textOnPrimary);
 
     &-raised,
     &:hover {
@@ -76,35 +97,11 @@
 
   &-blue {
     background-color: theme($websiteTheme, secondary);
-    color: theme($websiteTheme, textOnPrimary);
 
     &:hover {
       box-shadow: 0 0.5em 1.5em rgba(theme($websiteTheme, secondary), .45);
     }
   }
-}
-
-.aboutme {
-  background-color: theme($websiteTheme, backgroundSurface);
-  color: theme($websiteTheme, text);
-
-  h1 {
-    padding: 0;
-  }
-}
-
-.getintouch {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 0.75em;
-  flex-wrap: wrap;
-}
-
-.avatar {
-  width: 385px;
-  border-radius: 50%;
-  max-width: 100%;
 }
 
 .github {
