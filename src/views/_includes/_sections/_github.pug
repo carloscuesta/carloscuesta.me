@@ -17,7 +17,7 @@ section.github
               a.starred(href=repo.url, aria-label="'"+repo.name+"' github stars")
                 svg.icon.icon-star
                   use(xlink:href="#icon-star")
-              span.stars=repo.stars
+                span.stars=repo.stars
               if repo.forks
                 a.forked(href=repo.url+'/fork', aria-label="fork '"+repo.name+"' on github")
                   svg.icon.icon-fork

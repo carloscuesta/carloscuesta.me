@@ -104,83 +104,109 @@
   }
 }
 
+/* Open Source */
+
 .github {
-  background-color: theme($websiteTheme, background);
-  color: theme($websiteTheme, text);
-}
-
-.icon-fork,
-.icon-star {
-  width: 1.15em;
-  height: 1.15em;
-  padding: 0 0.25em 0 0;
-}
-
-.github-repo {
-  display: flex;
-}
-
-.repo {
-  border-radius: 2px;
-  border-top-color: theme($websiteTheme, textSecondary);
-  border-top: 3px solid;
-  box-shadow: 0 1px 2px rgba(theme($websiteTheme, shadowColor), .15);
-  flex: 1;
-  margin: 1em 0;
-  padding: 3em 2em;
-  transition: all 0.3s ease-out;
-
-  &:hover {
-    box-shadow: 0 16px 24px rgba(theme($websiteTheme, shadowColor), .15);
+  &-repo {
+    display: flex;
   }
 
-  &-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5em;
+  .repo {
+    border-radius: 2px;
+    border-top-color: theme($websiteTheme, textSecondary);
+    border-top: 3px solid;
+    box-shadow: 0 1px 2px rgba(theme($websiteTheme, shadowColor), .15);
+    flex: 1;
+    margin: 1em 0;
+    padding: 3em 2em;
+    transition: all 0.3s ease-out;
 
-    h4 {
-      color: theme($websiteTheme, text);
-      transition: color 0.2s ease-out;
-      margin: 0;
+    &:hover {
+      box-shadow: 0 16px 24px rgba(theme($websiteTheme, shadowColor), .15);
+    }
 
-      &:hover {
-        color: theme($websiteTheme, textSecondary);
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5em;
+
+      h4 {
+        color: theme($websiteTheme, text);
+        transition: color 0.2s ease-out;
+        margin: 0;
+
+        &:hover {
+          color: theme($websiteTheme, textSecondary);
+        }
       }
+    }
+
+    &-stats {
+      display: flex;
+      align-items: center;
+      margin-top: 0.75em;
+      margin-bottom: 0.75em;
+    }
+
+    &-description {
+      font-weight: 300;
+      font-size: 1.05em;
     }
   }
 
-  &-stats {
+  @each $tag, $color in ('javascript': $javascript, 'html': $html, 'css': $css, 'shell': $shell) {
+    @include createLanguageCard($tag, $color);
+  }
+
+  .icon-fork,
+  .icon-star {
+    width: 1.15em;
+    height: 1.15em;
+    padding: 0 0.25em 0 0;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+
+    &:active {
+      transform: scale(.95);
+    }
+  }
+
+  .icon-star {
+    fill: $stars;
+  }
+
+  .icon-globe {
+    fill: $web;
+    width: 1.35em;
+    height: 1.35em;
+  }
+
+  .icon-fork {
+    fill: theme($websiteTheme, text);
+  }
+
+  .icon-fork {
+    margin-left: 0.35em;
+  }
+
+  .forked,
+  .starred,
+  .web {
     display: flex;
     align-items: center;
-    margin-top: 0.75em;
-    margin-bottom: 0.75em;
   }
 
-  &-description {
-    font-weight: 300;
-    font-size: 1.05em;
+  .stars {
+    color: $stars;
   }
-}
 
-@each $tag, $color in ('javascript': $javascript, 'html': $html, 'css': $css, 'shell': $shell) {
-  @include createLanguageCard($tag, $color);
-}
-
-.icon-fork {
-  margin-left: 0.35em;
-}
-
-.forked,
-.starred,
-.web {
-  display: flex;
-  align-items: center;
-}
-
-.stars {
-  color: $stars;
+  .forks {
+    color: theme($websiteTheme, text);
+  }
 }
 
 /* Writings */
