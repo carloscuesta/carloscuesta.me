@@ -1,27 +1,12 @@
-.social {
-  .icon {
-    display: inline-block;
-    width: 1.8em;
-    height: 1.8em;
-    fill: theme($websiteTheme, text);
-    margin-right: 1em;
-    transition: fill 0.2s ease-in-out;
-  }
-}
-
-.icon-twitter:hover {
-  fill: #55acee;
-}
-
-.icon-github {
-  width: 1.5em;
-  height: 1.5em;
+.social .icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  font-size: 1.25em;
+  fill: theme($websiteTheme, text);
+  margin-right: 1em;
 
   &:hover {
-    fill: #000;
+    fill: theme($websiteTheme, textSecondary);
   }
-}
-
-.icon-linkedin:hover {
-  fill: #0077B5;
 }
