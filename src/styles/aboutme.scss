@@ -248,7 +248,7 @@ footer {
   }
 }
 
-@include mediaUpToSmallDevices {
+@include mediaUpToXtraSmallDevices {
   .site-header {
     padding: 5em 1.5em;
   }

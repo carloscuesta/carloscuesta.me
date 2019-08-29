@@ -6,7 +6,7 @@ section.blog
       each post in ghostData
         .col-xs-12.col-sm-6.col-md-4.post-wrap
           article.post
-            img.post-image(src=post.image, alt=post.title)
+            img.post-image.lazyload(data-src=post.image)
             .post-content
               header
                 h2.post-title
