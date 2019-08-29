@@ -1,11 +1,11 @@
 section.awards
-    .wrap
-        h2.section-title Awards
-        h4.section-subtitle Distinctions and recognitions of my work.
-        .row.center-xs
-            each award in me.awards
-                article.col-xs-12.col-sm-6.col-md-4.award-card
-                    .award
-                        h3.award-title=award.title
-                        h4.award-project=award.project
-                        p=award.organization+' '+award.year
+  .wrap
+    h2.section-title Awards
+    h4.section-subtitle Distinctions and recognitions of my work.
+    .row.center-xs
+      each award in me.awards
+        article.col-xs-12.col-sm-6.col-md-4.award-card
+          .award
+            h3.award-title=award.title
+            h4.award-project=award.project
+            p=award.organization+' '+award.year

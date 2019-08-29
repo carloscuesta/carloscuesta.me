@@ -17,7 +17,7 @@ const index = (req, res) => {
     client_id: process.env.GHOST_CLIENT_ID,
     client_secret: process.env.GHOST_CLIENT_SECRET,
     include: 'tags',
-    limit: 2
+    limit: 8
   })
 
   Promise.all([githubData, blogData]).then((data) => {
@@ -25,7 +25,7 @@ const index = (req, res) => {
     const posts = ghostClient.mutator(data[1])
 
     res.render('index', {
-      cache: true,
+      cache: process.env.NODE_ENV === 'production',
       ghostData: posts,
       githubData: repos,
       me: staticData.me,

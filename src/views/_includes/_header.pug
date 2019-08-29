@@ -1,9 +1,7 @@
 include _nav.pug
 header.site-header(itemprop="author", itemscope, itemtype="http://schema.org/Person")
-    .wrap
-        h1
-            span.salute Hi! I'm 
-            span.my-name=me.name
-        h2.job=me.job
-        .buttons
-            a.btn.btn-large.btn-red.btn-red-raised(href='mailto:'+me.mail+'?subject=Hello', onmousedown="ga('send', 'event', 'Header', 'Click', 'Button - Get in touch');") Get in touch
+  .wrap
+    h1 Hi! I'm #[span.name=me.name] #[span.wave-emoji 👋🏼]
+    h2.job=me.job
+    .row.center-xs
+      a.btn.btn-large.btn-red.btn-red-raised(href='mailto:'+me.mail+'?subject=Hello', onmousedown="ga('send', 'event', 'Header', 'Click', 'Button - Say hello!');") Say hello!

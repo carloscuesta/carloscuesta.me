@@ -8,13 +8,13 @@ section.aboutme
           li.profile-item #[strong Job:] #{me.job}
           li.profile-item #[strong Company:] #{me.company}
         .social
-          a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'GitHub');", href='https://twitter.com/'+social.twitter, target="_blank")
+          a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'Twitter');", href='https://twitter.com/'+social.twitter, target="_blank", rel="noopener", aria-label="Carlos Cuesta Twitter")
             svg.icon.icon-twitter
               use(xlink:href="#icon-twitter")
-          a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'Twitter');", href='https://github.com/'+social.github, target="_blank")
+          a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'GitHub');", href='https://github.com/'+social.github, target="_blank", rel="noopener", aria-label="Carlos Cuesta GitHub")
             svg.icon.icon-github
               use(xlink:href="#icon-github")
-          a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'LinkedIn');", href='https://es.linkedin.com/in/'+social.linkedin, target="_blank")
+          a(itemprop="sameAs", onmousedown="ga('send', 'event', 'Social Icons', 'LinkedIn');", href='https://es.linkedin.com/in/'+social.linkedin, target="_blank", rel="noopener", aria-label="Carlos Cuesta LinkedIn")
             svg.icon.icon-linkedin
               use(xlink:href="#icon-linkedin")
       .col-xs-12.col-md-8.profile

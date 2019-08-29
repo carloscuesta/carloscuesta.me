@@ -1,0 +1,12 @@
+.social .icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  font-size: 1.25em;
+  fill: theme($websiteTheme, text);
+  margin-right: 1em;
+
+  &:hover {
+    fill: theme($websiteTheme, textSecondary);
+  }
+}
