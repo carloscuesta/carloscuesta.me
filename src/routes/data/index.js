@@ -3,7 +3,7 @@
 const moment = require('moment')
 
 const me = {
-  aboutme: 'I\'m a 23 years old <strong>Front End Engineer</strong> based in <b>Barcelona</b>, working at <a href="https://ulabox.com" rel="noopener"><strong>Ulabox</strong></a>. I\'m a coding addicted that is focused on JavaScript, specifically in React and React-Native. I like design, technology, sneakers and I ❤️ <b>OpenSource</b>. ',
+  aboutme: 'I\'m a 23 years old <strong>Front End Engineer</strong> based in <b>Barcelona</b>, working at <a href="https://ulabox.com" rel="noopener"><strong>Ulabox</strong></a>. I\'m a coding addicted that is focused on JavaScript, specifically in React and React-Native. I like design, technology, sneakers and I ❤️ <b>OpenSource</b>.',
   age: 23,
   avatar: 'carloscuesta.jpg',
   companyName: 'Ulabox',
@@ -108,8 +108,8 @@ const awards = [
 ]
 
 const site = {
-  description: 'Carlos Cuesta, Front End developer based in Barcelona, Spain. Coding addicted that enjoys building things with code, I like design, technology and OpenSource.',
-  title: 'Carlos Cuesta | Front End Developer',
+  description: 'Carlos Cuesta, Front End engineer based in Barcelona, Spain. Coding addicted that is focused on JavaScript. I like design, technology, sneakers and I ❤️ OpenSource',
+  title: 'Carlos Cuesta | Front End Engineer',
   pages: {
     blog: 'https://carloscuesta.me/blog',
     contact: 'mailto:hi@carloscuesta.me',
