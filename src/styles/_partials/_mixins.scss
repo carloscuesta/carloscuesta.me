@@ -14,10 +14,14 @@
   }
 }
 
-@mixin mediaUpToSmallDevices {
+@mixin mediaUpToXtraSmallDevices {
   @media (max-width: 768px) { @content; }
 }
 
 @mixin mediaUpToMobileDevices {
   @media (max-width: 468px) { @content; }
+}
+
+@mixin mediaUpFromSmallToXtraSmallDevices {
+  @media (min-width: 768px) and (max-width: 1024px) { @content; }
 }

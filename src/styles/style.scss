@@ -280,7 +280,17 @@
     }
 
     &-image {
+      filter: blur(5px);
+      opacity: 0;
+      transition: filter 500ms ease-in-out,opacity 500ms ease-in-out;
       width: 100%;
+      height: 155px;
+    }
+
+    .lazyloaded {
+      filter: blur(0);
+      opacity: 1;
+      height: auto;
     }
 
     &-title {
@@ -415,7 +425,7 @@
   }
 }
 
-@include mediaUpToSmallDevices {
+@include mediaUpToXtraSmallDevices {
   .site-header {
     padding: 4em 1.5em;
   }
@@ -478,5 +488,19 @@
 
   .avatar {
     width: 100%;
+  }
+
+  .blog {
+    .post-image {
+      height: 125px;
+    }
+  }
+}
+
+@include mediaUpFromSmallToXtraSmallDevices {
+  .blog {
+    .post-image {
+      height: 172px;
+    }
   }
 }

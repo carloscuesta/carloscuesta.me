@@ -6,7 +6,7 @@ section.blog
       each post in ghostData
         .col-xs-12.col-sm-6.col-md-4.post-wrap
           article.post
-            img.post-image(src=post.image, alt=post.title)
+            img.post-image.lazyload(data-src=post.image, alt=post.title)
             .post-content
               header
                 h2.post-title
@@ -21,7 +21,7 @@ section.blog
               a.read-more(href='/blog'+post.url, onmousedown="ga('send', 'event', 'Post', 'Click', 'Read More');", target="_blank", rel="noopener") Read more
                 svg.icon.icon-arrow
                   use(xlink:href="#icon-arrow")
-      a(href="https://carloscuesta.me/blog" onmousedown="ga('send', 'event', 'Button', 'Click', 'Read more posts');", target="_blank").col-xs-12.col-sm-6.col-md-4.post-wrap
+      a.col-xs-12.col-sm-6.col-md-4.post-wrap(href="https://carloscuesta.me/blog" onmousedown="ga('send', 'event', 'Button', 'Click', 'Read more posts');", target="_blank", aria-label="Read more posts at my blog")
         article.post.fake-article
           .post-content
             header

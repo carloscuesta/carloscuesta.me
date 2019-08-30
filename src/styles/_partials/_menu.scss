@@ -206,7 +206,7 @@ nav.nav {
   }
 }
 
-@include mediaUpToSmallDevices {
+@include mediaUpToXtraSmallDevices {
   .c-hamburger--htx {
     right: 20px;
     top: 15px;
