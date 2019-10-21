@@ -26,7 +26,7 @@ class GhostApiClient {
       tags: post.tags,
       excerpt: `${stripTags(post.html).substring(0, 120)}...`,
       url: post.url,
-      publishedAt: moment(post.updated_at).startOf('hour').fromNow(),
+      publishedAt: moment(post.published_at).startOf('hour').fromNow(),
       image: post.feature_image.replace('/upload/', '/upload/w_500/')
     }))
 
