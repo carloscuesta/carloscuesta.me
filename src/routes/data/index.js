@@ -3,8 +3,8 @@
 const moment = require('moment')
 
 const me = {
-  aboutme: 'I\'m a 23 years old <strong>Front End Engineer</strong> based in <b>Barcelona</b>, working at <a href="https://ulabox.com" rel="noopener"><strong>Ulabox</strong></a>. I\'m a coding addicted that is focused on JavaScript, specifically in React and React-Native. I like design, technology, sneakers and I ❤️ <b>OpenSource</b>.',
-  age: 23,
+  aboutme: 'I\'m a 24 years old <strong>Front End Engineer</strong> based in <b>Barcelona</b>, working at <a href="https://ulabox.com" rel="noopener"><strong>Ulabox</strong></a>. I\'m a coding addicted that is focused on JavaScript, specifically in React and React-Native. I like design, technology, sneakers and I ❤️ <b>OpenSource</b>.',
+  age: 24,
   avatar: 'carloscuesta.jpg',
   companyName: 'Ulabox',
   countriesVisited: [
