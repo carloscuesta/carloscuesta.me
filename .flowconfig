@@ -1,0 +1,13 @@
+[ignore]
+<PROJECT_ROOT>/.next
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+emoji=true
+module.name_mapper='src\/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
