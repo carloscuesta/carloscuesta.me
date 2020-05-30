@@ -14,8 +14,7 @@ const index = (req, res) => {
   })
 
   const blogData = ghostClient.getLastPosts({
-    client_id: process.env.GHOST_CLIENT_ID,
-    client_secret: process.env.GHOST_CLIENT_SECRET,
+    key: process.env.GHOST_CONTENT_API_KEY,
     include: 'tags',
     limit: 8
   })

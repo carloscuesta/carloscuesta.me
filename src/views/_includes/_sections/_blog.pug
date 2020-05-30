@@ -10,7 +10,7 @@ section.blog
             .post-content
               header
                 h2.post-title
-                  a(href='/blog'+post.url, onmousedown="ga('send', 'event', 'Post', 'Click', '" +post.title+ "');", target="_blank", rel="noopener")=post.title
+                  a(href=post.url, onmousedown="ga('send', 'event', 'Post', 'Click', '" +post.title+ "');", target="_blank", rel="noopener")=post.title
               .post-info
                 time(datetime=post.published_at)=post.publishedAt
                 span.post-tags

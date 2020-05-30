@@ -8,7 +8,7 @@ const CONFIG = require('./config')
 class GhostApiClient {
   constructor () {
     this.apiClient = new ApiClient({
-      base_url: 'http://carloscuesta.me/blog/ghost/api/v0.1'
+      base_url: `https://carloscuesta.me/blog/ghost/api/v3/content`
     })
   }
 
