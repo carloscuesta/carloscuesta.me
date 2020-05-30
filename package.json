@@ -23,11 +23,6 @@
     "type": "git",
     "url": "git+https://github.com/carloscuesta/carloscuesta.me.git"
   },
-  "keywords": [
-    "Carlos",
-    "Cuesta",
-    "website"
-  ],
   "author": "Carlos Cuesta",
   "license": "MIT",
   "bugs": {
@@ -40,10 +35,13 @@
     "express": "^4.17.1",
     "memory-cache": "^0.2.0",
     "moment": "^2.24.0",
+    "next": "^9.4.4",
     "node-fetch": "^2.6.0",
     "node-sass-middleware": "^0.11.0",
     "oauth": "^0.9.15",
     "pug": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "striptags": "^3.1.1"
   },
   "devDependencies": {
