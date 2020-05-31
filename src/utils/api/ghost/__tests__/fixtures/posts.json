@@ -1,0 +1,66 @@
+{
+  "posts": [{
+    "id": "5bc9ff9949ac5006c0a84f00",
+    "uuid": "c7457188-0df9-4d92-b4c6-22607b906b93",
+    "title": "JavaScript monorepos with Lerna and Yarn Workspaces",
+    "slug": "javascript-monorepos-lerna-yarn-workspaces",
+    "html": "<!--kg-card-begin: markdown--><h3 id=\"whatisamonorepo\">What is a monorepo ?</h3>\n<p>The monorepo term is a compound word between <em>&quot;mono&quot;</em>, from Ancient Greek <a href=\"https://en.wiktionary.org/wiki/mono-#Etymology\"><em>&quot;mónos&quot;</em></a>, that means <em>&quot;single&quot;</em> and <em>&quot;repo&quot;</em> as a shorthand of <em>&quot;repository&quot;</em>.</p>\n<blockquote>\n<p>A monorepo is a strategy for storing code and projects in a single repository.</p>\n</blockquote>\n<h3 id=\"whataretheyusefulfor\">What are they useful for ?</h3>\n<h5 id=\"reusingisolatedpiecesofcode\">♻️ Reusing isolated pieces of code</h5>\n<p>Monorepos allow you to reuse packages and code from another modules while keeping them independent and isolated. This is particularly useful when you have a ton of code that you're constantly repeating on different projects.</p>\n<h5 id=\"simplifyingdependenciesmanagement\">🧰 Simplifying dependencies management</h5>\n<p>Dependencies are hoisted to the root level of the project, that means you can share dependencies across all the packages that you have in your monorepo. This reduces the overhead from updating and managing multiple versions of the same dependency.</p>\n<h5 id=\"refactoringcrossprojectchanges\">🛠 Refactoring cross-project changes</h5>\n<p>Making cross-repo changes within different repositories is painful. Typically involves manual coordination between teams and repos. For example let's say you have an API that is used by many clients and you want to make a breaking change into the contract. It's not trivial to apply the update to all the clients and then coordinate the deploy of the projects and so on. With a monorepo it's easier since everything is contained in a single unit.</p>\n<p>Before considering to implement a monorepo architecture, make sure you have the problems that this concept solves ⚠️. There's <strong>no need to overengineer</strong> a project. Remember <strong>keep it simple</strong> ✨</p>\n<h3 id=\"thetools\">The tools</h3>\n<ul>\n<li>🐉 <strong><a href=\"https://lerna.js.org\">Lerna</a></strong>: The tool for managing the monorepo packages.</li>\n<li>📦 <strong><a href=\"https://yarnpkg.com/lang/en/docs/workspaces/\">Yarn Workspaces</a></strong>: Multiple packages architecture.</li>\n</ul>\n<p>Now that we know what is a monorepo, the tools that we're going to use and what are they useful for, let's create a real example to see how it works.</p>\n<h3 id=\"creatingthemonorepo\">Creating the monorepo</h3>\n<h5 id=\"setup\">Setup</h5>\n<p>Let's begin creating our monorepo 👏. The first thing we need to do is define the structure of the project. In this example I created two directories:</p>\n<ul>\n<li>📁 <code>packages/</code>: This directory will contain the isolated modules that we are going to reuse on all the applications.</li>\n<li>📁 <code>applications/</code>: This directory will contain all the applications of our monorepo.</li>\n</ul>\n<pre><code>.\n└── src\n    ├── applications\n    └── packages\n</code></pre>\n<p>After that, we're going to create <code>package.json</code> to define the <code>workspaces</code> and dependencies of our monorepo.</p>\n<p>The <code>workspaces</code> field is what <a href=\"https://yarnpkg.com/lang/en/docs/workspaces/#toc-how-to-use-it\">Yarn</a> uses to symlink our code to the <code>node_modules</code> in order to reuse and import the code, we'll see this later on.</p>\n<p>Finally we install <code>lerna</code> as a <code>devDependency</code> to manage the monorepo.</p>\n<pre><code class=\"language-json\">{\n  &quot;private&quot;: true,\n  &quot;engines&quot;: {\n    &quot;yarn&quot;: &quot;&gt;=1.17.3&quot;\n  },\n  &quot;name&quot;: &quot;monorepo-example&quot;,\n  &quot;workspaces&quot;: [\n    &quot;src/applications/*&quot;,\n    &quot;src/packages/*&quot;\n  ],\n  &quot;scripts&quot;: {},\n  &quot;devDependencies&quot;: {\n    &quot;lerna&quot;: &quot;latest&quot;\n  }\n}\n</code></pre>\n<p>Now, let's define how Lerna is going to manage our monorepo in a <code>lerna.json</code> configuration file.</p>\n<ul>\n<li><code>packages</code>: The directories that we defined as <code>workspaces</code> in the <code>package.json</code>.</li>\n<li><a href=\"https://github.com/lerna/lerna/tree/master/commands/bootstrap#--npm-client-client\"><code>npmClient</code></a>: The client used to run the commands.</li>\n<li><a href=\"https://github.com/lerna/lerna/tree/master/commands/bootstrap#--use-workspaces\"><code>useWorkspaces</code></a>: This flag tells lerna that we're going to use <strong>yarn workspaces</strong>.</li>\n</ul>\n<pre><code class=\"language-json\">{\n  &quot;lerna&quot;: &quot;latest&quot;,\n  &quot;packages&quot;: [\n    &quot;src/applications/*&quot;,\n    &quot;src/packages/*&quot;\n  ],\n  &quot;version&quot;: &quot;1.0.0&quot;,\n  &quot;npmClient&quot;: &quot;yarn&quot;,\n  &quot;useWorkspaces&quot;: true\n}\n</code></pre>\n<p>We finished our setup 🙌! Let's add some simple code to see how we can manage and reuse packages on our monorepo.</p>\n<h5 id=\"creatingpackages\">Creating packages</h5>\n<p>A package inside our monorepo context, is an isolated and reusable piece of code. That means, every time we want to create a new package, we're going to create a new independent directory.</p>\n<pre><code>.\n└── packages\n    └── sayHello\n        ├── index.js\n        └── package.json\n</code></pre>\n<p>Each package needs to have a <code>package.json</code> with the <code>name</code> and <code>version</code> <strong>fields defined</strong>. This is important because this describes how we're going to import and use this package on the code base. You can also have dependencies in your package if you need them. On this example I'm writing a simple package called <code>sayHello</code>.</p>\n<pre><code class=\"language-json\">{\n  &quot;name&quot;: &quot;@packages/sayHello&quot;,\n  &quot;version&quot;: &quot;1.0.0&quot;,\n}\n</code></pre>\n<p>Think of every directory inside the <code>packages/</code> folder as an <strong>isolated module</strong>, with his own <strong>tests</strong>, <strong>dependencies</strong> and <strong>code</strong>.</p>\n<pre><code class=\"language-js\">const sayHello = (name) =&gt; {\n  console.log(`Hello ${name} 👋🏼`)\n\n  return name\n}\n\nmodule.exports = sayHello\n</code></pre>\n<h5 id=\"usingpackages\">Using packages</h5>\n<p>This was pretty simple right? Now let's say that we have an application that it's called <code>cli</code>. In order to use <code>sayHello</code> package we should <strong>add it</strong> as a <code>dependency</code> on the <code>package.json</code> file. To do that we have a fancy <code>yarn</code> command 🎉</p>\n<pre><code>yarn workspace @applications/cli add @packages/sayHello@1.0.0\n</code></pre>\n<p>Now from our <code>cli</code> application we can <strong>import</strong> and <strong>use</strong> the package! 💯</p>\n<pre><code class=\"language-js\">const sayHello = require('@packages/sayHello')\n\nsayHello('Carlos')\n</code></pre>\n<p>Finally, we run our <code>cli</code> application from the command line using Lerna 🚀</p>\n<p><img src=\"https://res.cloudinary.com/carloscuesta/image/upload/monorepo-workspaces.png\" alt=\"monorepo-workspaces\"></p>\n<p>You can find the example explained on the post on <a href=\"https://github.com/carloscuesta/monorepo-example\">this GitHub repository</a> 👀. I know this was <strong>pretty simple</strong>, but there are a <strong>ton of things you can do with monorepos</strong>! For example you can share react components in different applications while keeping them isolated. But take a look below 👇 to see monorepos on big open source projects!</p>\n<h3 id=\"opensourcemonorepoprojects\">Opensource monorepo projects</h3>\n<p>Here's a list of well known open source projects that are using the monorepo architecture:</p>\n<ul>\n<li><a href=\"https://github.com/facebook/react\">React</a></li>\n<li><a href=\"https://github.com/babel/babel\">Babel</a></li>\n<li><a href=\"https://github.com/facebook/jest\">Jest</a></li>\n<li><a href=\"https://github.com/storybookjs/storybook\">Storybook</a></li>\n</ul>\n<!--kg-card-end: markdown-->",
+    "comment_id": "5bc9ff9949ac5006c0a84f00",
+    "feature_image": "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+    "featured": false,
+    "visibility": "public",
+    "created_at": "2018-10-19T18:00:25.000+02:00",
+    "updated_at": "2019-10-01T22:15:12.000+02:00",
+    "published_at": "2019-10-01T22:15:00.000+02:00",
+    "custom_excerpt": "A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example",
+    "codeinjection_head": null,
+    "codeinjection_foot": null,
+    "custom_template": null,
+    "canonical_url": "https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces",
+    "send_email_when_published": false,
+    "tags": [{
+      "id": "59cf5ae5d38b1106bf8e7521",
+      "name": "javascript",
+      "slug": "javascript",
+      "description": "Posts about JavaScript",
+      "feature_image": null,
+      "visibility": "public",
+      "meta_title": "Carlos Cuesta | Blog | JavaScript",
+      "meta_description": "Carlos Cuesta blog posts about JavaScript.",
+      "url": "https://carloscuesta.me/blog/tag/javascript/"
+    }],
+    "primary_tag": {
+      "id": "59cf5ae5d38b1106bf8e7521",
+      "name": "javascript",
+      "slug": "javascript",
+      "description": "Posts about JavaScript",
+      "feature_image": null,
+      "visibility": "public",
+      "meta_title": "Carlos Cuesta | Blog | JavaScript",
+      "meta_description": "Carlos Cuesta blog posts about JavaScript.",
+      "url": "https://carloscuesta.me/blog/tag/javascript/"
+    },
+    "url": "https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces/",
+    "excerpt": "A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example",
+    "reading_time": 4,
+    "og_image": null,
+    "og_title": null,
+    "og_description": null,
+    "twitter_image": null,
+    "twitter_title": null,
+    "twitter_description": null,
+    "meta_title": "JavaScript monorepos with Lerna and Yarn Workspaces | Carlos Cuesta",
+    "meta_description": "A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with an example",
+    "email_subject": null
+  }],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "limit": 1,
+      "pages": 21,
+      "total": 21,
+      "next": 2,
+      "prev": null
+    }
+  }
+}

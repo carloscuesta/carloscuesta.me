@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ghost API Client apiCalls should match fetchPosts call 1`] = `
+Object {
+  "cacheKey": "posts",
+  "mutator": [Function],
+  "url": "https://carloscuesta.me/blog/ghost/api/v3/content/posts?limit=8&include=tags&key=undefined",
+}
+`;
+
+exports[`Ghost API Client mutators transformPosts should match the mutated posts 1`] = `
+Array [
+  Object {
+    "excerpt": "What is a monorepo ?
+The monorepo term is a compound word between &quot;mono&quot;, from Ancient Greek &quot;mónos&quot;...",
+    "image": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+    "publishedAt": Object {
+      "format": "8 months ago",
+      "value": "2019-10-01T22:15:00.000+02:00",
+    },
+    "slug": "/blog/javascript-monorepos-lerna-yarn-workspaces",
+    "tags": Array [
+      "javascript",
+    ],
+    "title": "JavaScript monorepos with Lerna and Yarn Workspaces",
+  },
+]
+`;

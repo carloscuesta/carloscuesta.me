@@ -8,7 +8,7 @@ const CONFIG = require('./config')
 class GhostApiClient {
   constructor () {
     this.apiClient = new ApiClient({
-      base_url: `https://carloscuesta.me/blog/ghost/api/v3/content`
+      base_url: 'https://carloscuesta.me/blog/ghost/api/v3/content'
     })
   }
 
@@ -23,7 +23,6 @@ class GhostApiClient {
 
     const posts = payload.posts.map((post) => ({
       title: post.title,
-      tags: post.tags,
       excerpt: `${stripTags(post.html).substring(0, 120)}...`,
       url: post.url,
       publishedAt: moment(post.published_at).startOf('hour').fromNow(),

@@ -10,6 +10,7 @@
     "start": "pm2 start carloscuesta.js",
     "dev": "next",
     "test:unit": "jest --coverage",
+    "test:watch": "NODE_ENV=test TZ=UTC jest --watch",
     "lint": "standard | snazzy",
     "pagespeed": "grunt",
     "test": "npm run lint && npm run test:unit && npm run pagespeed",
@@ -32,6 +33,7 @@
     "memory-cache": "^0.2.0",
     "moment": "^2.24.0",
     "next": "^9.4.4",
+    "node-cache": "^5.1.0",
     "node-fetch": "^2.6.0",
     "node-sass-middleware": "^0.11.0",
     "oauth": "^0.9.15",
@@ -50,6 +52,7 @@
     "grunt-pagespeed": "^2.0.1",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
+    "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^10.2.7",
     "nodemon": "^2.0.1",
     "snazzy": "^8.0.0",
@@ -72,6 +75,9 @@
     ],
     "plugins": [
       "flowtype"
+    ],
+    "globals": [
+      "fetch"
     ]
   },
   "husky": {
@@ -82,6 +88,18 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "standard --fix"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/**/__tests__/*.{js,jsx}"
+    ],
+    "moduleNameMapper": {
+      "src/(.*)$": "<rootDir>/src/$1"
+    },
+    "testMatch": [
+      "<rootDir>/**/*.(spec).(js)"
     ]
   }
 }
