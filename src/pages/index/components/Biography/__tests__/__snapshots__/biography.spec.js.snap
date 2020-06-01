@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Biography should match Biography component 1`] = `
+<section
+  className="biography"
+>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="row middle-xs"
+    >
+      <div
+        className="col-xs-12 col-sm-6"
+      >
+        <h3
+          className="biographyText"
+        >
+          I'm a 24 years old 
+          <b>
+            Front End Engineer
+          </b>
+           based in 
+          <b>
+            Barcelona
+          </b>
+          , working at 
+          <a
+            href="https://ulabox.com"
+            rel="noopener noreferrer"
+          >
+            <b>
+              Ulabox
+            </b>
+          </a>
+          . I'm a coding addicted that is focused on JavaScript, specifically in React and React-Native. I like design, technology, sneakers and I ❤️ 
+          <b>
+            OpenSource
+          </b>
+          .
+        </h3>
+        <h3
+          className="biographyText"
+        >
+          You can find me on
+           
+          <a
+            href="https://github.com/carloscuesta"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            GitHub
+          </a>
+          ,
+           
+          <a
+            href="https://twitter.com/crloscuesta"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Twitter
+          </a>
+           and 
+          <a
+            href="https://linkedin.com/in/crloscuesta"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+        </h3>
+      </div>
+      <div
+        className="col-xs-12 col-sm-6"
+      >
+        <img
+          alt="Carlos Cuesta"
+          className="profilePicture"
+          src="images/carloscuesta.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;
