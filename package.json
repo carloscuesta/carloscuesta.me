@@ -51,10 +51,12 @@
     "grunt": "^1.0.4",
     "grunt-pagespeed": "^2.0.1",
     "husky": "^4.2.5",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^26.0.1",
     "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^10.2.7",
     "nodemon": "^2.0.1",
+    "react-test-renderer": "16.13.1",
     "snazzy": "^8.0.0",
     "standard": "^14.3.3",
     "supertest": "^4.0.2"
@@ -96,7 +98,8 @@
       "!src/**/__tests__/*.{js,jsx}"
     ],
     "moduleNameMapper": {
-      "src/(.*)$": "<rootDir>/src/$1"
+      "src/(.*)$": "<rootDir>/src/$1",
+      "^.+\\.css$": "identity-obj-proxy"
     },
     "testMatch": [
       "<rootDir>/**/*.(spec).(js)"
