@@ -1,5 +1,6 @@
 // @flow
 import React, { type Node } from 'react'
+import 'flexboxgrid/dist/flexboxgrid.min.css'
 
 import 'src/utils/theme/theme.css'
 
