@@ -1,0 +1,59 @@
+.postContainer {
+  display: flex;
+}
+
+.post {
+  border-radius: 2px;
+  box-shadow: 0 1px 4px var(--shadowColor);
+  color: var(--text);
+  margin-bottom: 1em;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+.post:hover {
+  box-shadow: 0 8px 16px var(--shadowColor);
+  transform: translateY(-1px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .post {
+    background-color: var(--backgroundSurface);
+    box-shadow: none;
+  }
+
+  .post:hover {
+    background-color: var(--shadowColor);
+    box-shadow: none;
+  }
+}
+
+.postImage {
+  filter: blur(5px);
+  height: 166px;
+  opacity: 0;
+  transition: filter 500ms ease-in-out, opacity 500ms ease-in-out;
+  width: 100%;
+}
+
+.postImage:global(.lazyloaded) {
+  filter: blur(0);
+  height: auto;
+  opacity: 1;
+}
+
+.postContent {
+  padding: 1.5em;
+}
+
+.postPublishedAt {
+  color: var(--textSecondary);
+  font-size: 0.75em;
+  margin-right: 1em;
+  text-transform: uppercase;
+}
+
+.postExcerpt {
+  font-weight: 300;
+}
