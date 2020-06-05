@@ -28,6 +28,7 @@
   "homepage": "https://github.com/carloscuesta/carloscuesta.me#readme",
   "dependencies": {
     "compression": "^1.7.4",
+    "disqus-react": "^1.0.8",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "flexboxgrid": "^6.3.1",
