@@ -1,5 +1,5 @@
 // @flow
-type Repository = {
+export type Repository = {
   description: string,
   language?: string,
   name: string,

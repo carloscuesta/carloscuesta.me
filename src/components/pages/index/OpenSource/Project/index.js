@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 
-import { type Repository } from 'src/utils/github/mutators'
+import { type Repository } from 'src/utils/api/github/mutators'
 import styles from './styles.module.css'
 
 type Props = {
@@ -11,7 +11,7 @@ type Props = {
 const Project = (props: Props) => (
   <div className={`col-xs-12 col-sm-6 col-md-4 ${styles.projectContainer}`}>
     <a
-      className={`${styles.project} ${props.repository.language}`}
+      className={`${styles.project} ${props.repository.language ? props.repository.language : ''}`}
       href={props.repository.url}
       rel='noopener noreferrer'
       target='_blank'

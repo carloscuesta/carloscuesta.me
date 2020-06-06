@@ -3,8 +3,8 @@ import React from 'react'
 import { DiscussionEmbed } from 'disqus-react'
 
 import { fetchPost } from 'src/utils/api/ghost'
-import Wrapper from 'src/components/Wrapper'
-import Header from './components/Header'
+import Wrapper from 'src/components/shared/Wrapper'
+import Header from 'src/components/pages/blog/[slug]/Header'
 
 const Post = (props) => (
   <article>
@@ -29,7 +29,6 @@ const Post = (props) => (
       </Wrapper>
     </main>
   </article>
-
 )
 
 export const getServerSideProps = async ({ params }) => {

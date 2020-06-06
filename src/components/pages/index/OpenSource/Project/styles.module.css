@@ -15,6 +15,12 @@
   transition: all 0.2s ease-out;
 }
 
+@media(max-width: 768px) {
+  .project {
+    padding: 1.5em;
+  }
+}
+
 .project:hover {
   box-shadow: 0 8px 16px var(--shadowColor);
   transform: translateY(-1px);

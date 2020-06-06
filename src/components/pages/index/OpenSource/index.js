@@ -1,8 +1,8 @@
 // @flow
 import React from 'react'
 
-import { type Repository } from 'src/utils/github/mutators'
-import Wrapper from 'src/components/Wrapper'
+import { type Repository } from 'src/utils/api/github/mutators'
+import Wrapper from 'src/components/shared/Wrapper'
 import SectionTitle from '../SectionTitle'
 import Project from './Project'
 

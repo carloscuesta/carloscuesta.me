@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 
-import Wrapper from 'src/components/Wrapper'
+import Wrapper from 'src/components/shared/Wrapper'
 import styles from './styles.module.css'
 
 const Biography = () => (
