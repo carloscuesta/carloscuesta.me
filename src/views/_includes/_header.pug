@@ -1,7 +1,0 @@
-include _nav.pug
-header.site-header(itemprop="author", itemscope, itemtype="http://schema.org/Person")
-  .wrap
-    h1 Hi! I'm #[span.name=me.name] #[span.wave-emoji 👋🏼]
-    h2.job=me.job
-    .row.center-xs
-      a.btn.btn-large.btn-red.btn-red-raised(href='mailto:'+me.mail+'?subject=Hello', onmousedown="ga('send', 'event', 'Header', 'Click', 'Button - Say hello!');") Say hello!
