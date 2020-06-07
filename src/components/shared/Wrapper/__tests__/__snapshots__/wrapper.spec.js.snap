@@ -1,5 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Wrapper isCompressed should render the component with children 1`] = `
+<div
+  className="wrapperCompressed"
+>
+  <h1>
+    Some children
+  </h1>
+  <h2>
+    Hello!
+  </h2>
+</div>
+`;
+
 exports[`Wrapper should render the component with children 1`] = `
 <div
   className="wrapper"

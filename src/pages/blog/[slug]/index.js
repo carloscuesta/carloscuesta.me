@@ -11,7 +11,7 @@ const Post = (props) => (
     <Header image={props.post.image} />
 
     <main>
-      <Wrapper>
+      <Wrapper isCompressed>
         <header>
           <h1>{props.post.title}</h1>
         </header>

@@ -3,10 +3,10 @@ import React, { type Node } from 'react'
 
 import styles from './styles.module.css'
 
-type Props = { children: Node }
+type Props = { children: Node, isCompressed?: boolean }
 
 const Wrapper = (props: Props) => (
-  <div className={styles.wrapper}>
+  <div className={props.isCompressed ? styles.wrapperCompressed : styles.wrapper}>
     {props.children}
   </div>
 )

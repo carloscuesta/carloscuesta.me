@@ -3,3 +3,9 @@
   margin: 0 auto;
   padding: 0 1em;
 }
+
+.wrapperCompressed {
+  max-width: 824px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
