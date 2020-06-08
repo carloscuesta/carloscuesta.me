@@ -29,6 +29,11 @@
   }
 }
 
+.postTitle {
+  margin: 0;
+  margin-bottom: .5em;
+}
+
 .postImage {
   filter: blur(5px);
   height: 166px;

@@ -9,6 +9,7 @@
     --textOnPrimary: #FFFFFF;
     --textOnSecondary: #FFFFFF;
     --textSecondary: #93A6AF;
+    --codeBackground: #121212;
   }
 }
 
@@ -23,6 +24,7 @@
     --textOnPrimary: #FFFFFF;
     --textOnSecondary: #FFFFFF;
     --textSecondary: #78909C;
+    --codeBackground: #121212;
   }
 }
 
@@ -51,12 +53,10 @@ h4,
 h5,
 h6 {
   line-height: 1.5;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: 700;
 }
 
@@ -65,17 +65,20 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
-  font-weight: 300;
+  font-size: 2em;
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 600;
 }
 
 h5 {
-  font-size: 1.125em;
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
 }
 
 b,
@@ -92,14 +95,48 @@ section {
   margin-bottom: 2em;
 }
 
-li,
-ul {
-  margin: 0;
-  padding: 0;
+li {
+  margin: .5em;
 }
 
-li {
-  list-style: none;
+blockquote {
+  border-left: var(--textSecondary) .35em solid;
+  box-sizing: border-box;
+  color: var(--textSecondary);
+  margin: 1.5em 0;
+}
+
+blockquote p {
+  font-size: 1em;
+  padding-left: 1.5em;
+  font-style: italic;
+}
+
+code {
+  font-family: Consolas, monospace;
+  white-space: pre-wrap;
+}
+
+.postDetail {
+  font-size: 18px;
+}
+
+.postDetail img {
+  max-width: 100%;
+}
+
+.postDetail b, strong {
+  font-weight: 700;
+}
+
+.postDetail header {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+  .postDetail h1 {
+    font-size: 2em;
+  }
 }
 
 ::selection {

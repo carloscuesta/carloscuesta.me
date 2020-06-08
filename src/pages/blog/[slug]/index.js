@@ -8,7 +8,7 @@ import Wrapper from 'src/components/shared/Wrapper'
 import Header from 'src/components/pages/blog/[slug]/Header'
 
 const Post = (props) => (
-  <article>
+  <article className='postDetail'>
     <Head>
       <link rel='preload' href='/prism/prism.css' as='style' />
       <link rel='preload' href='/prism/prism.js' as='script' />
@@ -24,7 +24,7 @@ const Post = (props) => (
           <h1>{props.post.title}</h1>
         </header>
 
-        <div dangerouslySetInnerHTML={{ __html:  props.post.html }} />
+        <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
 
         <DiscussionEmbed
           shortname='carloscuesta'

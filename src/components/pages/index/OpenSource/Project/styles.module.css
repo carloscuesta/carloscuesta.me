@@ -38,6 +38,10 @@
   }
 }
 
+.projectName {
+  margin: 0;
+}
+
 .project:global(.javascript) {
   border-top-color: #FBDD51;
 }

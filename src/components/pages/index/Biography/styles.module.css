@@ -5,6 +5,11 @@
   padding-bottom: 2em;
 }
 
+.biographyText {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
 .profilePicture {
   border-radius: 50%;
   display: flex;

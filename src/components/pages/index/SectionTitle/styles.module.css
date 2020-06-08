@@ -1,11 +1,13 @@
 .sectionTitle {
   font-size: 2em;
   text-align: center;
+  margin: 0;
 }
 
 .sectionSubtitle {
   color: var(--textSecondary);
   font-weight: 300;
   text-align: center;
+  margin: 0;
   margin-bottom: 1.5em;
 }
