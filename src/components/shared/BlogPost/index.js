@@ -11,7 +11,7 @@ type Props = {
 
 const BlogPost = (props: Props) => (
   <div className={`col-xs-12 col-sm-6 col-md-4 ${styles.postContainer}`}>
-    <Link href={props.post.slug}>
+    <Link href='/blog/[slug]' as={props.post.slug}>
       <a className={styles.post} title={props.post.title}>
         <article>
           <img
