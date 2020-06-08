@@ -1,5 +1,6 @@
 // @flow
 import React from 'react'
+import Head from 'next/head'
 import { DiscussionEmbed } from 'disqus-react'
 
 import { fetchPost } from 'src/utils/api/ghost'
@@ -8,6 +9,13 @@ import Header from 'src/components/pages/blog/[slug]/Header'
 
 const Post = (props) => (
   <article>
+    <Head>
+      <link rel='preload' href='/prism/prism.css' as='style' />
+      <link rel='preload' href='/prism/prism.js' as='script' />
+      <link href='/prism/prism.css' rel='stylesheet' type='text/css' />
+      <script src='/prism/prism.js' type='text/javascript' />
+    </Head>
+
     <Header image={props.post.image} />
 
     <main>

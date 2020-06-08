@@ -63,7 +63,7 @@
       "jest"
     ],
     "ignore": [
-      "src/public"
+      "public/**/*"
     ],
     "plugins": [
       "flowtype"
