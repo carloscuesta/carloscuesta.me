@@ -2,7 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { type Post } from 'src/utils/api/ghost/mutators'
+import { type Post } from 'src/utils/api/blog/mutators'
 import styles from './styles.module.css'
 
 type Props = {
@@ -11,7 +11,7 @@ type Props = {
 
 const BlogPost = (props: Props) => (
   <div className={`col-xs-12 col-sm-6 col-md-4 ${styles.postContainer}`}>
-    <Link href='/blog/[slug]' as={props.post.slug}>
+    <Link href='/blog/[slug]' as={`/blog/${props.post.slug}`}>
       <a className={styles.post} title={props.post.title}>
         <article>
           <img
@@ -25,8 +25,8 @@ const BlogPost = (props: Props) => (
               <h5 className={styles.postTitle}>{props.post.title}</h5>
             </header>
 
-            <time className={styles.postPublishedAt} dateTime={props.post.publishedAt.value}>
-              {props.post.publishedAt.format}
+            <time className={styles.postPublishedAt} dateTime={props.post.datePublished.value}>
+              {props.post.datePublished.formatInWords}
             </time>
 
             <p className={styles.postExcerpt}>

@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 
-import { fetchPosts } from 'src/utils/api/ghost'
+import { fetchPosts } from 'src/utils/api/blog'
 import { fetchRepositories } from 'src/utils/api/github'
 import { type Post } from 'src/utils/api/blog/mutators'
 import { type Repository } from 'src/utils/api/github/mutators'
@@ -26,7 +26,7 @@ const Index = (props: Props) => (
   </>
 )
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const [posts, repositories] = await Promise.all([
     fetchPosts(),
     fetchRepositories()
@@ -34,7 +34,7 @@ export const getServerSideProps = async () => {
 
   return {
     props: {
-      posts,
+      posts: posts.slice(0, 6),
       repositories
     }
   }

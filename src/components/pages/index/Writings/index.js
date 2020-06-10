@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 
-import { type Post } from 'src/utils/api/ghost/mutators'
+import { type Post } from 'src/utils/api/blog/mutators'
 import Wrapper from 'src/components/shared/Wrapper'
 import BlogPost from 'src/components/shared/BlogPost'
 import SectionTitle from '../SectionTitle'

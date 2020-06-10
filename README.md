@@ -7,4 +7,4 @@
 [![DevDependencies](https://img.shields.io/david/dev/carloscuesta/carloscuesta.me.svg?style=flat-square)](https://david-dm.org/carloscuesta/carloscuesta.me#info=devDependencies)
 [![Digital Ocean](https://img.shields.io/badge/deployed-digitalocean-0080ff.svg?style=flat-square)](https://m.do.co/c/5347e65ea75c)
 
-**Carlos Cuesta** personal site, built on [NodeJS](http://nodejs.org) using [Express](http://expressjs.com), [Pug](https://pugjs.org), [Sass](http://sass-lang.com) and [Ghost](http://ghost.org) as a blog system.
+**Carlos Cuesta** personal site, built on [NodeJS](http://nodejs.org) using [Express](http://expressjs.com), [Pug](https://pugjs.org), [Sass](http://sass-lang.com) and [Ghost](http://blog.org) as a blog system.

@@ -3,11 +3,16 @@ import React from 'react'
 import Head from 'next/head'
 import { DiscussionEmbed } from 'disqus-react'
 
-import { fetchPost } from 'src/utils/api/ghost'
+import { getPostSlugs, fetchPost } from 'src/utils/api/blog'
+import { type Post } from 'src/utils/api/blog/mutators'
 import Wrapper from 'src/components/shared/Wrapper'
 import Header from 'src/components/pages/blog/[slug]/Header'
 
-const Post = (props) => (
+type Props = {
+  post: Post
+}
+
+const Article = (props: Props) => (
   <article className='postDetail'>
     <Head>
       <link rel='preload' href='/prism/prism.css' as='style' />
@@ -22,6 +27,10 @@ const Post = (props) => (
       <Wrapper isCompressed>
         <header>
           <h1>{props.post.title}</h1>
+
+          <time dateTime={props.post.datePublished.value}>
+            {props.post.datePublished.formatDate}
+          </time>
         </header>
 
         <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
@@ -29,9 +38,9 @@ const Post = (props) => (
         <DiscussionEmbed
           shortname='carloscuesta'
           config={{
-            identifier: props.post.commentID,
+            identifier: props.post.disqusIdentifier,
             title: props.post.title,
-            url: props.post.canonicalUrl
+            url: props.post.slug
           }}
         />
       </Wrapper>
@@ -39,14 +48,19 @@ const Post = (props) => (
   </article>
 )
 
-export const getServerSideProps = async ({ params }) => {
+export const getStaticPaths = () => ({
+  paths: getPostSlugs().map<{ params: { slug: string }}>((slug: string) => ({ params: { slug } })),
+  fallback: false
+})
+
+export const getStaticProps = async ({ params }: { params: { slug: string }}) => {
   const post = await fetchPost(params.slug)
 
   return {
     props: {
-      post,
+      post
     }
   }
 }
 
-export default Post
+export default Article

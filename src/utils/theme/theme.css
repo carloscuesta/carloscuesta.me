@@ -56,7 +56,7 @@ h6 {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: 700;
 }
 
@@ -104,12 +104,9 @@ blockquote {
   box-sizing: border-box;
   color: var(--textSecondary);
   margin: 1.5em 0;
-}
-
-blockquote p {
-  font-size: 1em;
-  padding-left: 1.5em;
+  padding: .25em 0 .25em 2em;
   font-style: italic;
+  font-size: 1em;
 }
 
 code {
@@ -131,6 +128,15 @@ code {
 
 .postDetail header {
   margin-bottom: 1em;
+}
+
+.postDetail h1,
+.postDetail h2,
+.postDetail h3,
+.postDetail h4,
+.postDetail h5,
+.postDetail h6 {
+  line-height: 1.15;
 }
 
 @media (max-width: 768px) {

@@ -6,6 +6,7 @@
 .name {
   color: var(--primary);
   display: inline;
+  font-size: 4em;
   padding: 0 .25em;
 }
 
@@ -16,6 +17,7 @@
 
 .job {
   font-weight: 400;
+  margin: 1.25rem 0;
 }
 
 @keyframes wave {
