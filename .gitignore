@@ -9,6 +9,7 @@ coverage
 
 # Next
 .next
+.vercel
 
 # OSX Files
 *.DS_Store
