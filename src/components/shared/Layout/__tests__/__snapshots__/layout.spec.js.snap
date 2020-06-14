@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout should render the Layout with children 1`] = `
+Array [
+  <header
+    className="header"
+  >
+    <div
+      className="wrapper"
+    >
+      <nav
+        className="navigation"
+      >
+        <strong
+          className="logo"
+        >
+          <a
+            className="link false"
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Carlos Cuesta
+          </a>
+        </strong>
+        <ul
+          className="links"
+        >
+          <li>
+            <a
+              className="link false"
+              href="/blog"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Writings
+            </a>
+          </li>
+          <li>
+            <a
+              className="link"
+              href="https://twitter.com/intent/follow?screen_name=crloscuesta"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Follow me
+            </a>
+          </li>
+        </ul>
+        <div
+          className="hamburger"
+        >
+          <button
+            aria-label="Open navigation menu"
+            className="button"
+            onClick={[Function]}
+          >
+            <svg
+              fill="currentColor"
+              height="24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 6h18v2.016H3V6zm0 6.984v-1.969h18v1.969H3zM3 18v-2.016h18V18H3z"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>,
+  <div
+    className="headerFixedSpacing"
+  />,
+  <h1>
+    Some children
+  </h1>,
+  <h2>
+    Hello!
+  </h2>,
+  <footer
+    className="footer"
+  >
+    <div
+      className="wrapper"
+    >
+      <div
+        className="footerContent"
+      >
+        <p>
+          <strong>
+            Carlos Cuesta
+          </strong>
+        </p>
+        <ul
+          className="links"
+        >
+          <li>
+            <a
+              href="/blog"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Blog
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/carloscuesta"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/crloscuesta"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/crloscuesta"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>,
+]
+`;

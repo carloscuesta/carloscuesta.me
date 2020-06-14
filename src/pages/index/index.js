@@ -5,7 +5,6 @@ import { fetchPosts } from 'src/utils/api/blog'
 import { fetchRepositories } from 'src/utils/api/github'
 import { type Post } from 'src/utils/api/blog/mutators'
 import { type Repository } from 'src/utils/api/github/mutators'
-import NavigationMenu from 'src/components/shared/NavigationMenu'
 import Header from 'src/components/pages/index/Header'
 import Biography from 'src/components/pages/index/Biography'
 import Writings from 'src/components/pages/index/Writings'
@@ -18,7 +17,6 @@ type Props = {
 
 const Index = (props: Props) => (
   <>
-    <NavigationMenu />
     <Header />
     <main>
       <Biography />

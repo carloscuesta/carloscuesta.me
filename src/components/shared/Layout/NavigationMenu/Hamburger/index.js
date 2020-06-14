@@ -11,11 +11,8 @@ const Hamburger = () => {
   const [isOpen, setIsOpen] = React.useState(false)
 
   React.useEffect(() => {
-    /* Close the menu when navigating to the active page link */
-    const onRouteChangeStart = (url) => {
-      if (url === Router.router.pathname) {
-        setIsOpen(false)
-      }
+    const onRouteChangeStart = () => {
+      setIsOpen(false)
     }
 
     Router.events.on('routeChangeStart', onRouteChangeStart)
@@ -25,14 +22,22 @@ const Hamburger = () => {
 
   return (
     <div className={styles.hamburger}>
-      <button className={styles.button} onClick={() => setIsOpen(true)}>
+      <button
+        aria-label='Open navigation menu'
+        className={styles.button}
+        onClick={() => setIsOpen(true)}
+      >
         <OpenIcon />
       </button>
 
       {isOpen &&
         <nav className={styles.menu}>
           <div className={styles.closeContainer}>
-            <button className={styles.button} onClick={() => setIsOpen(false)}>
+            <button
+              aria-label='Close navigation menu'
+              className={styles.button}
+              onClick={() => setIsOpen(false)}
+            >
               <CloseIcon />
             </button>
           </div>
