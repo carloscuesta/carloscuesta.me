@@ -1,5 +1,6 @@
 // @flow
 import React from 'react'
+import { NextSeo } from 'next-seo'
 
 import { fetchPosts } from 'src/utils/api/blog'
 import { fetchRepositories } from 'src/utils/api/github'
@@ -17,6 +18,7 @@ type Props = {
 
 const Index = (props: Props) => (
   <>
+    <NextSeo canonical='https://carloscuesta.me' />
     <Header />
     <main>
       <Biography />
