@@ -7,6 +7,7 @@ import { getPostSlugs, fetchPost } from 'src/utils/api/blog'
 import { type Post } from 'src/utils/api/blog/mutators'
 import Wrapper from 'src/components/shared/Wrapper'
 import Header from 'src/components/pages/blog/[slug]/Header'
+import NewsletterSubscribe from 'src/components/pages/blog/[slug]/NewsletterSubscribe'
 
 type Props = {
   post: Post
@@ -74,6 +75,10 @@ const Article = (props: Props) => {
           </header>
 
           <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
+
+          <hr />
+
+          <NewsletterSubscribe />
         </Wrapper>
       </main>
     </article>

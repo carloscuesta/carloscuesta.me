@@ -114,6 +114,13 @@ code {
   white-space: pre-wrap;
 }
 
+hr {
+  background-color: var(--backgroundSurface);
+  border: none;
+  height: 1px;
+  margin: 1.5em 0;
+}
+
 .postDetail {
   font-size: 18px;
 }

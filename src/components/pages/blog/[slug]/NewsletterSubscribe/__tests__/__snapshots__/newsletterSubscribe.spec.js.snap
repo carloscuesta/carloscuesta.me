@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsletterSubscribe should match NewsletterSubscribe component 1`] = `
+<form
+  action="https://buttondown.email/api/emails/embed-subscribe/carloscuesta"
+  className="container"
+  method="post"
+  target="popupwindow"
+>
+  <b
+    className="title"
+  >
+    Subscribe to the newsletter 👨‍💻
+  </b>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12 col-sm-6"
+    >
+      <p
+        className="explanation"
+      >
+        Be the first to know when I write something new! If you don't like emails, you can follow me on 
+         
+        <a
+          href="https://twitter.com/intent/follow?screen_name=crloscuesta"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          twitter
+        </a>
+        .
+      </p>
+    </div>
+    <div
+      className="col-xs-12 col-sm-6"
+    >
+      <p>
+        <label
+          htmlFor="bd-email"
+        >
+          Write your email:
+        </label>
+      </p>
+      <div
+        className="form"
+      >
+        <input
+          className="input"
+          id="bd-email"
+          name="email"
+          placeholder="Your email address"
+          required={true}
+          type="email"
+        />
+        <input
+          name="embed"
+          type="hidden"
+          value="1"
+        />
+        <input
+          className="submit"
+          type="submit"
+          value="Subscribe"
+        />
+      </div>
+    </div>
+  </div>
+</form>
+`;
