@@ -1,7 +1,6 @@
 // @flow
 import React from 'react'
 import Head from 'next/head'
-import { DiscussionEmbed } from 'disqus-react'
 
 import { getPostSlugs, fetchPost } from 'src/utils/api/blog'
 import { type Post } from 'src/utils/api/blog/mutators'
@@ -34,15 +33,6 @@ const Article = (props: Props) => (
         </header>
 
         <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
-
-        <DiscussionEmbed
-          shortname='carloscuesta'
-          config={{
-            identifier: props.post.disqusIdentifier,
-            title: props.post.title,
-            url: props.post.slug
-          }}
-        />
       </Wrapper>
     </main>
   </article>
