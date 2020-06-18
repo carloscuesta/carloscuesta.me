@@ -1,0 +1,16 @@
+.headline {
+  color: var(--primary);
+  font-size: 4em;
+}
+
+.error {
+  min-height: 100vh;
+}
+
+.title {
+  font-weight: 300;
+}
+
+.links {
+  font-size: 1.5em;
+}
