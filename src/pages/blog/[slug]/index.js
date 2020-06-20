@@ -23,7 +23,7 @@ const Article = (props: Props) => {
         dateModified={props.post.dateModified}
         datePublished={props.post.datePublished.value}
         description={props.post.excerpt}
-        images={[props.post.image]}
+        images={[props.post.image.featured]}
         publisherLogo='/images/carloscuesta.jpg'
         publisherName='Carlos Cuesta'
         title={props.post.title}
@@ -48,7 +48,7 @@ const Article = (props: Props) => {
             {
               alt: props.post.title,
               height: 1530,
-              url: props.post.image,
+              url: props.post.image.featured,
               width: 3003
             }
           ]
@@ -62,7 +62,7 @@ const Article = (props: Props) => {
         <script src='/prism/prism.js' type='text/javascript' />
       </Head>
 
-      <Header image={props.post.image} />
+      <Header image={props.post.image.featured} />
 
       <main>
         <Wrapper isCompressed>
