@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShareLinks should match ShareLinks component 1`] = `
+Array [
+  <hr />,
+  <b
+    className="title"
+  >
+    Did you enjoyed the article ?
+  </b>,
+  <div
+    className="links"
+  >
+    <a
+      className="socialButton"
+      href="https://twitter.com/intent/tweet?text=undefined&url=undefined&via=crloscuesta"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Share on Twitter
+    </a>
+    <span
+      className="separator"
+    >
+      •
+    </span>
+    <a
+      className="socialButton"
+      href="http://twitter.com/search?q=undefined"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Discuss on Twitter
+    </a>
+    <span
+      className="separator"
+    >
+      •
+    </span>
+    <a
+      className="socialButton editPost"
+      href="https://github.com/carloscuesta/carloscuesta.me/edit/master/src/posts/undefined.md"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Edit post on GitHub
+    </a>
+  </div>,
+  <hr />,
+]
+`;

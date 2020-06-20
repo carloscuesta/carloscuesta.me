@@ -1,20 +1,13 @@
 .header {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  min-height: 40vh;
-  padding: 0;
-  text-align: center;
+  padding-bottom: 1.25em;
 }
 
-@media (max-width: 768px) {
-  .header {
-    min-height: 30vh;
-  }
+.title {
+  margin-bottom: .25em;
 }
 
-@media (max-width: 568px) {
-  .header {
-    min-height: 20vh;
-  }
+.time {
+  text-transform: uppercase;
+  color: var(--textSecondary);
+  font-size: 0.85em;
 }

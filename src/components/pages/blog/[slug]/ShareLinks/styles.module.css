@@ -1,0 +1,42 @@
+.separator {
+  margin: 0 .75em;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.links {
+  padding-top: 1em;
+}
+
+@media(max-width: 768px) {
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links a {
+    padding: .45em 0;
+  }
+
+  .separator {
+    display: none;
+  }
+}
+
+.socialButton {
+  font-size: 1.15em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.editPost {
+  color: var(--text);
+}

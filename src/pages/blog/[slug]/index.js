@@ -7,7 +7,9 @@ import { getPostSlugs, fetchPost } from 'src/utils/api/blog'
 import { type Post } from 'src/utils/api/blog/mutators'
 import Wrapper from 'src/components/shared/Wrapper'
 import Header from 'src/components/pages/blog/[slug]/Header'
+import FeaturedImage from 'src/components/pages/blog/[slug]/FeaturedImage'
 import NewsletterSubscribe from 'src/components/pages/blog/[slug]/NewsletterSubscribe'
+import ShareLinks from 'src/components/pages/blog/[slug]/ShareLinks'
 
 type Props = {
   post: Post
@@ -62,23 +64,29 @@ const Article = (props: Props) => {
         <script src='/prism/prism.js' type='text/javascript' />
       </Head>
 
-      <Header image={props.post.image.featured} />
+      <FeaturedImage
+        image={props.post.image.featured}
+        title={props.post.title}
+      />
 
       <main>
         <Wrapper isCompressed>
-          <header>
-            <h1>{props.post.title}</h1>
-
-            <time dateTime={props.post.datePublished.value}>
-              {props.post.datePublished.formatDate}
-            </time>
-          </header>
+          <Header
+            title={props.post.title}
+            datePublished={props.post.datePublished}
+          />
 
           <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
 
-          <hr />
+          <ShareLinks
+            canonicalUrl={canonicalUrl}
+            slug={props.post.slug}
+            title={props.post.title}
+          />
 
           <NewsletterSubscribe />
+
+          <hr />
         </Wrapper>
       </main>
     </article>

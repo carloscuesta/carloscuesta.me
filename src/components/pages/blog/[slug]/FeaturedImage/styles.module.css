@@ -1,0 +1,26 @@
+.header {
+  filter: blur(5px);
+  height: 40vh;
+  object-fit: cover;
+  opacity: 0;
+  padding: 0;
+  transition: filter 200ms ease-in-out, opacity 200ms ease-in-out;
+  width: 100%;
+}
+
+.header:global(.lazyloaded) {
+  filter: blur(0);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 568px) {
+  .header {
+    height: 20vh;
+  }
+}
