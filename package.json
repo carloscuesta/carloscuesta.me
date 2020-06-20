@@ -11,6 +11,7 @@
     "start": "pm2 start npm --name 'carloscuesta' -- start",
     "test:flow": "flow",
     "test:lint": "standard | snazzy",
+    "test:lint:fix": "standard --fix | snazzy",
     "test:unit": "jest --coverage",
     "test:watch": "NODE_ENV=test TZ=UTC jest --watch",
     "test": "npm run test:lint && npm run test:flow && npm run test:unit"
@@ -81,8 +82,9 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "standard --fix"
+    "*.js": [
+      "npm run test:lint:fix",
+      "npm run test:flow"
     ]
   },
   "jest": {
