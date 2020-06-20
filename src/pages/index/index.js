@@ -28,7 +28,7 @@ const Index = (props: Props) => (
   </>
 )
 
-export const getStaticProps = async () => {
+export const getStaticProps = async (): Promise<{ props: Props }> => {
   const [posts, repositories] = await Promise.all([
     fetchPosts(),
     fetchRepositories()

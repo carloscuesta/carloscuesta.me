@@ -85,12 +85,14 @@ const Article = (props: Props) => {
   )
 }
 
-export const getStaticPaths = () => ({
-  paths: getPostSlugs().map<{ params: { slug: string }}>((slug: string) => ({ params: { slug } })),
+type Params = { params: { slug: string } }
+
+export const getStaticPaths = (): { paths: Array<Params>, fallback: boolean } => ({
+  paths: getPostSlugs().map((slug: string) => ({ params: { slug } })),
   fallback: false
 })
 
-export const getStaticProps = async ({ params }: { params: { slug: string }}) => {
+export const getStaticProps = async ({ params }: Params): Promise<{ props: Props }> => {
   const post = await fetchPost(params.slug)
 
   return {

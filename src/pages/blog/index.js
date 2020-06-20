@@ -22,7 +22,7 @@ const Blog = (props: Props) => (
   </>
 )
 
-export const getStaticProps = async () => {
+export const getStaticProps = async (): Promise<{ props: Props }> => {
   const [posts] = await Promise.all([
     fetchPosts()
   ])
