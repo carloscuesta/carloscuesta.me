@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`analytics should match analytics module 1`] = `
+Object {
+  "GA_TRACKING_ID": "UA-67824860-3",
+  "trackPageView": [Function],
+}
+`;

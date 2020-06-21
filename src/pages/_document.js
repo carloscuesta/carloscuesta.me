@@ -2,6 +2,8 @@
 import React from 'react'
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 
+import { GA_TRACKING_ID } from 'src/utils/analytics'
+
 class Document extends NextDocument {
   render () {
     return (
@@ -29,6 +31,22 @@ class Document extends NextDocument {
           <link rel='icon' type='image/png' sizes='32x32' href='/favicon/favicon-32x32.png' />
           <link rel='icon' type='image/png' sizes='96x96' href='/favicon/favicon-96x96.png' />
           <link rel='manifest' href='/manifest.json' />
+          <script
+            defer
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_TRACKING_ID}', {
+                  page_path: window.location.pathname,
+                });
+              `
+            }}
+          />
         </Head>
         <body>
           <Main />
