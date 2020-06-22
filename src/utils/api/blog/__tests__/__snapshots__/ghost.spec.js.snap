@@ -170,7 +170,7 @@ sayHello('Carlos')
     "dateModified": "2019-09-12 17:00",
     "datePublished": Object {
       "formatDate": "12 September 2019",
-      "formatInWords": "9 months ago",
+      "formatInWords": "10 months ago",
       "value": "2019-09-12 17:00",
     },
     "disqusIdentifier": "5d78d0fcf942665cd6becd9a",
