@@ -1,7 +1,6 @@
 language: node_js
 node_js:
   - 12.17.0
-before_install: npm install -g grunt-cli
 script:
   - npm run test
   - npm run test:coverage
