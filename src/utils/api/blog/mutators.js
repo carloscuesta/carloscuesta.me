@@ -12,7 +12,9 @@ export type Post = {
   title: string
 }
 
-export const transformPost = (payload: { data: Object, html: Object, slug: string }): Post => ({
+type Payload = { data: Object, html: Object, slug: string }
+
+export const transformPost = (payload: Payload): Post => ({
   dateModified: payload.data.dateModified,
   datePublished: {
     formatInWords: formatDistanceToNow(

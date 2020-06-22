@@ -4,7 +4,6 @@ export const responseCache = [
 
 export const request = (requestOptions = undefined) => ({
   url: 'https://carloscuesta.me/api',
-  cacheKey: 'testCacheKey',
   mutator: jest.fn((value) => value),
   requestOptions
 })

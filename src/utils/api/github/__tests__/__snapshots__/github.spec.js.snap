@@ -2,7 +2,6 @@
 
 exports[`GitHub API Client apiCalls should match fetchRepositories call 1`] = `
 Object {
-  "cacheKey": "repositories",
   "mutator": [Function],
   "requestOptions": Object {
     "headers": Object {
