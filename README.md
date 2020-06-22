@@ -1,6 +1,6 @@
 # [carloscuesta.me](https://carloscuesta.me)
 
-[![Build Status](https://img.shields.io/travis/carloscuesta/carloscuesta.me.svg?style=flat-square)](https://travis-ci.org/carloscuesta/carloscuesta.me)
+[![Build Status](https://img.shields.io/travis/com/carloscuesta/carloscuesta.me?style=flat-square)](https://travis-ci.com/carloscuesta/carloscuesta.me)
 [![Code Climate](https://img.shields.io/codeclimate/github/carloscuesta/carloscuesta.me.svg?style=flat-square)](https://codeclimate.com/github/carloscuesta/carloscuesta.me/)
 [![Coverage](https://img.shields.io/coveralls/carloscuesta/carloscuesta.me.svg?style=flat-square)](https://coveralls.io/github/carloscuesta/carloscuesta.me)
 [![Dependencies](https://img.shields.io/david/carloscuesta/carloscuesta.me.svg?style=flat-square)](https://david-dm.org/carloscuesta/carloscuesta.me)
