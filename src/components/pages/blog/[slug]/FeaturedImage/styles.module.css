@@ -1,26 +1,32 @@
-.header {
-  filter: blur(5px);
+.header, .image {
   height: 40vh;
+}
+
+.header {
+  background-color: var(--backgroundSurface);
+}
+
+.image {
+  filter: blur(5px);
   object-fit: cover;
   opacity: 0;
-  padding: 0;
   transition: filter 200ms ease-in-out, opacity 200ms ease-in-out;
   width: 100%;
 }
 
-.header:global(.lazyloaded) {
+.image:global(.lazyloaded) {
   filter: blur(0);
   opacity: 1;
 }
 
 @media (max-width: 768px) {
-  .header {
+  .header, .image {
     height: 30vh;
   }
 }
 
 @media (max-width: 568px) {
-  .header {
+  .header, .image {
     height: 20vh;
   }
 }

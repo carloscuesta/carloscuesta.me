@@ -36,16 +36,26 @@
 
 .postImage {
   filter: blur(5px);
-  height: 166px;
-  opacity: 0;
-  transition: filter 500ms ease-in-out, opacity 500ms ease-in-out;
+  /* https://stackoverflow.com/questions/27532270/css-blur-weird-shadow-effect */
+  transform: translate3d(0, 0, 0);
+  transition: filter 200ms ease-in-out;
   width: 100%;
 }
 
 .postImage:global(.lazyloaded) {
   filter: blur(0);
-  height: auto;
-  opacity: 1;
+}
+
+@media(max-width: 768px) {
+  .postImage {
+    filter: unset;
+    transform: unset;
+    transition: unset;
+  }
+
+  .postImage:global(.lazyloaded) {
+    filter: unset;
+  }
 }
 
 .postContent {

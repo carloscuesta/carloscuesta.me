@@ -33,6 +33,7 @@ exports[`Writings should match Writings component 1`] = `
               alt="Post Title"
               className="lazyload postImage"
               data-src="https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png"
+              src="https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png"
             />
             <div
               className="postContent"
@@ -74,6 +75,7 @@ exports[`Writings should match Writings component 1`] = `
               alt="A post"
               className="lazyload postImage"
               data-src="https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png"
+              src="https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png"
             />
             <div
               className="postContent"

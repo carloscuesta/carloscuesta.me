@@ -17,7 +17,8 @@ const BlogPost = (props: Props) => (
           <img
             alt={props.post.title}
             className={`lazyload ${styles.postImage}`}
-            data-src={props.post.image.preview}
+            data-src={props.post.images.preview.src}
+            src={props.post.images.preview.lqpi}
           />
 
           <div className={styles.postContent}>

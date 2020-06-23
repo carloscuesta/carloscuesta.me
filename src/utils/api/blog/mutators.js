@@ -7,7 +7,7 @@ export type Post = {
   disqusIdentifier: string,
   excerpt: string,
   html: string,
-  image: { featured: string, preview: string },
+  images: { featured: { src: string }, preview: { lqpi: string, src: string } },
   slug: string,
   title: string
 }
@@ -30,9 +30,14 @@ export const transformPost = (payload: Payload): Post => ({
   disqusIdentifier: payload.data.disqusIdentifier,
   excerpt: payload.data.excerpt,
   html: payload.html.toString(),
-  image: {
-    featured: payload.data.image,
-    preview: payload.data.image.replace('/upload/', '/upload/w_500/')
+  images: {
+    featured: {
+      src: payload.data.image
+    },
+    preview: {
+      src: payload.data.image.replace('/upload/', '/upload/w_500/'),
+      lqpi: payload.data.image.replace('/upload/', '/upload/t_lqpi-post-preview/')
+    }
   },
   slug: payload.slug,
   title: payload.data.title

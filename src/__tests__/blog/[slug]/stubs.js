@@ -14,9 +14,14 @@ export const post = {
   disqusIdentifier: '5bc9ff9949ac5006c0a84f00',
   excerpt: 'A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example',
   html: '<h1>html</h1>',
-  image: {
-    featured: 'https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png',
-    preview: 'https://res.cloudinary.com/carloscuesta/image/upload/w_500/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png'
+  images: {
+    featured: {
+      src: 'https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png'
+    },
+    preview: {
+      src: 'https://res.cloudinary.com/carloscuesta/image/upload/w_500/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png',
+      lqpi: 'https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png'
+    }
   },
   slug: 'javascript-monorepos-lerna-yarn-workspaces',
   title: 'JavaScript monorepos with Lerna and Yarn Workspaces'

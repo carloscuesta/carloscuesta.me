@@ -9,10 +9,10 @@ type Props = {
 }
 
 const FeaturedImage = (props: Props) => (
-  <header>
+  <header className={styles.header}>
     <img
       alt={props.title}
-      className={`lazyload ${styles.header}`}
+      className={`lazyload ${styles.image}`}
       data-src={props.image}
       title={props.title}
     />

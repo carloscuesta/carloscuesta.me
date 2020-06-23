@@ -27,9 +27,14 @@ $ sh -c \\"$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/too
 <h3>Dotfiles</h3>
 <p>I have my own <a href=\\"https://github.com/carloscuesta/dotfiles\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>dotfiles repository</strong></a> with all my shell configuration files, where you can take a look to learn and be more productive with your shell.</p>
 ",
-  "image": Object {
-    "featured": "https://res.cloudinary.com/carloscuesta/image/upload/v1454754838/kcuq34zbo1yieygmx0y6.png",
-    "preview": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png",
+  "images": Object {
+    "featured": Object {
+      "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1454754838/kcuq34zbo1yieygmx0y6.png",
+    },
+    "preview": Object {
+      "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png",
+      "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png",
+    },
   },
   "slug": "terminal-setup",
   "title": "Terminal setup",
@@ -159,9 +164,14 @@ sayHello('Carlos')
 <li><a href=\\"https://github.com/storybookjs/storybook\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Storybook</a></li>
 </ul>
 ",
-    "image": Object {
-      "featured": "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
-      "preview": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+    "images": Object {
+      "featured": Object {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+      },
+      "preview": Object {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+      },
     },
     "slug": "javascript-monorepos-lerna-yarn-workspaces",
     "title": "JavaScript monorepos with Lerna and Yarn Workspaces",
@@ -224,9 +234,14 @@ sayHello('Carlos')
 <h3>Introducing <a href=\\"https://github.com/carloscuesta/react-native-error-boundary\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><code>react-native-error-boundary</code></a></h3>
 <p>Few months ago, I created a <strong>simple</strong>, <strong>flexible</strong> and <strong>reusable</strong> React-Native <strong>error boundary component</strong>. <a href=\\"https://github.com/carloscuesta/react-native-error-boundary\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Take a look into it</a> 👀 if you're thinking about adding error boundaries to your app!</p>
 ",
-    "image": Object {
-      "featured": "https://res.cloudinary.com/carloscuesta/image/upload/handling-react-native-errors-with-error-boundaries.png",
-      "preview": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/handling-react-native-errors-with-error-boundaries.png",
+    "images": Object {
+      "featured": Object {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/handling-react-native-errors-with-error-boundaries.png",
+      },
+      "preview": Object {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/handling-react-native-errors-with-error-boundaries.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/handling-react-native-errors-with-error-boundaries.png",
+      },
     },
     "slug": "managing-react-native-crashes-with-error-boundaries",
     "title": "Managing React-Native crashes with Error Boundaries",
@@ -404,9 +419,14 @@ export default EmojiList
 </code></pre>
 <p>That's basically the architecture that I use at the company I'm working on. I'm <strong>pretty satisfied</strong> with the <strong>experience</strong> of using this pattern. Our components turned out a lot easier to maintain and use. Anyway there are <strong>no silver bullets</strong> on Software Engineering, so <strong>figure what works best for you</strong> or your team!</p>
 ",
-    "image": Object {
-      "featured": "https://res.cloudinary.com/carloscuesta/image/upload/scalable-react-components.png",
-      "preview": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/scalable-react-components.png",
+    "images": Object {
+      "featured": Object {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/scalable-react-components.png",
+      },
+      "preview": Object {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/scalable-react-components.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/scalable-react-components.png",
+      },
     },
     "slug": "scalable-react-components-architecture",
     "title": "Scalable React Components architecture",
@@ -451,9 +471,14 @@ Object {
   "disqusIdentifier": "7",
   "excerpt": "Carlos Cuesta terminal setup with ZSH and Oh-My-ZSH, using materialshell and my dotfiles.",
   "html": "[object Object]",
-  "image": Object {
-    "featured": "https://res.cloudinary.com/carloscuesta/image/upload/v1454754838/kcuq34zbo1yieygmx0y6.png",
-    "preview": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png",
+  "images": Object {
+    "featured": Object {
+      "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1454754838/kcuq34zbo1yieygmx0y6.png",
+    },
+    "preview": Object {
+      "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png",
+      "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png",
+    },
   },
   "slug": "terminal-setup",
   "title": "Terminal setup",

@@ -25,7 +25,7 @@ const Article = (props: Props) => {
         dateModified={props.post.dateModified}
         datePublished={props.post.datePublished.value}
         description={props.post.excerpt}
-        images={[props.post.image.featured]}
+        images={[props.post.images.featured.src]}
         publisherLogo='/images/carloscuesta.jpg'
         publisherName='Carlos Cuesta'
         title={props.post.title}
@@ -50,7 +50,7 @@ const Article = (props: Props) => {
             {
               alt: props.post.title,
               height: 1530,
-              url: props.post.image.featured,
+              url: props.post.images.featured.src,
               width: 3003
             }
           ]
@@ -65,7 +65,7 @@ const Article = (props: Props) => {
       </Head>
 
       <FeaturedImage
-        image={props.post.image.featured}
+        image={props.post.images.featured.src}
         title={props.post.title}
       />
 
