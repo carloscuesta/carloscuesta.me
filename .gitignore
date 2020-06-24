@@ -7,6 +7,10 @@ node_modules
 # Coverage
 coverage
 
+# Next
+.next
+.vercel
+
 # OSX Files
 *.DS_Store
 

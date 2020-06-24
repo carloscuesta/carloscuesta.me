@@ -1,0 +1,74 @@
+.postContainer {
+  display: flex;
+}
+
+.post {
+  border-radius: 2px;
+  box-shadow: 0 1px 4px var(--shadowColor);
+  color: var(--text);
+  margin-bottom: 1em;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+.post:hover {
+  box-shadow: 0 8px 16px var(--shadowColor);
+  transform: translateY(-1px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .post {
+    background-color: var(--backgroundSurface);
+    box-shadow: none;
+  }
+
+  .post:hover {
+    background-color: var(--shadowColor);
+    box-shadow: none;
+  }
+}
+
+.postTitle {
+  margin: 0;
+  margin-bottom: .5em;
+}
+
+.postImage {
+  filter: blur(5px);
+  /* https://stackoverflow.com/questions/27532270/css-blur-weird-shadow-effect */
+  transform: translate3d(0, 0, 0);
+  transition: filter 200ms ease-in-out;
+  width: 100%;
+}
+
+.postImage:global(.lazyloaded) {
+  filter: blur(0);
+}
+
+@media(max-width: 768px) {
+  .postImage {
+    filter: unset;
+    transform: unset;
+    transition: unset;
+  }
+
+  .postImage:global(.lazyloaded) {
+    filter: unset;
+  }
+}
+
+.postContent {
+  padding: 1.5em;
+}
+
+.postPublishedAt {
+  color: var(--textSecondary);
+  font-size: 0.75em;
+  margin-right: 1em;
+  text-transform: uppercase;
+}
+
+.postExcerpt {
+  font-weight: 300;
+}

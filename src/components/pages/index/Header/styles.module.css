@@ -1,0 +1,53 @@
+.header {
+  padding: 4em;
+  text-align: center;
+}
+
+.name {
+  color: var(--primary);
+  display: inline;
+  font-size: 4em;
+  padding: 0 .25em;
+}
+
+.headline {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.job {
+  font-weight: 400;
+  margin: 1.25rem 0;
+}
+
+@keyframes wave {
+  0% { transform: rotate(  0.0deg) }
+  10% { transform: rotate(-10.0deg) }
+  20% { transform: rotate( 12.0deg) }
+  30% { transform: rotate(-10.0deg) }
+  40% { transform: rotate(  9.0deg) }
+  50% { transform: rotate(  0.0deg) }
+  100% { transform: rotate(  0.0deg) }
+}
+
+.wave {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 4em 1.5em;
+  }
+
+  .name, .headline {
+    font-size: 3em;
+  }
+
+  .job {
+    font-size: 2em;
+  }
+}

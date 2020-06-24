@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpenSource should match OpenSource component 1`] = `
+<section>
+  <div
+    className="wrapper"
+  >
+    <h3
+      className="sectionTitle"
+    >
+      Open Source
+    </h3>
+    <h5
+      className="sectionSubtitle"
+    >
+      Featured open source projects.
+    </h5>
+    <div
+      className="row"
+    >
+      <div
+        className="col-xs-12 col-sm-6 col-md-4 projectContainer"
+      >
+        <a
+          className="project javascript"
+          href="https://github.com/carloscuesta/gitmoji"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="gitmoji"
+        >
+          <h5
+            className="projectName"
+          >
+            gitmoji
+          </h5>
+          <p>
+            An emoji guide for your commit messages. 😜 
+          </p>
+          <p>
+            <span
+              className="starEmoji"
+            >
+              ⭐️
+            </span>
+            7323
+          </p>
+        </a>
+      </div>
+      <div
+        className="col-xs-12 col-sm-6 col-md-4 projectContainer"
+      >
+        <a
+          className="project javascript"
+          href="https://github.com/carloscuesta/gitmoji-cli"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="gitmoji-cli"
+        >
+          <h5
+            className="projectName"
+          >
+            gitmoji-cli
+          </h5>
+          <p>
+            A gitmoji interactive command line tool for using emojis on commits. 💻
+          </p>
+          <p>
+            <span
+              className="starEmoji"
+            >
+              ⭐️
+            </span>
+            2400
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+`;

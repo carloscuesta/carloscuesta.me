@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`404 page should match Error 404 page 1`] = `
+<Wrapper>
+  <div
+    className="row middle-xs error"
+  >
+    <div>
+      <div
+        className="col-xs-12"
+      >
+        <h1
+          className="headline"
+        >
+          Are you lost ?
+        </h1>
+        <h2>
+          The page you are looking for doesn't exists.
+        </h2>
+        <h3
+          className="title"
+        >
+          Here are some helpful links instead:
+        </h3>
+        <ul
+          className="links"
+        >
+          <li>
+            <a
+              href="/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="/blog"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Writings
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/crloscuesta"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Twitter
+            </a>
+          </li>
+        </ul>
+        <h4>
+          Error code: 404
+        </h4>
+      </div>
+    </div>
+  </div>
+</Wrapper>
+`;
