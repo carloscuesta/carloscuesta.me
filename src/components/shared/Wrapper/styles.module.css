@@ -1,11 +1,11 @@
 .wrapper {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 1.5em;
 }
 
 .wrapperCompressed {
   max-width: 824px;
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 1.5em;
 }
