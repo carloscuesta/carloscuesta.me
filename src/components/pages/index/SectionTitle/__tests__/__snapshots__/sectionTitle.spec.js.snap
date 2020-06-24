@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionTitle should match SectionTitle component 1`] = `
+Array [
+  <h3
+    className="sectionTitle"
+  >
+    Title
+  </h3>,
+  <h5
+    className="sectionSubtitle"
+  >
+    Subtitle
+  </h5>,
+]
+`;

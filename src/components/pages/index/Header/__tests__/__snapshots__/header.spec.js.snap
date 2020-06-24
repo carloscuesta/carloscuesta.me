@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should match Header component 1`] = `
+<header
+  className="header"
+>
+  <span
+    className="headline"
+  >
+    Hi! I'm
+  </span>
+  <h1
+    className="name"
+  >
+    Carlos Cuesta
+  </h1>
+  <span
+    className="wave headline"
+  >
+    👋🏼
+  </span>
+  <h2
+    className="job"
+  >
+    Front End Engineer
+  </h2>
+</header>
+`;

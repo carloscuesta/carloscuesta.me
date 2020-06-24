@@ -1,10 +1,9 @@
 language: node_js
 node_js:
-- 10.16.3
-before_install: npm install -g grunt-cli
+  - 12.17.0
 script:
-- npm test
-after_script: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - npm run test
+  - npm run test:coverage
 notifications:
   email: false
   slack:

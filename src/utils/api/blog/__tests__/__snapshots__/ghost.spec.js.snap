@@ -1,0 +1,486 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ghost API Client fetchPost should return a post with the slug terminal-setup 1`] = `
+Object {
+  "dateModified": "2016-02-06 15:55",
+  "datePublished": Object {
+    "formatDate": "06 February 2016",
+    "formatInWords": "over 4 years ago",
+    "value": "2016-02-06 15:55",
+  },
+  "disqusIdentifier": "7",
+  "excerpt": "Carlos Cuesta terminal setup with ZSH and Oh-My-ZSH, using materialshell and my dotfiles.",
+  "html": "<p><strong>Terminal</strong> is a place where a developer spends a lot of time, running commands, looking for outputs and doing a bunch of stuff, so better to stay comfortable and productive with it.</p>
+<h3>Shell</h3>
+<p>I use <a href=\\"http://www.zsh.org\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>ZSH</strong></a> as my main shell along with <a href=\\"http://ohmyz.sh\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>Oh-My-Zsh</strong></a>. By default, OS X comes with bash, a simpler shell. To setup ZSH and install Oh-My-Zsh run:</p>
+<pre><code class=\\"language-language-bash\\">$ chsh -s /bin/zsh
+$ sh -c \\"$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\\"
+</code></pre>
+<p>To see what shell are you using run:</p>
+<pre><code class=\\"language-language-bash\\">$ echo $SHELL
+</code></pre>
+<h3>UI</h3>
+<p>After setting up ZSH and Oh-My-Zsh, now we are ready to customize and put our shell on steroids.</p>
+<p>I use a theme called <a href=\\"https://github.com/carloscuesta/materialshell\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>materialshell</strong></a> that I've made for my own.</p>
+<p><a href=\\"https://github.com/carloscuesta/materialshell/blob/master/README.md\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>Follow this guide to install and setup my terminal</strong>.</a></p>
+<p><img src=\\"https://res.cloudinary.com/carloscuesta/image/upload/v1454753967/gazne7uhxuq8ugpfvile.png\\" alt=\\"Carlos Cuesta Shell - MaterialShell\\"></p>
+<h3>Dotfiles</h3>
+<p>I have my own <a href=\\"https://github.com/carloscuesta/dotfiles\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>dotfiles repository</strong></a> with all my shell configuration files, where you can take a look to learn and be more productive with your shell.</p>
+",
+  "images": Object {
+    "featured": Object {
+      "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1454754838/kcuq34zbo1yieygmx0y6.png",
+    },
+    "preview": Object {
+      "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png",
+      "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png",
+    },
+  },
+  "slug": "terminal-setup",
+  "title": "Terminal setup",
+}
+`;
+
+exports[`Ghost API Client fetchPosts should return an array of posts sorted by datePublished 1`] = `
+Array [
+  Object {
+    "dateModified": "2019-10-01 22:15",
+    "datePublished": Object {
+      "formatDate": "01 October 2019",
+      "formatInWords": "9 months ago",
+      "value": "2019-10-01 22:15",
+    },
+    "disqusIdentifier": "5bc9ff9949ac5006c0a84f00",
+    "excerpt": "A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example",
+    "html": "<h3>What is a monorepo ?</h3>
+<p>The monorepo term is a compound word between <em>\\"mono\\"</em>, from Ancient Greek <a href=\\"https://en.wiktionary.org/wiki/mono-#Etymology\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><em>\\"mónos\\"</em></a>, that means <em>\\"single\\"</em> and <em>\\"repo\\"</em> as a shorthand of <em>\\"repository\\"</em>.</p>
+<blockquote>
+<p>A monorepo is a strategy for storing code and projects in a single repository.</p>
+</blockquote>
+<h3>What are they useful for ?</h3>
+<h5>♻️ Reusing isolated pieces of code</h5>
+<p>Monorepos allow you to reuse packages and code from another modules while keeping them independent and isolated. This is particularly useful when you have a ton of code that you're constantly repeating on different projects.</p>
+<h5>🧰 Simplifying dependencies management</h5>
+<p>Dependencies are hoisted to the root level of the project, that means you can share dependencies across all the packages that you have in your monorepo. This reduces the overhead from updating and managing multiple versions of the same dependency.</p>
+<h5>🛠 Refactoring cross-project changes</h5>
+<p>Making cross-repo changes within different repositories is painful. Typically involves manual coordination between teams and repos. For example let's say you have an API that is used by many clients and you want to make a breaking change into the contract. It's not trivial to apply the update to all the clients and then coordinate the deploy of the projects and so on. With a monorepo it's easier since everything is contained in a single unit.</p>
+<p>Before considering to implement a monorepo architecture, make sure you have the problems that this concept solves ⚠️. There's <strong>no need to overengineer</strong> a project. Remember <strong>keep it simple</strong> ✨</p>
+<h3>The tools</h3>
+<ul>
+<li>🐉 <strong><a href=\\"https://lerna.js.org\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Lerna</a></strong>: The tool for managing the monorepo packages.</li>
+<li>📦 <strong><a href=\\"https://yarnpkg.com/lang/en/docs/workspaces/\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Yarn Workspaces</a></strong>: Multiple packages architecture.</li>
+</ul>
+<p>Now that we know what is a monorepo, the tools that we're going to use and what are they useful for, let's create a real example to see how it works.</p>
+<h3>Creating the monorepo</h3>
+<h5>Setup</h5>
+<p>Let's begin creating our monorepo 👏. The first thing we need to do is define the structure of the project. In this example I created two directories:</p>
+<ul>
+<li>📁 <code>packages/</code>: This directory will contain the isolated modules that we are going to reuse on all the applications.</li>
+<li>📁 <code>applications/</code>: This directory will contain all the applications of our monorepo.</li>
+</ul>
+<pre><code>.
+└── src
+    ├── applications
+    └── packages
+</code></pre>
+<p>After that, we're going to create <code>package.json</code> to define the <code>workspaces</code> and dependencies of our monorepo.</p>
+<p>The <code>workspaces</code> field is what <a href=\\"https://yarnpkg.com/lang/en/docs/workspaces/#toc-how-to-use-it\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Yarn</a> uses to symlink our code to the <code>node_modules</code> in order to reuse and import the code, we'll see this later on.</p>
+<p>Finally we install <code>lerna</code> as a <code>devDependency</code> to manage the monorepo.</p>
+<pre><code class=\\"language-json\\">{
+  \\"private\\": true,
+  \\"engines\\": {
+    \\"yarn\\": \\">=1.17.3\\"
+  },
+  \\"name\\": \\"monorepo-example\\",
+  \\"workspaces\\": [
+    \\"src/applications/*\\",
+    \\"src/packages/*\\"
+  ],
+  \\"scripts\\": {},
+  \\"devDependencies\\": {
+    \\"lerna\\": \\"latest\\"
+  }
+}
+</code></pre>
+<p>Now, let's define how Lerna is going to manage our monorepo in a <code>lerna.json</code> configuration file.</p>
+<ul>
+<li><code>packages</code>: The directories that we defined as <code>workspaces</code> in the <code>package.json</code>.</li>
+<li><a href=\\"https://github.com/lerna/lerna/tree/master/commands/bootstrap#--npm-client-client\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><code>npmClient</code></a>: The client used to run the commands.</li>
+<li><a href=\\"https://github.com/lerna/lerna/tree/master/commands/bootstrap#--use-workspaces\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><code>useWorkspaces</code></a>: This flag tells lerna that we're going to use <strong>yarn workspaces</strong>.</li>
+</ul>
+<pre><code class=\\"language-json\\">{
+  \\"lerna\\": \\"latest\\",
+  \\"packages\\": [
+    \\"src/applications/*\\",
+    \\"src/packages/*\\"
+  ],
+  \\"version\\": \\"1.0.0\\",
+  \\"npmClient\\": \\"yarn\\",
+  \\"useWorkspaces\\": true
+}
+</code></pre>
+<p>We finished our setup 🙌! Let's add some simple code to see how we can manage and reuse packages on our monorepo.</p>
+<h5>Creating packages</h5>
+<p>A package inside our monorepo context, is an isolated and reusable piece of code. That means, every time we want to create a new package, we're going to create a new independent directory.</p>
+<pre><code>.
+└── packages
+    └── sayHello
+        ├── index.js
+        └── package.json
+</code></pre>
+<p>Each package needs to have a <code>package.json</code> with the <code>name</code> and <code>version</code> <strong>fields defined</strong>. This is important because this describes how we're going to import and use this package on the code base. You can also have dependencies in your package if you need them. On this example I'm writing a simple package called <code>sayHello</code>.</p>
+<pre><code class=\\"language-json\\">{
+  \\"name\\": \\"@packages/sayHello\\",
+  \\"version\\": \\"1.0.0\\",
+}
+</code></pre>
+<p>Think of every directory inside the <code>packages/</code> folder as an <strong>isolated module</strong>, with his own <strong>tests</strong>, <strong>dependencies</strong> and <strong>code</strong>.</p>
+<pre><code class=\\"language-js\\">const sayHello = (name) => {
+  console.log(\`Hello \${name} 👋🏼\`)
+
+  return name
+}
+
+module.exports = sayHello
+</code></pre>
+<h5>Using packages</h5>
+<p>This was pretty simple right? Now let's say that we have an application that it's called <code>cli</code>. In order to use <code>sayHello</code> package we should <strong>add it</strong> as a <code>dependency</code> on the <code>package.json</code> file. To do that we have a fancy <code>yarn</code> command 🎉</p>
+<pre><code>yarn workspace @applications/cli add @packages/sayHello@1.0.0
+</code></pre>
+<p>Now from our <code>cli</code> application we can <strong>import</strong> and <strong>use</strong> the package! 💯</p>
+<pre><code class=\\"language-js\\">const sayHello = require('@packages/sayHello')
+
+sayHello('Carlos')
+</code></pre>
+<p>Finally, we run our <code>cli</code> application from the command line using Lerna 🚀</p>
+<p><img src=\\"https://res.cloudinary.com/carloscuesta/image/upload/monorepo-workspaces.png\\" alt=\\"monorepo-workspaces\\"></p>
+<p>You can find the example explained on the post on <a href=\\"https://github.com/carloscuesta/monorepo-example\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">this GitHub repository</a> 👀. I know this was <strong>pretty simple</strong>, but there are a <strong>ton of things you can do with monorepos</strong>! For example you can share react components in different applications while keeping them isolated. But take a look below 👇 to see monorepos on big open source projects!</p>
+<h3>Opensource monorepo projects</h3>
+<p>Here's a list of well known open source projects that are using the monorepo architecture:</p>
+<ul>
+<li><a href=\\"https://github.com/facebook/react\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">React</a></li>
+<li><a href=\\"https://github.com/babel/babel\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Babel</a></li>
+<li><a href=\\"https://github.com/facebook/jest\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Jest</a></li>
+<li><a href=\\"https://github.com/storybookjs/storybook\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Storybook</a></li>
+</ul>
+",
+    "images": Object {
+      "featured": Object {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+      },
+      "preview": Object {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+      },
+    },
+    "slug": "javascript-monorepos-lerna-yarn-workspaces",
+    "title": "JavaScript monorepos with Lerna and Yarn Workspaces",
+  },
+  Object {
+    "dateModified": "2019-09-12 17:00",
+    "datePublished": Object {
+      "formatDate": "12 September 2019",
+      "formatInWords": "10 months ago",
+      "value": "2019-09-12 17:00",
+    },
+    "disqusIdentifier": "5d78d0fcf942665cd6becd9a",
+    "excerpt": "I'm going to explain why it's important and how you can use error boundaries in a React-Native application to improve error resiliency 👨‍💻",
+    "html": "<p><a href=\\"https://github.com/facebook/react/blob/master/CHANGELOG.md#1600-september-26-2017\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">React 16</a> released a new concept called <a href=\\"https://reactjs.org/docs/error-boundaries.html#introducing-error-boundaries\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>Error Boundary</strong></a>. This concept introduces a new way to catch <strong>JavaScript errors</strong> 🐛 in a React project.</p>
+<p>In this post I'm going to explain why it's important and how you can use error boundaries in a React-Native application to improve error resiliency, so let's get into it! 👨‍💻</p>
+<h3>Why you should use them ?</h3>
+<p>According to the <a href=\\"https://reactjs.org/docs/error-boundaries.html#new-behavior-for-uncaught-errors\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">official React docs</a> 📘:</p>
+<blockquote>
+<p>As of <strong>React 16</strong>, <strong>errors</strong> that were <strong>not caught</strong> by any <strong>error boundary</strong> will <strong>result</strong> in <strong>unmounting</strong> of the <strong>whole</strong> React <strong>component tree</strong> 😱.</p>
+</blockquote>
+<p><strong>Unmounting</strong> the <strong>whole</strong> React <strong>component</strong> tree, <strong>means</strong> that if you don't catch errors at all the <strong>user</strong> will <strong>see</strong> an <strong>empty white screen</strong> 💥. Most of the time without having any feedback. This is not a great UX ❌, fortunately you can <strong>fix</strong> this by <strong>using</strong> Error Boundaries ✅.</p>
+<p><img src=\\"https://res.cloudinary.com/carloscuesta/image/upload/react-native-error-unmounted-tree.png\\" alt=\\"React-Native unmounted component tree error\\"></p>
+<h3>How to use Error Boundaries</h3>
+<p>To benefit from Error Boundaries, we'll have to <strong>create</strong> a <strong>stateful component</strong> that will use the following lifecycle methods ♻️:</p>
+<ul>
+<li><a href=\\"https://reactjs.org/docs/react-component.html#static-getderivedstatefromerror\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><code>getDerivedStateFromError</code></a>: This method is going to update the component state to display a fallback UI.</li>
+<li><a href=\\"https://reactjs.org/docs/react-component.html#componentdidcatch\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><code>componentDidCatch</code></a>: This method should be used to log the error to an external service.</li>
+</ul>
+<p>So let's create the component that will catch errors in our application:</p>
+<pre><code class=\\"language-jsx\\">class ErrorBoundary extends React.Component {
+  state = { hasError: false }
+
+  static getDerivedStateFromError (error) {
+    return { hasError: true }
+  }
+
+  componentDidCatch (error, info) {
+    logErrorToService(error, info.componentStack)
+  }
+
+  render () {
+    return this.state.hasError
+      ? &#x3C;FallbackComponent />
+      : this.props.children
+  }
+}
+</code></pre>
+<p>Pretty <strong>simple</strong> right? With a few lines of code, you can catch errors on your React-Native app 🎉</p>
+<p>To use it, all you need to do now is to <strong>wrap it around any component that could throw an error</strong>.</p>
+<pre><code class=\\"language-jsx\\">const App = () => (
+  &#x3C;ErrorBoundary>
+    &#x3C;Children />
+  &#x3C;/ErrorBoundary>
+)
+</code></pre>
+<p>This component will catch <strong>all the errors</strong> that are thrown by <strong>any</strong> of his <strong>children</strong>. A common thing is to use it at the <strong>top level of your application</strong> 🔝 to catch anything without having to use it on every screen or route 👏</p>
+<p>That's how our <code>FallbackComponent</code> looks whenever an error is thrown by our application 😍</p>
+<p><img src=\\"https://res.cloudinary.com/carloscuesta/image/upload/react-native-error-boundary.png\\" alt=\\"react-native-error-boundary\\"></p>
+<p>⚠️ <strong>Error Boundaries only catch JavaScript errors</strong>, all the native crashes that your application might have are not handled.</p>
+<h3>Introducing <a href=\\"https://github.com/carloscuesta/react-native-error-boundary\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><code>react-native-error-boundary</code></a></h3>
+<p>Few months ago, I created a <strong>simple</strong>, <strong>flexible</strong> and <strong>reusable</strong> React-Native <strong>error boundary component</strong>. <a href=\\"https://github.com/carloscuesta/react-native-error-boundary\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">Take a look into it</a> 👀 if you're thinking about adding error boundaries to your app!</p>
+",
+    "images": Object {
+      "featured": Object {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/handling-react-native-errors-with-error-boundaries.png",
+      },
+      "preview": Object {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/handling-react-native-errors-with-error-boundaries.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/handling-react-native-errors-with-error-boundaries.png",
+      },
+    },
+    "slug": "managing-react-native-crashes-with-error-boundaries",
+    "title": "Managing React-Native crashes with Error Boundaries",
+  },
+  Object {
+    "dateModified": "2018-10-16 12:10",
+    "datePublished": Object {
+      "formatDate": "16 October 2018",
+      "formatInWords": "over 1 year ago",
+      "value": "2018-10-16 12:10",
+    },
+    "disqusIdentifier": "5b6c646126d36606d1805ab3",
+    "excerpt": "Creating scalable React components using the folder pattern. A simple way to organize and structure React Components.",
+    "html": "<p>It's been a while since I've started working with <a href=\\"http://reactjs.org\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>React</strong></a> and <a href=\\"https://facebook.github.io/react-native/\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>React-Native</strong></a> in production. One of the <strong>greatest things</strong> about <strong>React</strong> is the <strong>flexibility</strong> the library gives to you. Meaning that you are free to decide how do you want to implement almost every detail of your project for example the <em>architecture and structure</em>.</p>
+<p>However this freedom on the long term, could lead to a complex and messy codebase, specially if you don't follow a pattern. In this post I'll explain <strong>a simple way</strong> to <strong>organize</strong> and <strong>structure</strong> React <strong>Components</strong>.</p>
+<blockquote>
+<p>A Component is a <strong>JavaScript</strong> <strong>function</strong> or class that <strong>returns</strong> a <strong>piece of UI</strong>.</p>
+</blockquote>
+<p>We're going to create an <code>EmojiList</code> component and then we are going to refactor it breaking it up into smaller isolated pieces applying the <strong>folder pattern</strong>. Here's how our component looks like:</p>
+<p><img src=\\"https://res.cloudinary.com/carloscuesta/image/upload/emojilist-compressed.png\\" alt=\\"emojilist\\"></p>
+<h3>EmojiList</h3>
+<p>As I mentioned before, we can start really simple and small, without following any pattern. This is our <code>EmojiList</code> component contained in a single function.</p>
+<iframe src=\\"https://codesandbox.io/embed/3vjxn0ykyq?autoresize=1&module=%2Fsrc%2Fcomponents%2FEmojiList.js&view=preview\\" style=\\"width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;\\" sandbox=\\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\\"></iframe>
+<p>If you open the <em>CodeSandbox sidebar</em> you'll see that our file tree looks like this:</p>
+<pre><code>.
+├── components
+│   ├── EmojiList.js
+│   └── styles.js
+└── index.js
+</code></pre>
+<p>There's <strong>nothing wrong with this approach</strong>. But on <strong>larger codebases</strong> that kind of component <strong>becomes hard to maintain</strong>, because there a lot of things in it: <em>state</em>, <em>ui</em>, <em>data</em>... Take a look at our component code below 👇</p>
+<p><code>EmojiList.js</code></p>
+<pre><code class=\\"language-jsx\\">import React from \\"react\\"
+
+import styles from \\"./styles\\"
+
+class EmojiList extends React.Component {
+  state = {
+    searchInput: \\"\\",
+    emojis: []
+  }
+
+  render() {
+    const emojis = this.state.emojis.filter(emoji =>
+      emoji.code.includes(this.state.searchInput.toLowerCase())
+    )
+
+    return (
+      &#x3C;ul style={styles.list}>
+        &#x3C;input
+          style={styles.searchInput}
+          placeholder=\\"Search by name\\"
+          type=\\"text\\"
+          value={this.state.searchInput}
+          onChange={event => this.setState({ searchInput: event.target.value })}
+        />
+        {emojis.map((emoji, index) => (
+          &#x3C;li key={index} style={styles.item}>
+            &#x3C;div style={styles.icon}>{emoji.emoji}&#x3C;/div>
+            &#x3C;div style={styles.content}>
+              &#x3C;code style={styles.code}>{emoji.code}&#x3C;/code>
+              &#x3C;p style={styles.description}>{emoji.description}&#x3C;/p>
+            &#x3C;/div>
+          &#x3C;/li>
+        ))}
+      &#x3C;/ul>
+    )
+  }
+}
+
+export default EmojiList
+</code></pre>
+<p>A step to improve this code, would be to create separate components into the same file and then using them at the main component. However, you'll be sharing styles among other things and that could be confusing.</p>
+<h4>Refactor</h4>
+<p>Let's start refactoring the single component into multiple ones by <a href=\\"https://reactjs.org/docs/thinking-in-react.html#step-1-break-the-ui-into-a-component-hierarchy\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">breaking up the UI into a component hierarchy</a>.</p>
+<p><img src=\\"https://res.cloudinary.com/carloscuesta/image/upload/emojilist-breakdown.png\\" alt=\\"emojilist-breakdown\\"></p>
+<p>If we take a look at the image, it's easy to identify that we can <strong>break</strong> up our <strong>UI</strong> in <strong>three</strong> different <strong>components</strong>: 🛠</p>
+<ul>
+<li><span style=\\"color: #039be5\\"><strong><code>EmojiList</code></strong></span>: Combines the smaller components and shares the state down.<ul>
+<li><span style=\\"color: #d81b60\\"><strong><code>SearchInput</code></strong></span>: Receives user input and displays the search bar.</li>
+<li><span style=\\"color: #fbc02d\\"><strong><code>EmojiListItem</code></strong></span>: Displays the List Item for each emoji, with the <em>icon</em>, <em>name</em> and <em>description</em>.</li>
+</ul></li>
+</ul>
+<p>We're going to <strong>create</strong> a <strong>folder</strong> for <strong>each</strong> <strong>component</strong>, with two files, an <code>index.js</code> that is going to hold all the code for the component and the <code>styles.js</code>. That's one of the good things about this pattern. Every component defines his own UI and styles, <strong>isolating</strong> this piece of <strong>code from</strong> another <strong>components</strong> that <strong>doesn't need to know anything about them</strong>.</p>
+<iframe src=\\"https://codesandbox.io/embed/lx8ykrljl9?autoresize=1&module=%2Fsrc%2Fcomponents%2FEmojiList.js&view=preview\\" style=\\"width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;\\" sandbox=\\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\\"></iframe>
+<p>Notice that inside the <code>EmojiList</code> folder, (<em>that is a component</em>), we add two nested components that only will be used within the <code>EmojiList</code> component. Again, that's because these two components aren't going to be used out of that context. This helps reducing the visual clutter a lot.</p>
+<pre><code>.
+├── EmojiList
+│   ├── EmojiListItem
+│   │   ├── index.js
+│   │   └── styles.js
+│   ├── SearchInput
+│   │   ├── index.js
+│   │   └── styles.js
+│   ├── index.js
+│   └── styles.js
+└── index.js
+</code></pre>
+<p>Now let's isolate and separate the code into the three components from the smallest to the biggest one:</p>
+<p><code>EmojiListItem/</code></p>
+<p>This component renders every emoji item that will appear on the list.</p>
+<pre><code class=\\"language-jsx\\">import React from \\"react\\"
+
+import styles from \\"./styles\\"
+
+const EmojiListItem = (props) => (
+  &#x3C;li style={styles.item}>
+    &#x3C;div style={styles.icon}>{props.emoji}&#x3C;/div>
+    &#x3C;div style={styles.content}>
+      &#x3C;code style={styles.code}>{props.code}&#x3C;/code>
+      &#x3C;p style={styles.description}>{props.description}&#x3C;/p>
+    &#x3C;/div>
+  &#x3C;/li>
+)
+
+export default EmojiListItem
+</code></pre>
+<p><code>SearchInput/</code></p>
+<p>This component receives the user input and updates the state of the parent component.</p>
+<pre><code class=\\"language-jsx\\">import React from \\"react\\"
+
+import styles from \\"./styles\\"
+
+const SearchInput = (props) => (
+  &#x3C;input
+    style={styles.searchInput}
+    placeholder=\\"Search by name\\"
+    type=\\"text\\"
+    value={props.value}
+    onChange={props.onChange}
+  />
+)
+
+export default SearchInput
+</code></pre>
+<p><code>EmojiList/</code></p>
+<p>This is the top level component, holds the state and data of our example and imports the other components to recreate the whole UI of our tiny application. Isolating components makes the render method more readable and easier to understand ✨.</p>
+<pre><code class=\\"language-jsx\\">import React from \\"react\\"
+
+import SearchInput from \\"./SearchInput\\"
+import EmojiListItem from \\"./EmojiListItem\\"
+import styles from \\"./styles\\"
+
+class EmojiList extends React.Component {
+  state = {
+    searchInput: \\"\\",
+    emojis: []
+  }
+
+  render() {
+    const emojis = this.state.emojis.filter(emoji =>
+      emoji.code.includes(this.state.searchInput.toLowerCase())
+    )
+
+    return (
+      &#x3C;ul style={styles.list}>
+        &#x3C;SearchInput
+          onChange={(event) => this.setState({ searchInput: event.target.value })}
+          value={this.state.searchInput}
+        />
+        {emojis.map((emoji, index) => (
+          &#x3C;EmojiListItem
+            key={index}
+            code={emoji.code}
+            description={emoji.description}
+            emoji={emoji.emoji}
+          />
+        ))}
+      &#x3C;/ul>
+    )
+  }
+}
+
+export default EmojiList
+</code></pre>
+<p>That's basically the architecture that I use at the company I'm working on. I'm <strong>pretty satisfied</strong> with the <strong>experience</strong> of using this pattern. Our components turned out a lot easier to maintain and use. Anyway there are <strong>no silver bullets</strong> on Software Engineering, so <strong>figure what works best for you</strong> or your team!</p>
+",
+    "images": Object {
+      "featured": Object {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/scalable-react-components.png",
+      },
+      "preview": Object {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/scalable-react-components.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/scalable-react-components.png",
+      },
+    },
+    "slug": "scalable-react-components-architecture",
+    "title": "Scalable React Components architecture",
+  },
+]
+`;
+
+exports[`Ghost API Client getPostSlugs should match getPostSlugs 1`] = `
+Array [
+  "2016-year-in-review",
+  "chrome-devtools-customization",
+  "debugging-with-the-javascript-console",
+  "discovering-hyperterm",
+  "git-development-workflow",
+  "greenkeeper",
+  "hello-world",
+  "how-to-deploy-static-sites-with-surge",
+  "https-cloudflare",
+  "javascript-monorepos-lerna-yarn-workspaces",
+  "keep-npm-dependencies-up-to-date",
+  "managing-react-native-crashes-with-error-boundaries",
+  "mastering-and-hacking-slack",
+  "moving-to-digitalocean",
+  "react-amsterdam-2017",
+  "react-native-meets-codepush",
+  "reactiveconf-2017",
+  "scalable-react-components-architecture",
+  "shipping-react-native-apps-with-fastlane",
+  "shipping-react-native-fastlane-travis",
+  "terminal-setup",
+]
+`;
+
+exports[`Ghost API Client mutators transformPost should match the mutated post 1`] = `
+Object {
+  "dateModified": "2016-02-06 15:55",
+  "datePublished": Object {
+    "formatDate": "06 February 2016",
+    "formatInWords": "over 4 years ago",
+    "value": "2016-02-06 15:55",
+  },
+  "disqusIdentifier": "7",
+  "excerpt": "Carlos Cuesta terminal setup with ZSH and Oh-My-ZSH, using materialshell and my dotfiles.",
+  "html": "[object Object]",
+  "images": Object {
+    "featured": Object {
+      "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1454754838/kcuq34zbo1yieygmx0y6.png",
+    },
+    "preview": Object {
+      "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png",
+      "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png",
+    },
+  },
+  "slug": "terminal-setup",
+  "title": "Terminal setup",
+}
+`;

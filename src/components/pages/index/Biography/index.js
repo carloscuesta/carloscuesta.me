@@ -1,0 +1,40 @@
+// @flow
+import React from 'react'
+
+import Wrapper from 'src/components/shared/Wrapper'
+import styles from './styles.module.css'
+
+const Biography = () => (
+  <section className={styles.biography}>
+    <Wrapper>
+      <div className='row middle-xs'>
+        <div className='col-xs-12 col-sm-6'>
+          <h3 className={styles.biographyText}>
+            I'm a 24 years old <b>Front End Engineer</b> based in <b>Barcelona</b>,
+            working at <a href='https://ulabox.com' rel='noopener noreferrer'><b>Ulabox</b></a>.
+            I'm a coding addicted that is focused on JavaScript, specifically in React and React-Native.
+            I like design, technology, sneakers and I ❤️ <b>OpenSource</b>.
+          </h3>
+
+          <h3 className={styles.biographyText}>
+            You can find me on{' '}
+            <a href='https://github.com/carloscuesta' target='_blank' rel='noopener noreferrer'>GitHub</a>,{' '}
+            <a href='https://twitter.com/crloscuesta' target='_blank' rel='noopener noreferrer'>Twitter</a>{' and '}
+            <a href='https://linkedin.com/in/crloscuesta' target='_blank' rel='noopener noreferrer'>LinkedIn</a>
+          </h3>
+        </div>
+
+        <div className='col-xs-12 col-sm-6'>
+          <img
+            alt='Carlos Cuesta'
+            className={styles.profilePicture}
+            src='images/carloscuesta.jpg'
+          />
+        </div>
+      </div>
+    </Wrapper>
+
+  </section>
+)
+
+export default Biography

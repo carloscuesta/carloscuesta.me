@@ -1,0 +1,31 @@
+.footer {
+  background-color: var(--backgroundSurface);
+  padding: 2em 1.5em;
+}
+
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links li {
+  padding: 0;
+  margin: 0;
+  padding-right: 1em;
+}
+
+@media(max-width: 768px) {
+  .footerContent {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

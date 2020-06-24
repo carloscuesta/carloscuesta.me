@@ -1,0 +1,26 @@
+.scrollablePosts {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.scrollablePosts:global(::-webkit-scrollbar) {
+  -webkit-appearance: none;
+  height: .5em;
+}
+
+.scrollablePosts:global(::-webkit-scrollbar-thumb) {
+  border-radius: 4px;
+  background-color: var(--textSecondary);
+}
+
+.scrollablePosts:global(::-webkit-scrollbar-track) {
+  border-radius: 4px;
+  box-shadow: 0 1px 4px var(--shadowColor);
+  margin: 0 1.15em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .scrollablePosts:global(::-webkit-scrollbar-track) {
+    box-shadow: none;
+  }
+}

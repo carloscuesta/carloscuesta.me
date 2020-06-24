@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`_app page should match App page 1`] = `
+<Layout>
+  <DefaultSeo
+    description="I'm a Front End engineer based in Barcelona, Spain. Coding addicted that is focused on JavaScript. I like design, technology, sneakers and I ❤️ OpenSource."
+    openGraph={
+      Object {
+        "locale": "en_GB",
+        "site_name": "Carlos Cuesta",
+        "type": "website",
+        "url": "https://carloscuesta.me",
+      }
+    }
+    title="Carlos Cuesta – Front End Engineer"
+    twitter={
+      Object {
+        "cardType": "summary_large_image",
+        "handle": "@crloscuesta",
+        "site": "@crloscuesta",
+      }
+    }
+  />
+  <div
+    test=""
+  >
+    Component
+  </div>
+</Layout>
+`;

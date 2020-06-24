@@ -1,0 +1,19 @@
+.biography {
+  background-color: var(--backgroundSurface);
+  color: var(--text);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.biographyText {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.profilePicture {
+  border-radius: 50%;
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 385px;
+}

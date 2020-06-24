@@ -1,0 +1,56 @@
+.projectContainer {
+  display: flex;
+}
+
+.project {
+  border-radius: 2px;
+  border-top-color: var(--textSecondary);
+  border-top: 4px solid;
+  box-shadow: 0 1px 4px var(--shadowColor);
+  color: var(--text);
+  flex: 1;
+  margin-bottom: 1em;
+  padding: 2.5em;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+@media(max-width: 768px) {
+  .project {
+    padding: 1.5em;
+  }
+}
+
+.project:hover {
+  box-shadow: 0 8px 16px var(--shadowColor);
+  transform: translateY(-1px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .project {
+    background-color: var(--backgroundSurface);
+    box-shadow: none;
+  }
+
+  .project:hover {
+    background-color: var(--shadowColor);
+    box-shadow: none;
+  }
+}
+
+.projectName {
+  margin: 0;
+}
+
+.project:global(.javascript) {
+  border-top-color: #FBDD51;
+}
+
+.project:global(.shell) {
+  border-top-color: #89E051;
+}
+
+.starEmoji {
+  font-size: .95em;
+  padding-right: .75em;
+}

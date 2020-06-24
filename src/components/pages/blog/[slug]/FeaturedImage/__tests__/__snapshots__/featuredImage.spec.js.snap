@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeaturedImage should match FeaturedImage component 1`] = `
+<header
+  className="header"
+>
+  <img
+    alt="post title"
+    className="lazyload image"
+    data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1454754838/kcuq34zbo1yieygmx0y6.png"
+    title="post title"
+  />
+</header>
+`;
