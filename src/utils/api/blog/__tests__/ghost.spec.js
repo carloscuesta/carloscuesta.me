@@ -3,6 +3,9 @@ import { transformPost } from '../mutators'
 
 import postFixture from './fixtures/post'
 
+/* Mock Date.now to avoid updating snapshots for formatDistanceToNow */
+Date.now = jest.fn(() => 1593025862540)
+
 describe('Ghost API Client', () => {
   describe('getPostSlugs', () => {
     it('should match getPostSlugs', () => {

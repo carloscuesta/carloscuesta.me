@@ -72,11 +72,6 @@ Array [
             }
           }
         />
-        <div
-          className="col-xs-12"
-        >
-          <hr />
-        </div>
       </div>
       <div
         className="row"
@@ -140,11 +135,6 @@ Array [
             }
           }
         />
-        <div
-          className="col-xs-12"
-        >
-          <hr />
-        </div>
       </div>
       <div
         className="row"
@@ -208,11 +198,6 @@ Array [
             }
           }
         />
-        <div
-          className="col-xs-12"
-        >
-          <hr />
-        </div>
       </div>
     </div>
   </main>,

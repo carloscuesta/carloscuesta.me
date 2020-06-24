@@ -15,6 +15,9 @@ jest.mock('src/utils/api/blog')
 
 jest.mock('src/components/shared/BlogPost', () => 'BlogPost')
 
+/* Mock Date.now to avoid updating snapshots for formatDistanceToNow */
+Date.now = jest.fn(() => 1593025862540)
+
 describe('blog', () => {
   describe('page', () => {
     it('should match blog page', () => {
