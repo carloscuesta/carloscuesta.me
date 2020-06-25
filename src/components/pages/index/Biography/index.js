@@ -10,10 +10,10 @@ const Biography = () => (
       <div className='row middle-xs'>
         <div className='col-xs-12 col-sm-6'>
           <h3 className={styles.biographyText}>
-            I'm a 24 years old <b>Front End Engineer</b> based in <b>Barcelona</b>,
+            I'm a 24 years old <b>Front End Engineer</b> based in <b>Barcelona</b> ☀️,
             working at <a href='https://ulabox.com' rel='noopener noreferrer'><b>Ulabox</b></a>.
-            I'm a coding addicted that is focused on JavaScript, specifically in React and React-Native.
-            I like design, technology, sneakers and I ❤️ <b>OpenSource</b>.
+            I'm a coding addicted that is focused on <b>JavaScript</b>, specifically in React and React-Native.
+            Interested in design, technology, sneakers and <b>OpenSource</b> ❤️.
           </h3>
 
           <h3 className={styles.biographyText}>
