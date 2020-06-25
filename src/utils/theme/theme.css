@@ -143,11 +143,45 @@ hr {
 .postDetail h5,
 .postDetail h6 {
   line-height: 1.15;
+  position: relative;
+}
+
+.postDetail h1 a,
+.postDetail h2 a,
+.postDetail h3 a,
+.postDetail h4 a,
+.postDetail h5 a,
+.postDetail h6 a {
+  left: 0;
+  opacity: 0;
+  padding-right: 1rem;
+  position: absolute;
+  top: 0;
+  transform: translateX(-100%);
+}
+
+.postDetail h1:hover a,
+.postDetail h2:hover a,
+.postDetail h3:hover a,
+.postDetail h4:hover a,
+.postDetail h5:hover a,
+.postDetail h6:hover a {
+  opacity: 1;
+  outline: none;
 }
 
 @media (max-width: 768px) {
   .postDetail h1 {
     font-size: 2em;
+  }
+
+  .postDetail h1 a,
+  .postDetail h2 a,
+  .postDetail h3 a,
+  .postDetail h4 a,
+  .postDetail h5 a,
+  .postDetail h6 a {
+    display: none;
   }
 }
 
