@@ -24,7 +24,7 @@ exports[`Biography should match Biography component 1`] = `
           <b>
             Barcelona
           </b>
-          , working at 
+           ☀️, working at 
           <a
             href="https://ulabox.com"
             rel="noopener noreferrer"
@@ -33,11 +33,15 @@ exports[`Biography should match Biography component 1`] = `
               Ulabox
             </b>
           </a>
-          . I'm a coding addicted that is focused on JavaScript, specifically in React and React-Native. I like design, technology, sneakers and I ❤️ 
+          . I'm a coding addicted that is focused on 
+          <b>
+            JavaScript
+          </b>
+          , specifically in React and React-Native. Interested in design, tech and 
           <b>
             OpenSource
           </b>
-          .
+           ❤️
         </h3>
         <h3
           className="biographyText"

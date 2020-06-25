@@ -27,12 +27,20 @@ const App = (props: Props) => {
         title='Carlos Cuesta – Front End Engineer'
         description={'I\'m a Front End engineer based in Barcelona, Spain. ' +
           'Coding addicted that is focused on JavaScript. ' +
-        'I like design, technology, sneakers and I ❤️ OpenSource.'}
+        'Interested in design, technology, sneakers and OpenSource ❤️.'}
         openGraph={{
           type: 'website',
           locale: 'en_GB',
           url: 'https://carloscuesta.me',
-          site_name: 'Carlos Cuesta'
+          site_name: 'Carlos Cuesta',
+          images: [
+            {
+              alt: 'Carlos Cuesta',
+              height: 600,
+              url: 'https://carloscuesta.me/images/twitter-card.png',
+              width: 1200
+            }
+          ]
         }}
         twitter={{
           handle: '@crloscuesta',

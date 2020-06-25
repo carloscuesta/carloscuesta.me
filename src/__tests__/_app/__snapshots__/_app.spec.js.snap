@@ -3,9 +3,17 @@
 exports[`_app page should match App page 1`] = `
 <Layout>
   <DefaultSeo
-    description="I'm a Front End engineer based in Barcelona, Spain. Coding addicted that is focused on JavaScript. I like design, technology, sneakers and I ❤️ OpenSource."
+    description="I'm a Front End engineer based in Barcelona, Spain. Coding addicted that is focused on JavaScript. Interested in design, technology, sneakers and OpenSource ❤️."
     openGraph={
       Object {
+        "images": Array [
+          Object {
+            "alt": "Carlos Cuesta",
+            "height": 600,
+            "url": "https://carloscuesta.me/images/twitter-card.png",
+            "width": 1200,
+          },
+        ],
         "locale": "en_GB",
         "site_name": "Carlos Cuesta",
         "type": "website",
