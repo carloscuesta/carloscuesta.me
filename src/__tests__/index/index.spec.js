@@ -5,7 +5,7 @@ import { fetchPosts } from 'src/utils/api/blog'
 import { fetchRepositories } from 'src/utils/api/github'
 import * as stubs from './stubs'
 
-jest.mock('next-seo', () => ({ NextSeo: 'NextSeo' }))
+jest.mock('next-seo', () => ({ NextSeo: 'NextSeo', SocialProfileJsonLd: 'SocialProfileJsonLd' }))
 jest.mock('src/utils/api/blog')
 jest.mock('src/utils/api/github')
 

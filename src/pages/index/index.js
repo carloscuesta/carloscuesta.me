@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import { NextSeo } from 'next-seo'
+import { NextSeo, SocialProfileJsonLd } from 'next-seo'
 
 import { fetchPosts } from 'src/utils/api/blog'
 import { fetchRepositories } from 'src/utils/api/github'
@@ -19,6 +19,17 @@ type Props = {
 const Index = (props: Props) => (
   <>
     <NextSeo canonical='https://carloscuesta.me' />
+    <SocialProfileJsonLd
+      type='Person'
+      name='Carlos Cuesta'
+      url='https://carloscuesta.me'
+      sameAs={[
+        'http://instagram.com/crloscuesta',
+        'https://github.com/carloscuesta',
+        'https://twitter.com/crloscuesta',
+        'https://www.linkedin.com/in/crloscuesta'
+      ]}
+    />
     <Header />
     <main>
       <Biography />
