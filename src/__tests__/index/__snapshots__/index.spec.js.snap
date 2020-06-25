@@ -5,6 +5,19 @@ Array [
   <NextSeo
     canonical="https://carloscuesta.me"
   />,
+  <SocialProfileJsonLd
+    name="Carlos Cuesta"
+    sameAs={
+      Array [
+        "http://instagram.com/crloscuesta",
+        "https://github.com/carloscuesta",
+        "https://twitter.com/crloscuesta",
+        "https://www.linkedin.com/in/crloscuesta",
+      ]
+    }
+    type="Person"
+    url="https://carloscuesta.me"
+  />,
   <Header />,
   <main>
     <Biography />
