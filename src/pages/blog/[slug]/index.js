@@ -16,7 +16,7 @@ type Props = {
 }
 
 const Article = (props: Props) => {
-  const canonicalUrl = `https://carloscuesta.me/${props.post.slug}`
+  const canonicalUrl = `https://carloscuesta.me/blog/${props.post.slug}`
 
   return (
     <article className='postDetail'>

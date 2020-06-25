@@ -17,10 +17,10 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
     publisherLogo="/images/carloscuesta.jpg"
     publisherName="Carlos Cuesta"
     title="JavaScript monorepos with Lerna and Yarn Workspaces"
-    url="https://carloscuesta.me/javascript-monorepos-lerna-yarn-workspaces"
+    url="https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces"
   />
   <NextSeo
-    canonical="https://carloscuesta.me/javascript-monorepos-lerna-yarn-workspaces"
+    canonical="https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces"
     description="A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example"
     openGraph={
       Object {
@@ -42,7 +42,7 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
         ],
         "title": "JavaScript monorepos with Lerna and Yarn Workspaces",
         "type": "article",
-        "url": "https://carloscuesta.me/javascript-monorepos-lerna-yarn-workspaces",
+        "url": "https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces",
       }
     }
     title="Carlos Cuesta – JavaScript monorepos with Lerna and Yarn Workspaces"
@@ -73,7 +73,7 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
         }
       />
       <ShareLinks
-        canonicalUrl="https://carloscuesta.me/javascript-monorepos-lerna-yarn-workspaces"
+        canonicalUrl="https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces"
         slug="javascript-monorepos-lerna-yarn-workspaces"
         title="JavaScript monorepos with Lerna and Yarn Workspaces"
       />
