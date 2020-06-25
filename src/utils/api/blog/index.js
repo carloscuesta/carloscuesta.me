@@ -5,6 +5,8 @@ import matter from 'gray-matter'
 import remark from 'remark'
 import remarkHtml from 'remark-html'
 import remarkExternalLinks from 'remark-external-links'
+import remarkAutoLinkHeadings from 'remark-autolink-headings'
+import remarkSlug from 'remark-slug'
 
 import { type Post, transformPost } from './mutators'
 
@@ -17,6 +19,18 @@ export const fetchPost = async (slug: string): Promise<Post> => {
   const post = fs.readFileSync(join(POSTS_DIRECTORY, `${slug}.md`), 'utf8')
   const { data, content } = matter(post)
   const html = await remark()
+    .use(remarkSlug)
+    .use(
+      remarkAutoLinkHeadings,
+      {
+        content: {
+          type: 'element',
+          tagName: 'span',
+          properties: {},
+          children: [{ type: 'text', value: '#' }]
+        }
+      }
+    )
     .use(remarkExternalLinks)
     .use(remarkHtml)
     .process(content)
