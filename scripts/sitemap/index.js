@@ -1,0 +1,2 @@
+require('./blog')
+require('./pages')
