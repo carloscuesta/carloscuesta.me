@@ -54,4 +54,20 @@ const App = (props: Props) => {
   )
 }
 
+type WebVitalMetric = {
+  id: string,
+  label: string,
+  name: string,
+  value: number
+}
+
+export const reportWebVitals = (metric: WebVitalMetric) => {
+  window.gtag('event', metric.name, {
+    event_category: metric.label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
+    value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
+    event_label: metric.id,
+    non_interaction: true
+  })
+}
+
 export default App
