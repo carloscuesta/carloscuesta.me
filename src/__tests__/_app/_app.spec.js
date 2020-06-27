@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer'
 import Router from 'next/router'
 
-import App from 'src/pages/_app.js'
+import App, { reportWebVitals } from 'src/pages/_app.js'
 import * as stubs from './stubs'
 
 jest.mock('next-seo', () => ({ DefaultSeo: 'DefaultSeo' }))
@@ -63,6 +63,33 @@ describe('_app', () => {
       expect(Router.events.off).toHaveBeenCalledWith(
         'routeChangeComplete',
         expect.any(Function)
+      )
+    })
+  })
+
+  describe('reportWebVitals', () => {
+    const gtag = jest.fn()
+
+    beforeAll(() => {
+      window.gtag = gtag
+    })
+
+    afterAll(() => {
+      window.gtag = undefined
+    })
+
+    it('should call window.gtag with the metric as argument', () => {
+      reportWebVitals(stubs.webVitalMetric)
+
+      expect(window.gtag).toHaveBeenCalledWith(
+        'event',
+        stubs.webVitalMetric.name,
+        {
+          event_category: 'Web Vitals',
+          event_label: stubs.webVitalMetric.id,
+          non_interaction: true,
+          value: stubs.webVitalMetric.value
+        }
       )
     })
   })
