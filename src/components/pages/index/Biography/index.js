@@ -10,9 +10,9 @@ const Biography = () => (
       <div className='row middle-xs'>
         <div className='col-xs-12 col-sm-6'>
           <h3 className={styles.biographyText}>
-            I'm a 24 years old <b>Front End Engineer</b> based in <b>Barcelona</b> ☀️,
+            I'm a 24 years old <b>Front End Engineer</b> based in <b>Barcelona</b>,
             working at <a href='https://ulabox.com' rel='noopener noreferrer'><b>Ulabox</b></a>.
-            I'm a coding addicted that is focused on <b>JavaScript</b>, specifically in React and React-Native.
+            I'm a coding passionate that is focused on <b>JavaScript</b>, specifically in React & React-Native.
             Interested in design, tech and <b>OpenSource</b> ❤️
           </h3>
 
