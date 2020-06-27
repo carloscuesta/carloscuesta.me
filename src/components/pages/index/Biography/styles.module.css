@@ -7,7 +7,7 @@
 
 .biographyText {
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 400;;
 }
 
 .profilePicture {
@@ -15,5 +15,5 @@
   display: flex;
   margin: 0 auto;
   max-width: 100%;
-  width: 385px;
+  width: 360px;
 }
