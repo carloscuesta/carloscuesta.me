@@ -27,8 +27,9 @@ const Biography = () => (
         <div className='col-xs-12 col-sm-6'>
           <img
             alt='Carlos Cuesta'
-            className={styles.profilePicture}
-            src='images/carloscuesta.jpg'
+            className={`lazyload ${styles.profilePicture}`}
+            data-src='images/carloscuesta.jpg'
+            src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
           />
         </div>
       </div>
