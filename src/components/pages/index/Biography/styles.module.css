@@ -13,7 +13,13 @@
 .profilePicture {
   border-radius: 50%;
   display: flex;
+  filter: blur(5px);
   margin: 0 auto;
   max-width: 100%;
+  transition: filter 200ms ease-in-out;
   width: 360px;
+}
+
+.profilePicture:global(.lazyloaded) {
+  filter: blur(0);
 }
