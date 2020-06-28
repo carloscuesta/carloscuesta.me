@@ -18,12 +18,12 @@
     --background: #FFFFFF;
     --backgroundSurface: #F1F6F8;
     --primary: #FF5252;
-    --secondary: #00B0FF;
+    --secondary: #0086ff;
     --shadowColor: rgba(0, 0, 0, 0.25);
     --text: #1F282C;
     --textOnPrimary: #FFFFFF;
     --textOnSecondary: #FFFFFF;
-    --textSecondary: #78909C;
+    --textSecondary: #58717d;
     --codeBackground: #121212;
   }
 }
