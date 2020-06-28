@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - 12.17.0
+addons:
+  chrome: stable
 script:
   - npm run test
   - npm run test:coverage

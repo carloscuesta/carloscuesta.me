@@ -1,5 +1,6 @@
 [ignore]
 <PROJECT_ROOT>/.next
+.*/node_modules/jsonlint-mod
 
 [include]
 

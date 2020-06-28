@@ -8,14 +8,15 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "start": "pm2 start npm --name 'carloscuesta' -- start",
-    "test": "npm run test:lint && npm run test:flow && npm run test:unit",
+    "start": "next start",
+    "test": "npm run test:lint && npm run test:flow && npm run test:unit && npm run test:lighthouse",
     "test:flow": "flow",
     "test:lint": "standard | snazzy",
     "test:lint:fix": "standard --fix | snazzy",
     "test:unit": "jest --coverage",
     "test:watch": "NODE_ENV=test TZ=UTC jest --watch",
     "test:coverage": "codecov",
+    "test:lighthouse": "npm run build && lhci autorun",
     "prebuild": "node ./scripts/sitemap"
   },
   "repository": {
@@ -46,6 +47,7 @@
   },
   "devDependencies": {
     "@babel/preset-flow": "^7.10.1",
+    "@lhci/cli": "^0.4.2",
     "babel-eslint": "^10.1.0",
     "codecov": "^3.7.0",
     "eslint-plugin-flowtype": "^5.1.3",
