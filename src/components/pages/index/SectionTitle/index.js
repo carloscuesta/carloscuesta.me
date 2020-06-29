@@ -10,7 +10,7 @@ type Props = {
 
 const SectionTitle = (props: Props) => (
   <>
-    <h3 className={styles.sectionTitle}>{props.title}</h3>
+    <h4 className={styles.sectionTitle}>{props.title}</h4>
     <h5 className={styles.sectionSubtitle}>{props.subTitle}</h5>
   </>
 )

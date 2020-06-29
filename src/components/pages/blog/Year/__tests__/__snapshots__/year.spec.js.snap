@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Year should match Year component 1`] = `
+<div
+  className="col-xs-12"
+>
+  <h4
+    className="year"
+  >
+    2020
+  </h4>
+</div>
+`;

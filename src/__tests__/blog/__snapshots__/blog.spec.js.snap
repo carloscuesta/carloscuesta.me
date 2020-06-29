@@ -16,9 +16,11 @@ Array [
         <div
           className="col-xs-12"
         >
-          <h3>
+          <h4
+            className="year"
+          >
             2019
-          </h3>
+          </h4>
         </div>
         <BlogPost
           post={
@@ -79,9 +81,11 @@ Array [
         <div
           className="col-xs-12"
         >
-          <h3>
+          <h4
+            className="year"
+          >
             2018
-          </h3>
+          </h4>
         </div>
         <BlogPost
           post={
@@ -142,9 +146,11 @@ Array [
         <div
           className="col-xs-12"
         >
-          <h3>
+          <h4
+            className="year"
+          >
             2017
-          </h3>
+          </h4>
         </div>
         <BlogPost
           post={

@@ -5,11 +5,11 @@ exports[`OpenSource should match OpenSource component 1`] = `
   <div
     className="wrapper"
   >
-    <h3
+    <h4
       className="sectionTitle"
     >
       Open Source
-    </h3>
+    </h4>
     <h5
       className="sectionSubtitle"
     >

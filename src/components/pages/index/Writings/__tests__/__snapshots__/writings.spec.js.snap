@@ -5,11 +5,11 @@ exports[`Writings should match Writings component 1`] = `
   <div
     className="wrapper"
   >
-    <h3
+    <h4
       className="sectionTitle"
     >
       Writings
-    </h3>
+    </h4>
     <h5
       className="sectionSubtitle"
     >
