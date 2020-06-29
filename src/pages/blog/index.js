@@ -7,6 +7,7 @@ import { fetchPosts } from 'src/utils/api/blog'
 import { type Post } from 'src/utils/api/blog/mutators'
 import BlogPost from 'src/components/shared/BlogPost'
 import Wrapper from 'src/components/shared/Wrapper'
+import Year from 'src/components/pages/blog/Year'
 
 type Props = {
   posts: { [key: string]: Array<Post> }
@@ -22,9 +23,7 @@ const Blog = (props: Props) => (
       <Wrapper>
         {Object.keys(props.posts).sort(() => -1).map((year: string) => (
           <div className='row' key={year}>
-            <div className='col-xs-12'>
-              <h3>{year}</h3>
-            </div>
+            <Year year={year} />
 
             {props.posts[year].map((post) => (
               <BlogPost post={post} key={post.slug} />
