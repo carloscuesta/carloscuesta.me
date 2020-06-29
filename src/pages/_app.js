@@ -62,11 +62,14 @@ type WebVitalMetric = {
 }
 
 export const reportWebVitals = (metric: WebVitalMetric) => {
-  window.gtag('event', metric.name, {
-    event_category: metric.label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
-    value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
-    event_label: metric.id,
-    non_interaction: true
+  window.ga('send', 'event', {
+    eventAction: metric.name,
+    eventCategory: metric.label === 'web-vital'
+      ? 'Web Vitals'
+      : 'Next.js custom metric',
+    eventValue: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
+    eventLabel: metric.id,
+    nonInteraction: true
   })
 }
 
