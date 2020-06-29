@@ -7,24 +7,21 @@ describe('analytics', () => {
   })
 
   describe('trackPageView', () => {
-    const gtag = jest.fn()
+    const ga = jest.fn()
 
     beforeAll(() => {
-      window.gtag = gtag
+      window.ga = ga
     })
 
     afterAll(() => {
-      window.gtag = undefined
+      window.ga = undefined
     })
 
-    it('should call window.gtag with ID and page_path arguments', () => {
+    it('should call window.ga with page url and send the pageview', () => {
       analytics.trackPageView(stubs.url)
 
-      expect(gtag).toHaveBeenCalledWith(
-        'config',
-        analytics.GA_TRACKING_ID,
-        { page_path: stubs.url }
-      )
+      expect(ga).toHaveBeenCalledWith('set', 'page', stubs.url)
+      expect(ga).toHaveBeenCalledWith('send', 'pageview')
     })
   })
 })

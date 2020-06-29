@@ -68,27 +68,28 @@ describe('_app', () => {
   })
 
   describe('reportWebVitals', () => {
-    const gtag = jest.fn()
+    const ga = jest.fn()
 
     beforeAll(() => {
-      window.gtag = gtag
+      window.ga = ga
     })
 
     afterAll(() => {
-      window.gtag = undefined
+      window.ga = undefined
     })
 
-    it('should call window.gtag with the metric as argument', () => {
+    it('should call window.ga with the metric as argument', () => {
       reportWebVitals(stubs.webVitalMetric)
 
-      expect(window.gtag).toHaveBeenCalledWith(
+      expect(window.ga).toHaveBeenCalledWith(
+        'send',
         'event',
-        stubs.webVitalMetric.name,
         {
-          event_category: 'Web Vitals',
-          event_label: stubs.webVitalMetric.id,
-          non_interaction: true,
-          value: stubs.webVitalMetric.value
+          eventAction: stubs.webVitalMetric.name,
+          eventCategory: 'Web Vitals',
+          eventLabel: stubs.webVitalMetric.id,
+          eventValue: stubs.webVitalMetric.value,
+          nonInteraction: true
         }
       )
     })
