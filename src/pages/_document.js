@@ -17,6 +17,8 @@ class Document extends NextDocument {
           <meta content='#FF5252' key='msapplication-TileColor' name='msapplication-TileColor' />
           <meta content='/ms-icon-144x144.png' key='msapplication-TileImage' name='msapplication-TileImage' />
           <meta content='#FF5252' key='theme-color' name='theme-color' />
+          <link rel='preconnect' href='https://www.google-analytics.com' />
+          <link rel='dns-prefetch' href='https://www.google-analytics.com' />
           <link rel='apple-touch-icon' sizes='114x114' href='/favicon/apple-icon-114x114.png' />
           <link rel='apple-touch-icon' sizes='120x120' href='/favicon/apple-icon-120x120.png' />
           <link rel='apple-touch-icon' sizes='144x144' href='/favicon/apple-icon-144x144.png' />
@@ -34,10 +36,7 @@ class Document extends NextDocument {
           <link rel='icon' type='image/png' sizes='32x32' href='/favicon/favicon-32x32.png' />
           <link rel='icon' type='image/png' sizes='96x96' href='/favicon/favicon-96x96.png' />
           <link rel='manifest' href='/manifest.json' />
-          <script
-            defer
-            src='https://www.google-analytics.com/analytics.js'
-          />
+          <script async src='https://www.google-analytics.com/analytics.js' />
           <script
             dangerouslySetInnerHTML={{
               __html: `
