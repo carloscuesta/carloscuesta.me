@@ -6,7 +6,7 @@
   },
   "description": "Carlos Cuesta website.",
   "scripts": {
-    "build": "next build",
+    "build": "next build && next export",
     "dev": "next",
     "start": "next start",
     "test": "npm run test:lint && npm run test:flow && npm run test:unit && npm run test:lighthouse",
