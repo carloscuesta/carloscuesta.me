@@ -3,7 +3,7 @@ dateModified: "2017-01-03 11:45"
 datePublished: "2017-01-03 11:45"
 disqusIdentifier: "18"
 excerpt: "As 2016 has come to an end, I would like to write a post reviewing my year and keep this as an habit. 2016 was a year full of new things..."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1483439719/wwvt74vzlfr3ybg6l0py.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531856/blog-featured-images/2016_in_review.png"
 title: "2016 Year in Review"
 ---
 

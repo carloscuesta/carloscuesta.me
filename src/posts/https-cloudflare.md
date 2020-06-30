@@ -3,7 +3,7 @@ dateModified: "2016-03-23 17:00"
 datePublished: "2016-03-23 17:00"
 disqusIdentifier: "9"
 excerpt: "How to get HTTPs for free and easily in your websites with Cloudflare."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1458417733/brc35chtj5ru0mijckn0.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/HTTPs_with_Cloudflare.png"
 title: "Free and easy HTTPs with Cloudflare"
 ---
 

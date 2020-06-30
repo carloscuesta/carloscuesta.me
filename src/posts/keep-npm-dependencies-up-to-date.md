@@ -3,7 +3,7 @@ dateModified: "2016-01-21 16:10"
 datePublished: "2016-01-21 16:10"
 disqusIdentifier: "3"
 excerpt: "Learn how to keep npm dependencies up to date from your terminal using npm outdated, npm-check-updates ncu or with web applications like libraries.io"
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1453840186/piym6jjmjkefij0quxmz.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593532476/blog-featured-images/How_to_keep_npm_dependencies_up_to_date.png"
 title: "How to keep npm dependencies up to date"
 ---
 

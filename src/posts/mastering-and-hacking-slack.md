@@ -3,7 +3,7 @@ dateModified: "2016-07-12 15:15"
 datePublished: "2016-07-12 15:15"
 disqusIdentifier: "11"
 excerpt: "Discover how Slack could improve your daily life boosting up your productivity and organisation mastering and hacking with the integrations and automations."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1468268511/rivyclg6zmk4fuidfbwv.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531856/blog-featured-images/Hacking_Slack.png"
 title: "Mastering and Hacking Slack integrations"
 ---
 

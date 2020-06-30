@@ -3,7 +3,7 @@ dateModified: "2017-10-18 10:15"
 datePublished: "2017-10-18 10:15"
 disqusIdentifier: "59cfbaac613ac70679db193e"
 excerpt: "The process of moving my website and Ghost blog from Heroku to DigitalOcean.  Provisioning up the server with Node.js, Nginx, LetsEncrypt and PM2."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/moving-to-digitalocean.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Moving_to_DigitalOcean.png"
 title: "Moving to DigitalOcean"
 ---
 

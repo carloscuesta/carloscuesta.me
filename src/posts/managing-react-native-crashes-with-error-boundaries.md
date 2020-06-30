@@ -3,7 +3,7 @@ dateModified: "2019-09-12 17:00"
 datePublished: "2019-09-12 17:00"
 disqusIdentifier: "5d78d0fcf942665cd6becd9a"
 excerpt: "I'm going to explain why it's important and how you can use error boundaries in a React-Native application to improve error resiliency 👨‍💻"
-image: "https://res.cloudinary.com/carloscuesta/image/upload/handling-react-native-errors-with-error-boundaries.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Managing_React-Native_crashes_with_Error_Boundaries.png"
 title: "Managing React-Native crashes with Error Boundaries"
 ---
 

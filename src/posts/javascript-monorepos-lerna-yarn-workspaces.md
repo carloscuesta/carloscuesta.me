@@ -3,7 +3,7 @@ dateModified: "2019-10-01 22:15"
 datePublished: "2019-10-01 22:15"
 disqusIdentifier: "5bc9ff9949ac5006c0a84f00"
 excerpt: "A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example"
-image: "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/JavaScript_monorepos_with_Lerna_and_Yarn_Workspaces.png"
 title: "JavaScript monorepos with Lerna and Yarn Workspaces"
 ---
 

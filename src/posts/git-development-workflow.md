@@ -3,7 +3,7 @@ dateModified: "2017-07-17 13:00"
 datePublished: "2017-07-17 13:00"
 disqusIdentifier: "20"
 excerpt: "Git development workflow. Feature branches, rebase on top of master, squash and merge."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1500212976/excdshjxyrip9ofijrfh.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Git_development_workflow.png"
 title: "Git development workflow"
 ---
 

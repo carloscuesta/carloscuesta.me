@@ -3,7 +3,7 @@ dateModified: "2017-09-07 10:00"
 datePublished: "2017-09-07 10:00"
 disqusIdentifier: "22"
 excerpt: "Building native applications with React is awesome. Until the time you have to release a new build. That's when Fastlane comes to the rescue!"
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1502890819/jnx9rvews220lun09pkp.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Shipping_React_Native_apps_with_Fastlane.png"
 title: "Shipping React Native apps with Fastlane"
 ---
 

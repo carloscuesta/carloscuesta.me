@@ -3,7 +3,7 @@ dateModified: "2016-11-02 14:15"
 datePublished: "2016-11-02 14:15"
 disqusIdentifier: "12"
 excerpt: "Debugging is an essential part of programming. Tips and tricks for debugging with the JavaScript console object. Assertions, Loggings, Timers and much more!"
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1477333951/qvitf2uh1p2i6mo0ubzb.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531856/blog-featured-images/Debugging_with_the_JavaScript_console.png"
 title: "Debugging with JavaScript console"
 ---
 

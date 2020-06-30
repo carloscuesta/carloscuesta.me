@@ -3,7 +3,7 @@ dateModified: "2017-09-14 11:45"
 datePublished: "2017-09-14 11:45"
 disqusIdentifier: "24"
 excerpt: "React Native meets CodePush, a cloud service ideal for pushing instantly bug fixes and new features to a react-native application."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1505032166/en5fjew0zzealxy9dvja.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/React_Native_Codepush.png"
 title: "React Native meets CodePush"
 ---
 

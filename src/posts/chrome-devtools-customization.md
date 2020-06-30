@@ -3,7 +3,7 @@ dateModified: "2016-01-28 08:15"
 datePublished: "2016-01-28 08:15"
 disqusIdentifier: "5"
 excerpt: "DevTools Author is a selection of author settings for Chrome Developer Tools that provides a small set of options to enhance your web development experience"
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1453935994/walhtaktia2nvmokkbzp.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531856/blog-featured-images/DevTools_Author.png"
 title: "Chrome DevTools Customization"
 ---
 

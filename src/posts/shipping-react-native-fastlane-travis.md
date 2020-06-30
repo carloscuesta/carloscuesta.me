@@ -3,7 +3,7 @@ dateModified: "2018-10-15 09:53"
 datePublished: "2018-09-19 09:53"
 disqusIdentifier: "5ae59dcdb3211a06522ad69b"
 excerpt: "The process of continuously delivering React Native apps with Fastlane and Travis CI automatically. "
-image: "https://res.cloudinary.com/carloscuesta/image/upload/shipping-react-native-fastlane-travis.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Shipping_React_Native_apps_with_Fastlane_and_Travis.png"
 title: "Shipping React Native apps with Fastlane and Travis"
 ---
 
