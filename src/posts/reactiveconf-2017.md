@@ -3,7 +3,7 @@ dateModified: "2017-10-30 10:00"
 datePublished: "2017-10-30 10:00"
 disqusIdentifier: "23"
 excerpt: "ReactiveConf 2017 review. A two days conference about functional and reactive programming that takes places in Bratislava."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1504460420/nmm99etv7j32h5lsulgx.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531859/blog-featured-images/Reactive_Conf.png"
 title: "ReactiveConf 2017"
 ---
 

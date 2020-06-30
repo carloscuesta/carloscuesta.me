@@ -36,7 +36,7 @@ export const transformPost = (payload: Payload): Post => ({
     },
     preview: {
       src: payload.data.image.replace('/upload/', '/upload/w_500/'),
-      lqpi: payload.data.image.replace('/upload/', '/upload/t_lqpi-post-preview/')
+      lqpi: payload.data.image.replace('/upload/', '/upload/t_post-preview-lqpi/')
     }
   },
   slug: payload.slug,

@@ -3,7 +3,7 @@ dateModified: "2016-01-20 18:00"
 datePublished: "2016-01-20 18:00"
 disqusIdentifier: "2"
 excerpt: "Hi I'm Carlos Cuesta!  I am a Front End developer based in Barcelona, Spain. Coding addicted that enjoys building things with code and I ♥ OpenSource."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1453751304/wp8it1ggpava2wgjv10a.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Hello_World.png"
 title: "Hello World"
 ---
 

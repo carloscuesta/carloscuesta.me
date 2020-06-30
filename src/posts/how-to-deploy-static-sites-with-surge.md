@@ -3,7 +3,7 @@ dateModified: "2016-08-05 20:16"
 datePublished: "2016-08-05 20:16"
 disqusIdentifier: "14"
 excerpt: "How to deploy static websites with surge, the most easy and simple way to deploy a static site, all from your terminal. Surge it's free."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1470405094/gaj6zuulfkujtcwonuiv.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/How_to_deploy_static_sites_with_Surge.png"
 title: "How to deploy Static Sites with Surge"
 ---
 

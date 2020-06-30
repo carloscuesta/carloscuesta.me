@@ -3,7 +3,7 @@ dateModified: "2017-04-25 09:00"
 datePublished: "2017-04-25 09:00"
 disqusIdentifier: "19"
 excerpt: "React Amsterdam 2017 review. A full day conference on all things React with more than 1000 developers from all across the globe."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1492934128/jtbtd9kfsk0mstxb9c1g.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/React_Amsterdam.png"
 title: "React Amsterdam 2017"
 ---
 

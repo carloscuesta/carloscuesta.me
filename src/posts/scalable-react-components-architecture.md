@@ -3,7 +3,7 @@ dateModified: "2018-10-16 12:10"
 datePublished: "2018-10-16 12:10"
 disqusIdentifier: "5b6c646126d36606d1805ab3"
 excerpt: "Creating scalable React components using the folder pattern. A simple way to organize and structure React Components."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/scalable-react-components.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Scalable_React_Components_architecture.png"
 title: "Scalable React Components architecture"
 ---
 

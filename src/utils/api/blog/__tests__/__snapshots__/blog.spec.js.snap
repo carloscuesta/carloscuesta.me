@@ -29,11 +29,11 @@ $ sh -c \\"$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/too
 ",
   "images": Object {
     "featured": Object {
-      "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1454754838/kcuq34zbo1yieygmx0y6.png",
+      "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Terminal_Setup.png",
     },
     "preview": Object {
-      "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png",
-      "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png",
+      "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1593531858/blog-featured-images/Terminal_Setup.png",
+      "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1593531858/blog-featured-images/Terminal_Setup.png",
     },
   },
   "slug": "terminal-setup",
@@ -166,11 +166,11 @@ sayHello('Carlos')
 ",
     "images": Object {
       "featured": Object {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/JavaScript_monorepos_with_Lerna_and_Yarn_Workspaces.png",
       },
       "preview": Object {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1593531857/blog-featured-images/JavaScript_monorepos_with_Lerna_and_Yarn_Workspaces.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1593531857/blog-featured-images/JavaScript_monorepos_with_Lerna_and_Yarn_Workspaces.png",
       },
     },
     "slug": "javascript-monorepos-lerna-yarn-workspaces",
@@ -236,11 +236,11 @@ sayHello('Carlos')
 ",
     "images": Object {
       "featured": Object {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/handling-react-native-errors-with-error-boundaries.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Managing_React-Native_crashes_with_Error_Boundaries.png",
       },
       "preview": Object {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/handling-react-native-errors-with-error-boundaries.png",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/handling-react-native-errors-with-error-boundaries.png",
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1593531857/blog-featured-images/Managing_React-Native_crashes_with_Error_Boundaries.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1593531857/blog-featured-images/Managing_React-Native_crashes_with_Error_Boundaries.png",
       },
     },
     "slug": "managing-react-native-crashes-with-error-boundaries",
@@ -421,11 +421,11 @@ export default EmojiList
 ",
     "images": Object {
       "featured": Object {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/scalable-react-components.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Scalable_React_Components_architecture.png",
       },
       "preview": Object {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/scalable-react-components.png",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/scalable-react-components.png",
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1593531857/blog-featured-images/Scalable_React_Components_architecture.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1593531857/blog-featured-images/Scalable_React_Components_architecture.png",
       },
     },
     "slug": "scalable-react-components-architecture",
@@ -476,7 +476,7 @@ Object {
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1454754838/kcuq34zbo1yieygmx0y6.png",
     },
     "preview": Object {
-      "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png",
+      "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1454754838/kcuq34zbo1yieygmx0y6.png",
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png",
     },
   },

@@ -3,7 +3,7 @@ dateModified: "2016-02-06 15:55"
 datePublished: "2016-02-06 15:55"
 disqusIdentifier: "7"
 excerpt: "Carlos Cuesta terminal setup with ZSH and Oh-My-ZSH, using materialshell and my dotfiles."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1454754838/kcuq34zbo1yieygmx0y6.png"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Terminal_Setup.png"
 title: "Terminal setup"
 ---
 
