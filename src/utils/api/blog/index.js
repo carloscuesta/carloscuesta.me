@@ -23,6 +23,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
     .use(
       remarkAutoLinkHeadings,
       {
+        linkProperties: { className: 'headingLink ' },
         content: {
           type: 'element',
           tagName: 'span',
