@@ -33,6 +33,7 @@
 }
 
 .submit {
+  -webkit-appearance: none;
   background-color: var(--secondary);
   border-radius: 4px;
   border: 0;
