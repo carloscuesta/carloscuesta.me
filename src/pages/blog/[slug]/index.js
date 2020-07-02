@@ -49,9 +49,9 @@ const Article = (props: Props) => {
           images: [
             {
               alt: props.post.title,
-              height: 1530,
+              height: 1000,
               url: props.post.images.featured.src,
-              width: 3003
+              width: 2000
             }
           ]
         }}
