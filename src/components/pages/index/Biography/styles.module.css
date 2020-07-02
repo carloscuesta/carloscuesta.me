@@ -13,7 +13,7 @@
 .profilePicture {
   border-radius: 50%;
   display: flex;
-  filter: blur(5px);
+  filter: blur(8px);
   height: auto;
   margin: 0 auto;
   max-width: 100%;
