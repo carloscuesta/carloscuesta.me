@@ -35,9 +35,9 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
         "images": Array [
           Object {
             "alt": "JavaScript monorepos with Lerna and Yarn Workspaces",
-            "height": 1530,
+            "height": 1000,
             "url": "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
-            "width": 3003,
+            "width": 2000,
           },
         ],
         "title": "JavaScript monorepos with Lerna and Yarn Workspaces",
