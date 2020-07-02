@@ -36,6 +36,10 @@ class Document extends NextDocument {
           <link rel='icon' type='image/png' sizes='32x32' href='/favicon/favicon-32x32.png' />
           <link rel='icon' type='image/png' sizes='96x96' href='/favicon/favicon-96x96.png' />
           <link rel='manifest' href='/manifest.json' />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
           <script async src='https://www.google-analytics.com/analytics.js' />
           <script
             dangerouslySetInnerHTML={{
@@ -46,10 +50,6 @@ class Document extends NextDocument {
               `
             }}
           />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
         </body>
       </Html>
     )
