@@ -28,7 +28,7 @@ const Biography = () => (
           <img
             alt='Carlos Cuesta'
             className={`lazyload ${styles.profilePicture}`}
-            data-src='images/carloscuesta.jpg'
+            data-src='https://res.cloudinary.com/carloscuesta/image/upload/s--ToCVp7yf--/q_81:420/v1593723466/carloscuesta-avatar.jpg'
             src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
           />
         </div>
