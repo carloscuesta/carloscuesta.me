@@ -61,7 +61,7 @@ type WebVitalMetric = {
 }
 
 export const reportWebVitals = (metric: WebVitalMetric) => {
-  window.ga('send', 'event', {
+  analytics.trackEvent({
     eventAction: metric.name,
     eventCategory: metric.label === 'web-vital'
       ? 'Web Vitals'

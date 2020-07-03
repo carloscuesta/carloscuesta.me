@@ -3,6 +3,7 @@
 exports[`analytics should match analytics module 1`] = `
 Object {
   "GA_TRACKING_ID": "UA-67824860-3",
+  "trackEvent": [Function],
   "trackPageView": [Function],
 }
 `;

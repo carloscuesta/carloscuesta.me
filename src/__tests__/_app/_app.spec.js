@@ -2,9 +2,12 @@ import renderer from 'react-test-renderer'
 import Router from 'next/router'
 
 import App, { reportWebVitals } from 'src/pages/_app.js'
+import { trackEvent } from 'src/utils/analytics'
 import * as stubs from './stubs'
 
 jest.mock('next-seo', () => ({ DefaultSeo: 'DefaultSeo' }))
+
+jest.mock('src/utils/analytics')
 
 jest.mock('next/router', () => ({
   pathname: '',
@@ -68,30 +71,16 @@ describe('_app', () => {
   })
 
   describe('reportWebVitals', () => {
-    const ga = jest.fn()
-
-    beforeAll(() => {
-      window.ga = ga
-    })
-
-    afterAll(() => {
-      window.ga = undefined
-    })
-
-    it('should call window.ga with the metric as argument', () => {
+    it('should call trackEvent with the metric as argument', () => {
       reportWebVitals(stubs.webVitalMetric)
 
-      expect(window.ga).toHaveBeenCalledWith(
-        'send',
-        'event',
-        {
-          eventAction: stubs.webVitalMetric.name,
-          eventCategory: 'Web Vitals',
-          eventLabel: stubs.webVitalMetric.id,
-          eventValue: stubs.webVitalMetric.value,
-          nonInteraction: true
-        }
-      )
+      expect(trackEvent).toHaveBeenCalledWith({
+        eventAction: stubs.webVitalMetric.name,
+        eventCategory: 'Web Vitals',
+        eventLabel: stubs.webVitalMetric.id,
+        eventValue: stubs.webVitalMetric.value,
+        nonInteraction: true
+      })
     })
   })
 })

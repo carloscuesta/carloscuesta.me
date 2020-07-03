@@ -24,4 +24,22 @@ describe('analytics', () => {
       expect(ga).toHaveBeenCalledWith('send', 'pageview')
     })
   })
+
+  describe('trackEvent', () => {
+    const ga = jest.fn()
+
+    beforeAll(() => {
+      window.ga = ga
+    })
+
+    afterAll(() => {
+      window.ga = undefined
+    })
+
+    it('should call window.ga with event object', () => {
+      analytics.trackEvent(stubs.event)
+
+      expect(ga).toHaveBeenCalledWith('send', 'event', stubs.event)
+    })
+  })
 })
