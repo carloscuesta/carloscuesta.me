@@ -12,6 +12,11 @@ export type Post = {
   title: string
 }
 
+export type PostPreview = $Diff<
+  Post,
+  { html: string, dateModified: string, disqusIdentifier: string }
+>
+
 type Payload = { data: Object, html: Object, slug: string }
 
 export const transformPost = (payload: Payload): Post => ({

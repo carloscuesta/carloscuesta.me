@@ -2,11 +2,11 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { type Post } from 'src/utils/api/blog/mutators'
+import { type PostPreview } from 'src/utils/api/blog/mutators'
 import styles from './styles.module.css'
 
 type Props = {
-  post: Post
+  post: PostPreview
 }
 
 const BlogPost = (props: Props) => (

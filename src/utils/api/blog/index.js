@@ -8,7 +8,7 @@ import remarkExternalLinks from 'remark-external-links'
 import remarkAutoLinkHeadings from 'remark-autolink-headings'
 import remarkSlug from 'remark-slug'
 
-import { type Post, transformPost } from './mutators'
+import { type Post, type PostPreview, transformPost } from './mutators'
 
 const POSTS_DIRECTORY: string = join(process.cwd(), 'src/posts')
 
@@ -39,10 +39,20 @@ export const fetchPost = async (slug: string): Promise<Post> => {
   return transformPost({ data, html, slug })
 }
 
-export const fetchPosts = async (): Promise<Array<Post>> => {
+export const fetchPosts = async (): Promise<Array<PostPreview>> => {
   const posts: Array<Post> = await Promise.all(
     getPostSlugs().map((slug) => fetchPost(slug))
   )
 
-  return posts.sort((x, y) => new Date(y.datePublished.value) - new Date(x.datePublished.value))
+  return posts
+    .sort((x, y) => {
+      return new Date(y.datePublished.value) - new Date(x.datePublished.value)
+    })
+    .map((post) => ({
+      datePublished: post.datePublished,
+      excerpt: post.excerpt,
+      images: post.images,
+      slug: post.slug,
+      title: post.title
+    }))
 }
