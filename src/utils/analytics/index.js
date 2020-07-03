@@ -5,3 +5,7 @@ export const trackPageView = (url: string) => {
   window.ga('set', 'page', url)
   window.ga('send', 'pageview')
 }
+
+export const trackEvent = (event: Object) => {
+  window.ga('send', 'event', event)
+}
