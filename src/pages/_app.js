@@ -4,7 +4,6 @@ import { DefaultSeo } from 'next-seo'
 import Router from 'next/router'
 import 'lazysizes'
 import 'lazysizes/plugins/attrchange/ls.attrchange'
-import 'flexboxgrid/dist/flexboxgrid.min.css'
 
 import 'src/utils/theme/theme.css'
 import Layout from 'src/components/shared/Layout'

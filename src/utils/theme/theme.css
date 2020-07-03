@@ -179,3 +179,59 @@ hr {
   background: rgba(255, 82, 82, 1);
   color: #fff;
 }
+
+/* Flexboxgrid.css critical */
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -.5rem;
+  margin-left: -.5rem;
+}
+
+.col-xs-12 {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
+.col-xs-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.middle-xs {
+  align-items: center;
+}
+
+@media only screen and (min-width: 48em){
+  .col-sm-6 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+
+  .col-sm-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (min-width: 64em){
+  .col-md-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+
+  .col-md-4 {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+  }
+}

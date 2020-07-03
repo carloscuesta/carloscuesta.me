@@ -8,3 +8,5 @@ There are two themes on the website:
 - Dark
 
 The default theme will be selected using the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) property.
+
+The theme also includes the extracted critical-css of `flexboxgrid`.
