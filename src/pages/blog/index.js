@@ -4,13 +4,13 @@ import groupBy from 'lodash.groupby'
 import { NextSeo } from 'next-seo'
 
 import { fetchPosts } from 'src/utils/api/blog'
-import { type Post } from 'src/utils/api/blog/mutators'
+import { type PostPreview } from 'src/utils/api/blog/mutators'
 import BlogPost from 'src/components/shared/BlogPost'
 import Wrapper from 'src/components/shared/Wrapper'
 import Year from 'src/components/pages/blog/Year'
 
 type Props = {
-  posts: { [key: string]: Array<Post> }
+  posts: { [key: string]: Array<PostPreview> }
 }
 
 const Blog = (props: Props) => (
@@ -36,7 +36,7 @@ const Blog = (props: Props) => (
 )
 
 export const getStaticProps = async (): Promise<{ props: Props }> => {
-  const posts: Array<Post> = await fetchPosts()
+  const posts: Array<PostPreview> = await fetchPosts()
 
   return {
     props: {

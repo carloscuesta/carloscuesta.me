@@ -80,6 +80,7 @@
       "flowtype"
     ],
     "globals": [
+      "$Diff",
       "fetch"
     ]
   },
