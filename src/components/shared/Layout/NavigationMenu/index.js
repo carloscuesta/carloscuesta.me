@@ -16,7 +16,9 @@ const NavigationMenu = () => (
           </strong>
 
           <ul className={styles.links}>
-            <li><MenuLink href='/blog' text='Writings' /></li>
+            <li><MenuLink href='/blog' text='Blog' /></li>
+
+            <li><MenuLink href='/about' text='About' /></li>
 
             <li>
               <MenuLink

@@ -44,7 +44,8 @@ const Hamburger = () => {
 
           <ul className={styles.links}>
             <li><MenuLink href='/' text='Home' /></li>
-            <li><MenuLink href='/blog' text='Writings' /></li>
+            <li><MenuLink href='/blog' text='Blog' /></li>
+            <li><MenuLink href='/about' text='About' /></li>
             <li>
               <MenuLink
                 href='https://twitter.com/intent/follow?screen_name=crloscuesta'
