@@ -2,6 +2,8 @@
 import React from 'react'
 import { NextSeo, SocialProfileJsonLd } from 'next-seo'
 
+import Experience from 'src/components/pages/about/Experience'
+
 const About = () => (
   <>
     <NextSeo
@@ -20,7 +22,7 @@ const About = () => (
       ]}
     />
     <main>
-
+      <Experience />
     </main>
   </>
 )
