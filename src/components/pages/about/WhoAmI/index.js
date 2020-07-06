@@ -28,6 +28,7 @@ const WhoAmI = () => (
           In my free time you can find me longboarding 🛹{' '}, at the gym 🏋️‍♂️, {' '} at the beach 🏖 or on tech <b>meetups</b> and <b>conferences</b> around Barcelona and Europe 🗺
         </p>
       </div>
+      <hr />
     </Wrapper>
   </section>
 )

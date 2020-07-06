@@ -13,6 +13,7 @@ const Experience = () => (
       <div className='row'>
         {workExperience.map((job: JobPosition, idx) => <Job {...job} key={idx} />)}
       </div>
+      <hr />
     </Wrapper>
   </section>
 )

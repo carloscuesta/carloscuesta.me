@@ -22,6 +22,7 @@ const Education = () => (
           </div>
         ))}
       </div>
+      <hr />
     </Wrapper>
   </section>
 )
