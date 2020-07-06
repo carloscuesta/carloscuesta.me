@@ -1,6 +1,5 @@
 .sectionTitle {
   font-size: 2em;
-  text-align: center;
   margin: 0;
   font-weight: 700;
 }
@@ -8,7 +7,10 @@
 .sectionSubtitle {
   color: var(--textSecondary);
   font-weight: 400;
-  text-align: center;
   margin: 0;
   margin-bottom: 1.5em;
+}
+
+.isCentered {
+  text-align: center;
 }
