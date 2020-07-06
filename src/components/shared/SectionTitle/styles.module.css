@@ -4,6 +4,10 @@
   font-weight: 700;
 }
 
+.sectionTitleMargin {
+  margin: 1em 0;
+}
+
 .sectionSubtitle {
   color: var(--textSecondary);
   font-weight: 400;

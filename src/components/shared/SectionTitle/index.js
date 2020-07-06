@@ -11,7 +11,13 @@ type Props = {
 
 const SectionTitle = (props: Props) => (
   <>
-    <h4 className={[styles.sectionTitle, props.isCentered && styles.isCentered].join(' ')}>
+    <h4
+      className={[
+        styles.sectionTitle,
+        props.isCentered && styles.isCentered,
+        !props.subTitle && styles.sectionTitleMargin
+      ].join(' ')}
+    >
       {props.title}
     </h4>
     {props.subTitle &&

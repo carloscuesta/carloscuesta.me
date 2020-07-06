@@ -2,7 +2,8 @@
 import React from 'react'
 
 import { type JobPosition } from 'src/utils/staticData/workExperience'
-import Timestamp from './Timestamp'
+import ItemTimestamp from 'src/components/pages/about/ItemTimestamp'
+import ItemTitle from 'src/components/pages/about/ItemTitle'
 import CompanyLogo from './CompanyLogo'
 import styles from './styles.module.css'
 
@@ -16,25 +17,25 @@ const Job = (props: Props) => {
     const dateFinish = props.positions[0].dateFinish
 
     return (
-      <div className='col-xs-12'>
+      <div className={`col-xs-12 ${styles.job}`}>
         <div className={styles.container}>
           <CompanyLogo url={props.company.logo} name={props.company.name} />
 
           <div className={styles.position}>
-            <h5 className={styles.positionTitle}>
+            <ItemTitle>
               <a target='_blank' rel='noopener noreferrer' href={props.company.link}>
                 {props.company.name}
               </a>
-            </h5>
+            </ItemTitle>
 
-            <Timestamp dateFinish={dateFinish} dateStart={dateStart} />
+            <ItemTimestamp dateFinish={dateFinish} dateStart={dateStart} />
 
             {props.positions.map((position) => (
               <div className={styles.positionList} key={position.title}>
                 <span className={styles.positionMark} />
-                <h5 className={styles.positionTitle}>{position.title}</h5>
+                <ItemTitle>{position.title}</ItemTitle>
 
-                <Timestamp
+                <ItemTimestamp
                   dateFinish={position.dateFinish}
                   dateStart={position.dateStart}
                 />
@@ -49,21 +50,20 @@ const Job = (props: Props) => {
   }
 
   return (
-    <div className='col-xs-12'>
+    <div className={`col-xs-12 ${styles.job}`}>
       <div className={styles.container}>
         {props.positions.map((position) => (
           <React.Fragment key={props.company.name}>
             <CompanyLogo url={props.company.logo} name={props.company.name} />
 
             <div className={styles.position}>
-              <h5 className={styles.positionTitle}>
+              <ItemTitle>
                 {`${position.title} at `}
                 <a target='_blank' rel='noopener noreferrer' href={props.company.link}>
                   {props.company.name}
                 </a>
-              </h5>
-
-              <Timestamp
+              </ItemTitle>
+              <ItemTimestamp
                 dateFinish={position.dateFinish}
                 dateStart={position.dateStart}
               />

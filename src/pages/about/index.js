@@ -3,6 +3,7 @@ import React from 'react'
 import { NextSeo, SocialProfileJsonLd } from 'next-seo'
 
 import Experience from 'src/components/pages/about/Experience'
+import Education from 'src/components/pages/about/Education'
 
 const About = () => (
   <>
@@ -23,6 +24,7 @@ const About = () => (
     />
     <main>
       <Experience />
+      <Education />
     </main>
   </>
 )

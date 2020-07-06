@@ -1,6 +1,13 @@
+.job {
+  margin-bottom: 2em;
+}
+
+.job:last-child {
+  margin: 0;
+}
+
 .container {
   display: flex;
-  margin-top: 2em;
 }
 
 .positionList {
@@ -28,9 +35,4 @@
   position: absolute;
   top: 32px;
   width: 2px;
-}
-
-.positionTitle {
-  margin: 0;
-  font-size: 1.15em;
 }
