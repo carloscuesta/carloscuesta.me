@@ -6,7 +6,7 @@ exports[`OpenSource should match OpenSource component 1`] = `
     className="wrapper"
   >
     <h4
-      className="sectionTitle isCentered"
+      className="sectionTitle isCentered "
     >
       Open Source
     </h4>

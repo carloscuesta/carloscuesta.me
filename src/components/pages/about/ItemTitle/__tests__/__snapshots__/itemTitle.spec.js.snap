@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemTitle when children is a Component should match ItemTitle component 1`] = `
+<h5
+  className="title"
+>
+  <h1>
+    Component
+  </h1>
+</h5>
+`;
+
+exports[`ItemTitle when children is a string should match ItemTitle component 1`] = `
+<h5
+  className="title"
+>
+  Title
+</h5>
+`;

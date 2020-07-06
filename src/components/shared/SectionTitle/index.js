@@ -14,8 +14,8 @@ const SectionTitle = (props: Props) => (
     <h4
       className={[
         styles.sectionTitle,
-        props.isCentered && styles.isCentered,
-        !props.subTitle && styles.sectionTitleMargin
+        props.isCentered ? styles.isCentered : undefined,
+        !props.subTitle ? styles.sectionTitleMargin : undefined
       ].join(' ')}
     >
       {props.title}

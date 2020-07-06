@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`about page should match about page 1`] = `
+Array [
+  <NextSeo
+    canonical="https://carloscuesta.me/about"
+    title="Carlos Cuesta – About me"
+  />,
+  <SocialProfileJsonLd
+    name="Carlos Cuesta"
+    sameAs={
+      Array [
+        "http://instagram.com/crloscuesta",
+        "https://github.com/carloscuesta",
+        "https://twitter.com/crloscuesta",
+        "https://www.linkedin.com/in/crloscuesta",
+      ]
+    }
+    type="Person"
+    url="https://carloscuesta.me"
+  />,
+  <main>
+    <WhoAmI />
+    <Experience />
+    <Education />
+    <Contact />
+  </main>,
+]
+`;

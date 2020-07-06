@@ -6,7 +6,7 @@ exports[`Writings should match Writings component 1`] = `
     className="wrapper"
   >
     <h4
-      className="sectionTitle isCentered"
+      className="sectionTitle isCentered "
     >
       Writings
     </h4>
