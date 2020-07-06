@@ -45,7 +45,7 @@
     "remark-slug": "^6.0.0"
   },
   "devDependencies": {
-    "@babel/preset-flow": "^7.10.1",
+    "@babel/preset-flow": "^7.10.4",
     "@lhci/cli": "^0.4.2",
     "babel-eslint": "^10.1.0",
     "codecov": "^3.7.0",
