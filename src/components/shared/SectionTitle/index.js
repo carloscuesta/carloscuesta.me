@@ -23,8 +23,7 @@ const SectionTitle = (props: Props) => (
     {props.subTitle &&
       <h5 className={[styles.sectionSubtitle, props.isCentered && styles.isCentered].join(' ')}>
         {props.subTitle}
-      </h5>
-    }
+      </h5>}
   </>
 )
 

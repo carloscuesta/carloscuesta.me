@@ -9,7 +9,7 @@ import styles from './styles.module.css'
 const Contact = () => (
   <section>
     <Wrapper>
-      <SectionTitle title='Contact me 🙋‍♂️'/>
+      <SectionTitle title='Contact me 🙋‍♂️' />
 
       <div className={styles.contact}>
         <p>Here's a list of useful links where you can get in touch with me:</p>
