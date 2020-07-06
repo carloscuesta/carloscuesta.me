@@ -1,0 +1,33 @@
+.scrollButtons {
+  justify-content: space-between;
+  display: flex;
+}
+
+.button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 1em 0;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active > svg, .button:active span {
+  opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: .5em 0;
+  }
+}
