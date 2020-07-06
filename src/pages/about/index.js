@@ -4,6 +4,7 @@ import { NextSeo, SocialProfileJsonLd } from 'next-seo'
 
 import Experience from 'src/components/pages/about/Experience'
 import Education from 'src/components/pages/about/Education'
+import WhoAmI from 'src/components/pages/about/WhoAmI'
 
 const About = () => (
   <>
@@ -23,6 +24,7 @@ const About = () => (
       ]}
     />
     <main>
+      <WhoAmI />
       <Experience />
       <Education />
     </main>
