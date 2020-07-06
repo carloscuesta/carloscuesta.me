@@ -19,7 +19,7 @@ jest.mock('src/components/pages/index/Biography', () => 'Biography')
 jest.mock('src/components/pages/index/Header', () => 'Header')
 jest.mock('src/components/pages/index/OpenSource', () => 'OpenSource')
 jest.mock('src/components/pages/index/Writings', () => 'Writings')
-jest.mock('src/components/pages/index/SectionTitle', () => 'SectionTitle')
+jest.mock('src/components/shared/SectionTitle', () => 'SectionTitle')
 
 describe('index', () => {
   describe('page', () => {

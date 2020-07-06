@@ -33,7 +33,17 @@ Array [
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
-              Writings
+              Blog
+            </a>
+          </li>
+          <li>
+            <a
+              className="link false"
+              href="/about"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              About
             </a>
           </li>
           <li>

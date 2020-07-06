@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemTimestamp when dateFinish is defined should match ItemTimestamp component 1`] = `
+<span
+  className="timestamp"
+>
+  December 2010
+   – 
+  December 2015
+</span>
+`;
+
+exports[`ItemTimestamp when dateFinish is not defined should match ItemTimestamp component rendering Now as dateFinish 1`] = `
+<span
+  className="timestamp"
+>
+  December 2010
+   – 
+  <span
+    className="currentPosition"
+  >
+    Now
+  </span>
+</span>
+`;

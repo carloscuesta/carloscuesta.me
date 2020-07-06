@@ -1,0 +1,38 @@
+.job {
+  margin-bottom: 2em;
+}
+
+.job:last-child {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.positionList {
+  flex: 1;
+  margin-top: 1em;
+  position: relative;
+}
+
+.positionMark {
+  background-color: var(--textSecondary);
+  border-radius: 50%;
+  display: block;
+  height: 8px;
+  position: absolute;
+  width: 8px;
+  left: -44px;
+  top: 8px;
+}
+
+.positionList:not(:last-child)::before {
+  background-color: var(--textSecondary);
+  content: '';
+  height: calc(100% - 24px);
+  left: -41px;
+  position: absolute;
+  top: 32px;
+  width: 2px;
+}

@@ -6,12 +6,12 @@ exports[`Writings should match Writings component 1`] = `
     className="wrapper"
   >
     <h4
-      className="sectionTitle"
+      className="sectionTitle isCentered "
     >
       Writings
     </h4>
     <h5
-      className="sectionSubtitle"
+      className="sectionSubtitle isCentered"
     >
       The latests posts of my blog.
     </h5>

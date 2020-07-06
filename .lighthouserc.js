@@ -5,6 +5,7 @@ module.exports = {
       startServerReadyPattern: 'started server on',
       url: [
         'http://localhost:3000',
+        'http://localhost:3000/about',
         'http://localhost:3000/blog'
       ],
       settings: {

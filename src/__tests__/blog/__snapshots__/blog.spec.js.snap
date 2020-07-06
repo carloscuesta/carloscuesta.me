@@ -4,7 +4,7 @@ exports[`blog page should match blog page 1`] = `
 Array [
   <NextSeo
     canonical="https://carloscuesta.me/blog"
-    title="Carlos Cuesta – Front End Engineer – Blog"
+    title="Carlos Cuesta – Blog"
   />,
   <main>
     <div

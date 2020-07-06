@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Education should match Education component 1`] = `
+<section>
+  <div
+    className="wrapper"
+  >
+    <h4
+      className="sectionTitle  sectionTitleMargin"
+    >
+      Education
+    </h4>
+    <div
+      className="row"
+    >
+      <div
+        className="col-xs-12 course"
+      >
+        <h5
+          className="title"
+        >
+          CFGS DAW
+           at 
+          <a
+            href="https://www.clot.fje.edu"
+          >
+            Escola Jesuïtes El Clot
+          </a>
+        </h5>
+        <span
+          className="timestamp"
+        >
+          September 2013
+           – 
+          June 2015
+        </span>
+        <p>
+          A two years degree about building web applications. Using Front-End and Back-End technologies.
+        </p>
+      </div>
+      <div
+        className="col-xs-12 course"
+      >
+        <h5
+          className="title"
+        >
+          Self-taught
+           at 
+          <a
+            href="#"
+          >
+            anywhere in the 🌍
+          </a>
+        </h5>
+        <span
+          className="timestamp"
+        >
+          December 1995
+           – 
+          <span
+            className="currentPosition"
+          >
+            Now
+          </span>
+        </span>
+        <p>
+          The things I learned by myself became the vast majority of what I know today. #AlwaysLearning
+        </p>
+      </div>
+    </div>
+    <hr />
+  </div>
+</section>
+`;

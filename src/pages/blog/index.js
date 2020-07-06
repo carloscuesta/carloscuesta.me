@@ -17,7 +17,7 @@ const Blog = (props: Props) => (
   <>
     <NextSeo
       canonical='https://carloscuesta.me/blog'
-      title='Carlos Cuesta – Front End Engineer – Blog'
+      title='Carlos Cuesta – Blog'
     />
     <main>
       <Wrapper>
