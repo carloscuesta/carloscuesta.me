@@ -1,5 +1,8 @@
 .scrollablePosts {
-  flex-wrap: nowrap;
+  /* @FIXME: I need to set !important to override this property on Firefox
+    this overrides the row value.
+  */
+  flex-wrap: nowrap!important;
   overflow-x: scroll;
 }
 
