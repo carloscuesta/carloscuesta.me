@@ -28,13 +28,12 @@ const Biography = () => (
           <img
             alt='Carlos Cuesta'
             className={`lazyload ${styles.profilePicture}`}
-            data-src='https://res.cloudinary.com/carloscuesta/image/upload/s--ToCVp7yf--/q_81:420/v1593723466/carloscuesta-avatar.jpg'
-            src='https://res.cloudinary.com/carloscuesta/image/upload/s--fd8FbLBW--/c_scale,e_blur:100,q_10,w_125/v1593723466/carloscuesta-avatar.jpg'
+            data-src='https://res.cloudinary.com/carloscuesta/image/upload/s--bhEud7Xt--/q_80/v1594588508/carloscuesta.jpg'
+            src='https://res.cloudinary.com/carloscuesta/image/upload/s--rq7ZUVpY--/c_scale,e_blur:100,h_120,q_10,w_120/v1594588508/carloscuesta.jpg'
           />
         </div>
       </div>
     </Wrapper>
-
   </section>
 )
 
