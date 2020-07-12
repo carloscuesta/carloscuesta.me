@@ -3,15 +3,23 @@
 exports[`_app page should match App page 1`] = `
 <Layout>
   <DefaultSeo
+    additionalMetaTags={
+      Array [
+        Object {
+          "content": "https://carloscuesta.me/images/twitter-card.png",
+          "name": "twitter:image",
+        },
+      ]
+    }
     description="I'm a Front End engineer based in Barcelona, Spain. Coding passionate that is focused on JavaScript. Interested in design, technology, sneakers and OpenSource ❤️."
     openGraph={
       Object {
         "images": Array [
           Object {
             "alt": "Carlos Cuesta",
-            "height": 600,
-            "url": "https://carloscuesta.me/images/twitter-card.png",
-            "width": 1200,
+            "height": 500,
+            "url": "https://carloscuesta.me/images/carloscuesta.jpg",
+            "width": 500,
           },
         ],
         "locale": "en_GB",
