@@ -57,7 +57,7 @@
     "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^10.2.11",
     "react-test-renderer": "16.13.1",
-    "sitemap": "^6.1.7",
+    "sitemap": "^6.2.0",
     "snazzy": "^8.0.0",
     "standard": "^14.3.3"
   },
