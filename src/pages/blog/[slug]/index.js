@@ -33,6 +33,12 @@ const Article = (props: Props) => {
       />
 
       <NextSeo
+        additionalMetaTags={[
+          {
+            name: 'twitter:image',
+            content: props.post.images.featured.src
+          }
+        ]}
         canonical={canonicalUrl}
         title={`Carlos Cuesta – ${props.post.title}`}
         description={props.post.excerpt}
