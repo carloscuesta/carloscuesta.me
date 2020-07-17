@@ -2,11 +2,14 @@
 import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
-import remark from 'remark'
-import remarkHtml from 'remark-html'
+import unified from 'unified'
+import remarkParse from 'remark-parse'
 import remarkExternalLinks from 'remark-external-links'
 import remarkAutoLinkHeadings from 'remark-autolink-headings'
 import remarkSlug from 'remark-slug'
+import remarkRehype from 'remark-rehype'
+import rehypePrism from '@mapbox/rehype-prism'
+import rehypeStringify from 'rehype-stringify'
 
 import { type Post, type PostPreview, transformPost } from './mutators'
 
@@ -18,7 +21,8 @@ export const getPostSlugs = (): Array<string> => fs.readdirSync(POSTS_DIRECTORY)
 export const fetchPost = async (slug: string): Promise<Post> => {
   const post = fs.readFileSync(join(POSTS_DIRECTORY, `${slug}.md`), 'utf8')
   const { data, content } = matter(post)
-  const html = await remark()
+  const html = await unified()
+    .use(remarkParse)
     .use(remarkSlug)
     .use(
       remarkAutoLinkHeadings,
@@ -33,7 +37,9 @@ export const fetchPost = async (slug: string): Promise<Post> => {
       }
     )
     .use(remarkExternalLinks)
-    .use(remarkHtml)
+    .use(remarkRehype)
+    .use(rehypePrism, { ignoreMissing: true })
+    .use(rehypeStringify)
     .process(content)
 
   return transformPost({ data, html, slug })
