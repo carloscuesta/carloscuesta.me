@@ -65,9 +65,7 @@ const Article = (props: Props) => {
 
       <Head>
         <link rel='preload' href='/prism/prism.css' as='style' />
-        <link rel='preload' href='/prism/prism.js' as='script' />
         <link href='/prism/prism.css' rel='stylesheet' type='text/css' />
-        <script src='/prism/prism.js' type='text/javascript' />
       </Head>
 
       <FeaturedImage
