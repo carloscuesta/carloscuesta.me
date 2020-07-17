@@ -23,12 +23,6 @@ const App = (props: Props) => {
   return (
     <Layout>
       <DefaultSeo
-        additionalMetaTags={[
-          {
-            name: 'twitter:image',
-            content: 'https://carloscuesta.me/images/twitter-card.png'
-          }
-        ]}
         title='Carlos Cuesta – Front End Engineer'
         description={'I\'m a Front End engineer based in Barcelona, Spain. ' +
           'Coding passionate that is focused on JavaScript. ' +
@@ -41,9 +35,9 @@ const App = (props: Props) => {
           images: [
             {
               alt: 'Carlos Cuesta',
-              height: 500,
-              url: 'https://carloscuesta.me/images/carloscuesta.jpg',
-              width: 500
+              height: 600,
+              url: 'https://carloscuesta.me/images/twitter-card.png',
+              width: 1200
             }
           ]
         }}
