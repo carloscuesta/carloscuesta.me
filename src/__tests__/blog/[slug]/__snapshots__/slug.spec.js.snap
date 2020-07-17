@@ -20,6 +20,14 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
     url="https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces"
   />
   <NextSeo
+    additionalMetaTags={
+      Array [
+        Object {
+          "content": "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+          "name": "twitter:image",
+        },
+      ]
+    }
     canonical="https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces"
     description="A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example"
     openGraph={
