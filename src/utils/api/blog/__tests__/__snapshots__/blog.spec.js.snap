@@ -32,6 +32,25 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
 Array [
   Object {
     "datePublished": Object {
+      "formatDate": "06 August 2020",
+      "formatInWords": "in about 1 month",
+      "value": "2020-08-06 16:00",
+    },
+    "excerpt": "A few months ago we released the new website of ulabox. We rebuilt the entire website from scratch using React and Next.js to Server Side Render our pages 🎉",
+    "images": Object {
+      "featured": Object {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1595954683/blog-featured-images/moving-ulabox-to-nextjs.png",
+      },
+      "preview": Object {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1595954683/blog-featured-images/moving-ulabox-to-nextjs.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1595954683/blog-featured-images/moving-ulabox-to-nextjs.png",
+      },
+    },
+    "slug": "moving-ulabox-to-nextjs",
+    "title": "Moving Ulabox to Next.js",
+  },
+  Object {
+    "datePublished": Object {
       "formatDate": "01 October 2019",
       "formatInWords": "9 months ago",
       "value": "2019-10-01 22:15",
@@ -68,25 +87,6 @@ Array [
     "slug": "managing-react-native-crashes-with-error-boundaries",
     "title": "Managing React-Native crashes with Error Boundaries",
   },
-  Object {
-    "datePublished": Object {
-      "formatDate": "16 October 2018",
-      "formatInWords": "over 1 year ago",
-      "value": "2018-10-16 12:10",
-    },
-    "excerpt": "Creating scalable React components using the folder pattern. A simple way to organize and structure React Components.",
-    "images": Object {
-      "featured": Object {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Scalable_React_Components_architecture.png",
-      },
-      "preview": Object {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1593531857/blog-featured-images/Scalable_React_Components_architecture.png",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1593531857/blog-featured-images/Scalable_React_Components_architecture.png",
-      },
-    },
-    "slug": "scalable-react-components-architecture",
-    "title": "Scalable React Components architecture",
-  },
 ]
 `;
 
@@ -106,6 +106,7 @@ Array [
   "managing-react-native-crashes-with-error-boundaries",
   "mastering-and-hacking-slack",
   "moving-to-digitalocean",
+  "moving-ulabox-to-nextjs",
   "react-amsterdam-2017",
   "react-native-meets-codepush",
   "reactiveconf-2017",
