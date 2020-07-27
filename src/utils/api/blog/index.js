@@ -7,6 +7,7 @@ import remarkParse from 'remark-parse'
 import remarkExternalLinks from 'remark-external-links'
 import remarkAutoLinkHeadings from 'remark-autolink-headings'
 import remarkSlug from 'remark-slug'
+import remarkToc from 'remark-toc'
 import remarkRehype from 'remark-rehype'
 import rehypePrism from '@mapbox/rehype-prism'
 import rehypeStringify from 'rehype-stringify'
@@ -24,6 +25,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
   const html = await unified()
     .use(remarkParse)
     .use(remarkSlug)
+    .use(remarkToc, { tight: true })
     .use(
       remarkAutoLinkHeadings,
       {
