@@ -28,19 +28,19 @@ exports[`404 page should match Error 404 page 1`] = `
           <li>
             <a
               href="/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
-              Home
+              <a>
+                Home
+              </a>
             </a>
           </li>
           <li>
             <a
               href="/blog"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
-              Writings
+              <a>
+                Writings
+              </a>
             </a>
           </li>
           <li>

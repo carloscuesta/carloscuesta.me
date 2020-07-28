@@ -19,6 +19,8 @@ Router.useRouter = () => ({
   }
 })
 
+jest.mock('next/link', () => 'a')
+
 describe('Layout', () => {
   it('should render the Layout with children', () => {
     const wrapper = renderer.create(
