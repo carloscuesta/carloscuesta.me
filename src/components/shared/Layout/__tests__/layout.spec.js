@@ -32,4 +32,34 @@ describe('Layout', () => {
 
     expect(wrapper).toMatchSnapshot()
   })
+
+  it('should subscribe to routeChangeStart using Router.events listener on mount', () => {
+    renderer.create(
+      <Layout>
+        <h1>Some children</h1>
+        <h2>Hello!</h2>
+      </Layout>
+    )
+
+    expect(Router.events.on).toHaveBeenCalledWith(
+      'routeChangeStart',
+      expect.any(Function)
+    )
+  })
+
+  it('should unsubscribe to routeChangeStart using Router.events on unMount', () => {
+    const wrapper = renderer.create(
+      <Layout>
+        <h1>Some children</h1>
+        <h2>Hello!</h2>
+      </Layout>
+    )
+
+    wrapper.unmount()
+
+    expect(Router.events.on).toHaveBeenCalledWith(
+      'routeChangeStart',
+      expect.any(Function)
+    )
+  })
 })
