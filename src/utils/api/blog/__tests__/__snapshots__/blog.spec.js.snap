@@ -10,22 +10,10 @@ Object {
   },
   "disqusIdentifier": "7",
   "excerpt": "Carlos Cuesta terminal setup with ZSH and Oh-My-ZSH, using materialshell and my dotfiles.",
-  "html": "<p><strong>Terminal</strong> is a place where a developer spends a lot of time, running commands, looking for outputs and doing a bunch of stuff, so better to stay comfortable and productive with it.</p>
-<h3 id=\\"shell\\"><a href=\\"#shell\\" class=\\"headingLink \\"><span>#</span></a>Shell</h3>
-<p>I use <a href=\\"http://www.zsh.org\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>ZSH</strong></a> as my main shell along with <a href=\\"http://ohmyz.sh\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>Oh-My-Zsh</strong></a>. By default, OS X comes with bash, a simpler shell. To setup ZSH and install Oh-My-Zsh run:</p>
-<pre class=\\"language-language-bash\\"><code class=\\"language-language-bash\\">$ chsh -s /bin/zsh
+  "html": "<p><strong>Terminal</strong> is a place where a developer spends a lot of time, running commands, looking for outputs and doing a bunch of stuff, so better to stay comfortable and productive with it.<h3 id=shell><a href=#shell class=headingLink><span>#</span></a>Shell</h3><p>I use <a href=http://www.zsh.org rel=\\"nofollow noopener noreferrer\\"target=_blank><strong>ZSH</strong></a> as my main shell along with <a href=http://ohmyz.sh rel=\\"nofollow noopener noreferrer\\"target=_blank><strong>Oh-My-Zsh</strong></a>. By default, OS X comes with bash, a simpler shell. To setup ZSH and install Oh-My-Zsh run:<pre class=language-language-bash><code class=language-language-bash>$ chsh -s /bin/zsh
 $ sh -c \\"$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\\"
-</code></pre>
-<p>To see what shell are you using run:</p>
-<pre class=\\"language-language-bash\\"><code class=\\"language-language-bash\\">$ echo $SHELL
-</code></pre>
-<h3 id=\\"ui\\"><a href=\\"#ui\\" class=\\"headingLink \\"><span>#</span></a>UI</h3>
-<p>After setting up ZSH and Oh-My-Zsh, now we are ready to customize and put our shell on steroids.</p>
-<p>I use a theme called <a href=\\"https://github.com/carloscuesta/materialshell\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>materialshell</strong></a> that I've made for my own.</p>
-<p><a href=\\"https://github.com/carloscuesta/materialshell/blob/master/README.md\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>Follow this guide to install and setup my terminal</strong>.</a></p>
-<p><img src=\\"https://res.cloudinary.com/carloscuesta/image/upload/v1454753967/gazne7uhxuq8ugpfvile.png\\" alt=\\"Carlos Cuesta Shell - MaterialShell\\"></p>
-<h3 id=\\"dotfiles\\"><a href=\\"#dotfiles\\" class=\\"headingLink \\"><span>#</span></a>Dotfiles</h3>
-<p>I have my own <a href=\\"https://github.com/carloscuesta/dotfiles\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\"><strong>dotfiles repository</strong></a> with all my shell configuration files, where you can take a look to learn and be more productive with your shell.</p>",
+</code></pre><p>To see what shell are you using run:<pre class=language-language-bash><code class=language-language-bash>$ echo $SHELL
+</code></pre><h3 id=ui><a href=#ui class=headingLink><span>#</span></a>UI</h3><p>After setting up ZSH and Oh-My-Zsh, now we are ready to customize and put our shell on steroids.<p>I use a theme called <a href=https://github.com/carloscuesta/materialshell rel=\\"nofollow noopener noreferrer\\"target=_blank><strong>materialshell</strong></a> that I've made for my own.<p><a href=https://github.com/carloscuesta/materialshell/blob/master/README.md rel=\\"nofollow noopener noreferrer\\"target=_blank><strong>Follow this guide to install and setup my terminal</strong>.</a><p><img alt=\\"Carlos Cuesta Shell - MaterialShell\\"src=https://res.cloudinary.com/carloscuesta/image/upload/v1454753967/gazne7uhxuq8ugpfvile.png><h3 id=dotfiles><a href=#dotfiles class=headingLink><span>#</span></a>Dotfiles</h3><p>I have my own <a href=https://github.com/carloscuesta/dotfiles rel=\\"nofollow noopener noreferrer\\"target=_blank><strong>dotfiles repository</strong></a> with all my shell configuration files, where you can take a look to learn and be more productive with your shell.",
   "images": Object {
     "featured": Object {
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Terminal_Setup.png",
