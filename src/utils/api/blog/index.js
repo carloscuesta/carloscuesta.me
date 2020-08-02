@@ -11,6 +11,7 @@ import remarkToc from 'remark-toc'
 import remarkRehype from 'remark-rehype'
 import rehypePrism from '@mapbox/rehype-prism'
 import rehypeStringify from 'rehype-stringify'
+import rehypeMinify from 'rehype-preset-minify'
 
 import { type Post, type PostPreview, transformPost } from './mutators'
 
@@ -42,6 +43,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
     .use(remarkRehype)
     .use(rehypePrism, { ignoreMissing: true })
     .use(rehypeStringify)
+    .use(rehypeMinify)
     .process(content)
 
   return transformPost({ data, html, slug })
