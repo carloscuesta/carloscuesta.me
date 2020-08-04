@@ -45,12 +45,12 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
          
         <a
           href="/blog"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
-          <a>
-            <b>
-              blog
-            </b>
-          </a>
+          <b>
+            blog
+          </b>
         </a>
         .
       </p>

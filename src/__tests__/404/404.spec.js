@@ -2,8 +2,6 @@ import renderer from 'react-test-renderer'
 
 import Error404 from 'src/pages/404'
 
-jest.mock('next/link', () => 'a')
-
 /*
   I'm mocking the components since those are unit tested.
   So there's no point to test the rendering of them twice.

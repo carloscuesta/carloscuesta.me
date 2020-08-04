@@ -15,13 +15,12 @@ Array [
           className="logo"
         >
           <a
+            className="link false"
             href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
           >
-            <a
-              className="link false"
-            >
-              Carlos Cuesta
-            </a>
+            Carlos Cuesta
           </a>
         </strong>
         <ul
@@ -29,24 +28,22 @@ Array [
         >
           <li>
             <a
+              className="link false"
               href="/blog"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
             >
-              <a
-                className="link false"
-              >
-                Blog
-              </a>
+              Blog
             </a>
           </li>
           <li>
             <a
+              className="link false"
               href="/about"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
             >
-              <a
-                className="link false"
-              >
-                About
-              </a>
+              About
             </a>
           </li>
           <li>
@@ -112,10 +109,10 @@ Array [
           <li>
             <a
               href="/blog"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
             >
-              <a>
-                Blog
-              </a>
+              Blog
             </a>
           </li>
           <li>
