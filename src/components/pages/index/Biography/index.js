@@ -12,7 +12,7 @@ const Biography = () => (
           <h3 className={styles.biographyText}>
             I'm a 24 year old <b>Front End Engineer</b> based in <b>Barcelona</b>,
             working at <a href='https://ulabox.com' rel='noopener noreferrer'><b>Ulabox</b></a>.
-            I'm a passionate coder focused on <b>JavaScript</b>, specifically React & React-Native.
+            I'm a coding passionate focused on <b>JavaScript</b>, specifically React & React-Native.
             Interested in design, tech and <b>OpenSource</b> ❤️
           </h3>
 
