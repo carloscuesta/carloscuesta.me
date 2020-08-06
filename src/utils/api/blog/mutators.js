@@ -23,7 +23,7 @@ export const transformPost = (payload: Payload): Post => ({
   dateModified: payload.data.dateModified,
   datePublished: {
     formatInWords: formatDistanceToNow(
-      new Date(payload.data.datePublished),
+      new Date(payload.data.datePublished + ' GMT+2'),
       { addSuffix: true }
     ),
     formatDate: format(
