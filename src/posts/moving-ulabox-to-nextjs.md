@@ -1,0 +1,198 @@
+---
+dateModified: "2020-08-06 16:00"
+datePublished: "2020-08-06 16:00"
+disqusIdentifier: "moving-ulabox-to-nextjs"
+excerpt: "A few months ago we released the new website of ulabox. We rebuilt the entire website from scratch using React and Next.js to Server Side Render our pages 🎉"
+image: "https://res.cloudinary.com/carloscuesta/image/upload/v1595954683/blog-featured-images/moving-ulabox-to-nextjs.png"
+title: "Moving Ulabox to Next.js"
+---
+
+Hello 👋 It's been a while since I published the last article on my blog. I was really busy with the project I was working on.
+
+A few months ago on **April** we **released** the new **website** of **[ulabox.com](https://ulabox.com)** 🎉, the company where I'm working as a Lead Front End Engineer. We **rebuilt** the whole **entire website from scratch** using [_React_](https://reactjs.org/) and [_Next.js_](https://nextjs.org/) to **S**erver-**S**ide-**R**ender our pages and components 💖
+
+I'm really happy and excited to share the story with you! 😊 Let's get started 👏
+
+### Table of Contents
+
+### What is Ulabox ?
+
+**[Ulabox](https://ulabox.com)** is an **online** ~~supermarket~~ **marketplace** 🛒 where you can buy **groceries** and **products** from all our stores; the _supermarket_, the _neighborhood's greengrocer_, the _bakery_, the _fish market_, or even the _city local markets_.
+
+### The tech stack
+
+Our frontend was built on top of a [Symfony](https://symfony.com/) project using the following technologies:
+
+- [Twig](https://twig.symfony.com/): For rendering and composing our views.
+- [Scss](https://twig.symfony.com/): For styling the views.
+- [jQuery](https://jquery.com/): For handling user interactions with our front.
+- [Require.js](https://requirejs.org/): For bundling our scripts into modules.
+
+![Ulabox Front-End Old Tech Stack](https://res.cloudinary.com/carloscuesta/image/upload/v1596362486/Ulabox_Tech_Stack_ihufs9.png)
+
+Even though this architecture seems outdated compared to the current state of the frontend, it worked well for the last **8 years** and **helped** our **business** to **grow** 📈 and **progress** 💰.
+
+There's no need to be on top of the newest technologies to build a business. As software engineers it's important to remember:
+
+> The **focus** when **coding** should be **the product** **not** the **code**.
+
+This statement for _some engineers_ (_including myself_ 👨‍💻) is a **hard pill to swallow** 💊. Because then you might ask yourself: _**Why** it's **important** to think about **code quality** ?_
+
+Because a **high quality codebase** has a **direct impact** into the **business**. However the focus and priority should always be on the product.
+
+### Why we rebuilt the frontend ?
+
+The **company** decided that it was time to **switch the business model** and **pivot** from an online supermarket to a **marketplace** of stores. This switch introduced a new **layer** of **logic** 🧠 to our frontend.
+
+At this point we had **two options** to make this happen:
+
+- Implement the pivot into the [current tech stack](#the-tech-stack).
+- Refactor the entire frontend.
+
+Let's analyze in depth both approaches to see which one is a better choice 🤔
+
+#### Implement the pivot into the [current tech stack](#the-tech-stack)
+
+This option is the conservative choice. We needed to introduce a **breaking change** into our frontend codebase. On a code that was not designed to work with the new business model.
+
+The pivot introduced a ton of new user flows that would be difficult to handle with jQuery. We found out that we **needed a solid way to manage frontend state** into our website.
+
+On a moment like this is where you can justify a huge refactor 💥. The rules of the game were completely different. The new model could be **solved** way more **efficiently** with a **different tech stack** than the one we had. Furthermore, it was an amazing opportunity to improve and modernize the company tech stack which was outdated.
+
+**Cons** ❌
+
+- Hard to introduce the pivot into the existing codebase.
+- It was not the best toolset for the product.
+- Tech stack outdated.
+
+#### Refactor the entire frontend
+
+Rebuilding the frontend from scratch may sound scary 😱 specially considering that we had a tight deadline ⏰ and a product with 8 years of history with a lot of features that we didn't know. However as soon as we started to analyze the new model, we saw a lot of benefits from moving our website to something closer to a web application with React.
+
+We could integrate all our Back-End logic into a single API that serves all the Front-Ends that we maintain. The **Ulabox Application** which is built with [_React-Native_](https://reactnative.dev/) for [iOS](https://apps.apple.com/es/app/ulabox-supermercado-online/id465984761) and [Android](https://play.google.com/store/apps/details?id=com.ulabox) and the [ulabox.com](https://ulabox.com) **website**.
+
+Additionally based on our own experience and metrics we're faster delivering features and fixes while coding with React based projects compared to the tech stack we had.
+
+**Pros** ✅
+
+- Unify all the Back-End into an API.
+- Easier to maintain and introduce new features.
+- Increase development speed and improve Developer Experience.
+- Improve the site User-Experience.
+- Renew Ulabox Front-End tech stack.
+- Unify Front-End tech stack for the application and website.
+
+**Cons** ❌
+
+- Refactoring the entire site has a big cost.
+- We didn't had experience working with React SSR.
+
+After studying both options, we decided to refactor the frontend, because we think that it was the best choice for the product and the company 🚀. We felt that it was the right moment to make that change 💪
+
+### Why Next.js ?
+
+We need a framework capable of **SSR** our frontend for the reason that **SEO** is a key thing for our company.
+
+A year ago before the company decided to switch the business model, we moved our Checkout into a React single page application. As a result of this the  **framework** should **support rendering React**.
+
+As I said before our time was limited, so we did not want to implement our own SSR implementation. It's better to **not reinvent the wheel** ☸️ when there are **great solutions out there**.
+
+[Next.js](https://nextjs.org) provides a great ecosystem for building React SSR applications. Is used by 🔝 [world’s leading companies](https://nextjs.org/showcase). In addition to this has an awesome community and it's maintained by [Vercel](https://vercel.com).
+
+That's the reason why we picked Next.js to move all our frontend to React! ⚛️
+
+### The process
+
+Let's see how we faced the big challenge of ♻️ moving our front end to a new stack from top to bottom 👇
+
+#### Breaking up the product
+
+The first thing we did was to **break up** our **product features** on a **list**. This is an **essential process** because it **helped** us to **discover** all the features that our product had. It's nearly impossible to be aware of every single thing.
+
+The break up process was also useful for deciding the features we wanted to keep and the ones we could drop 🔥
+
+#### Defining the migration strategy
+
+Once the roadmap for the project was defined, it was time to think about the migration strategy. We asked ourselves: **How we want to roll-out the site to our users ?**
+
+We decided to **release** the new website **progressively** based on **every page**. Meaning that as soon as we had a page finished, it was pushed into production and it was available for our users. 🚀
+
+We achieved this by running both frontends and redirecting through NGINX based on the path and page the user was on.
+
+The progressive migration gave us some trouble because we had to maintain both websites at the same time. We put a **lot of effort** **integrating both environments** for our **users**. 😵
+
+The hardest thing was **synchronizing user sessions between** **Symfony** and **Next.js** in both directions 🔄.
+
+For example, let's say that a user logs in into the old website. The session was saved on the Symfony system, after that the user could potentially end up on a released Next.js page. As both environments were **completely different** the user would not be logged in on the Next.js website 😱.
+
+#### Assembling the tech stack
+
+Afterwards it was time to **assemble** 🏗 the new **frontend tech stack**. I'm pleased to present you the Ulabox frontend foundation for the future 🥁 ✨
+
+- [React](https://reactjs.org/): For building our UI.
+- [Next.js](https://nextjs.org/): SSRing our application.
+- [Redux](https://redux.js.org/): For handling application global state.
+- [Redux-Saga](https://redux-saga.js.org/): Handling application side-effects.
+- [Material-UI](https://material-ui.com/): Material-Design component lib for React.
+- [Framer-Motion](https://www.framer.com/motion/): For handling animations.
+- [Flow](https://flow.org/): For introducing static type checks in our code.
+- [Jest](https://jestjs.io): For testing our code.
+
+![Ulabox Front-End Tech Stack](https://res.cloudinary.com/carloscuesta/image/upload/v1596362336/Ulabox_Front-End_Tech_Stack_dec75r.png)
+
+#### Implementing the architecture
+
+Let's see how we implemented the **architecture** for our frontend. On the `public/` folder we store our assets and translations resources 📝. Next to this, we have the `src/` where we store all our codebase. The codebase is organized on `pages` and `pods`.
+
+- `pages`: A page imports a container from the `pods` folder. Acts as the entry point for our router.
+
+- `pods`: Each pod represents an **isolated part** of our **application**. Inside of a pod you will find [React `components`](https://carloscuesta.me/blog/scalable-react-components-architecture) , a container, redux state, actions, reducer, sagas and the tests for everything that is inside this isolation. Depending on the complexity of the pod, we can split up into sub-pods with the same structure.
+
+- `server`: Contains the custom express server we use for _universal routing_, instead of the _file-system based routing_.
+
+```
+.
+├── public
+│   ├── assets
+│   └── translations
+└── src
+    ├── pages
+    │   ├── account
+    │   ├── catalog
+    │   ├── checkout
+    │   ├── home
+    │   └── ...
+    ├── pods
+    │   ├── account
+    │   ├── catalog
+    │   ├── checkout
+    │   ├── home
+    │   └── ...
+    └── server
+```
+
+One of the **main problems** we faced with **Next.js** is the **[file-system based routing](https://nextjs.org/docs/routing/introduction)**. This solution is **not scalable** for complex applications that have **i18n seo friendly routes**  🌍 with **multiple languages**. All our routes are different on `Spanish`, `Catalan` and `English`.
+
+For example if we take a look at the product page URL:
+
+- Spanish: `/producto/:id/:slug`
+- Catalan: `/ca/producte/:id/:slug`
+- English: `/en/product/:id/:slug`
+
+If we were using the file-system based routing we will end up with 3 different folders 😱 with the "same file" 😞. In order to solve this we use [`next-routes`](https://github.com/fridays/next-routes) along with [`next-i18next`](https://github.com/isaachinman/next-i18next).
+
+In my humble opinion this is the biggest issue the framework has. There should be an universal solution handled by Next.js to specify routes without having to depend on the file-system.
+
+#### Going into production
+
+Our application is **hosted** on **our servers**. We're running the frontend on **two** different **machines** using **NGINX** as a **load balancer**.
+
+Each machine uses **[PM2](https://pm2.keymetrics.io)** on [**cluster mode**](https://pm2.keymetrics.io/docs/usage/cluster-mode/) with **5 instances**. We use [Datadog APM](https://www.datadoghq.com/product/apm/) for monitoring our frontend.
+
+![Ulabox Front-End Server Infrastructure](https://res.cloudinary.com/carloscuesta/image/upload/v1596362785/Ulabox_Front-End_Server_Infrastructure_hx2kd6.png)
+
+### It's a wrap!
+
+Our **frontend** is fully served with **Next.js** and **React** ❤️. We've moved all our product features and migrated the website **completely**! 💯 🥳. We still have **room** for **improvements** but we will keep **iterating** over our new website.
+
+I would like to recognize the **hard work** to **everyone** who participated on the project for those **crazy** 🤪 months. We **shipped** the website in the middle of a [world pandemic](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) 🦠, **remotely** from our homes 🏠. A **whole new experience** for a **team** that went **full remote** for the **first time** on _March 2020_ 👏
