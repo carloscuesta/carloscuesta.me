@@ -10,6 +10,7 @@ import Header from 'src/components/pages/blog/[slug]/Header'
 import FeaturedImage from 'src/components/pages/blog/[slug]/FeaturedImage'
 import NewsletterSubscribe from 'src/components/pages/blog/[slug]/NewsletterSubscribe'
 import ShareLinks from 'src/components/pages/blog/[slug]/ShareLinks'
+import DisqusComments from 'src/components/pages/blog/[slug]/DisqusComments'
 
 type Props = {
   post: Post
@@ -85,6 +86,12 @@ const Article = (props: Props) => {
           <NewsletterSubscribe />
 
           <hr />
+
+          <DisqusComments
+            canonicalUrl={canonicalUrl}
+            postDisqusIdentifier={props.post.disqusIdentifier}
+            postTitle={props.post.title}
+          />
         </Wrapper>
       </main>
     </article>

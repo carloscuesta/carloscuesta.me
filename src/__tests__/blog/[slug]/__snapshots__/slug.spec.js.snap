@@ -79,6 +79,11 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
       />
       <NewsletterSubscribe />
       <hr />
+      <DisqusComments
+        canonicalUrl="https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces"
+        postDisqusIdentifier="5bc9ff9949ac5006c0a84f00"
+        postTitle="JavaScript monorepos with Lerna and Yarn Workspaces"
+      />
     </Wrapper>
   </main>
 </article>

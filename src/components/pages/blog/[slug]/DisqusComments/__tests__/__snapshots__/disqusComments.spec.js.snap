@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DisqusComments when the component is in viewport should render the Disqus component 1`] = `
+<div>
+  <div
+    config={
+      Object {
+        "identifier": "post-disqus-identifier",
+        "language": "en",
+        "title": "Post Title",
+        "url": "https://carloscuesta.me/canonical-url",
+      }
+    }
+    id="disqus_thread"
+    shortname="carloscuesta"
+  />
+</div>
+`;
+
+exports[`DisqusComments when the component is not in viewport should not render the Disqus component 1`] = `<div />`;
