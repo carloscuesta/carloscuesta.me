@@ -18,6 +18,7 @@ jest.mock('src/components/pages/blog/[slug]/Header', () => 'Header')
 jest.mock('src/components/pages/blog/[slug]/FeaturedImage', () => 'FeaturedImage')
 jest.mock('src/components/pages/blog/[slug]/NewsletterSubscribe', () => 'NewsletterSubscribe')
 jest.mock('src/components/pages/blog/[slug]/ShareLinks', () => 'ShareLinks')
+jest.mock('src/components/pages/blog/[slug]/DisqusComments', () => 'DisqusComments')
 
 describe('blog/[slug]', () => {
   describe('page', () => {
