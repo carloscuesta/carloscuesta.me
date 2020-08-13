@@ -13,6 +13,7 @@ const Footer = () => (
 
         <ul className={styles.links}>
           <li><Link href='/blog'><a>Blog</a></Link></li>
+          <li><Link href='/about'><a>About</a></Link></li>
           <li>
             <a
               href='https://github.com/carloscuesta'

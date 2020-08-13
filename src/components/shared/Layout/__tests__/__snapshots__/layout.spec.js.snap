@@ -46,16 +46,6 @@ Array [
               About
             </a>
           </li>
-          <li>
-            <a
-              className="link"
-              href="https://twitter.com/intent/follow?screen_name=crloscuesta"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Follow me
-            </a>
-          </li>
         </ul>
         <div
           className="hamburger"
@@ -113,6 +103,15 @@ Array [
               onMouseEnter={[Function]}
             >
               Blog
+            </a>
+          </li>
+          <li>
+            <a
+              href="/about"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              About
             </a>
           </li>
           <li>
