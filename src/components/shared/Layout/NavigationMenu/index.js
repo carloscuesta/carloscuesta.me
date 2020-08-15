@@ -19,13 +19,6 @@ const NavigationMenu = () => (
             <li><MenuLink href='/blog' text='Blog' /></li>
 
             <li><MenuLink href='/about' text='About' /></li>
-
-            <li>
-              <MenuLink
-                href='https://twitter.com/intent/follow?screen_name=crloscuesta'
-                text='Follow me'
-              />
-            </li>
           </ul>
 
           <Hamburger />
