@@ -49,6 +49,7 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
   />
   <FeaturedImage
     image="https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png"
+    lqpiImage="https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png"
     title="JavaScript monorepos with Lerna and Yarn Workspaces"
   />
   <main>
