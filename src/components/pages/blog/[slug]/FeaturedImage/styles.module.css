@@ -1,20 +1,18 @@
 .header {
-  background-color: var(--backgroundSurface);
   height: 50vh;
+  overflow: hidden;
 }
 
 .image {
-  filter: blur(5px);
-  object-fit: cover;
-  opacity: 0;
-  transition: filter 200ms ease-in-out, opacity 200ms ease-in-out;
-  width: 100%;
+  filter: blur(1px);
   height: 50vh;
+  object-fit: cover;
+  transition: all 200ms ease-in-out;
+  width: 100%;
 }
 
 .image:global(.lazyloaded) {
   filter: blur(0);
-  opacity: 1;
 }
 
 @media (max-width: 768px) {

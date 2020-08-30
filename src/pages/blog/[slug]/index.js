@@ -65,6 +65,7 @@ const Article = (props: Props) => {
 
       <FeaturedImage
         image={props.post.images.featured.src}
+        lqpiImage={props.post.images.preview.lqpi}
         title={props.post.title}
       />
 
