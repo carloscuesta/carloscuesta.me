@@ -21,3 +21,8 @@ sitemap.xml
 # Environment vars
 .env
 .lighthouseci
+
+# next-pwa
+public/workbox-*.js
+public/sw.js
+public/*.map
