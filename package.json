@@ -32,7 +32,7 @@
   "dependencies": {
     "@mapbox/rehype-prism": "^0.5.0",
     "date-fns": "^2.16.0",
-    "disqus-react": "^1.0.9",
+    "disqus-react": "^1.0.10",
     "gray-matter": "^4.0.2",
     "lazysizes": "^5.2.2",
     "lodash.groupby": "^4.6.0",
