@@ -63,7 +63,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.4.2",
     "jest-fetch-mock": "^3.0.3",
-    "lint-staged": "^10.3.0",
+    "lint-staged": "^10.4.0",
     "react-test-renderer": "16.13.1",
     "sitemap": "^6.3.0",
     "snazzy": "^8.0.0",
