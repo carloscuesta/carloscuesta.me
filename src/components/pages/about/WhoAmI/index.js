@@ -1,11 +1,11 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 import Link from 'next/link'
 
 import Wrapper from 'src/components/shared/Wrapper'
 import styles from './styles.module.css'
 
-const WhoAmI = () => (
+const WhoAmI = (): Element<'section'> => (
   <section>
     <Wrapper>
       <h3>Hi! I'm Carlos 👋🏼</h3>

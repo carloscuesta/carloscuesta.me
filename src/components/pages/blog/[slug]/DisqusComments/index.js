@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 import { DiscussionEmbed } from 'disqus-react'
 import { useInView } from 'react-intersection-observer'
 
@@ -9,7 +9,7 @@ type Props = {
   postTitle: string
 }
 
-const DisqusComments = (props: Props) => {
+const DisqusComments = (props: Props): Element<'div'> => {
   const [inViewRef, isInView] = useInView({
     rootMargin: '440px',
     triggerOnce: true

@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Node } from 'react'
 import { NextSeo, SocialProfileJsonLd } from 'next-seo'
 
 import { fetchPosts } from 'src/utils/api/blog'
@@ -16,7 +16,7 @@ type Props = {
   repositories: Array<Repository>
 }
 
-const Index = (props: Props) => (
+const Index = (props: Props): Node => (
   <>
     <NextSeo canonical='https://carloscuesta.me' />
     <SocialProfileJsonLd

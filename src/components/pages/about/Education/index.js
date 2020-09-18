@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 
 import Wrapper from 'src/components/shared/Wrapper'
 import SectionTitle from 'src/components/shared/SectionTitle'
@@ -9,7 +9,7 @@ import education, { type Course } from 'src/utils/staticData/education'
 
 import styles from './styles.module.css'
 
-const Education = () => (
+const Education = (): Element<'section'> => (
   <section>
     <Wrapper>
       <SectionTitle title='Education' />

@@ -1,12 +1,12 @@
 // @flow
-import React from 'react'
+import React, { type Node } from 'react'
 
 import Wrapper from 'src/components/shared/Wrapper'
 import MenuLink from './MenuLink'
 import Hamburger from './Hamburger'
 import styles from './styles.module.css'
 
-const NavigationMenu = () => (
+const NavigationMenu = (): Node => (
   <>
     <header className={styles.header}>
       <Wrapper>

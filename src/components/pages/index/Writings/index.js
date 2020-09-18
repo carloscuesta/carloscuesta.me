@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'
 import Wrapper from 'src/components/shared/Wrapper'
@@ -12,7 +12,7 @@ type Props = {
   posts: Array<PostPreview>
 }
 
-const Writings = (props: Props) => {
+const Writings = (props: Props): Element<'section'> => {
   const scrollablePostsRef: Object = React.useRef({ current: {} })
   const [postWidth, setPostWidth] = React.useState(0)
 

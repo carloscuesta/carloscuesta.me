@@ -1,11 +1,11 @@
 // @flow
-import React from 'react'
+import React, { type Node } from 'react'
 import Link from 'next/link'
 
 import Wrapper from 'src/components/shared/Wrapper'
 import styles from './styles.module.css'
 
-const Error404 = () => (
+const Error404 = (): Node => (
   <Wrapper>
     <div className={`row middle-xs ${styles.error}`}>
       <div>

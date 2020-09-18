@@ -1,10 +1,10 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 
 import Wrapper from 'src/components/shared/Wrapper'
 import styles from './styles.module.css'
 
-const Biography = () => (
+const Biography = (): Element<'section'> => (
   <section className={styles.biography}>
     <Wrapper>
       <div className='row middle-xs'>

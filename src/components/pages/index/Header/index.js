@@ -1,9 +1,9 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 
 import styles from './styles.module.css'
 
-const Header = () => (
+const Header = (): Element<'header'> => (
   <header className={styles.header}>
     <span className={styles.headline}>Hi! I'm</span>
     <h1 className={styles.name}>Carlos Cuesta</h1>

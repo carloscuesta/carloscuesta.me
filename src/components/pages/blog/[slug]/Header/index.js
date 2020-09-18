@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 
 import styles from './styles.module.css'
 
@@ -8,7 +8,7 @@ type Props = {
   datePublished: { formatDate: string, value: string }
 }
 
-const Header = (props: Props) => (
+const Header = (props: Props): Element<'header'> => (
   <header className={styles.header}>
     <h1 className={styles.title}>{props.title}</h1>
 

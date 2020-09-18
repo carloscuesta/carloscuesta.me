@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 import Router from 'next/router'
 
 import MenuLink from '../MenuLink'
@@ -7,7 +7,7 @@ import OpenIcon from './OpenIcon'
 import CloseIcon from './CloseIcon'
 import styles from './styles.module.css'
 
-const Hamburger = () => {
+const Hamburger = (): Element<'div'> => {
   const [isOpen, setIsOpen] = React.useState(false)
 
   React.useEffect(() => {

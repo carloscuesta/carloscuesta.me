@@ -1,11 +1,11 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 
 import styles from './styles.module.css'
 
 type Props = { scrollTo: Function }
 
-const ScrollButtons = (props: Props) => (
+const ScrollButtons = (props: Props): Element<'div'> => (
   <div className='row'>
     <div className={`col-xs-12 ${styles.scrollButtons}`}>
       <button

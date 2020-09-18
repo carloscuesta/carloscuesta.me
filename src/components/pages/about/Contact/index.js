@@ -1,12 +1,12 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 
 import Wrapper from 'src/components/shared/Wrapper'
 import SectionTitle from 'src/components/shared/SectionTitle'
 
 import styles from './styles.module.css'
 
-const Contact = () => (
+const Contact = (): Element<'section'> => (
   <section>
     <Wrapper>
       <SectionTitle title='Contact me 🙋‍♂️' />

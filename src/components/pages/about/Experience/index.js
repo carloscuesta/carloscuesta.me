@@ -1,12 +1,12 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 
 import workExperience, { type JobPosition } from 'src/utils/staticData/workExperience'
 import Wrapper from 'src/components/shared/Wrapper'
 import SectionTitle from 'src/components/shared/SectionTitle'
 import Job from './Job'
 
-const Experience = () => (
+const Experience = (): Element<'section'> => (
   <section>
     <Wrapper>
       <SectionTitle title='Experience' />
