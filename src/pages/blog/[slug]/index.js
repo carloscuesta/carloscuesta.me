@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 import Head from 'next/head'
 import { ArticleJsonLd, NextSeo } from 'next-seo'
 
@@ -16,7 +16,7 @@ type Props = {
   post: Post
 }
 
-const Article = (props: Props) => {
+const Article = (props: Props): Element<'article'> => {
   const canonicalUrl = `https://carloscuesta.me/blog/${props.post.slug}`
 
   return (

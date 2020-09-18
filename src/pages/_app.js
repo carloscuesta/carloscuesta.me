@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Node } from 'react'
 import { DefaultSeo } from 'next-seo'
 import Router from 'next/router'
 import 'lazysizes'
@@ -11,7 +11,7 @@ import * as analytics from 'src/utils/analytics'
 
 type Props = { Component: typeof React.Component, pageProps: Object }
 
-const App = (props: Props) => {
+const App = (props: Props): Node => {
   React.useEffect(() => {
     const onRouteChange = (url) => analytics.trackPageView(url)
 

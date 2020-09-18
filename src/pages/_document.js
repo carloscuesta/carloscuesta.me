@@ -1,11 +1,11 @@
 // @flow
-import React from 'react'
+import React, { type Node } from 'react'
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 
 import { GA_TRACKING_ID } from 'src/utils/analytics'
 
 class Document extends NextDocument {
-  render () {
+  render (): Node {
     return (
       <Html lang='en'>
         <Head>

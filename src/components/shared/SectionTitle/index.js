@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Node } from 'react'
 
 import styles from './styles.module.css'
 
@@ -9,7 +9,7 @@ type Props = {
   title: string
 }
 
-const SectionTitle = (props: Props) => (
+const SectionTitle = (props: Props): Node => (
   <>
     <h4
       className={[

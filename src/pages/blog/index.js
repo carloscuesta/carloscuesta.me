@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Node } from 'react'
 import groupBy from 'lodash.groupby'
 import { NextSeo } from 'next-seo'
 
@@ -13,7 +13,7 @@ type Props = {
   posts: { [key: string]: Array<PostPreview> }
 }
 
-const Blog = (props: Props) => (
+const Blog = (props: Props): Node => (
   <>
     <NextSeo
       canonical='https://carloscuesta.me/blog'

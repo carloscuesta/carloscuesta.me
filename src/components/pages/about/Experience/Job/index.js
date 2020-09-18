@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 
 import { type JobPosition } from 'src/utils/staticData/workExperience'
 import ItemTimestamp from 'src/components/pages/about/ItemTimestamp'
@@ -9,7 +9,7 @@ import styles from './styles.module.css'
 
 type Props = { ...JobPosition }
 
-const Job = (props: Props) => {
+const Job = (props: Props): Element<'div'> => {
   const hasJobMoreThanOnePosition = props.positions.length > 1
 
   if (hasJobMoreThanOnePosition) {

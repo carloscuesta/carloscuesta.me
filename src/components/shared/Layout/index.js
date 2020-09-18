@@ -6,7 +6,7 @@ import Footer from './Footer'
 
 type Props = { children: Node }
 
-const Layout = (props: Props) => (
+const Layout = (props: Props): Node => (
   <>
     <NavigationMenu />
     {props.children}

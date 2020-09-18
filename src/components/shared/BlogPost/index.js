@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { type Element } from 'react'
 import Link from 'next/link'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'
@@ -9,7 +9,7 @@ type Props = {
   post: PostPreview
 }
 
-const BlogPost = (props: Props) => (
+const BlogPost = (props: Props): Element<'div'> => (
   <div className={`col-xs-12 col-sm-6 col-md-4 ${styles.postContainer}`}>
     <Link href='/blog/[slug]' as={`/blog/${props.post.slug}`}>
       <a className={styles.post} title={props.post.title}>
