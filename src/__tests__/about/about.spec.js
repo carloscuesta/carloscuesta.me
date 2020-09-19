@@ -10,7 +10,6 @@ jest.mock('next-seo', () => ({ NextSeo: 'NextSeo', SocialProfileJsonLd: 'SocialP
   It's more easier to manage little snapshots than big ones.
 */
 
-jest.mock('src/components/pages/about/Contact', () => 'Contact')
 jest.mock('src/components/pages/about/Education', () => 'Education')
 jest.mock('src/components/pages/about/Experience', () => 'Experience')
 jest.mock('src/components/pages/about/ItemTimestamp', () => 'ItemTimestamp')
