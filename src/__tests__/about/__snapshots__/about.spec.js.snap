@@ -23,7 +23,6 @@ Array [
     <WhoAmI />
     <Experience />
     <Education />
-    <Contact />
   </main>,
 ]
 `;
