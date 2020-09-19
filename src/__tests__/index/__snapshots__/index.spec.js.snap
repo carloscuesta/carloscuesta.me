@@ -207,6 +207,7 @@ Array [
         ]
       }
     />
+    <Contact />
   </main>,
 ]
 `;

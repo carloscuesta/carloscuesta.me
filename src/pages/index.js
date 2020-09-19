@@ -10,6 +10,7 @@ import Header from 'src/components/pages/index/Header'
 import Biography from 'src/components/pages/index/Biography'
 import Writings from 'src/components/pages/index/Writings'
 import OpenSource from 'src/components/pages/index/OpenSource'
+import Contact from 'src/components/pages/index/Contact'
 
 type Props = {
   posts: Array<PostPreview>,
@@ -35,6 +36,7 @@ const Index = (props: Props): Node => (
       <Biography />
       <Writings posts={props.posts} />
       <OpenSource repositories={props.repositories} />
+      <Contact />
     </main>
   </>
 )
