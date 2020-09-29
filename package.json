@@ -41,7 +41,7 @@
     "next-seo": "^4.10.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-intersection-observer": "^8.28.6",
+    "react-intersection-observer": "^8.29.0",
     "rehype-preset-minify": "^5.0.3",
     "rehype-stringify": "^8.0.0",
     "remark-autolink-headings": "^6.0.1",
