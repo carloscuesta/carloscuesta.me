@@ -58,7 +58,7 @@
     "babel-eslint": "^10.1.0",
     "codecov": "^3.7.2",
     "eslint-plugin-flowtype": "^5.2.0",
-    "flow-bin": "^0.134.0",
+    "flow-bin": "^0.135.0",
     "husky": "^4.3.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.4.2",
