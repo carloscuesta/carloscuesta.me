@@ -61,7 +61,7 @@
     "flow-bin": "^0.135.0",
     "husky": "^4.3.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^26.5.2",
+    "jest": "^26.5.3",
     "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^10.4.0",
     "react-test-renderer": "16.13.1",
