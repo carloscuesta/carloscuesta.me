@@ -2604,6 +2604,28 @@ base@^0.11.1:
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
 
+bcp-47-match@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/bcp-47-match/-/bcp-47-match-1.0.2.tgz#a222ff4a34d2b91615e306d3a7352f809ca676ca"
+  integrity sha512-LugfCkkRdq/h8vVcQjhKxgm+c84AKHMvyNkFyy/jxCnTsEqj2lULoEm9ooUWbwWDwL2rok9GoQXMu7iETJO+uw==
+
+bcp-47-normalize@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/bcp-47-normalize/-/bcp-47-normalize-1.1.0.tgz#01490428d33ac6c2b31a8226876b8a84343d6f56"
+  integrity sha512-fvv/OSdkOAXcFCrZP5CpdVFx3kOchn6flZdBBffc/wOnpKYAX6egXhqXERgVx15r9b4ZHujf+Rj6yNnTEYQm8g==
+  dependencies:
+    bcp-47 "^1.0.0"
+    bcp-47-match "^1.0.0"
+
+bcp-47@^1.0.0:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/bcp-47/-/bcp-47-1.0.7.tgz#521eb1933ff3db971c995ffa1a80aa922d884091"
+  integrity sha512-XywQRckEigetKCTuxsaecL/68psvr7ayWsPq6LLwoz5k+qwpwnpcTMyU/Gs+JO3u8J+BxofouYCS+s9ACiNyrw==
+  dependencies:
+    is-alphabetical "^1.0.0"
+    is-alphanumerical "^1.0.0"
+    is-decimal "^1.0.0"
+
 bcrypt-pbkdf@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.1.tgz#63bc5dcb61331b92bc05fd528953c33462a06f8d"
@@ -9131,6 +9153,15 @@ rehype-minify-json-script@^2.0.0:
     hast-util-to-string "^1.0.0"
     unist-util-visit "^2.0.0"
 
+rehype-minify-language@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rehype-minify-language/-/rehype-minify-language-1.0.0.tgz#08287899f27619efea1b894af376db3991f458fd"
+  integrity sha512-8NdFehqW8f1j2g3lgCQ68nGyvLXHC5TqgBCRyLm0CdAH1tOy9U4xBZougmLrky4d5/be2k8QHG8tcQaFqyL1nw==
+  dependencies:
+    bcp-47-normalize "^1.1.0"
+    hast-util-has-property "^1.0.0"
+    unist-util-visit "^2.0.0"
+
 rehype-minify-media-attribute@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/rehype-minify-media-attribute/-/rehype-minify-media-attribute-2.0.2.tgz#6abdc81393b5c176c69d84acebfdd46225aa7be9"
@@ -9190,10 +9221,10 @@ rehype-normalize-attribute-value-case@^2.0.0:
     unist-util-visit "^2.0.0"
     x-is-array "^0.1.0"
 
-rehype-preset-minify@^5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/rehype-preset-minify/-/rehype-preset-minify-5.0.3.tgz#bd5dbc6f7ad4954aecaaa3b48227fdcffdcf8a82"
-  integrity sha512-AzqYNocMpbi71n7RtADySY0cWHlE59EIV7QoMbfk4pQKWYK1ftzwVdQgi6D8BUEK25d64hY4j0qe25e/cCpSRA==
+rehype-preset-minify@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/rehype-preset-minify/-/rehype-preset-minify-5.1.0.tgz#01e3f25c636ddf61f8037e57c1bb527c631c0034"
+  integrity sha512-4aPukyi7gmSEajyxHhaPSd+Y2gFppN/KVmPtXtrwICZ6w2C7nXaMldGR3OyyyTmC/2Eoj4F/NxDafT8rwHu6oQ==
   dependencies:
     rehype-minify-attribute-whitespace "^2.0.0"
     rehype-minify-css-style "^2.0.0"
@@ -9202,6 +9233,7 @@ rehype-preset-minify@^5.0.3:
     rehype-minify-javascript-script "^3.0.0"
     rehype-minify-javascript-url "^3.0.0"
     rehype-minify-json-script "^2.0.0"
+    rehype-minify-language "^1.0.0"
     rehype-minify-media-attribute "^2.0.0"
     rehype-minify-meta-color "^2.0.0"
     rehype-minify-meta-content "^2.0.0"
