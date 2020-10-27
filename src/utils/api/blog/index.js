@@ -4,6 +4,7 @@ import { join } from 'path'
 import matter from 'gray-matter'
 import unified from 'unified'
 import remarkParse from 'remark-parse'
+import remarkGFM from 'remark-gfm'
 import remarkExternalLinks from 'remark-external-links'
 import remarkAutoLinkHeadings from 'remark-autolink-headings'
 import remarkSlug from 'remark-slug'
@@ -25,6 +26,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
   const { data, content } = matter(post)
   const html = await unified()
     .use(remarkParse)
+    .use(remarkGFM)
     .use(remarkSlug)
     .use(remarkToc, { tight: true })
     .use(
