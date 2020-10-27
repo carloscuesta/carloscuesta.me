@@ -46,9 +46,11 @@ describe('_app', () => {
     })
 
     it('should subscribe on mount to Router.events routeChangeComplete', () => {
-      renderer.create(
+      const wrapper = renderer.create(
         <App {...stubs.props} />
       )
+
+      wrapper.update()
 
       expect(Router.events.on).toHaveBeenCalledWith(
         'routeChangeComplete',
