@@ -27,11 +27,11 @@ try {
 
   sitemap.pipe(stream)
 
-  PAGES.map((page) => {
+  PAGES.forEach((page) => {
     sitemap.write({ changefreq: 'daily', priority: 0.8, url: page })
   })
 
-  posts.map((post) => {
+  posts.forEach((post) => {
     sitemap.write({ changefreq: 'daily', priority: 1, url: `/blog/${post}` })
   })
 

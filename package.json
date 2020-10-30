@@ -68,7 +68,7 @@
     "react-test-renderer": "^17.0.1",
     "sitemap": "^6.3.2",
     "snazzy": "^9.0.0",
-    "standard": "^15.0.1"
+    "standard": "^16.0.0"
   },
   "babel": {
     "presets": [
