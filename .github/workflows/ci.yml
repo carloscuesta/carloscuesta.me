@@ -1,0 +1,34 @@
+name: CI
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.sha }}
+    - name: Install Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install dependencies 📦
+      run: yarn
+    - name: Lint 🎨
+      run: yarn run test:lint
+    - name: Flow types 🏷
+      run: yarn run test:flow
+    - name: Tests ✅
+      run: yarn run test:unit
+    - name: Lighthouse Audit 🚨
+      run: yarn run test:lighthouse
+      env:
+        LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+    - name: Upload Coverage 📈
+      run: yarn run test:coverage

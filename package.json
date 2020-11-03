@@ -9,14 +9,14 @@
     "build": "next build",
     "dev": "next",
     "start": "next start",
-    "test": "npm run test:lint && npm run test:flow && npm run test:unit && npm run test:lighthouse",
+    "test": "yarn run test:lint && yarn run test:flow && yarn run test:unit && yarn run test:lighthouse",
     "test:flow": "flow",
     "test:lint": "standard | snazzy",
     "test:lint:fix": "standard --fix | snazzy",
     "test:unit": "jest --coverage",
     "test:watch": "NODE_ENV=test TZ=UTC jest --watch",
     "test:coverage": "codecov",
-    "test:lighthouse": "npm run build && lhci autorun",
+    "test:lighthouse": "yarn run build && lhci autorun",
     "prebuild": "node ./scripts/sitemap"
   },
   "repository": {
@@ -99,8 +99,8 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run test:lint:fix",
-      "npm run test:flow"
+      "yarn run test:lint:fix",
+      "yarn run test:flow"
     ]
   },
   "jest": {
