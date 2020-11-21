@@ -4,6 +4,7 @@
   */
   flex-wrap: nowrap!important;
   overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
 
 .scrollablePosts:global(::-webkit-scrollbar) {

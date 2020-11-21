@@ -8,6 +8,7 @@
   color: var(--text);
   margin-bottom: 1em;
   overflow: hidden;
+  scroll-snap-align: center;
   text-decoration: none;
   transition: all 0.2s ease-out;
 }
