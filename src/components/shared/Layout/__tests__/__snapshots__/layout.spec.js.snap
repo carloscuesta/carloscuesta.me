@@ -70,9 +70,6 @@ Array [
       </nav>
     </div>
   </header>,
-  <div
-    className="headerFixedSpacing"
-  />,
   <h1>
     Some children
   </h1>,
