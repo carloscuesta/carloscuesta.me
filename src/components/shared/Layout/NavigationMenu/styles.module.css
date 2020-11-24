@@ -40,6 +40,10 @@
   margin: 0;
 }
 
+.links li {
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .header {
     padding: 0.5em 0;
