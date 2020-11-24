@@ -5,7 +5,7 @@
     --backgroundSurface: #121212;
     --primary: #FF5252;
     --secondary: #00B0FF;
-    --shadowColor: #292929;
+    --shadowColor: rgba(41, 41, 41, 0.16);
     --text: #FFFFFF;
     --textOnPrimary: #FFFFFF;
     --textOnSecondary: #FFFFFF;
@@ -21,7 +21,7 @@
     --backgroundSurface: #F1F6F8;
     --primary: #FF5252;
     --secondary: #0086ff;
-    --shadowColor: rgba(0, 0, 0, 0.25);
+    --shadowColor: rgba(0, 0, 0, 0.16);
     --text: #1F282C;
     --textOnPrimary: #FFFFFF;
     --textOnSecondary: #FFFFFF;
