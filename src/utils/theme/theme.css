@@ -1,6 +1,7 @@
 @media (prefers-color-scheme: dark) {
   html {
     --background: #000000;
+    --backgroundWithTransparency: rgba(18, 18, 18, 0.75);
     --backgroundSurface: #121212;
     --primary: #FF5252;
     --secondary: #00B0FF;
@@ -16,6 +17,7 @@
 @media (prefers-color-scheme: light) {
   html {
     --background: #FFFFFF;
+    --backgroundWithTransparency: rgba(255, 255, 255, 0.75);
     --backgroundSurface: #F1F6F8;
     --primary: #FF5252;
     --secondary: #0086ff;
