@@ -1,10 +1,12 @@
 @media (prefers-color-scheme: dark) {
   html {
     --background: #000000;
+    --backgroundElevation: #292929;
+    --backgroundWithTransparency: rgba(18, 18, 18, 0.75);
     --backgroundSurface: #121212;
     --primary: #FF5252;
     --secondary: #00B0FF;
-    --shadowColor: #292929;
+    --shadowColor: rgba(41, 41, 41, 0.16);
     --text: #FFFFFF;
     --textOnPrimary: #FFFFFF;
     --textOnSecondary: #FFFFFF;
@@ -16,10 +18,12 @@
 @media (prefers-color-scheme: light) {
   html {
     --background: #FFFFFF;
+    --backgroundElevation: #FFFFFF;
+    --backgroundWithTransparency: rgba(255, 255, 255, 0.75);
     --backgroundSurface: #F1F6F8;
     --primary: #FF5252;
     --secondary: #0086ff;
-    --shadowColor: rgba(0, 0, 0, 0.25);
+    --shadowColor: rgba(0, 0, 0, 0.16);
     --text: #1F282C;
     --textOnPrimary: #FFFFFF;
     --textOnSecondary: #FFFFFF;
@@ -37,7 +41,6 @@ html {
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
-  overflow-x: hidden;
   padding: 0;
 }
 

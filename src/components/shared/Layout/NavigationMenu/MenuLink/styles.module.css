@@ -1,12 +1,18 @@
 .link {
   color: var(--text);
   text-decoration: none;
+  padding: .5rem 1rem;
+  transition: opacity .1s ease-out;
 }
 
 .link:hover {
-  text-decoration: underline;
+  opacity: 0.65;
 }
 
 .linkActive {
-  font-weight: bold;
+  font-weight: 600;
+}
+
+.linkActive:hover {
+  opacity: 1;
 }

@@ -7,12 +7,12 @@ import OpenIcon from './OpenIcon'
 import CloseIcon from './CloseIcon'
 import styles from './styles.module.css'
 
-const Hamburger = (): Element<'div'> => {
-  const [isOpen, setIsOpen] = React.useState(false)
+type Props = { isOpen: boolean, setIsOpen: Function }
 
+const Hamburger = (props: Props): Element<'div'> => {
   React.useEffect(() => {
     const onRouteChangeStart = () => {
-      setIsOpen(false)
+      props.setIsOpen(false)
     }
 
     Router.events.on('routeChangeStart', onRouteChangeStart)
@@ -25,18 +25,18 @@ const Hamburger = (): Element<'div'> => {
       <button
         aria-label='Open navigation menu'
         className={styles.button}
-        onClick={() => setIsOpen(true)}
+        onClick={() => props.setIsOpen(true)}
       >
         <OpenIcon />
       </button>
 
-      {isOpen &&
+      {props.isOpen &&
         <nav className={styles.menu}>
           <div className={styles.closeContainer}>
             <button
               aria-label='Close navigation menu'
               className={styles.button}
-              onClick={() => setIsOpen(false)}
+              onClick={() => props.setIsOpen(false)}
             >
               <CloseIcon />
             </button>

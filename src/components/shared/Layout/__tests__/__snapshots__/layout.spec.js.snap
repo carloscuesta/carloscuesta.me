@@ -3,7 +3,7 @@
 exports[`Layout should render the Layout with children 1`] = `
 Array [
   <header
-    className="header"
+    className="header "
   >
     <div
       className="wrapper"
@@ -11,18 +11,21 @@ Array [
       <nav
         className="navigation"
       >
-        <strong
+        <a
           className="logo"
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
-          <a
-            className="link false"
-            href="/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            Carlos Cuesta
-          </a>
-        </strong>
+          <img
+            alt="Carlos Cuesta"
+            className="avatar"
+            height={36}
+            src="https://res.cloudinary.com/carloscuesta/image/upload/s--g0fD72tH--/c_scale,q_100,w_72/v1594588508/carloscuesta.jpg"
+            width={36}
+          />
+          Carlos Cuesta
+        </a>
         <ul
           className="links"
         >
@@ -70,9 +73,6 @@ Array [
       </nav>
     </div>
   </header>,
-  <div
-    className="headerFixedSpacing"
-  />,
   <h1>
     Some children
   </h1>,

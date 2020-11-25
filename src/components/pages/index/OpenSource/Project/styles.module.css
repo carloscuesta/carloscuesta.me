@@ -33,7 +33,7 @@
   }
 
   .project:hover {
-    background-color: var(--shadowColor);
+    background-color: var(--backgroundElevation);
     box-shadow: none;
   }
 }
