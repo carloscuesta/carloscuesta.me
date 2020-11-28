@@ -6,7 +6,7 @@
   border-radius: .25rem;
   box-shadow: 0 1px 4px var(--shadowColor);
   color: var(--text);
-  margin-bottom: 1.15rem;
+  margin-bottom: 1rem;
   scroll-snap-align: center;
   text-decoration: none;
   transition: all 0.2s ease-out;
