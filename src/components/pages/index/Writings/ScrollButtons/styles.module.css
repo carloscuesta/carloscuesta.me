@@ -14,16 +14,17 @@
   font: inherit;
   margin: 0;
   outline: 0;
-  padding: 1em 0;
+  padding: .5rem 0;
   touch-action: manipulation;
+  transition: opacity .1s ease-out;
 }
 
 .button:hover {
-  text-decoration: underline;
+  opacity: 0.75;
 }
 
 .button:active > svg, .button:active span {
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 @media (max-width: 768px) {
