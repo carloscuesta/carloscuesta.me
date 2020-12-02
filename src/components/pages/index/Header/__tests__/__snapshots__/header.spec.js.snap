@@ -2,27 +2,51 @@
 
 exports[`Header should match Header component 1`] = `
 <header
-  className="header"
+  className="container"
 >
-  <span
-    className="headline"
+  <div
+    className="wrapper"
   >
-    Hi! I'm
-  </span>
-  <h1
-    className="name"
-  >
-    Carlos Cuesta
-  </h1>
-  <span
-    className="wave headline"
-  >
-    👋🏼
-  </span>
-  <h2
-    className="job"
-  >
-    Front End Engineer
-  </h2>
+    <h1
+      className="title"
+    >
+      Hi, I'm 
+      <span
+        className="name"
+      >
+        Carlos Cuesta
+      </span>
+    </h1>
+    <span
+      className="wave"
+    >
+      👋🏼
+    </span>
+    <h2
+      className="bio"
+    >
+      I'm a 
+      <b>
+        Front End Engineer
+      </b>
+       from Barcelona. I 
+      <a
+        href="https://github.com/carloscuesta"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        code
+      </a>
+      , 
+      <a
+        href="/blog"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        write
+      </a>
+       and build stuff on internet.
+    </h2>
+  </div>
 </header>
 `;
