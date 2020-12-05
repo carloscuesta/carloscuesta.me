@@ -79,41 +79,23 @@ Array [
   <h2>
     Hello!
   </h2>,
-  <footer
-    className="footer"
-  >
+  <footer>
     <div
       className="wrapper"
     >
       <div
-        className="footerContent"
+        className="footer"
       >
-        <p>
-          <strong>
-            Carlos Cuesta
-          </strong>
-        </p>
-        <ul
-          className="links"
-        >
-          <li>
-            <a
-              href="/blog"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-            >
-              Blog
-            </a>
-          </li>
-          <li>
-            <a
-              href="/about"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-            >
-              About
-            </a>
-          </li>
+        <strong>
+          <a
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            carloscuesta.me
+          </a>
+        </strong>
+        <ul>
           <li>
             <a
               href="https://github.com/carloscuesta"
