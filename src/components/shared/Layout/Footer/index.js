@@ -6,14 +6,11 @@ import Wrapper from 'src/components/shared/Wrapper'
 import styles from './styles.module.css'
 
 const Footer = (): Element<'footer'> => (
-  <footer className={styles.footer}>
+  <footer>
     <Wrapper>
-      <div className={styles.footerContent}>
-        <p><strong>Carlos Cuesta</strong></p>
-
-        <ul className={styles.links}>
-          <li><Link href='/blog'><a>Blog</a></Link></li>
-          <li><Link href='/about'><a>About</a></Link></li>
+      <div className={styles.footer}>
+        <strong><Link href='/'><a>carloscuesta.me</a></Link></strong>
+        <ul>
           <li>
             <a
               href='https://github.com/carloscuesta'
