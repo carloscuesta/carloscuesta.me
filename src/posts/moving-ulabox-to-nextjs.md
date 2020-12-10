@@ -24,7 +24,7 @@ I'm really happy and excited to share the story with you! 😊 Let's get started
 Our frontend was built on top of a [Symfony](https://symfony.com/) project using the following technologies:
 
 - [Twig](https://twig.symfony.com/): For rendering and composing our views.
-- [Scss](https://twig.symfony.com/): For styling the views.
+- [Scss](https://sass-lang.com/): For styling the views.
 - [jQuery](https://jquery.com/): For handling user interactions with our front.
 - [Require.js](https://requirejs.org/): For bundling our scripts into modules.
 
