@@ -1,26 +1,26 @@
-.biography {
-  background-color: var(--backgroundSurface);
+.text {
   color: var(--text);
-  padding-top: 2em;
-  padding-bottom: 2em;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
-.biographyText {
-  font-size: 1.5em;
-  font-weight: 400;;
-}
-
-.profilePicture {
+.picture {
   border-radius: 50%;
   display: flex;
   filter: blur(8px);
   height: auto;
-  margin: 0 auto;
+  margin-left: auto;
   max-width: 100%;
   transition: filter 200ms ease-in-out;
   width: 360px;
 }
 
-.profilePicture:global(.lazyloaded) {
+.picture:global(.lazyloaded) {
   filter: blur(0);
+}
+
+@media(max-width: 768px) {
+  .picture {
+    margin: 0 auto;
+  }
 }
