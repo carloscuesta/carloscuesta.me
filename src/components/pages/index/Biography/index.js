@@ -32,12 +32,14 @@ const Biography = (): Element<'section'> => (
         </div>
 
         <div className='col-xs-12 col-sm-6'>
-          <img
-            alt='Carlos Cuesta'
-            className={`lazyload ${styles.picture}`}
-            data-src='https://res.cloudinary.com/carloscuesta/image/upload/s--bhEud7Xt--/q_80/v1594588508/carloscuesta.jpg'
-            src='https://res.cloudinary.com/carloscuesta/image/upload/s--rq7ZUVpY--/c_scale,e_blur:100,h_120,q_10,w_120/v1594588508/carloscuesta.jpg'
-          />
+          <div className={styles.pictureContainer}>
+            <img
+              alt='Carlos Cuesta'
+              className={`lazyload ${styles.picture}`}
+              data-src='https://res.cloudinary.com/carloscuesta/image/upload/s--bhEud7Xt--/q_80/v1594588508/carloscuesta.jpg'
+              src='https://res.cloudinary.com/carloscuesta/image/upload/s--rq7ZUVpY--/c_scale,e_blur:100,h_120,q_10,w_120/v1594588508/carloscuesta.jpg'
+            />
+          </div>
         </div>
       </div>
     </Wrapper>
