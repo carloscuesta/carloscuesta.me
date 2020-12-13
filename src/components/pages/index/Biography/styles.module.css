@@ -4,15 +4,12 @@
   font-weight: 400;
 }
 
-.pictureContainer {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .picture {
   border-radius: 50%;
+  display: flex;
   filter: blur(8px);
   height: auto;
+  margin-left: auto;
   max-width: 100%;
   transition: filter 200ms ease-in-out;
   width: 360px;
@@ -23,7 +20,7 @@
 }
 
 @media(max-width: 768px) {
-  .pictureContainer {
-    justify-content: center;
+  .picture {
+    margin: 0 auto;
   }
 }

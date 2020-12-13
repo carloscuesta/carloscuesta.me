@@ -7,7 +7,7 @@ import styles from './styles.module.css'
 const Biography = (): Element<'section'> => (
   <section>
     <Wrapper>
-      <div className='row middle-xs between-xs'>
+      <div className='row middle-xs'>
         <div className='col-xs-12 col-sm-6'>
           <h3 className={styles.text}>
             I'm a 24–year–old Front End Engineer interested in
@@ -32,14 +32,12 @@ const Biography = (): Element<'section'> => (
         </div>
 
         <div className='col-xs-12 col-sm-6'>
-          <div className={styles.pictureContainer}>
-            <img
-              alt='Carlos Cuesta'
-              className={`lazyload ${styles.picture}`}
-              data-src='https://res.cloudinary.com/carloscuesta/image/upload/s--bhEud7Xt--/q_80/v1594588508/carloscuesta.jpg'
-              src='https://res.cloudinary.com/carloscuesta/image/upload/s--rq7ZUVpY--/c_scale,e_blur:100,h_120,q_10,w_120/v1594588508/carloscuesta.jpg'
-            />
-          </div>
+          <img
+            alt='Carlos Cuesta'
+            className={`lazyload ${styles.picture}`}
+            data-src='https://res.cloudinary.com/carloscuesta/image/upload/s--bhEud7Xt--/q_80/v1594588508/carloscuesta.jpg'
+            src='https://res.cloudinary.com/carloscuesta/image/upload/s--rq7ZUVpY--/c_scale,e_blur:100,h_120,q_10,w_120/v1594588508/carloscuesta.jpg'
+          />
         </div>
       </div>
     </Wrapper>
