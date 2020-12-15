@@ -14,7 +14,7 @@ exports[`Biography should match Biography component 1`] = `
         <h3
           className="text"
         >
-          I'm a 24–year–old Front End Engineer interested in design, under engineering and open source. I work remotely at 
+          I'm a 25–year–old Front End Engineer interested in design, under engineering and open source. I work remotely at 
           <a
             href="https://ulabox.com"
             rel="noopener noreferrer"

@@ -10,7 +10,7 @@ const Biography = (): Element<'section'> => (
       <div className='row middle-xs'>
         <div className='col-xs-12 col-sm-6'>
           <h3 className={styles.text}>
-            I'm a 24–year–old Front End Engineer interested in
+            I'm a 25–year–old Front End Engineer interested in
             design, under engineering and open source.
             I work remotely at <a href='https://ulabox.com' rel='noopener noreferrer'>Ulabox</a>.
           </h3>
