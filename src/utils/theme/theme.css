@@ -46,7 +46,14 @@ html {
 
 a {
   color: var(--secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration-color: var(--secondary);
+  text-decoration-thickness: .115em;
   text-decoration: underline;
+  text-underline-offset: 1px;
 }
 
 h1,
