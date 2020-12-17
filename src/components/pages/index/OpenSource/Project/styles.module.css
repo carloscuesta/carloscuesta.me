@@ -23,6 +23,8 @@
 
 .project:hover {
   box-shadow: 0 .5rem 1rem var(--shadowColor);
+  color: inherit;
+  text-decoration: inherit;
 }
 
 @media (prefers-color-scheme: dark) {

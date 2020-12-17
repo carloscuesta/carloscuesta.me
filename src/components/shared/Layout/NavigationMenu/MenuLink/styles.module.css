@@ -6,6 +6,7 @@
 }
 
 .link:hover {
+  text-decoration: inherit;
   opacity: 0.65;
 }
 

@@ -13,6 +13,8 @@
 }
 
 .post:hover {
+  text-decoration: inherit;
+  color: inherit;
   box-shadow: 0 .5rem 1rem var(--shadowColor);
 }
 
