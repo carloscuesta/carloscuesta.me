@@ -38,3 +38,9 @@ export const props = {
     }
   ]
 }
+
+export const scrollablePostsRefMock = () => ({
+  childNodes: [{ offsetWidth: 350 }, { offsetWidth: 350 }],
+  scrollTo: jest.fn(),
+  scrollLeft: 0
+})

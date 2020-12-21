@@ -14,22 +14,21 @@ type Props = {
 
 const Writings = (props: Props): Element<'section'> => {
   const scrollablePostsRef: Object = React.useRef({ current: {} })
-  const [postWidth, setPostWidth] = React.useState(0)
-
-  React.useEffect(() => {
-    setPostWidth(scrollablePostsRef.current.childNodes[0].offsetWidth)
-  }, [])
+  const [scrollPosition, setScrollPosition] = React.useState(0)
 
   const scrollTo = (action: 'next' | 'previous') => {
-    setPostWidth(scrollablePostsRef.current.childNodes[0].offsetWidth)
+    const postWidth = scrollablePostsRef.current.childNodes[0].offsetWidth
+    const scrollPosition = action === 'next'
+      ? scrollablePostsRef.current.scrollLeft + postWidth
+      : scrollablePostsRef.current.scrollLeft - postWidth
 
     scrollablePostsRef.current.scrollTo({
       behavior: 'smooth',
-      left: action === 'next'
-        ? scrollablePostsRef.current.scrollLeft + postWidth
-        : scrollablePostsRef.current.scrollLeft - postWidth,
+      left: scrollPosition,
       top: 0
     })
+
+    setScrollPosition(scrollPosition)
   }
 
   return (
@@ -47,7 +46,11 @@ const Writings = (props: Props): Element<'section'> => {
           ))}
         </div>
 
-        <ScrollButtons scrollTo={scrollTo} />
+        <ScrollButtons
+          scrollTo={scrollTo}
+          scrollPosition={scrollPosition}
+          scrollPositionMaxWidth={scrollablePostsRef.current.scrollWidth - scrollablePostsRef.current.clientWidth}
+        />
       </Wrapper>
     </section>
   )

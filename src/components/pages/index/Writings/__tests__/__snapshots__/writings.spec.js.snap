@@ -111,6 +111,7 @@ exports[`Writings should match Writings component 1`] = `
       >
         <button
           className="button"
+          disabled={true}
           onClick={[Function]}
         >
           <svg
@@ -129,6 +130,7 @@ exports[`Writings should match Writings component 1`] = `
         </button>
         <button
           className="button"
+          disabled={false}
           onClick={[Function]}
         >
           <span>

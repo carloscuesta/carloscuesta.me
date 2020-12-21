@@ -27,6 +27,10 @@
   opacity: 0.5;
 }
 
+.button:disabled {
+  visibility: hidden;
+}
+
 @media (max-width: 768px) {
   .button {
     padding: .5em 0;
