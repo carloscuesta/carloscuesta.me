@@ -21,7 +21,14 @@ const Contact = (): Element<'section'> => (
         </p>
 
         <p className={styles.text}>
-          <a href='mailto:hi@carloscuesta.me' target='_blank' rel='noopener noreferrer'>hi@carloscuesta.me</a>
+          <a
+            className={styles.button}
+            href='mailto:hi@carloscuesta.me'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
+            Say hello
+          </a>
         </p>
       </div>
     </Wrapper>

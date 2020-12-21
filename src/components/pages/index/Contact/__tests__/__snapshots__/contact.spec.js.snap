@@ -27,11 +27,12 @@ exports[`Contact should match Contact component 1`] = `
         className="text"
       >
         <a
+          className="button"
           href="mailto:hi@carloscuesta.me"
           rel="noopener noreferrer"
           target="_blank"
         >
-          hi@carloscuesta.me
+          Say hello
         </a>
       </p>
     </div>
