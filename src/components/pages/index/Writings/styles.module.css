@@ -6,6 +6,7 @@
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
+  padding-bottom: .35rem;
 }
 
 .scrollablePosts:global(::-webkit-scrollbar) {
