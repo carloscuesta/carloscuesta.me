@@ -5,27 +5,11 @@
   flex-wrap: nowrap!important;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  scrollbar-color: var(--textSecondary) transparent;
+  scrollbar-width: none;
+  padding-bottom: .35rem;
 }
 
 .scrollablePosts:global(::-webkit-scrollbar) {
   -webkit-appearance: none;
-  height: .5rem;
-}
-
-.scrollablePosts:global(::-webkit-scrollbar-thumb) {
-  border-radius: .25rem;
-  background-color: var(--textSecondary);
-}
-
-.scrollablePosts:global(::-webkit-scrollbar-track) {
-  border-radius: .25rem;
-  box-shadow: 0 1px 4px var(--shadowColor);
-  margin: 0 1.15rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  .scrollablePosts:global(::-webkit-scrollbar-track) {
-    box-shadow: none;
-  }
+  display: none;
 }

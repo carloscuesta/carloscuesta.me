@@ -1,5 +1,6 @@
 // @flow
 import React, { type Element } from 'react'
+import debounce from 'lodash.debounce'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'
 import Wrapper from 'src/components/shared/Wrapper'
@@ -14,20 +15,23 @@ type Props = {
 
 const Writings = (props: Props): Element<'section'> => {
   const scrollablePostsRef: Object = React.useRef({ current: {} })
-  const [postWidth, setPostWidth] = React.useState(0)
+  const [scrollPosition, setScrollPosition] = React.useState(0)
+  const SCROLL_DEBOUNCE_MS_TIME: number = 20
 
-  React.useEffect(() => {
-    setPostWidth(scrollablePostsRef.current.childNodes[0].offsetWidth)
-  }, [])
+  const onScroll = debounce(
+    (event: Object) => setScrollPosition(event.target.scrollLeft),
+    SCROLL_DEBOUNCE_MS_TIME
+  )
 
   const scrollTo = (action: 'next' | 'previous') => {
-    setPostWidth(scrollablePostsRef.current.childNodes[0].offsetWidth)
+    const postWidth = scrollablePostsRef.current.childNodes[0].offsetWidth
+    const scrollPosition = action === 'next'
+      ? scrollablePostsRef.current.scrollLeft + postWidth
+      : scrollablePostsRef.current.scrollLeft - postWidth
 
     scrollablePostsRef.current.scrollTo({
       behavior: 'smooth',
-      left: action === 'next'
-        ? scrollablePostsRef.current.scrollLeft + postWidth
-        : scrollablePostsRef.current.scrollLeft - postWidth,
+      left: scrollPosition,
       top: 0
     })
   }
@@ -41,13 +45,21 @@ const Writings = (props: Props): Element<'section'> => {
           title='Writings'
         />
 
-        <div ref={scrollablePostsRef} className={`row ${styles.scrollablePosts}`}>
+        <div
+          className={`row ${styles.scrollablePosts}`}
+          onScroll={onScroll}
+          ref={scrollablePostsRef}
+        >
           {props.posts.map((post) => (
             <BlogPost key={post.slug} post={post} />
           ))}
         </div>
 
-        <ScrollButtons scrollTo={scrollTo} />
+        <ScrollButtons
+          scrollTo={scrollTo}
+          scrollPosition={scrollPosition}
+          scrollPositionMaxWidth={scrollablePostsRef.current.scrollWidth - scrollablePostsRef.current.clientWidth}
+        />
       </Wrapper>
     </section>
   )

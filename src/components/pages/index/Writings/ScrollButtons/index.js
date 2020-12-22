@@ -3,13 +3,16 @@ import React, { type Element } from 'react'
 
 import styles from './styles.module.css'
 
-type Props = { scrollTo: Function }
+type Props = { scrollTo: Function, scrollPosition: number, scrollPositionMaxWidth: number }
+
+const SCROLL_VISIBILITY_THRESHOLD: number = 1
 
 const ScrollButtons = (props: Props): Element<'div'> => (
   <div className='row'>
     <div className={`col-xs-12 ${styles.scrollButtons}`}>
       <button
         className={styles.button}
+        disabled={props.scrollPosition <= SCROLL_VISIBILITY_THRESHOLD}
         onClick={() => props.scrollTo('previous')}
       >
         <svg
@@ -25,6 +28,7 @@ const ScrollButtons = (props: Props): Element<'div'> => (
 
       <button
         className={styles.button}
+        disabled={props.scrollPosition >= (props.scrollPositionMaxWidth - SCROLL_VISIBILITY_THRESHOLD)}
         onClick={() => props.scrollTo('next')}
       >
         <span>Next</span>

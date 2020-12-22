@@ -35,6 +35,7 @@
     "disqus-react": "^1.0.10",
     "gray-matter": "^4.0.2",
     "lazysizes": "^5.2.2",
+    "lodash.debounce": "^4.0.8",
     "lodash.groupby": "^4.6.0",
     "next": "^10.0.3",
     "next-pwa": "^5.0.0",

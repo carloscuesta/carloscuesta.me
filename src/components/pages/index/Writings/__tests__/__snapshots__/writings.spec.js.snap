@@ -17,6 +17,7 @@ exports[`Writings should match Writings component 1`] = `
     </h5>
     <div
       className="row scrollablePosts"
+      onScroll={[Function]}
     >
       <div
         className="col-xs-12 col-sm-6 col-md-4 postContainer"
@@ -111,6 +112,7 @@ exports[`Writings should match Writings component 1`] = `
       >
         <button
           className="button"
+          disabled={true}
           onClick={[Function]}
         >
           <svg
@@ -129,6 +131,7 @@ exports[`Writings should match Writings component 1`] = `
         </button>
         <button
           className="button"
+          disabled={false}
           onClick={[Function]}
         >
           <span>
