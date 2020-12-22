@@ -1,5 +1,6 @@
 // @flow
 import React, { type Element } from 'react'
+import debounce from 'lodash.debounce'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'
 import Wrapper from 'src/components/shared/Wrapper'
@@ -15,6 +16,12 @@ type Props = {
 const Writings = (props: Props): Element<'section'> => {
   const scrollablePostsRef: Object = React.useRef({ current: {} })
   const [scrollPosition, setScrollPosition] = React.useState(0)
+  const SCROLL_DEBOUNCE_MS_TIME: number = 20
+
+  const onScroll = debounce(
+    (event: Object) => setScrollPosition(event.target.scrollLeft),
+    SCROLL_DEBOUNCE_MS_TIME
+  )
 
   const scrollTo = (action: 'next' | 'previous') => {
     const postWidth = scrollablePostsRef.current.childNodes[0].offsetWidth
@@ -27,8 +34,6 @@ const Writings = (props: Props): Element<'section'> => {
       left: scrollPosition,
       top: 0
     })
-
-    setScrollPosition(scrollPosition)
   }
 
   return (
@@ -40,7 +45,11 @@ const Writings = (props: Props): Element<'section'> => {
           title='Writings'
         />
 
-        <div ref={scrollablePostsRef} className={`row ${styles.scrollablePosts}`}>
+        <div
+          className={`row ${styles.scrollablePosts}`}
+          onScroll={onScroll}
+          ref={scrollablePostsRef}
+        >
           {props.posts.map((post) => (
             <BlogPost key={post.slug} post={post} />
           ))}

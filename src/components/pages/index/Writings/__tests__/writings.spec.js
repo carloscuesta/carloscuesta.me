@@ -63,6 +63,10 @@ describe('Writings', () => {
     })
 
     describe('when user has scrolled', () => {
+      beforeEach(() => {
+        jest.clearAllTimers()
+      })
+
       describe('when the scrollPosition is equal to 0', () => {
         it('should disable the Back button', () => {
           const scrollablePostsRef = stubs.scrollablePostsRefMock()
@@ -84,7 +88,11 @@ describe('Writings', () => {
           )
 
           renderer.act(() => {
-            wrapper.root.findAllByType('button')[1].props.onClick()
+            jest.useFakeTimers()
+            wrapper.root.findByProps({ className: 'row scrollablePosts' }).props.onScroll(
+              stubs.scrollEventMock(350)
+            )
+            jest.runAllTimers()
           })
 
           expect(wrapper.root.findAllByType('button')[0].props.disabled).toBe(false)
@@ -105,7 +113,11 @@ describe('Writings', () => {
           )
 
           renderer.act(() => {
-            wrapper.root.findAllByType('button')[1].props.onClick()
+            jest.useFakeTimers()
+            wrapper.root.findByProps({ className: 'row scrollablePosts' }).props.onScroll(
+              stubs.scrollEventMock(scrollablePostsRef.scrollWidth - scrollablePostsRef.clientWidth)
+            )
+            jest.runAllTimers()
           })
 
           expect(wrapper.root.findAllByType('button')[1].props.disabled).toBe(true)
