@@ -6,12 +6,12 @@ exports[`Contact should match Contact component 1`] = `
     className="wrapper"
   >
     <h4
-      className="sectionTitle isCentered "
+      className="sectionTitle "
     >
       Contact
     </h4>
     <h5
-      className="sectionSubtitle isCentered"
+      className="sectionSubtitle"
     >
       Let's make something together.
     </h5>

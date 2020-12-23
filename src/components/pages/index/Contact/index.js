@@ -9,7 +9,6 @@ const Contact = (): Element<'section'> => (
   <section>
     <Wrapper>
       <SectionTitle
-        isCentered
         subTitle="Let's make something together."
         title='Contact'
       />
