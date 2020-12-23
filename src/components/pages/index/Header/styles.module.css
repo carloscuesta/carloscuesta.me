@@ -1,5 +1,6 @@
 .container {
-  padding: 5rem 0rem;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .title {
@@ -29,7 +30,7 @@
 
 @media (max-width: 768px) {
   .container {
-    padding-top: 4rem;
+    padding-top: 2rem;
   }
 
   .title {

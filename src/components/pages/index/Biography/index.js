@@ -7,11 +7,11 @@ import styles from './styles.module.css'
 const Biography = (): Element<'section'> => (
   <section>
     <Wrapper>
-      <div className='row middle-xs'>
+      <div className='row'>
         <div className='col-xs-12 col-sm-6'>
           <h3 className={styles.text}>
-            I'm a 25–year–old Front End Engineer interested in
-            design, under engineering and open source.
+            I'm a 25–year–old Front End Engineer interested in{' '}
+            <b>design</b>, <b>under engineering</b> and <b>open source</b>.
             I work remotely at <a href='https://ulabox.com' rel='noopener noreferrer'>Ulabox</a>.
           </h3>
 
@@ -35,7 +35,7 @@ const Biography = (): Element<'section'> => (
           <img
             alt='Carlos Cuesta'
             className={`lazyload ${styles.picture}`}
-            data-src='https://res.cloudinary.com/carloscuesta/image/upload/s--bhEud7Xt--/q_80/v1594588508/carloscuesta.jpg'
+            data-src='https://res.cloudinary.com/carloscuesta/image/upload/s--ekQN9GP_--/c_scale,w_320/v1594588508/carloscuesta.jpg'
             src='https://res.cloudinary.com/carloscuesta/image/upload/s--rq7ZUVpY--/c_scale,e_blur:100,h_120,q_10,w_120/v1594588508/carloscuesta.jpg'
           />
         </div>

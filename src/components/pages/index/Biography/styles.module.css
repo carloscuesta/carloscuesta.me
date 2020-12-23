@@ -4,6 +4,10 @@
   font-weight: 400;
 }
 
+.text:first-child {
+  margin-top: 0;
+}
+
 .picture {
   border-radius: 50%;
   display: flex;
@@ -12,7 +16,7 @@
   margin-left: auto;
   max-width: 100%;
   transition: filter 200ms ease-in-out;
-  width: 360px;
+  width: 328px;
 }
 
 .picture:global(.lazyloaded) {
