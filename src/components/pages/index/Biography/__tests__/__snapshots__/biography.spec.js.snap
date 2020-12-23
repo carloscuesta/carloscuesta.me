@@ -6,7 +6,7 @@ exports[`Biography should match Biography component 1`] = `
     className="wrapper"
   >
     <div
-      className="row middle-xs"
+      className="row"
     >
       <div
         className="col-xs-12 col-sm-6"
@@ -14,7 +14,20 @@ exports[`Biography should match Biography component 1`] = `
         <h3
           className="text"
         >
-          I'm a 25–year–old Front End Engineer interested in design, under engineering and open source. I work remotely at 
+          I'm a 25–year–old Front End Engineer interested in
+           
+          <b>
+            design
+          </b>
+          , 
+          <b>
+            under engineering
+          </b>
+           and 
+          <b>
+            open source
+          </b>
+          . I work remotely at 
           <a
             href="https://ulabox.com"
             rel="noopener noreferrer"
@@ -71,7 +84,7 @@ exports[`Biography should match Biography component 1`] = `
         <img
           alt="Carlos Cuesta"
           className="lazyload picture"
-          data-src="https://res.cloudinary.com/carloscuesta/image/upload/s--bhEud7Xt--/q_80/v1594588508/carloscuesta.jpg"
+          data-src="https://res.cloudinary.com/carloscuesta/image/upload/s--ekQN9GP_--/c_scale,w_320/v1594588508/carloscuesta.jpg"
           src="https://res.cloudinary.com/carloscuesta/image/upload/s--rq7ZUVpY--/c_scale,e_blur:100,h_120,q_10,w_120/v1594588508/carloscuesta.jpg"
         />
       </div>
