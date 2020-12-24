@@ -24,10 +24,10 @@
     --primary: #FF5252;
     --secondary: #0086ff;
     --shadowColor: rgba(0, 0, 0, 0.16);
-    --text: #1F282C;
+    --text: #000000;
     --textOnPrimary: #FFFFFF;
     --textOnSecondary: #FFFFFF;
-    --textSecondary: #58717d;
+    --textSecondary: #6b7280;
     --codeBackground: #121212;
   }
 }
