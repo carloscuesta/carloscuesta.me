@@ -6,10 +6,10 @@ exports[`Biography should match Biography component 1`] = `
     className="wrapper"
   >
     <div
-      className="row"
+      className="container"
     >
       <div
-        className="col-xs-12 col-sm-6"
+        className="biographyContainer"
       >
         <h3
           className="text"
@@ -79,7 +79,7 @@ exports[`Biography should match Biography component 1`] = `
         </h3>
       </div>
       <div
-        className="col-xs-12 col-sm-6"
+        className="pictureContainer"
       >
         <img
           alt="Carlos Cuesta"
