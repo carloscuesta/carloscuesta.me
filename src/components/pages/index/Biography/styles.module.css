@@ -1,11 +1,21 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.biographyContainer {
+  flex: 1;
+}
+
 .text {
   color: var(--text);
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-.text:first-child {
-  margin-top: 0;
+.pictureContainer {
+  min-width: 320px;
+  margin-left: 6rem;
 }
 
 .picture {
@@ -15,16 +25,30 @@
   height: auto;
   margin-left: auto;
   max-width: 100%;
+  /* https://stackoverflow.com/questions/27532270/css-blur-weird-shadow-effect */
+  transform: translateZ(0);
   transition: filter 200ms ease-in-out;
-  width: 328px;
+  width: 320px;
 }
 
 .picture:global(.lazyloaded) {
   filter: blur(0);
 }
 
+@media(max-width: 1024px) {
+  .pictureContainer {
+    margin-left: 4rem;
+  }
+}
+
 @media(max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .pictureContainer,
   .picture {
     margin: 0 auto;
+    margin-top: .25rem;
   }
 }

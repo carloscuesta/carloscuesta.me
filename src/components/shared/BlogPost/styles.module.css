@@ -40,7 +40,7 @@
   border-top-right-radius: .25rem;
   filter: blur(5px);
   /* https://stackoverflow.com/questions/27532270/css-blur-weird-shadow-effect */
-  transform: translate3d(0, 0, 0);
+  transform: translateZ(0);
   transition: filter 200ms ease-in-out;
   width: 100%;
 }

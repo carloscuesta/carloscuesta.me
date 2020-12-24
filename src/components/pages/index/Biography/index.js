@@ -7,8 +7,8 @@ import styles from './styles.module.css'
 const Biography = (): Element<'section'> => (
   <section>
     <Wrapper>
-      <div className='row'>
-        <div className='col-xs-12 col-sm-6'>
+      <div className={styles.container}>
+        <div className={styles.biographyContainer}>
           <h3 className={styles.text}>
             I'm a 25–year–old Front End Engineer interested in{' '}
             <b>design</b>, <b>under engineering</b> and <b>open source</b>.
@@ -31,7 +31,7 @@ const Biography = (): Element<'section'> => (
           </h3>
         </div>
 
-        <div className='col-xs-12 col-sm-6'>
+        <div className={styles.pictureContainer}>
           <img
             alt='Carlos Cuesta'
             className={`lazyload ${styles.picture}`}
@@ -39,6 +39,7 @@ const Biography = (): Element<'section'> => (
             src='https://res.cloudinary.com/carloscuesta/image/upload/s--rq7ZUVpY--/c_scale,e_blur:100,h_120,q_10,w_120/v1594588508/carloscuesta.jpg'
           />
         </div>
+
       </div>
     </Wrapper>
   </section>
