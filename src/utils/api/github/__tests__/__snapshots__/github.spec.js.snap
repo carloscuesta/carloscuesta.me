@@ -6,10 +6,9 @@ Object {
   "requestOptions": Object {
     "headers": Object {
       "Accept": "application/vnd.github.v3+json",
-      "Authorization": undefined,
     },
   },
-  "url": "https://api.github.com/search/repositories?q=user:carloscuesta&sort=stars&per_page=6&order=desc",
+  "url": "https://api.github.com/users/carloscuesta/repos",
 }
 `;
 
