@@ -5,16 +5,16 @@ exports[`Writings should match Writings component 1`] = `
   <div
     className="wrapper"
   >
-    <h4
+    <h2
       className="sectionTitle "
     >
       Writings
-    </h4>
-    <h5
+    </h2>
+    <h3
       className="sectionSubtitle"
     >
       The latests posts of my blog.
-    </h5>
+    </h3>
     <div
       className="row scrollablePosts"
       onScroll={[Function]}
@@ -39,12 +39,10 @@ exports[`Writings should match Writings component 1`] = `
             <div
               className="postContent"
             >
-              <header>
-                <h5
-                  className="postTitle"
-                >
-                  Post Title
-                </h5>
+              <header
+                className="postTitle"
+              >
+                Post Title
               </header>
               <time
                 className="postPublishedAt"
@@ -81,12 +79,10 @@ exports[`Writings should match Writings component 1`] = `
             <div
               className="postContent"
             >
-              <header>
-                <h5
-                  className="postTitle"
-                >
-                  A post
-                </h5>
+              <header
+                className="postTitle"
+              >
+                A post
               </header>
               <time
                 className="postPublishedAt"

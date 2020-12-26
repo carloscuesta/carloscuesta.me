@@ -11,7 +11,7 @@ exports[`Biography should match Biography component 1`] = `
       <div
         className="biographyContainer"
       >
-        <h3
+        <p
           className="text"
         >
           I'm a 25–year–old Front End Engineer interested in
@@ -35,18 +35,18 @@ exports[`Biography should match Biography component 1`] = `
             Ulabox
           </a>
           .
-        </h3>
-        <h3
+        </p>
+        <p
           className="text"
         >
           I'm focused on building products with JavaScript, specifically React and React-Native.
-        </h3>
-        <h3
+        </p>
+        <p
           className="text"
         >
           When I'm not coding, I'm likely at the gym or surfing the city with my longboard.
-        </h3>
-        <h3
+        </p>
+        <p
           className="text"
         >
           You can find me on
@@ -76,7 +76,7 @@ exports[`Biography should match Biography component 1`] = `
             LinkedIn
           </a>
           .
-        </h3>
+        </p>
       </div>
       <div
         className="pictureContainer"

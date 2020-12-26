@@ -17,7 +17,7 @@ const Project = (props: Props): Element<'div'> => (
       target='_blank'
       title={props.repository.name}
     >
-      <h5 className={styles.projectName}>{props.repository.name}</h5>
+      <p className={styles.projectName}>{props.repository.name}</p>
       <p>{props.repository.description}</p>
       <p>
         <span className={styles.starEmoji}>⭐️</span>

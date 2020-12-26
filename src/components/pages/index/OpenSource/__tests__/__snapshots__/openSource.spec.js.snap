@@ -5,16 +5,16 @@ exports[`OpenSource should match OpenSource component 1`] = `
   <div
     className="wrapper"
   >
-    <h4
+    <h2
       className="sectionTitle "
     >
       Open Source
-    </h4>
-    <h5
+    </h2>
+    <h3
       className="sectionSubtitle"
     >
       Featured open source projects.
-    </h5>
+    </h3>
     <div
       className="row"
     >
@@ -28,11 +28,11 @@ exports[`OpenSource should match OpenSource component 1`] = `
           target="_blank"
           title="gitmoji"
         >
-          <h5
+          <p
             className="projectName"
           >
             gitmoji
-          </h5>
+          </p>
           <p>
             An emoji guide for your commit messages. 😜 
           </p>
@@ -56,11 +56,11 @@ exports[`OpenSource should match OpenSource component 1`] = `
           target="_blank"
           title="gitmoji-cli"
         >
-          <h5
+          <p
             className="projectName"
           >
             gitmoji-cli
-          </h5>
+          </p>
           <p>
             A gitmoji interactive command line tool for using emojis on commits. 💻
           </p>
