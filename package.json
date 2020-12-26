@@ -95,13 +95,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn run test:flow && lint-staged"
     }
   },
   "lint-staged": {
     "*.js": [
-      "yarn run test:lint:fix",
-      "yarn run test:flow"
+      "yarn run test:lint:fix"
     ]
   },
   "jest": {
