@@ -28,7 +28,7 @@ exports[`GitHub API Client mutators transformRepositories should match the mutat
 Array [
   Object {
     "description": "An emoji guide for your commit messages. 😜 ",
-    "language": "javascript",
+    "language": "JavaScript",
     "name": "gitmoji",
     "stars": 7323,
     "url": "https://github.com/carloscuesta/gitmoji",
