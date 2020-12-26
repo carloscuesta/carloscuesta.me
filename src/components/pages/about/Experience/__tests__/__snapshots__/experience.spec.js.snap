@@ -2,11 +2,11 @@
 
 exports[`Experience should match Experience component 1`] = `
 <section>
-  <h4
+  <h2
     className="sectionTitle sectionTitleMargin"
   >
     Experience
-  </h4>
+  </h2>
   <div
     className="row"
   >
@@ -31,7 +31,7 @@ exports[`Experience should match Experience component 1`] = `
         <div
           className="position"
         >
-          <h5
+          <p
             className="title"
           >
             <a
@@ -41,7 +41,7 @@ exports[`Experience should match Experience component 1`] = `
             >
               Ulabox
             </a>
-          </h5>
+          </p>
           <span
             className="timestamp"
           >
@@ -59,11 +59,11 @@ exports[`Experience should match Experience component 1`] = `
             <span
               className="positionMark"
             />
-            <h5
+            <p
               className="title"
             >
               Lead Front End Engineer
-            </h5>
+            </p>
             <span
               className="timestamp"
             >
@@ -85,11 +85,11 @@ exports[`Experience should match Experience component 1`] = `
             <span
               className="positionMark"
             />
-            <h5
+            <p
               className="title"
             >
               Front End Engineer
-            </h5>
+            </p>
             <span
               className="timestamp"
             >
@@ -125,7 +125,7 @@ exports[`Experience should match Experience component 1`] = `
         <div
           className="position"
         >
-          <h5
+          <p
             className="title"
           >
             Front End Developer at 
@@ -136,7 +136,7 @@ exports[`Experience should match Experience component 1`] = `
             >
               Mediàtic
             </a>
-          </h5>
+          </p>
           <span
             className="timestamp"
           >
@@ -171,7 +171,7 @@ exports[`Experience should match Experience component 1`] = `
         <div
           className="position"
         >
-          <h5
+          <p
             className="title"
           >
             Front End Developer Intern at 
@@ -182,7 +182,7 @@ exports[`Experience should match Experience component 1`] = `
             >
               Friendly Rentals
             </a>
-          </h5>
+          </p>
           <span
             className="timestamp"
           >

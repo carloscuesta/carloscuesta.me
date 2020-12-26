@@ -7,10 +7,10 @@ type Props = {
   title: string
 }
 
-const PageTitle = (props: Props): Element<'h3'> => (
-  <h3 className={styles.title}>
+const PageTitle = (props: Props): Element<'h1'> => (
+  <h1 className={styles.title}>
     {props.title}
-  </h3>
+  </h1>
 )
 
 export default PageTitle

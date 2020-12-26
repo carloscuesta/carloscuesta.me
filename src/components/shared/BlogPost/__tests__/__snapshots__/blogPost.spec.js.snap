@@ -21,12 +21,10 @@ exports[`BlogPost should match BlogPost component 1`] = `
       <div
         className="postContent"
       >
-        <header>
-          <h5
-            className="postTitle"
-          >
-            Post Title
-          </h5>
+        <header
+          className="postTitle"
+        >
+          Post Title
         </header>
         <time
           className="postPublishedAt"

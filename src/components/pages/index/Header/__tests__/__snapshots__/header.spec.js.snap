@@ -22,7 +22,7 @@ exports[`Header should match Header component 1`] = `
     >
       👋🏼
     </span>
-    <h2
+    <p
       className="bio"
     >
       I'm a 
@@ -46,7 +46,7 @@ exports[`Header should match Header component 1`] = `
         write
       </a>
        and build stuff on internet.
-    </h2>
+    </p>
   </div>
 </header>
 `;

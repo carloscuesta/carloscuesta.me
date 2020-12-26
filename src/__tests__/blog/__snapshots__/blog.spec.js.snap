@@ -10,22 +10,22 @@ Array [
     <div
       className="wrapper"
     >
-      <h3
+      <h1
         className="title"
       >
         Blog
-      </h3>
+      </h1>
       <div
         className="row"
       >
         <div
           className="col-xs-12"
         >
-          <h4
+          <h2
             className="year"
           >
             2019
-          </h4>
+          </h2>
         </div>
         <BlogPost
           post={
@@ -86,11 +86,11 @@ Array [
         <div
           className="col-xs-12"
         >
-          <h4
+          <h2
             className="year"
           >
             2018
-          </h4>
+          </h2>
         </div>
         <BlogPost
           post={
@@ -151,11 +151,11 @@ Array [
         <div
           className="col-xs-12"
         >
-          <h4
+          <h2
             className="year"
           >
             2017
-          </h4>
+          </h2>
         </div>
         <BlogPost
           post={

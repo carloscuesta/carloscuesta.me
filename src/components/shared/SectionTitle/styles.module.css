@@ -1,16 +1,17 @@
 .sectionTitle {
-  font-size: 2em;
+  font-size: 2rem;
   margin: 0;
   font-weight: 700;
 }
 
 .sectionTitleMargin {
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
 .sectionSubtitle {
   color: var(--textSecondary);
   font-weight: 400;
   margin: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
 }

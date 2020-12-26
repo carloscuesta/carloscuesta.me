@@ -2,18 +2,18 @@
 
 exports[`Education should match Education component 1`] = `
 <section>
-  <h4
+  <h2
     className="sectionTitle sectionTitleMargin"
   >
     Education
-  </h4>
+  </h2>
   <div
     className="row"
   >
     <div
       className="col-xs-12 course"
     >
-      <h5
+      <p
         className="title"
       >
         CFGS DAW
@@ -23,7 +23,7 @@ exports[`Education should match Education component 1`] = `
         >
           Escola Jesuïtes El Clot
         </a>
-      </h5>
+      </p>
       <span
         className="timestamp"
       >
@@ -38,7 +38,7 @@ exports[`Education should match Education component 1`] = `
     <div
       className="col-xs-12 course"
     >
-      <h5
+      <p
         className="title"
       >
         Self-taught
@@ -48,7 +48,7 @@ exports[`Education should match Education component 1`] = `
         >
           anywhere in the 🌍
         </a>
-      </h5>
+      </p>
       <span
         className="timestamp"
       >

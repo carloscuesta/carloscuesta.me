@@ -10,18 +10,18 @@ type Props = {
 
 const SectionTitle = (props: Props): Node => (
   <>
-    <h4
+    <h2
       className={[
         styles.sectionTitle,
         !props.subTitle ? styles.sectionTitleMargin : undefined
       ].join(' ')}
     >
       {props.title}
-    </h4>
+    </h2>
     {props.subTitle &&
-      <h5 className={styles.sectionSubtitle}>
+      <h3 className={styles.sectionSubtitle}>
         {props.subTitle}
-      </h5>}
+      </h3>}
   </>
 )
 

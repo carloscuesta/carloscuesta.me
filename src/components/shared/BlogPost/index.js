@@ -22,8 +22,8 @@ const BlogPost = (props: Props): Element<'div'> => (
           />
 
           <div className={styles.postContent}>
-            <header>
-              <h5 className={styles.postTitle}>{props.post.title}</h5>
+            <header className={styles.postTitle}>
+              {props.post.title}
             </header>
 
             <time className={styles.postPublishedAt} dateTime={props.post.datePublished.value}>

@@ -9,7 +9,7 @@ type Props = {
 
 const Year = (props: Props): Element<'div'> => (
   <div className='col-xs-12'>
-    <h4 className={styles.year}>{props.year}</h4>
+    <h2 className={styles.year}>{props.year}</h2>
   </div>
 )
 

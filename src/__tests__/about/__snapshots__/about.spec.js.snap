@@ -23,11 +23,11 @@ Array [
     <div
       className="wrapper"
     >
-      <h3
+      <h1
         className="title"
       >
         About
-      </h3>
+      </h1>
       <WhoAmI />
       <Experience />
       <Education />

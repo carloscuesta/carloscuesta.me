@@ -6,8 +6,6 @@ import styles from './styles.module.css'
 
 const WhoAmI = (): Element<'section'> => (
   <section>
-    <h3>Hi! I'm Carlos 👋🏼</h3>
-
     <div className={styles.whoAmI}>
       <p>
         My name is Carlos Cuesta I'm a 25 year old Front End Engineer based in {' '}

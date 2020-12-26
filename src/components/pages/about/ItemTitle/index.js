@@ -7,10 +7,10 @@ type Props = {
   children: string | Node
 }
 
-const Title = (props: Props): Element<'h5'> => (
-  <h5 className={styles.title}>
+const Title = (props: Props): Element<'p'> => (
+  <p className={styles.title}>
     {props.children}
-  </h5>
+  </p>
 )
 
 export default Title

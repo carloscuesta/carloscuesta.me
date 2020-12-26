@@ -9,26 +9,26 @@ const Biography = (): Element<'section'> => (
     <Wrapper>
       <div className={styles.container}>
         <div className={styles.biographyContainer}>
-          <h3 className={styles.text}>
+          <p className={styles.text}>
             I'm a 25–year–old Front End Engineer interested in{' '}
             <b>design</b>, <b>under engineering</b> and <b>open source</b>.
             I work remotely at <a href='https://ulabox.com' rel='noopener noreferrer'>Ulabox</a>.
-          </h3>
+          </p>
 
-          <h3 className={styles.text}>
+          <p className={styles.text}>
             I'm focused on building products with JavaScript, specifically React and React-Native.
-          </h3>
+          </p>
 
-          <h3 className={styles.text}>
+          <p className={styles.text}>
             When I'm not coding, I'm likely at the gym or surfing the city with my longboard.
-          </h3>
+          </p>
 
-          <h3 className={styles.text}>
+          <p className={styles.text}>
             You can find me on{' '}
             <a href='https://github.com/carloscuesta' target='_blank' rel='noopener noreferrer'>GitHub</a>,{' '}
             <a href='https://twitter.com/crloscuesta' target='_blank' rel='noopener noreferrer'>Twitter</a>{' and '}
             <a href='https://linkedin.com/in/crloscuesta' target='_blank' rel='noopener noreferrer'>LinkedIn</a>.
-          </h3>
+          </p>
         </div>
 
         <div className={styles.pictureContainer}>

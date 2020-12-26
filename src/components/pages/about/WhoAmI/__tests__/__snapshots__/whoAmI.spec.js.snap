@@ -2,9 +2,6 @@
 
 exports[`WhoAmI should match WhoAmI component 1`] = `
 <section>
-  <h3>
-    Hi! I'm Carlos 👋🏼
-  </h3>
   <div
     className="whoAmI"
   >
