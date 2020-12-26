@@ -2,53 +2,72 @@
 
 exports[`Experience should match Experience component 1`] = `
 <section>
-  <div
-    className="wrapper"
+  <h4
+    className="sectionTitle sectionTitleMargin"
   >
-    <h4
-      className="sectionTitle sectionTitleMargin"
-    >
-      Experience
-    </h4>
+    Experience
+  </h4>
+  <div
+    className="row"
+  >
     <div
-      className="row"
+      className="col-xs-12 job"
     >
       <div
-        className="col-xs-12 job"
+        className="container"
       >
         <div
           className="container"
         >
-          <div
-            className="container"
+          <img
+            alt="Ulabox"
+            className="lazyload logo"
+            data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1593899513/about-me/ulabox.png"
+            height={48}
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            width={48}
+          />
+        </div>
+        <div
+          className="position"
+        >
+          <h5
+            className="title"
           >
-            <img
-              alt="Ulabox"
-              className="lazyload logo"
-              data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1593899513/about-me/ulabox.png"
-              height={48}
-              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-              width={48}
+            <a
+              href="https://ulabox.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Ulabox
+            </a>
+          </h5>
+          <span
+            className="timestamp"
+          >
+            January 2017
+             – 
+            <span
+              className="currentPosition"
+            >
+              Now
+            </span>
+          </span>
+          <div
+            className="positionList"
+          >
+            <span
+              className="positionMark"
             />
-          </div>
-          <div
-            className="position"
-          >
             <h5
               className="title"
             >
-              <a
-                href="https://ulabox.com"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Ulabox
-              </a>
+              Lead Front End Engineer
             </h5>
             <span
               className="timestamp"
             >
-              January 2017
+              March 2018
                – 
               <span
                 className="currentPosition"
@@ -56,151 +75,128 @@ exports[`Experience should match Experience component 1`] = `
                 Now
               </span>
             </span>
-            <div
-              className="positionList"
-            >
-              <span
-                className="positionMark"
-              />
-              <h5
-                className="title"
-              >
-                Lead Front End Engineer
-              </h5>
-              <span
-                className="timestamp"
-              >
-                March 2018
-                 – 
-                <span
-                  className="currentPosition"
-                >
-                  Now
-                </span>
-              </span>
-              <p>
-                As a Lead Front End Engineer, one of my main tasks was to mentor coworkers of my team, contributing to their personal and professional growth. I worked very close to stakeholders to define, organise and breakdown new projects. One of the biggest challenges I faced with my team was to migrate the ulabox.com website to a new business model while refactoring the entire technology stack to Next.js and React. We had to integrate this pivot into the Ulabox application too. I've worked with the logistics team to build Android applications with React-Native for our supply chain and dark stores.
-              </p>
-            </div>
-            <div
-              className="positionList"
-            >
-              <span
-                className="positionMark"
-              />
-              <h5
-                className="title"
-              >
-                Front End Engineer
-              </h5>
-              <span
-                className="timestamp"
-              >
-                January 2017
-                 – 
-                March 2018
-              </span>
-              <p>
-                As a Front End Engineer I contributed to the development and release of the native Ulabox application. The application is built with React-Native and is available on iOS and Android. I worked on automating the process of shipping our applications to the stores using Fastlane and Travis-CI. Also I contributed to the maintenance of our website, that was built on top of Symfony using Twig, SCSS and JavaScript.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col-xs-12 job"
-      >
-        <div
-          className="container"
-        >
-          <div
-            className="container"
-          >
-            <img
-              alt="Mediàtic"
-              className="lazyload logo"
-              data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1593899512/about-me/mediatic.png"
-              height={48}
-              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-              width={48}
-            />
-          </div>
-          <div
-            className="position"
-          >
-            <h5
-              className="title"
-            >
-              Front End Developer at 
-              <a
-                href="https://www.bemediatic.com"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Mediàtic
-              </a>
-            </h5>
-            <span
-              className="timestamp"
-            >
-              March 2015
-               – 
-              December 2016
-            </span>
             <p>
-              As a Front-End Developer I created a lot of different websites for our clients using Wordpress as a CMS and HTML, CSS and JavaScript to built the sites. I helped to improve the developer experience of the company by implementing tools to improve our software development process.
+              As a Lead Front End Engineer, one of my main tasks was to mentor coworkers of my team, contributing to their personal and professional growth. I worked very close to stakeholders to define, organise and breakdown new projects. One of the biggest challenges I faced with my team was to migrate the ulabox.com website to a new business model while refactoring the entire technology stack to Next.js and React. We had to integrate this pivot into the Ulabox application too. I've worked with the logistics team to build Android applications with React-Native for our supply chain and dark stores.
             </p>
           </div>
-        </div>
-      </div>
-      <div
-        className="col-xs-12 job"
-      >
-        <div
-          className="container"
-        >
           <div
-            className="container"
+            className="positionList"
           >
-            <img
-              alt="Friendly Rentals"
-              className="lazyload logo"
-              data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1593938160/about-me/friendlyrentals.png"
-              height={48}
-              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-              width={48}
+            <span
+              className="positionMark"
             />
-          </div>
-          <div
-            className="position"
-          >
             <h5
               className="title"
             >
-              Front End Developer Intern at 
-              <a
-                href="https://www.friendlyrentals.com"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Friendly Rentals
-              </a>
+              Front End Engineer
             </h5>
             <span
               className="timestamp"
             >
-              October 2014
+              January 2017
                – 
-              February 2015
+              March 2018
             </span>
             <p>
-              As an intern on Friendly Rentals I helped on building pages of the website using Bootstrap, HTML, CSS and jQuery.
+              As a Front End Engineer I contributed to the development and release of the native Ulabox application. The application is built with React-Native and is available on iOS and Android. I worked on automating the process of shipping our applications to the stores using Fastlane and Travis-CI. Also I contributed to the maintenance of our website, that was built on top of Symfony using Twig, SCSS and JavaScript.
             </p>
           </div>
         </div>
       </div>
     </div>
-    <hr />
+    <div
+      className="col-xs-12 job"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="container"
+        >
+          <img
+            alt="Mediàtic"
+            className="lazyload logo"
+            data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1593899512/about-me/mediatic.png"
+            height={48}
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            width={48}
+          />
+        </div>
+        <div
+          className="position"
+        >
+          <h5
+            className="title"
+          >
+            Front End Developer at 
+            <a
+              href="https://www.bemediatic.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Mediàtic
+            </a>
+          </h5>
+          <span
+            className="timestamp"
+          >
+            March 2015
+             – 
+            December 2016
+          </span>
+          <p>
+            As a Front-End Developer I created a lot of different websites for our clients using Wordpress as a CMS and HTML, CSS and JavaScript to built the sites. I helped to improve the developer experience of the company by implementing tools to improve our software development process.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xs-12 job"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="container"
+        >
+          <img
+            alt="Friendly Rentals"
+            className="lazyload logo"
+            data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1593938160/about-me/friendlyrentals.png"
+            height={48}
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            width={48}
+          />
+        </div>
+        <div
+          className="position"
+        >
+          <h5
+            className="title"
+          >
+            Front End Developer Intern at 
+            <a
+              href="https://www.friendlyrentals.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Friendly Rentals
+            </a>
+          </h5>
+          <span
+            className="timestamp"
+          >
+            October 2014
+             – 
+            February 2015
+          </span>
+          <p>
+            As an intern on Friendly Rentals I helped on building pages of the website using Bootstrap, HTML, CSS and jQuery.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
+  <hr />
 </section>
 `;

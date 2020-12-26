@@ -21,6 +21,7 @@ jest.mock('src/components/pages/index/Header', () => 'Header')
 jest.mock('src/components/pages/index/OpenSource', () => 'OpenSource')
 jest.mock('src/components/pages/index/Writings', () => 'Writings')
 jest.mock('src/components/shared/SectionTitle', () => 'SectionTitle')
+jest.mock('src/components/shared/PageTitle', () => 'PageTitle')
 
 describe('index', () => {
   describe('page', () => {

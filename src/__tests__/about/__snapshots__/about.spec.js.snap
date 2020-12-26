@@ -20,9 +20,18 @@ Array [
     url="https://carloscuesta.me"
   />,
   <main>
-    <WhoAmI />
-    <Experience />
-    <Education />
+    <div
+      className="wrapper"
+    >
+      <h3
+        className="title"
+      >
+        About
+      </h3>
+      <WhoAmI />
+      <Experience />
+      <Education />
+    </div>
   </main>,
 ]
 `;

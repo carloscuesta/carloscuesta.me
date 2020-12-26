@@ -5,6 +5,7 @@ import { NextSeo } from 'next-seo'
 
 import { fetchPosts } from 'src/utils/api/blog'
 import { type PostPreview } from 'src/utils/api/blog/mutators'
+import PageTitle from 'src/components/shared/PageTitle'
 import BlogPost from 'src/components/shared/BlogPost'
 import Wrapper from 'src/components/shared/Wrapper'
 import Year from 'src/components/pages/blog/Year'
@@ -21,6 +22,7 @@ const Blog = (props: Props): Node => (
     />
     <main>
       <Wrapper>
+        <PageTitle title='Blog' />
         {Object.keys(props.posts).sort(() => -1).map((year: string) => (
           <div className='row' key={year}>
             <Year year={year} />

@@ -10,6 +10,11 @@ Array [
     <div
       className="wrapper"
     >
+      <h3
+        className="title"
+      >
+        Blog
+      </h3>
       <div
         className="row"
       >
