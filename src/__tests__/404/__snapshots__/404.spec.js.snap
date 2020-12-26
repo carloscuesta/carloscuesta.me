@@ -40,16 +40,7 @@ exports[`404 page should match Error 404 page 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
-              Writings
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/crloscuesta"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Twitter
+              Blog
             </a>
           </li>
         </ul>

@@ -15,8 +15,7 @@ const Error404 = (): Node => (
           <h3 className={styles.title}>Here are some helpful links instead:</h3>
           <ul className={styles.links}>
             <li><Link href='/'><a>Home</a></Link></li>
-            <li><Link href='/blog'><a>Writings</a></Link></li>
-            <li><a href='https://twitter.com/crloscuesta' target='_blank' rel='noopener noreferrer'>Twitter</a></li>
+            <li><Link href='/blog'><a>Blog</a></Link></li>
           </ul>
           <h4>Error code: 404</h4>
         </div>
