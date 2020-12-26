@@ -6,14 +6,11 @@ const githubApiClient = (options: callApiOptions): Promise<Object> => callApi({
   mutator: options.mutator,
   url: `https://api.github.com${options.url}`,
   requestOptions: {
-    headers: {
-      Authorization: process.env.GITHUB_TOKEN,
-      Accept: 'application/vnd.github.v3+json'
-    }
+    headers: { Accept: 'application/vnd.github.v3+json' }
   }
 })
 
 export const fetchRepositories = (): Promise<Array<Repository>> => githubApiClient({
   mutator: transformRepositories,
-  url: '/search/repositories?q=user:carloscuesta&sort=stars&per_page=6&order=desc'
+  url: '/users/carloscuesta/repos'
 })

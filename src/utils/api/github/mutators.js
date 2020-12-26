@@ -3,12 +3,12 @@ export type Repository = {
   description: string,
   language?: string,
   name: string,
-  stars: string,
+  stars: number,
   url: string
 }
 
-export const transformRepositories = (payload: Object): Array<Repository> => {
-  return payload.items.map((repo) => ({
+export const transformRepositories = (payload: Array<Object>): Array<Repository> => {
+  return payload.map((repo) => ({
     description: repo.description,
     language: repo.language && repo.language.toLowerCase(),
     name: repo.name,
