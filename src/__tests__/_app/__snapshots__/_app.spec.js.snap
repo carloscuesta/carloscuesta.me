@@ -3,7 +3,7 @@
 exports[`_app page should match App page 1`] = `
 <Layout>
   <DefaultSeo
-    description="I'm a Front End Engineer from Barcelona. Coding passionate that is focused on JavaScript. Interested in design, technology, sneakers and OpenSource ❤️."
+    description="I'm a Front End Engineer from Barcelona. Focused on building products with JavaScript.Interested in design, under engineering and open source."
     openGraph={
       Object {
         "images": Array [

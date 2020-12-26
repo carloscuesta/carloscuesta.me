@@ -25,8 +25,8 @@ const App = (props: Props): Node => {
       <DefaultSeo
         title='Carlos Cuesta – Front End Engineer'
         description={'I\'m a Front End Engineer from Barcelona. ' +
-          'Coding passionate that is focused on JavaScript. ' +
-        'Interested in design, technology, sneakers and OpenSource ❤️.'}
+          'Focused on building products with JavaScript.' +
+        'Interested in design, under engineering and open source.'}
         openGraph={{
           type: 'website',
           locale: 'en_GB',
