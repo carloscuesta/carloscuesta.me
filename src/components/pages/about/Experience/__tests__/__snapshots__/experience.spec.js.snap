@@ -6,7 +6,7 @@ exports[`Experience should match Experience component 1`] = `
     className="wrapper"
   >
     <h4
-      className="sectionTitle  sectionTitleMargin"
+      className="sectionTitle sectionTitleMargin"
     >
       Experience
     </h4>

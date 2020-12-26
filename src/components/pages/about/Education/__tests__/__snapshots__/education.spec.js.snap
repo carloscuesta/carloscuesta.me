@@ -6,7 +6,7 @@ exports[`Education should match Education component 1`] = `
     className="wrapper"
   >
     <h4
-      className="sectionTitle  sectionTitleMargin"
+      className="sectionTitle sectionTitleMargin"
     >
       Education
     </h4>

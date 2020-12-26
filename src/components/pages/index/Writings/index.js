@@ -40,7 +40,6 @@ const Writings = (props: Props): Element<'section'> => {
     <section>
       <Wrapper>
         <SectionTitle
-          isCentered
           subTitle='The latests posts of my blog.'
           title='Writings'
         />

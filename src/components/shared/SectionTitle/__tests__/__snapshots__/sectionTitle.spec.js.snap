@@ -3,12 +3,12 @@
 exports[`SectionTitle should match SectionTitle component 1`] = `
 Array [
   <h4
-    className="sectionTitle  "
+    className="sectionTitle "
   >
     Title
   </h4>,
   <h5
-    className="sectionSubtitle "
+    className="sectionSubtitle"
   >
     Subtitle
   </h5>,

@@ -14,7 +14,6 @@ const OpenSource = (props: Props): Element<'section'> => (
   <section>
     <Wrapper>
       <SectionTitle
-        isCentered
         title='Open Source'
         subTitle='Featured open source projects.'
       />
