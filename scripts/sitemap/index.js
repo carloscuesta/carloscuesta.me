@@ -4,7 +4,7 @@ const { SitemapStream } = require('sitemap')
 const POSTS_DIRECTORY = './src/posts'
 const SITEMAP_OUTPUT_DIRECTORY = './public'
 const SITEMAP_NAME = 'sitemap.xml'
-const PAGES = ['/', '/about', '/blog']
+const PAGES = ['/', '/about', '/blog', '/opensource']
 
 try {
   const sitemap = new SitemapStream({
