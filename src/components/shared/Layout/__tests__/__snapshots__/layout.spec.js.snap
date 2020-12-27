@@ -49,6 +49,16 @@ Array [
               About
             </a>
           </li>
+          <li>
+            <a
+              className="link false"
+              href="/opensource"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Open Source
+            </a>
+          </li>
         </ul>
         <div
           className="hamburger"
