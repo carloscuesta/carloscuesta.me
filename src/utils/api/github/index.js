@@ -1,6 +1,11 @@
 // @flow
 import callApi, { type callApiOptions } from 'src/utils/api/callApi'
-import { type Repository, transformRepositories } from './mutators'
+import {
+  transformRepositories,
+  transformUserInformation,
+  type Repository,
+  type UserInformation
+} from './mutators'
 
 const githubApiClient = (options: callApiOptions): Promise<Object> => callApi({
   mutator: options.mutator,
@@ -13,4 +18,9 @@ const githubApiClient = (options: callApiOptions): Promise<Object> => callApi({
 export const fetchRepositories = (): Promise<Array<Repository>> => githubApiClient({
   mutator: transformRepositories,
   url: '/users/carloscuesta/repos'
+})
+
+export const fetchUserInformation = (): Promise<UserInformation> => githubApiClient({
+  mutator: transformUserInformation,
+  url: '/users/carloscuesta'
 })

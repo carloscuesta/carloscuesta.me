@@ -48,14 +48,14 @@ const Hamburger = (props: Props): Element<'div'> => {
             <li><MenuLink href='/about' text='About' /></li>
             <li>
               <MenuLink
-                href='https://twitter.com/intent/follow?screen_name=crloscuesta'
-                text='Twitter'
+                href='/opensource'
+                text='Open Source'
               />
             </li>
             <li>
               <MenuLink
-                href='https://github.com/carloscuesta'
-                text='Open Source'
+                href='https://twitter.com/intent/follow?screen_name=crloscuesta'
+                text='Twitter'
               />
             </li>
           </ul>

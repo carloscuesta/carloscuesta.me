@@ -32,6 +32,8 @@ const NavigationMenu = (): Element<'header'> => {
             <li><MenuLink href='/blog' text='Blog' /></li>
 
             <li><MenuLink href='/about' text='About' /></li>
+
+            <li><MenuLink href='/opensource' text='Open Source' /></li>
           </ul>
 
           <Hamburger isOpen={isHamburgerOpen} setIsOpen={setIsHamburgerOpen} />

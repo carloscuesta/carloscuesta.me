@@ -15,6 +15,16 @@
   transition: all 0.2s ease-out;
 }
 
+.starsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.stars {
+  color: var(--languageJavaScript);
+  margin-right: .25rem;
+}
+
 @media(max-width: 768px) {
   .project {
     padding: 1.5rem;
@@ -46,11 +56,11 @@
 }
 
 .project:global(.javascript) {
-  border-top-color: #FBDD51;
+  border-top-color: var(--languageJavaScript);
 }
 
 .project:global(.shell) {
-  border-top-color: #89E051;
+  border-top-color: var(--languageShell);
 }
 
 .starEmoji {
