@@ -60,4 +60,48 @@ describe('Layout', () => {
       expect.any(Function)
     )
   })
+
+  describe('Hamburguer', () => {
+    describe('when the menu is closed', () => {
+      describe('when user clicks on the icon', () => {
+        it('should open the navigation menu', () => {
+          const wrapper = renderer.create(
+            <Layout>
+              <h1>Some children</h1>
+              <h2>Hello!</h2>
+            </Layout>
+          )
+
+          renderer.act(() => {
+            wrapper.root.findAllByType('button')[0].props.onClick()
+          })
+
+          expect(wrapper.root.findAllByType('nav').length).toBe(2)
+        })
+      })
+    })
+
+    describe('when the menu is opened', () => {
+      describe('when user clicks on the icon', () => {
+        it('should close the navigation menu', () => {
+          const wrapper = renderer.create(
+            <Layout>
+              <h1>Some children</h1>
+              <h2>Hello!</h2>
+            </Layout>
+          )
+
+          renderer.act(() => {
+            wrapper.root.findAllByType('button')[0].props.onClick()
+          })
+
+          renderer.act(() => {
+            wrapper.root.findAllByType('button')[1].props.onClick()
+          })
+
+          expect(wrapper.root.findAllByType('nav').length).toBe(1)
+        })
+      })
+    })
+  })
 })
