@@ -12,6 +12,10 @@
     --textOnSecondary: #FFFFFF;
     --textSecondary: #93A6AF;
     --codeBackground: #121212;
+    --languageJavaScript: #FBDD51;
+    --languageShell: #89E051;
+    --languageCss: #7e57c2;
+    --languageHtml: #ff7043;
   }
 }
 
@@ -29,6 +33,10 @@
     --textOnSecondary: #FFFFFF;
     --textSecondary: #6b7280;
     --codeBackground: #121212;
+    --languageJavaScript: #FBDD51;
+    --languageShell: #89E051;
+    --languageCss: #7e57c2;
+    --languageHtml: #ff7043;
   }
 }
 
@@ -215,6 +223,10 @@ hr {
 
 .middle-xs {
   align-items: center;
+}
+
+.between-xs {
+  justify-content: space-between;
 }
 
 @media only screen and (min-width: 48em){
