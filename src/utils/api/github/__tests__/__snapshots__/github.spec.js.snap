@@ -12,6 +12,18 @@ Object {
 }
 `;
 
+exports[`GitHub API Client apiCalls should match fetchUserInformation call 1`] = `
+Object {
+  "mutator": [Function],
+  "requestOptions": Object {
+    "headers": Object {
+      "Accept": "application/vnd.github.v3+json",
+    },
+  },
+  "url": "https://api.github.com/users/carloscuesta",
+}
+`;
+
 exports[`GitHub API Client mutators transformRepositories should match the mutated repositories 1`] = `
 Array [
   Object {
@@ -22,4 +34,11 @@ Array [
     "url": "https://github.com/carloscuesta/gitmoji",
   },
 ]
+`;
+
+exports[`GitHub API Client mutators transformUserInformation should match the mutated user information 1`] = `
+Object {
+  "followers": 970,
+  "repositories": 17,
+}
 `;

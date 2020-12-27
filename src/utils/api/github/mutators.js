@@ -16,3 +16,13 @@ export const transformRepositories = (payload: Array<Object>): Array<Repository>
     url: repo.html_url
   }))
 }
+
+export type UserInformation = {
+  followers: number,
+  repositories: number
+}
+
+export const transformUserInformation = (payload: Object): UserInformation => ({
+  followers: payload.followers,
+  repositories: payload.public_repos
+})
