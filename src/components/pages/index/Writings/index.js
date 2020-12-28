@@ -42,6 +42,7 @@ const Writings = (props: Props): Element<'section'> => {
         <SectionTitle
           subTitle='The latests posts of my blog.'
           title='Writings'
+          viewAllLink='/blog'
         />
 
         <div

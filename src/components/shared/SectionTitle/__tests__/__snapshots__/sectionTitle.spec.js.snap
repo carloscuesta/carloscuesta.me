@@ -1,16 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SectionTitle should match SectionTitle component 1`] = `
-Array [
-  <h2
-    className="sectionTitle "
+exports[`SectionTitle with title and subtitle should match SectionTitle component 1`] = `
+<div
+  className="container "
+>
+  <div>
+    <h2
+      className="sectionTitle "
+    >
+      Title
+    </h2>
+    <h3
+      className="sectionSubtitle"
+    >
+      Subtitle
+    </h3>
+  </div>
+</div>
+`;
+
+exports[`SectionTitle with title only should match SectionTitle component 1`] = `
+<div
+  className="container "
+>
+  <div>
+    <h2
+      className="sectionTitle sectionTitleMargin"
+    >
+      Test
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`SectionTitle with title, subtitle and viewAllLink should match SectionTitle component 1`] = `
+<div
+  className="container containerWithLink"
+>
+  <div>
+    <h2
+      className="sectionTitle "
+    >
+      Title
+    </h2>
+    <h3
+      className="sectionSubtitle"
+    >
+      Subtitle
+    </h3>
+  </div>
+  <a
+    href="/test"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
-    Title
-  </h2>,
-  <h3
-    className="sectionSubtitle"
-  >
-    Subtitle
-  </h3>,
-]
+    View all
+  </a>
+</div>
 `;

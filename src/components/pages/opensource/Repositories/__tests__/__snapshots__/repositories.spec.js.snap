@@ -2,11 +2,17 @@
 
 exports[`Repositories should match Repositories component 1`] = `
 <section>
-  <h2
-    className="sectionTitle sectionTitleMargin"
+  <div
+    className="container "
   >
-    Repositories
-  </h2>
+    <div>
+      <h2
+        className="sectionTitle sectionTitleMargin"
+      >
+        Repositories
+      </h2>
+    </div>
+  </div>
   <ul
     className="list"
   >

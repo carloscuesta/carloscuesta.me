@@ -2,11 +2,17 @@
 
 exports[`Education should match Education component 1`] = `
 <section>
-  <h2
-    className="sectionTitle sectionTitleMargin"
+  <div
+    className="container "
   >
-    Education
-  </h2>
+    <div>
+      <h2
+        className="sectionTitle sectionTitleMargin"
+      >
+        Education
+      </h2>
+    </div>
+  </div>
   <div
     className="row"
   >

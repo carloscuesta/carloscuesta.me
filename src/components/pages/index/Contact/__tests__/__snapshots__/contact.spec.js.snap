@@ -5,16 +5,22 @@ exports[`Contact should match Contact component 1`] = `
   <div
     className="wrapper"
   >
-    <h2
-      className="sectionTitle "
+    <div
+      className="container "
     >
-      Contact
-    </h2>
-    <h3
-      className="sectionSubtitle"
-    >
-      Let's make something together.
-    </h3>
+      <div>
+        <h2
+          className="sectionTitle "
+        >
+          Contact
+        </h2>
+        <h3
+          className="sectionSubtitle"
+        >
+          Let's make something together.
+        </h3>
+      </div>
+    </div>
     <div
       className="wrapper"
     >

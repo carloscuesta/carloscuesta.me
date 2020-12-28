@@ -1,3 +1,13 @@
+.container {
+  margin-bottom: 1.5rem;
+}
+
+.containerWithLink {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
 .sectionTitle {
   font-size: 2rem;
   margin: 0;
@@ -12,6 +22,16 @@
   color: var(--textSecondary);
   font-weight: 400;
   margin: 0;
-  margin-bottom: 1.5rem;
   font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sectionSubtitle {
+    margin-bottom: .5rem;
+  }
 }

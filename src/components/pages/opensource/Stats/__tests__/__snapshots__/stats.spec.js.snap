@@ -2,11 +2,17 @@
 
 exports[`Stats should match Stats component 1`] = `
 <section>
-  <h2
-    className="sectionTitle sectionTitleMargin"
+  <div
+    className="container "
   >
-    Stats
-  </h2>
+    <div>
+      <h2
+        className="sectionTitle sectionTitleMargin"
+      >
+        Stats
+      </h2>
+    </div>
+  </div>
   <div
     className="row"
   >

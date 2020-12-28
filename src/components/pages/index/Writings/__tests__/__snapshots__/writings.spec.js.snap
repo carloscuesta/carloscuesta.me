@@ -5,16 +5,29 @@ exports[`Writings should match Writings component 1`] = `
   <div
     className="wrapper"
   >
-    <h2
-      className="sectionTitle "
+    <div
+      className="container containerWithLink"
     >
-      Writings
-    </h2>
-    <h3
-      className="sectionSubtitle"
-    >
-      The latests posts of my blog.
-    </h3>
+      <div>
+        <h2
+          className="sectionTitle "
+        >
+          Writings
+        </h2>
+        <h3
+          className="sectionSubtitle"
+        >
+          The latests posts of my blog.
+        </h3>
+      </div>
+      <a
+        href="/blog"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        View all
+      </a>
+    </div>
     <div
       className="row scrollablePosts"
       onScroll={[Function]}
