@@ -5,16 +5,29 @@ exports[`OpenSource should match OpenSource component 1`] = `
   <div
     className="wrapper"
   >
-    <h2
-      className="sectionTitle "
+    <div
+      className="container containerWithLink"
     >
-      Open Source
-    </h2>
-    <h3
-      className="sectionSubtitle"
-    >
-      Featured open source projects.
-    </h3>
+      <div>
+        <h2
+          className="sectionTitle "
+        >
+          Open Source
+        </h2>
+        <h3
+          className="sectionSubtitle"
+        >
+          Featured open source projects.
+        </h3>
+      </div>
+      <a
+        href="/opensource"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        View all
+      </a>
+    </div>
     <div
       className="row"
     >

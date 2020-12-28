@@ -16,6 +16,7 @@ const OpenSource = (props: Props): Element<'section'> => (
       <SectionTitle
         title='Open Source'
         subTitle='Featured open source projects.'
+        viewAllLink='/opensource'
       />
 
       <div className='row'>

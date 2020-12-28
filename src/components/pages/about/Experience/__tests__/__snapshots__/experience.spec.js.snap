@@ -2,11 +2,17 @@
 
 exports[`Experience should match Experience component 1`] = `
 <section>
-  <h2
-    className="sectionTitle sectionTitleMargin"
+  <div
+    className="container "
   >
-    Experience
-  </h2>
+    <div>
+      <h2
+        className="sectionTitle sectionTitleMargin"
+      >
+        Experience
+      </h2>
+    </div>
+  </div>
   <div
     className="row"
   >
