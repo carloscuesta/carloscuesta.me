@@ -51,7 +51,8 @@ export const getStaticProps = async (): Promise<{ props: Props }> => {
     props: {
       posts: posts.slice(0, 6),
       repositories: repositories.sort((x, y) => y.stars - x.stars).slice(0, 6)
-    }
+    },
+    revalidate: 3600
   }
 }
 

@@ -38,7 +38,7 @@ describe('index', () => {
       fetchRepositories.mockReturnValue(stubs.repositories)
     })
 
-    it('should return posts and repositories as props', async () => {
+    it('should return posts and repositories as props and set revalidate', async () => {
       const props = await getStaticProps()
 
       expect(fetchPosts).toHaveBeenCalledWith()
@@ -48,7 +48,8 @@ describe('index', () => {
         props: {
           posts: stubs.posts,
           repositories: stubs.repositories
-        }
+        },
+        revalidate: 3600
       })
     })
   })
