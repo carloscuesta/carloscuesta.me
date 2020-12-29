@@ -1,0 +1,26 @@
+{
+  "gitmojis": {
+    "downloads": 696,
+    "package": "gitmojis",
+    "start": "2019-12-29",
+    "end": "2020-12-27"
+  },
+  "gitmoji-cli": {
+    "downloads": 67939,
+    "package": "gitmoji-cli",
+    "start": "2019-12-29",
+    "end": "2020-12-27"
+  },
+  "react-native-error-boundary": {
+    "downloads": 82211,
+    "package": "react-native-error-boundary",
+    "start": "2019-12-29",
+    "end": "2020-12-27"
+  },
+  "react-native-layout-debug": {
+    "downloads": 164,
+    "package": "react-native-layout-debug",
+    "start": "2019-12-29",
+    "end": "2020-12-27"
+  }
+}

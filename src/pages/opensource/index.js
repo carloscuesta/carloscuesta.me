@@ -3,6 +3,7 @@ import React, { type Node } from 'react'
 import { NextSeo } from 'next-seo'
 
 import { fetchRepositories, fetchUserInformation } from 'src/utils/api/github'
+import { fetchPublishedPackages, fetchDownloadsCount } from 'src/utils/api/npm'
 import { type Repository, type UserInformation } from 'src/utils/api/github/mutators'
 import PageTitle from 'src/components/shared/PageTitle'
 import Wrapper from 'src/components/shared/Wrapper'
@@ -10,8 +11,9 @@ import Repositories from 'src/components/pages/opensource/Repositories'
 import Stats from 'src/components/pages/opensource/Stats'
 
 type Props = {
+  packageDownloads: number,
   repositories: Array<Repository>,
-  userInformation: UserInformation
+  userInformation: UserInformation,
 }
 
 const Index = (props: Props): Node => (
@@ -26,6 +28,7 @@ const Index = (props: Props): Node => (
 
         <Stats
           followers={props.userInformation.followers}
+          packageDownloads={props.packageDownloads}
           repositories={props.userInformation.repositories}
           stars={props.repositories
             .map((repository) => repository.stars)
@@ -39,13 +42,15 @@ const Index = (props: Props): Node => (
 )
 
 export const getStaticProps = async (): Promise<{ props: Props }> => {
-  const [repositories, userInformation] = await Promise.all([
+  const [repositories, userInformation, publishedPackages] = await Promise.all([
     fetchRepositories(),
-    fetchUserInformation()
+    fetchUserInformation(),
+    fetchPublishedPackages()
   ])
 
   return {
     props: {
+      packageDownloads: await fetchDownloadsCount(publishedPackages),
       repositories,
       userInformation
     },

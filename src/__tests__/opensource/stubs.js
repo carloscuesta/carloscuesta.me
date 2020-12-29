@@ -48,7 +48,12 @@ export const userInformation = {
   repositories: 10
 }
 
+export const publishedPackages = ['gitmojis', 'gitmoji-cli', 'react-native-error-boundary']
+
+export const packageDownloads = 10000
+
 export const props = {
+  packageDownloads,
   repositories,
   userInformation
 }
