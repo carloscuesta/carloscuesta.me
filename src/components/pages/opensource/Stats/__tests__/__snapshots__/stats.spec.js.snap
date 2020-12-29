@@ -61,12 +61,30 @@ exports[`Stats should match Stats component 1`] = `
         <p
           className="label"
         >
-          Public Repositories
+          Repositories
         </p>
         <strong
           className="value"
         >
           10
+        </strong>
+      </article>
+    </div>
+    <div
+      className="col-xs-12 col-sm-6 col-md-4"
+    >
+      <article
+        className="card"
+      >
+        <p
+          className="label"
+        >
+          NPM Downloads (Last year)
+        </p>
+        <strong
+          className="value"
+        >
+          100,000
         </strong>
       </article>
     </div>

@@ -2,11 +2,13 @@ import renderer from 'react-test-renderer'
 
 import OpenSource, { getStaticProps } from 'src/pages/opensource'
 import { fetchRepositories, fetchUserInformation } from 'src/utils/api/github'
+import { fetchPublishedPackages, fetchDownloadsCount } from 'src/utils/api/npm'
 import * as stubs from './stubs'
 
 jest.mock('next-seo', () => ({ NextSeo: 'NextSeo' }))
 jest.mock('src/utils/api/blog')
 jest.mock('src/utils/api/github')
+jest.mock('src/utils/api/npm')
 
 /*
   I'm mocking the components since those are unit tested.
@@ -31,6 +33,8 @@ describe('index', () => {
     beforeAll(() => {
       fetchRepositories.mockReturnValue(stubs.repositories)
       fetchUserInformation.mockReturnValue(stubs.userInformation)
+      fetchPublishedPackages.mockReturnValue(stubs.publishedPackages)
+      fetchDownloadsCount.mockReturnValue(stubs.packageDownloads)
     })
 
     it('should return repositories and userInformation as props and set revalidate', async () => {
@@ -38,11 +42,14 @@ describe('index', () => {
 
       expect(fetchRepositories).toHaveBeenCalledWith()
       expect(fetchUserInformation).toHaveBeenCalledWith()
+      expect(fetchPublishedPackages).toHaveBeenCalledWith()
+      expect(fetchDownloadsCount).toHaveBeenCalledWith(stubs.publishedPackages)
 
       expect(props).toEqual({
         props: {
           repositories: stubs.repositories,
-          userInformation: stubs.userInformation
+          userInformation: stubs.userInformation,
+          packageDownloads: stubs.packageDownloads
         },
         revalidate: 3600
       })
