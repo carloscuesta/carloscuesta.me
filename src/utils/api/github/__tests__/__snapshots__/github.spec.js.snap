@@ -39,6 +39,5 @@ Array [
 exports[`GitHub API Client mutators transformUserInformation should match the mutated user information 1`] = `
 Object {
   "followers": 970,
-  "repositories": 17,
 }
 `;

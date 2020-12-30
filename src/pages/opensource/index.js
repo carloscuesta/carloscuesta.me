@@ -29,7 +29,6 @@ const Index = (props: Props): Node => (
         <Stats
           followers={props.userInformation.followers}
           packageDownloads={props.packageDownloads}
-          repositories={props.userInformation.repositories}
           stars={props.repositories
             .map((repository) => repository.stars)
             .reduce((memo, value) => memo + value)}
