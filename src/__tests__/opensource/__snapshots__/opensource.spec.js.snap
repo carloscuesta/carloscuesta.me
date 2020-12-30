@@ -16,7 +16,6 @@ Array [
       <Stats
         followers={100}
         packageDownloads={10000}
-        repositories={10}
         stars={10624}
       />
       <Repositories

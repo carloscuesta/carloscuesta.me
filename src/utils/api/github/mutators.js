@@ -18,11 +18,9 @@ export const transformRepositories = (payload: Array<Object>): Array<Repository>
 }
 
 export type UserInformation = {
-  followers: number,
-  repositories: number
+  followers: number
 }
 
 export const transformUserInformation = (payload: Object): UserInformation => ({
-  followers: payload.followers,
-  repositories: payload.public_repos
+  followers: payload.followers
 })
