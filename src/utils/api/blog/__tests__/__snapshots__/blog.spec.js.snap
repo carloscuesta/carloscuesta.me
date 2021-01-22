@@ -32,6 +32,25 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
 Array [
   Object {
     "datePublished": Object {
+      "formatDate": "26 January 2021",
+      "formatInWords": "in 7 months",
+      "value": "2021-01-26 09:00",
+    },
+    "excerpt": "Have you ever heard something about immutability? Despite being a popular term, there are some misconceptions about the importance and principles of it.",
+    "images": Object {
+      "featured": Object {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1611526004/blog-featured-images/Immutability-In-JavaScript.png",
+      },
+      "preview": Object {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1611526004/blog-featured-images/Immutability-In-JavaScript.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1611526004/blog-featured-images/Immutability-In-JavaScript.png",
+      },
+    },
+    "slug": "immutability-in-javascript",
+    "title": "Immutability in JavaScript",
+  },
+  Object {
+    "datePublished": Object {
       "formatDate": "20 August 2020",
       "formatInWords": "in about 2 months",
       "value": "2020-08-20 16:00",
@@ -68,25 +87,6 @@ Array [
     "slug": "moving-ulabox-to-nextjs",
     "title": "Moving Ulabox to Next.js",
   },
-  Object {
-    "datePublished": Object {
-      "formatDate": "01 October 2019",
-      "formatInWords": "9 months ago",
-      "value": "2019-10-01 22:15",
-    },
-    "excerpt": "A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example",
-    "images": Object {
-      "featured": Object {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/JavaScript_monorepos_with_Lerna_and_Yarn_Workspaces.png",
-      },
-      "preview": Object {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1593531857/blog-featured-images/JavaScript_monorepos_with_Lerna_and_Yarn_Workspaces.png",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1593531857/blog-featured-images/JavaScript_monorepos_with_Lerna_and_Yarn_Workspaces.png",
-      },
-    },
-    "slug": "javascript-monorepos-lerna-yarn-workspaces",
-    "title": "JavaScript monorepos with Lerna and Yarn Workspaces",
-  },
 ]
 `;
 
@@ -101,6 +101,7 @@ Array [
   "hello-world",
   "how-to-deploy-static-sites-with-surge",
   "https-cloudflare",
+  "immutability-in-javascript",
   "javascript-monorepos-lerna-yarn-workspaces",
   "keep-npm-dependencies-up-to-date",
   "managing-react-native-crashes-with-error-boundaries",
