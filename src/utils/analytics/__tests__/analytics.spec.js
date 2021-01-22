@@ -6,40 +6,33 @@ describe('analytics', () => {
     expect(analytics).toMatchSnapshot()
   })
 
-  describe('trackPageView', () => {
-    const ga = jest.fn()
-
-    beforeAll(() => {
-      window.ga = ga
-    })
-
-    afterAll(() => {
-      window.ga = undefined
-    })
-
-    it('should call window.ga with page url and send the pageview', () => {
-      analytics.trackPageView(stubs.url)
-
-      expect(ga).toHaveBeenCalledWith('set', 'page', stubs.url)
-      expect(ga).toHaveBeenCalledWith('send', 'pageview')
+  describe('trackingCode', () => {
+    it('should match trackingCode', () => {
+      expect(analytics.trackingCode).toMatchSnapshot()
     })
   })
 
   describe('trackEvent', () => {
-    const ga = jest.fn()
+    const ma = { trackEvent: jest.fn() }
 
     beforeAll(() => {
-      window.ga = ga
+      window.ma = ma
     })
 
     afterAll(() => {
-      window.ga = undefined
+      window.ma = undefined
     })
 
     it('should call window.ga with event object', () => {
       analytics.trackEvent(stubs.event)
 
-      expect(ga).toHaveBeenCalledWith('send', 'event', stubs.event)
+      expect(ma.trackEvent).toHaveBeenCalledWith(
+        stubs.event.category,
+        stubs.event.action,
+        stubs.event.label,
+        stubs.event.value,
+        stubs.event.nonInteraction
+      )
     })
   })
 })

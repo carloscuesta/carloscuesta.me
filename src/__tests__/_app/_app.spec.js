@@ -1,5 +1,4 @@
 import renderer from 'react-test-renderer'
-import Router from 'next/router'
 
 import App, { reportWebVitals } from 'src/pages/_app.js'
 import { trackEvent } from 'src/utils/analytics'
@@ -8,24 +7,6 @@ import * as stubs from './stubs'
 jest.mock('next-seo', () => ({ DefaultSeo: 'DefaultSeo' }))
 
 jest.mock('src/utils/analytics')
-
-jest.mock('next/router', () => ({
-  pathname: '',
-  events: {
-    on: jest.fn(),
-    off: jest.fn(),
-    emit: jest.fn()
-  }
-}))
-
-Router.useRouter = () => ({
-  pathname: '',
-  events: {
-    off: jest.fn(),
-    on: jest.fn(),
-    emit: jest.fn()
-  }
-})
 
 /*
   I'm mocking the components since those are unit tested.
@@ -44,32 +25,6 @@ describe('_app', () => {
 
       expect(wrapper).toMatchSnapshot()
     })
-
-    it('should subscribe on mount to Router.events routeChangeComplete', () => {
-      const wrapper = renderer.create(
-        <App {...stubs.props} />
-      )
-
-      wrapper.update()
-
-      expect(Router.events.on).toHaveBeenCalledWith(
-        'routeChangeComplete',
-        expect.any(Function)
-      )
-    })
-
-    it('should unsubscribe on unmount to Router.events routeChangeComplete', () => {
-      const wrapper = renderer.create(
-        <App {...stubs.props} />
-      )
-
-      wrapper.unmount()
-
-      expect(Router.events.off).toHaveBeenCalledWith(
-        'routeChangeComplete',
-        expect.any(Function)
-      )
-    })
   })
 
   describe('reportWebVitals', () => {
@@ -77,10 +32,10 @@ describe('_app', () => {
       reportWebVitals(stubs.webVitalMetric)
 
       expect(trackEvent).toHaveBeenCalledWith({
-        eventAction: stubs.webVitalMetric.name,
-        eventCategory: 'Web Vitals',
-        eventLabel: stubs.webVitalMetric.id,
-        eventValue: stubs.webVitalMetric.value,
+        action: stubs.webVitalMetric.name,
+        category: 'Web Vitals',
+        label: stubs.webVitalMetric.id,
+        value: stubs.webVitalMetric.value,
         nonInteraction: true
       })
     })

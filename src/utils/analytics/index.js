@@ -1,17 +1,26 @@
 // @flow
-export const GA_TRACKING_ID: string = 'UA-67824860-3'
+import getTrackingCode from './tracking'
 
-const isFunction = (fn) => typeof fn === 'function'
+const GA_TRACKING_ID: string = 'UA-67824860-3'
 
-export const trackPageView = (url: string) => {
-  if (isFunction(window.ga)) {
-    window.ga('set', 'page', url)
-    window.ga('send', 'pageview')
-  }
+export const trackingCode: string = getTrackingCode(GA_TRACKING_ID)
+
+type AnalyticsEvent = {
+  action: string,
+  category: string,
+  label: string,
+  nonInteraction?: boolean,
+  value: number
 }
 
-export const trackEvent = (event: Object) => {
-  if (isFunction(window.ga)) {
-    window.ga('send', 'event', event)
+export const trackEvent = (event: AnalyticsEvent) => {
+  if (typeof window.ma?.trackEvent === 'function') {
+    window.ma.trackEvent(
+      event.category,
+      event.action,
+      event.label,
+      event.value,
+      event.nonInteraction
+    )
   }
 }

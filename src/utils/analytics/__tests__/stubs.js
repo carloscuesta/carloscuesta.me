@@ -1,9 +1,7 @@
-export const url = 'https://carloscuesta.me'
-
 export const event = {
-  eventAction: 'event-action',
-  eventCategory: 'event-category',
-  eventValue: 1,
-  eventLabel: 'event-label',
+  action: 'event-action',
+  category: 'event-category',
+  value: 1,
+  label: 'event-label',
   nonInteraction: true
 }
