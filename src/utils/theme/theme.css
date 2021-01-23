@@ -161,6 +161,7 @@ hr {
 .postDetail h6 {
   line-height: 1.15;
   position: relative;
+  scroll-margin-top: 4.5rem;
 }
 
 .postDetail .headingLink {
