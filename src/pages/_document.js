@@ -2,7 +2,7 @@
 import React, { type Node } from 'react'
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 
-import { GA_TRACKING_ID } from 'src/utils/analytics'
+import { trackingCode } from 'src/utils/analytics'
 
 class Document extends NextDocument {
   render (): Node {
@@ -37,16 +37,7 @@ class Document extends NextDocument {
         <body>
           <Main />
           <NextScript />
-          <script async src='https://www.google-analytics.com/analytics.js' />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-                ga('create', '${GA_TRACKING_ID}', 'auto');
-                ga('send', 'pageview');
-              `
-            }}
-          />
+          <script dangerouslySetInnerHTML={{ __html: trackingCode }} />
         </body>
       </Html>
     )
