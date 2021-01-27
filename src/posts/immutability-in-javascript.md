@@ -11,7 +11,7 @@ Have you ever heard something about _immutability_? I'm mostly sure the answer i
 
 ### What does it mean?
 
-_Immutability_ is the the **state of not changing**, or **being unable to be changed**.
+_Immutability_ is the **state of not changing**, or **being unable to be changed**.
 
 On a programming context, means that when we need to **change the state in our program**, we **must create and track a new value** rather than mutating the existing one.
 
