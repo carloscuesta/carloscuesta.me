@@ -32,6 +32,25 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
 Array [
   Object {
     "datePublished": Object {
+      "formatDate": "22 February 2021",
+      "formatInWords": "in 8 months",
+      "value": "2021-02-22 10:00",
+    },
+    "excerpt": "Let's talk about how we can use frontend tools to improve the developer experience in our team and how these tools impact the reliability of shipping value into production.",
+    "images": Object {
+      "featured": Object {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1613908204/blog-featured-images/frontend-tooling-improve-dx.png",
+      },
+      "preview": Object {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1613908204/blog-featured-images/frontend-tooling-improve-dx.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1613908204/blog-featured-images/frontend-tooling-improve-dx.png",
+      },
+    },
+    "slug": "front-end-tooling-guide-to-improve-developer-experience",
+    "title": "The frontend tooling guide to improve Developer Experience",
+  },
+  Object {
+    "datePublished": Object {
       "formatDate": "26 January 2021",
       "formatInWords": "in 7 months",
       "value": "2021-01-26 09:00",
@@ -68,25 +87,6 @@ Array [
     "slug": "working-remotely-as-a-software-engineer",
     "title": "Working remotely as a Software Engineer",
   },
-  Object {
-    "datePublished": Object {
-      "formatDate": "06 August 2020",
-      "formatInWords": "in about 1 month",
-      "value": "2020-08-06 16:00",
-    },
-    "excerpt": "A few months ago we released the new website of ulabox. We rebuilt the entire website from scratch using React and Next.js to Server Side Render our pages 🎉",
-    "images": Object {
-      "featured": Object {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1595954683/blog-featured-images/moving-ulabox-to-nextjs.png",
-      },
-      "preview": Object {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1595954683/blog-featured-images/moving-ulabox-to-nextjs.png",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1595954683/blog-featured-images/moving-ulabox-to-nextjs.png",
-      },
-    },
-    "slug": "moving-ulabox-to-nextjs",
-    "title": "Moving Ulabox to Next.js",
-  },
 ]
 `;
 
@@ -96,6 +96,7 @@ Array [
   "chrome-devtools-customization",
   "debugging-with-the-javascript-console",
   "discovering-hyperterm",
+  "front-end-tooling-guide-to-improve-developer-experience",
   "git-development-workflow",
   "greenkeeper",
   "hello-world",
