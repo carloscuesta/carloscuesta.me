@@ -201,7 +201,7 @@ Based on the tools we've seen here's a representation of how our pipeline would 
 
 Note that tools that run and fail faster are the first ones that run on our pipeline.
 
-💡 **Proptip**: When building a web project, I use something called **deployment previews**. This is probably one of my favorite features of the whole pipeline. You can get a **standalone deployment** with a **unique URL** for each PR.
+💡 **Protip**: When building a web project, I use something called **deployment previews**. This is probably one of my favorite features of the whole pipeline. You can get a **standalone deployment** with a **unique URL** for each PR.
 
 This allows you to test your changes on a safe and isolated environment. Previews speed up code reviews and help you to validate implementations and features. There are a couple of platforms that provide this feature such as [Netlify](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/) and [Vercel](https://vercel.com/docs/platform/deployments#preview). If you're not using them you can try to build something on your own!
 
