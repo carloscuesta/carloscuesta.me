@@ -17,7 +17,8 @@
     "test:watch": "NODE_ENV=test TZ=UTC jest --watch",
     "test:coverage": "codecov",
     "test:lighthouse": "yarn run build && lhci autorun",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -92,11 +93,6 @@
       "$Diff",
       "fetch"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run test:flow && lint-staged"
-    }
   },
   "lint-staged": {
     "*.js": [
