@@ -28,7 +28,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
     .use(remarkParse)
     .use(remarkGFM)
     .use(remarkSlug)
-    .use(remarkToc, { tight: true })
+    .use(remarkToc, { tight: true, maxDepth: 4 })
     .use(
       remarkAutoLinkHeadings,
       {
