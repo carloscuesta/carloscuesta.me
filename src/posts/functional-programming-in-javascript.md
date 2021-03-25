@@ -168,7 +168,7 @@ A **pure function** is a `function` which:
 
 ##### Pure functions ✅
 
-This function given the same `name` input will always return the same output `Hello ${name} 👋`. Has no side effects.
+This function given the same `x` and `y` inputs will always return the same output. Has no side effects.
 
 ```js
 const add = (x, y) => x + y
