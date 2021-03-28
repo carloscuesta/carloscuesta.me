@@ -20,7 +20,7 @@ const workExperience: Experience = [
     },
     positions: [
       {
-        dateFinish: null,
+        dateFinish: '03/26/2021',
         dateStart: '03/01/2018',
         title: 'Lead Front End Engineer',
         description: 'As a Lead Front End Engineer, one of my main tasks was to mentor coworkers of my team, contributing to their personal and professional growth. I worked very close to stakeholders to define, organise and breakdown new projects. One of the biggest challenges I faced with my team was to migrate the ulabox.com website to a new business model while refactoring the entire technology stack to Next.js and React. We had to integrate this pivot into the Ulabox application too. I\'ve worked with the logistics team to build Android applications with React-Native for our supply chain and dark stores.'
