@@ -12,7 +12,6 @@ const Biography = (): Element<'section'> => (
           <p className={styles.text}>
             I'm a 25–year–old Front End Engineer interested in{' '}
             <b>design</b>, <b>under engineering</b> and <b>open source</b>.
-            I work remotely at <a href='https://ulabox.com' rel='noopener noreferrer'>Ulabox</a>.
           </p>
 
           <p className={styles.text}>
