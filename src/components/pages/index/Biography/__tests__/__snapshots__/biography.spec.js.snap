@@ -27,13 +27,6 @@ exports[`Biography should match Biography component 1`] = `
           <b>
             open source
           </b>
-          . I work remotely at 
-          <a
-            href="https://ulabox.com"
-            rel="noopener noreferrer"
-          >
-            Ulabox
-          </a>
           .
         </p>
         <p
