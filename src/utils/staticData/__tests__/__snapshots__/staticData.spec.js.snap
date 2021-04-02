@@ -25,6 +25,21 @@ exports[`staticData workExperience should match data 1`] = `
 Array [
   Object {
     "company": Object {
+      "link": "https://n26.com",
+      "logo": "https://res.cloudinary.com/carloscuesta/image/upload/v1617353828/about-me/n26.png",
+      "name": "N26",
+    },
+    "positions": Array [
+      Object {
+        "dateFinish": null,
+        "dateStart": "04/01/2021",
+        "description": "",
+        "title": "Senior Web Engineer",
+      },
+    ],
+  },
+  Object {
+    "company": Object {
       "link": "https://ulabox.com",
       "logo": "https://res.cloudinary.com/carloscuesta/image/upload/v1593899513/about-me/ulabox.png",
       "name": "Ulabox",

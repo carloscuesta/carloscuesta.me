@@ -27,6 +27,14 @@ exports[`Biography should match Biography component 1`] = `
           <b>
             open source
           </b>
+          . I work at 
+          <a
+            href="https://n26.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            N26
+          </a>
           .
         </p>
         <p
