@@ -14,6 +14,21 @@ export type Experience = Array<JobPosition>
 const workExperience: Experience = [
   {
     company: {
+      link: 'https://n26.com',
+      logo: 'https://res.cloudinary.com/carloscuesta/image/upload/v1617353828/about-me/n26.png',
+      name: 'N26'
+    },
+    positions: [
+      {
+        dateFinish: null,
+        dateStart: '04/01/2021',
+        title: 'Senior Web Engineer',
+        description: ''
+      }
+    ]
+  },
+  {
+    company: {
       link: 'https://ulabox.com',
       logo: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593899513/about-me/ulabox.png',
       name: 'Ulabox'

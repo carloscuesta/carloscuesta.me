@@ -26,6 +26,56 @@ exports[`Experience should match Experience component 1`] = `
           className="container"
         >
           <img
+            alt="N26"
+            className="lazyload logo"
+            data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1617353828/about-me/n26.png"
+            height={48}
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            width={48}
+          />
+        </div>
+        <div
+          className="position"
+        >
+          <p
+            className="title"
+          >
+            Senior Web Engineer at 
+            <a
+              href="https://n26.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              N26
+            </a>
+          </p>
+          <span
+            className="timestamp"
+          >
+            April 2021
+             – 
+            <span
+              className="currentPosition"
+            >
+              Now
+            </span>
+          </span>
+          <p>
+            
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xs-12 job"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="container"
+        >
+          <img
             alt="Ulabox"
             className="lazyload logo"
             data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1593899513/about-me/ulabox.png"
