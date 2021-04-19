@@ -6946,10 +6946,10 @@ negotiator@0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
-next-pwa@^5.2.9:
-  version "5.2.9"
-  resolved "https://registry.yarnpkg.com/next-pwa/-/next-pwa-5.2.9.tgz#b3270f6d117ca460c71c19468fd0f51223cd280f"
-  integrity sha512-RrZOOnfzC4pl0oWQPT+lm+oUEz9dqMd5tHemmcPf0ty9r3Um6xiietUhu7zEWPScLaUr6Mhmh7MLWqKgvdxnkw==
+next-pwa@^5.2.13:
+  version "5.2.13"
+  resolved "https://registry.yarnpkg.com/next-pwa/-/next-pwa-5.2.13.tgz#323cb180ab6749876647ca23e4c9b69e6ab8c1fb"
+  integrity sha512-9ZKWkL5kQJUXmH8dnnK01HXf+A7hCaxitcIFGPB0sG4SsffkXTC0UGX8fXVNuMO8WlaQeqXrDX5JGYAiODmP3Q==
   dependencies:
     babel-loader "^8.2.2"
     clean-webpack-plugin "^3.0.0"
