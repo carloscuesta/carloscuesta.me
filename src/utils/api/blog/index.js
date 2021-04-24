@@ -42,9 +42,9 @@ export const fetchPost = async (slug: string): Promise<Post> => {
       }
     )
     .use(remarkExternalLinks)
-    .use(remarkRehype)
+    .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypePrism, { ignoreMissing: true })
-    .use(rehypeStringify)
+    .use(rehypeStringify, { allowDangerousHtml: true })
     .use(rehypeMinify)
     .process(content)
 
