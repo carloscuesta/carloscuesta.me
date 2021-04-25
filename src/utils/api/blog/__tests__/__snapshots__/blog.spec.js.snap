@@ -32,6 +32,25 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
 Array [
   Object {
     "datePublished": Object {
+      "formatDate": "03 May 2021",
+      "formatInWords": "in 10 months",
+      "value": "2021-05-03 22:00",
+    },
+    "excerpt": "Finite State Machines is a computation model useful for building user interfaces, especially nowadays that front-end apps are becoming much more complex.",
+    "images": Object {
+      "featured": Object {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1620078331/blog-featured-images/composing-uis-with-fsm.png",
+      },
+      "preview": Object {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1620078331/blog-featured-images/composing-uis-with-fsm.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1620078331/blog-featured-images/composing-uis-with-fsm.png",
+      },
+    },
+    "slug": "composing-uis-with-finite-state-machines",
+    "title": "Composing UIs with Finite State Machines",
+  },
+  Object {
+    "datePublished": Object {
       "formatDate": "24 March 2021",
       "formatInWords": "in 9 months",
       "value": "2021-03-24 10:00",
@@ -68,25 +87,6 @@ Array [
     "slug": "front-end-tooling-guide-to-improve-developer-experience",
     "title": "The frontend tooling guide to improve Developer Experience",
   },
-  Object {
-    "datePublished": Object {
-      "formatDate": "26 January 2021",
-      "formatInWords": "in 7 months",
-      "value": "2021-01-26 09:00",
-    },
-    "excerpt": "Have you ever heard something about immutability? Despite being a popular term, there are some misconceptions about the importance and principles of it.",
-    "images": Object {
-      "featured": Object {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1611526004/blog-featured-images/Immutability-In-JavaScript.png",
-      },
-      "preview": Object {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1611526004/blog-featured-images/Immutability-In-JavaScript.png",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1611526004/blog-featured-images/Immutability-In-JavaScript.png",
-      },
-    },
-    "slug": "immutability-in-javascript",
-    "title": "Immutability in JavaScript",
-  },
 ]
 `;
 
@@ -94,6 +94,7 @@ exports[`Ghost API Client getPostSlugs should match getPostSlugs 1`] = `
 Array [
   "2016-year-in-review",
   "chrome-devtools-customization",
+  "composing-uis-with-finite-state-machines",
   "debugging-with-the-javascript-console",
   "discovering-hyperterm",
   "front-end-tooling-guide-to-improve-developer-experience",

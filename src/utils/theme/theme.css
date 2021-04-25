@@ -183,6 +183,30 @@ hr {
   outline: none;
 }
 
+.postDetail table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.postDetail th {
+  padding: 1rem;
+}
+
+.postDetail td {
+  padding: .5rem 1rem;
+  border: 1px solid var(--backgroundSurface);
+}
+
+.postDetail tr:nth-child(even) {
+  border-top: 1px solid var(--backgroundSurface);
+  border-bottom: 1px solid var(--backgroundSurface);
+}
+
+.postDetail th {
+  text-align: left;
+  background-color: var(--backgroundSurface);
+}
+
 @media (max-width: 768px) {
   .postDetail h1 {
     font-size: 2em;
