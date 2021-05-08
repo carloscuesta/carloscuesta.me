@@ -15,5 +15,10 @@ exports[`Header should match Header component 1`] = `
   >
     15/12/2019
   </time>
+  <span
+    className="readingTime"
+  >
+    10 min read
+  </span>
 </header>
 `;

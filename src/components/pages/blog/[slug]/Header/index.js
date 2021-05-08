@@ -4,8 +4,9 @@ import React, { type Element } from 'react'
 import styles from './styles.module.css'
 
 type Props = {
-  title: string,
-  datePublished: { formatDate: string, value: string }
+  datePublished: { formatDate: string, value: string },
+  readingTime: string,
+  title: string
 }
 
 const Header = (props: Props): Element<'header'> => (
@@ -15,6 +16,8 @@ const Header = (props: Props): Element<'header'> => (
     <time className={styles.time} dateTime={props.datePublished.value}>
       {props.datePublished.formatDate}
     </time>
+
+    <span className={styles.readingTime}>{props.readingTime}</span>
   </header>
 )
 
