@@ -6,8 +6,13 @@
   margin-bottom: .25em;
 }
 
-.time {
-  text-transform: uppercase;
+.time, .readingTime {
   color: var(--textSecondary);
   font-size: 0.85em;
+  text-transform: uppercase;
+}
+
+.readingTime::before {
+  content: "•";
+  padding: 0 .25rem;
 }

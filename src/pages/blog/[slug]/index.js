@@ -34,6 +34,10 @@ const Article = (props: Props): Element<'article'> => {
       />
 
       <NextSeo
+        additionalMetaTags={[
+          { name: 'twitter:label1', content: 'Reading time' },
+          { name: 'twitter:data1', content: props.post.readingTime }
+        ]}
         canonical={canonicalUrl}
         title={`Carlos Cuesta – ${props.post.title}`}
         description={props.post.excerpt}
@@ -72,8 +76,9 @@ const Article = (props: Props): Element<'article'> => {
       <main>
         <Wrapper isCompressed>
           <Header
-            title={props.post.title}
             datePublished={props.post.datePublished}
+            readingTime={props.post.readingTime}
+            title={props.post.title}
           />
 
           <div dangerouslySetInnerHTML={{ __html: props.post.html }} />

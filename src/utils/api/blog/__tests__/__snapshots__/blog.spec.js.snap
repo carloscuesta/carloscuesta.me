@@ -23,6 +23,7 @@ $ sh -c \\"$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/too
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1593531858/blog-featured-images/Terminal_Setup.png",
     },
   },
+  "readingTime": "1 min read",
   "slug": "terminal-setup",
   "title": "Terminal setup",
 }
@@ -142,6 +143,7 @@ Object {
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png",
     },
   },
+  "readingTime": "1 min read",
   "slug": "terminal-setup",
   "title": "Terminal setup",
 }

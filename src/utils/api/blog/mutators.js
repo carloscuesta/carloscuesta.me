@@ -1,5 +1,6 @@
 // @flow
 import { format, formatDistanceToNow } from 'date-fns'
+import readingTime from 'reading-time'
 
 export type Post = {
   dateModified: string,
@@ -8,13 +9,19 @@ export type Post = {
   excerpt: string,
   html: string,
   images: { featured: { src: string }, preview: { lqpi: string, src: string } },
+  readingTime: string,
   slug: string,
   title: string
 }
 
 export type PostPreview = $Diff<
   Post,
-  { html: string, dateModified: string, disqusIdentifier: string }
+  {
+    dateModified: string,
+    disqusIdentifier: string,
+    html: string,
+    readingTime: string
+  }
 >
 
 type Payload = { data: Object, html: Object, slug: string }
@@ -44,6 +51,7 @@ export const transformPost = (payload: Payload): Post => ({
       lqpi: payload.data.image.replace('/upload/', '/upload/t_post-preview-lqpi/')
     }
   },
+  readingTime: readingTime(payload.html.toString()).text,
   slug: payload.slug,
   title: payload.data.title
 })
