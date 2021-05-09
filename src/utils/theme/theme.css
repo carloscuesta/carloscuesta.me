@@ -126,7 +126,7 @@ blockquote {
 }
 
 code {
-  font-family: Consolas, monospace;
+  font-family: Operator Mono, Fira Code, Consolas, monospace;
   white-space: pre-wrap;
 }
 
