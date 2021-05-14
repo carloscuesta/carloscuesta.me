@@ -14,7 +14,7 @@ exports[`Biography should match Biography component 1`] = `
         <p
           className="text"
         >
-          I'm a 25–year–old Front End Engineer interested in
+          I'm a Front End Engineer interested in
            
           <b>
             design

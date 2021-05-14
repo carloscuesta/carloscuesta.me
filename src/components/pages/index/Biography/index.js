@@ -10,7 +10,7 @@ const Biography = (): Element<'section'> => (
       <div className={styles.container}>
         <div className={styles.biographyContainer}>
           <p className={styles.text}>
-            I'm a 25–year–old Front End Engineer interested in{' '}
+            I'm a Front End Engineer interested in{' '}
             <b>design</b>, <b>under engineering</b> and <b>open source</b>.
             I work at <a target='_blank' rel='noopener noreferrer' href='https://n26.com'>N26</a>.
           </p>
