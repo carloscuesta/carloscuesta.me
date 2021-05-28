@@ -112,6 +112,7 @@
     },
     "testMatch": [
       "<rootDir>/**/*.(spec).(js)"
-    ]
+    ],
+    "testEnvironment": "jsdom"
   }
 }
