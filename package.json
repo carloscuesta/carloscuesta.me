@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "@babel/preset-flow": "^7.13.13",
-    "@lhci/cli": "^0.7.2",
+    "@lhci/cli": "^0.8.0",
     "babel-eslint": "^10.1.0",
     "codecov": "^3.8.2",
     "eslint-plugin-flowtype": "^5.7.2",
