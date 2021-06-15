@@ -74,12 +74,6 @@
     "snazzy": "^9.0.0",
     "standard": "^16.0.3"
   },
-  "babel": {
-    "presets": [
-      "next/babel",
-      "@babel/preset-flow"
-    ]
-  },
   "standard": {
     "parser": "babel-eslint",
     "env": [
