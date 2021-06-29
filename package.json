@@ -65,7 +65,7 @@
     "flow-bin": "^0.154.0",
     "husky": "^6.0.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.0.5",
+    "jest": "^27.0.6",
     "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^11.0.0",
     "minify": "^7.0.2",
