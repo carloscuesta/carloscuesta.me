@@ -9,6 +9,10 @@ jest.mock('react-intersection-observer', () => ({
   useInView: jest.fn().mockReturnValue([jest.fn(), false])
 }))
 
+jest.mock('disqus-react', () => ({
+  DiscussionEmbed: 'DiscussionEmbed'
+}))
+
 describe('DisqusComments', () => {
   it('should call useInView with the following options', () => {
     renderer.create(<DisqusComments {...stubs.props} />)

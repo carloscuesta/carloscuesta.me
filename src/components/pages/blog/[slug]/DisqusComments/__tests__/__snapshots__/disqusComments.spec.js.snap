@@ -2,7 +2,7 @@
 
 exports[`DisqusComments when the component is in viewport should render the Disqus component 1`] = `
 <div>
-  <div
+  <DiscussionEmbed
     config={
       Object {
         "identifier": "post-disqus-identifier",
@@ -11,7 +11,6 @@ exports[`DisqusComments when the component is in viewport should render the Disq
         "url": "https://carloscuesta.me/canonical-url",
       }
     }
-    id="disqus_thread"
     shortname="carloscuesta"
   />
 </div>
