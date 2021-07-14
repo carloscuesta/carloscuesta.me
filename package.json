@@ -67,7 +67,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.6",
     "jest-fetch-mock": "^3.0.3",
-    "lint-staged": "^11.0.0",
+    "lint-staged": "^11.0.1",
     "minify": "^7.0.2",
     "next-sitemap": "^1.6.133",
     "react-test-renderer": "^17.0.2",
