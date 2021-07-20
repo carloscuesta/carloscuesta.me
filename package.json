@@ -60,7 +60,7 @@
     "@babel/preset-flow": "^7.14.5",
     "@lhci/cli": "^0.8.0",
     "babel-eslint": "^10.1.0",
-    "codecov": "^3.8.2",
+    "codecov": "^3.8.3",
     "eslint-plugin-flowtype": "^5.8.0",
     "flow-bin": "^0.155.1",
     "husky": "^7.0.1",
