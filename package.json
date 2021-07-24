@@ -32,7 +32,7 @@
   "homepage": "https://github.com/carloscuesta/carloscuesta.me#readme",
   "dependencies": {
     "@mapbox/rehype-prism": "^0.7.0",
-    "date-fns": "^2.22.1",
+    "date-fns": "^2.23.0",
     "disqus-react": "^1.1.1",
     "gray-matter": "^4.0.3",
     "lazysizes": "^5.3.2",
