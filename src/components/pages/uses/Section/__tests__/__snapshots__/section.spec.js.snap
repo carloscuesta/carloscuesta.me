@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section should match Section component 1`] = `
+<section>
+  <div
+    className="container "
+  >
+    <div>
+      <h2
+        className="sectionTitle "
+      >
+        Gear
+      </h2>
+      <h3
+        className="sectionSubtitle"
+      >
+        Home office equipment
+      </h3>
+    </div>
+  </div>
+  <ul
+    className="list"
+  >
+    <li>
+      <p
+        className="title"
+      >
+        Desk – 
+        <a
+          href="https://www.fully.com/standing-desks/jarvis-adjustable-height-desk-bamboo.html"
+          rel="noopener noreferrer"
+        >
+          Fully Jarvis Bamboo Standing Desk
+        </a>
+      </p>
+    </li>
+    <li>
+      <p
+        className="title"
+      >
+        Laptop – 
+        <a
+          href="https://support.apple.com/kb/sp704"
+          rel="noopener noreferrer"
+        >
+          MacBook Pro 15 (Mid 2014), i7 @ 2,5GHz, 16 GB
+        </a>
+      </p>
+    </li>
+    <li>
+      <p
+        className="title"
+      >
+        Chair – 
+        <a
+          href="https://www.ikea.com/es/es/p/markus-silla-trabajo-glose-negro-40103100/"
+          rel="noopener noreferrer"
+        >
+          Ikea Markus
+        </a>
+      </p>
+    </li>
+    <li>
+      <p
+        className="title"
+      >
+        Monitor – 
+        Dell U2414H
+      </p>
+    </li>
+  </ul>
+</section>
+`;
