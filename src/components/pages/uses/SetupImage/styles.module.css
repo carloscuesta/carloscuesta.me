@@ -1,0 +1,11 @@
+.image {
+  filter: blur(8px);
+  /* https://stackoverflow.com/questions/27532270/css-blur-weird-shadow-effect */
+  transform: translateZ(0);
+  transition: filter 200ms ease-in-out;
+  border-radius: 4px;
+}
+
+.image:global(.lazyloaded) {
+  filter: blur(0);
+}
