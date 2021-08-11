@@ -107,6 +107,7 @@
     "testMatch": [
       "<rootDir>/**/*.(spec).(js)"
     ],
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "transformIgnorePatterns": ["!/node_modules/unified"]
   }
 }
