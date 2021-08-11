@@ -2,7 +2,7 @@
 import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
-import unified from 'unified'
+import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkGFM from 'remark-gfm'
 import remarkExternalLinks from 'remark-external-links'
