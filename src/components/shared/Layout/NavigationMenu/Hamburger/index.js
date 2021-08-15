@@ -10,22 +10,24 @@ import styles from './styles.module.css'
 type Props = { isOpen: boolean, setIsOpen: Function }
 
 const Hamburger = (props: Props): Element<'div'> => {
+  const { setIsOpen } = props
+
   useEffect(() => {
     const onRouteChangeStart = () => {
-      props.setIsOpen(false)
+      setIsOpen(false)
     }
 
     Router.events.on('routeChangeStart', onRouteChangeStart)
 
     return () => Router.events.off('routeChangeStart', onRouteChangeStart)
-  }, [])
+  }, [setIsOpen])
 
   return (
     <div className={styles.hamburger}>
       <button
         aria-label='Open navigation menu'
         className={styles.button}
-        onClick={() => props.setIsOpen(true)}
+        onClick={() => setIsOpen(true)}
       >
         <OpenIcon />
       </button>
@@ -36,7 +38,7 @@ const Hamburger = (props: Props): Element<'div'> => {
             <button
               aria-label='Close navigation menu'
               className={styles.button}
-              onClick={() => props.setIsOpen(false)}
+              onClick={() => setIsOpen(false)}
             >
               <CloseIcon />
             </button>

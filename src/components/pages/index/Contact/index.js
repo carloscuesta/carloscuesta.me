@@ -15,7 +15,7 @@ const Contact = (): Element<'section'> => (
 
       <div className={styles.wrapper}>
         <p className={styles.text}>
-          Feel free to send me an email if you're looking for a front end engineer,
+          Feel free to send me an email if you&#39;re looking for a front end engineer,
           have a question or just want to say hi! 🙋‍♂️
         </p>
 

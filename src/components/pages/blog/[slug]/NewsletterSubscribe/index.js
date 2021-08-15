@@ -15,7 +15,7 @@ const NewsletterSubscribe = (): Element<'form'> => (
     <div className='row'>
       <div className='col-xs-12 col-sm-6'>
         <p className={styles.explanation}>
-          Be the first to know when I write something new! If you don't like emails, you can
+          Be the first to know when I write something new! If you don&#39;t like emails, you can
           follow me on {' '}
           <a href='https://twitter.com/intent/follow?screen_name=crloscuesta' rel='noopener noreferrer' target='_blank'>
             twitter

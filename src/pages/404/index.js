@@ -11,7 +11,7 @@ const Error404 = (): Node => (
       <div>
         <div className='col-xs-12'>
           <h1 className={styles.headline}>Are you lost ?</h1>
-          <h2>The page you are looking for doesn't exists.</h2>
+          <h2>The page you are looking for doesn&#39;t exists.</h2>
           <h3 className={styles.title}>Here are some helpful links instead:</h3>
           <ul className={styles.links}>
             <li><Link href='/'><a>Home</a></Link></li>
