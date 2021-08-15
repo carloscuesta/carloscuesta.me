@@ -1,5 +1,5 @@
 // @flow
-import React, { type Node } from 'react'
+import { type Node, Component } from 'react'
 import { DefaultSeo } from 'next-seo'
 import 'lazysizes'
 import 'lazysizes/plugins/attrchange/ls.attrchange'
@@ -8,7 +8,7 @@ import 'src/utils/theme/theme.css'
 import Layout from 'src/components/shared/Layout'
 import { trackEvent } from 'src/utils/analytics'
 
-type Props = { Component: typeof React.Component, pageProps: Object }
+type Props = { Component: typeof Component, pageProps: Object }
 
 const App = (props: Props): Node => (
   <Layout>

@@ -1,5 +1,5 @@
 // @flow
-import React, { type Node } from 'react'
+import type { Node } from 'react'
 import Link from 'next/link'
 
 import Wrapper from 'src/components/shared/Wrapper'

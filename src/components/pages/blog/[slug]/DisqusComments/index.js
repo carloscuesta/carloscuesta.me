@@ -1,5 +1,5 @@
 // @flow
-import React, { type Element } from 'react'
+import type { Element } from 'react'
 import { DiscussionEmbed } from 'disqus-react'
 import { useInView } from 'react-intersection-observer'
 

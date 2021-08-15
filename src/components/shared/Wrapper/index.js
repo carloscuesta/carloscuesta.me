@@ -1,5 +1,5 @@
 // @flow
-import React, { type Node, type Element } from 'react'
+import type { Node, Element } from 'react'
 
 import styles from './styles.module.css'
 

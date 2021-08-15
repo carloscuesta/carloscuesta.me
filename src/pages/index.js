@@ -1,5 +1,5 @@
 // @flow
-import React, { type Node } from 'react'
+import type { Node } from 'react'
 import { NextSeo, SocialProfileJsonLd } from 'next-seo'
 
 import { fetchPosts } from 'src/utils/api/blog'
@@ -41,7 +41,7 @@ const Index = (props: Props): Node => (
   </>
 )
 
-export const getStaticProps = async (): Promise<{ props: Props }> => {
+export const getStaticProps = async (): Promise<{ props: Props, revalidate: number }> => {
   const [posts, repositories] = await Promise.all([
     fetchPosts(),
     fetchRepositories()

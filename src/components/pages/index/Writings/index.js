@@ -1,5 +1,5 @@
 // @flow
-import React, { type Element } from 'react'
+import { type Element, useRef, useState } from 'react'
 import debounce from 'lodash.debounce'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'
@@ -14,8 +14,8 @@ type Props = {
 }
 
 const Writings = (props: Props): Element<'section'> => {
-  const scrollablePostsRef: Object = React.useRef({ current: {} })
-  const [scrollPosition, setScrollPosition] = React.useState(0)
+  const scrollablePostsRef: Object = useRef({ current: {} })
+  const [scrollPosition, setScrollPosition] = useState(0)
   const SCROLL_DEBOUNCE_MS_TIME: number = 20
 
   const onScroll = debounce(

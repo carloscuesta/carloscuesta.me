@@ -1,5 +1,5 @@
 // @flow
-import React, { type Element } from 'react'
+import { type Element, useState } from 'react'
 import Link from 'next/link'
 
 import Wrapper from 'src/components/shared/Wrapper'
@@ -8,7 +8,7 @@ import Hamburger from './Hamburger'
 import styles from './styles.module.css'
 
 const NavigationMenu = (): Element<'header'> => {
-  const [isHamburgerOpen, setIsHamburgerOpen] = React.useState(false)
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false)
 
   return (
     <header className={`${styles.header} ${isHamburgerOpen ? styles.disableBackdropFilter : ''}`}>

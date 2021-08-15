@@ -1,5 +1,5 @@
 // @flow
-import React, { type Element } from 'react'
+import type { Element } from 'react'
 import Link from 'next/link'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'

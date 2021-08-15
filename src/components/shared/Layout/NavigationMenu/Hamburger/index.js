@@ -1,5 +1,5 @@
 // @flow
-import React, { type Element } from 'react'
+import { type Element, useEffect } from 'react'
 import Router from 'next/router'
 
 import MenuLink from '../MenuLink'
@@ -10,7 +10,7 @@ import styles from './styles.module.css'
 type Props = { isOpen: boolean, setIsOpen: Function }
 
 const Hamburger = (props: Props): Element<'div'> => {
-  React.useEffect(() => {
+  useEffect(() => {
     const onRouteChangeStart = () => {
       props.setIsOpen(false)
     }

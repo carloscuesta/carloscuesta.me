@@ -1,5 +1,5 @@
 // @flow
-import React, { type Node } from 'react'
+import type { Node } from 'react'
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 
 import { trackingCode } from 'src/utils/analytics'
