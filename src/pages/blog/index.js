@@ -1,5 +1,5 @@
 // @flow
-import React, { type Node } from 'react'
+import type { Node } from 'react'
 import groupBy from 'lodash.groupby'
 import { NextSeo } from 'next-seo'
 

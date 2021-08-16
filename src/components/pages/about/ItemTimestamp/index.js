@@ -1,5 +1,5 @@
 // @flow
-import React, { type Element } from 'react'
+import type { Element } from 'react'
 import { format } from 'date-fns'
 
 import styles from './styles.module.css'

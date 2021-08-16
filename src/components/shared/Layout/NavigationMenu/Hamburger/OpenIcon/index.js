@@ -1,5 +1,5 @@
 // @flow
-import React, { type Element } from 'react'
+import type { Element } from 'react'
 
 const OpenIcon = (): Element<'svg'> => (
   <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='currentColor'>

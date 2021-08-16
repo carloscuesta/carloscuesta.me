@@ -1,5 +1,5 @@
 // @flow
-import React, { type Element } from 'react'
+import type { Element } from 'react'
 
 import { type Repository } from 'src/utils/api/github/mutators'
 import styles from './styles.module.css'

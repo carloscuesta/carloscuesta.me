@@ -1,5 +1,5 @@
 // @flow
-import React, { type Element } from 'react'
+import type { Element } from 'react'
 import Link from 'next/link'
 
 import styles from './styles.module.css'
@@ -8,7 +8,7 @@ const WhoAmI = (): Element<'section'> => (
   <section>
     <div className={styles.whoAmI}>
       <p>
-        My name is Carlos Cuesta I'm a Front End Engineer based in {' '}
+        My name is Carlos Cuesta I&#39;m a Front End Engineer based in {' '}
         <b>Barcelona</b> ☀️. I describe myself as a passionate developer who
         loves <b>coding</b>, <b>open source</b>, and the <b>web platform</b> ❤️.
       </p>

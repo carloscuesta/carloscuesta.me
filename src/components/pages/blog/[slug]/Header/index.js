@@ -1,10 +1,10 @@
 // @flow
-import React, { type Element } from 'react'
+import type { Element } from 'react'
 
 import styles from './styles.module.css'
 
 type Props = {
-  datePublished: { formatDate: string, value: string },
+  datePublished: { formatInWords: string, formatDate: string, value: string },
   readingTime: string,
   title: string
 }

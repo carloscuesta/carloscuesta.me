@@ -1,5 +1,5 @@
 // @flow
-import React, { type Element } from 'react'
+import type { Element } from 'react'
 
 import SectionTitle from 'src/components/shared/SectionTitle'
 import Stat from './Stat'

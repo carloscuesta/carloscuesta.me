@@ -1,5 +1,5 @@
 // @flow
-import React, { type Element } from 'react'
+import { type Element, Fragment } from 'react'
 
 import { type JobPosition } from 'src/utils/staticData/workExperience'
 import ItemTimestamp from 'src/components/pages/about/ItemTimestamp'
@@ -53,7 +53,7 @@ const Job = (props: Props): Element<'div'> => {
     <div className={`col-xs-12 ${styles.job}`}>
       <div className={styles.container}>
         {props.positions.map((position) => (
-          <React.Fragment key={props.company.name}>
+          <Fragment key={props.company.name}>
             <CompanyLogo url={props.company.logo} name={props.company.name} />
 
             <div className={styles.position}>
@@ -70,7 +70,7 @@ const Job = (props: Props): Element<'div'> => {
 
               <p>{position.description}</p>
             </div>
-          </React.Fragment>
+          </Fragment>
         ))}
       </div>
     </div>

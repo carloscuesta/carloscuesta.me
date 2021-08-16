@@ -1,5 +1,5 @@
 // @flow
-import React, { type Element } from 'react'
+import type { Element } from 'react'
 
 import Wrapper from 'src/components/shared/Wrapper'
 import styles from './styles.module.css'
@@ -10,17 +10,17 @@ const Biography = (): Element<'section'> => (
       <div className={styles.container}>
         <div className={styles.biographyContainer}>
           <p className={styles.text}>
-            I'm a Front End Engineer interested in{' '}
+            I&#39;m a Front End Engineer interested in{' '}
             <b>design</b>, <b>under engineering</b> and <b>open source</b>.
             I work at <a target='_blank' rel='noopener noreferrer' href='https://n26.com'>N26</a>.
           </p>
 
           <p className={styles.text}>
-            I'm focused on building products with JavaScript, specifically React and React-Native.
+            I&#39;m focused on building products with JavaScript, specifically React and React-Native.
           </p>
 
           <p className={styles.text}>
-            When I'm not coding, I'm likely at the gym or surfing the city with my longboard.
+            When I&#39;m not coding, I&#39;m likely at the gym or surfing the city with my longboard.
           </p>
 
           <p className={styles.text}>

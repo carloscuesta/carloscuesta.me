@@ -12,3 +12,5 @@
 
 emoji=true
 module.name_mapper='src\/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+exact_by_default=true
+react.runtime=automatic
