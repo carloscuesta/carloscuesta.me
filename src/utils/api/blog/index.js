@@ -5,12 +5,12 @@ import matter from 'gray-matter'
 import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkGFM from 'remark-gfm'
-import remarkExternalLinks from 'remark-external-links'
-import remarkAutoLinkHeadings from 'remark-autolink-headings'
 import remarkSlug from 'remark-slug'
 import remarkToc from 'remark-toc'
 import remarkRehype from 'remark-rehype'
 import rehypePrism from '@mapbox/rehype-prism'
+import rehypeExternalLinks from 'rehype-external-links'
+import rehypeAutoLinkHeadings from 'rehype-autolink-headings'
 import rehypeStringify from 'rehype-stringify'
 import rehypeMinify from 'rehype-preset-minify'
 
@@ -29,20 +29,19 @@ export const fetchPost = async (slug: string): Promise<Post> => {
     .use(remarkGFM)
     .use(remarkSlug)
     .use(remarkToc, { tight: true, maxDepth: 4 })
+    .use(remarkRehype, { allowDangerousHtml: true })
     .use(
-      remarkAutoLinkHeadings,
+      rehypeAutoLinkHeadings,
       {
-        linkProperties: { className: 'headingLink ' },
         content: {
           type: 'element',
           tagName: 'span',
-          properties: {},
+          properties: { className: 'headingLink ' },
           children: [{ type: 'text', value: '#' }]
         }
       }
     )
-    .use(remarkExternalLinks)
-    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeExternalLinks)
     .use(rehypePrism, { ignoreMissing: true })
     .use(rehypeStringify, { allowDangerousHtml: true })
     .use(rehypeMinify)
