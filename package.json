@@ -48,7 +48,7 @@
     "rehype-preset-minify": "^6.0.0",
     "rehype-stringify": "^9.0.1",
     "remark-autolink-headings": "^7.0.0",
-    "remark-external-links": "^9.0.0",
+    "remark-external-links": "^9.0.1",
     "remark-gfm": "^2.0.0",
     "remark-parse": "^10.0.0",
     "remark-rehype": "^9.0.0",

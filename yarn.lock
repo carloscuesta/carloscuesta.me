@@ -1942,14 +1942,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/hast@^2.0.0":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@types/hast/-/hast-2.3.1.tgz#b16872f2a6144c7025f296fb9636a667ebb79cd9"
-  integrity sha512-viwwrB+6xGzw+G1eWpF9geV3fnsDgXqHG+cqgiHrvQfDUW5hzhCyV7Sy3UJxhfRFBsgky2SSW33qi/YrIkjX5Q==
-  dependencies:
-    "@types/unist" "*"
-
-"@types/hast@^2.3.2":
+"@types/hast@^2.0.0", "@types/hast@^2.3.2":
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/@types/hast/-/hast-2.3.2.tgz#236201acca9e2695e42f713d7dd4f151dc2982e4"
   integrity sha512-Op5W7jYgZI7AWKY5wQ0/QNMzQM7dGQPyW1rXKNiymVCy5iTfdPuGu4HhYNOM2sIv8gUfIuIdcYlXmAepwaowow==
@@ -5227,10 +5220,10 @@ ipaddr.js@1.9.1:
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.9.1.tgz#bff38543eeb8984825079ff3a2a8e6cbd46781b3"
   integrity sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==
 
-is-absolute-url@^3.0.0:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/is-absolute-url/-/is-absolute-url-3.0.3.tgz#96c6a22b6a23929b11ea0afb1836c36ad4a5d698"
-  integrity sha512-opmNIX7uFnS96NtPmhWQgQx6/NYFgsUXYMllcfzwWKUMwfo8kku1TvE6hkNcH+Q1ts5cMVrsY7j0bxXQDciu9Q==
+is-absolute-url@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/is-absolute-url/-/is-absolute-url-4.0.1.tgz#16e4d487d4fded05cfe0685e53ec86804a5e94dc"
+  integrity sha512-/51/TKE88Lmm7Gc4/8btclNXWS+g50wXhYJq8HWIBAGUBnoAdRu1aXeh364t/O7wXDAcTJDP8PNuNKWUDWie+A==
 
 is-alphabetical@^1.0.0:
   version "1.0.4"
@@ -8642,15 +8635,15 @@ remark-autolink-headings@^7.0.0:
     unified "^10.0.0"
     unist-util-visit "^4.0.0"
 
-remark-external-links@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/remark-external-links/-/remark-external-links-9.0.0.tgz#af0fc62890a270e724d9c6d5a671def2b2c9fbec"
-  integrity sha512-1s81E99otVCKB2zPTsYkCV6kYUAgTiNTXeEylceYpfzF9iFuk6VhrafFT2PuwPjvvRVwmqL1Al0bphJt/ggxkA==
+remark-external-links@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/remark-external-links/-/remark-external-links-9.0.1.tgz#6e28354fd7d2c75c2652e32782441bb312cc995a"
+  integrity sha512-EYw+p8Zqy5oT5+W8iSKzInfRLY+zeKWHCf0ut+Q5SwnaSIDGXd2zzvp4SWqyAuVbinNmZ0zjMrDKaExWZnTYqQ==
   dependencies:
     "@types/hast" "^2.3.2"
     "@types/mdast" "^3.0.0"
     extend "^3.0.0"
-    is-absolute-url "^3.0.0"
+    is-absolute-url "^4.0.0"
     mdast-util-definitions "^5.0.0"
     space-separated-tokens "^2.0.0"
     unified "^10.0.0"
