@@ -76,7 +76,7 @@
     "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^11.1.2",
     "minify": "^7.0.2",
-    "next-sitemap": "^1.6.157",
+    "next-sitemap": "^1.6.160",
     "react-test-renderer": "^17.0.2"
   },
   "eslintConfig": {
