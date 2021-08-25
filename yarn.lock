@@ -3636,10 +3636,10 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-disqus-react@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/disqus-react/-/disqus-react-1.1.1.tgz#48b3cd10eb6056a875c1bb047dd87c21c02bfda4"
-  integrity sha512-Ob6/3l3WQb682RLplStVZsvRbGnD2DdppmwmHZ3PO7JNyLZfdldKGXnotm0ZhdTCX6DM8oE4Bpr08cSymBIdzg==
+disqus-react@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/disqus-react/-/disqus-react-1.1.2.tgz#97fd00630f9fe53db2673c0bd9155f52e1e0f97c"
+  integrity sha512-CrG7FUxI4MFfAQ5sNTOxpxAHMZmqzQEDgGvc7+DW7v8jfrt/RMLmwuhOSpAMTyVGQowCV6NxUQ5ShALEy2uJMg==
 
 doctrine@^2.1.0:
   version "2.1.0"
