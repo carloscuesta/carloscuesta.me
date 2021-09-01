@@ -27,6 +27,7 @@ jobs:
     - name: Tests ✅
       run: yarn run test:unit
     - name: Lighthouse Audit 🚨
+      if: ${{ github.actor != 'dependabot[bot]' }}
       run: yarn run test:lighthouse
       env:
         LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
