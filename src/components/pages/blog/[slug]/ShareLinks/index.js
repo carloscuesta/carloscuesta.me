@@ -12,7 +12,7 @@ type Props = {
 const ShareLinks = (props: Props): Node => (
   <>
     <hr />
-    <b className={styles.title}>Did you enjoyed the article ?</b>
+    <b className={styles.title}>Did you enjoy the article ?</b>
     <div className={styles.links}>
       <a
         className={styles.socialButton}
