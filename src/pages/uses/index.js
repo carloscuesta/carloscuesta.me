@@ -70,6 +70,11 @@ const Uses = (): Node => (
                   category: 'Headphones',
                   title: 'Airpods Pro',
                   link: 'https://www.apple.com/airpods-pro'
+                },
+                {
+                  category: 'Lighting',
+                  title: 'BenQ Screenbar',
+                  link: 'https://www.benq.com/en-us/lamps/computer-desklamp/screenbar.html'
                 }
               ]}
               subTitle='Home office equipment'

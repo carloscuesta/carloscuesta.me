@@ -74,6 +74,11 @@ Array [
                   "link": "https://www.apple.com/airpods-pro",
                   "title": "Airpods Pro",
                 },
+                Object {
+                  "category": "Lighting",
+                  "link": "https://www.benq.com/en-us/lamps/computer-desklamp/screenbar.html",
+                  "title": "BenQ Screenbar",
+                },
               ]
             }
             subTitle="Home office equipment"
