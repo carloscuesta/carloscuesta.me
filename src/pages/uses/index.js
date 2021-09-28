@@ -19,7 +19,11 @@ const Uses = (): Node => (
         <PageTitle title='Uses' />
 
         <div className='row'>
-          <div className='col-xs-12 col-sm-6'>
+          <div className='col-xs-12'>
+            <SetupImage />
+          </div>
+
+          <div className='col-xs-12'>
             <Section
               items={[
                 {
@@ -134,10 +138,6 @@ const Uses = (): Node => (
               subTitle='Things to improve the setup'
               title='Wishlist'
             />
-          </div>
-
-          <div className='col-xs-12 col-sm-6'>
-            <SetupImage />
           </div>
         </div>
       </Wrapper>
