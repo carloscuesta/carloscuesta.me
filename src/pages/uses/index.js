@@ -19,7 +19,11 @@ const Uses = (): Node => (
         <PageTitle title='Uses' />
 
         <div className='row'>
-          <div className='col-xs-12 col-sm-6'>
+          <div className='col-xs-12'>
+            <SetupImage />
+          </div>
+
+          <div className='col-xs-12'>
             <Section
               items={[
                 {
@@ -39,7 +43,8 @@ const Uses = (): Node => (
                 },
                 {
                   category: 'Monitor',
-                  title: 'Dell U2414H'
+                  title: 'Dell U3821DW',
+                  link: 'https://www.dell.com/es-es/shop/monitor-curvo-dell-ultrasharp-38-con-concentrador-y-usb-c-u3821dw/apd/210-axnt/monitores-y-accesorios'
                 },
                 {
                   category: 'Webcam',
@@ -65,6 +70,11 @@ const Uses = (): Node => (
                   category: 'Headphones',
                   title: 'Airpods Pro',
                   link: 'https://www.apple.com/airpods-pro'
+                },
+                {
+                  category: 'Lighting',
+                  title: 'BenQ Screenbar',
+                  link: 'https://www.benq.com/en-us/lamps/computer-desklamp/screenbar.html'
                 }
               ]}
               subTitle='Home office equipment'
@@ -121,32 +131,18 @@ const Uses = (): Node => (
                 },
                 {
                   category: 'Headphones',
-                  title: 'Bose QuietComfort 35',
-                  link: 'https://www.bose.es/es_es/products/headphones/over_ear_headphones/quietcomfort-35-wireless-ii.html'
-                },
-                {
-                  category: 'Monitor',
-                  title: 'Ultrawide Dell U3421WE',
-                  link: 'https://www.dell.com/es-es/shop/monitor-curvo-dell-ultrasharp-8636-cm-34-usb-c-hub-u3421we/apd/210-axql/monitores-y-accesorios'
+                  title: 'Bose QuietComfort 45',
+                  link: 'https://www.bose.com/en_us/products/headphones/noise_cancelling_headphones/quietcomfort-headphones-45.html#v=qc45_white_smoke'
                 },
                 {
                   category: 'Monitor Arm',
                   title: 'Ergotron HX',
                   link: 'https://www.ergotron.com/es-es/productos/detalles-del-producto/45-475'
                 },
-                {
-                  category: 'Lighting',
-                  title: 'BenQ Screenbar',
-                  link: 'https://www.benq.com/en-us/lamps/computer-desklamp/screenbar.html'
-                }
               ]}
               subTitle='Things to improve the setup'
               title='Wishlist'
             />
-          </div>
-
-          <div className='col-xs-12 col-sm-6'>
-            <SetupImage />
           </div>
         </div>
       </Wrapper>

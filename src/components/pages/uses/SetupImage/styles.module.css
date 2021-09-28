@@ -5,6 +5,9 @@
   transition: filter 200ms ease-in-out;
   border-radius: 4px;
   max-width: 100%;
+  margin: 1rem 0;
+  aspect-ratio: 4 / 3;
+  height: auto;
 }
 
 .image:global(.lazyloaded) {
