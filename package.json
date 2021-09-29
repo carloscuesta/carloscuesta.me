@@ -17,7 +17,7 @@
     "test:watch": "NODE_ENV=test TZ=UTC jest --watch",
     "test:coverage": "codecov",
     "test:lighthouse": "yarn run build && lhci autorun",
-    "postbuild": "next-sitemap && minify public/prism/prism.css > public/prism/prism.min.css && mv -f public/prism/prism.min.css public/prism/prism.css",
+    "postbuild": "cleancss public/prism/prism.css -o public/prism/prism.min.css && mv -f public/prism/prism.min.css public/prism/prism.css",
     "prepare": "husky install"
   },
   "repository": {
@@ -61,6 +61,7 @@
     "@babel/preset-flow": "^7.14.5",
     "@babel/preset-react": "^7.14.5",
     "@lhci/cli": "^0.8.2",
+    "clean-css-cli": "^5.3.3",
     "codecov": "^3.8.3",
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.2",
@@ -75,7 +76,6 @@
     "jest": "^27.2.3",
     "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^11.1.2",
-    "minify": "^7.2.1",
     "next-sitemap": "^1.6.168",
     "react-test-renderer": "^17.0.2"
   },
