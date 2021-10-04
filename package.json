@@ -51,7 +51,7 @@
     "rehype-stringify": "^9.0.2",
     "remark-gfm": "^2.0.0",
     "remark-parse": "^10.0.0",
-    "remark-rehype": "^9.1.0",
+    "remark-rehype": "^10.0.0",
     "remark-slug": "^7.0.0",
     "remark-toc": "^8.0.0",
     "unified": "^10.1.0"
