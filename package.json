@@ -67,7 +67,7 @@
     "eslint-config-next": "^11.1.2",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-flowtype": "^6.1.0",
-    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jest": "^25.0.5",
     "eslint-plugin-react": "^7.26.1",
     "flow-bin": "^0.161.0",
