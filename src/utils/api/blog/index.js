@@ -5,9 +5,9 @@ import matter from 'gray-matter'
 import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkGFM from 'remark-gfm'
-import remarkSlug from 'remark-slug'
 import remarkToc from 'remark-toc'
 import remarkRehype from 'remark-rehype'
+import rehypeSlug from 'rehype-slug'
 import rehypePrism from '@mapbox/rehype-prism'
 import rehypeExternalLinks from 'rehype-external-links'
 import rehypeAutoLinkHeadings from 'rehype-autolink-headings'
@@ -27,9 +27,9 @@ export const fetchPost = async (slug: string): Promise<Post> => {
   const html = await unified()
     .use(remarkParse)
     .use(remarkGFM)
-    .use(remarkSlug)
     .use(remarkToc, { tight: true, maxDepth: 4 })
     .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeSlug)
     .use(
       rehypeAutoLinkHeadings,
       {
