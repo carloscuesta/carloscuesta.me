@@ -52,7 +52,7 @@
     "remark-gfm": "^3.0.0",
     "remark-parse": "^10.0.0",
     "remark-rehype": "^10.0.0",
-    "remark-slug": "^7.0.0",
+    "remark-slug": "^7.0.1",
     "remark-toc": "^8.0.0",
     "unified": "^10.1.0"
   },
