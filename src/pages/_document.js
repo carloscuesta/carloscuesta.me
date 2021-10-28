@@ -14,9 +14,7 @@ class Document extends NextDocument {
             key='google-site-verification'
             name='google-site-verification'
           />
-          <meta content='#FF5252' key='msapplication-TileColor' name='msapplication-TileColor' />
           <meta content='/ms-icon-144x144.png' key='msapplication-TileImage' name='msapplication-TileImage' />
-          <meta content='#FF5252' key='theme-color' name='theme-color' />
           <link rel='preconnect' href='https://www.google-analytics.com' />
           <link rel='dns-prefetch' href='https://www.google-analytics.com' />
           <link rel='apple-touch-icon' sizes='114x114' href='/favicon/apple-icon-114x114.png' />

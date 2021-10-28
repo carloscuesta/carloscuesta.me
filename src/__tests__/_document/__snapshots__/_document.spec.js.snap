@@ -8,16 +8,8 @@ Array [
       name="google-site-verification"
     />
     <meta
-      content="#FF5252"
-      name="msapplication-TileColor"
-    />
-    <meta
       content="/ms-icon-144x144.png"
       name="msapplication-TileImage"
-    />
-    <meta
-      content="#FF5252"
-      name="theme-color"
     />
     <link
       href="https://www.google-analytics.com"
