@@ -68,7 +68,7 @@
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-flowtype": "^7.0.0",
     "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-jest": "^25.2.2",
+    "eslint-plugin-jest": "^25.2.3",
     "eslint-plugin-react": "^7.26.1",
     "flow-bin": "^0.163.0",
     "husky": "^7.0.4",
