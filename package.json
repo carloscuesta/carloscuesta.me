@@ -52,7 +52,7 @@
     "rehype-stringify": "^9.0.2",
     "remark-gfm": "^3.0.1",
     "remark-parse": "^10.0.0",
-    "remark-rehype": "^10.0.0",
+    "remark-rehype": "^10.0.1",
     "remark-toc": "^8.0.1",
     "unified": "^10.1.0"
   },
