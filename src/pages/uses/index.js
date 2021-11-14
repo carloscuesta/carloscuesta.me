@@ -75,7 +75,12 @@ const Uses = (): Node => (
                   category: 'Lighting',
                   title: 'BenQ Screenbar',
                   link: 'https://www.benq.com/en-us/lamps/computer-desklamp/screenbar.html'
-                }
+                },
+                {
+                  category: 'Headphones',
+                  title: 'Bose QuietComfort 45',
+                  link: 'https://www.bose.com/en_us/products/headphones/noise_cancelling_headphones/quietcomfort-headphones-45.html#v=qc45_white_smoke'
+                },
               ]}
               subTitle='Home office equipment'
               title='Gear'
@@ -128,11 +133,6 @@ const Uses = (): Node => (
                   category: 'Anti-fatigue standing mat',
                   title: 'Muvmat',
                   link: 'https://en.aeris.de/products/aeris-muvmat-schwarz-ohne-bezug'
-                },
-                {
-                  category: 'Headphones',
-                  title: 'Bose QuietComfort 45',
-                  link: 'https://www.bose.com/en_us/products/headphones/noise_cancelling_headphones/quietcomfort-headphones-45.html#v=qc45_white_smoke'
                 },
                 {
                   category: 'Monitor Arm',
