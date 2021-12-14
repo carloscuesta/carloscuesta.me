@@ -73,7 +73,7 @@
     "flow-bin": "^0.167.0",
     "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.4.4",
+    "jest": "^27.4.5",
     "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^12.1.2",
     "next-sitemap": "^1.6.203",
