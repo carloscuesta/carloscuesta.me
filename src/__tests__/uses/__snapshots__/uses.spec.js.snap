@@ -84,6 +84,11 @@ Array [
                   "link": "https://www.bose.com/en_us/products/headphones/noise_cancelling_headphones/quietcomfort-headphones-45.html#v=qc45_white_smoke",
                   "title": "Bose QuietComfort 45",
                 },
+                Object {
+                  "category": "Anti-fatigue standing mat",
+                  "link": "https://en.aeris.de/products/aeris-muvmat-schwarz-ohne-bezug",
+                  "title": "Muvmat",
+                },
               ]
             }
             subTitle="Home office equipment"
@@ -133,11 +138,6 @@ Array [
                 Object {
                   "category": "Microphone",
                   "title": "Blue Yeti X / Elgato Wave",
-                },
-                Object {
-                  "category": "Anti-fatigue standing mat",
-                  "link": "https://en.aeris.de/products/aeris-muvmat-schwarz-ohne-bezug",
-                  "title": "Muvmat",
                 },
                 Object {
                   "category": "Monitor Arm",

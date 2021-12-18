@@ -81,6 +81,11 @@ const Uses = (): Node => (
                   title: 'Bose QuietComfort 45',
                   link: 'https://www.bose.com/en_us/products/headphones/noise_cancelling_headphones/quietcomfort-headphones-45.html#v=qc45_white_smoke'
                 },
+                {
+                  category: 'Anti-fatigue standing mat',
+                  title: 'Muvmat',
+                  link: 'https://en.aeris.de/products/aeris-muvmat-schwarz-ohne-bezug'
+                }
               ]}
               subTitle='Home office equipment'
               title='Gear'
@@ -128,11 +133,6 @@ const Uses = (): Node => (
                 {
                   category: 'Microphone',
                   title: 'Blue Yeti X / Elgato Wave'
-                },
-                {
-                  category: 'Anti-fatigue standing mat',
-                  title: 'Muvmat',
-                  link: 'https://en.aeris.de/products/aeris-muvmat-schwarz-ohne-bezug'
                 },
                 {
                   category: 'Monitor Arm',
