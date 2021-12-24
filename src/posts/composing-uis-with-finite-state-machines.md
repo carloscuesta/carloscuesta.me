@@ -1,5 +1,5 @@
 ---
-dateModified: "2021-05-03 22:00"
+dateModified: "2021-12-24 13:00"
 datePublished: "2021-05-03 22:00"
 disqusIdentifier: "composing-uis-with-finite-state-machines"
 excerpt: "Finite State Machines is a computation model useful for building user interfaces, especially nowadays that front-end apps are becoming much more complex."
@@ -200,7 +200,7 @@ const App = () => {
 }
 ```
 
-The UI already knows what they need to render on every state, so basically, we've got all the possible cases covered 🎉. We're 100% free of bugs! 💯
+Our UI already knows what needs to render on every state, so basically, we've got all the possible scenarios covered 🎉. We're 100% free of bugs! 💯
 
 ### Benefits
 
