@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.5",
-    "@babel/preset-flow": "^7.16.5",
+    "@babel/preset-flow": "^7.16.7",
     "@babel/preset-react": "^7.16.5",
     "@lhci/cli": "^0.8.2",
     "clean-css-cli": "^5.5.0",
