@@ -70,7 +70,7 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jest": "^26.1.0",
     "eslint-plugin-react": "^7.28.0",
-    "flow-bin": "^0.171.0",
+    "flow-bin": "^0.172.0",
     "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
