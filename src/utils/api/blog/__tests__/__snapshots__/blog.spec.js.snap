@@ -33,6 +33,25 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
 Array [
   Object {
     "datePublished": Object {
+      "formatDate": "01 March 2022",
+      "formatInWords": "in over 1 year",
+      "value": "2022-03-01 22:00",
+    },
+    "excerpt": "An architecture decision record also known as ADR, is a document that captures an important architecture decision, including the context and the consequences.",
+    "images": Object {
+      "featured": Object {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1646170453/blog-featured-images/writing-adrs.png",
+      },
+      "preview": Object {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1646170453/blog-featured-images/writing-adrs.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1646170453/blog-featured-images/writing-adrs.png",
+      },
+    },
+    "slug": "writing-architecture-decision-records",
+    "title": "Writing Architecture Decision Records",
+  },
+  Object {
+    "datePublished": Object {
       "formatDate": "03 May 2021",
       "formatInWords": "in 10 months",
       "value": "2021-05-03 22:00",
@@ -69,25 +88,6 @@ Array [
     "slug": "functional-programming-in-javascript",
     "title": "Functional programming in JavaScript",
   },
-  Object {
-    "datePublished": Object {
-      "formatDate": "22 February 2021",
-      "formatInWords": "in 8 months",
-      "value": "2021-02-22 10:00",
-    },
-    "excerpt": "Let's talk about how we can use frontend tools to improve the developer experience in our team and how these tools impact the reliability of shipping value into production.",
-    "images": Object {
-      "featured": Object {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1613908204/blog-featured-images/frontend-tooling-improve-dx.png",
-      },
-      "preview": Object {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1613908204/blog-featured-images/frontend-tooling-improve-dx.png",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1613908204/blog-featured-images/frontend-tooling-improve-dx.png",
-      },
-    },
-    "slug": "front-end-tooling-guide-to-improve-developer-experience",
-    "title": "The frontend tooling guide to improve Developer Experience",
-  },
 ]
 `;
 
@@ -120,6 +120,7 @@ Array [
   "shipping-react-native-fastlane-travis",
   "terminal-setup",
   "working-remotely-as-a-software-engineer",
+  "writing-architecture-decision-records",
 ]
 `;
 
