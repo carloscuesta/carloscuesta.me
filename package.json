@@ -63,7 +63,7 @@
     "@lhci/cli": "^0.9.0",
     "clean-css-cli": "^5.5.2",
     "codecov": "^3.8.3",
-    "eslint": "^8.10.0",
+    "eslint": "^8.11.0",
     "eslint-config-next": "^12.1.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-flowtype": "^8.0.2",
