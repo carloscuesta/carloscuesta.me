@@ -88,11 +88,11 @@
       "node": true
     },
     "extends": [
-      "next",
       "eslint:recommended",
       "plugin:flowtype/recommended",
       "plugin:react/recommended",
-      "plugin:import/errors"
+      "plugin:import/errors",
+      "plugin:@next/next/recommended"
     ],
     "parserOptions": {
       "ecmaFeatures": {

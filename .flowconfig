@@ -1,6 +1,7 @@
 [ignore]
 <PROJECT_ROOT>/.next
 .*/node_modules/jsonlint-mod
+.*/node_modules/eslint-config-next/node_modules
 
 [include]
 
