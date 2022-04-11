@@ -2,6 +2,7 @@
 <PROJECT_ROOT>/.next
 .*/node_modules/jsonlint-mod
 .*/node_modules/eslint-config-next/node_modules
+.*/node_modules/resolve/test/resolver/malformed_package_json
 
 [include]
 
