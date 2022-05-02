@@ -7888,10 +7888,10 @@ react-dom@^17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
-react-intersection-observer@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.0.0.tgz#8d4c7ed51f98fb4cfdd80b35c8fdecd929f3a683"
-  integrity sha512-rVJ9ZTPnHk/rgMsNmWWLLz9DeUil8+2cR/wG2RAoOlJihmuxAfMVGnPYfy17kuKA1imCDfqIHjsy56fwGbtlTQ==
+react-intersection-observer@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.1.0.tgz#27e66be9113fdf6fc6d745e849e1ad6ef20f97f1"
+  integrity sha512-XSDWQGzgJ4/B4eW39+qa3S+uc4Gb+m6lxXR54m/uD5lqeL5sLrgYdntbjl4BlTYAblgUhz+JB5obINhZaD+c0Q==
 
 "react-is@^16.12.0 || ^17.0.0", react-is@^17.0.1, react-is@^17.0.2:
   version "17.0.2"
