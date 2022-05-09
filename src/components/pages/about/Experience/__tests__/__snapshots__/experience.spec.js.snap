@@ -60,9 +60,7 @@ exports[`Experience should match Experience component 1`] = `
               Now
             </span>
           </span>
-          <p>
-            
-          </p>
+          <p />
         </div>
       </div>
     </div>
