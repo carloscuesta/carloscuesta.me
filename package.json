@@ -41,8 +41,8 @@
     "next": "^12.1.6",
     "next-pwa": "^5.5.2",
     "next-seo": "^5.4.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "react-intersection-observer": "^9.1.0",
     "reading-time": "^1.5.0",
     "rehype-autolink-headings": "^6.1.1",
@@ -78,7 +78,7 @@
     "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^12.4.1",
     "next-sitemap": "^2.5.20",
-    "react-test-renderer": "^17.0.2"
+    "react-test-renderer": "^18.1.0"
   },
   "eslintConfig": {
     "parser": "@babel/eslint-parser",
