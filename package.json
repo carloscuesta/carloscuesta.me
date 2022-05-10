@@ -2,7 +2,7 @@
   "name": "carloscuesta.me",
   "version": "5.1.0",
   "engines": {
-    "node": "14"
+    "node": "16"
   },
   "description": "Carlos Cuesta website.",
   "scripts": {
