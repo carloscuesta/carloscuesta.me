@@ -33,6 +33,25 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
 Array [
   Object {
     "datePublished": Object {
+      "formatDate": "23 May 2022",
+      "formatInWords": "in almost 2 years",
+      "value": "2022-05-23 17:55",
+    },
+    "excerpt": "Let's walk through the experience and the outcome of implementing a tool to generate code. What are the benefits, the problems they solve and how to implement them.",
+    "images": Object {
+      "featured": Object {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1653167435/blog-featured-images/Code_generators.png",
+      },
+      "preview": Object {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1653167435/blog-featured-images/Code_generators.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1653167435/blog-featured-images/Code_generators.png",
+      },
+    },
+    "slug": "using-generators-to-improve-developer-productivity",
+    "title": "Using generators to improve Developer productivity",
+  },
+  Object {
+    "datePublished": Object {
       "formatDate": "01 March 2022",
       "formatInWords": "in over 1 year",
       "value": "2022-03-01 22:00",
@@ -69,25 +88,6 @@ Array [
     "slug": "composing-uis-with-finite-state-machines",
     "title": "Composing UIs with Finite State Machines",
   },
-  Object {
-    "datePublished": Object {
-      "formatDate": "24 March 2021",
-      "formatInWords": "in 9 months",
-      "value": "2021-03-24 10:00",
-    },
-    "excerpt": "Functional programming, has become a popular trend in the JavaScript community. Let's explain in a simple way the basics of FP applied to JavaScript.",
-    "images": Object {
-      "featured": Object {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1616513220/blog-featured-images/Functional_programming_in_JavaScript.png",
-      },
-      "preview": Object {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1616513220/blog-featured-images/Functional_programming_in_JavaScript.png",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1616513220/blog-featured-images/Functional_programming_in_JavaScript.png",
-      },
-    },
-    "slug": "functional-programming-in-javascript",
-    "title": "Functional programming in JavaScript",
-  },
 ]
 `;
 
@@ -119,6 +119,7 @@ Array [
   "shipping-react-native-apps-with-fastlane",
   "shipping-react-native-fastlane-travis",
   "terminal-setup",
+  "using-generators-to-improve-developer-productivity",
   "working-remotely-as-a-software-engineer",
   "writing-architecture-decision-records",
 ]
