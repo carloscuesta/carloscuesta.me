@@ -217,11 +217,6 @@ hr {
   }
 }
 
-::selection {
-  background: rgba(255, 82, 82, 1);
-  color: #fff;
-}
-
 /* Flexboxgrid.css critical */
 
 .row {

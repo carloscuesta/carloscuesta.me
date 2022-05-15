@@ -1,8 +1,6 @@
 {
   "name": "Carlos Cuesta",
   "short_name": "Carlos Cuesta",
-  "theme_color": "#FF5252",
-  "background_color": "#FF5252",
   "display": "minimal-ui",
   "Scope": "/",
   "start_url": "/",
