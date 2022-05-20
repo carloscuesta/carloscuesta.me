@@ -33,13 +33,13 @@ const Uses = (): Node => (
                 },
                 {
                   category: 'Laptop',
-                  title: 'MacBook Pro 15 (Mid 2014), i7 @ 2,5GHz, 16 GB',
-                  link: 'https://support.apple.com/kb/sp704'
+                  title: 'MacBook Pro 14 M1 Pro, 16 GB',
+                  link: 'https://support.apple.com/kb/SP854'
                 },
                 {
                   category: 'Chair',
-                  title: 'Ikea Markus',
-                  link: 'https://www.ikea.com/es/es/p/markus-silla-trabajo-glose-negro-40103100/'
+                  title: 'Herman Miller Aeron',
+                  link: 'https://www.hermanmiller.com/en_eur/products/seating/office-chairs/aeron-chairs/'
                 },
                 {
                   category: 'Monitor',
@@ -85,7 +85,12 @@ const Uses = (): Node => (
                   category: 'Anti-fatigue standing mat',
                   title: 'Muvmat',
                   link: 'https://en.aeris.de/products/aeris-muvmat-schwarz-ohne-bezug'
-                }
+                },
+                {
+                  category: 'Monitor Arm',
+                  title: 'Ergotron HX',
+                  link: 'https://www.ergotron.com/es-es/productos/detalles-del-producto/45-475'
+                },
               ]}
               subTitle='Home office equipment'
               title='Gear'
@@ -133,12 +138,7 @@ const Uses = (): Node => (
                 {
                   category: 'Microphone',
                   title: 'Blue Yeti X / Elgato Wave'
-                },
-                {
-                  category: 'Monitor Arm',
-                  title: 'Ergotron HX',
-                  link: 'https://www.ergotron.com/es-es/productos/detalles-del-producto/45-475'
-                },
+                }
               ]}
               subTitle='Things to improve the setup'
               title='Wishlist'

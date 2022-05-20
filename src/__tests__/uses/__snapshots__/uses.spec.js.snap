@@ -36,13 +36,13 @@ Array [
                 },
                 Object {
                   "category": "Laptop",
-                  "link": "https://support.apple.com/kb/sp704",
-                  "title": "MacBook Pro 15 (Mid 2014), i7 @ 2,5GHz, 16 GB",
+                  "link": "https://support.apple.com/kb/SP854",
+                  "title": "MacBook Pro 14 M1 Pro, 16 GB",
                 },
                 Object {
                   "category": "Chair",
-                  "link": "https://www.ikea.com/es/es/p/markus-silla-trabajo-glose-negro-40103100/",
-                  "title": "Ikea Markus",
+                  "link": "https://www.hermanmiller.com/en_eur/products/seating/office-chairs/aeron-chairs/",
+                  "title": "Herman Miller Aeron",
                 },
                 Object {
                   "category": "Monitor",
@@ -88,6 +88,11 @@ Array [
                   "category": "Anti-fatigue standing mat",
                   "link": "https://en.aeris.de/products/aeris-muvmat-schwarz-ohne-bezug",
                   "title": "Muvmat",
+                },
+                Object {
+                  "category": "Monitor Arm",
+                  "link": "https://www.ergotron.com/es-es/productos/detalles-del-producto/45-475",
+                  "title": "Ergotron HX",
                 },
               ]
             }
@@ -138,11 +143,6 @@ Array [
                 Object {
                   "category": "Microphone",
                   "title": "Blue Yeti X / Elgato Wave",
-                },
-                Object {
-                  "category": "Monitor Arm",
-                  "link": "https://www.ergotron.com/es-es/productos/detalles-del-producto/45-475",
-                  "title": "Ergotron HX",
                 },
               ]
             }
