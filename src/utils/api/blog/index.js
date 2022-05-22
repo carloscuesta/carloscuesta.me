@@ -13,6 +13,7 @@ import rehypeExternalLinks from 'rehype-external-links'
 import rehypeAutoLinkHeadings from 'rehype-autolink-headings'
 import rehypeStringify from 'rehype-stringify'
 import rehypeMinify from 'rehype-preset-minify'
+import rehypeWrap from 'rehype-wrap-all'
 
 import { type Post, type PostPreview, transformPost } from './mutators'
 
@@ -43,6 +44,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
     )
     .use(rehypeExternalLinks)
     .use(rehypePrism, { ignoreMissing: true })
+    .use(rehypeWrap, { selector:'table', wrapper: 'div.responsiveTable' })
     .use(rehypeStringify, { allowDangerousHtml: true })
     .use(rehypeMinify)
     .process(content)

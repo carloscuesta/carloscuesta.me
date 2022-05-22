@@ -183,6 +183,10 @@ hr {
   outline: none;
 }
 
+.postDetail .responsiveTable {
+  overflow-x: auto;
+}
+
 .postDetail table {
   width: 100%;
   border-collapse: collapse;
