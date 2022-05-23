@@ -78,7 +78,7 @@
     "jest-environment-jsdom": "^28.1.0",
     "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^12.4.1",
-    "next-sitemap": "^2.5.22",
+    "next-sitemap": "^2.5.24",
     "react-test-renderer": "^18.1.0"
   },
   "eslintConfig": {
