@@ -4,7 +4,7 @@ datePublished: "2022-05-23 17:55"
 disqusIdentifier: "using-generators-to-improve-developer-productivity"
 excerpt: "Let's walk through the experience and the outcome of implementing a tool to generate code. What are the benefits, the problems they solve and how to implement them."
 image: "https://res.cloudinary.com/carloscuesta/image/upload/v1653167435/blog-featured-images/Code_generators.png"
-title: "Using generators to improve Developer productivity"
+title: "Using generators to improve developer productivity"
 ---
 
 A few weeks ago at [N26](http://n26.com), we did _[get stuff done week](https://medium.com/insiden26/getting-stuff-done-days-at-n26-a70105e6b9c9)_, during this time the product and engineering teams have the opportunity to try or build anything we like.
