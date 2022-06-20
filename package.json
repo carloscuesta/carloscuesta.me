@@ -43,7 +43,7 @@
     "next-seo": "^5.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.1.0",
-    "react-intersection-observer": "^9.2.2",
+    "react-intersection-observer": "^9.3.3",
     "reading-time": "^1.5.0",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-external-links": "^1.0.1",
