@@ -63,8 +63,8 @@ const Uses = (): Node => (
                 },
                 {
                   category: 'Desk Matt',
-                  title: 'Eco Leather Desk Matt',
-                  link: 'https://bit.ly/3CvZy40'
+                  title: 'Oakywood Merino Wool Felt & Cork Grey',
+                  link: 'https://oakywood.shop/products/grey-felt-cork-desk-mat'
                 },
                 {
                   category: 'Headphones',
