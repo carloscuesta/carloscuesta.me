@@ -91,8 +91,23 @@ Array [
                 },
                 Object {
                   "category": "Monitor Arm",
-                  "link": "https://www.ergotron.com/es-es/productos/detalles-del-producto/45-475",
+                  "link": "https://www.ergotron.com/en-us/products/product-details/45-475",
                   "title": "Ergotron HX",
+                },
+                Object {
+                  "category": "Lighting",
+                  "link": "https://www.logitech.com/products/lighting/litra-glow.946-000002.html",
+                  "title": "Logitech Litra Glow",
+                },
+                Object {
+                  "category": "Microphone",
+                  "link": "https://www.shure.com/products/microphones/mv7",
+                  "title": "Shure MV7",
+                },
+                Object {
+                  "category": "Boom Arm",
+                  "link": "https://www.elgato.com/wave-mic-arm-lp",
+                  "title": "Elgato Wave Mic Arm LP",
                 },
               ]
             }
@@ -104,8 +119,8 @@ Array [
               Array [
                 Object {
                   "category": "Text Editor",
-                  "link": "https://atom.io",
-                  "title": "Atom",
+                  "link": "http://vscode.dev",
+                  "title": "VSCode",
                 },
                 Object {
                   "category": "Terminal",
@@ -136,18 +151,6 @@ Array [
             }
             subTitle="Tools to work efficiently"
             title="Software"
-          />
-          <Section
-            items={
-              Array [
-                Object {
-                  "category": "Microphone",
-                  "title": "Blue Yeti X / Elgato Wave",
-                },
-              ]
-            }
-            subTitle="Things to improve the setup"
-            title="Wishlist"
           />
         </div>
       </div>

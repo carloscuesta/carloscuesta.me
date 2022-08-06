@@ -89,7 +89,22 @@ const Uses = (): Node => (
                 {
                   category: 'Monitor Arm',
                   title: 'Ergotron HX',
-                  link: 'https://www.ergotron.com/es-es/productos/detalles-del-producto/45-475'
+                  link: 'https://www.ergotron.com/en-us/products/product-details/45-475'
+                },
+                {
+                  category: 'Lighting',
+                  title: 'Logitech Litra Glow',
+                  link: 'https://www.logitech.com/products/lighting/litra-glow.946-000002.html'
+                },
+                {
+                  category: 'Microphone',
+                  title: 'Shure MV7',
+                  link: 'https://www.shure.com/products/microphones/mv7'
+                },
+                {
+                  category: 'Boom Arm',
+                  title: 'Elgato Wave Mic Arm LP',
+                  link: 'https://www.elgato.com/wave-mic-arm-lp'
                 },
               ]}
               subTitle='Home office equipment'
@@ -100,8 +115,8 @@ const Uses = (): Node => (
               items={[
                 {
                   category: 'Text Editor',
-                  title: 'Atom',
-                  link: 'https://atom.io'
+                  title: 'VSCode',
+                  link: 'http://vscode.dev'
                 },
                 {
                   category: 'Terminal',
@@ -131,17 +146,6 @@ const Uses = (): Node => (
               ]}
               subTitle='Tools to work efficiently'
               title='Software'
-            />
-
-            <Section
-              items={[
-                {
-                  category: 'Microphone',
-                  title: 'Blue Yeti X / Elgato Wave'
-                }
-              ]}
-              subTitle='Things to improve the setup'
-              title='Wishlist'
             />
           </div>
         </div>
