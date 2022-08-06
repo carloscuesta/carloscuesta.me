@@ -7,8 +7,8 @@ const SetupImage = (): Element<'img'> => (
   <img
     alt='Carlos Cuesta workspace setup'
     className={`lazyload ${styles.image}`}
-    data-src='https://res.cloudinary.com/carloscuesta/image/upload/v1632860558/carloscuesta-setup_ncn4oc.jpg'
-    src='https://res.cloudinary.com/carloscuesta/image/upload/s--OSiTKt4L--/c_scale,e_blur:200,q_20,w_504/v1632860558/carloscuesta-setup_ncn4oc.jpg'
+    data-src='https://res.cloudinary.com/carloscuesta/image/upload/v1659775881/carloscuesta-setup_z1azyb.jpg'
+    src='https://res.cloudinary.com/carloscuesta/image/upload/s--pm3d7vcD--/c_scale,e_blur:200,q_20,w_500/v1659775881/carloscuesta-setup_z1azyb.jpg'
     width={2016}
   />
 )
