@@ -42,6 +42,7 @@ exports[`Header should match Header component 1`] = `
         href="/blog"
         onClick={[Function]}
         onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
         write
       </a>

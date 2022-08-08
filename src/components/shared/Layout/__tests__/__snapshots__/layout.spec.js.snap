@@ -16,6 +16,7 @@ Array [
           href="/"
           onClick={[Function]}
           onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
           <img
             alt="Carlos Cuesta"
@@ -35,6 +36,7 @@ Array [
               href="/blog"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               Blog
             </a>
@@ -45,6 +47,7 @@ Array [
               href="/about"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               About
             </a>
@@ -55,6 +58,7 @@ Array [
               href="/opensource"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               Open Source
             </a>
@@ -101,6 +105,7 @@ Array [
             href="/"
             onClick={[Function]}
             onMouseEnter={[Function]}
+            onTouchStart={[Function]}
           >
             carloscuesta.me
           </a>

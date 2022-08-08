@@ -30,6 +30,7 @@ exports[`404 page should match Error 404 page 1`] = `
               href="/"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               Home
             </a>
@@ -39,6 +40,7 @@ exports[`404 page should match Error 404 page 1`] = `
               href="/blog"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               Blog
             </a>

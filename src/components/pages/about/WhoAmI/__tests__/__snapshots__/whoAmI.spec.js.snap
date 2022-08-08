@@ -41,6 +41,7 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
         href="/blog"
         onClick={[Function]}
         onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
         <b>
           blog

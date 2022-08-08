@@ -9,6 +9,7 @@ exports[`BlogPost should match BlogPost component 1`] = `
     href="/blog/post-slug"
     onClick={[Function]}
     onMouseEnter={[Function]}
+    onTouchStart={[Function]}
     title="Post Title"
   >
     <article>
