@@ -53,6 +53,7 @@ exports[`SectionTitle with title, subtitle and viewAllLink should match SectionT
     href="/test"
     onClick={[Function]}
     onMouseEnter={[Function]}
+    onTouchStart={[Function]}
   >
     View all
   </a>

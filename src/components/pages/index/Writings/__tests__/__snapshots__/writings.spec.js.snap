@@ -24,6 +24,7 @@ exports[`Writings should match Writings component 1`] = `
         href="/blog"
         onClick={[Function]}
         onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
         View all
       </a>
@@ -40,6 +41,7 @@ exports[`Writings should match Writings component 1`] = `
           href="/blog/post-slug"
           onClick={[Function]}
           onMouseEnter={[Function]}
+          onTouchStart={[Function]}
           title="Post Title"
         >
           <article>
@@ -80,6 +82,7 @@ exports[`Writings should match Writings component 1`] = `
           href="/blog/post-blog-slug"
           onClick={[Function]}
           onMouseEnter={[Function]}
+          onTouchStart={[Function]}
           title="A post"
         >
           <article>

@@ -24,6 +24,7 @@ exports[`OpenSource should match OpenSource component 1`] = `
         href="/opensource"
         onClick={[Function]}
         onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
         View all
       </a>
