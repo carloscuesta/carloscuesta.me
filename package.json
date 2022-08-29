@@ -178,7 +178,8 @@
     ],
     "testEnvironment": "jsdom",
     "transformIgnorePatterns": [
-      "!/node_modules/unified"
+      "!/node_modules/unified",
+      "/node_modules/jest-runner"
     ]
   },
   "volta": {
