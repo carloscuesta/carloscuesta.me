@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ShareLinks should match ShareLinks component 1`] = `
-Array [
+[
   <hr />,
   <b
     className="title"

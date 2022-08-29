@@ -5,9 +5,9 @@ exports[`_app page should match App page 1`] = `
   <DefaultSeo
     description="I'm a Front End Engineer from Barcelona. Focused on building products with JavaScript. Interested in design, under engineering and open source."
     openGraph={
-      Object {
-        "images": Array [
-          Object {
+      {
+        "images": [
+          {
             "alt": "Carlos Cuesta",
             "height": 600,
             "url": "https://carloscuesta.me/images/twitter-card.png",
@@ -22,7 +22,7 @@ exports[`_app page should match App page 1`] = `
     }
     title="Carlos Cuesta – Front End Engineer"
     twitter={
-      Object {
+      {
         "cardType": "summary_large_image",
         "handle": "@crloscuesta",
         "site": "@crloscuesta",

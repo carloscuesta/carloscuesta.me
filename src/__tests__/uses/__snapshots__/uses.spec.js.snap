@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`uses page should match uses page 1`] = `
-Array [
+[
   <NextSeo
     canonical="https://carloscuesta.me/uses"
     title="Carlos Cuesta – Uses"
@@ -28,83 +28,83 @@ Array [
         >
           <Section
             items={
-              Array [
-                Object {
+              [
+                {
                   "category": "Desk",
                   "link": "https://www.fully.com/standing-desks/jarvis-adjustable-height-desk-bamboo.html",
                   "title": "Fully Jarvis Bamboo Standing Desk",
                 },
-                Object {
+                {
                   "category": "Laptop",
                   "link": "https://support.apple.com/kb/SP854",
                   "title": "MacBook Pro 14 M1 Pro, 16 GB",
                 },
-                Object {
+                {
                   "category": "Chair",
                   "link": "https://www.hermanmiller.com/en_eur/products/seating/office-chairs/aeron-chairs/",
                   "title": "Herman Miller Aeron",
                 },
-                Object {
+                {
                   "category": "Monitor",
                   "link": "https://www.dell.com/es-es/shop/monitor-curvo-dell-ultrasharp-38-con-concentrador-y-usb-c-u3821dw/apd/210-axnt/monitores-y-accesorios",
                   "title": "Dell U3821DW",
                 },
-                Object {
+                {
                   "category": "Webcam",
                   "link": "https://bit.ly/3jDlMZp",
                   "title": "Logitech C920",
                 },
-                Object {
+                {
                   "category": "Keyboard",
                   "link": "https://bit.ly/3AonlRy",
                   "title": "Keychron K3 V2",
                 },
-                Object {
+                {
                   "category": "Mouse",
                   "link": "https://bit.ly/3iAMqTr",
                   "title": "Logitech Triathlon M720",
                 },
-                Object {
+                {
                   "category": "Desk Matt",
                   "link": "https://oakywood.shop/products/grey-felt-cork-desk-mat",
                   "title": "Oakywood Merino Wool Felt & Cork Grey",
                 },
-                Object {
+                {
                   "category": "Headphones",
                   "link": "https://www.apple.com/airpods-pro",
                   "title": "Airpods Pro",
                 },
-                Object {
+                {
                   "category": "Lighting",
                   "link": "https://www.benq.com/en-us/lamps/computer-desklamp/screenbar.html",
                   "title": "BenQ Screenbar",
                 },
-                Object {
+                {
                   "category": "Headphones",
                   "link": "https://www.bose.com/en_us/products/headphones/noise_cancelling_headphones/quietcomfort-headphones-45.html#v=qc45_white_smoke",
                   "title": "Bose QuietComfort 45",
                 },
-                Object {
+                {
                   "category": "Anti-fatigue standing mat",
                   "link": "https://en.aeris.de/products/aeris-muvmat-schwarz-ohne-bezug",
                   "title": "Muvmat",
                 },
-                Object {
+                {
                   "category": "Monitor Arm",
                   "link": "https://www.ergotron.com/en-us/products/product-details/45-475",
                   "title": "Ergotron HX",
                 },
-                Object {
+                {
                   "category": "Lighting",
                   "link": "https://www.logitech.com/products/lighting/litra-glow.946-000002.html",
                   "title": "Logitech Litra Glow",
                 },
-                Object {
+                {
                   "category": "Microphone",
                   "link": "https://www.shure.com/products/microphones/mv7",
                   "title": "Shure MV7",
                 },
-                Object {
+                {
                   "category": "Boom Arm",
                   "link": "https://www.elgato.com/wave-mic-arm-lp",
                   "title": "Elgato Wave Mic Arm LP",
@@ -116,33 +116,33 @@ Array [
           />
           <Section
             items={
-              Array [
-                Object {
+              [
+                {
                   "category": "Text Editor",
                   "link": "http://vscode.dev",
                   "title": "VSCode",
                 },
-                Object {
+                {
                   "category": "Terminal",
                   "link": "https://iterm2.com",
                   "title": "iTerm2",
                 },
-                Object {
+                {
                   "category": "Dotfiles",
                   "link": "https://github.com/carloscuesta/dotfiles",
                   "title": "Carlos Cuesta Dotfiles",
                 },
-                Object {
+                {
                   "category": "Window Management",
                   "link": "https://rectangleapp.com",
                   "title": "Rectangle",
                 },
-                Object {
+                {
                   "category": "JS Playground",
                   "link": "http://runjs.app",
                   "title": "RunJS",
                 },
-                Object {
+                {
                   "category": "Design",
                   "link": "http://figma.com",
                   "title": "Figma",
