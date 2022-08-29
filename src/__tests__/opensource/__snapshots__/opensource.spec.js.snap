@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`index page should match opensource page 1`] = `
-Array [
+[
   <NextSeo
     canonical="https://carloscuesta.me/opensource"
     title="Carlos Cuesta – Open Source"
@@ -20,43 +20,43 @@ Array [
       />
       <Repositories
         repositories={
-          Array [
-            Object {
+          [
+            {
               "description": "An emoji guide for your commit messages. 😜 ",
               "language": "javascript",
               "name": "gitmoji",
               "stars": 7460,
               "url": "https://github.com/carloscuesta/gitmoji",
             },
-            Object {
+            {
               "description": "A gitmoji interactive command line tool for using emojis on commits. 💻",
               "language": "javascript",
               "name": "gitmoji-cli",
               "stars": 2254,
               "url": "https://github.com/carloscuesta/gitmoji-cli",
             },
-            Object {
+            {
               "description": "A material design theme for your terminal. ✨",
               "language": "shell",
               "name": "materialshell",
               "stars": 710,
               "url": "https://github.com/carloscuesta/materialshell",
             },
-            Object {
+            {
               "description": "A Front End development Gulp.js based workflow. 🚀",
               "language": "javascript",
               "name": "starterkit",
               "stars": 84,
               "url": "https://github.com/carloscuesta/starterkit",
             },
-            Object {
+            {
               "description": "A material design theme for Hyper based on materialshell. ✨",
               "language": "javascript",
               "name": "hyper-materialshell",
               "stars": 69,
               "url": "https://github.com/carloscuesta/hyper-materialshell",
             },
-            Object {
+            {
               "description": "A simple and reusable React-Native error boundary component 🐛",
               "language": "javascript",
               "name": "react-native-error-boundary",

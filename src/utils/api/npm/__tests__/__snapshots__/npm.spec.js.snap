@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NPM API Client apiCalls should match fetchDownloadsCount call 1`] = `
-Object {
+{
   "mutator": [Function],
   "url": "https://api.npmjs.org/downloads/point/last-year/,,,,,",
 }
 `;
 
 exports[`NPM API Client apiCalls should match fetchPublishedPackages call 1`] = `
-Object {
+{
   "mutator": [Function],
   "url": "https://registry.npmjs.org/-/v1/search?text=author:carloscuesta",
 }
@@ -17,7 +17,7 @@ Object {
 exports[`NPM API Client mutators transformDownloadsCount should aggregate all the downloads from packages 1`] = `151010`;
 
 exports[`NPM API Client mutators transformPublishedPackages should match the packages names 1`] = `
-Array [
+[
   "react-native-error-boundary",
   "gitmoji-cli",
   "gitmojis",

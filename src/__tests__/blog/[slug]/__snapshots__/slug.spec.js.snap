@@ -10,7 +10,7 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
     datePublished="2019-10-01 22:15"
     description="A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example"
     images={
-      Array [
+      [
         "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
       ]
     }
@@ -21,12 +21,12 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
   />
   <NextSeo
     additionalMetaTags={
-      Array [
-        Object {
+      [
+        {
           "content": "Reading time",
           "name": "twitter:label1",
         },
-        Object {
+        {
           "content": undefined,
           "name": "twitter:data1",
         },
@@ -35,17 +35,17 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
     canonical="https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces"
     description="A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example"
     openGraph={
-      Object {
-        "article": Object {
-          "authors": Array [
+      {
+        "article": {
+          "authors": [
             "https://carloscuesta.me",
           ],
           "modifiedTime": "2019-10-01 22:15",
           "publishedTime": "2019-10-01 22:15",
         },
         "description": "A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example",
-        "images": Array [
-          Object {
+        "images": [
+          {
             "alt": "JavaScript monorepos with Lerna and Yarn Workspaces",
             "height": 1000,
             "url": "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
@@ -70,7 +70,7 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
     >
       <Header
         datePublished={
-          Object {
+          {
             "formatDate": "01 October 2019",
             "formatInWords": "9 months ago",
             "value": "2019-10-01 22:15",
@@ -80,7 +80,7 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
       />
       <div
         dangerouslySetInnerHTML={
-          Object {
+          {
             "__html": "<h1>html</h1>",
           }
         }

@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`index page should match index page 1`] = `
-Array [
+[
   <NextSeo
     canonical="https://carloscuesta.me"
   />,
   <SocialProfileJsonLd
     name="Carlos Cuesta"
     sameAs={
-      Array [
+      [
         "http://instagram.com/crloscuesta",
         "https://github.com/carloscuesta",
         "https://twitter.com/crloscuesta",
@@ -23,10 +23,10 @@ Array [
     <Biography />
     <Writings
       posts={
-        Array [
-          Object {
+        [
+          {
             "dateModified": "2019-10-01 22:15",
-            "datePublished": Object {
+            "datePublished": {
               "formatDate": "01 October 2019",
               "formatInWords": "9 months ago",
               "value": "2019-10-01 22:15",
@@ -34,11 +34,11 @@ Array [
             "disqusIdentifier": "5bc9ff9949ac5006c0a84f00",
             "excerpt": "A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example",
             "html": "<h1>html</h1>",
-            "images": Object {
-              "featured": Object {
+            "images": {
+              "featured": {
                 "src": "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
               },
-              "preview": Object {
+              "preview": {
                 "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
                 "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
               },
@@ -46,9 +46,9 @@ Array [
             "slug": "javascript-monorepos-lerna-yarn-workspaces",
             "title": "JavaScript monorepos with Lerna and Yarn Workspaces",
           },
-          Object {
+          {
             "dateModified": "2019-09-12 17:00",
-            "datePublished": Object {
+            "datePublished": {
               "formatDate": "12 September 2019",
               "formatInWords": "9 months ago",
               "value": "2019-09-12 17:00",
@@ -56,11 +56,11 @@ Array [
             "disqusIdentifier": "5d78d0fcf942665cd6becd9a",
             "excerpt": "I'm going to explain why it's important and how you can use error boundaries in a React-Native application to improve error resiliency 👨‍💻",
             "html": "<h1>html</h1>",
-            "images": Object {
-              "featured": Object {
+            "images": {
+              "featured": {
                 "src": "https://res.cloudinary.com/carloscuesta/image/upload/handling-react-native-errors-with-error-boundaries.png",
               },
-              "preview": Object {
+              "preview": {
                 "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/handling-react-native-errors-with-error-boundaries.png",
                 "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/handling-react-native-errors-with-error-boundaries.png",
               },
@@ -68,9 +68,9 @@ Array [
             "slug": "managing-react-native-crashes-with-error-boundaries",
             "title": "Managing React-Native crashes with Error Boundaries",
           },
-          Object {
+          {
             "dateModified": "2018-10-16 12:10",
-            "datePublished": Object {
+            "datePublished": {
               "formatDate": "16 October 2018",
               "formatInWords": "over 1 year ago",
               "value": "2018-10-16 12:10",
@@ -78,11 +78,11 @@ Array [
             "disqusIdentifier": "5b6c646126d36606d1805ab3",
             "excerpt": "Creating scalable React components using the folder pattern. A simple way to organize and structure React Components.",
             "html": "<h1>html</h1>",
-            "images": Object {
-              "featured": Object {
+            "images": {
+              "featured": {
                 "src": "https://res.cloudinary.com/carloscuesta/image/upload/scalable-react-components.png",
               },
-              "preview": Object {
+              "preview": {
                 "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/scalable-react-components.png",
                 "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/scalable-react-components.png",
               },
@@ -90,9 +90,9 @@ Array [
             "slug": "scalable-react-components-architecture",
             "title": "Scalable React Components architecture",
           },
-          Object {
+          {
             "dateModified": "2018-10-15 09:53",
-            "datePublished": Object {
+            "datePublished": {
               "formatDate": "19 September 2018",
               "formatInWords": "almost 2 years ago",
               "value": "2018-09-19 09:53",
@@ -100,11 +100,11 @@ Array [
             "disqusIdentifier": "5ae59dcdb3211a06522ad69b",
             "excerpt": "The process of continuously delivering React Native apps with Fastlane and Travis CI automatically. ",
             "html": "<h1>html</h1>",
-            "images": Object {
-              "featured": Object {
+            "images": {
+              "featured": {
                 "src": "https://res.cloudinary.com/carloscuesta/image/upload/shipping-react-native-fastlane-travis.png",
               },
-              "preview": Object {
+              "preview": {
                 "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/shipping-react-native-fastlane-travis.png",
                 "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/shipping-react-native-fastlane-travis.png",
               },
@@ -112,9 +112,9 @@ Array [
             "slug": "shipping-react-native-fastlane-travis",
             "title": "Shipping React Native apps with Fastlane and Travis",
           },
-          Object {
+          {
             "dateModified": "2017-10-30 10:00",
-            "datePublished": Object {
+            "datePublished": {
               "formatDate": "30 October 2017",
               "formatInWords": "over 2 years ago",
               "value": "2017-10-30 10:00",
@@ -122,11 +122,11 @@ Array [
             "disqusIdentifier": "23",
             "excerpt": "ReactiveConf 2017 review. A two days conference about functional and reactive programming that takes places in Bratislava.",
             "html": "<h1>html</h1>",
-            "images": Object {
-              "featured": Object {
+            "images": {
+              "featured": {
                 "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1504460420/nmm99etv7j32h5lsulgx.png",
               },
-              "preview": Object {
+              "preview": {
                 "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1504460420/nmm99etv7j32h5lsulgx.png",
                 "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1504460420/nmm99etv7j32h5lsulgx.png",
               },
@@ -134,9 +134,9 @@ Array [
             "slug": "reactiveconf-2017",
             "title": "ReactiveConf 2017",
           },
-          Object {
+          {
             "dateModified": "2017-10-18 10:15",
-            "datePublished": Object {
+            "datePublished": {
               "formatDate": "18 October 2017",
               "formatInWords": "over 2 years ago",
               "value": "2017-10-18 10:15",
@@ -144,11 +144,11 @@ Array [
             "disqusIdentifier": "59cfbaac613ac70679db193e",
             "excerpt": "The process of moving my website and Ghost blog from Heroku to DigitalOcean.  Provisioning up the server with Node.js, Nginx, LetsEncrypt and PM2.",
             "html": "<h1>html</h1>",
-            "images": Object {
-              "featured": Object {
+            "images": {
+              "featured": {
                 "src": "https://res.cloudinary.com/carloscuesta/image/upload/moving-to-digitalocean.png",
               },
-              "preview": Object {
+              "preview": {
                 "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/moving-to-digitalocean.png",
                 "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/moving-to-digitalocean.png",
               },
@@ -161,43 +161,43 @@ Array [
     />
     <OpenSource
       repositories={
-        Array [
-          Object {
+        [
+          {
             "description": "An emoji guide for your commit messages. 😜 ",
             "language": "javascript",
             "name": "gitmoji",
             "stars": 7460,
             "url": "https://github.com/carloscuesta/gitmoji",
           },
-          Object {
+          {
             "description": "A gitmoji interactive command line tool for using emojis on commits. 💻",
             "language": "javascript",
             "name": "gitmoji-cli",
             "stars": 2254,
             "url": "https://github.com/carloscuesta/gitmoji-cli",
           },
-          Object {
+          {
             "description": "A material design theme for your terminal. ✨",
             "language": "shell",
             "name": "materialshell",
             "stars": 710,
             "url": "https://github.com/carloscuesta/materialshell",
           },
-          Object {
+          {
             "description": "A Front End development Gulp.js based workflow. 🚀",
             "language": "javascript",
             "name": "starterkit",
             "stars": 84,
             "url": "https://github.com/carloscuesta/starterkit",
           },
-          Object {
+          {
             "description": "A material design theme for Hyper based on materialshell. ✨",
             "language": "javascript",
             "name": "hyper-materialshell",
             "stars": 69,
             "url": "https://github.com/carloscuesta/hyper-materialshell",
           },
-          Object {
+          {
             "description": "A simple and reusable React-Native error boundary component 🐛",
             "language": "javascript",
             "name": "react-native-error-boundary",

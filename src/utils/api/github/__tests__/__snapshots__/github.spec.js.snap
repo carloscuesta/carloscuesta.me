@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`GitHub API Client apiCalls should match fetchRepositories call 1`] = `
-Object {
+{
   "mutator": [Function],
-  "requestOptions": Object {
-    "headers": Object {
+  "requestOptions": {
+    "headers": {
       "Accept": "application/vnd.github.v3+json",
     },
   },
@@ -13,10 +13,10 @@ Object {
 `;
 
 exports[`GitHub API Client apiCalls should match fetchUserInformation call 1`] = `
-Object {
+{
   "mutator": [Function],
-  "requestOptions": Object {
-    "headers": Object {
+  "requestOptions": {
+    "headers": {
       "Accept": "application/vnd.github.v3+json",
     },
   },
@@ -25,8 +25,8 @@ Object {
 `;
 
 exports[`GitHub API Client mutators transformRepositories should match the mutated repositories 1`] = `
-Array [
-  Object {
+[
+  {
     "description": "An emoji guide for your commit messages. 😜 ",
     "language": "JavaScript",
     "name": "gitmoji",
@@ -37,7 +37,7 @@ Array [
 `;
 
 exports[`GitHub API Client mutators transformUserInformation should match the mutated user information 1`] = `
-Object {
+{
   "followers": 970,
 }
 `;

@@ -4,7 +4,7 @@ exports[`DisqusComments when the component is in viewport should render the Disq
 <div>
   <DiscussionEmbed
     config={
-      Object {
+      {
         "identifier": "post-disqus-identifier",
         "language": "en",
         "title": "Post Title",
