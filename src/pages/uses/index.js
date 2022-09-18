@@ -53,8 +53,8 @@ const Uses = (): Node => (
                 },
                 {
                   category: 'Keyboard',
-                  title: 'Keychron K3 V2',
-                  link: 'https://bit.ly/3AonlRy'
+                  title: 'QK65 – QwertyKeys',
+                  link: 'https://www.qwertykeys.com'
                 },
                 {
                   category: 'Mouse',
