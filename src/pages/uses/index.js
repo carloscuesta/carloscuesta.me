@@ -58,8 +58,8 @@ const Uses = (): Node => (
                 },
                 {
                   category: 'Mouse',
-                  title: 'Logitech Triathlon M720',
-                  link: 'https://bit.ly/3iAMqTr'
+                  title: 'Logitech MX Master 3S',
+                  link: 'https://www.logitech.com/products/mice/mx-master-3s.910-006560.html'
                 },
                 {
                   category: 'Desk Matt',
