@@ -11,28 +11,19 @@ exports[`Layout should render the Layout with children 1`] = `
       <nav
         className="navigation"
       >
-        <a
-          className="logo"
-          href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onTouchStart={[Function]}
-        >
-          <img
-            alt="Carlos Cuesta"
-            className="avatar"
-            height={36}
-            src="https://res.cloudinary.com/carloscuesta/image/upload/s--g0fD72tH--/c_scale,q_100,w_72/v1594588508/carloscuesta.jpg"
-            width={36}
-          />
-          Carlos Cuesta
-        </a>
+        <img
+          alt="Carlos Cuesta"
+          className="avatar"
+          height={36}
+          src="https://res.cloudinary.com/carloscuesta/image/upload/s--g0fD72tH--/c_scale,q_100,w_72/v1594588508/carloscuesta.jpg"
+          width={36}
+        />
+        Carlos Cuesta
         <ul
           className="links"
         >
           <li>
             <a
-              className="link false"
               href="/blog"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -43,7 +34,6 @@ exports[`Layout should render the Layout with children 1`] = `
           </li>
           <li>
             <a
-              className="link false"
               href="/about"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -54,7 +44,6 @@ exports[`Layout should render the Layout with children 1`] = `
           </li>
           <li>
             <a
-              className="link false"
               href="/opensource"
               onClick={[Function]}
               onMouseEnter={[Function]}

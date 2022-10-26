@@ -17,7 +17,7 @@ const WhoAmI = (): Element<'section'> => (
         Aside from my job, I like to create and <b>contribute</b> to <b>open source</b>{' '}
         projects. That helps me to learn a ton of new stuff, grow as a developer and
         support other open source projects. Also I enjoy writing technical things ✍️ at my {' '}
-        <Link href='/blog'><a><b>blog</b></a></Link>.
+        <Link href='/blog'><b>blog</b></Link>.
       </p>
 
       <p>

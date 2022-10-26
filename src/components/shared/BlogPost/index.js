@@ -11,31 +11,33 @@ type Props = {
 
 const BlogPost = (props: Props): Element<'div'> => (
   <div className={`col-xs-12 col-sm-6 col-md-4 ${styles.postContainer}`}>
-    <Link href={`/blog/${props.post.slug}`}>
-      <a className={styles.post} title={props.post.title}>
-        <article>
-          <img
-            alt={props.post.title}
-            className={`lazyload ${styles.postImage}`}
-            data-src={props.post.images.preview.src}
-            src={props.post.images.preview.lqpi}
-          />
+    <Link
+      href={`/blog/${props.post.slug}`}
+      className={styles.post}
+      title={props.post.title}
+    >
+      <article>
+        <img
+          alt={props.post.title}
+          className={`lazyload ${styles.postImage}`}
+          data-src={props.post.images.preview.src}
+          src={props.post.images.preview.lqpi}
+        />
 
-          <div className={styles.postContent}>
-            <header className={styles.postTitle}>
-              {props.post.title}
-            </header>
+        <div className={styles.postContent}>
+          <header className={styles.postTitle}>
+            {props.post.title}
+          </header>
 
-            <time className={styles.postPublishedAt} dateTime={props.post.datePublished.value}>
-              {props.post.datePublished.formatInWords}
-            </time>
+          <time className={styles.postPublishedAt} dateTime={props.post.datePublished.value}>
+            {props.post.datePublished.formatInWords}
+          </time>
 
-            <p className={styles.postExcerpt}>
-              {props.post.excerpt}
-            </p>
-          </div>
-        </article>
-      </a>
+          <p className={styles.postExcerpt}>
+            {props.post.excerpt}
+          </p>
+        </div>
+      </article>
     </Link>
   </div>
 )

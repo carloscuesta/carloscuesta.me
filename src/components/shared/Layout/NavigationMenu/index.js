@@ -14,8 +14,8 @@ const NavigationMenu = (): Element<'header'> => {
     <header className={`${styles.header} ${isHamburgerOpen ? styles.disableBackdropFilter : ''}`}>
       <Wrapper>
         <nav className={styles.navigation}>
-          <Link href='/'>
-            <a className={styles.logo}>
+          <Link href='/' className={styles.logo}>
+            <>
               <img
                 alt='Carlos Cuesta'
                 className={styles.avatar}
@@ -25,7 +25,7 @@ const NavigationMenu = (): Element<'header'> => {
               />
 
               Carlos Cuesta
-            </a>
+            </>
           </Link>
 
           <ul className={styles.links}>
@@ -40,7 +40,7 @@ const NavigationMenu = (): Element<'header'> => {
         </nav>
       </Wrapper>
     </header>
-  )
+  );
 }
 
 export default NavigationMenu

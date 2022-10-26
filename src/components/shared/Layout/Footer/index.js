@@ -9,7 +9,7 @@ const Footer = (): Element<'footer'> => (
   <footer>
     <Wrapper>
       <div className={styles.footer}>
-        <strong><Link href='/'><a>carloscuesta.me</a></Link></strong>
+        <strong><Link href='/'>carloscuesta.me</Link></strong>
         <ul>
           <li>
             <a
