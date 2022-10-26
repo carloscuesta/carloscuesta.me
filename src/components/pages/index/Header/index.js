@@ -12,7 +12,7 @@ const Header = (): Element<'header'> => (
       <span className={styles.wave}>👋🏼</span>
       <p className={styles.bio}>
         I&#39;m a <b>Front End Engineer</b> from Barcelona.
-        I <a target='_blank' rel='noopener noreferrer' href='https://github.com/carloscuesta'>code</a>, <Link href='/blog'><a>write</a></Link> and build stuff on internet.
+        I <a target='_blank' rel='noopener noreferrer' href='https://github.com/carloscuesta'>code</a>, <Link href='/blog'>write</Link> and build stuff on internet.
       </p>
     </Wrapper>
   </header>

@@ -34,7 +34,7 @@ const SectionTitle = (props: Props): Node => (
 
     {props.viewAllLink &&
       <Link href={props.viewAllLink}>
-        <a>View all</a>
+        View all
       </Link>}
   </div>
 )

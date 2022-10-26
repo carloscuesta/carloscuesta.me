@@ -37,16 +37,13 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
        
       projects. That helps me to learn a ton of new stuff, grow as a developer and support other open source projects. Also I enjoy writing technical things ✍️ at my 
        
-      <a
-        href="/blog"
+      <b
         onClick={[Function]}
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        <b>
-          blog
-        </b>
-      </a>
+        blog
+      </b>
       .
     </p>
     <p>

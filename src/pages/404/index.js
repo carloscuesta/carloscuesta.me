@@ -14,8 +14,8 @@ const Error404 = (): Node => (
           <h2>The page you are looking for doesn&#39;t exists.</h2>
           <h3 className={styles.title}>Here are some helpful links instead:</h3>
           <ul className={styles.links}>
-            <li><Link href='/'><a>Home</a></Link></li>
-            <li><Link href='/blog'><a>Blog</a></Link></li>
+            <li><Link href='/'>Home</Link></li>
+            <li><Link href='/blog'>Blog</Link></li>
           </ul>
           <h4>Error code: 404</h4>
         </div>
