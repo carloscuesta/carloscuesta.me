@@ -1,6 +1,6 @@
 # [carloscuesta.me](https://carloscuesta.me)
 
-[![Build Status](https://img.shields.io/github/workflow/status/carloscuesta/carloscuesta.me/CI?style=flat-square)](https://github.com/carloscuesta/carloscuesta.me/actions?query=workflow%3ACI+branch%3Amaster)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/carloscuesta/carloscuesta.me/ci.yml?branch=master&style=flat-square)](https://github.com/carloscuesta/carloscuesta.me/actions?query=workflow%3ACI+branch%3Amaster)
 [![Coverage](https://img.shields.io/codecov/c/github/carloscuesta/carloscuesta.me?style=flat-square)](https://codecov.io/gh/carloscuesta/carloscuesta.me)
 
 **Carlos Cuesta** personal site, built with [Next.js](https://nextjs.org/). This repository contains the **source code** that powers `carloscuesta.me`.
