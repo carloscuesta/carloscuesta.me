@@ -59,6 +59,10 @@
   border-top-color: var(--languageJavaScript);
 }
 
+.project:global(.typescript) {
+  border-top-color: var(--languageTypeScript);
+}
+
 .project:global(.shell) {
   border-top-color: var(--languageShell);
 }
