@@ -1,5 +1,7 @@
 // @flow
 import { type Node, Component } from 'react'
+// $FlowIssue
+import { Analytics } from '@vercel/analytics/react'
 import { DefaultSeo } from 'next-seo'
 import 'lazysizes'
 import 'lazysizes/plugins/attrchange/ls.attrchange'
@@ -39,6 +41,7 @@ const App = (props: Props): Node => (
     />
 
     <props.Component {...props.pageProps} />
+    <Analytics />
   </Layout>
 )
 
