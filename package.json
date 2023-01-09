@@ -73,7 +73,7 @@
     "eslint-plugin-jest": "^27.2.0",
     "eslint-plugin-react": "^7.31.11",
     "flow-bin": "^0.196.3",
-    "husky": "^8.0.2",
+    "husky": "^8.0.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1",
