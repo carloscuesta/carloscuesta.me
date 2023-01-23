@@ -15,4 +15,10 @@ In this article I'm going to explain how you can use **codemods** (_metaprogramm
 
 ### Table of Contents
 
-### What is a codemod?
+### What is Codemod?
+
+[Codemod](https://github.com/facebookarchive/codemod) is a tool that helps you with large-scale refactors by **running transformation** on your **codebase programatically**. 
+
+This automated transformations will allow you to change large amount of files without having to go through them manually, **saving** a lot of **time** and **increasing** **confidence**! 🙌
+
+It was developed by Facebook around 2008. Here's a great talk by [Cristoph Nakazawa](https://twitter.com/cpojer) explaining how they use codemods to [incrementally evolve Facebook's codebase](https://www.youtube.com/watch?v=d0pOgY8__JM).
