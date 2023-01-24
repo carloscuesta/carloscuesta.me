@@ -34,3 +34,29 @@ On a general level internally a codemod performs the following steps:
 5. Generate the new source code 📦
 
 Abstract Syntax Trees is what makes all of this magic 🪄 possible. Let's understand what they are and how they work 👇
+
+### Abstract Syntax Trees
+
+An **Abstract Syntax Tree** (AST) is a [tree data structure](https://en.wikipedia.org/wiki/Tree_(data_structure)) that represents a piece of code.
+
+Let's understand it with an example 🖼️:
+
+```js
+function sayHello(name) {
+  return `Hello ${name}! 👋`
+}
+```
+
+To inspect and visualize the AST for the snippet of code 👆, we will use the [AST Explorer](https://astexplorer.net). This is an online tool that allows you to explore and play with abstract syntax trees.
+
+The entire snippet is represented by a Program node. Inside of this node we can find different children, each of which represents a different part of the code:
+
+![Abstract Syntax Tree Example](https://res.cloudinary.com/carloscuesta/image/upload/v1674863472/ast_q6zvry.png)
+
+As you can see on the image the code is represented as a tree. There are different types of nodes and we can navigate through them 🚢:
+
+![AST Explorer - Playing with the Abstract Syntax Tree](https://res.cloudinary.com/carloscuesta/image/upload/v1674863950/ast-explorer_gbkjqd.jpg)
+
+The nodes shown in the image, will be the ones we'll traverse when writing a codemod! You can **explore the AST** [using this link](https://astexplorer.net/#/gist/b97d1ac96cddeb4084c7191af54f6a8c/974175f63f814cbb465d44453dbe93c3ab93723d) 👈
+
+That's pretty cool right? 🤓. Now that we understand how we can navigate ASTs, let's see how we can combine them with codemods to perform large-scale refactors 🚀.
