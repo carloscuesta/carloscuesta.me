@@ -33,6 +33,25 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
 [
   {
     "datePublished": {
+      "formatDate": "29 January 2023",
+      "formatInWords": "in over 2 years",
+      "value": "2023-01-29 22:00",
+    },
+    "excerpt": "A codemod is a tool that helps you with large-scale refactors. In this article I'm going to explain how you can use them along with Abstract Syntax Trees.",
+    "images": {
+      "featured": {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1675022732/blog-featured-images/Effective_Refactoring_with_Codemods.png",
+      },
+      "preview": {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1675022732/blog-featured-images/Effective_Refactoring_with_Codemods.png",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1675022732/blog-featured-images/Effective_Refactoring_with_Codemods.png",
+      },
+    },
+    "slug": "effective-refactoring-with-codemods",
+    "title": "Effective Refactoring with Codemods",
+  },
+  {
+    "datePublished": {
       "formatDate": "23 May 2022",
       "formatInWords": "in almost 2 years",
       "value": "2022-05-23 17:55",
@@ -69,25 +88,6 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
     "slug": "writing-architecture-decision-records",
     "title": "Writing Architecture Decision Records",
   },
-  {
-    "datePublished": {
-      "formatDate": "03 May 2021",
-      "formatInWords": "in 10 months",
-      "value": "2021-05-03 22:00",
-    },
-    "excerpt": "Finite State Machines is a computation model useful for building user interfaces, especially nowadays that front-end apps are becoming much more complex.",
-    "images": {
-      "featured": {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1620078331/blog-featured-images/composing-uis-with-fsm.png",
-      },
-      "preview": {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1620078331/blog-featured-images/composing-uis-with-fsm.png",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1620078331/blog-featured-images/composing-uis-with-fsm.png",
-      },
-    },
-    "slug": "composing-uis-with-finite-state-machines",
-    "title": "Composing UIs with Finite State Machines",
-  },
 ]
 `;
 
@@ -98,6 +98,7 @@ exports[`Ghost API Client getPostSlugs should match getPostSlugs 1`] = `
   "composing-uis-with-finite-state-machines",
   "debugging-with-the-javascript-console",
   "discovering-hyperterm",
+  "effective-refactoring-with-codemods",
   "front-end-tooling-guide-to-improve-developer-experience",
   "functional-programming-in-javascript",
   "git-development-workflow",
