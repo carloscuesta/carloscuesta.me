@@ -159,24 +159,6 @@
       "yarn run test:lint:fix"
     ]
   },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}",
-      "!src/**/__tests__/*.{js,jsx}"
-    ],
-    "moduleNameMapper": {
-      "^.+\\.css$": "identity-obj-proxy",
-      "src/(.*)$": "<rootDir>/src/$1"
-    },
-    "testMatch": [
-      "<rootDir>/**/*.(spec).(js)"
-    ],
-    "testEnvironment": "jsdom",
-    "transformIgnorePatterns": [
-      "!/node_modules/unified",
-      "/node_modules/jest-runner"
-    ]
-  },
   "volta": {
     "node": "16.15.0"
   }
