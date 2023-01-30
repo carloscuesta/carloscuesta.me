@@ -167,7 +167,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.js": [
+    "src/**/*.{ts,tsx,css}": [
       "yarn run test:lint:fix"
     ]
   },
