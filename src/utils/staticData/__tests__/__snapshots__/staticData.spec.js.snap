@@ -32,6 +32,12 @@ exports[`staticData workExperience should match data 1`] = `
     "positions": [
       {
         "dateFinish": null,
+        "dateStart": "09/01/2022",
+        "description": "",
+        "title": "Lead Web Engineer",
+      },
+      {
+        "dateFinish": "09/01/2022",
         "dateStart": "04/01/2021",
         "description": "",
         "title": "Senior Web Engineer",

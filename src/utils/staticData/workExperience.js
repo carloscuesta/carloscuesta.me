@@ -21,6 +21,12 @@ const workExperience: Experience = [
     positions: [
       {
         dateFinish: null,
+        dateStart: '09/01/2022',
+        title: 'Lead Web Engineer',
+        description: ''
+      },
+      {
+        dateFinish: '09/01/2022',
         dateStart: '04/01/2021',
         title: 'Senior Web Engineer',
         description: ''

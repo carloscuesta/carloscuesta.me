@@ -40,7 +40,6 @@ exports[`Experience should match Experience component 1`] = `
           <p
             className="title"
           >
-            Senior Web Engineer at 
             <a
               href="https://n26.com"
               rel="noopener noreferrer"
@@ -60,7 +59,50 @@ exports[`Experience should match Experience component 1`] = `
               Now
             </span>
           </span>
-          <p />
+          <div
+            className="positionList"
+          >
+            <span
+              className="positionMark"
+            />
+            <p
+              className="title"
+            >
+              Lead Web Engineer
+            </p>
+            <span
+              className="timestamp"
+            >
+              September 2022
+               – 
+              <span
+                className="currentPosition"
+              >
+                Now
+              </span>
+            </span>
+            <p />
+          </div>
+          <div
+            className="positionList"
+          >
+            <span
+              className="positionMark"
+            />
+            <p
+              className="title"
+            >
+              Senior Web Engineer
+            </p>
+            <span
+              className="timestamp"
+            >
+              April 2021
+               – 
+              September 2022
+            </span>
+            <p />
+          </div>
         </div>
       </div>
     </div>
