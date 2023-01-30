@@ -89,7 +89,7 @@
     "typescript": "4.9.5"
   },
   "eslintConfig": {
-    "parser": "@babel/eslint-parser",
+    "parser": "@typescript-eslint/parser",
     "env": {
       "jest": true,
       "browser": true,
@@ -98,7 +98,7 @@
     },
     "extends": [
       "eslint:recommended",
-      "plugin:flowtype/recommended",
+      "plugin:@typescript-eslint/recommended",
       "plugin:react/recommended",
       "plugin:import/errors",
       "plugin:@next/next/recommended"
@@ -112,24 +112,14 @@
       "requireConfigFile": false,
       "babelOptions": {
         "presets": [
-          "next/babel",
-          "@babel/preset-react",
-          "@babel/preset-flow"
+          "next/babel"
         ]
       }
     },
     "plugins": [
-      "react",
-      "flowtype"
+      "react"
     ],
     "rules": {
-      "flowtype/require-valid-file-annotation": [
-        2,
-        "always",
-        {
-          "annotationStyle": "line"
-        }
-      ],
       "react/jsx-uses-react": "off",
       "react/react-in-jsx-scope": "off",
       "@next/next/no-img-element": "off"
@@ -137,12 +127,11 @@
     "overrides": [
       {
         "files": [
-          "*.spec.js",
-          "stubs.js",
-          "**/__mocks__/*.js"
+          "*.spec.tsx",
+          "stubs.ts",
+          "**/__mocks__/*.ts"
         ],
         "rules": {
-          "flowtype/require-valid-file-annotation": 0,
           "react/display-name": 0,
           "react/prop-types": 0,
           "@next/next/no-css-tags": 0
@@ -151,8 +140,7 @@
     ],
     "settings": {
       "react": {
-        "version": "detect",
-        "flowVersion": "detect"
+        "version": "detect"
       },
       "import/resolver": {
         "alias": {
