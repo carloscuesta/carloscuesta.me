@@ -19,10 +19,6 @@ describe('analytics', () => {
       window.ma = ma
     })
 
-    afterAll(() => {
-      window.ma = undefined
-    })
-
     it('should call window.ga with event object', () => {
       analytics.trackEvent(stubs.event)
 
