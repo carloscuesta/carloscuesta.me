@@ -71,6 +71,7 @@
     "eslint": "^8.33.0",
     "eslint-config-next": "^13.1.6",
     "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "3.5.3",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-react": "^7.32.2",
@@ -96,7 +97,7 @@
       "eslint:recommended",
       "plugin:@typescript-eslint/recommended",
       "plugin:react/recommended",
-      "plugin:import/errors",
+      "plugin:import/typescript",
       "plugin:@next/next/recommended"
     ],
     "parserOptions": {
@@ -113,7 +114,9 @@
       }
     },
     "plugins": [
-      "react"
+      "react",
+      "@typescript-eslint",
+      "import"
     ],
     "rules": {
       "react/jsx-uses-react": "off",
@@ -147,7 +150,9 @@
             ]
           ]
         }
-      }
+      },
+      "typescript": true,
+      "node": true
     }
   },
   "lint-staged": {
