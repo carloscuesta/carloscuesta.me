@@ -23,15 +23,17 @@ const Blog = (props: Props): Node => (
     <main>
       <Wrapper>
         <PageTitle title='Blog' />
-        {Object.keys(props.posts).sort(() => -1).map((year: string) => (
-          <div className='row' key={year}>
-            <Year year={year} />
+        <>
+          {Object.keys(props.posts).sort(() => -1).map((year) => (
+            <div className='row' key={year}>
+              <Year year={year} />
 
-            {props.posts[year].map((post) => (
-              <BlogPost post={post} key={post.slug} />
-            ))}
-          </div>
-        ))}
+              {props.posts[year].map((post) => (
+                <BlogPost post={post} key={post.slug} />
+              ))}
+            </div>
+          ))}
+        </>
       </Wrapper>
     </main>
   </>

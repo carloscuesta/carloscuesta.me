@@ -1,6 +1,3 @@
-// @flow
-import type { Element } from 'react'
-
 import SectionTitle from 'src/components/shared/SectionTitle'
 import Stat from './Stat'
 
@@ -10,7 +7,7 @@ type Props = {
   stars: number
 }
 
-const Stats = (props: Props): Element<'section'> => (
+const Stats = (props: Props) => (
   <section>
     <SectionTitle title='Stats' />
 

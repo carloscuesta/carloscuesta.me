@@ -1,16 +1,13 @@
-// @flow
-import type { Element } from 'react'
-
 import SectionTitle from 'src/components/shared/SectionTitle'
 import styles from './styles.module.css'
 
 type Props = {
-  items: Array<{ category: string, link?: ?string, title: string }>,
+  items: { category: string, link?: string, title: string }[],
   subTitle: string,
   title: string,
 }
 
-const Section = (props: Props): Element<'section'> => (
+const Section = (props: Props) => (
   <section>
     <SectionTitle title={props.title} subTitle={props.subTitle} />
 

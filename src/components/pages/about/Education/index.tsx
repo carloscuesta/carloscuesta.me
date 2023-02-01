@@ -1,6 +1,3 @@
-// @flow
-import type { Element } from 'react'
-
 import SectionTitle from 'src/components/shared/SectionTitle'
 import ItemTitle from 'src/components/pages/about/ItemTitle'
 import ItemTimestamp from 'src/components/pages/about/ItemTimestamp'
@@ -8,7 +5,7 @@ import education, { type Course } from 'src/utils/staticData/education'
 
 import styles from './styles.module.css'
 
-const Education = (): Element<'section'> => (
+const Education = () => (
   <section>
     <SectionTitle title='Education' />
     <div className='row'>

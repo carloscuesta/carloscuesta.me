@@ -1,16 +1,13 @@
-// @flow
-import type { Element } from 'react'
-
 import { type Repository } from 'src/utils/api/github/mutators'
 import Wrapper from 'src/components/shared/Wrapper'
 import SectionTitle from 'src/components/shared/SectionTitle'
 import Project from './Project'
 
 type Props = {
-  repositories: Array<Repository>
+  repositories: Repository[]
 }
 
-const OpenSource = (props: Props): Element<'section'> => (
+const OpenSource = (props: Props) => (
   <section>
     <Wrapper>
       <SectionTitle

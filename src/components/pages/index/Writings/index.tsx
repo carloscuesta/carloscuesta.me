@@ -1,5 +1,4 @@
-// @flow
-import { type Element, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import debounce from 'lodash.debounce'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'
@@ -13,18 +12,20 @@ type Props = {
   posts: Array<PostPreview>
 }
 
-const Writings = (props: Props): Element<'section'> => {
-  const scrollablePostsRef: Object = useRef({ current: {} })
+const Writings = (props: Props) => {
+  const scrollablePostsRef = useRef<HTMLDivElement>(null)
   const [scrollPosition, setScrollPosition] = useState(0)
-  const SCROLL_DEBOUNCE_MS_TIME: number = 20
+  const SCROLL_DEBOUNCE_MS_TIME = 20
 
   const onScroll = debounce(
-    (event: Object) => setScrollPosition(event.target.scrollLeft),
+    (event) => setScrollPosition(event.target.scrollLeft),
     SCROLL_DEBOUNCE_MS_TIME
   )
 
   const scrollTo = (action: 'next' | 'previous') => {
-    const postWidth = scrollablePostsRef.current.childNodes[0].offsetWidth
+    if (!scrollablePostsRef.current) return
+
+    const postWidth = (scrollablePostsRef.current.childNodes[0] as HTMLDivElement).offsetWidth
     const scrollPosition = action === 'next'
       ? scrollablePostsRef.current.scrollLeft + postWidth
       : scrollablePostsRef.current.scrollLeft - postWidth
@@ -58,7 +59,7 @@ const Writings = (props: Props): Element<'section'> => {
         <ScrollButtons
           scrollTo={scrollTo}
           scrollPosition={scrollPosition}
-          scrollPositionMaxWidth={scrollablePostsRef.current.scrollWidth - scrollablePostsRef.current.clientWidth}
+          scrollPositionMaxWidth={Number(scrollablePostsRef?.current?.scrollWidth) - Number(scrollablePostsRef?.current?.clientWidth)}
         />
       </Wrapper>
     </section>

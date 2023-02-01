@@ -1,5 +1,4 @@
-// @flow
-import { type Element, Fragment } from 'react'
+import { Fragment } from  'react'
 
 import { type JobPosition } from 'src/utils/staticData/workExperience'
 import ItemTimestamp from 'src/components/pages/about/ItemTimestamp'
@@ -7,9 +6,9 @@ import ItemTitle from 'src/components/pages/about/ItemTitle'
 import CompanyLogo from './CompanyLogo'
 import styles from './styles.module.css'
 
-type Props = { ...JobPosition }
+type Props = JobPosition
 
-const Job = (props: Props): Element<'div'> => {
+const Job = (props: Props) => {
   const hasJobMoreThanOnePosition = props.positions.length > 1
 
   if (hasJobMoreThanOnePosition) {

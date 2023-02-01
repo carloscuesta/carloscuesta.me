@@ -1,9 +1,7 @@
-// @flow
-import type { Element } from 'react'
 
 import styles from './styles.module.css'
 
-const NewsletterSubscribe = (): Element<'form'> => (
+const NewsletterSubscribe = () => (
   <form
     className={styles.container}
     action='https://buttondown.email/api/emails/embed-subscribe/carloscuesta'

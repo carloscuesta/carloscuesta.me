@@ -1,10 +1,8 @@
-// @flow
-import type { Element } from 'react'
 import Link from 'next/link'
 
 import styles from './styles.module.css'
 
-const WhoAmI = (): Element<'section'> => (
+const WhoAmI = () => (
   <section>
     <div className={styles.whoAmI}>
       <p>

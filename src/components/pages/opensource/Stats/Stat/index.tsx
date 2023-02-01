@@ -1,11 +1,8 @@
-// @flow
-import type { Element } from 'react'
-
 import styles from './styles.module.css'
 
 type Props = { label: string, value: number }
 
-const Stat = (props: Props): Element<'div'> => (
+const Stat = (props: Props) => (
   <div className='col-xs-12 col-sm-6 col-md-4'>
     <article className={styles.card}>
       <p className={styles.label}>{props.label}</p>

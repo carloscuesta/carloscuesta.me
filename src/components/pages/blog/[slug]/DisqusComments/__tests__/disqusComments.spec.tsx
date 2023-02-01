@@ -32,7 +32,7 @@ describe('DisqusComments', () => {
 
   describe('when the component is in viewport', () => {
     beforeAll(() => {
-      useInView.mockReturnValue([jest.fn(), true])
+      (useInView as jest.Mock).mockReturnValue([jest.fn(), true])
     })
 
     it('should render the Disqus component', () => {

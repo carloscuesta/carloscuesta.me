@@ -1,11 +1,8 @@
-// @flow
-import type { Element } from 'react'
-
 import styles from './styles.module.css'
 
 type Props = { url: string, name: string }
 
-const CompanyLogo = (props: Props): Element<'div'> => (
+const CompanyLogo = (props: Props) => (
   <div className={styles.container}>
     <img
       alt={props.name}

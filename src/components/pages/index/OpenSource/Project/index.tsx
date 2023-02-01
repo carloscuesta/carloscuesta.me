@@ -1,6 +1,3 @@
-// @flow
-import type { Element } from 'react'
-
 import { type Repository } from 'src/utils/api/github/mutators'
 import styles from './styles.module.css'
 
@@ -8,7 +5,7 @@ type Props = {
   repository: Repository
 }
 
-const Project = (props: Props): Element<'div'> => (
+const Project = (props: Props) => (
   <div className={`col-xs-12 col-sm-6 col-md-4 ${styles.projectContainer}`}>
     <a
       className={`${styles.project} ${props.repository.language ? props.repository.language.toLowerCase() : ''}`}

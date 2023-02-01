@@ -1,10 +1,7 @@
-// @flow
-import type { Element } from 'react'
-
 import Wrapper from 'src/components/shared/Wrapper'
 import styles from './styles.module.css'
 
-const Biography = (): Element<'section'> => (
+const Biography = () => (
   <section>
     <Wrapper>
       <div className={styles.container}>

@@ -1,15 +1,13 @@
-// @flow
-import type { Element } from 'react'
 import { format } from 'date-fns'
 
 import styles from './styles.module.css'
 
 type Props = {
-  dateFinish: ?string,
+  dateFinish: string | null,
   dateStart: string
 }
 
-const ItemTimestamp = (props: Props): Element<'span'> => {
+const ItemTimestamp = (props: Props) => {
   const dateStart = format(new Date(props.dateStart), 'MMMM y')
   const dateFinish = typeof props.dateFinish === 'string'
     ? format(new Date(props.dateFinish), 'MMMM y')

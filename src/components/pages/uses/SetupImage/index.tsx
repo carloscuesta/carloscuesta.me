@@ -1,9 +1,7 @@
-// @flow
-import type { Element } from 'react'
 
 import styles from './styles.module.css'
 
-const SetupImage = (): Element<'img'> => (
+const SetupImage = () => (
   <img
     alt='Carlos Cuesta workspace setup'
     className={`lazyload ${styles.image}`}

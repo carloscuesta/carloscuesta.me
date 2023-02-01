@@ -1,6 +1,3 @@
-// @flow
-import type { Node } from 'react'
-
 import styles from './styles.module.css'
 
 type Props = {
@@ -9,7 +6,7 @@ type Props = {
   title: string
 }
 
-const ShareLinks = (props: Props): Node => (
+const ShareLinks = (props: Props) => (
   <>
     <hr />
     <b className={styles.title}>Did you enjoy the article ?</b>

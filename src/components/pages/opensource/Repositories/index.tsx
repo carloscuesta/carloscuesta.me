@@ -1,13 +1,10 @@
-// @flow
-import type { Element } from 'react'
-
 import SectionTitle from 'src/components/shared/SectionTitle'
 import { type Repository } from 'src/utils/api/github/mutators'
 import styles from './styles.module.css'
 
 type Props = { repositories: Array<Repository> }
 
-const Repositories = (props: Props): Element<'section'> => (
+const Repositories = (props: Props) => (
   <section>
     <SectionTitle title='Repositories' />
 

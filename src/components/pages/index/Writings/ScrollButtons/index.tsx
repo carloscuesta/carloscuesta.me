@@ -1,13 +1,14 @@
-// @flow
-import type { Element } from 'react'
-
 import styles from './styles.module.css'
 
-type Props = { scrollTo: Function, scrollPosition: number, scrollPositionMaxWidth: number }
+type Props = {
+  scrollTo: (action: 'next' | 'previous') => void,
+  scrollPosition: number,
+  scrollPositionMaxWidth: number
+}
 
-const SCROLL_VISIBILITY_THRESHOLD: number = 1
+const SCROLL_VISIBILITY_THRESHOLD = 1
 
-const ScrollButtons = (props: Props): Element<'div'> => (
+const ScrollButtons = (props: Props) => (
   <div className='row'>
     <div className={`col-xs-12 ${styles.scrollButtons}`}>
       <button

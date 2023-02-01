@@ -1,11 +1,8 @@
-// @flow
-import type { Element } from 'react'
-
 import Wrapper from 'src/components/shared/Wrapper'
 import SectionTitle from 'src/components/shared/SectionTitle'
 import styles from './styles.module.css'
 
-const Contact = (): Element<'section'> => (
+const Contact = () => (
   <section>
     <Wrapper>
       <SectionTitle

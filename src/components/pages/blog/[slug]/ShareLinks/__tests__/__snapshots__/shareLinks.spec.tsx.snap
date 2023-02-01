@@ -13,7 +13,7 @@ exports[`ShareLinks should match ShareLinks component 1`] = `
   >
     <a
       className="socialButton"
-      href="https://twitter.com/intent/tweet?text=undefined&url=undefined&via=crloscuesta"
+      href="https://twitter.com/intent/tweet?text=This is a post&url=https://www.example.com/blog/this-is-a-post&via=crloscuesta"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -26,7 +26,7 @@ exports[`ShareLinks should match ShareLinks component 1`] = `
     </span>
     <a
       className="socialButton"
-      href="http://twitter.com/search?q=undefined"
+      href="http://twitter.com/search?q=https://www.example.com/blog/this-is-a-post"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -39,7 +39,7 @@ exports[`ShareLinks should match ShareLinks component 1`] = `
     </span>
     <a
       className="socialButton editPost"
-      href="https://github.com/carloscuesta/carloscuesta.me/edit/master/src/posts/undefined.md"
+      href="https://github.com/carloscuesta/carloscuesta.me/edit/master/src/posts/this-is-a-post.md"
       rel="noopener noreferrer"
       target="_blank"
     >

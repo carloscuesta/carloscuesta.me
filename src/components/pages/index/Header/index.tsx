@@ -1,11 +1,9 @@
-// @flow
-import type { Element } from 'react'
 import Link from 'next/link'
 
 import Wrapper from 'src/components/shared/Wrapper'
 import styles from './styles.module.css'
 
-const Header = (): Element<'header'> => (
+const Header = () => (
   <header className={styles.container}>
     <Wrapper>
       <h1 className={styles.title}>Hi, I&#39;m <span className={styles.name}>Carlos Cuesta</span></h1>

@@ -1,6 +1,3 @@
-// @flow
-import type { Element } from 'react'
-
 import styles from './styles.module.css'
 
 type Props = {
@@ -9,7 +6,7 @@ type Props = {
   title: string
 }
 
-const FeaturedImage = (props: Props): Element<'header'> => (
+const FeaturedImage = (props: Props) => (
   <header className={styles.header}>
     <img
       alt={props.title}
