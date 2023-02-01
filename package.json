@@ -12,7 +12,6 @@
     "test": "yarn run test:lint && yarn run tscheck && yarn run test:unit && yarn run test:lighthouse",
     "tscheck": "yarn tsc --noEmit",
     "test:lint": "eslint src",
-    "test:lint:fix": "eslint src --fix",
     "test:unit": "jest --coverage",
     "test:watch": "NODE_ENV=test TZ=UTC jest --watch",
     "test:coverage": "codecov",
@@ -157,7 +156,7 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,css}": [
-      "yarn run test:lint:fix"
+      "eslint --cache --fix"
     ]
   },
   "volta": {

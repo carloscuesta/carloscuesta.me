@@ -1,6 +1,9 @@
 # Logs
 *.log
 
+# ESLint
+.eslintcache
+
 # Dependencies directory
 node_modules
 
