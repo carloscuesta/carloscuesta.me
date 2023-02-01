@@ -1,5 +1,4 @@
-// @flow
-import type { Node } from 'react'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { NextSeo } from 'next-seo'
 
 import { fetchRepositories, fetchUserInformation } from 'src/utils/api/github'
@@ -10,13 +9,7 @@ import Wrapper from 'src/components/shared/Wrapper'
 import Repositories from 'src/components/pages/opensource/Repositories'
 import Stats from 'src/components/pages/opensource/Stats'
 
-type Props = {
-  packageDownloads: number,
-  repositories: Array<Repository>,
-  userInformation: UserInformation,
-}
-
-const Index = (props: Props): Node => (
+const Opensource = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
     <NextSeo
       canonical='https://carloscuesta.me/opensource'
@@ -40,7 +33,11 @@ const Index = (props: Props): Node => (
   </>
 )
 
-export const getStaticProps = async (): Promise<{ props: Props, revalidate: number }> => {
+export const getStaticProps: GetStaticProps<{
+  packageDownloads: number,
+  repositories: Repository[],
+  userInformation: UserInformation,
+}> = async () => {
   const [repositories, userInformation, publishedPackages] = await Promise.all([
     fetchRepositories(),
     fetchUserInformation(),
@@ -57,4 +54,4 @@ export const getStaticProps = async (): Promise<{ props: Props, revalidate: numb
   }
 }
 
-export default Index
+export default Opensource

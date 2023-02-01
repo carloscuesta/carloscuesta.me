@@ -1,4 +1,5 @@
 export const props = {
+  // @ts-expect-error - Component stub
   Component: (props) => <div {...props}>Component</div>,
   pageProps: { test: '' }
 }

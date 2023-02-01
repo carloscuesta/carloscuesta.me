@@ -1,11 +1,9 @@
-// @flow
-import type { Node } from 'react'
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 
 import { trackingCode } from 'src/utils/analytics'
 
 class Document extends NextDocument {
-  render (): Node {
+  render () {
     return (
       <Html lang='en'>
         <Head>

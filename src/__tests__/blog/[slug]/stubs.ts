@@ -11,6 +11,7 @@ export const post = {
     formatDate: '01 October 2019',
     value: '2019-10-01 22:15'
   },
+  readingTime: '1 min',
   disqusIdentifier: '5bc9ff9949ac5006c0a84f00',
   excerpt: 'A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example',
   html: '<h1>html</h1>',

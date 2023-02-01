@@ -1,5 +1,4 @@
-// @flow
-import type { Node } from 'react'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { NextSeo, SocialProfileJsonLd } from 'next-seo'
 
 import { fetchPosts } from 'src/utils/api/blog'
@@ -12,12 +11,7 @@ import Writings from 'src/components/pages/index/Writings'
 import OpenSource from 'src/components/pages/index/OpenSource'
 import Contact from 'src/components/pages/index/Contact'
 
-type Props = {
-  posts: Array<PostPreview>,
-  repositories: Array<Repository>
-}
-
-const Index = (props: Props): Node => (
+const Index = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
     <NextSeo canonical='https://carloscuesta.me' />
     <SocialProfileJsonLd
@@ -41,7 +35,10 @@ const Index = (props: Props): Node => (
   </>
 )
 
-export const getStaticProps = async (): Promise<{ props: Props, revalidate: number }> => {
+export const getStaticProps: GetStaticProps<{
+  posts: PostPreview[],
+  repositories: Repository[]
+}> = async () => {
   const [posts, repositories] = await Promise.all([
     fetchPosts(),
     fetchRepositories()

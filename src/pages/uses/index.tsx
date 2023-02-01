@@ -1,5 +1,3 @@
-// @flow
-import type { Node } from 'react'
 import { NextSeo } from 'next-seo'
 
 import PageTitle from 'src/components/shared/PageTitle'
@@ -7,7 +5,7 @@ import Wrapper from 'src/components/shared/Wrapper'
 import Section from 'src/components/pages/uses/Section'
 import SetupImage from 'src/components/pages/uses/SetupImage'
 
-const Uses = (): Node => (
+const Uses = () => (
   <>
     <NextSeo
       canonical='https://carloscuesta.me/uses'

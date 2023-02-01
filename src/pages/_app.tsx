@@ -1,6 +1,4 @@
-// @flow
-import { type Node, Component } from 'react'
-// $FlowIssue
+import type { AppProps } from 'next/app'
 import { Analytics } from '@vercel/analytics/react'
 import { DefaultSeo } from 'next-seo'
 import 'lazysizes'
@@ -10,9 +8,7 @@ import 'src/utils/theme/theme.css'
 import Layout from 'src/components/shared/Layout'
 import { trackEvent } from 'src/utils/analytics'
 
-type Props = { Component: typeof Component, pageProps: Object }
-
-const App = (props: Props): Node => (
+const App = (props: AppProps) => (
   <Layout>
     <DefaultSeo
       title='Carlos Cuesta – Front End Engineer'

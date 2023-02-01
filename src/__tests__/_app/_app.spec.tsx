@@ -20,6 +20,7 @@ describe('_app', () => {
   describe('page', () => {
     it('should match App page', () => {
       const wrapper = renderer.create(
+        // @ts-expect-error We don't need to pass router to test the App component.
         <App {...stubs.props} />
       )
 

@@ -31,14 +31,14 @@ describe('index', () => {
 
   describe('getStaticProps', () => {
     beforeAll(() => {
-      fetchRepositories.mockReturnValue(stubs.repositories)
-      fetchUserInformation.mockReturnValue(stubs.userInformation)
-      fetchPublishedPackages.mockReturnValue(stubs.publishedPackages)
-      fetchDownloadsCount.mockReturnValue(stubs.packageDownloads)
+      (fetchRepositories as jest.Mock).mockReturnValue(stubs.repositories)
+      ;(fetchUserInformation as jest.Mock).mockReturnValue(stubs.userInformation)
+      ;(fetchPublishedPackages as jest.Mock).mockReturnValue(stubs.publishedPackages)
+      ;(fetchDownloadsCount as jest.Mock).mockReturnValue(stubs.packageDownloads)
     })
 
     it('should return repositories and userInformation as props and set revalidate', async () => {
-      const props = await getStaticProps()
+      const props = await getStaticProps({})
 
       expect(fetchRepositories).toHaveBeenCalledWith()
       expect(fetchUserInformation).toHaveBeenCalledWith()

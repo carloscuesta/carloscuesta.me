@@ -1,7 +1,7 @@
-// @flow
-import type { Element } from 'react'
+import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 import { ArticleJsonLd, NextSeo } from 'next-seo'
+import { ParsedUrlQuery } from 'querystring';
 
 import { getPostSlugs, fetchPost } from 'src/utils/api/blog'
 import { type Post } from 'src/utils/api/blog/mutators'
@@ -12,11 +12,7 @@ import NewsletterSubscribe from 'src/components/pages/blog/[slug]/NewsletterSubs
 import ShareLinks from 'src/components/pages/blog/[slug]/ShareLinks'
 import DisqusComments from 'src/components/pages/blog/[slug]/DisqusComments'
 
-type Props = {
-  post: Post
-}
-
-const Article = (props: Props): Element<'article'> => {
+const Article = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const canonicalUrl = `https://carloscuesta.me/blog/${props.post.slug}`
 
   return (
@@ -104,15 +100,17 @@ const Article = (props: Props): Element<'article'> => {
   )
 }
 
-type Params = { params: { slug: string } }
+interface Params extends ParsedUrlQuery {
+  slug: string
+}
 
-export const getStaticPaths = (): { paths: Array<Params>, fallback: boolean } => ({
+export const getStaticPaths: GetStaticPaths<Params> = () => ({
   paths: getPostSlugs().map((slug: string) => ({ params: { slug } })),
   fallback: false
 })
 
-export const getStaticProps = async ({ params }: Params): Promise<{ props: Props }> => {
-  const post = await fetchPost(params.slug)
+export const getStaticProps: GetStaticProps<{ post: Post }, Params> = async ({ params }) => {
+  const post = await fetchPost((params as Params).slug)
 
   return {
     props: {

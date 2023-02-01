@@ -29,11 +29,11 @@ describe('blog', () => {
 
   describe('getStaticProps', () => {
     beforeAll(() => {
-      fetchPosts.mockReturnValue(stubs.posts)
+      (fetchPosts as jest.Mock).mockReturnValue(stubs.posts)
     })
 
     it('should return posts as props', async () => {
-      const props = await getStaticProps()
+      const props = await getStaticProps({})
 
       expect(fetchPosts).toHaveBeenCalledWith()
 

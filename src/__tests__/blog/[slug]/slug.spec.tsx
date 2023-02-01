@@ -31,11 +31,11 @@ describe('blog/[slug]', () => {
 
   describe('getStaticPaths', () => {
     beforeAll(() => {
-      getPostSlugs.mockReturnValue(stubs.postSlugs)
+      (getPostSlugs as jest.Mock).mockReturnValue(stubs.postSlugs)
     })
 
     it('should return an object with paths and fallback as keys', () => {
-      const paths = getStaticPaths()
+      const paths = getStaticPaths({})
 
       expect(paths).toEqual({
         paths: stubs.postSlugs.map((slug) => ({ params: { slug } })),
@@ -46,7 +46,7 @@ describe('blog/[slug]', () => {
 
   describe('getStaticProps', () => {
     beforeAll(() => {
-      fetchPost.mockReturnValue(stubs.post)
+      (fetchPost as jest.Mock).mockReturnValue(stubs.post)
     })
 
     it('should return post as props', async () => {

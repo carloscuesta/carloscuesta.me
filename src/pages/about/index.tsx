@@ -1,5 +1,3 @@
-// @flow
-import type { Node } from 'react'
 import { NextSeo, SocialProfileJsonLd } from 'next-seo'
 
 import PageTitle from 'src/components/shared/PageTitle'
@@ -8,7 +6,7 @@ import Experience from 'src/components/pages/about/Experience'
 import Education from 'src/components/pages/about/Education'
 import WhoAmI from 'src/components/pages/about/WhoAmI'
 
-const About = (): Node => (
+const About = () => (
   <>
     <NextSeo
       canonical='https://carloscuesta.me/about'
