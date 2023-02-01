@@ -1,8 +1,6 @@
-// @flow
-
 export type Course = {
-  dateFinish: ?string,
-  dateStart: string,
+  dateFinish: `${number}/${number}/${number}` | null,
+  dateStart: `${number}/${number}/${number}`,
   description: string,
   link: string,
   location: string,

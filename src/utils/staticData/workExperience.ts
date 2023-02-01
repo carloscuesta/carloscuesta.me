@@ -1,15 +1,14 @@
-// @flow
 export type JobPosition = {
   company: { link: string, logo: string, name: string },
-  positions: Array<{
-    dateFinish: ?string,
+  positions: {
+    dateFinish: string | null,
     dateStart: string,
     description: string,
     title: string
-  }>
+  }[]
 }
 
-export type Experience = Array<JobPosition>
+export type Experience = JobPosition[]
 
 const workExperience: Experience = [
   {
