@@ -1,11 +1,8 @@
-// @flow
-import type { Node, Element } from 'react'
-
 import styles from './styles.module.css'
 
-type Props = { children: Node, isCompressed?: boolean }
+type Props = { children: JSX.Element[] | JSX.Element, isCompressed?: boolean }
 
-const Wrapper = (props: Props): Element<'div'> => (
+const Wrapper = (props: Props) => (
   <div className={props.isCompressed ? styles.wrapperCompressed : styles.wrapper}>
     {props.children}
   </div>

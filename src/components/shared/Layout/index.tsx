@@ -1,12 +1,9 @@
-// @flow
-import type { Node } from 'react'
-
 import NavigationMenu from './NavigationMenu'
 import Footer from './Footer'
 
-type Props = { children: Node }
+type Props = { children: JSX.Element[] | JSX.Element }
 
-const Layout = (props: Props): Node => (
+const Layout = (props: Props) => (
   <>
     <NavigationMenu />
     {props.children}

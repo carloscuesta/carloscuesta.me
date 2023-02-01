@@ -1,5 +1,3 @@
-// @flow
-import type { Node } from 'react'
 import Link from 'next/link'
 
 import styles from './styles.module.css'
@@ -10,7 +8,7 @@ type Props = {
   viewAllLink?: string
 }
 
-const SectionTitle = (props: Props): Node => (
+const SectionTitle = (props: Props) => (
   <div
     className={[
       styles.container,

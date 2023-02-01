@@ -1,5 +1,4 @@
-// @flow
-import { type Element, useState } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 
 import Wrapper from 'src/components/shared/Wrapper'
@@ -7,7 +6,7 @@ import MenuLink from './MenuLink'
 import Hamburger from './Hamburger'
 import styles from './styles.module.css'
 
-const NavigationMenu = (): Element<'header'> => {
+const NavigationMenu = () => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false)
 
   return (

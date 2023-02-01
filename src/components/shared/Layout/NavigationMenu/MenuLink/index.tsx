@@ -1,5 +1,3 @@
-// @flow
-import type { Node, Element } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -7,7 +5,7 @@ import styles from './styles.module.css'
 
 type Props = { href: string, text: string }
 
-const MenuLink = (props: Props): Node | Element<'a'> => {
+const MenuLink = (props: Props) => {
   const router: { pathname: string } = useRouter()
   const isUserOnLinkPage: boolean = props.href === router.pathname
 

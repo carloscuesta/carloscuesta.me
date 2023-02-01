@@ -8,16 +8,15 @@ jest.mock('next/router', () => ({
   events: {
     on: jest.fn(),
     off: jest.fn()
-  }
+  },
+  useRouter: () => ({
+    pathname: '',
+    events: {
+      on: jest.fn(),
+      off: jest.fn()
+    }
+  })
 }))
-
-Router.useRouter = () => ({
-  pathname: '',
-  events: {
-    off: jest.fn(),
-    on: jest.fn()
-  }
-})
 
 describe('Layout', () => {
   it('should render the Layout with children', () => {

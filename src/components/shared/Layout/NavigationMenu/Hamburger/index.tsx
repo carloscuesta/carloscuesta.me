@@ -1,5 +1,4 @@
-// @flow
-import { type Element, useEffect } from 'react'
+import { useEffect } from 'react'
 import Router from 'next/router'
 
 import MenuLink from '../MenuLink'
@@ -7,9 +6,9 @@ import OpenIcon from './OpenIcon'
 import CloseIcon from './CloseIcon'
 import styles from './styles.module.css'
 
-type Props = { isOpen: boolean, setIsOpen: Function }
+type Props = { isOpen: boolean, setIsOpen: (isOpen: boolean) => void }
 
-const Hamburger = (props: Props): Element<'div'> => {
+const Hamburger = (props: Props) => {
   const { setIsOpen } = props
 
   useEffect(() => {
