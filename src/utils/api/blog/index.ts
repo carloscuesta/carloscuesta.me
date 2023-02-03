@@ -1,4 +1,3 @@
-// @flow
 import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
@@ -17,7 +16,7 @@ import rehypeWrap from 'rehype-wrap-all'
 
 import { type Post, type PostPreview, transformPost } from './mutators'
 
-const POSTS_DIRECTORY: string = join(process.cwd(), 'src/posts')
+const POSTS_DIRECTORY = join(process.cwd(), 'src/posts')
 
 export const getPostSlugs = (): Array<string> => fs.readdirSync(POSTS_DIRECTORY)
   .map((post: string) => post.replace('.md', ''))
@@ -59,7 +58,7 @@ export const fetchPosts = async (): Promise<Array<PostPreview>> => {
 
   return posts
     .sort((x, y) => {
-      return new Date(y.datePublished.value) - new Date(x.datePublished.value)
+      return Number(new Date(y.datePublished.value)) - Number(new Date(x.datePublished.value))
     })
     .map((post) => ({
       datePublished: post.datePublished,

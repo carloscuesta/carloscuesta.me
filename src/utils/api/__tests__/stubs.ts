@@ -2,7 +2,7 @@ export const responseCache = [
   { title: 'Post' }
 ]
 
-export const request = (requestOptions = undefined) => ({
+export const request = (requestOptions?: RequestInit) => ({
   url: 'https://carloscuesta.me/api',
   mutator: jest.fn((value) => value),
   requestOptions

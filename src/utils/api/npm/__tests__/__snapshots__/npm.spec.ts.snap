@@ -3,7 +3,7 @@
 exports[`NPM API Client apiCalls should match fetchDownloadsCount call 1`] = `
 {
   "mutator": [Function],
-  "url": "https://api.npmjs.org/downloads/point/last-year/,,,,,",
+  "url": "https://api.npmjs.org/downloads/point/last-year/react-native-error-boundary,gitmoji-cli,gitmojis,react-native-layout-debug,hyper-materialshell,generator-starterkit",
 }
 `;
 

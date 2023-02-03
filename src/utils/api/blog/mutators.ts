@@ -1,6 +1,6 @@
-// @flow
 import { format, formatDistanceToNow } from 'date-fns'
 import readingTime from 'reading-time'
+import type { VFile } from 'vfile'
 
 export type Post = {
   dateModified: string,
@@ -14,17 +14,16 @@ export type Post = {
   title: string
 }
 
-export type PostPreview = $Diff<
+export type PostPreview = Omit<
   Post,
-  {
-    dateModified: string,
-    disqusIdentifier: string,
-    html: string,
-    readingTime: string
-  }
+  'dateModified' | 'disqusIdentifier' | 'html' | 'readingTime'
 >
 
-type Payload = { data: Object, html: Object, slug: string }
+type Payload = {
+  data: { [key: string]: string }, 
+  html: VFile,
+  slug: string 
+}
 
 export const transformPost = (payload: Payload): Post => ({
   dateModified: payload.data.dateModified,

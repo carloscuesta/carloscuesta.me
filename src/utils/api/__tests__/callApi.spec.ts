@@ -1,4 +1,4 @@
-import { enableFetchMocks } from 'jest-fetch-mock'
+import fetch, { enableFetchMocks } from 'jest-fetch-mock'
 
 import callApi from '../callApi'
 import * as stubs from './stubs'

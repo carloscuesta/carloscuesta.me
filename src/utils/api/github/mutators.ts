@@ -1,4 +1,3 @@
-// @flow
 export type Repository = {
   description: string,
   language?: string,
@@ -7,7 +6,15 @@ export type Repository = {
   url: string
 }
 
-export const transformRepositories = (payload: Array<Object>): Array<Repository> => {
+export const transformRepositories = (
+  payload: {
+    description: string,
+    language: string,
+    name: string,
+    stargazers_count: number,
+    html_url: string
+  }[]
+): Repository[] => {
   return payload.map((repo) => ({
     description: repo.description,
     language: repo.language,
@@ -21,6 +28,8 @@ export type UserInformation = {
   followers: number
 }
 
-export const transformUserInformation = (payload: Object): UserInformation => ({
+export const transformUserInformation = (
+  payload: UserInformation
+): UserInformation => ({
   followers: payload.followers
 })

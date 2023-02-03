@@ -2,27 +2,29 @@ import callApi from 'src/utils/api/callApi'
 import { fetchRepositories, fetchUserInformation } from '../index'
 import { transformRepositories, transformUserInformation } from '../mutators'
 
-import reposFixture from './fixtures/repos'
-import userInformationFixture from './fixtures/user'
+import reposFixture from './fixtures/repos.json'
+import userInformationFixture from './fixtures/user.json'
 
 jest.mock('src/utils/api/callApi')
+
+const callApiMock = callApi as jest.Mock
 
 describe('GitHub API Client', () => {
   describe('apiCalls', () => {
     beforeEach(() => {
-      callApi.mockReset()
+      callApiMock.mockReset()
     })
 
     it('should match fetchRepositories call', () => {
       fetchRepositories()
 
-      expect(callApi.mock.calls[0][0]).toMatchSnapshot()
+      expect(callApiMock.mock.calls[0][0]).toMatchSnapshot()
     })
 
     it('should match fetchUserInformation call', () => {
       fetchUserInformation()
 
-      expect(callApi.mock.calls[0][0]).toMatchSnapshot()
+      expect(callApiMock.mock.calls[0][0]).toMatchSnapshot()
     })
   })
 
