@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer'
 
-import App, { reportWebVitals } from 'src/pages/_app.js'
+import App, { reportWebVitals } from 'src/pages/_app'
 import { trackEvent } from 'src/utils/analytics'
 import * as stubs from './stubs'
 

@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`blog/[slug] page should match blog/[slug] page 1`] = `
+<article
+  className="postDetail"
+>
+  <ArticleJsonLd
+    authorName="Carlos Cuesta"
+    dateModified="2019-10-01 22:15"
+    datePublished="2019-10-01 22:15"
+    description="A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example"
+    images={
+      [
+        "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+      ]
+    }
+    publisherLogo="/images/carloscuesta.jpg"
+    publisherName="Carlos Cuesta"
+    title="JavaScript monorepos with Lerna and Yarn Workspaces"
+    url="https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces"
+  />
+  <NextSeo
+    additionalMetaTags={
+      [
+        {
+          "content": "Reading time",
+          "name": "twitter:label1",
+        },
+        {
+          "content": "1 min",
+          "name": "twitter:data1",
+        },
+      ]
+    }
+    canonical="https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces"
+    description="A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example"
+    openGraph={
+      {
+        "article": {
+          "authors": [
+            "https://carloscuesta.me",
+          ],
+          "modifiedTime": "2019-10-01 22:15",
+          "publishedTime": "2019-10-01 22:15",
+        },
+        "description": "A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example",
+        "images": [
+          {
+            "alt": "JavaScript monorepos with Lerna and Yarn Workspaces",
+            "height": 1000,
+            "url": "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
+            "width": 2000,
+          },
+        ],
+        "title": "JavaScript monorepos with Lerna and Yarn Workspaces",
+        "type": "article",
+        "url": "https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces",
+      }
+    }
+    title="Carlos Cuesta – JavaScript monorepos with Lerna and Yarn Workspaces"
+  />
+  <FeaturedImage
+    image="https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png"
+    lqpiImage="https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png"
+    title="JavaScript monorepos with Lerna and Yarn Workspaces"
+  />
+  <main>
+    <Wrapper
+      isCompressed={true}
+    >
+      <Header
+        datePublished={
+          {
+            "formatDate": "01 October 2019",
+            "formatInWords": "9 months ago",
+            "value": "2019-10-01 22:15",
+          }
+        }
+        readingTime="1 min"
+        title="JavaScript monorepos with Lerna and Yarn Workspaces"
+      />
+      <div
+        dangerouslySetInnerHTML={
+          {
+            "__html": "<h1>html</h1>",
+          }
+        }
+      />
+      <ShareLinks
+        canonicalUrl="https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces"
+        slug="javascript-monorepos-lerna-yarn-workspaces"
+        title="JavaScript monorepos with Lerna and Yarn Workspaces"
+      />
+      <NewsletterSubscribe />
+      <hr />
+      <DisqusComments
+        canonicalUrl="https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces"
+        postDisqusIdentifier="5bc9ff9949ac5006c0a84f00"
+        postTitle="JavaScript monorepos with Lerna and Yarn Workspaces"
+      />
+    </Wrapper>
+  </main>
+</article>
+`;
