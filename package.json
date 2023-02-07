@@ -30,7 +30,6 @@
   },
   "homepage": "https://github.com/carloscuesta/carloscuesta.me#readme",
   "dependencies": {
-    "@mapbox/rehype-prism": "^0.8.0",
     "@vercel/analytics": "^0.1.8",
     "date-fns": "^2.29.3",
     "disqus-react": "^1.1.5",
@@ -63,7 +62,6 @@
     "@types/jest": "29.4.0",
     "@types/lodash.debounce": "4.0.7",
     "@types/lodash.groupby": "4.6.7",
-    "@types/mapbox__rehype-prism": "0.8.0",
     "@types/react": "18.0.27",
     "@types/react-test-renderer": "18.0.0",
     "@typescript-eslint/eslint-plugin": "5.49.0",
