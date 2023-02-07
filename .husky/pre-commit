@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn run test:flow && yarn lint-staged
+yarn run tscheck && yarn lint-staged

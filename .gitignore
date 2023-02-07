@@ -1,6 +1,9 @@
 # Logs
 *.log
 
+# ESLint
+.eslintcache
+
 # Dependencies directory
 node_modules
 
@@ -26,3 +29,6 @@ sitemap.xml
 public/workbox-*.js
 public/sw.js
 public/*.map
+
+# ts
+*.tsbuildinfo

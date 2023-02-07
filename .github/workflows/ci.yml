@@ -22,8 +22,8 @@ jobs:
       run: yarn
     - name: Lint 🎨
       run: yarn run test:lint
-    - name: Flow types 🏷
-      run: yarn run test:flow
+    - name: TypeScript check 🏷
+      run: yarn run tscheck
     - name: Tests ✅
       run: yarn run test:unit
     - name: Lighthouse Audit 🚨
