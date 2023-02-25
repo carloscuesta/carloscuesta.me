@@ -1,12 +1,7 @@
 import callApi, { type callApiOptions } from 'src/utils/api/callApi'
-import {
-  transformRepositories,
-  transformUserInformation,
-  type Repository,
-  type UserInformation
-} from './mutators'
+import { transformRepositories, transformUserInformation } from './mutators'
 
-const githubApiClient = <TData>(options: callApiOptions): Promise<TData> => callApi({
+const githubApiClient = <Response, Data> (options: callApiOptions<Response, Data>) => callApi({
   mutator: options.mutator,
   url: `https://api.github.com${options.url}`,
   requestOptions: {
@@ -14,12 +9,12 @@ const githubApiClient = <TData>(options: callApiOptions): Promise<TData> => call
   }
 })
 
-export const fetchRepositories = () => githubApiClient<Repository[]>({
+export const fetchRepositories = () => githubApiClient({
   mutator: transformRepositories,
   url: '/users/carloscuesta/repos'
 })
 
-export const fetchUserInformation = () => githubApiClient<UserInformation>({
+export const fetchUserInformation = () => githubApiClient({
   mutator: transformUserInformation,
   url: '/users/carloscuesta'
 })

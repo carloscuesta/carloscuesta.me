@@ -37,4 +37,18 @@ describe('callApi', () => {
       expect(response).toEqual(stubs.response)
     })
   })
+
+  describe('when callApi throws an error', () => {
+    beforeAll(() => {
+      fetch.mockReject(new Error('Test error'))
+    })
+
+    it('should throw an error', async () => {
+      const request = stubs.request()
+
+      await expect(async () => {
+        await callApi(request)
+      }).rejects.toThrowError()
+    })
+  })
 })

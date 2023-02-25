@@ -1,10 +1,10 @@
-export type callApiOptions = {
-  mutator: (data: any) => any,
+export type callApiOptions<Response, Data> = {
+  mutator: (data: Response) => Data,
   requestOptions?: RequestInit,
   url: string
 }
 
-const callApi = async (options: callApiOptions): Promise<any> => {
+const callApi = async <Response, Data>(options: callApiOptions<Response, Data>) => {
   try {
     const response = await fetch(options.url, options.requestOptions)
     const data = await response.json()
@@ -12,7 +12,7 @@ const callApi = async (options: callApiOptions): Promise<any> => {
 
     return dataTransformed
   } catch (exception) {
-    console.error('ERROR @ callApi:', exception)
+    throw Error('ERROR @ callApi: ' + exception)
   }
 }
 
