@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/carloscuesta/carloscuesta.me#readme",
   "dependencies": {
-    "@vercel/analytics": "^0.1.10",
+    "@vercel/analytics": "^0.1.11",
     "date-fns": "^2.29.3",
     "disqus-react": "^1.1.5",
     "gray-matter": "^4.0.3",
