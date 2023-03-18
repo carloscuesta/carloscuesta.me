@@ -29,6 +29,20 @@ class Document extends NextDocument {
           <link rel='icon' type='image/png' sizes='32x32' href='/favicon/favicon-32x32.png' />
           <link rel='icon' type='image/png' sizes='96x96' href='/favicon/favicon-96x96.png' />
           <link rel='manifest' href='/manifest.json' />
+          <link
+            as='font'
+            crossOrigin='anonymous'
+            href='/fonts/inter.var.latin.woff2'
+            rel='preload'
+            type='font/woff2'
+          />
+          <link
+            as='font'
+            crossOrigin='anonymous'
+            href='/fonts/inter.var.latin.italic.woff2'
+            rel='preload'
+            type='font/woff2'
+          />
         </Head>
         <body>
           <Main />
