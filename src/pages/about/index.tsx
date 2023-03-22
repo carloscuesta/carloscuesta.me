@@ -4,7 +4,6 @@ import PageTitle from 'src/components/shared/PageTitle'
 import Wrapper from 'src/components/shared/Wrapper'
 import Experience from 'src/components/pages/about/Experience'
 import Online from 'src/components/pages/about/Online'
-import Education from 'src/components/pages/about/Education'
 import WhoAmI from 'src/components/pages/about/WhoAmI'
 
 const About = () => (
