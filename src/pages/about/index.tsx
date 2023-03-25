@@ -5,6 +5,7 @@ import Wrapper from 'src/components/shared/Wrapper'
 import Experience from 'src/components/pages/about/Experience'
 import Online from 'src/components/pages/about/Online'
 import WhoAmI from 'src/components/pages/about/WhoAmI'
+import Travelling from 'src/components/pages/about/Travelling'
 
 const About = () => (
   <>
@@ -30,6 +31,7 @@ const About = () => (
         <WhoAmI />
         <Online />
         <Experience />
+        <Travelling />
       </Wrapper>
     </main>
   </>
