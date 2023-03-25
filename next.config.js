@@ -3,4 +3,15 @@ const withPWA = require('next-pwa')({
   dest: 'public'
 })
 
-module.exports = withPWA({})
+module.exports = withPWA({
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/carloscuesta/image/upload/**'
+      }
+    ]
+  }
+})
