@@ -1,7 +1,5 @@
 import Link from 'next/link'
 
-import styles from './styles.module.css'
-
 type Props = {
   subTitle?: string,
   title: string,
@@ -9,29 +7,19 @@ type Props = {
 }
 
 const SectionTitle = (props: Props) => (
-  <div
-    className={[
-      styles.container,
-      props.viewAllLink ? styles.containerWithLink : undefined
-    ].join(' ')}
-  >
-    <div>
-      <h2
-        className={[
-          styles.sectionTitle,
-          !props.subTitle ? styles.sectionTitleMargin : undefined
-        ].join(' ')}
-      >
+  <div className='flex items-end justify-between my-6'>
+    <div className={props.subTitle ? '' : 'space-y-2'}>
+      <h2 className='font-bold text-lg'>
         {props.title}
       </h2>
       {props.subTitle &&
-        <h3 className={styles.sectionSubtitle}>
+        <h3 className='text-lg opacity-70'>
           {props.subTitle}
         </h3>}
     </div>
 
     {props.viewAllLink &&
-      <Link href={props.viewAllLink}>
+      <Link className='text-sm underline-offset-2 underline opacity-70 hover:opacity-100 transition-opacity' href={props.viewAllLink}>
         View all
       </Link>}
   </div>
