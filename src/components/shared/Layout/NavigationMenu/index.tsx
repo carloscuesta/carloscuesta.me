@@ -1,39 +1,39 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import Wrapper from 'src/components/shared/Wrapper'
-import MenuLink from './MenuLink'
+import Links from './Links'
 import Hamburger from './Hamburger'
-import styles from './styles.module.css'
 
 const NavigationMenu = () => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false)
 
   return (
-    <header className={`${styles.header} ${isHamburgerOpen ? styles.disableBackdropFilter : ''}`}>
+    <header className={`z-10 py-2 sm:py-3 shadow-md sticky top-0 bg-white/75 dark:bg-neutral-900/75 ${isHamburgerOpen ? '' : 'backdrop-blur-xl'}`}>
       <Wrapper>
-        <nav className={styles.navigation}>
-          <Link href='/' className={styles.logo}>
+        <nav className='flex justify-between items-center font-semibold'>
+          <Link href='/' className='grid grid-flow-col items-center hover:opacity-60 transition-opacity'>
             <>
-              <img
+              <Image
                 alt='Carlos Cuesta'
-                className={styles.avatar}
-                height={36}
+                className='rounded-full mr-3 opacity-100'
+                height={32}
                 src='https://res.cloudinary.com/carloscuesta/image/upload/s--g0fD72tH--/c_scale,q_100,w_72/v1594588508/carloscuesta.jpg'
-                width={36}
+                width={32}
               />
 
-              Carlos Cuesta
+              <span className="font-bold">Carlos Cuesta</span>
             </>
           </Link>
 
-          <ul className={styles.links}>
-            <li><MenuLink href='/blog' text='Blog' /></li>
-
-            <li><MenuLink href='/about' text='About' /></li>
-
-            <li><MenuLink href='/opensource' text='Open Source' /></li>
-          </ul>
+          <Links
+            links={[
+              { href: '/about', text: 'About' },
+              { href: '/blog', text: 'Blog' },
+              { href: '/opensource', text: 'Open Source' }
+            ]}
+          />
 
           <Hamburger isOpen={isHamburgerOpen} setIsOpen={setIsHamburgerOpen} />
         </nav>

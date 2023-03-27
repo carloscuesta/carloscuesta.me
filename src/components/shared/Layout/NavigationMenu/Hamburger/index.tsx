@@ -1,10 +1,9 @@
 import { useEffect } from 'react'
 import Router from 'next/router'
 
-import MenuLink from '../MenuLink'
+import Links from '../Links'
 import OpenIcon from './OpenIcon'
 import CloseIcon from './CloseIcon'
-import styles from './styles.module.css'
 
 type Props = { isOpen: boolean, setIsOpen: (isOpen: boolean) => void }
 
@@ -22,44 +21,36 @@ const Hamburger = (props: Props) => {
   }, [setIsOpen])
 
   return (
-    <div className={styles.hamburger}>
+    <div className='sm:hidden'>
       <button
         aria-label='Open navigation menu'
-        className={styles.button}
         onClick={() => setIsOpen(true)}
+        className='fill-black dark:fill-white p-2'
       >
         <OpenIcon />
       </button>
 
       {props.isOpen &&
-        <nav className={styles.menu}>
-          <div className={styles.closeContainer}>
+        <nav className='fixed bg-white dark:bg-black bottom-0 left-0 right-0 top-0'>
+          <div className='absolute right-0 py-2 px-6'>
             <button
               aria-label='Close navigation menu'
-              className={styles.button}
               onClick={() => setIsOpen(false)}
+              className='fill-black dark:fill-white p-2'
             >
               <CloseIcon />
             </button>
           </div>
 
-          <ul className={styles.links}>
-            <li><MenuLink href='/' text='Home' /></li>
-            <li><MenuLink href='/blog' text='Blog' /></li>
-            <li><MenuLink href='/about' text='About' /></li>
-            <li>
-              <MenuLink
-                href='/opensource'
-                text='Open Source'
-              />
-            </li>
-            <li>
-              <MenuLink
-                href='https://twitter.com/intent/follow?screen_name=crloscuesta'
-                text='Twitter'
-              />
-            </li>
-          </ul>
+          <Links 
+            isHamburguer
+            links={[
+              { href: '/', text: 'Home' },
+              { href: '/about', text: 'About' },
+              { href: '/blog', text: 'Blog' },
+              { href: '/opensource', text: 'Open Source' },
+            ]} 
+          />
         </nav>}
     </div>
   )
