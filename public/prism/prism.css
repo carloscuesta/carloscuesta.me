@@ -15,10 +15,14 @@ code[class*=language-], pre[class*=language-] {
 }
 
 pre, pre[class*=language-] {
+  font-family: Operator Mono, Fira Code, Consolas, monospace;
+  font-size: 1.25rem;
   padding: 1rem;
   margin: .5rem 0;
   overflow: auto;
-  border-radius: .35rem
+  border-radius: .35rem;
+  margin-top: 1.3333333em;
+  margin-bottom: 1.3333333em;
 }
 
 .token.bold, .token.important {
@@ -39,8 +43,8 @@ pre, pre[class*=language-] {
 
 /* Syntax Highlighting */
 
-:not(pre)>code[class*=language-], pre, pre[class*=language-] {
-  background: var(--codeBackground);
+:not(pre)>code[class*=language-], pre, .prose pre, pre[class*=language-] {
+  background: #1d1f21;
   color: #f8f8f2
 }
 

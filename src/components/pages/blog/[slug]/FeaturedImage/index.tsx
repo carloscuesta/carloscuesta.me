@@ -1,5 +1,3 @@
-import styles from './styles.module.css'
-
 type Props = {
   image: string,
   lqpiImage: string,
@@ -7,13 +5,15 @@ type Props = {
 }
 
 const FeaturedImage = (props: Props) => (
-  <header className={styles.header}>
+  <header className='relative'>
     <img
       alt={props.title}
-      className={`lazyload ${styles.image}`}
+      className='rounded-lg my-8 lazyload lazy-blur'
       data-src={props.image}
       title={props.title}
       src={props.lqpiImage}
+      width={752}
+      height={376}
     />
   </header>
 )

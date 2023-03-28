@@ -10,7 +10,6 @@ import Header from 'src/components/pages/blog/[slug]/Header'
 import FeaturedImage from 'src/components/pages/blog/[slug]/FeaturedImage'
 import NewsletterSubscribe from 'src/components/pages/blog/[slug]/NewsletterSubscribe'
 import ShareLinks from 'src/components/pages/blog/[slug]/ShareLinks'
-import DisqusComments from 'src/components/pages/blog/[slug]/DisqusComments'
 
 const Article = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const canonicalUrl = `https://carloscuesta.me/blog/${props.post.slug}`
@@ -61,23 +60,37 @@ const Article = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
       <Head>
         <link rel='preload' href='/prism/prism.css' as='style' />
         <link href='/prism/prism.css' rel='stylesheet' type='text/css' />
+        <style>{`
+          .prose h1:hover .headingLink,
+          .prose h2:hover .headingLink,
+          .prose h3:hover .headingLink,
+          .prose h4:hover .headingLink,
+          .prose h5:hover .headingLink,
+          .prose h6:hover .headingLink {
+            opacity: 1;
+          }
+        `}
+        </style>
       </Head>
-
-      <FeaturedImage
-        image={props.post.images.featured.src}
-        lqpiImage={props.post.images.preview.lqpi}
-        title={props.post.title}
-      />
 
       <main>
         <Wrapper isCompressed>
+          <FeaturedImage
+            image={props.post.images.featured.src}
+            lqpiImage={props.post.images.preview.lqpi}
+            title={props.post.title}
+          />
+
           <Header
             datePublished={props.post.datePublished}
             readingTime={props.post.readingTime}
             title={props.post.title}
           />
 
-          <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
+          <div 
+            dangerouslySetInnerHTML={{ __html: props.post.html }}
+            className='prose dark:prose-invert prose-lg max-w-full relative prose-headings:scroll-mt-16 dark:prose-headings:font-semibold prose-img:rounded-lg'
+          />
 
           <ShareLinks
             canonicalUrl={canonicalUrl}
@@ -86,14 +99,6 @@ const Article = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
           />
 
           <NewsletterSubscribe />
-
-          <hr />
-
-          <DisqusComments
-            canonicalUrl={canonicalUrl}
-            postDisqusIdentifier={props.post.disqusIdentifier}
-            postTitle={props.post.title}
-          />
         </Wrapper>
       </main>
     </article>

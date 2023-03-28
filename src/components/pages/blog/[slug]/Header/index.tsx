@@ -1,5 +1,3 @@
-import styles from './styles.module.css'
-
 type Props = {
   datePublished: { formatInWords: string, formatDate: string, value: string },
   readingTime: string,
@@ -7,14 +5,14 @@ type Props = {
 }
 
 const Header = (props: Props) => (
-  <header className={styles.header}>
-    <h1 className={styles.title}>{props.title}</h1>
+  <header className='pb-4 mb-6'>
+    <h1 className='text-4xl font-extrabold mb-2'>{props.title}</h1>
 
-    <time className={styles.time} dateTime={props.datePublished.value}>
+    <time className='uppercase text-sm opacity-70' dateTime={props.datePublished.value}>
       {props.datePublished.formatDate}
     </time>
 
-    <span className={styles.readingTime}>{props.readingTime}</span>
+    <span className='uppercase text-sm opacity-70 before:content-["•"] before:px-1'>{props.readingTime}</span>
   </header>
 )
 

@@ -36,7 +36,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
         content: {
           type: 'element',
           tagName: 'span',
-          properties: { className: 'headingLink ' },
+          properties: { className: 'headingLink absolute left-0 -translate-x-full pr-2 opacity-0 text-neutral-500' },
           children: [{ type: 'text', value: '#' }]
         }
       }
