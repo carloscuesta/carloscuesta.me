@@ -1,7 +1,7 @@
 export const props = {
   post: {
     dateModified: '2019-12-15 10:00',
-    datePublished: { formatInWords: 'A year ago', formatDate: '15/12/2019 10:00', value: '2019-12-15 10:00' },
+    datePublished: { formatInWords: 'A year ago', formatDate: '15/12/2019 10:00', value: '2019-12-15 10:00', formatMonthDay: '15 Dec' },
     disqusIdentifier: 'a-disqus-identifier',
     excerpt: 'This is the post excerpt that will be shown.',
     html: '<h1>post-html</h1>',

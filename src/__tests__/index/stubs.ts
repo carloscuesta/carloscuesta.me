@@ -4,6 +4,7 @@ export const posts = [
     datePublished: {
       formatInWords: '9 months ago',
       formatDate: '01 October 2019',
+      formatMonthDay: '01 Oct',
       value: '2019-10-01 22:15'
     },
     disqusIdentifier: '5bc9ff9949ac5006c0a84f00',
@@ -26,6 +27,7 @@ export const posts = [
     datePublished: {
       formatInWords: '9 months ago',
       formatDate: '12 September 2019',
+      formatMonthDay: '12 Sep',
       value: '2019-09-12 17:00'
     },
     disqusIdentifier: '5d78d0fcf942665cd6becd9a',
@@ -48,6 +50,7 @@ export const posts = [
     datePublished: {
       formatInWords: 'over 1 year ago',
       formatDate: '16 October 2018',
+      formatMonthDay: '16 Oct',
       value: '2018-10-16 12:10'
     },
     disqusIdentifier: '5b6c646126d36606d1805ab3',
@@ -70,6 +73,7 @@ export const posts = [
     datePublished: {
       formatInWords: 'almost 2 years ago',
       formatDate: '19 September 2018',
+      formatMonthDay: '19 Sep',
       value: '2018-09-19 09:53'
     },
     disqusIdentifier: '5ae59dcdb3211a06522ad69b',
@@ -92,6 +96,7 @@ export const posts = [
     datePublished: {
       formatInWords: 'over 2 years ago',
       formatDate: '30 October 2017',
+      formatMonthDay: '30 Oct',
       value: '2017-10-30 10:00'
     },
     disqusIdentifier: '23',
@@ -114,6 +119,7 @@ export const posts = [
     datePublished: {
       formatInWords: 'over 2 years ago',
       formatDate: '18 October 2017',
+      formatMonthDay: '18 Oct',
       value: '2017-10-18 10:15'
     },
     disqusIdentifier: '59cfbaac613ac70679db193e',

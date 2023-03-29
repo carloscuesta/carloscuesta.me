@@ -9,6 +9,7 @@ export const post = {
   datePublished: {
     formatInWords: '9 months ago',
     formatDate: '01 October 2019',
+    formatMonthDay: '01 Oct',
     value: '2019-10-01 22:15'
   },
   readingTime: '1 min',

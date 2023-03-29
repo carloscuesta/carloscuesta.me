@@ -4,7 +4,12 @@ import type { VFile } from 'vfile'
 
 export type Post = {
   dateModified: string,
-  datePublished: { formatInWords: string, formatDate: string, value: string },
+  datePublished: { 
+    formatInWords: string, 
+    formatDate: string, 
+    formatMonthDay: string, 
+    value: string 
+  },
   disqusIdentifier: string,
   excerpt: string,
   html: string,
@@ -35,6 +40,10 @@ export const transformPost = (payload: Payload): Post => ({
     formatDate: format(
       new Date(payload.data.datePublished),
       'dd MMMM y'
+    ),
+    formatMonthDay: format(
+      new Date(payload.data.datePublished),
+      'MMM dd',
     ),
     value: payload.data.datePublished
   },
