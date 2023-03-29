@@ -2,50 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-  html {
-    --background: #000000;
-    --backgroundElevation: #292929;
-    --backgroundWithTransparency: rgba(18, 18, 18, 0.75);
-    --backgroundSurface: #121212;
-    --primary: #FF5252;
-    --secondary: #00B0FF;
-    --shadowColor: rgba(41, 41, 41, 0.16);
-    --text: #FFFFFF;
-    --textOnPrimary: #FFFFFF;
-    --textOnSecondary: #FFFFFF;
-    --textSecondary: #93A6AF;
-    --codeBackground: #1d1f21;
-    --languageJavaScript: #FBDD51;
-    --languageTypeScript: #3178c6;
-    --languageShell: #89E051;
-    --languageCss: #7e57c2;
-    --languageHtml: #ff7043;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  html {
-    --background: #FFFFFF;
-    --backgroundElevation: #FFFFFF;
-    --backgroundWithTransparency: rgba(255, 255, 255, 0.75);
-    --backgroundSurface: #F1F6F8;
-    --primary: #FF5252;
-    --secondary: #0086ff;
-    --shadowColor: rgba(0, 0, 0, 0.16);
-    --text: #000000;
-    --textOnPrimary: #FFFFFF;
-    --textOnSecondary: #FFFFFF;
-    --textSecondary: #6b7280;
-    --codeBackground: #1d1f21;
-    --languageJavaScript: #FBDD51;
-    --languageTypeScript: #3178c6;
-    --languageShell: #89E051;
-    --languageCss: #7e57c2;
-    --languageHtml: #ff7043;
-  }
-}
-
 @font-face {
   font-family: Inter;
   font-style: normal;
@@ -71,236 +27,35 @@ html {
   font-family: "Inter", Avenir Next, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
 
-a {
-  color: var(--secondary);
-  text-decoration: none;
+.lazy-blur {
+  transition: all 200ms ease-in-out;
+  filter: blur(1px);
 }
 
-a:hover {
-  text-decoration-color: var(--secondary);
-  text-decoration-thickness: .115em;
-  text-decoration: underline;
-  text-underline-offset: 1px;
+.lazyloaded {
+  filter: blur(0);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.5;
+.language-javascript {
+  border-color: #fbdd51;
 }
 
-h1 {
-  font-size: 3em;
-  font-weight: 700;
+.language-typescript {
+  border-color: #3178c6;
 }
 
-h2 {
-  font-size: 2.5em;
+.language-shell {
+  border-color: #89e051;
 }
 
-h3 {
-  font-size: 2em;
+.language-css {
+  border-color: #7e57c2;
 }
 
-h4 {
-  font-size: 1.5em;
-}
-
-h5 {
-  font-size: 1.25em;
-}
-
-h6 {
-  font-size: 1em;
-}
-
-b,
-strong {
-  font-weight: 600;
-}
-
-p {
-  font-weight: 400;;
-}
-
-section {
-  margin-bottom: 2em;
-}
-
-li {
-  margin: .5em;
-}
-
-blockquote {
-  border-left: var(--textSecondary) .35em solid;
-  box-sizing: border-box;
-  color: var(--textSecondary);
-  margin: 1.5em 0;
-  padding: .25em 0 .25em 2em;
-  font-style: italic;
-  font-size: 1em;
-}
-
-code {
-  font-family: Operator Mono, Fira Code, Consolas, monospace;
-  white-space: pre-wrap;
-}
-
-hr {
-  background-color: var(--backgroundSurface);
-  border: none;
-  height: 1px;
-  margin: 1.5em 0;
-}
-
-.postDetail {
-  font-size: 18px;
-}
-
-.postDetail img {
-  max-width: 100%;
-}
-
-.postDetail b, strong {
-  font-weight: 700;
-}
-
-.postDetail header {
-  margin-bottom: 1em;
-}
-
-.postDetail h1,
-.postDetail h2,
-.postDetail h3,
-.postDetail h4,
-.postDetail h5,
-.postDetail h6 {
-  line-height: 1.15;
-  position: relative;
-  scroll-margin-top: 4.5rem;
-}
-
-.postDetail .headingLink {
-  left: 0;
-  opacity: 0;
-  padding-right: 1rem;
-  position: absolute;
-  top: 0;
-  transform: translateX(-100%);
-}
-
-.postDetail h1:hover .headingLink,
-.postDetail h2:hover .headingLink,
-.postDetail h3:hover .headingLink,
-.postDetail h4:hover .headingLink,
-.postDetail h5:hover .headingLink,
-.postDetail h6:hover .headingLink {
-  opacity: 1;
-  outline: none;
-}
-
-.postDetail .responsiveTable {
-  overflow-x: auto;
-}
-
-.postDetail table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.postDetail th {
-  padding: 1rem;
-}
-
-.postDetail td {
-  padding: .5rem 1rem;
-  border: 1px solid var(--backgroundSurface);
-}
-
-.postDetail tr:nth-child(even) {
-  border-top: 1px solid var(--backgroundSurface);
-  border-bottom: 1px solid var(--backgroundSurface);
-}
-
-.postDetail th {
-  text-align: left;
-  background-color: var(--backgroundSurface);
-}
-
-@media (max-width: 768px) {
-  .postDetail h1 {
-    font-size: 2em;
-  }
-
-  .headingLink {
-    display: none;
-  }
-}
-
-/* Flexboxgrid.css critical */
-
-.row {
-  box-sizing: border-box;
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-right: -.5rem;
-  margin-left: -.5rem;
-}
-
-.col-xs-12 {
-  box-sizing: border-box;
-  flex: 0 0 auto;
-  padding-right: .5rem;
-  padding-left: .5rem;
-}
-
-.col-xs-12 {
-  flex-basis: 100%;
-  max-width: 100%;
-}
-
-.middle-xs {
-  align-items: center;
-}
-
-.between-xs {
-  justify-content: space-between;
-}
-
-@media only screen and (min-width: 48em){
-  .col-sm-6 {
-    box-sizing: border-box;
-    flex: 0 0 auto;
-    padding-right: .5rem;
-    padding-left: .5rem;
-  }
-
-  .col-sm-6 {
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-}
-
-@media only screen and (min-width: 64em){
-  .col-md-4 {
-    box-sizing: border-box;
-    flex: 0 0 auto;
-    padding-right: .5rem;
-    padding-left: .5rem;
-  }
-
-  .col-md-4 {
-    flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
-  }
+.language-html {
+  border-color: #ff7043
 }
