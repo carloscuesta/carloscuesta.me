@@ -15,7 +15,7 @@ const colors = {
 }
 
 const Label = (props: Props) => (
-  <div className='flex justify-center font-semibold px-4 py-2 text-sm opacity-100 rounded-full text-gray-700 bg-transparent border border-gray-400 border-opacity-30 dark:border-gray-700 dark:text-gray-200 items-center'>
+  <div className='flex justify-center font-semibold px-4 py-2 text-sm opacity-100 rounded-full text-neutral-700 bg-transparent border border-neutral-400 border-opacity-30 dark:border-neutral-700 dark:text-neutral-200 items-center'>
     <div className="flex relative w-2 h-2 mr-2">
       <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${colors[props.color]['500']}`}></span>
       <span className={`relative inline-flex rounded-full h-2 w-2 ${colors[props.color]['500']}`}></span>
