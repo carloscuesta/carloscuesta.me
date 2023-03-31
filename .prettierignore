@@ -1,0 +1,7 @@
+.next
+.vercel
+out
+
+public/workbox-*.js
+public/sw.js
+public/*.map
