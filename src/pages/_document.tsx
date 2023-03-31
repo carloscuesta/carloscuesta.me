@@ -44,7 +44,7 @@ class Document extends NextDocument {
             type='font/woff2'
           />
         </Head>
-        <body>
+        <body className="bg-white dark:bg-[rgb(5,5,5)] text-neutral-800 dark:text-neutral-200">
           <Main />
           <NextScript />
           <script dangerouslySetInnerHTML={{ __html: trackingCode }} />
