@@ -141,6 +141,22 @@
           "react/prop-types": 0,
           "@next/next/no-css-tags": 0
         }
+      },
+      {
+        "files": [
+          "*.tsx"
+        ],
+        "rules": {
+          "react/no-unknown-property": [
+            2,
+            {
+              "ignore": [
+                "jsx",
+                "global"
+              ]
+            }
+          ]
+        }
       }
     ],
     "settings": {
