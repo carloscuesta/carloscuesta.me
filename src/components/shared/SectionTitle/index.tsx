@@ -13,7 +13,7 @@ const SectionTitle = (props: Props) => (
         {props.title}
       </h2>
       {props.subTitle &&
-        <h3 className='text-lg opacity-70'>
+        <h3 className='text-md opacity-70'>
           {props.subTitle}
         </h3>}
     </div>
