@@ -5,15 +5,16 @@ import Image from 'next/image'
 import Wrapper from 'src/components/shared/Wrapper'
 import Links from './Links'
 import Hamburger from './Hamburger'
+import ThemeSelector from './ThemeSelector'
 
 const NavigationMenu = () => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false)
 
   return (
-    <header className={`z-10 py-2 sm:py-3 shadow-md sticky top-0 bg-white/75 dark:bg-neutral-900/75 ${isHamburgerOpen ? '' : 'backdrop-blur-xl'}`}>
+    <header className={`z-10 py-2 sm:py-3 border-b-[1px] border-solid border-neutral-100 dark:border-neutral-900 sticky top-0 bg-white/75 dark:bg-black/75 ${isHamburgerOpen ? '' : 'backdrop-blur-xl'}`}>
       <Wrapper>
         <nav className='flex justify-between items-center font-semibold'>
-          <Link href='/' className='grid grid-flow-col items-center hover:opacity-60 transition-opacity'>
+          <Link href='/' className='grid grid-flow-col items-center'>
             <>
               <Image
                 alt='Carlos Cuesta'
@@ -27,15 +28,22 @@ const NavigationMenu = () => {
             </>
           </Link>
 
-          <Links
-            links={[
-              { href: '/about', text: 'About' },
-              { href: '/blog', text: 'Blog' },
-              { href: '/opensource', text: 'Open Source' }
-            ]}
-          />
+          <div className='flex flex-row-reverse gap-3 sm:gap-4 sm:flex-row items-center'>
+            <Links
+              links={[
+                { href: '/about', text: 'About' },
+                { href: '/blog', text: 'Blog' },
+                { href: '/opensource', text: 'Open Source' }
+              ]}
+            />
 
-          <Hamburger isOpen={isHamburgerOpen} setIsOpen={setIsHamburgerOpen} />
+            <Hamburger
+              isOpen={isHamburgerOpen}
+              setIsOpen={setIsHamburgerOpen}
+            />
+
+            <ThemeSelector />
+          </div>
         </nav>
       </Wrapper>
     </header>
