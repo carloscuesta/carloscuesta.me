@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/carloscuesta/carloscuesta.me#readme",
   "dependencies": {
+    "@headlessui/react": "1.7.13",
     "@vercel/analytics": "^0.1.11",
     "date-fns": "^2.29.3",
     "disqus-react": "^1.1.5",
