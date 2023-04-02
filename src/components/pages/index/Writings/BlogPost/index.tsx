@@ -1,43 +1,38 @@
 import Link from 'next/link'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'
-import styles from './styles.module.css'
 
 type Props = {
   post: PostPreview
 }
 
 const BlogPost = (props: Props) => (
-  <div className={`col-xs-12 col-sm-6 col-md-4 ${styles.postContainer}`}>
+  <div className="w-full sm:w-1/2 md:w-1/3 flex-none snap-start px-2 py-2">
     <Link
       href={`/blog/${props.post.slug}`}
-      className={styles.post}
       title={props.post.title}
+      className='sm:flex rounded-lg h-full outline-none focus-visible:ring-2 ring-offset-4'
     >
       <article>
         <img
-          alt={props.post.title}
-          className={`lazyload ${styles.postImage}`}
+          className='w-full lazyload rounded-lg mb-3'
           data-src={props.post.images.preview.src}
           src={props.post.images.preview.lqpi}
         />
 
-        <div className={styles.postContent}>
-          <header className={styles.postTitle}>
+        <div className='grid gap-2'>
+          <header className='font-semibold'>
             {props.post.title}
           </header>
 
-          <time className={styles.postPublishedAt} dateTime={props.post.datePublished.value}>
-            {props.post.datePublished.formatInWords}
-          </time>
-
-          <p className={styles.postExcerpt}>
+          <p className='opacity-70 text-sm'>
             {props.post.excerpt}
           </p>
         </div>
       </article>
     </Link>
   </div>
+  
 )
 
 export default BlogPost

@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { join } from 'path'
+import truncate from 'lodash.truncate'
 import matter from 'gray-matter'
 import { unified } from 'unified'
 import remarkParse from 'remark-parse'
@@ -62,7 +63,10 @@ export const fetchPosts = async (): Promise<Array<PostPreview>> => {
     })
     .map((post) => ({
       datePublished: post.datePublished,
-      excerpt: post.excerpt,
+      excerpt: truncate(post.excerpt, {
+        length: 100,
+        separator: ' '
+      }),
       images: post.images,
       slug: post.slug,
       title: post.title

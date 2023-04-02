@@ -31,13 +31,16 @@
   "homepage": "https://github.com/carloscuesta/carloscuesta.me#readme",
   "dependencies": {
     "@headlessui/react": "1.7.13",
+    "@types/lodash.truncate": "4.4.7",
     "@vercel/analytics": "^0.1.11",
+    "add": "2.0.6",
     "date-fns": "^2.29.3",
     "disqus-react": "^1.1.5",
     "gray-matter": "^4.0.3",
     "lazysizes": "^5.3.2",
     "lodash.debounce": "^4.0.8",
     "lodash.groupby": "^4.6.0",
+    "lodash.truncate": "4.4.2",
     "next": "^13.3.0",
     "next-pwa": "^5.6.0",
     "next-seo": "^6.0.0",
@@ -57,7 +60,9 @@
     "remark-parse": "^10.0.1",
     "remark-rehype": "^10.1.0",
     "remark-toc": "^8.0.1",
-    "unified": "^10.1.2"
+    "tailwind-scrollbar-hide": "1.1.7",
+    "unified": "^10.1.2",
+    "yarn": "1.22.19"
   },
   "devDependencies": {
     "@lhci/cli": "^0.11.0",
