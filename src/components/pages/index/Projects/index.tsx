@@ -7,16 +7,16 @@ type Props = {
   repositories: Repository[]
 }
 
-const OpenSource = (props: Props) => (
+const Projects = (props: Props) => (
   <section>
     <Wrapper>
       <SectionTitle
-        title='Open Source'
-        subTitle='Featured open source projects.'
+        title='Projects'
+        subTitle='Selected open source projects.'
         viewAllLink='/opensource'
       />
 
-      <div className='row'>
+      <div className='grid gap-x-4 gap-y-6 sm:grid-cols-2 md:grid-cols-3'>
         {props.repositories.map((repository) => (
           <Project repository={repository} key={repository.name} />
         ))}
@@ -25,4 +25,4 @@ const OpenSource = (props: Props) => (
   </section>
 )
 
-export default OpenSource
+export default Projects

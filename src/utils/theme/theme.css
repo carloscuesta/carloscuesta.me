@@ -40,22 +40,22 @@ html {
   filter: blur(0);
 }
 
-.language-javascript {
-  border-color: #fbdd51;
+.language-project-javascript {
+  background-color: #fbdd51;
 }
 
-.language-typescript {
-  border-color: #3178c6;
+.language-project-typescript {
+  background-color: #3178c6;
 }
 
-.language-shell {
-  border-color: #89e051;
+.language-project-shell {
+  background-color: #89e051;
 }
 
-.language-css {
-  border-color: #7e57c2;
+.language-project-css {
+  background-color: #7e57c2;
 }
 
-.language-html {
-  border-color: #ff7043
+.language-project-html {
+  background-color: #ff7043
 }
