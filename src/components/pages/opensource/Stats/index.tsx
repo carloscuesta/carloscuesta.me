@@ -1,4 +1,3 @@
-import SectionTitle from 'src/components/shared/SectionTitle'
 import Stat from './Stat'
 
 type Props = {
@@ -8,14 +7,10 @@ type Props = {
 }
 
 const Stats = (props: Props) => (
-  <section>
-    <SectionTitle title='Stats' />
-
-    <div className='row'>
-      <Stat label='GitHub Stars' value={props.stars} />
-      <Stat label='GitHub Followers' value={props.followers} />
-      <Stat label='NPM Downloads (Last year)' value={props.packageDownloads} />
-    </div>
+  <section className='grid sm:grid-flow-col sm:grid-cols-3 gap-4'>
+    <Stat label='GitHub Stars' value={props.stars} />
+    <Stat label='GitHub Followers' value={props.followers} />
+    <Stat label='NPM Downloads' value={props.packageDownloads} unit='/ year' />
   </section>
 )
 
