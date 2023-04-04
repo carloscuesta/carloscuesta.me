@@ -1,6 +1,5 @@
 import Wrapper from 'src/components/shared/Wrapper'
 import SectionTitle from 'src/components/shared/SectionTitle'
-import styles from './styles.module.css'
 
 const Contact = () => (
   <section>
@@ -10,15 +9,14 @@ const Contact = () => (
         title='Contact'
       />
 
-      <div className={styles.wrapper}>
-        <p className={styles.text}>
+      <div>
+        <p>
           Feel free to send me an email if you&#39;re looking for a front end engineer,
           have a question or just want to say hi! 🙋‍♂️
         </p>
 
-        <p className={styles.text}>
+        <p>
           <a
-            className={styles.button}
             href='mailto:hi@carloscuesta.me'
             rel='noopener noreferrer'
             target='_blank'
