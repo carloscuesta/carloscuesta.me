@@ -12,4 +12,5 @@ export const transformDownloadsCount = (
   return packages
     .map((pkg) => pkg.downloads)
     .reduce((memo, value) => memo + value, 0)
+    .toLocaleString()
 }

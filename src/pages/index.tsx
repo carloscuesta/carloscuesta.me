@@ -47,7 +47,7 @@ export const getStaticProps: GetStaticProps<{
   return {
     props: {
       posts: posts.slice(0, 6),
-      repositories: repositories.sort((x, y) => y.stars - x.stars).slice(0, 6)
+      repositories: repositories.sort((x, y) => y.stars.value - x.stars.value).slice(0, 6)
     },
     revalidate: 3600
   }

@@ -22,9 +22,7 @@ const Opensource = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
         <Stats
           followers={props.userInformation.followers}
           packageDownloads={props.packageDownloads}
-          stars={props.repositories
-            .map((repository) => repository.stars)
-            .reduce((memo, value) => memo + value)}
+          stars={props.stars}
         />
 
         <Repositories repositories={props.repositories} />
@@ -34,9 +32,10 @@ const Opensource = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
 )
 
 export const getStaticProps: GetStaticProps<{
-  packageDownloads: number,
+  packageDownloads: string,
   repositories: Repository[],
   userInformation: UserInformation,
+  stars: string
 }> = async () => {
   const [repositories, userInformation, publishedPackages] = await Promise.all([
     fetchRepositories(),
@@ -48,6 +47,10 @@ export const getStaticProps: GetStaticProps<{
     props: {
       packageDownloads: await fetchDownloadsCount(publishedPackages),
       repositories,
+      stars: repositories
+        .map((repository) => repository.stars.value)
+        .reduce((memo, value) => memo + value)
+        .toLocaleString(),
       userInformation
     },
     revalidate: 3600

@@ -2,7 +2,10 @@ export type Repository = {
   description: string,
   language?: string,
   name: string,
-  stars: number,
+  stars: {
+    value: number,
+    format: string,
+  },
   url: string
 }
 
@@ -19,17 +22,20 @@ export const transformRepositories = (
     description: repo.description,
     language: repo.language,
     name: repo.name,
-    stars: repo.stargazers_count,
+    stars: {
+      value: repo.stargazers_count,
+      format: repo.stargazers_count.toLocaleString()
+    },
     url: repo.html_url
   }))
 }
 
 export type UserInformation = {
-  followers: number
+  followers: string
 }
 
 export const transformUserInformation = (
-  payload: UserInformation
+  payload: { followers: number }
 ): UserInformation => ({
-  followers: payload.followers
+  followers: payload.followers.toLocaleString()
 })

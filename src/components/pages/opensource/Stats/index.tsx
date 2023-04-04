@@ -1,9 +1,9 @@
 import Stat from './Stat'
 
 type Props = {
-  followers: number,
-  packageDownloads: number,
-  stars: number
+  followers: string,
+  packageDownloads: string,
+  stars: string
 }
 
 const Stats = (props: Props) => (
