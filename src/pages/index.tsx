@@ -5,7 +5,6 @@ import { fetchPosts } from 'src/utils/api/blog'
 import { fetchRepositories } from 'src/utils/api/github'
 import { type PostPreview } from 'src/utils/api/blog/mutators'
 import { type Repository } from 'src/utils/api/github/mutators'
-import Header from 'src/components/pages/index/Header'
 import Biography from 'src/components/pages/index/Biography'
 import Writings from 'src/components/pages/index/Writings'
 import Projects from 'src/components/pages/index/Projects'
@@ -25,7 +24,6 @@ const Index = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
         'https://www.linkedin.com/in/crloscuesta'
       ]}
     />
-    <Header />
     <main>
       <Biography />
       <Writings posts={props.posts} />
