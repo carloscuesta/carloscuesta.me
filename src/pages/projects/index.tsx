@@ -6,18 +6,18 @@ import { fetchPublishedPackages, fetchDownloadsCount } from 'src/utils/api/npm'
 import { type Repository, type UserInformation } from 'src/utils/api/github/mutators'
 import PageTitle from 'src/components/shared/PageTitle'
 import Wrapper from 'src/components/shared/Wrapper'
-import Repositories from 'src/components/pages/opensource/Repositories'
-import Stats from 'src/components/pages/opensource/Stats'
+import Repositories from 'src/components/pages/projects/Repositories'
+import Stats from 'src/components/pages/projects/Stats'
 
-const Opensource = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
+const Projects = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
     <NextSeo
-      canonical='https://carloscuesta.me/opensource'
-      title='Carlos Cuesta – Open Source'
+      canonical='https://carloscuesta.me/projects'
+      title='Carlos Cuesta – Projects'
     />
     <main>
       <Wrapper>
-        <PageTitle title='Open Source' />
+        <PageTitle title='Projects' />
 
         <Stats
           followers={props.userInformation.followers}
@@ -57,4 +57,4 @@ export const getStaticProps: GetStaticProps<{
   }
 }
 
-export default Opensource
+export default Projects

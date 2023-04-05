@@ -33,7 +33,7 @@ const NavigationMenu = () => {
               links={[
                 { href: '/about', text: 'About' },
                 { href: '/blog', text: 'Blog' },
-                { href: '/opensource', text: 'Open Source' }
+                { href: '/projects', text: 'Projects' }
               ]}
             />
 

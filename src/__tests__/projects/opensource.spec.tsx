@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer'
 
-import OpenSource, { getStaticProps } from 'src/pages/opensource'
+import Projects, { getStaticProps } from 'src/pages/projects'
 import { fetchRepositories, fetchUserInformation } from 'src/utils/api/github'
 import { fetchPublishedPackages, fetchDownloadsCount } from 'src/utils/api/npm'
 import * as stubs from './stubs'
@@ -22,8 +22,8 @@ jest.mock('src/components/pages/opensource/Stats', () => 'Stats')
 
 describe('index', () => {
   describe('page', () => {
-    it('should match opensource page', () => {
-      const wrapper = renderer.create(<OpenSource {...stubs.props} />)
+    it('should match projects page', () => {
+      const wrapper = renderer.create(<Projects {...stubs.props} />)
 
       expect(wrapper).toMatchSnapshot()
     })

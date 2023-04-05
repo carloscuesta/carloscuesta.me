@@ -13,5 +13,12 @@ module.exports = withPWA({
         pathname: '/carloscuesta/image/upload/**'
       }
     ]
-  }
+  },
+  redirects: async () => [
+    {
+      source: '/opensource',
+      destination: '/projects',
+      permanent: true
+    }
+  ]
 })
