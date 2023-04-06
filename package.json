@@ -16,7 +16,7 @@
     "test:watch": "NODE_ENV=test TZ=UTC jest --watch",
     "test:coverage": "codecov",
     "test:lighthouse": "yarn run build && lhci autorun",
-    "postbuild": "cleancss public/prism/prism.css -o public/prism/prism.min.css && mv -f public/prism/prism.min.css public/prism/prism.css",
+    "postbuild": "cleancss public/prism/prism.css -o public/prism/prism.min.css && mv -f public/prism/prism.min.css public/prism/prism.css && rm -rf public/mockServiceWorker.js",
     "prepare": "husky install"
   },
   "repository": {
@@ -163,5 +163,8 @@
   },
   "volta": {
     "node": "16.15.0"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
