@@ -1,0 +1,305 @@
+{
+  "objects": [
+    {
+      "package": {
+        "name": "react-native-error-boundary",
+        "scope": "unscoped",
+        "version": "1.2.3",
+        "description": "A simple and reusable React-Native error boundary component",
+        "keywords": [
+          "react-native",
+          "error",
+          "error boundary",
+          "error handler",
+          "componentDidCatch"
+        ],
+        "date": "2023-03-20T16:47:27.330Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-native-error-boundary",
+          "homepage": "https://github.com/carloscuesta/react-native-error-boundary",
+          "repository": "https://github.com/carloscuesta/react-native-error-boundary",
+          "bugs": "https://github.com/carloscuesta/react-native-error-boundary/issues"
+        },
+        "author": {
+          "name": "carloscuesta",
+          "email": "hi@carloscuesta.me",
+          "url": "https://carloscuesta.me",
+          "username": "carloscuesta"
+        },
+        "publisher": {
+          "username": "carloscuesta",
+          "email": "hi@carloscuesta.me"
+        },
+        "maintainers": [
+          {
+            "username": "carloscuesta",
+            "email": "hi@carloscuesta.me"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.4418566779039632,
+        "detail": {
+          "quality": 0.9868664349737546,
+          "popularity": 0.0832288021290577,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.00007375933
+    },
+    {
+      "package": {
+        "name": "gitmoji-cli",
+        "scope": "unscoped",
+        "version": "8.0.0",
+        "description": "A gitmoji client for using emojis on commit messages.",
+        "keywords": [
+          "gitmoji",
+          "emoji",
+          "carloscuesta",
+          "commit"
+        ],
+        "date": "2023-02-20T17:41:12.761Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/gitmoji-cli",
+          "homepage": "https://github.com/carloscuesta/gitmoji-cli#readme",
+          "repository": "https://github.com/carloscuesta/gitmoji-cli",
+          "bugs": "https://github.com/carloscuesta/gitmoji-cli/issues"
+        },
+        "author": {
+          "name": "carloscuesta",
+          "email": "hi@carloscuesta.me",
+          "url": "https://carloscuesta.me",
+          "username": "carloscuesta"
+        },
+        "publisher": {
+          "username": "carloscuesta",
+          "email": "hi@carloscuesta.me"
+        },
+        "maintainers": [
+          {
+            "username": "carloscuesta",
+            "email": "hi@carloscuesta.me"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.35956530782760526,
+        "detail": {
+          "quality": 0.6368664349737546,
+          "popularity": 0.14811060191089215,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.000007210624
+    },
+    {
+      "package": {
+        "name": "gitmojis",
+        "scope": "unscoped",
+        "version": "3.13.4",
+        "description": "An emoji guide for your commit messages.",
+        "keywords": [
+          "gitmoji",
+          "emoji",
+          "carloscuesta",
+          "commit"
+        ],
+        "date": "2023-01-18T18:37:28.350Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/gitmojis",
+          "homepage": "https://gitmoji.dev",
+          "repository": "https://github.com/carloscuesta/gitmoji",
+          "bugs": "https://github.com/carloscuesta/gitmoji/issues"
+        },
+        "author": {
+          "name": "carloscuesta",
+          "email": "hi@carloscuesta.me",
+          "url": "https://carloscuesta.me",
+          "username": "carloscuesta"
+        },
+        "publisher": {
+          "username": "carloscuesta",
+          "email": "hi@carloscuesta.me"
+        },
+        "maintainers": [
+          {
+            "username": "carloscuesta",
+            "email": "hi@carloscuesta.me"
+          },
+          {
+            "username": "vhoyer",
+            "email": "contact@vhoyer.dev"
+          },
+          {
+            "username": "johannchopin",
+            "email": "johannchopin@pm.me"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.34874074527450943,
+        "detail": {
+          "quality": 0.6362237558372962,
+          "popularity": 0.11773414816186839,
+          "maintenance": 0.3333333333333333
+        }
+      },
+      "searchScore": 0.000004023343
+    },
+    {
+      "package": {
+        "name": "react-native-layout-debug",
+        "scope": "unscoped",
+        "version": "1.1.1",
+        "description": "React native layout debugger.",
+        "keywords": [
+          "react-native",
+          "layout",
+          "debug",
+          "debugger"
+        ],
+        "date": "2017-01-06T23:23:17.680Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/react-native-layout-debug",
+          "homepage": "https://github.com/carloscuesta/react-native-layout-debug#readme",
+          "repository": "https://github.com/carloscuesta/react-native-layout-debug",
+          "bugs": "https://github.com/carloscuesta/react-native-layout-debug/issues"
+        },
+        "author": {
+          "name": "Carlos Cuesta",
+          "email": "crloscuesta@gmail.com",
+          "url": "https://carloscuesta.me",
+          "username": "carloscuesta"
+        },
+        "publisher": {
+          "username": "carloscuesta",
+          "email": "crloscuesta@gmail.com"
+        },
+        "maintainers": [
+          {
+            "username": "carloscuesta",
+            "email": "crloscuesta@gmail.com"
+          },
+          {
+            "username": "jlopezxs",
+            "email": "jlopezxs@gmail.com"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.34349270740334337,
+        "detail": {
+          "quality": 0.9868664349737546,
+          "popularity": 0.01897522624165765,
+          "maintenance": 0.11654699350467679
+        }
+      },
+      "searchScore": 9.1898045e-7
+    },
+    {
+      "package": {
+        "name": "hyper-materialshell",
+        "scope": "unscoped",
+        "version": "1.7.0",
+        "description": "A material design theme for Hyper based on materialshell.",
+        "keywords": [
+          "hyper",
+          "hyperterm",
+          "theme",
+          "materialshell",
+          "material design"
+        ],
+        "date": "2022-04-25T18:54:18.307Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/hyper-materialshell",
+          "homepage": "https://github.com/carloscuesta/hyper-materialshell#readme",
+          "repository": "https://github.com/carloscuesta/hyper-materialshell",
+          "bugs": "https://github.com/carloscuesta/hyper-materialshell/issues"
+        },
+        "author": {
+          "name": "carloscuesta",
+          "email": "hi@carloscuesta.me",
+          "url": "https://carloscuesta.me",
+          "username": "carloscuesta"
+        },
+        "publisher": {
+          "username": "carloscuesta",
+          "email": "hi@carloscuesta.me"
+        },
+        "maintainers": [
+          {
+            "username": "carloscuesta",
+            "email": "hi@carloscuesta.me"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.29178704327494775,
+        "detail": {
+          "quality": 0.6248870720465758,
+          "popularity": 0.09126943038962894,
+          "maintenance": 0.20679034578458544
+        }
+      },
+      "searchScore": 3.6386146e-7
+    },
+    {
+      "package": {
+        "name": "generator-starterkit",
+        "scope": "unscoped",
+        "version": "1.3.9",
+        "description": "Yeoman generator that scaffolds out a front end development starterkit.",
+        "keywords": [
+          "yeoman-generator",
+          "starterkit-generator",
+          "front end",
+          "carlos cuesta",
+          "carlos cuesta starterkit",
+          "starterkit",
+          "gulp",
+          "sass",
+          "less",
+          "babel",
+          "jade",
+          "html",
+          "critical",
+          "web",
+          "jshint"
+        ],
+        "date": "2017-04-29T13:23:39.323Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/generator-starterkit",
+          "homepage": "https://generatorstarterkit.carloscuesta.me"
+        },
+        "author": {
+          "name": "Carlos Cuesta",
+          "email": "crloscuesta@gmail.com",
+          "url": "https://github.com/carloscuesta",
+          "username": "carloscuesta"
+        },
+        "publisher": {
+          "username": "carloscuesta",
+          "email": "crloscuesta@gmail.com"
+        },
+        "maintainers": [
+          {
+            "username": "carloscuesta",
+            "email": "crloscuesta@gmail.com"
+          }
+        ]
+      },
+      "score": {
+        "final": 0.20794417555711658,
+        "detail": {
+          "quality": 0.5523920221183434,
+          "popularity": 0.0041003462713620755,
+          "maintenance": 0.11654699350467679
+        }
+      },
+      "searchScore": 9.1427266e-10
+    }
+  ],
+  "total": 6,
+  "time": "Thu Apr 06 2023 18:47:57 GMT+0000 (Coordinated Universal Time)"
+}
