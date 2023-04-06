@@ -16,7 +16,7 @@
     "test:watch": "NODE_ENV=test TZ=UTC jest --watch",
     "test:coverage": "codecov",
     "test:lighthouse": "yarn run build && lhci autorun",
-    "postbuild": "cleancss public/prism/prism.css -o public/prism/prism.min.css && mv -f public/prism/prism.min.css public/prism/prism.css",
+    "postbuild": "cleancss public/prism/prism.css -o public/prism/prism.min.css && mv -f public/prism/prism.min.css public/prism/prism.css && rm -rf public/mockServiceWorker.js",
     "prepare": "husky install"
   },
   "repository": {
@@ -80,6 +80,7 @@
     "jest-environment-jsdom": "^29.5.0",
     "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^13.2.0",
+    "msw": "1.2.1",
     "next-sitemap": "^2.5.28",
     "react-test-renderer": "^18.2.0",
     "typescript": "5.0.3"
@@ -162,5 +163,8 @@
   },
   "volta": {
     "node": "16.15.0"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
