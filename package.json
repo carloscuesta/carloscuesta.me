@@ -83,7 +83,7 @@
     "msw": "1.2.1",
     "next-sitemap": "^2.5.28",
     "react-test-renderer": "^18.2.0",
-    "typescript": "5.0.3"
+    "typescript": "5.0.4"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
