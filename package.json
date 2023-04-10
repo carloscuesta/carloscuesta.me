@@ -79,7 +79,7 @@
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
     "jest-fetch-mock": "^3.0.3",
-    "lint-staged": "^13.2.0",
+    "lint-staged": "^13.2.1",
     "msw": "1.2.1",
     "next-sitemap": "^2.5.28",
     "react-test-renderer": "^18.2.0",
