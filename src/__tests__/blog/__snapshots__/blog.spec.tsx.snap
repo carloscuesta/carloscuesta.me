@@ -28,7 +28,7 @@ exports[`blog page should match blog page 1`] = `
             className="grid grid-flow-row gap-3"
           >
             <li
-              className="-mx-3 rounded-lg font-semibold transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
+              className="-mx-3 rounded-lg transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
             >
               <a
                 className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
@@ -45,13 +45,15 @@ exports[`blog page should match blog page 1`] = `
                 >
                   01 Oct
                 </time>
-                <p>
+                <p
+                  className="font-medium"
+                >
                   JavaScript monorepos with Lerna and Yarn Workspaces
                 </p>
               </a>
             </li>
             <li
-              className="-mx-3 rounded-lg font-semibold transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
+              className="-mx-3 rounded-lg transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
             >
               <a
                 className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
@@ -68,7 +70,9 @@ exports[`blog page should match blog page 1`] = `
                 >
                   12 Dec
                 </time>
-                <p>
+                <p
+                  className="font-medium"
+                >
                   Managing React-Native crashes with Error Boundaries
                 </p>
               </a>
@@ -85,7 +89,7 @@ exports[`blog page should match blog page 1`] = `
             className="grid grid-flow-row gap-3"
           >
             <li
-              className="-mx-3 rounded-lg font-semibold transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
+              className="-mx-3 rounded-lg transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
             >
               <a
                 className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
@@ -102,13 +106,15 @@ exports[`blog page should match blog page 1`] = `
                 >
                   16 Oct
                 </time>
-                <p>
+                <p
+                  className="font-medium"
+                >
                   Scalable React Components architecture
                 </p>
               </a>
             </li>
             <li
-              className="-mx-3 rounded-lg font-semibold transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
+              className="-mx-3 rounded-lg transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
             >
               <a
                 className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
@@ -125,7 +131,9 @@ exports[`blog page should match blog page 1`] = `
                 >
                   19 Sep
                 </time>
-                <p>
+                <p
+                  className="font-medium"
+                >
                   Shipping React Native apps with Fastlane and Travis
                 </p>
               </a>
@@ -142,7 +150,7 @@ exports[`blog page should match blog page 1`] = `
             className="grid grid-flow-row gap-3"
           >
             <li
-              className="-mx-3 rounded-lg font-semibold transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
+              className="-mx-3 rounded-lg transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
             >
               <a
                 className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
@@ -159,13 +167,15 @@ exports[`blog page should match blog page 1`] = `
                 >
                   30 Oct
                 </time>
-                <p>
+                <p
+                  className="font-medium"
+                >
                   ReactiveConf 2017
                 </p>
               </a>
             </li>
             <li
-              className="-mx-3 rounded-lg font-semibold transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
+              className="-mx-3 rounded-lg transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
             >
               <a
                 className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
@@ -182,7 +192,9 @@ exports[`blog page should match blog page 1`] = `
                 >
                   18 Oct
                 </time>
-                <p>
+                <p
+                  className="font-medium"
+                >
                   Moving to DigitalOcean
                 </p>
               </a>

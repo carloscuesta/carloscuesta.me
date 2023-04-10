@@ -5,7 +5,7 @@ import { type PostPreview } from 'src/utils/api/blog/mutators'
 const Post = ({ post }: { post: PostPreview }) => (
   <li
     key={post.slug}
-    className="-mx-3 rounded-lg font-semibold transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
+    className="-mx-3 rounded-lg transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
   >
     <Link
       href={`/blog/${post.slug}`}
@@ -20,7 +20,7 @@ const Post = ({ post }: { post: PostPreview }) => (
         {post.datePublished.formatMonthDay}
       </time>
 
-      <p>{post.title}</p>
+      <p className="font-medium">{post.title}</p>
     </Link>
   </li>
 )
