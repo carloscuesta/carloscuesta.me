@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import Router from 'next/router'
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
 import Links from '../Links'
 import OpenIcon from './OpenIcon'
@@ -8,7 +9,19 @@ import CloseIcon from './CloseIcon'
 type Props = { isOpen: boolean; setIsOpen: (isOpen: boolean) => void }
 
 const Hamburger = (props: Props) => {
-  const { setIsOpen } = props
+  const { setIsOpen, isOpen } = props
+
+  useEffect(() => {
+    if (isOpen) {
+      const documentBody = document.body
+
+      disableBodyScroll(documentBody)
+
+      return () => {
+        enableBodyScroll(documentBody)
+      }
+    }
+  }, [isOpen])
 
   useEffect(() => {
     const onRouteChangeStart = () => {
