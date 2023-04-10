@@ -31,7 +31,7 @@ const Hamburger = (props: Props) => {
       </button>
 
       {props.isOpen && (
-        <nav className="fixed bottom-0 left-0 right-0 top-0 bg-white dark:bg-black">
+        <nav className="fixed bottom-0 left-0 right-0 top-0 z-10 bg-white dark:bg-black">
           <div className="absolute right-0 py-2 px-6">
             <button
               aria-label="Close navigation menu"
