@@ -46,7 +46,7 @@ Predictable code is easier to maintain and debug. In the long term, this reduces
 
 I believe that **coding is about communication**, the role of code itself is communicating with other humans before instructing the computer. This sounds a little bit _philosophical_ right 🔮?
 
-But think about your own experience as a developer; you probably spent much **more time reading** and understanding code than actually **programming** it 🧑‍💻.
+But think about your own experience as a developer; you probably spend much **more time reading** and understanding code than actually **programming** it 🧑‍💻.
 
 Writing **declarative** code, which is another principle of the _functional_ paradigm will help you to focus on describing **what** the code does, instead of _how_ it works, so code will be much more understandable for humans.
 
