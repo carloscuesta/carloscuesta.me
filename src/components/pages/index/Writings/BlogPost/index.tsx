@@ -15,6 +15,7 @@ const BlogPost = (props: Props) => (
     >
       <article>
         <img
+          alt=""
           className="lazyload mb-3 w-full rounded-lg"
           data-src={props.post.images.preview.src}
           src={props.post.images.preview.lqpi}

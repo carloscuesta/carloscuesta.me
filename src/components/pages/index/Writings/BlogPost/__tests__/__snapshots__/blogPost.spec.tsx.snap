@@ -14,6 +14,7 @@ exports[`BlogPost should match BlogPost component 1`] = `
   >
     <article>
       <img
+        alt=""
         className="lazyload mb-3 w-full rounded-lg"
         data-src="https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png"
         src="https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png"
