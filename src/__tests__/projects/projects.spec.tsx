@@ -17,8 +17,8 @@ jest.mock('src/utils/api/npm')
 */
 
 jest.mock('src/components/shared/PageTitle', () => 'PageTitle')
-jest.mock('src/components/pages/opensource/Repositories', () => 'Repositories')
-jest.mock('src/components/pages/opensource/Stats', () => 'Stats')
+jest.mock('src/components/pages/projects/Repositories', () => 'Repositories')
+jest.mock('src/components/pages/projects/Stats', () => 'Stats')
 
 describe('index', () => {
   describe('page', () => {
@@ -56,6 +56,7 @@ describe('index', () => {
           repositories: stubs.repositories,
           userInformation: stubs.userInformation,
           packageDownloads: stubs.packageDownloads,
+          stars: stubs.stars,
         },
         revalidate: 3600,
       })

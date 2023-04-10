@@ -2,10 +2,10 @@
 
 exports[`BlogPost should match BlogPost component 1`] = `
 <div
-  className="col-xs-12 col-sm-6 col-md-4 postContainer"
+  className="w-full flex-none snap-start px-2 py-2 sm:w-1/2 md:w-1/3"
 >
   <a
-    className="post"
+    className="h-full rounded-lg outline-none ring-offset-4 focus-visible:ring-2 sm:flex"
     href="/blog/post-slug"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -14,27 +14,20 @@ exports[`BlogPost should match BlogPost component 1`] = `
   >
     <article>
       <img
-        alt="Post Title"
-        className="lazyload postImage"
+        className="lazyload mb-3 w-full rounded-lg"
         data-src="https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png"
         src="https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png"
       />
       <div
-        className="postContent"
+        className="grid gap-2"
       >
         <header
-          className="postTitle"
+          className="font-semibold"
         >
           Post Title
         </header>
-        <time
-          className="postPublishedAt"
-          dateTime="2019-12-15 10:00"
-        >
-          A year ago
-        </time>
         <p
-          className="postExcerpt"
+          className="text-sm opacity-70"
         >
           This is the post excerpt that will be shown.
         </p>

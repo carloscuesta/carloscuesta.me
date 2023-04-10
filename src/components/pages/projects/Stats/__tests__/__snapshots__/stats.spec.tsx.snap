@@ -1,75 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Stats should match Stats component 1`] = `
-<section>
+<section
+  className="grid gap-4 sm:grid-flow-col sm:grid-cols-3"
+>
   <div
-    className="container "
+    className="flex-1"
   >
-    <div>
-      <h2
-        className="sectionTitle sectionTitleMargin"
+    <article
+      className="rounded-lg border border-solid border-neutral-100 px-4 py-8 dark:border-neutral-800"
+    >
+      <p
+        className="pb-2 opacity-80"
       >
-        Stats
-      </h2>
-    </div>
+        GitHub Stars
+      </p>
+      <p
+        className="text-xl font-extrabold"
+      >
+        1,000
+      </p>
+    </article>
   </div>
   <div
-    className="row"
+    className="flex-1"
   >
-    <div
-      className="col-xs-12 col-sm-6 col-md-4"
+    <article
+      className="rounded-lg border border-solid border-neutral-100 px-4 py-8 dark:border-neutral-800"
     >
-      <article
-        className="card"
+      <p
+        className="pb-2 opacity-80"
       >
-        <p
-          className="label"
-        >
-          GitHub Stars
-        </p>
-        <strong
-          className="value"
-        >
-          10,000
-        </strong>
-      </article>
-    </div>
-    <div
-      className="col-xs-12 col-sm-6 col-md-4"
+        GitHub Followers
+      </p>
+      <p
+        className="text-xl font-extrabold"
+      >
+        100
+      </p>
+    </article>
+  </div>
+  <div
+    className="flex-1"
+  >
+    <article
+      className="rounded-lg border border-solid border-neutral-100 px-4 py-8 dark:border-neutral-800"
     >
-      <article
-        className="card"
+      <p
+        className="pb-2 opacity-80"
       >
-        <p
-          className="label"
-        >
-          GitHub Followers
-        </p>
-        <strong
-          className="value"
-        >
-          100
-        </strong>
-      </article>
-    </div>
-    <div
-      className="col-xs-12 col-sm-6 col-md-4"
-    >
-      <article
-        className="card"
+        NPM Downloads
+      </p>
+      <p
+        className="text-xl font-extrabold"
       >
-        <p
-          className="label"
+        100,000
+        <span
+          className="text-sm font-medium opacity-50"
         >
-          NPM Downloads (Last year)
-        </p>
-        <strong
-          className="value"
-        >
-          100,000
-        </strong>
-      </article>
-    </div>
+           / year
+        </span>
+      </p>
+    </article>
   </div>
 </section>
 `;

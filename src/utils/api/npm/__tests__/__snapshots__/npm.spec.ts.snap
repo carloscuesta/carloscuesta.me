@@ -14,7 +14,7 @@ exports[`NPM API Client apiCalls should match fetchPublishedPackages call 1`] = 
 }
 `;
 
-exports[`NPM API Client mutators transformDownloadsCount should aggregate all the downloads from packages 1`] = `151010`;
+exports[`NPM API Client mutators transformDownloadsCount should aggregate all the downloads from packages 1`] = `"151,010"`;
 
 exports[`NPM API Client mutators transformPublishedPackages should match the packages names 1`] = `
 [

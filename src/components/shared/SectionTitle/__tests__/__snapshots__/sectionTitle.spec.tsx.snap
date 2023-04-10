@@ -2,16 +2,18 @@
 
 exports[`SectionTitle with title and subtitle should match SectionTitle component 1`] = `
 <div
-  className="container "
+  className="my-6 flex items-end justify-between"
 >
-  <div>
+  <div
+    className=""
+  >
     <h2
-      className="sectionTitle "
+      className="text-lg font-bold"
     >
       Title
     </h2>
     <h3
-      className="sectionSubtitle"
+      className="text-md opacity-70"
     >
       Subtitle
     </h3>
@@ -21,11 +23,13 @@ exports[`SectionTitle with title and subtitle should match SectionTitle componen
 
 exports[`SectionTitle with title only should match SectionTitle component 1`] = `
 <div
-  className="container "
+  className="my-6 flex items-end justify-between"
 >
-  <div>
+  <div
+    className="space-y-2"
+  >
     <h2
-      className="sectionTitle sectionTitleMargin"
+      className="text-lg font-bold"
     >
       Test
     </h2>
@@ -35,21 +39,24 @@ exports[`SectionTitle with title only should match SectionTitle component 1`] = 
 
 exports[`SectionTitle with title, subtitle and viewAllLink should match SectionTitle component 1`] = `
 <div
-  className="container containerWithLink"
+  className="my-6 flex items-end justify-between"
 >
-  <div>
+  <div
+    className=""
+  >
     <h2
-      className="sectionTitle "
+      className="text-lg font-bold"
     >
       Title
     </h2>
     <h3
-      className="sectionSubtitle"
+      className="text-md opacity-70"
     >
       Subtitle
     </h3>
   </div>
   <a
+    className="text-sm opacity-70 transition-opacity hover:opacity-100"
     href="/test"
     onClick={[Function]}
     onMouseEnter={[Function]}

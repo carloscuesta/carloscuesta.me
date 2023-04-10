@@ -3,70 +3,56 @@
 exports[`Section should match Section component 1`] = `
 <section>
   <div
-    className="container "
+    className="my-6 flex items-end justify-between"
   >
-    <div>
+    <div
+      className=""
+    >
       <h2
-        className="sectionTitle "
+        className="text-lg font-bold"
       >
         Gear
       </h2>
       <h3
-        className="sectionSubtitle"
+        className="text-md opacity-70"
       >
         Home office equipment
       </h3>
     </div>
   </div>
   <ul
-    className="list"
+    className="prose list-inside list-disc dark:prose-invert"
   >
     <li>
-      <p
-        className="title"
+      Desk – 
+      <a
+        href="https://www.fully.com/standing-desks/jarvis-adjustable-height-desk-bamboo.html"
+        rel="noopener noreferrer"
       >
-        Desk – 
-        <a
-          href="https://www.fully.com/standing-desks/jarvis-adjustable-height-desk-bamboo.html"
-          rel="noopener noreferrer"
-        >
-          Fully Jarvis Bamboo Standing Desk
-        </a>
-      </p>
+        Fully Jarvis Bamboo Standing Desk
+      </a>
     </li>
     <li>
-      <p
-        className="title"
+      Laptop – 
+      <a
+        href="https://support.apple.com/kb/sp704"
+        rel="noopener noreferrer"
       >
-        Laptop – 
-        <a
-          href="https://support.apple.com/kb/sp704"
-          rel="noopener noreferrer"
-        >
-          MacBook Pro 15 (Mid 2014), i7 @ 2,5GHz, 16 GB
-        </a>
-      </p>
+        MacBook Pro 15 (Mid 2014), i7 @ 2,5GHz, 16 GB
+      </a>
     </li>
     <li>
-      <p
-        className="title"
+      Chair – 
+      <a
+        href="https://www.ikea.com/es/es/p/markus-silla-trabajo-glose-negro-40103100/"
+        rel="noopener noreferrer"
       >
-        Chair – 
-        <a
-          href="https://www.ikea.com/es/es/p/markus-silla-trabajo-glose-negro-40103100/"
-          rel="noopener noreferrer"
-        >
-          Ikea Markus
-        </a>
-      </p>
+        Ikea Markus
+      </a>
     </li>
     <li>
-      <p
-        className="title"
-      >
-        Monitor – 
-        Dell U2414H
-      </p>
+      Monitor – 
+      Dell U2414H
     </li>
   </ul>
 </section>

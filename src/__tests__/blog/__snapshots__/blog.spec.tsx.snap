@@ -8,207 +8,187 @@ exports[`blog page should match blog page 1`] = `
   />,
   <main>
     <div
-      className="wrapper"
+      className="m-[0_auto] max-w-4xl px-6 sm:px-4 "
     >
       <h1
-        className="title"
+        className="my-6 text-xl font-bold"
       >
         Blog
       </h1>
       <div
-        className="row"
+        className="grid gap-8"
       >
-        <div
-          className="col-xs-12"
-        >
+        <section>
           <h2
-            className="year"
+            className="mb-4 text-lg font-bold opacity-90"
           >
             2019
           </h2>
-        </div>
-        <BlogPost
-          post={
-            {
-              "dateModified": "2019-10-01 22:15",
-              "datePublished": {
-                "formatDate": "01 October 2019",
-                "formatInWords": "9 months ago",
-                "value": "2019-10-01 22:15",
-              },
-              "disqusIdentifier": "5bc9ff9949ac5006c0a84f00",
-              "excerpt": "A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example",
-              "html": "<h1>html</h1>",
-              "images": {
-                "featured": {
-                  "src": "https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
-                },
-                "preview": {
-                  "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
-                  "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png",
-                },
-              },
-              "slug": "javascript-monorepos-lerna-yarn-workspaces",
-              "title": "JavaScript monorepos with Lerna and Yarn Workspaces",
-            }
-          }
-        />
-        <BlogPost
-          post={
-            {
-              "dateModified": "2019-09-12 17:00",
-              "datePublished": {
-                "formatDate": "12 September 2019",
-                "formatInWords": "9 months ago",
-                "value": "2019-09-12 17:00",
-              },
-              "disqusIdentifier": "5d78d0fcf942665cd6becd9a",
-              "excerpt": "I'm going to explain why it's important and how you can use error boundaries in a React-Native application to improve error resiliency 👨‍💻",
-              "html": "<h1>html</h1>",
-              "images": {
-                "featured": {
-                  "src": "https://res.cloudinary.com/carloscuesta/image/upload/handling-react-native-errors-with-error-boundaries.png",
-                },
-                "preview": {
-                  "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/handling-react-native-errors-with-error-boundaries.png",
-                  "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/handling-react-native-errors-with-error-boundaries.png",
-                },
-              },
-              "slug": "managing-react-native-crashes-with-error-boundaries",
-              "title": "Managing React-Native crashes with Error Boundaries",
-            }
-          }
-        />
-      </div>
-      <div
-        className="row"
-      >
-        <div
-          className="col-xs-12"
-        >
+          <ul
+            className="grid grid-flow-row gap-3"
+          >
+            <li
+              className="-mx-3 rounded-lg font-semibold transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
+            >
+              <a
+                className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
+                href="/blog/javascript-monorepos-lerna-yarn-workspaces"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onTouchStart={[Function]}
+                title="JavaScript monorepos with Lerna and Yarn Workspaces"
+              >
+                <time
+                  aria-label="Written 01 October 2019"
+                  className="opacity-60 sm:w-20"
+                  dateTime="2019-10-01 22:15"
+                >
+                  01 Oct
+                </time>
+                <p>
+                  JavaScript monorepos with Lerna and Yarn Workspaces
+                </p>
+              </a>
+            </li>
+            <li
+              className="-mx-3 rounded-lg font-semibold transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
+            >
+              <a
+                className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
+                href="/blog/managing-react-native-crashes-with-error-boundaries"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onTouchStart={[Function]}
+                title="Managing React-Native crashes with Error Boundaries"
+              >
+                <time
+                  aria-label="Written 12 September 2019"
+                  className="opacity-60 sm:w-20"
+                  dateTime="2019-09-12 17:00"
+                >
+                  12 Dec
+                </time>
+                <p>
+                  Managing React-Native crashes with Error Boundaries
+                </p>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section>
           <h2
-            className="year"
+            className="mb-4 text-lg font-bold opacity-90"
           >
             2018
           </h2>
-        </div>
-        <BlogPost
-          post={
-            {
-              "dateModified": "2018-10-16 12:10",
-              "datePublished": {
-                "formatDate": "16 October 2018",
-                "formatInWords": "over 1 year ago",
-                "value": "2018-10-16 12:10",
-              },
-              "disqusIdentifier": "5b6c646126d36606d1805ab3",
-              "excerpt": "Creating scalable React components using the folder pattern. A simple way to organize and structure React Components.",
-              "html": "<h1>html</h1>",
-              "images": {
-                "featured": {
-                  "src": "https://res.cloudinary.com/carloscuesta/image/upload/scalable-react-components.png",
-                },
-                "preview": {
-                  "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/scalable-react-components.png",
-                  "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/scalable-react-components.png",
-                },
-              },
-              "slug": "scalable-react-components-architecture",
-              "title": "Scalable React Components architecture",
-            }
-          }
-        />
-        <BlogPost
-          post={
-            {
-              "dateModified": "2018-10-15 09:53",
-              "datePublished": {
-                "formatDate": "19 September 2018",
-                "formatInWords": "almost 2 years ago",
-                "value": "2018-09-19 09:53",
-              },
-              "disqusIdentifier": "5ae59dcdb3211a06522ad69b",
-              "excerpt": "The process of continuously delivering React Native apps with Fastlane and Travis CI automatically. ",
-              "html": "<h1>html</h1>",
-              "images": {
-                "featured": {
-                  "src": "https://res.cloudinary.com/carloscuesta/image/upload/shipping-react-native-fastlane-travis.png",
-                },
-                "preview": {
-                  "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/shipping-react-native-fastlane-travis.png",
-                  "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/shipping-react-native-fastlane-travis.png",
-                },
-              },
-              "slug": "shipping-react-native-fastlane-travis",
-              "title": "Shipping React Native apps with Fastlane and Travis",
-            }
-          }
-        />
-      </div>
-      <div
-        className="row"
-      >
-        <div
-          className="col-xs-12"
-        >
+          <ul
+            className="grid grid-flow-row gap-3"
+          >
+            <li
+              className="-mx-3 rounded-lg font-semibold transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
+            >
+              <a
+                className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
+                href="/blog/scalable-react-components-architecture"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onTouchStart={[Function]}
+                title="Scalable React Components architecture"
+              >
+                <time
+                  aria-label="Written 16 October 2018"
+                  className="opacity-60 sm:w-20"
+                  dateTime="2018-10-16 12:10"
+                >
+                  16 Oct
+                </time>
+                <p>
+                  Scalable React Components architecture
+                </p>
+              </a>
+            </li>
+            <li
+              className="-mx-3 rounded-lg font-semibold transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
+            >
+              <a
+                className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
+                href="/blog/shipping-react-native-fastlane-travis"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onTouchStart={[Function]}
+                title="Shipping React Native apps with Fastlane and Travis"
+              >
+                <time
+                  aria-label="Written 19 September 2018"
+                  className="opacity-60 sm:w-20"
+                  dateTime="2018-09-19 09:53"
+                >
+                  19 Sep
+                </time>
+                <p>
+                  Shipping React Native apps with Fastlane and Travis
+                </p>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section>
           <h2
-            className="year"
+            className="mb-4 text-lg font-bold opacity-90"
           >
             2017
           </h2>
-        </div>
-        <BlogPost
-          post={
-            {
-              "dateModified": "2017-10-30 10:00",
-              "datePublished": {
-                "formatDate": "30 October 2017",
-                "formatInWords": "over 2 years ago",
-                "value": "2017-10-30 10:00",
-              },
-              "disqusIdentifier": "23",
-              "excerpt": "ReactiveConf 2017 review. A two days conference about functional and reactive programming that takes places in Bratislava.",
-              "html": "<h1>html</h1>",
-              "images": {
-                "featured": {
-                  "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1504460420/nmm99etv7j32h5lsulgx.png",
-                },
-                "preview": {
-                  "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1504460420/nmm99etv7j32h5lsulgx.png",
-                  "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1504460420/nmm99etv7j32h5lsulgx.png",
-                },
-              },
-              "slug": "reactiveconf-2017",
-              "title": "ReactiveConf 2017",
-            }
-          }
-        />
-        <BlogPost
-          post={
-            {
-              "dateModified": "2017-10-18 10:15",
-              "datePublished": {
-                "formatDate": "18 October 2017",
-                "formatInWords": "over 2 years ago",
-                "value": "2017-10-18 10:15",
-              },
-              "disqusIdentifier": "59cfbaac613ac70679db193e",
-              "excerpt": "The process of moving my website and Ghost blog from Heroku to DigitalOcean.  Provisioning up the server with Node.js, Nginx, LetsEncrypt and PM2.",
-              "html": "<h1>html</h1>",
-              "images": {
-                "featured": {
-                  "src": "https://res.cloudinary.com/carloscuesta/image/upload/moving-to-digitalocean.png",
-                },
-                "preview": {
-                  "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/moving-to-digitalocean.png",
-                  "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/moving-to-digitalocean.png",
-                },
-              },
-              "slug": "moving-to-digitalocean",
-              "title": "Moving to DigitalOcean",
-            }
-          }
-        />
+          <ul
+            className="grid grid-flow-row gap-3"
+          >
+            <li
+              className="-mx-3 rounded-lg font-semibold transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
+            >
+              <a
+                className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
+                href="/blog/reactiveconf-2017"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onTouchStart={[Function]}
+                title="ReactiveConf 2017"
+              >
+                <time
+                  aria-label="Written 30 October 2017"
+                  className="opacity-60 sm:w-20"
+                  dateTime="2017-10-30 10:00"
+                >
+                  30 Oct
+                </time>
+                <p>
+                  ReactiveConf 2017
+                </p>
+              </a>
+            </li>
+            <li
+              className="-mx-3 rounded-lg font-semibold transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
+            >
+              <a
+                className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
+                href="/blog/moving-to-digitalocean"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onTouchStart={[Function]}
+                title="Moving to DigitalOcean"
+              >
+                <time
+                  aria-label="Written 18 October 2017"
+                  className="opacity-60 sm:w-20"
+                  dateTime="2017-10-18 10:15"
+                >
+                  18 Oct
+                </time>
+                <p>
+                  Moving to DigitalOcean
+                </p>
+              </a>
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
   </main>,

@@ -59,20 +59,21 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
     }
     title="Carlos Cuesta – JavaScript monorepos with Lerna and Yarn Workspaces"
   />
-  <FeaturedImage
-    image="https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png"
-    lqpiImage="https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png"
-    title="JavaScript monorepos with Lerna and Yarn Workspaces"
-  />
   <main>
     <Wrapper
       isCompressed={true}
     >
+      <FeaturedImage
+        image="https://res.cloudinary.com/carloscuesta/image/upload/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png"
+        lqpiImage="https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/JavaScript-monorepos-with-Lerna-and-Yarn-Workspaces.png"
+        title="JavaScript monorepos with Lerna and Yarn Workspaces"
+      />
       <Header
         datePublished={
           {
             "formatDate": "01 October 2019",
             "formatInWords": "9 months ago",
+            "formatMonthDay": "01 Oct",
             "value": "2019-10-01 22:15",
           }
         }
@@ -80,6 +81,7 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
         title="JavaScript monorepos with Lerna and Yarn Workspaces"
       />
       <div
+        className="prose prose-lg relative max-w-full dark:prose-invert prose-headings:scroll-mt-16 prose-headings:font-semibold prose-img:rounded-lg"
         dangerouslySetInnerHTML={
           {
             "__html": "<h1>html</h1>",
@@ -92,12 +94,6 @@ exports[`blog/[slug] page should match blog/[slug] page 1`] = `
         title="JavaScript monorepos with Lerna and Yarn Workspaces"
       />
       <NewsletterSubscribe />
-      <hr />
-      <DisqusComments
-        canonicalUrl="https://carloscuesta.me/blog/javascript-monorepos-lerna-yarn-workspaces"
-        postDisqusIdentifier="5bc9ff9949ac5006c0a84f00"
-        postTitle="JavaScript monorepos with Lerna and Yarn Workspaces"
-      />
     </Wrapper>
   </main>
 </article>

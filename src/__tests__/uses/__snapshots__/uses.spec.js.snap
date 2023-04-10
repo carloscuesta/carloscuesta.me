@@ -8,151 +8,157 @@ exports[`uses page should match uses page 1`] = `
   />,
   <main>
     <div
-      className="wrapper"
+      className="m-[0_auto] max-w-4xl px-6 sm:px-4 "
     >
       <h1
-        className="title"
+        className="my-6 text-xl font-bold"
       >
         Uses
       </h1>
-      <div
-        className="row"
-      >
-        <div
-          className="col-xs-12"
-        >
-          <SetupImage />
-        </div>
-        <div
-          className="col-xs-12"
-        >
-          <Section
-            items={
-              [
-                {
-                  "category": "Desk",
-                  "link": "https://www.fully.com/standing-desks/jarvis-adjustable-height-desk-bamboo.html",
-                  "title": "Fully Jarvis Bamboo Standing Desk",
-                },
-                {
-                  "category": "Laptop",
-                  "link": "https://support.apple.com/kb/SP854",
-                  "title": "MacBook Pro 14 M1 Pro, 16 GB",
-                },
-                {
-                  "category": "Chair",
-                  "link": "https://www.hermanmiller.com/en_eur/products/seating/office-chairs/aeron-chairs/",
-                  "title": "Herman Miller Aeron",
-                },
-                {
-                  "category": "Monitor",
-                  "link": "https://www.dell.com/es-es/shop/monitor-curvo-dell-ultrasharp-38-con-concentrador-y-usb-c-u3821dw/apd/210-axnt/monitores-y-accesorios",
-                  "title": "Dell U3821DW",
-                },
-                {
-                  "category": "Webcam",
-                  "link": "https://bit.ly/3jDlMZp",
-                  "title": "Logitech C920",
-                },
-                {
-                  "category": "Keyboard",
-                  "link": "https://www.qwertykeys.com",
-                  "title": "QK65 – QwertyKeys",
-                },
-                {
-                  "category": "Mouse",
-                  "link": "https://www.logitech.com/products/mice/mx-master-3s.910-006560.html",
-                  "title": "Logitech MX Master 3S",
-                },
-                {
-                  "category": "Desk Matt",
-                  "link": "https://oakywood.shop/products/grey-felt-cork-desk-mat",
-                  "title": "Oakywood Merino Wool Felt & Cork Grey",
-                },
-                {
-                  "category": "Headphones",
-                  "link": "https://www.apple.com/airpods-pro",
-                  "title": "Airpods Pro",
-                },
-                {
-                  "category": "Lighting",
-                  "link": "https://www.benq.com/en-us/lamps/computer-desklamp/screenbar.html",
-                  "title": "BenQ Screenbar",
-                },
-                {
-                  "category": "Headphones",
-                  "link": "https://www.bose.com/en_us/products/headphones/noise_cancelling_headphones/quietcomfort-headphones-45.html#v=qc45_white_smoke",
-                  "title": "Bose QuietComfort 45",
-                },
-                {
-                  "category": "Anti-fatigue standing mat",
-                  "link": "https://en.aeris.de/products/aeris-muvmat-schwarz-ohne-bezug",
-                  "title": "Muvmat",
-                },
-                {
-                  "category": "Monitor Arm",
-                  "link": "https://www.ergotron.com/en-us/products/product-details/45-475",
-                  "title": "Ergotron HX",
-                },
-                {
-                  "category": "Lighting",
-                  "link": "https://www.logitech.com/products/lighting/litra-glow.946-000002.html",
-                  "title": "Logitech Litra Glow",
-                },
-                {
-                  "category": "Microphone",
-                  "link": "https://www.shure.com/products/microphones/mv7",
-                  "title": "Shure MV7",
-                },
-                {
-                  "category": "Boom Arm",
-                  "link": "https://www.elgato.com/wave-mic-arm-lp",
-                  "title": "Elgato Wave Mic Arm LP",
-                },
-              ]
+      <div>
+        <img
+          alt="Carlos Cuesta workspace setup"
+          data-nimg="1"
+          decoding="async"
+          height={1134}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1659775881%2Fcarloscuesta-setup_z1azyb.jpg&w=3840&q=100"
+          srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1659775881%2Fcarloscuesta-setup_z1azyb.jpg&w=2048&q=100 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1659775881%2Fcarloscuesta-setup_z1azyb.jpg&w=3840&q=100 2x"
+          style={
+            {
+              "color": "transparent",
             }
-            subTitle="Home office equipment"
-            title="Gear"
-          />
-          <Section
-            items={
-              [
-                {
-                  "category": "Text Editor",
-                  "link": "http://vscode.dev",
-                  "title": "VSCode",
-                },
-                {
-                  "category": "Terminal",
-                  "link": "https://iterm2.com",
-                  "title": "iTerm2",
-                },
-                {
-                  "category": "Dotfiles",
-                  "link": "https://github.com/carloscuesta/dotfiles",
-                  "title": "Carlos Cuesta Dotfiles",
-                },
-                {
-                  "category": "Window Management",
-                  "link": "https://rectangleapp.com",
-                  "title": "Rectangle",
-                },
-                {
-                  "category": "JS Playground",
-                  "link": "http://runjs.app",
-                  "title": "RunJS",
-                },
-                {
-                  "category": "Design",
-                  "link": "http://figma.com",
-                  "title": "Figma",
-                },
-              ]
-            }
-            subTitle="Tools to work efficiently"
-            title="Software"
-          />
-        </div>
+          }
+          width={2016}
+        />
+        <Section
+          items={
+            [
+              {
+                "category": "Desk",
+                "link": "https://www.fully.com/standing-desks/jarvis-adjustable-height-desk-bamboo.html",
+                "title": "Fully Jarvis Bamboo Standing Desk",
+              },
+              {
+                "category": "Laptop",
+                "link": "https://support.apple.com/kb/SP854",
+                "title": "MacBook Pro 14 M1 Pro, 16 GB",
+              },
+              {
+                "category": "Chair",
+                "link": "https://www.hermanmiller.com/en_eur/products/seating/office-chairs/aeron-chairs/",
+                "title": "Herman Miller Aeron",
+              },
+              {
+                "category": "Monitor",
+                "link": "https://www.dell.com/es-es/shop/monitor-curvo-dell-ultrasharp-38-con-concentrador-y-usb-c-u3821dw/apd/210-axnt/monitores-y-accesorios",
+                "title": "Dell U3821DW",
+              },
+              {
+                "category": "Webcam",
+                "link": "https://bit.ly/3jDlMZp",
+                "title": "Logitech C920",
+              },
+              {
+                "category": "Keyboard",
+                "link": "https://www.qwertykeys.com",
+                "title": "QK65 – QwertyKeys",
+              },
+              {
+                "category": "Mouse",
+                "link": "https://www.logitech.com/products/mice/mx-master-3s.910-006560.html",
+                "title": "Logitech MX Master 3S",
+              },
+              {
+                "category": "Desk Matt",
+                "link": "https://oakywood.shop/products/grey-felt-cork-desk-mat",
+                "title": "Oakywood Merino Wool Felt & Cork Grey",
+              },
+              {
+                "category": "Headphones",
+                "link": "https://www.apple.com/airpods-pro",
+                "title": "Airpods Pro",
+              },
+              {
+                "category": "Lighting",
+                "link": "https://www.benq.com/en-us/lamps/computer-desklamp/screenbar.html",
+                "title": "BenQ Screenbar",
+              },
+              {
+                "category": "Headphones",
+                "link": "https://www.bose.com/en_us/products/headphones/noise_cancelling_headphones/quietcomfort-headphones-45.html#v=qc45_white_smoke",
+                "title": "Bose QuietComfort 45",
+              },
+              {
+                "category": "Anti-fatigue standing mat",
+                "link": "https://en.aeris.de/products/aeris-muvmat-schwarz-ohne-bezug",
+                "title": "Muvmat",
+              },
+              {
+                "category": "Monitor Arm",
+                "link": "https://www.ergotron.com/en-us/products/product-details/45-475",
+                "title": "Ergotron HX",
+              },
+              {
+                "category": "Lighting",
+                "link": "https://www.logitech.com/products/lighting/litra-glow.946-000002.html",
+                "title": "Logitech Litra Glow",
+              },
+              {
+                "category": "Microphone",
+                "link": "https://www.shure.com/products/microphones/mv7",
+                "title": "Shure MV7",
+              },
+              {
+                "category": "Boom Arm",
+                "link": "https://www.elgato.com/wave-mic-arm-lp",
+                "title": "Elgato Wave Mic Arm LP",
+              },
+            ]
+          }
+          subTitle="Home office equipment"
+          title="Gear"
+        />
+        <Section
+          items={
+            [
+              {
+                "category": "Text Editor",
+                "link": "http://vscode.dev",
+                "title": "VSCode",
+              },
+              {
+                "category": "Terminal",
+                "link": "https://iterm2.com",
+                "title": "iTerm2",
+              },
+              {
+                "category": "Dotfiles",
+                "link": "https://github.com/carloscuesta/dotfiles",
+                "title": "Carlos Cuesta Dotfiles",
+              },
+              {
+                "category": "Window Management",
+                "link": "https://rectangleapp.com",
+                "title": "Rectangle",
+              },
+              {
+                "category": "JS Playground",
+                "link": "http://runjs.app",
+                "title": "RunJS",
+              },
+              {
+                "category": "Design",
+                "link": "http://figma.com",
+                "title": "Figma",
+              },
+            ]
+          }
+          subTitle="Tools to work efficiently"
+          title="Software"
+        />
       </div>
     </div>
   </main>,

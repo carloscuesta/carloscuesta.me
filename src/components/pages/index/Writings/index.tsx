@@ -57,6 +57,7 @@ const Writings = (props: Props) => {
         />
 
         <div
+          data-testid="scrollablePosts"
           className="scrollablePosts -mx-2 -my-2 flex snap-x snap-mandatory overflow-x-auto"
           onScroll={onScroll}
           ref={scrollablePostsRef}

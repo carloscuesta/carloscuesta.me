@@ -82,3 +82,5 @@ export const props = {
   userInformation,
   stars: '10,000',
 }
+
+export const stars = '10,624'

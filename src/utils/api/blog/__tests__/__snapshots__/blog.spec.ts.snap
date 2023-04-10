@@ -6,14 +6,15 @@ exports[`Ghost API Client fetchPost should return a post with the slug terminal-
   "datePublished": {
     "formatDate": "06 February 2016",
     "formatInWords": "over 4 years ago",
+    "formatMonthDay": "Feb 06",
     "value": "2016-02-06 15:55",
   },
   "disqusIdentifier": "7",
   "excerpt": "Carlos Cuesta terminal setup with ZSH and Oh-My-ZSH, using materialshell and my dotfiles.",
-  "html": "<p><strong>Terminal</strong> is a place where a developer spends a lot of time, running commands, looking for outputs and doing a bunch of stuff, so better to stay comfortable and productive with it.<h3 id=shell><a href=#shell aria-hidden=true tabindex=-1><span class=headingLink>#</span></a>Shell</h3><p>I use <a href=http://www.zsh.org rel=nofollow><strong>ZSH</strong></a> as my main shell along with <a href=http://ohmyz.sh rel=nofollow><strong>Oh-My-Zsh</strong></a>. By default, OS X comes with bash, a simpler shell. To setup ZSH and install Oh-My-Zsh run:<pre><code class="code-highlight language-language-bash"><span class=code-line>$ chsh -s /bin/zsh
+  "html": "<p><strong>Terminal</strong> is a place where a developer spends a lot of time, running commands, looking for outputs and doing a bunch of stuff, so better to stay comfortable and productive with it.<h3 id=shell><a href=#shell aria-hidden=true tabindex=-1><span class="headingLink absolute left-0 -translate-x-full pr-2 opacity-0 text-neutral-500">#</span></a>Shell</h3><p>I use <a href=http://www.zsh.org rel=nofollow><strong>ZSH</strong></a> as my main shell along with <a href=http://ohmyz.sh rel=nofollow><strong>Oh-My-Zsh</strong></a>. By default, OS X comes with bash, a simpler shell. To setup ZSH and install Oh-My-Zsh run:<pre><code class="code-highlight language-language-bash"><span class=code-line>$ chsh -s /bin/zsh
 </span><span class=code-line>$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 </span></code></pre><p>To see what shell are you using run:<pre><code class="code-highlight language-language-bash"><span class=code-line>$ echo $SHELL
-</span></code></pre><h3 id=ui><a href=#ui aria-hidden=true tabindex=-1><span class=headingLink>#</span></a>UI</h3><p>After setting up ZSH and Oh-My-Zsh, now we are ready to customize and put our shell on steroids.<p>I use a theme called <a href=https://github.com/carloscuesta/materialshell rel=nofollow><strong>materialshell</strong></a> that I've made for my own.<p><a href=https://github.com/carloscuesta/materialshell/blob/master/README.md rel=nofollow><strong>Follow this guide to install and setup my terminal</strong>.</a><p><img alt="Carlos Cuesta Shell - MaterialShell"src=https://res.cloudinary.com/carloscuesta/image/upload/v1454753967/gazne7uhxuq8ugpfvile.png><h3 id=dotfiles><a href=#dotfiles aria-hidden=true tabindex=-1><span class=headingLink>#</span></a>Dotfiles</h3><p>I have my own <a href=https://github.com/carloscuesta/dotfiles rel=nofollow><strong>dotfiles repository</strong></a> with all my shell configuration files, where you can take a look to learn and be more productive with your shell.",
+</span></code></pre><h3 id=ui><a href=#ui aria-hidden=true tabindex=-1><span class="headingLink absolute left-0 -translate-x-full pr-2 opacity-0 text-neutral-500">#</span></a>UI</h3><p>After setting up ZSH and Oh-My-Zsh, now we are ready to customize and put our shell on steroids.<p>I use a theme called <a href=https://github.com/carloscuesta/materialshell rel=nofollow><strong>materialshell</strong></a> that I've made for my own.<p><a href=https://github.com/carloscuesta/materialshell/blob/master/README.md rel=nofollow><strong>Follow this guide to install and setup my terminal</strong>.</a><p><img alt="Carlos Cuesta Shell - MaterialShell"src=https://res.cloudinary.com/carloscuesta/image/upload/v1454753967/gazne7uhxuq8ugpfvile.png><h3 id=dotfiles><a href=#dotfiles aria-hidden=true tabindex=-1><span class="headingLink absolute left-0 -translate-x-full pr-2 opacity-0 text-neutral-500">#</span></a>Dotfiles</h3><p>I have my own <a href=https://github.com/carloscuesta/dotfiles rel=nofollow><strong>dotfiles repository</strong></a> with all my shell configuration files, where you can take a look to learn and be more productive with your shell.",
   "images": {
     "featured": {
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Terminal_Setup.png",
@@ -35,9 +36,10 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
     "datePublished": {
       "formatDate": "29 January 2023",
       "formatInWords": "in over 2 years",
+      "formatMonthDay": "Jan 29",
       "value": "2023-01-29 22:00",
     },
-    "excerpt": "A codemod is a tool that helps you with large-scale refactors. In this article I'm going to explain how you can use them along with Abstract Syntax Trees.",
+    "excerpt": "A codemod is a tool that helps you with large-scale refactors. In this article I'm going to...",
     "images": {
       "featured": {
         "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1675022732/blog-featured-images/Effective_Refactoring_with_Codemods.png",
@@ -54,9 +56,10 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
     "datePublished": {
       "formatDate": "23 May 2022",
       "formatInWords": "in almost 2 years",
+      "formatMonthDay": "May 23",
       "value": "2022-05-23 17:55",
     },
-    "excerpt": "Let's walk through the experience and the outcome of implementing a tool to generate code. What are the benefits, the problems they solve and how to implement them.",
+    "excerpt": "Let's walk through the experience and the outcome of implementing a tool to generate code. What...",
     "images": {
       "featured": {
         "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1653167435/blog-featured-images/Code_generators.png",
@@ -73,9 +76,10 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
     "datePublished": {
       "formatDate": "01 March 2022",
       "formatInWords": "in over 1 year",
+      "formatMonthDay": "Mar 01",
       "value": "2022-03-01 22:00",
     },
-    "excerpt": "An architecture decision record also known as ADR, is a document that captures an important architecture decision, including the context and the consequences.",
+    "excerpt": "An architecture decision record also known as ADR, is a document that captures an important...",
     "images": {
       "featured": {
         "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1646170453/blog-featured-images/writing-adrs.png",
@@ -132,6 +136,7 @@ exports[`Ghost API Client mutators transformPost should match the mutated post 1
   "datePublished": {
     "formatDate": "06 February 2016",
     "formatInWords": "over 4 years ago",
+    "formatMonthDay": "Feb 06",
     "value": "2016-02-06 15:55",
   },
   "disqusIdentifier": "7",

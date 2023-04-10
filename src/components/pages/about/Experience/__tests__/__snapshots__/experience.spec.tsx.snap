@@ -3,220 +3,301 @@
 exports[`Experience should match Experience component 1`] = `
 <section>
   <div
-    className="container "
+    className="my-6 flex items-end justify-between"
   >
-    <div>
+    <div
+      className="space-y-2"
+    >
       <h2
-        className="sectionTitle sectionTitleMargin"
+        className="text-lg font-bold"
       >
         Work
       </h2>
     </div>
   </div>
-  <div>
-    <div
-      className="flex"
-    >
-      <div>
-        <img
-          alt="N26"
-          className="lazyload rounded-full"
-          data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1617353828/about-me/n26.png"
-          height={48}
-          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-          width={48}
-        />
-      </div>
-      <div
-        className="flex flex-col grow pb-6"
-      >
-        <p
-          className="opacity-50"
-        >
-          N26
-        </p>
-        <div
-          className="flex pb-2 px-4"
-        >
-          <div
-            className="grow "
-          >
-            <p
-              className="font-medium"
-            >
-              Lead Web Engineer
-            </p>
-          </div>
-          <span>
-            2022
-             – 
-            <span>
-              Now
-            </span>
-          </span>
-        </div>
-        <div
-          className="flex pb-2 px-4"
-        >
-          <div
-            className="grow "
-          >
-            <p
-              className="font-medium"
-            >
-              Senior Web Engineer
-            </p>
-          </div>
-          <span>
-            2021
-             – 
-            2022
-          </span>
-        </div>
-      </div>
+  <div
+    className="flex"
+  >
+    <div>
+      <img
+        alt="N26"
+        className="hidden rounded-xl sm:block"
+        data-nimg="1"
+        decoding="async"
+        height={48}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1617353828%2Fabout-me%2Fn26.png&w=96&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1617353828%2Fabout-me%2Fn26.png&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1617353828%2Fabout-me%2Fn26.png&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        width={48}
+      />
     </div>
     <div
-      className="flex"
+      className="flex grow flex-col"
     >
-      <div>
-        <img
-          alt="Ulabox"
-          className="lazyload rounded-full"
-          data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1593899513/about-me/ulabox.png"
-          height={48}
-          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-          width={48}
-        />
-      </div>
-      <div
-        className="flex flex-col grow pb-6"
+      <a
+        className="flex items-start pb-2  transition-opacity hover:opacity-50"
+        href="https://n26.com"
+        rel="noopener noreferrer"
+        target="_blank"
       >
-        <p
-          className="opacity-50"
-        >
-          Ulabox
-        </p>
         <div
-          className="flex pb-2 px-4"
+          className="grow pb-3 sm:px-4"
         >
-          <div
-            className="grow "
+          <p
+            className="font-medium"
           >
-            <p
-              className="font-medium"
-            >
-              Lead Front End Engineer
-            </p>
-          </div>
-          <span>
-            2018
-             – 
-            2021
-          </span>
+            Lead Web Engineer
+          </p>
+          <p
+            className="opacity-50"
+          >
+            N26
+          </p>
         </div>
-        <div
-          className="flex pb-2 px-4"
+        <span
+          className="opacity-90"
         >
-          <div
-            className="grow "
+          2022
+           – 
+          <em
+            className="font-semibold"
           >
-            <p
-              className="font-medium"
-            >
-              Front End Engineer
-            </p>
-          </div>
-          <span>
-            2017
-             – 
-            2018
-          </span>
-        </div>
-      </div>
-    </div>
-    <div
-      className="flex"
-    >
-      <div>
-        <img
-          alt="Mediàtic"
-          className="lazyload rounded-full"
-          data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1593899512/about-me/mediatic.png"
-          height={48}
-          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-          width={48}
-        />
-      </div>
-      <div
-        className="flex flex-col grow pb-6"
+            Now
+          </em>
+        </span>
+      </a>
+      <a
+        className="flex items-start pb-2  transition-opacity hover:opacity-50"
+        href="https://n26.com"
+        rel="noopener noreferrer"
+        target="_blank"
       >
-        <p
-          className="opacity-50"
-        >
-          Mediàtic
-        </p>
         <div
-          className="flex pb-2 px-4"
+          className="grow pb-3 sm:px-4"
         >
-          <div
-            className="grow "
+          <p
+            className="font-medium"
           >
-            <p
-              className="font-medium"
-            >
-              Front End Developer
-            </p>
-          </div>
-          <span>
-            2015
-             – 
-            2016
-          </span>
-        </div>
-      </div>
-    </div>
-    <div
-      className="flex"
-    >
-      <div>
-        <img
-          alt="Friendly Rentals"
-          className="lazyload rounded-full"
-          data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1593938160/about-me/friendlyrentals.png"
-          height={48}
-          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-          width={48}
-        />
-      </div>
-      <div
-        className="flex flex-col grow pb-6"
-      >
-        <p
-          className="opacity-50"
-        >
-          Friendly Rentals
-        </p>
-        <div
-          className="flex pb-2 px-4"
-        >
-          <div
-            className="grow "
+            Senior Web Engineer
+          </p>
+          <p
+            className="opacity-50"
           >
-            <p
-              className="font-medium"
-            >
-              Front End Developer Intern
-            </p>
-          </div>
-          <span>
-            2014
-             – 
-            2015
-          </span>
+            N26
+          </p>
         </div>
-      </div>
+        <span
+          className="opacity-90"
+        >
+          2021
+           – 
+          2022
+        </span>
+      </a>
     </div>
   </div>
-  <hr />
+  <div
+    className="flex"
+  >
+    <div>
+      <img
+        alt="Ulabox"
+        className="hidden rounded-xl sm:block"
+        data-nimg="1"
+        decoding="async"
+        height={48}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1593899513%2Fabout-me%2Fulabox.png&w=96&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1593899513%2Fabout-me%2Fulabox.png&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1593899513%2Fabout-me%2Fulabox.png&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        width={48}
+      />
+    </div>
+    <div
+      className="flex grow flex-col"
+    >
+      <a
+        className="flex items-start pb-2  transition-opacity hover:opacity-50"
+        href="https://ulabox.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="grow pb-3 sm:px-4"
+        >
+          <p
+            className="font-medium"
+          >
+            Lead Front End Engineer
+          </p>
+          <p
+            className="opacity-50"
+          >
+            Ulabox
+          </p>
+        </div>
+        <span
+          className="opacity-90"
+        >
+          2018
+           – 
+          2021
+        </span>
+      </a>
+      <a
+        className="flex items-start pb-2  transition-opacity hover:opacity-50"
+        href="https://ulabox.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="grow pb-3 sm:px-4"
+        >
+          <p
+            className="font-medium"
+          >
+            Front End Engineer
+          </p>
+          <p
+            className="opacity-50"
+          >
+            Ulabox
+          </p>
+        </div>
+        <span
+          className="opacity-90"
+        >
+          2017
+           – 
+          2018
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    className="flex"
+  >
+    <div>
+      <img
+        alt="Mediàtic"
+        className="hidden rounded-xl sm:block"
+        data-nimg="1"
+        decoding="async"
+        height={48}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1679519489%2Fabout-me%2Fmediatic.jpg&w=96&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1679519489%2Fabout-me%2Fmediatic.jpg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1679519489%2Fabout-me%2Fmediatic.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        width={48}
+      />
+    </div>
+    <div
+      className="flex grow flex-col"
+    >
+      <a
+        className="flex items-start pb-2  transition-opacity hover:opacity-50"
+        href="https://www.bemediatic.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="grow pb-3 sm:px-4"
+        >
+          <p
+            className="font-medium"
+          >
+            Front End Developer
+          </p>
+          <p
+            className="opacity-50"
+          >
+            Mediàtic
+          </p>
+        </div>
+        <span
+          className="opacity-90"
+        >
+          2015
+           – 
+          2016
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    className="flex"
+  >
+    <div>
+      <img
+        alt="Friendly Rentals"
+        className="hidden rounded-xl sm:block"
+        data-nimg="1"
+        decoding="async"
+        height={48}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1593938160%2Fabout-me%2Ffriendlyrentals.png&w=96&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1593938160%2Fabout-me%2Ffriendlyrentals.png&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1593938160%2Fabout-me%2Ffriendlyrentals.png&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        width={48}
+      />
+    </div>
+    <div
+      className="flex grow flex-col"
+    >
+      <a
+        className="flex items-start pb-2  transition-opacity hover:opacity-50"
+        href="https://www.friendlyrentals.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="grow pb-3 sm:px-4"
+        >
+          <p
+            className="font-medium"
+          >
+            Front End Developer Intern
+          </p>
+          <p
+            className="opacity-50"
+          >
+            Friendly Rentals
+          </p>
+        </div>
+        <span
+          className="opacity-90"
+        >
+          2014
+           – 
+          2015
+        </span>
+      </a>
+    </div>
+  </div>
 </section>
 `;

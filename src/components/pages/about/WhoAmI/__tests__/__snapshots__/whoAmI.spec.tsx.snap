@@ -11,7 +11,8 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
      👋. I'm Carlos, a Front End Engineer based in Barcelona, that loves to code and build products with a delightful user experience.
   </p>
   <p>
-    Currently working at 
+    Currently working at
+     
     <a
       className="underline underline-offset-2"
       href="https://n26.com"
@@ -20,7 +21,9 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
     >
       N26
     </a>
-     as a Lead Web Engineer, building the digital bank the world loves to use. Before that I worked at a grocery startup 
+     
+    as a Lead Web Engineer, building the digital bank the world loves to use. Before that I worked at a grocery startup
+     
     <a
       className="underline underline-offset-2"
       href="https://ulabox.com"
@@ -40,5 +43,23 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
   <p>
     Outside of work, I'm obsessed with sports, doing open source and travelling with my family.
   </p>
+  <img
+    alt="Carlos Cuesta About me"
+    className="pt-5"
+    data-nimg="1"
+    decoding="async"
+    height={40}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+    srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+    style={
+      {
+        "color": "transparent",
+      }
+    }
+    width={40}
+  />
 </section>
 `;

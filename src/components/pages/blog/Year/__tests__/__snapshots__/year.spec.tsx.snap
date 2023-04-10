@@ -1,13 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Year should match Year component 1`] = `
-<div
-  className="col-xs-12"
+<h2
+  className="mb-4 text-lg font-bold opacity-90"
 >
-  <h2
-    className="year"
-  >
-    2020
-  </h2>
-</div>
+  2020
+</h2>
 `;

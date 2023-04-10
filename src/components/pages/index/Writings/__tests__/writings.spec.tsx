@@ -90,7 +90,7 @@ describe('Writings', () => {
           renderer.act(() => {
             jest.useFakeTimers()
             wrapper.root
-              .findByProps({ className: 'row scrollablePosts' })
+              .findByProps({ 'data-testid': 'scrollablePosts' })
               .props.onScroll(stubs.scrollEventMock(350))
             jest.runAllTimers()
           })
@@ -116,7 +116,7 @@ describe('Writings', () => {
           renderer.act(() => {
             jest.useFakeTimers()
             wrapper.root
-              .findByProps({ className: 'row scrollablePosts' })
+              .findByProps({ 'data-testid': 'scrollablePosts' })
               .props.onScroll(
                 stubs.scrollEventMock(
                   scrollablePostsRef.scrollWidth -

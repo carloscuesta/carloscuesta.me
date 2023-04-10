@@ -30,7 +30,10 @@ exports[`GitHub API Client mutators transformRepositories should match the mutat
     "description": "An emoji guide for your commit messages. 😜 ",
     "language": "JavaScript",
     "name": "gitmoji",
-    "stars": 7323,
+    "stars": {
+      "format": "7,323",
+      "value": 7323,
+    },
     "url": "https://github.com/carloscuesta/gitmoji",
   },
 ]
@@ -38,6 +41,6 @@ exports[`GitHub API Client mutators transformRepositories should match the mutat
 
 exports[`GitHub API Client mutators transformUserInformation should match the mutated user information 1`] = `
 {
-  "followers": 970,
+  "followers": "970",
 }
 `;
