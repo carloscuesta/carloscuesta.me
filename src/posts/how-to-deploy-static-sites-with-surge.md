@@ -1,18 +1,18 @@
 ---
-dateModified: "2016-08-05 20:16"
-datePublished: "2016-08-05 20:16"
-disqusIdentifier: "14"
+dateModified: '2016-08-05 20:16'
+datePublished: '2016-08-05 20:16'
+disqusIdentifier: '14'
 excerpt: "How to deploy static websites with surge, the most easy and simple way to deploy a static site, all from your terminal. Surge it's free."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/How_to_deploy_static_sites_with_Surge.png"
-title: "How to deploy Static Sites with Surge"
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/How_to_deploy_static_sites_with_Surge.png'
+title: 'How to deploy Static Sites with Surge'
 ---
 
 [Surge](http://surge.sh) is a **static web publishing** tool for the command line. It's the most **simple** and **easy** way to **deploy a static site** that I've ever seen!. Surge is free and includes a lot of [cool features](http://surge.sh/help/) out of the box. Just with a single command you will get your site deployed.
 
 #### What do you need ?
 
-* [Node.js](https://nodejs.org/en/) & [NPM](https://www.npmjs.com)
-* Surge
+- [Node.js](https://nodejs.org/en/) & [NPM](https://www.npmjs.com)
+- Surge
 
 #### Getting started
 
@@ -32,8 +32,8 @@ $ surge
 You'll be asked for the **path or folder** you want to deploy and the **domain** for the project. You can [add a custom domain](http://surge.sh/help/adding-a-custom-domain) inplace of the surge.sh subdomain.
 
 ![Carlos Cuesta Deploy Surge](https://res.cloudinary.com/carloscuesta/image/upload/v1470403437/lwsxsmmkcouz18xhmoju.gif)
-> **Success**! Project is published and running at [carloscuesta.surge.sh](http://carloscuesta.surge.sh)
 
+> **Success**! Project is published and running at [carloscuesta.surge.sh](http://carloscuesta.surge.sh)
 
 Use the `list` command to get a to see every project you’ve published on Surge. To delete a site on Surge just run `teardown`
 

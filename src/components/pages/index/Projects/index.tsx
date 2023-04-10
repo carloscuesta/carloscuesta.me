@@ -11,12 +11,12 @@ const Projects = (props: Props) => (
   <section>
     <Wrapper>
       <SectionTitle
-        title='Projects'
-        subTitle='Selected open source projects.'
-        viewAllLink='/opensource'
+        title="Projects"
+        subTitle="Selected open source projects."
+        viewAllLink="/opensource"
       />
 
-      <div className='grid gap-x-4 gap-y-6 sm:grid-cols-2 md:grid-cols-3'>
+      <div className="grid gap-x-4 gap-y-6 sm:grid-cols-2 md:grid-cols-3">
         {props.repositories.map((repository) => (
           <Project repository={repository} key={repository.name} />
         ))}

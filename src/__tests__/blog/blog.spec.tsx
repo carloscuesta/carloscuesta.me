@@ -29,7 +29,7 @@ describe('blog', () => {
 
   describe('getStaticProps', () => {
     beforeAll(() => {
-      (fetchPosts as jest.Mock).mockReturnValue(stubs.posts)
+      ;(fetchPosts as jest.Mock).mockReturnValue(stubs.posts)
     })
 
     it('should return posts as props', async () => {
@@ -39,8 +39,8 @@ describe('blog', () => {
 
       expect(props).toEqual({
         props: {
-          posts: stubs.props.posts
-        }
+          posts: stubs.props.posts,
+        },
       })
     })
   })

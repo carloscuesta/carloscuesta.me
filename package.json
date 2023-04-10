@@ -11,7 +11,7 @@
     "start": "next start",
     "test": "yarn run test:lint && yarn run tscheck && yarn run test:unit && yarn run test:lighthouse",
     "tscheck": "yarn tsc --noEmit",
-    "test:lint": "eslint src",
+    "test:lint": "eslint src && prettier --check src",
     "test:unit": "jest --coverage",
     "test:watch": "NODE_ENV=test TZ=UTC jest --watch",
     "test:coverage": "codecov",
@@ -79,6 +79,7 @@
     "codecov": "^3.8.3",
     "eslint": "^8.38.0",
     "eslint-config-next": "^13.3.0",
+    "eslint-config-prettier": "8.8.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-import-resolver-typescript": "3.5.5",
     "eslint-plugin-import": "^2.27.5",
@@ -95,8 +96,8 @@
     "prettier": "2.8.7",
     "prettier-plugin-tailwindcss": "0.2.6",
     "react-test-renderer": "^18.2.0",
-    "typescript": "5.0.4",
-    "tailwindcss": "3.2.7"
+    "tailwindcss": "3.2.7",
+    "typescript": "5.0.4"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
@@ -111,7 +112,8 @@
       "plugin:@typescript-eslint/recommended",
       "plugin:react/recommended",
       "plugin:import/typescript",
-      "plugin:@next/next/recommended"
+      "plugin:@next/next/recommended",
+      "prettier"
     ],
     "parserOptions": {
       "ecmaFeatures": {
@@ -188,7 +190,11 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,css}": [
-      "eslint --cache --fix"
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "src/**/*.md": [
+      "prettier --write"
     ]
   },
   "volta": {
@@ -196,5 +202,9 @@
   },
   "msw": {
     "workerDirectory": "public"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }

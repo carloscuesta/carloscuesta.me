@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 import { ArticleJsonLd, NextSeo } from 'next-seo'
-import { ParsedUrlQuery } from 'querystring';
+import { ParsedUrlQuery } from 'querystring'
 
 import { getPostSlugs, fetchPost } from 'src/utils/api/blog'
 import { type Post } from 'src/utils/api/blog/mutators'
@@ -15,15 +15,15 @@ const Article = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const canonicalUrl = `https://carloscuesta.me/blog/${props.post.slug}`
 
   return (
-    <article className='postDetail'>
+    <article className="postDetail">
       <ArticleJsonLd
-        authorName='Carlos Cuesta'
+        authorName="Carlos Cuesta"
         dateModified={props.post.dateModified}
         datePublished={props.post.datePublished.value}
         description={props.post.excerpt}
         images={[props.post.images.featured.src]}
-        publisherLogo='/images/carloscuesta.jpg'
-        publisherName='Carlos Cuesta'
+        publisherLogo="/images/carloscuesta.jpg"
+        publisherName="Carlos Cuesta"
         title={props.post.title}
         url={canonicalUrl}
       />
@@ -31,7 +31,7 @@ const Article = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
       <NextSeo
         additionalMetaTags={[
           { name: 'twitter:label1', content: 'Reading time' },
-          { name: 'twitter:data1', content: props.post.readingTime }
+          { name: 'twitter:data1', content: props.post.readingTime },
         ]}
         canonical={canonicalUrl}
         title={`Carlos Cuesta – ${props.post.title}`}
@@ -44,23 +44,24 @@ const Article = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
           article: {
             publishedTime: props.post.datePublished.value,
             modifiedTime: props.post.dateModified,
-            authors: ['https://carloscuesta.me']
+            authors: ['https://carloscuesta.me'],
           },
           images: [
             {
               alt: props.post.title,
               height: 1000,
               url: props.post.images.featured.src,
-              width: 2000
-            }
-          ]
+              width: 2000,
+            },
+          ],
         }}
       />
 
       <Head>
-        <link rel='preload' href='/prism/prism.css' as='style' />
-        <link href='/prism/prism.css' rel='stylesheet' type='text/css' />
-        <style>{`
+        <link rel="preload" href="/prism/prism.css" as="style" />
+        <link href="/prism/prism.css" rel="stylesheet" type="text/css" />
+        <style>
+          {`
           .prose h1:hover .headingLink,
           .prose h2:hover .headingLink,
           .prose h3:hover .headingLink,
@@ -87,9 +88,9 @@ const Article = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
             title={props.post.title}
           />
 
-          <div 
+          <div
             dangerouslySetInnerHTML={{ __html: props.post.html }}
-            className='prose dark:prose-invert prose-lg max-w-full relative prose-headings:scroll-mt-16 dark:prose-headings:font-semibold prose-img:rounded-lg'
+            className="prose prose-lg relative max-w-full dark:prose-invert prose-headings:scroll-mt-16 prose-img:rounded-lg dark:prose-headings:font-semibold"
           />
 
           <ShareLinks
@@ -111,16 +112,18 @@ interface Params extends ParsedUrlQuery {
 
 export const getStaticPaths: GetStaticPaths<Params> = () => ({
   paths: getPostSlugs().map((slug: string) => ({ params: { slug } })),
-  fallback: false
+  fallback: false,
 })
 
-export const getStaticProps: GetStaticProps<{ post: Post }, Params> = async ({ params }) => {
+export const getStaticProps: GetStaticProps<{ post: Post }, Params> = async ({
+  params,
+}) => {
   const post = await fetchPost((params as Params).slug)
 
   return {
     props: {
-      post
-    }
+      post,
+    },
   }
 }
 

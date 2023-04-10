@@ -1,10 +1,10 @@
 ---
-dateModified: "2023-01-29 22:00"
-datePublished: "2023-01-29 22:00"
-disqusIdentifier: "effective-refactoring-with-codemods"
+dateModified: '2023-01-29 22:00'
+datePublished: '2023-01-29 22:00'
+disqusIdentifier: 'effective-refactoring-with-codemods'
 excerpt: "A codemod is a tool that helps you with large-scale refactors. In this article I'm going to explain how you can use them along with Abstract Syntax Trees."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1675022732/blog-featured-images/Effective_Refactoring_with_Codemods.png"
-title: "Effective Refactoring with Codemods"
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1675022732/blog-featured-images/Effective_Refactoring_with_Codemods.png'
+title: 'Effective Refactoring with Codemods'
 ---
 
 **Metaprogramming** is a technique where we write code to manipulate other code. I know this sounds a bit intimidating and confusing 😱, but actually I'm sure you've already used it in your daily work.
@@ -17,7 +17,7 @@ In this article I'm going to explain how you can use **codemods** (_metaprogramm
 
 ### What is a codemod?
 
-A **codemod** is a tool that helps you with large-scale refactors by **running transformations** on your **codebase programatically**. 
+A **codemod** is a tool that helps you with large-scale refactors by **running transformations** on your **codebase programatically**.
 
 This automated transformations will allow you to change large amount of files without having to go through them manually, **saving** a lot of **time** and **increasing** **confidence**! 🙌
 
@@ -34,7 +34,7 @@ Abstract Syntax Trees is what makes all of this magic 🪄 possible. Let's under
 
 ### Abstract Syntax Trees
 
-An **Abstract Syntax Tree** (AST) is a [tree data structure](https://en.wikipedia.org/wiki/Tree_(data_structure)) that represents a piece of code.
+An **Abstract Syntax Tree** (AST) is a [tree data structure](<https://en.wikipedia.org/wiki/Tree_(data_structure)>) that represents a piece of code.
 
 Let's understand it with an example 🖼️:
 
@@ -69,7 +69,7 @@ I will use the following tools to perform the refactor:
 
 #### Understanding the transformation
 
-##### Input 
+##### Input
 
 Image that in our codebase we are using the [`lodash/get`](https://lodash.com/docs/4.17.15#get) helper to **safely extract values from objects**, like this:
 
@@ -126,7 +126,7 @@ With the AST 🌳 already in place, we can start **traversing it**. Use the expl
 
 ![AST Explorer - Traversing the AST](https://res.cloudinary.com/carloscuesta/image/upload/v1674947801/ast-lodash-demo_jhtiql.png)
 
-These are the two nodes we will need to transform to refactor our code: `ImportDeclaration` and `CallExpression`. 
+These are the two nodes we will need to transform to refactor our code: `ImportDeclaration` and `CallExpression`.
 Now, let's transform the nodes ♻️
 
 ##### Transforming the nodes
@@ -137,14 +137,14 @@ As we saw before, we need to transform two nodes from the AST:
 - `ImportDeclaration`: Remove the `get` import statement.
 
 Once the AST is completely **transformed**, we will **convert it** back **to source code**.
-Let's break this down into steps ✅: 
+Let's break this down into steps ✅:
 
 ###### 1. Find `get` helper usages
 
 To find `get` calls we will have to traverse the AST, **finding** nodes with the type `CallExpression` containing a `callee.name` of `get` 🔎
 
 ```js
-ast.find(j.CallExpression, { callee: { name: 'get' }})
+ast.find(j.CallExpression, { callee: { name: 'get' } })
 ```
 
 ###### 2. Replace `get` with optional chaining and default value
@@ -168,17 +168,17 @@ I know the AST transformation might look a bit complex 😨, but it's just a com
   j(node).replaceWith(
     j.expressionStatement(
       j.logicalExpression(
-        '??', 
+        '??',
         j.optionalMemberExpression(
           pathItems.slice(0, -1).reduce(
             (node, param) => j.optionalMemberExpression(
-              node, 
+              node,
               j.identifier(param)
             ),
             source
           ),
           j.identifier(lastPathItem)
-        ), 
+        ),
         fallback
       )
     )
@@ -188,10 +188,10 @@ I know the AST transformation might look a bit complex 😨, but it's just a com
 
 ###### 3. Find lodash/get import statements
 
-Once `get` is removed, we can safely delete the import statements. But first, we will need to **find** nodes with the type `ImportDeclaration` containing a `source.value` of `lodash/object` 🔎 
+Once `get` is removed, we can safely delete the import statements. But first, we will need to **find** nodes with the type `ImportDeclaration` containing a `source.value` of `lodash/object` 🔎
 
 ```js
-ast.find(j.ImportDeclaration, { source: { value: 'lodash/object' }})
+ast.find(j.ImportDeclaration, { source: { value: 'lodash/object' } })
 ```
 
 ###### 4. Prune import statements
@@ -210,7 +210,7 @@ To remove `get` from the import statement, we will iterate over the matches **fi
     j(node).remove()
   }
 })
-``` 
+```
 
 ###### 5. Convert AST back to source code
 
@@ -228,57 +228,56 @@ Now it's time to put all the pieces together 🧩, so we can transform [our code
 <details>
   <summary>Click here to see the snippet 👈</summary>
 
-  ```js
-  export const parser = 'babel'
+```js
+export const parser = 'babel'
 
-  export default function transformer(file, api) {
-    const j = api.jscodeshift;
-    const ast = j(file.source)
+export default function transformer(file, api) {
+  const j = api.jscodeshift
+  const ast = j(file.source)
 
-    ast
-      .find(j.CallExpression, { callee: { name: 'get' }})
-      .forEach(node => {
-        const [source, path, fallback] = node.value.arguments
-        const pathItems = path.value.split('.')
-        const lastPathItem = pathItems.at(-1)
+  ast.find(j.CallExpression, { callee: { name: 'get' } }).forEach((node) => {
+    const [source, path, fallback] = node.value.arguments
+    const pathItems = path.value.split('.')
+    const lastPathItem = pathItems.at(-1)
 
-        j(node).replaceWith(
-          j.expressionStatement(
-            j.logicalExpression(
-              '??', 
-              j.optionalMemberExpression(
-                pathItems.slice(0, -1).reduce(
-                  (node, param) => j.optionalMemberExpression(
-                    node, 
-                    j.identifier(param)
-                  ),
-                  source
-                ),
-                j.identifier(lastPathItem)
-              ), 
-              fallback
-            )
-          )
+    j(node).replaceWith(
+      j.expressionStatement(
+        j.logicalExpression(
+          '??',
+          j.optionalMemberExpression(
+            pathItems
+              .slice(0, -1)
+              .reduce(
+                (node, param) =>
+                  j.optionalMemberExpression(node, j.identifier(param)),
+                source
+              ),
+            j.identifier(lastPathItem)
+          ),
+          fallback
         )
-      })
+      )
+    )
+  })
 
-    ast
-      .find(j.ImportDeclaration, { source: { value: 'lodash/object' } })
-      .forEach((node) => {
-        const importedModules = node.value.specifiers.filter(
-          ({ imported }) => imported.name !== 'get'
-        )
+  ast
+    .find(j.ImportDeclaration, { source: { value: 'lodash/object' } })
+    .forEach((node) => {
+      const importedModules = node.value.specifiers.filter(
+        ({ imported }) => imported.name !== 'get'
+      )
 
-        if (importedModules.length) {
-          node.value.specifiers = importedModules
-        } else {
-          j(node).remove()
-        }
-      })
+      if (importedModules.length) {
+        node.value.specifiers = importedModules
+      } else {
+        j(node).remove()
+      }
+    })
 
-    return ast.toSource()
-  }
-  ```
+  return ast.toSource()
+}
+```
+
 </details>
 
 Finally we can see the codemod in in action 💖
@@ -295,7 +294,7 @@ In case you're using a different tool with no testing utilities, you can always 
 
 ### Conclusion
 
-Automating codebase changes can be **difficult** the first time you do it, but it's totally worth it. 
+Automating codebase changes can be **difficult** the first time you do it, but it's totally worth it.
 It will **save** you a **lot of time** 🚀 and it will prevent you from introducing bugs 🐛.
 
 Automate all the things! 🙌

@@ -22,7 +22,7 @@ describe('SectionTitle', () => {
 
   describe('with title only', () => {
     it('should match SectionTitle component', () => {
-      const wrapper = renderer.create(<SectionTitle title='Test' />)
+      const wrapper = renderer.create(<SectionTitle title="Test" />)
 
       expect(wrapper).toMatchSnapshot()
     })

@@ -2,7 +2,10 @@ import renderer from 'react-test-renderer'
 
 import About from 'src/pages/about'
 
-jest.mock('next-seo', () => ({ NextSeo: 'NextSeo', SocialProfileJsonLd: 'SocialProfileJsonLd' }))
+jest.mock('next-seo', () => ({
+  NextSeo: 'NextSeo',
+  SocialProfileJsonLd: 'SocialProfileJsonLd',
+}))
 
 /*
   I'm mocking the components since those are unit tested.

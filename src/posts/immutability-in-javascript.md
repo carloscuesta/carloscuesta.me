@@ -1,10 +1,10 @@
 ---
-dateModified: "2021-01-26 09:00"
-datePublished: "2021-01-26 09:00"
-disqusIdentifier: "immutability-in-javascript"
-excerpt: "Have you ever heard something about immutability? Despite being a popular term, there are some misconceptions about the importance and principles of it."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1611526004/blog-featured-images/Immutability-In-JavaScript.png"
-title: "Immutability in JavaScript"
+dateModified: '2021-01-26 09:00'
+datePublished: '2021-01-26 09:00'
+disqusIdentifier: 'immutability-in-javascript'
+excerpt: 'Have you ever heard something about immutability? Despite being a popular term, there are some misconceptions about the importance and principles of it.'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1611526004/blog-featured-images/Immutability-In-JavaScript.png'
+title: 'Immutability in JavaScript'
 ---
 
 Have you ever heard something about _immutability_? I'm mostly sure the answer is _yes!_, particularly on the programming ecosystem. Despite being a popular term, there are some misconceptions about the importance and principles of it. Let's dive in into it!
@@ -43,7 +43,7 @@ Through the [object property accessor](https://developer.mozilla.org/en-US/docs/
 cart.total = 15
 ```
 
-------
+---
 
 The **difference** between those two examples is that on the first one we preserved our original shopping cart and we created a new one and on the second one we **overwrited** the value of the `total` property.
 
@@ -90,7 +90,7 @@ A constant is a **variable** that **cannot be reassigned** and **redeclared**. T
 The use of `const` tells the human being who's reading your code that the following variable won't be reassigned or redeclared. It's a great improvement in **code readability** because we're intentionally communicating that.
 
 ```js
-const fruits = ['🍌','🍓', '🥥']
+const fruits = ['🍌', '🍓', '🥥']
 
 // We can't reassign the constant
 // ❌ TypeError: Assignment to constant variable.
@@ -110,14 +110,14 @@ fruits.push('🍍')
 Also known as [`...`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax), it's a useful operator for cloning _iterables_ such as `Array` or `Object`.
 
 ```js
-const fruits = ['🍌','🍓', '🥥']
+const fruits = ['🍌', '🍓', '🥥']
 const shoppingCart = { id: '69zd841', total: 0 }
 
 // Add a some fruits to the end of the array
 const fruitsCollection = [...fruits, '🍍', '🥝']
 
 // Update the shoppingCart total and clone all the other properties
-const shoppingCartWithTotal = {...shoppingCart, total: 15 }
+const shoppingCartWithTotal = { ...shoppingCart, total: 15 }
 ```
 
 #### Object.freeze
@@ -129,7 +129,7 @@ But what does _frozen object_ means? A **frozen object** is an Object whose prop
 The freezing process ❄️ is only made at the **top level** of the object. If you want to make your whole object immutable, make sure you deep **freeze** each sub `Object` or `Array` 🤓.
 
 ```js
-const fruits = Object.freeze(['🍌','🍓', '🥥'])
+const fruits = Object.freeze(['🍌', '🍓', '🥥'])
 const shoppingCart = Object.freeze({ id: '69zd841', total: 0, products: [] })
 
 // We can't extend the fruits Array

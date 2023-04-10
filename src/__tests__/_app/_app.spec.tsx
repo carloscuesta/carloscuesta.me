@@ -37,7 +37,7 @@ describe('_app', () => {
         category: 'Web Vitals',
         label: stubs.webVitalMetric.id,
         value: stubs.webVitalMetric.value,
-        nonInteraction: true
+        nonInteraction: true,
       })
     })
   })

@@ -1,9 +1,9 @@
 export const props = {
   title: 'Title',
-  subTitle: 'Subtitle'
+  subTitle: 'Subtitle',
 }
 
 export const propsWithLink = {
   ...props,
-  viewAllLink: '/test'
+  viewAllLink: '/test',
 }

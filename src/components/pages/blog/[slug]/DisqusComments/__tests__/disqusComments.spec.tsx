@@ -5,11 +5,11 @@ import DisqusComments from '../index'
 import * as stubs from './stubs'
 
 jest.mock('react-intersection-observer', () => ({
-  useInView: jest.fn().mockReturnValue([jest.fn(), false])
+  useInView: jest.fn().mockReturnValue([jest.fn(), false]),
 }))
 
 jest.mock('disqus-react', () => ({
-  DiscussionEmbed: 'DiscussionEmbed'
+  DiscussionEmbed: 'DiscussionEmbed',
 }))
 
 describe('DisqusComments', () => {
@@ -18,7 +18,7 @@ describe('DisqusComments', () => {
 
     expect(useInView).toHaveBeenCalledWith({
       rootMargin: '440px',
-      triggerOnce: true
+      triggerOnce: true,
     })
   })
 
@@ -32,7 +32,7 @@ describe('DisqusComments', () => {
 
   describe('when the component is in viewport', () => {
     beforeAll(() => {
-      (useInView as jest.Mock).mockReturnValue([jest.fn(), true])
+      ;(useInView as jest.Mock).mockReturnValue([jest.fn(), true])
     })
 
     it('should render the Disqus component', () => {

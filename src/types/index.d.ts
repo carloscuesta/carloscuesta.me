@@ -1,1 +1,1 @@
-declare module "rehype-wrap-all";
+declare module 'rehype-wrap-all'

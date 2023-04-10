@@ -310,9 +310,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "vscode-theme"
-    ],
+    "topics": ["vscode-theme"],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
@@ -512,9 +510,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "overview"
-    ],
+    "topics": ["overview"],
     "visibility": "public",
     "forks": 5,
     "open_issues": 0,
@@ -720,10 +716,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "error-boundary",
-      "react-native"
-    ],
+    "topics": ["error-boundary", "react-native"],
     "visibility": "public",
     "forks": 25,
     "open_issues": 0,
@@ -823,10 +816,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "ghost",
-      "ghost-theme"
-    ],
+    "topics": ["ghost", "ghost-theme"],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
@@ -932,12 +922,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "atom",
-      "atom-syntax",
-      "material",
-      "material-design"
-    ],
+    "topics": ["atom", "atom-syntax", "material", "material-design"],
     "visibility": "public",
     "forks": 3,
     "open_issues": 0,
@@ -1043,11 +1028,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "debugger",
-      "layout",
-      "react-native"
-    ],
+    "topics": ["debugger", "layout", "react-native"],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
@@ -1153,12 +1134,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "cli",
-      "emoji",
-      "gitmoji",
-      "gitmoji-cli"
-    ],
+    "topics": ["cli", "emoji", "gitmoji", "gitmoji-cli"],
     "visibility": "public",
     "forks": 204,
     "open_issues": 9,
@@ -1264,11 +1240,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "commits",
-      "emoji",
-      "gitmoji"
-    ],
+    "topics": ["commits", "emoji", "gitmoji"],
     "visibility": "public",
     "forks": 753,
     "open_issues": 10,
@@ -1374,12 +1346,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "hyper",
-      "hyper-theme",
-      "materialshell",
-      "theme"
-    ],
+    "topics": ["hyper", "hyper-theme", "materialshell", "theme"],
     "visibility": "public",
     "forks": 10,
     "open_issues": 0,
@@ -1479,10 +1446,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "atom-editor",
-      "atom-setup"
-    ],
+    "topics": ["atom-editor", "atom-setup"],
     "visibility": "public",
     "forks": 0,
     "open_issues": 0,
@@ -1582,12 +1546,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "carloscuesta",
-      "nextjs",
-      "personal-website",
-      "website"
-    ],
+    "topics": ["carloscuesta", "nextjs", "personal-website", "website"],
     "visibility": "public",
     "forks": 7,
     "open_issues": 4,
@@ -1693,12 +1652,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "material-design",
-      "materialshell",
-      "shell",
-      "zsh"
-    ],
+    "topics": ["material-design", "materialshell", "shell", "zsh"],
     "visibility": "public",
     "forks": 136,
     "open_issues": 0,
@@ -1910,12 +1864,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "gulp",
-      "scaffold",
-      "starterkit",
-      "yeoman-generator"
-    ],
+    "topics": ["gulp", "scaffold", "starterkit", "yeoman-generator"],
     "visibility": "public",
     "forks": 4,
     "open_issues": 0,
@@ -2021,10 +1970,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "gulp",
-      "starterkit"
-    ],
+    "topics": ["gulp", "starterkit"],
     "visibility": "public",
     "forks": 13,
     "open_issues": 2,
@@ -2130,9 +2076,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "dotfiles"
-    ],
+    "topics": ["dotfiles"],
     "visibility": "public",
     "forks": 5,
     "open_issues": 0,

@@ -1,10 +1,10 @@
 ---
-dateModified: "2017-09-07 10:00"
-datePublished: "2017-09-07 10:00"
-disqusIdentifier: "22"
+dateModified: '2017-09-07 10:00'
+datePublished: '2017-09-07 10:00'
+disqusIdentifier: '22'
 excerpt: "Building native applications with React is awesome. Until the time you have to release a new build. That's when Fastlane comes to the rescue!"
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Shipping_React_Native_apps_with_Fastlane.png"
-title: "Shipping React Native apps with Fastlane"
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Shipping_React_Native_apps_with_Fastlane.png'
+title: 'Shipping React Native apps with Fastlane'
 ---
 
 Building native applications with [**React**](https://facebook.github.io/react-native/) (_JavaScript_) is awesome ❤️. Until the time you have to **release a new build**, specially, if you are not an `iOS` or `Android` native developer. The process of **shipping manually** an application to the stores **is** a **painful** and **time consuming** experience, even though it's documented.
@@ -12,7 +12,7 @@ Building native applications with [**React**](https://facebook.github.io/react-n
 That's when [**Fastlane**](https://fastlane.tools) comes to the rescue ⛑! In this post I'll explain how to automate the release process for an `iOS` 🍏 and `Android` 🤖 application. Handling the most common tasks such as: **Code signing**, **App builds**, **Beta distribution** and much more! Actually **we use** **Fastlane** at [**Ulabox**](https://www.ulabox.com) for building our react-native apps.
 
 > Fastlane is the tool to release your iOS and Android app
-It handles all tedious tasks, like generating screenshots, dealing with code signing, and releasing your application.
+> It handles all tedious tasks, like generating screenshots, dealing with code signing, and releasing your application.
 
 ### Getting Started
 
@@ -54,7 +54,7 @@ Also we've defined the **two platforms** that we're going to use 🍏 and 🤖 w
 
 The best way to code sign it's **[match](https://docs.fastlane.tools/actions/match/)**, before integrating match into a lane you have to:
 
-1. [Nuke](https://docs.fastlane.tools/actions/match/#nuke)  the existing profiles and certificates.
+1. [Nuke](https://docs.fastlane.tools/actions/match/#nuke) the existing profiles and certificates.
 2. [Setup match](https://docs.fastlane.tools/actions/match/#setup) through the `init` option.
 3. Create a lane on the `ios` platform that uses match.
 
@@ -99,7 +99,7 @@ private_lane :build do
 end
 ```
 
- Then **automate** the `versionCode` bump, by hooking up the `assembleRelease` [with this little task](https://gist.github.com/carloscuesta/678668da906bb80bdd22c8fd690c4fc4).
+Then **automate** the `versionCode` bump, by hooking up the `assembleRelease` [with this little task](https://gist.github.com/carloscuesta/678668da906bb80bdd22c8fd690c4fc4).
 
 ### Beta distribution
 
@@ -124,7 +124,6 @@ desc 'Ship to Testflight.'
 **Android** uses the **[Playstore](https://support.google.com/googleplay/android-developer/answer/3131213?hl=en)** to share `beta` builds. We can automate that with fastlane too!
 
 The `beta` lane for Android is nearly the same as iOS, uses the build lane to generate the signed `.apk`, commits the `versionCode` changes and using **[supply](https://github.com/fastlane/fastlane/tree/master/supply)** **promotes** the **local** build to Playstore as a _beta release_. ✨
-
 
 ```ruby
 desc 'Ship to Playstore Beta.'

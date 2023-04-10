@@ -53,12 +53,7 @@
         "scope": "unscoped",
         "version": "8.0.0",
         "description": "A gitmoji client for using emojis on commit messages.",
-        "keywords": [
-          "gitmoji",
-          "emoji",
-          "carloscuesta",
-          "commit"
-        ],
+        "keywords": ["gitmoji", "emoji", "carloscuesta", "commit"],
         "date": "2023-02-20T17:41:12.761Z",
         "links": {
           "npm": "https://www.npmjs.com/package/gitmoji-cli",
@@ -99,12 +94,7 @@
         "scope": "unscoped",
         "version": "3.13.4",
         "description": "An emoji guide for your commit messages.",
-        "keywords": [
-          "gitmoji",
-          "emoji",
-          "carloscuesta",
-          "commit"
-        ],
+        "keywords": ["gitmoji", "emoji", "carloscuesta", "commit"],
         "date": "2023-01-18T18:37:28.350Z",
         "links": {
           "npm": "https://www.npmjs.com/package/gitmojis",
@@ -153,12 +143,7 @@
         "scope": "unscoped",
         "version": "1.1.1",
         "description": "React native layout debugger.",
-        "keywords": [
-          "react-native",
-          "layout",
-          "debug",
-          "debugger"
-        ],
+        "keywords": ["react-native", "layout", "debug", "debugger"],
         "date": "2017-01-06T23:23:17.680Z",
         "links": {
           "npm": "https://www.npmjs.com/package/react-native-layout-debug",

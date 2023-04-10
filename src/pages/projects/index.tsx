@@ -3,7 +3,10 @@ import { NextSeo } from 'next-seo'
 
 import { fetchRepositories, fetchUserInformation } from 'src/utils/api/github'
 import { fetchPublishedPackages, fetchDownloadsCount } from 'src/utils/api/npm'
-import { type Repository, type UserInformation } from 'src/utils/api/github/mutators'
+import {
+  type Repository,
+  type UserInformation,
+} from 'src/utils/api/github/mutators'
 import PageTitle from 'src/components/shared/PageTitle'
 import Wrapper from 'src/components/shared/Wrapper'
 import Repositories from 'src/components/pages/projects/Repositories'
@@ -12,12 +15,12 @@ import Stats from 'src/components/pages/projects/Stats'
 const Projects = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
     <NextSeo
-      canonical='https://carloscuesta.me/projects'
-      title='Carlos Cuesta – Projects'
+      canonical="https://carloscuesta.me/projects"
+      title="Carlos Cuesta – Projects"
     />
     <main>
       <Wrapper>
-        <PageTitle title='Projects' />
+        <PageTitle title="Projects" />
 
         <Stats
           followers={props.userInformation.followers}
@@ -32,15 +35,15 @@ const Projects = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
 )
 
 export const getStaticProps: GetStaticProps<{
-  packageDownloads: string,
-  repositories: Repository[],
-  userInformation: UserInformation,
+  packageDownloads: string
+  repositories: Repository[]
+  userInformation: UserInformation
   stars: string
 }> = async () => {
   const [repositories, userInformation, publishedPackages] = await Promise.all([
     fetchRepositories(),
     fetchUserInformation(),
-    fetchPublishedPackages()
+    fetchPublishedPackages(),
   ])
 
   return {
@@ -51,9 +54,9 @@ export const getStaticProps: GetStaticProps<{
         .map((repository) => repository.stars.value)
         .reduce((memo, value) => memo + value)
         .toLocaleString(),
-      userInformation
+      userInformation,
     },
-    revalidate: 3600
+    revalidate: 3600,
   }
 }
 

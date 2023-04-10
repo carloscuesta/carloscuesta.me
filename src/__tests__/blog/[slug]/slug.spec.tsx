@@ -4,7 +4,10 @@ import BlogSlug, { getStaticPaths, getStaticProps } from 'src/pages/blog/[slug]'
 import { getPostSlugs, fetchPost } from 'src/utils/api/blog'
 import * as stubs from './stubs'
 
-jest.mock('next-seo', () => ({ NextSeo: 'NextSeo', ArticleJsonLd: 'ArticleJsonLd' }))
+jest.mock('next-seo', () => ({
+  NextSeo: 'NextSeo',
+  ArticleJsonLd: 'ArticleJsonLd',
+}))
 jest.mock('src/utils/api/blog')
 
 /*
@@ -15,10 +18,19 @@ jest.mock('src/utils/api/blog')
 
 jest.mock('src/components/shared/Wrapper', () => 'Wrapper')
 jest.mock('src/components/pages/blog/[slug]/Header', () => 'Header')
-jest.mock('src/components/pages/blog/[slug]/FeaturedImage', () => 'FeaturedImage')
-jest.mock('src/components/pages/blog/[slug]/NewsletterSubscribe', () => 'NewsletterSubscribe')
+jest.mock(
+  'src/components/pages/blog/[slug]/FeaturedImage',
+  () => 'FeaturedImage'
+)
+jest.mock(
+  'src/components/pages/blog/[slug]/NewsletterSubscribe',
+  () => 'NewsletterSubscribe'
+)
 jest.mock('src/components/pages/blog/[slug]/ShareLinks', () => 'ShareLinks')
-jest.mock('src/components/pages/blog/[slug]/DisqusComments', () => 'DisqusComments')
+jest.mock(
+  'src/components/pages/blog/[slug]/DisqusComments',
+  () => 'DisqusComments'
+)
 
 describe('blog/[slug]', () => {
   describe('page', () => {
@@ -31,7 +43,7 @@ describe('blog/[slug]', () => {
 
   describe('getStaticPaths', () => {
     beforeAll(() => {
-      (getPostSlugs as jest.Mock).mockReturnValue(stubs.postSlugs)
+      ;(getPostSlugs as jest.Mock).mockReturnValue(stubs.postSlugs)
     })
 
     it('should return an object with paths and fallback as keys', () => {
@@ -39,14 +51,14 @@ describe('blog/[slug]', () => {
 
       expect(paths).toEqual({
         paths: stubs.postSlugs.map((slug) => ({ params: { slug } })),
-        fallback: false
+        fallback: false,
       })
     })
   })
 
   describe('getStaticProps', () => {
     beforeAll(() => {
-      (fetchPost as jest.Mock).mockReturnValue(stubs.post)
+      ;(fetchPost as jest.Mock).mockReturnValue(stubs.post)
     })
 
     it('should return post as props', async () => {

@@ -31,10 +31,16 @@ describe('index', () => {
 
   describe('getStaticProps', () => {
     beforeAll(() => {
-      (fetchRepositories as jest.Mock).mockReturnValue(stubs.repositories)
-      ;(fetchUserInformation as jest.Mock).mockReturnValue(stubs.userInformation)
-      ;(fetchPublishedPackages as jest.Mock).mockReturnValue(stubs.publishedPackages)
-      ;(fetchDownloadsCount as jest.Mock).mockReturnValue(stubs.packageDownloads)
+      ;(fetchRepositories as jest.Mock).mockReturnValue(stubs.repositories)
+      ;(fetchUserInformation as jest.Mock).mockReturnValue(
+        stubs.userInformation
+      )
+      ;(fetchPublishedPackages as jest.Mock).mockReturnValue(
+        stubs.publishedPackages
+      )
+      ;(fetchDownloadsCount as jest.Mock).mockReturnValue(
+        stubs.packageDownloads
+      )
     })
 
     it('should return repositories and userInformation as props and set revalidate', async () => {
@@ -49,9 +55,9 @@ describe('index', () => {
         props: {
           repositories: stubs.repositories,
           userInformation: stubs.userInformation,
-          packageDownloads: stubs.packageDownloads
+          packageDownloads: stubs.packageDownloads,
         },
-        revalidate: 3600
+        revalidate: 3600,
       })
     })
   })

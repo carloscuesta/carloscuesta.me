@@ -7,15 +7,15 @@ jest.mock('next/router', () => ({
   pathname: '',
   events: {
     on: jest.fn(),
-    off: jest.fn()
+    off: jest.fn(),
   },
   useRouter: () => ({
     pathname: '',
     events: {
       on: jest.fn(),
-      off: jest.fn()
-    }
-  })
+      off: jest.fn(),
+    },
+  }),
 }))
 
 describe('Layout', () => {

@@ -1,10 +1,10 @@
 ---
-dateModified: "2018-10-16 12:10"
-datePublished: "2018-10-16 12:10"
-disqusIdentifier: "5b6c646126d36606d1805ab3"
-excerpt: "Creating scalable React components using the folder pattern. A simple way to organize and structure React Components."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Scalable_React_Components_architecture.png"
-title: "Scalable React Components architecture"
+dateModified: '2018-10-16 12:10'
+datePublished: '2018-10-16 12:10'
+disqusIdentifier: '5b6c646126d36606d1805ab3'
+excerpt: 'Creating scalable React components using the folder pattern. A simple way to organize and structure React Components.'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Scalable_React_Components_architecture.png'
+title: 'Scalable React Components architecture'
 ---
 
 It's been a while since I've started working with [**React**](http://reactjs.org) and [**React-Native**](https://facebook.github.io/react-native/) in production. One of the **greatest things** about **React** is the **flexibility** the library gives to you. Meaning that you are free to decide how do you want to implement almost every detail of your project for example the _architecture and structure_.
@@ -38,18 +38,18 @@ There's **nothing wrong with this approach**. But on **larger codebases** that k
 `EmojiList.js`
 
 ```jsx
-import React from "react"
+import React from 'react'
 
-import styles from "./styles"
+import styles from './styles'
 
 class EmojiList extends React.Component {
   state = {
-    searchInput: "",
-    emojis: []
+    searchInput: '',
+    emojis: [],
   }
 
   render() {
-    const emojis = this.state.emojis.filter(emoji =>
+    const emojis = this.state.emojis.filter((emoji) =>
       emoji.code.includes(this.state.searchInput.toLowerCase())
     )
 
@@ -60,7 +60,9 @@ class EmojiList extends React.Component {
           placeholder="Search by name"
           type="text"
           value={this.state.searchInput}
-          onChange={event => this.setState({ searchInput: event.target.value })}
+          onChange={(event) =>
+            this.setState({ searchInput: event.target.value })
+          }
         />
         {emojis.map((emoji, index) => (
           <li key={index} style={styles.item}>
@@ -95,7 +97,6 @@ If we take a look at the image, it's easy to identify that we can **break** up o
 
 We're going to **create** a **folder** for **each** **component**, with two files, an `index.js` that is going to hold all the code for the component and the `styles.js`. That's one of the good things about this pattern. Every component defines his own UI and styles, **isolating** this piece of **code from** another **components** that **doesn't need to know anything about them**.
 
-
 <iframe src="https://codesandbox.io/embed/lx8ykrljl9?autoresize=1&module=%2Fsrc%2Fcomponents%2FEmojiList.js&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 Notice that inside the `EmojiList` folder, (_that is a component_), we add two nested components that only will be used within the `EmojiList` component. Again, that's because these two components aren't going to be used out of that context. This helps reducing the visual clutter a lot.
@@ -121,9 +122,9 @@ Now let's isolate and separate the code into the three components from the small
 This component renders every emoji item that will appear on the list.
 
 ```jsx
-import React from "react"
+import React from 'react'
 
-import styles from "./styles"
+import styles from './styles'
 
 const EmojiListItem = (props) => (
   <li style={styles.item}>
@@ -143,9 +144,9 @@ export default EmojiListItem
 This component receives the user input and updates the state of the parent component.
 
 ```jsx
-import React from "react"
+import React from 'react'
 
-import styles from "./styles"
+import styles from './styles'
 
 const SearchInput = (props) => (
   <input
@@ -165,27 +166,29 @@ export default SearchInput
 This is the top level component, holds the state and data of our example and imports the other components to recreate the whole UI of our tiny application. Isolating components makes the render method more readable and easier to understand ✨.
 
 ```jsx
-import React from "react"
+import React from 'react'
 
-import SearchInput from "./SearchInput"
-import EmojiListItem from "./EmojiListItem"
-import styles from "./styles"
+import SearchInput from './SearchInput'
+import EmojiListItem from './EmojiListItem'
+import styles from './styles'
 
 class EmojiList extends React.Component {
   state = {
-    searchInput: "",
-    emojis: []
+    searchInput: '',
+    emojis: [],
   }
 
   render() {
-    const emojis = this.state.emojis.filter(emoji =>
+    const emojis = this.state.emojis.filter((emoji) =>
       emoji.code.includes(this.state.searchInput.toLowerCase())
     )
 
     return (
       <ul style={styles.list}>
         <SearchInput
-          onChange={(event) => this.setState({ searchInput: event.target.value })}
+          onChange={(event) =>
+            this.setState({ searchInput: event.target.value })
+          }
           value={this.state.searchInput}
         />
         {emojis.map((emoji, index) => (

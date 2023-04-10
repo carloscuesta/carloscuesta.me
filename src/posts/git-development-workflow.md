@@ -1,10 +1,10 @@
 ---
-dateModified: "2017-07-17 13:00"
-datePublished: "2017-07-17 13:00"
-disqusIdentifier: "20"
-excerpt: "Git development workflow. Feature branches, rebase on top of master, squash and merge."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Git_development_workflow.png"
-title: "Git development workflow"
+dateModified: '2017-07-17 13:00'
+datePublished: '2017-07-17 13:00'
+disqusIdentifier: '20'
+excerpt: 'Git development workflow. Feature branches, rebase on top of master, squash and merge.'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Git_development_workflow.png'
+title: 'Git development workflow'
 ---
 
 **Git**, it's the most popular version control system and widely the most used for tech companies. In fact, as a software developer you'll be continuously using a tool like that.

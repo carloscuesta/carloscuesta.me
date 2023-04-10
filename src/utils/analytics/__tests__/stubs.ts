@@ -3,5 +3,5 @@ export const event = {
   category: 'event-category',
   value: 1,
   label: 'event-label',
-  nonInteraction: true
+  nonInteraction: true,
 }

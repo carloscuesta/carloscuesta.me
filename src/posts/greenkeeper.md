@@ -1,10 +1,10 @@
 ---
-dateModified: "2016-04-07 17:55"
-datePublished: "2016-04-07 17:55"
-disqusIdentifier: "10"
-excerpt: "Learn how to automate your project dependencies with greenkeeper and github. Get automatically a pull request when a dependency gets updated."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531856/blog-featured-images/Automating_Dependencies_Greenkeeper.png"
-title: "Automating dependencies with greenkeeper"
+dateModified: '2016-04-07 17:55'
+datePublished: '2016-04-07 17:55'
+disqusIdentifier: '10'
+excerpt: 'Learn how to automate your project dependencies with greenkeeper and github. Get automatically a pull request when a dependency gets updated.'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531856/blog-featured-images/Automating_Dependencies_Greenkeeper.png'
+title: 'Automating dependencies with greenkeeper'
 ---
 
 I discovered [greenkeeper.io](http://greenkeeper.io) at the **NodeConf Barcelona 2015**, when [Stephan Bönnemann](http://boennemann.me) made a little demo of the project to show what was all about.
@@ -28,7 +28,6 @@ After installing and login, you will have to enable greenkeeper for each reposit
 $ cd github/repo
 $ greenkeeper enable
 ```
-
 
 ### Automated Pull Requests
 

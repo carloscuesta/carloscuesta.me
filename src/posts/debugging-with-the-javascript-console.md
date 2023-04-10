@@ -1,10 +1,10 @@
 ---
-dateModified: "2016-11-02 14:15"
-datePublished: "2016-11-02 14:15"
-disqusIdentifier: "12"
-excerpt: "Debugging is an essential part of programming. Tips and tricks for debugging with the JavaScript console object. Assertions, Loggings, Timers and much more!"
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531856/blog-featured-images/Debugging_with_the_JavaScript_console.png"
-title: "Debugging with JavaScript console"
+dateModified: '2016-11-02 14:15'
+datePublished: '2016-11-02 14:15'
+disqusIdentifier: '12'
+excerpt: 'Debugging is an essential part of programming. Tips and tricks for debugging with the JavaScript console object. Assertions, Loggings, Timers and much more!'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531856/blog-featured-images/Debugging_with_the_JavaScript_console.png'
+title: 'Debugging with JavaScript console'
 ---
 
 **Debugging is an essential part of programming**. As a Developer I spent some of my time fixing bugs and problems.
@@ -16,7 +16,7 @@ Let's cover and share some tips and tricks for debugging with the JavaScript `co
 #### `console.assert()`
 
 ```javascript
-console.assert(x > y, 'Error x is not bigger than y');
+console.assert(x > y, 'Error x is not bigger than y')
 ```
 
 Use `console.assert()` to check if evaluated expression is false. You **must pass a boolean assertion** to the `.assert()` method.
@@ -30,7 +30,7 @@ There are a lot of methods to log information and values to the console.
 #### `console.trace()`
 
 ```javascript
-console.trace('message', object);
+console.trace('message', object)
 ```
 
 Prints a [stack trace](https://developer.mozilla.org/en-US/docs/Web/API/console#Stack_traces). This is useful to see where a method call starts and his cycle.
@@ -38,7 +38,11 @@ Prints a [stack trace](https://developer.mozilla.org/en-US/docs/Web/API/console#
 #### `console.table()`
 
 ```javascript
-console.table([{name: 'carloscuesta.me', language: 'html'}, {name: 'starterkit', language: 'javascript'}, {name: 'generator-starterkit', language: 'javascript'}]);
+console.table([
+  { name: 'carloscuesta.me', language: 'html' },
+  { name: 'starterkit', language: 'javascript' },
+  { name: 'generator-starterkit', language: 'javascript' },
+])
 ```
 
 Displays **Object** and **Array** data into a friendly tabular format.
@@ -48,9 +52,9 @@ Displays **Object** and **Array** data into a friendly tabular format.
 #### `console.log()` `console.error()` `console.warn()`
 
 ```javascript
-console.info('This is just a message');
-console.warn('This is a warning message');
-console.error('This is an error message');
+console.info('This is just a message')
+console.warn('This is a warning message')
+console.error('This is an error message')
 ```
 
 Displays an _information, warning or error_ message to the console.
@@ -62,8 +66,8 @@ Displays an _information, warning or error_ message to the console.
 #### `console.time()` `console.timeEnd()`
 
 ```javascript
-console.time('timerLabel');
-console.timeEnd('timerLabel'); // => 9.15ms
+console.time('timerLabel')
+console.timeEnd('timerLabel') // => 9.15ms
 ```
 
 Starts a timer with an associated label to track how long a process takes to complete.
@@ -75,7 +79,7 @@ Starts a timer with an associated label to track how long a process takes to com
 #### `monitor()`
 
 ```javascript
-monitor(functionName);
+monitor(functionName)
 ```
 
 Use the `monitor()` method to track function calls. Returns the name of the function called and the arguments.
@@ -87,8 +91,8 @@ Use the `monitor()` method to track function calls. Returns the name of the func
 #### `monitorEvents()`
 
 ```javascript
-monitorEvents(object, ['event']);
-monitorEvents(document.body, 'click');
+monitorEvents(object, ['event'])
+monitorEvents(document.body, 'click')
 ```
 
 Use the `monitorEvents()` method to **listen for events on a specified object**.

@@ -12,16 +12,16 @@ import Contact from 'src/components/pages/index/Contact'
 
 const Index = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
-    <NextSeo canonical='https://carloscuesta.me' />
+    <NextSeo canonical="https://carloscuesta.me" />
     <SocialProfileJsonLd
-      type='Person'
-      name='Carlos Cuesta'
-      url='https://carloscuesta.me'
+      type="Person"
+      name="Carlos Cuesta"
+      url="https://carloscuesta.me"
       sameAs={[
         'http://instagram.com/crloscuesta',
         'https://github.com/carloscuesta',
         'https://twitter.com/crloscuesta',
-        'https://www.linkedin.com/in/crloscuesta'
+        'https://www.linkedin.com/in/crloscuesta',
       ]}
     />
     <main>
@@ -34,20 +34,22 @@ const Index = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
 )
 
 export const getStaticProps: GetStaticProps<{
-  posts: PostPreview[],
+  posts: PostPreview[]
   repositories: Repository[]
 }> = async () => {
   const [posts, repositories] = await Promise.all([
     fetchPosts(),
-    fetchRepositories()
+    fetchRepositories(),
   ])
 
   return {
     props: {
       posts: posts.slice(0, 6),
-      repositories: repositories.sort((x, y) => y.stars.value - x.stars.value).slice(0, 6)
+      repositories: repositories
+        .sort((x, y) => y.stars.value - x.stars.value)
+        .slice(0, 6),
     },
-    revalidate: 3600
+    revalidate: 3600,
   }
 }
 

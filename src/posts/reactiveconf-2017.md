@@ -1,10 +1,10 @@
 ---
-dateModified: "2017-10-30 10:00"
-datePublished: "2017-10-30 10:00"
-disqusIdentifier: "23"
-excerpt: "ReactiveConf 2017 review. A two days conference about functional and reactive programming that takes places in Bratislava."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531859/blog-featured-images/Reactive_Conf.png"
-title: "ReactiveConf 2017"
+dateModified: '2017-10-30 10:00'
+datePublished: '2017-10-30 10:00'
+disqusIdentifier: '23'
+excerpt: 'ReactiveConf 2017 review. A two days conference about functional and reactive programming that takes places in Bratislava.'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531859/blog-featured-images/Reactive_Conf.png'
+title: 'ReactiveConf 2017'
 ---
 
 **[ReactiveConf](https://reactiveconf.com)** is a two days conference about functional and reactive programming that takes place in Bratislava 🇸🇰, at the [_Old Market Hall_](https://www.visitbratislava.com/places/old-market-hall/). I attended the conference with three workmates from **[Ulabox](https://ulabox.com)**, [@sospedra_r](https://twitter.com/sospedra_r), [@juanmaorta](https://twitter.com/juanmaorta) and [@markcial](https://twitter.com/Markcial). The venue was organized in two stages: the **Main Stage** and the **Discovery Stage**.
@@ -27,7 +27,7 @@ In terms of **talks** the **quality** and technical **level** was **good**. But 
 
 Having said that, these are my favourite talks ⭐️:
 
-- **The React Productivity Revolution** by [@fortelabs](https://twitter.com/fortelabs) – 🎥 [Slides](https://www.slideshare.net/tiagoforte/the-react-productivity-revolution-by-tiago-forte)  
+- **The React Productivity Revolution** by [@fortelabs](https://twitter.com/fortelabs) – 🎥 [Slides](https://www.slideshare.net/tiagoforte/the-react-productivity-revolution-by-tiago-forte)
 - **Lessons learned Migrating Complex Software** by [@jack_franklin](twitter.com/jack_franklin) – 🎥 [Slides](https://speakerdeck.com/jackfranklin/reactiveconf-lessons-migrating-complex-software)
 - **Writing highly reusable React components** by [@javivelasco](https://twitter.com/javivelasco)
 - **D3 and React, together** by [@sxywu](https://twitter.com/sxywu) – 🎥 [Slides](http://sxywu.com/react-d3/)

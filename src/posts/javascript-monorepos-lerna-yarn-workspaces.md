@@ -1,10 +1,10 @@
 ---
-dateModified: "2019-10-01 22:15"
-datePublished: "2019-10-01 22:15"
-disqusIdentifier: "5bc9ff9949ac5006c0a84f00"
-excerpt: "A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example"
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/JavaScript_monorepos_with_Lerna_and_Yarn_Workspaces.png"
-title: "JavaScript monorepos with Lerna and Yarn Workspaces"
+dateModified: '2019-10-01 22:15'
+datePublished: '2019-10-01 22:15'
+disqusIdentifier: '5bc9ff9949ac5006c0a84f00'
+excerpt: 'A guide to create JavaScript monorepos with Lerna and Yarn Workspaces. Explaining what is a monorepo, what are they useful for and how to create one with a code example'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/JavaScript_monorepos_with_Lerna_and_Yarn_Workspaces.png'
+title: 'JavaScript monorepos with Lerna and Yarn Workspaces'
 ---
 
 ### What is a monorepo ?
@@ -14,7 +14,6 @@ The monorepo term is a compound word between _"mono"_, from Ancient Greek [_"mó
 > A monorepo is a strategy for storing code and projects in a single repository.
 
 ### What are they useful for ?
-
 
 ##### ♻️ Reusing isolated pieces of code
 
@@ -29,7 +28,6 @@ Dependencies are hoisted to the root level of the project, that means you can sh
 Making cross-repo changes within different repositories is painful. Typically involves manual coordination between teams and repos. For example let's say you have an API that is used by many clients and you want to make a breaking change into the contract. It's not trivial to apply the update to all the clients and then coordinate the deploy of the projects and so on. With a monorepo it's easier since everything is contained in a single unit.
 
 Before considering to implement a monorepo architecture, make sure you have the problems that this concept solves ⚠️. There's **no need to overengineer** a project. Remember **keep it simple** ✨
-
 
 ### The tools
 
@@ -67,10 +65,7 @@ Finally we install `lerna` as a `devDependency` to manage the monorepo.
     "yarn": ">=1.17.3"
   },
   "name": "monorepo-example",
-  "workspaces": [
-    "src/applications/*",
-    "src/packages/*"
-  ],
+  "workspaces": ["src/applications/*", "src/packages/*"],
   "scripts": {},
   "devDependencies": {
     "lerna": "latest"
@@ -87,10 +82,7 @@ Now, let's define how Lerna is going to manage our monorepo in a `lerna.json` co
 ```json
 {
   "lerna": "latest",
-  "packages": [
-    "src/applications/*",
-    "src/packages/*"
-  ],
+  "packages": ["src/applications/*", "src/packages/*"],
   "version": "1.0.0",
   "npmClient": "yarn",
   "useWorkspaces": true
@@ -98,7 +90,6 @@ Now, let's define how Lerna is going to manage our monorepo in a `lerna.json` co
 ```
 
 We finished our setup 🙌! Let's add some simple code to see how we can manage and reuse packages on our monorepo.
-
 
 ##### Creating packages
 
@@ -114,11 +105,10 @@ A package inside our monorepo context, is an isolated and reusable piece of code
 
 Each package needs to have a `package.json` with the `name` and `version` **fields defined**. This is important because this describes how we're going to import and use this package on the code base. You can also have dependencies in your package if you need them. On this example I'm writing a simple package called `sayHello`.
 
-
 ```json
 {
   "name": "@packages/sayHello",
-  "version": "1.0.0",
+  "version": "1.0.0"
 }
 ```
 
@@ -154,9 +144,7 @@ Finally, we run our `cli` application from the command line using Lerna 🚀
 
 ![monorepo-workspaces](https://res.cloudinary.com/carloscuesta/image/upload/monorepo-workspaces.png)
 
-
 You can find the example explained on the post on [this GitHub repository](https://github.com/carloscuesta/monorepo-example) 👀. I know this was **pretty simple**, but there are a **ton of things you can do with monorepos**! For example you can share react components in different applications while keeping them isolated. But take a look below 👇 to see monorepos on big open source projects!
-
 
 ### Opensource monorepo projects
 

@@ -1,10 +1,10 @@
 ---
-dateModified: "2022-05-23 17:55"
-datePublished: "2022-05-23 17:55"
-disqusIdentifier: "using-generators-to-improve-developer-productivity"
+dateModified: '2022-05-23 17:55'
+datePublished: '2022-05-23 17:55'
+disqusIdentifier: 'using-generators-to-improve-developer-productivity'
 excerpt: "Let's walk through the experience and the outcome of implementing a tool to generate code. What are the benefits, the problems they solve and how to implement them."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1653167435/blog-featured-images/Code_generators.png"
-title: "Using generators to improve developer productivity"
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1653167435/blog-featured-images/Code_generators.png'
+title: 'Using generators to improve developer productivity'
 ---
 
 A few weeks ago at [N26](http://n26.com), we did _[get stuff done week](https://medium.com/insiden26/getting-stuff-done-days-at-n26-a70105e6b9c9)_, during this time the product and engineering teams have the opportunity to try or build anything we like.
@@ -39,7 +39,7 @@ Imagine, you start the day working on a new task and you need to create a featur
 - Where to put the feature 🗂
 - How you should write the tests 🧪
 
-I'm sure the project you're working on has a list of  **conventions and patterns defined** that explains how  you should work in the codebase.
+I'm sure the project you're working on has a list of **conventions and patterns defined** that explains how you should work in the codebase.
 
 However, every time you are **going through this process** it **requires** you to **think** 🤔 about those conventions to **make the decision**.
 
@@ -171,21 +171,21 @@ Template files define the code that will be created after running the generator,
 
 Every template starts with a **[frontmatter](https://www.hygen.io/docs/templates/#frontmatter) header**. On this header, you will define the metadata of the template using the [following properties](https://www.hygen.io/docs/templates#all-frontmatter-properties) 🔍
 
-| Property        | Type    | Usage                                                                             |
-| --------------- | ------- | --------------------------------------------------------------------------------- |
-| to            | String  | The destination of the file once compiled.                                          |
-| from          | String  | Use an external file as template.                                                   |
-| force         | Boolean | Overwrite existing files                                                            |
-| unless_exists | Boolean | Execute the generator unless file already exists.                                   |
-| inject        | Boolean | Inject the contents into an existing file instead of creating a new one.            |
-| after         | Regex   | Inject the template after the regex                                                 |
-| before        | Regex   | Inject the template before the regex                                                |
-| prepend       | Boolean | Inject the template at the start of the file                                        |
-| append        | Boolean | Inject the template at the end of the file                                          |
-| at_line       | Regex   | Inject the template at the specified line number                                    |
-| skip_if       | Regex   | Skip injection if regex matches.                                                    |
-| eof_last      | Boolean | Trim the newline from the end of the injection.                                     |
-| sh            | String  | Trigger a shell command after compiling the template                                |
+| Property      | Type    | Usage                                                                    |
+| ------------- | ------- | ------------------------------------------------------------------------ |
+| to            | String  | The destination of the file once compiled.                               |
+| from          | String  | Use an external file as template.                                        |
+| force         | Boolean | Overwrite existing files                                                 |
+| unless_exists | Boolean | Execute the generator unless file already exists.                        |
+| inject        | Boolean | Inject the contents into an existing file instead of creating a new one. |
+| after         | Regex   | Inject the template after the regex                                      |
+| before        | Regex   | Inject the template before the regex                                     |
+| prepend       | Boolean | Inject the template at the start of the file                             |
+| append        | Boolean | Inject the template at the end of the file                               |
+| at_line       | Regex   | Inject the template at the specified line number                         |
+| skip_if       | Regex   | Skip injection if regex matches.                                         |
+| eof_last      | Boolean | Trim the newline from the end of the injection.                          |
+| sh            | String  | Trigger a shell command after compiling the template                     |
 
 Now, let's add a template file named `index.ejs` inside the `react` action folder we created previously:
 
@@ -233,8 +233,8 @@ module.exports = [
   {
     type: 'input',
     name: 'name',
-    message: 'Write the name of your component'
-  }
+    message: 'Write the name of your component',
+  },
 ]
 ```
 

@@ -1,17 +1,17 @@
 ---
-dateModified: "2017-04-25 09:00"
-datePublished: "2017-04-25 09:00"
-disqusIdentifier: "19"
-excerpt: "React Amsterdam 2017 review. A full day conference on all things React with more than 1000 developers from all across the globe."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/React_Amsterdam.png"
-title: "React Amsterdam 2017"
+dateModified: '2017-04-25 09:00'
+datePublished: '2017-04-25 09:00'
+disqusIdentifier: '19'
+excerpt: 'React Amsterdam 2017 review. A full day conference on all things React with more than 1000 developers from all across the globe.'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/React_Amsterdam.png'
+title: 'React Amsterdam 2017'
 ---
 
 **[React Amsterdam](https://react.amsterdam)** is a full day conference on all things React. The biggest conference I've ever been with more than 1000 developers from all across the 🌍. I went with two workmates from **[Ulabox](https://ulabox.com)** [@sospedra_r](https://twitter.com/sospedra_r) and [@juanmaorta](http://twitter.com/juanmaorta). The event was organized in two tracks: **React** & **React Native**.
 
 ### Getting started
 
-The conference day started with a *React Amsterdam* ⛴ that moved the attendees and speakers from Amsterdam Centraal Station to the venue location that was a beautiful place called [Kromhouthal](http://kromhouthal.com).
+The conference day started with a _React Amsterdam_ ⛴ that moved the attendees and speakers from Amsterdam Centraal Station to the venue location that was a beautiful place called [Kromhouthal](http://kromhouthal.com).
 
 Once registered, a bag with a cool t-shirt some stickers and a notebook was given to every person at the conference. Then the breakfast started with a big selection of coffe, fruits and baked goods. ☕️
 
@@ -25,7 +25,7 @@ All **talks were recorded** and **live streamed** through the [React Amsterdam y
 
 **My top 5 favourite talks are**:
 
-- ⭐️ Performance Limitations of React Native and How to Overcome Them – [@koltal](https://twitter.com/koltal)  – 🎥 [Ṣlides](https://speakerdeck.com/talkol/performance-limitations-of-react-native-and-how-to-overcome-them-1)
+- ⭐️ Performance Limitations of React Native and How to Overcome Them – [@koltal](https://twitter.com/koltal) – 🎥 [Ṣlides](https://speakerdeck.com/talkol/performance-limitations-of-react-native-and-how-to-overcome-them-1)
 - ⭐️ Universal React – [@grabbou](https://twitter.com/grabbou)
 - ⭐️ Web Like Release Agility for React Native Apps – [@nparashuram](https://twitter.com/nparashuram) – 🎥 [Ṣlides](https://docs.com/parashuram-np/9315/reactconf17-parashuram)
 - ⭐️ Asynchronous & Offline Magic Tricks on React Native – [@WoodyRousseau](https://twitter.com/WoodyRousseau) – 🎥 [Ṣlides](http://slides.com/woodyrousseau/deck-2-3/)

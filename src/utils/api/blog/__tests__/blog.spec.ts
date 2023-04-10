@@ -36,7 +36,7 @@ describe('Ghost API Client', () => {
         expect(
           transformPost({
             ...postFixture,
-            html: new VFile(postFixture.html)
+            html: new VFile(postFixture.html),
           })
         ).toMatchSnapshot()
       })

@@ -1,37 +1,48 @@
 const Map = () => (
   <>
-  <style jsx global>
-    {`
-      .light .map-travelling path {
-        fill-rule: evenodd;
-        stroke: #fff;
-        fill: #e5e7eb;
-      }
-      
-      .dark .map-travelling path {
-        fill-rule: evenodd;
-        stroke: #000;
-        fill: rgb(32 32 32)
-      }
-    `}
-  </style>
-    <style jsx>{`
-      path.visited { fill: rgb(115 115 115); cursor: pointer; transition: all 0.1s ease-out; }
-      path.visited:hover { fill: rgb(163 163 163) }
-      path.home { fill: rgb(56 189 248) ; cursor: pointer; transition: all 0.1s ease-out; }
-      path.home:hover { fill: rgb(125 211 252) }
-    `}
+    <style jsx global>
+      {`
+        .light .map-travelling path {
+          fill-rule: evenodd;
+          stroke: #fff;
+          fill: #e5e7eb;
+        }
+
+        .dark .map-travelling path {
+          fill-rule: evenodd;
+          stroke: #000;
+          fill: rgb(32 32 32);
+        }
+      `}
+    </style>
+    <style jsx>
+      {`
+        path.visited {
+          fill: rgb(115 115 115);
+          cursor: pointer;
+          transition: all 0.1s ease-out;
+        }
+        path.visited:hover {
+          fill: rgb(163 163 163);
+        }
+        path.home {
+          fill: rgb(56 189 248);
+          cursor: pointer;
+          transition: all 0.1s ease-out;
+        }
+        path.home:hover {
+          fill: rgb(125 211 252);
+        }
+      `}
     </style>
 
     <svg
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin meet"
       viewBox="0 0 1000 647"
-      className='map-travelling'
+      className="map-travelling"
     >
-      <defs>
-
-      </defs>
+      <defs></defs>
       <g id="countries">
         <path
           id="AF"
@@ -331,7 +342,7 @@ const Map = () => (
           d="m490.24 325.34-2.3.2-2.95-.65-3.72.03-3.4-.7-3.92 2.76 1.13 1.64-.14 2.67 2.14-1.5.7 1.83 3.72-.34.78 1.86-1.28 1-.6 5.1-1.2.29 1.11 2.15-.98 6.8 2.59.55 3.17 3.43 2.8-2.52 6.16.02 1.96-2.68 2.1-.7.6-2.28 1.6-1.58-1.08-2.04 1.07-2.94 1.95-3.25 3.55-.78 2.63-2.47-.15-2.17-3.21.49-3.12-1.7-1.01.8-5.1-1.7-1.11-1.49-4.49-.13Z"
           data-id="ES"
           data-name="Spain"
-          className='home'
+          className="home"
         />
         <path
           id="EE"

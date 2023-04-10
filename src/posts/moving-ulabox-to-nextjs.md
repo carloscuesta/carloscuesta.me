@@ -1,10 +1,10 @@
 ---
-dateModified: "2020-08-06 16:00"
-datePublished: "2020-08-06 16:00"
-disqusIdentifier: "moving-ulabox-to-nextjs"
-excerpt: "A few months ago we released the new website of ulabox. We rebuilt the entire website from scratch using React and Next.js to Server Side Render our pages 🎉"
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1595954683/blog-featured-images/moving-ulabox-to-nextjs.png"
-title: "Moving Ulabox to Next.js"
+dateModified: '2020-08-06 16:00'
+datePublished: '2020-08-06 16:00'
+disqusIdentifier: 'moving-ulabox-to-nextjs'
+excerpt: 'A few months ago we released the new website of ulabox. We rebuilt the entire website from scratch using React and Next.js to Server Side Render our pages 🎉'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1595954683/blog-featured-images/moving-ulabox-to-nextjs.png'
+title: 'Moving Ulabox to Next.js'
 ---
 
 Hello 👋 It's been a while since I published the last article on my blog. I was really busy with the project I was working on.
@@ -93,7 +93,7 @@ After studying both options, we decided to refactor the frontend, because we thi
 
 We need a framework capable of **SSR** our frontend for the reason that **SEO** is a key thing for our company.
 
-A year ago before the company decided to switch the business model, we moved our Checkout into a React single page application. As a result of this the  **framework** should **support rendering React**.
+A year ago before the company decided to switch the business model, we moved our Checkout into a React single page application. As a result of this the **framework** should **support rendering React**.
 
 As I said before our time was limited, so we did not want to implement our own SSR implementation. It's better to **not reinvent the wheel** ☸️ when there are **great solutions out there**.
 
@@ -171,7 +171,7 @@ Let's see how we implemented the **architecture** for our frontend. On the `publ
     └── server
 ```
 
-One of the **main problems** we faced with **Next.js** is the **[file-system based routing](https://nextjs.org/docs/routing/introduction)**. This solution is **not scalable** for complex applications that have **i18n seo friendly routes**  🌍 with **multiple languages**. All our routes are different on `Spanish`, `Catalan` and `English`.
+One of the **main problems** we faced with **Next.js** is the **[file-system based routing](https://nextjs.org/docs/routing/introduction)**. This solution is **not scalable** for complex applications that have **i18n seo friendly routes** 🌍 with **multiple languages**. All our routes are different on `Spanish`, `Catalan` and `English`.
 
 For example if we take a look at the product page URL:
 
