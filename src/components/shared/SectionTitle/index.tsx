@@ -19,7 +19,7 @@ const SectionTitle = (props: Props) => (
     </div>
 
     {props.viewAllLink &&
-      <Link className='text-sm underline-offset-2 underline opacity-70 hover:opacity-100 transition-opacity' href={props.viewAllLink}>
+      <Link className='text-sm opacity-70 hover:opacity-100 transition-opacity' href={props.viewAllLink}>
         View all
       </Link>}
   </div>
