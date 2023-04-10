@@ -230,7 +230,6 @@ exports[`index page should match index page 1`] = `
         ]
       }
     />
-    <Contact />
   </main>,
 ]
 `;

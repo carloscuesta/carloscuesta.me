@@ -19,7 +19,6 @@ jest.mock('src/utils/api/github')
 */
 
 jest.mock('src/components/pages/index/Biography', () => 'Biography')
-jest.mock('src/components/pages/index/Contact', () => 'Contact')
 jest.mock('src/components/pages/index/Projects', () => 'Projects')
 jest.mock('src/components/pages/index/Writings', () => 'Writings')
 jest.mock('src/components/shared/SectionTitle', () => 'SectionTitle')

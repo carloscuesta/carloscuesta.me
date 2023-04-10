@@ -8,7 +8,6 @@ import { type Repository } from 'src/utils/api/github/mutators'
 import Biography from 'src/components/pages/index/Biography'
 import Writings from 'src/components/pages/index/Writings'
 import Projects from 'src/components/pages/index/Projects'
-import Contact from 'src/components/pages/index/Contact'
 
 const Index = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
@@ -28,7 +27,6 @@ const Index = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
       <Biography />
       <Writings posts={props.posts} />
       <Projects repositories={props.repositories} />
-      <Contact />
     </main>
   </>
 )

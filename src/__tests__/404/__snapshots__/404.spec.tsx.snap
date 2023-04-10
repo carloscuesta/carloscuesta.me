@@ -3,54 +3,82 @@
 exports[`404 page should match Error 404 page 1`] = `
 <Wrapper>
   <div
-    className="row middle-xs error"
+    className="sm:py-10"
   >
-    <div>
-      <div
-        className="col-xs-12"
-      >
-        <h1
-          className="headline"
+    <h1
+      className="my-6 text-xl font-bold"
+    >
+      Are you lost?
+    </h1>
+    <h2
+      className="pb-4 text-xl"
+    >
+      The page you are looking for doesn't exist.
+    </h2>
+    <h3
+      className="text-lg"
+    >
+      Here are some helpful links instead:
+    </h3>
+    <ul
+      className="list-inside list-disc px-4 py-8 text-lg underline underline-offset-2"
+    >
+      <li>
+        <a
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          Are you lost ?
-        </h1>
-        <h2>
-          The page you are looking for doesn't exists.
-        </h2>
-        <h3
-          className="title"
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/about"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          Here are some helpful links instead:
-        </h3>
-        <ul
-          className="links"
+          About
+        </a>
+      </li>
+      <li>
+        <a
+          href="/blog"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
-          <li>
-            <a
-              href="/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="/blog"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-            >
-              Blog
-            </a>
-          </li>
-        </ul>
-        <h4>
-          Error code: 404
-        </h4>
-      </div>
-    </div>
+          Blog
+        </a>
+      </li>
+      <li>
+        <a
+          href="/projects"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          Projects
+        </a>
+      </li>
+      <li>
+        <a
+          href="/uses"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          Uses
+        </a>
+      </li>
+    </ul>
+    <h4
+      className="text-lg font-extrabold"
+    >
+      Error code: 404
+    </h4>
   </div>
 </Wrapper>
 `;
