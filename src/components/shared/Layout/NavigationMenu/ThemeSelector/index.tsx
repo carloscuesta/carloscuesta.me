@@ -59,7 +59,7 @@ const ThemeSwitch = () => {
                   {({ selected }) => (
                     <>
                       <span
-                        className={`block truncate ${
+                        className={`block cursor-default truncate ${
                           selected ? 'font-medium' : 'font-normal'
                         }`}
                       >
