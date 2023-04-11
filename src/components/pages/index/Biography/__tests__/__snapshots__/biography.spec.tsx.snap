@@ -1,94 +1,118 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Biography should match Biography component 1`] = `
-<section>
+<section
+  className="my-12"
+>
   <div
-    className="wrapper"
+    className="m-[0_auto] max-w-4xl px-6 sm:px-4 "
   >
     <div
-      className="container"
+      className="flex text-sm lowercase opacity-60"
     >
+      <span
+        className="block w-[62px] whitespace-nowrap"
+      />
       <div
-        className="biographyContainer"
+        className="flex gap-1.5"
       >
-        <p
-          className="text"
+        <span>
+          ·
+        </span>
+        <a
+          href="https://maps.apple.com/place?q=Barcelona&ll=41.3826807%2C2.1770239&auid=2262861905204318884&lsp=7618&address=Barcelona%2C%20Spain"
+          rel="noopener noreferrer nofollow"
+          target="_blank"
         >
-          I'm a Front End Engineer interested in
-           
-          <b>
-            design
-          </b>
-          , 
-          <b>
-            under engineering
-          </b>
-           and 
-          <b>
-            open source
-          </b>
-          . I work at 
-          <a
-            href="https://n26.com"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            N26
-          </a>
-          .
-        </p>
-        <p
-          className="text"
-        >
-          I'm focused on building products with JavaScript, specifically React and React-Native.
-        </p>
-        <p
-          className="text"
-        >
-          When I'm not coding, I'm likely at the gym or surfing the city with my longboard.
-        </p>
-        <p
-          className="text"
-        >
-          You can find me on
-           
-          <a
-            href="https://github.com/carloscuesta"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            GitHub
-          </a>
-          ,
-           
-          <a
-            href="https://twitter.com/crloscuesta"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Twitter
-          </a>
-           and 
-          <a
-            href="https://linkedin.com/in/crloscuesta"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
-          .
-        </p>
+          Barcelona, Spain
+        </a>
       </div>
-      <div
-        className="pictureContainer"
-      >
-        <img
-          alt="Carlos Cuesta"
-          className="lazyload picture"
-          data-src="https://res.cloudinary.com/carloscuesta/image/upload/s--ekQN9GP_--/c_scale,w_320/v1594588508/carloscuesta.jpg"
-          src="https://res.cloudinary.com/carloscuesta/image/upload/s--rq7ZUVpY--/c_scale,e_blur:100,h_120,q_10,w_120/v1594588508/carloscuesta.jpg"
-        />
+    </div>
+    <div
+      className="flex justify-between gap-8"
+    >
+      <div>
+        <h1
+          className="flex gap-2 pb-4 text-2xl"
+        >
+          <span
+            className="font-bold"
+          >
+            Hey, I'm Carlos Cuesta
+          </span>
+          <span
+            className="inline-block origin-[70%_70%] animate-wave"
+          >
+            👋🏼
+          </span>
+        </h1>
+        <div
+          className="grid gap-4"
+        >
+          <p
+            className="sm:max-w-md"
+          >
+            I'm a Front End Engineer based in Barcelona. I
+             
+            <a
+              className="underline-offset-2 underline"
+              href="https://github.com/carloscuesta"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              code
+            </a>
+            ,
+             
+            <a
+              className="underline-offset-2 underline"
+              href="/blog"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              write
+            </a>
+             and build stuff on internet.
+          </p>
+          <p
+            className="sm:max-w-md"
+          >
+            I love working in-between product, engineering and developer experience, currently at
+             
+            <a
+              className="underline-offset-2 underline"
+              href="https://n26.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              N26
+            </a>
+            .
+          </p>
+        </div>
       </div>
+      <img
+        alt="Carlos Cuesta"
+        className="hidden h-44 w-44 transform-gpu rounded-full sm:block"
+        data-nimg="1"
+        decoding="async"
+        height={176}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--ekQN9GP_--%2Fc_scale%2Cw_320%2Fv1594588508%2Fcarloscuesta.jpg&w=384&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--ekQN9GP_--%2Fc_scale%2Cw_320%2Fv1594588508%2Fcarloscuesta.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--ekQN9GP_--%2Fc_scale%2Cw_320%2Fv1594588508%2Fcarloscuesta.jpg&w=384&q=75 2x"
+        style={
+          {
+            "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 176 176'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage preserveAspectRatio='none' filter='url(%23b)' x='0' y='0' height='100%25' width='100%25' href='data:image/webp;base64,UklGRvQCAABXRUJQVlA4WAoAAAAgAAAAOQAAOQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggBgEAAJALAJ0BKjoAOgA+bTCSRiQjIaEwFgkAgA2JQBWHOBs/zMoLISaWACRRJkfyBI4Lxdd/xd03yJpIGFTUqOQGP4xGt8WUYj9jng+v+2wjcftkQSQUlbocxVkWWLjln0a0IfovTZIAAP70062J9GjrH7g8QW5d3F+LQ8rXmHN3okrCe1/lyHE1N4J7O4QOlbIkk3Z32UNX6AwqF01B+DCejpwmvHfxAntOE/kxlbpt/hamu8MLs/k+nwpMp4g1BIvX+zQnii+y1Kl3Frd5sNA18WL4mwthjxSBIjPSiiMNEjmgFriUlUlYCmgWI0KnfUFVrqpG5rSDeBN77cUw84dmPu7Q3pMAAAA='/%3E%3C/svg%3E")",
+            "backgroundPosition": "50% 50%",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "cover",
+            "color": "transparent",
+          }
+        }
+        width={176}
+      />
     </div>
   </div>
 </section>

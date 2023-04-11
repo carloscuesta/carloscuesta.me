@@ -1,10 +1,10 @@
 ---
-dateModified: "2021-12-24 13:00"
-datePublished: "2021-05-03 22:00"
-disqusIdentifier: "composing-uis-with-finite-state-machines"
-excerpt: "Finite State Machines is a computation model useful for building user interfaces, especially nowadays that front-end apps are becoming much more complex."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1620078331/blog-featured-images/composing-uis-with-fsm.png"
-title: "Composing UIs with Finite State Machines"
+dateModified: '2021-12-24 13:00'
+datePublished: '2021-05-03 22:00'
+disqusIdentifier: 'composing-uis-with-finite-state-machines'
+excerpt: 'Finite State Machines is a computation model useful for building user interfaces, especially nowadays that front-end apps are becoming much more complex.'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1620078331/blog-featured-images/composing-uis-with-fsm.png'
+title: 'Composing UIs with Finite State Machines'
 ---
 
 **Finite State Machines**, often abbreviated as [**FSM**](https://en.wikipedia.org/wiki/Finite-state_machine) is a mathematical computation model that could be useful for building user interfaces, especially nowadays that **front-end** apps are becoming **much more complex** due to the nature of the problems that they solve. Did you know that 🧑‍🚀 [SpaceX used JavaScript](https://twitter.com/jason_mayes/status/1267227834096861184) for the spaceship flight interface? 🤯.
@@ -94,8 +94,8 @@ The first thing we're going to define is our **input alphabet** _Σ_. Based on t
 const EVENTS = {
   FETCH: 'FETCH',
   RESOLVE: 'RESOLVE',
-  REJECT: 'REJECT'
-};
+  REJECT: 'REJECT',
+}
 ```
 
 Next, we are going to define our **set of states** _S_. Also, as we defined, we should set the **initial state** to Idle as _S<sub>0</sub>_.
@@ -122,11 +122,11 @@ const stateMachine = {
       on: {
         [EVENTS.RESOLVE]: STATE.FULFILLED,
         [EVENTS.REJECT]: STATE.REJECTED,
-      }
+      },
     },
     [STATE.FULFILLED]: { on: { [EVENTS.FETCH]: STATE.FETCHING } },
     [STATE.REJECTED]: { on: { [EVENTS.FETCH]: STATE.FETCHING } },
-  }
+  },
 }
 ```
 
@@ -169,8 +169,8 @@ Once our app knows how to render every state of the machine, we need to define t
 In this case, I'm using a [`useStateMachine`](https://github.com/cassiozen/useStateMachine) hook from a library, just to avoid having to implement the not-so-relevant React part of the state handling. This hook receives the state machine we defined before as a configuration argument.
 
 ```javascript
-const [pokemon, setPokemon] = React.useState(null);
-const [state, send] = useStateMachine()(stateMachine);
+const [pokemon, setPokemon] = React.useState(null)
+const [state, send] = useStateMachine()(stateMachine)
 ```
 
 The hook exposes the `state` that is an object which contains the current state of the machine we defined and the `send` function which is the state transition function (_δ_: _S_ x _Σ_ -> _S_). Also, we have a `pokemon` state variable to save the API response.
@@ -187,16 +187,16 @@ If everything works well we will save the response into the `pokemon` state vari
 const App = () => {
   const onFetchPokemon = async () => {
     try {
-      send(EVENTS.FETCH);
-      const pokedexRandomNumber = Math.floor(Math.random() * 151) + 1;
-      const pokemon = await fetchPokemon(pokedexRandomNumber);
+      send(EVENTS.FETCH)
+      const pokedexRandomNumber = Math.floor(Math.random() * 151) + 1
+      const pokemon = await fetchPokemon(pokedexRandomNumber)
 
-      setPokemon(pokemon);
-      send(EVENTS.RESOLVE);
+      setPokemon(pokemon)
+      send(EVENTS.RESOLVE)
     } catch (ex) {
-      send(EVENTS.REJECT);
+      send(EVENTS.REJECT)
     }
-  };
+  }
 }
 ```
 

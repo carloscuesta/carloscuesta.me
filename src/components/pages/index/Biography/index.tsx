@@ -1,42 +1,68 @@
+import NextLink from 'next/link'
+import Image from 'next/image'
+
 import Wrapper from 'src/components/shared/Wrapper'
-import styles from './styles.module.css'
+import Metadata from './Metadata'
+
+const Link = (props: { href: string; label: string }) => {
+  const linkClassName = 'underline-offset-2 underline'
+
+  if (props.href.startsWith('/')) {
+    ;<NextLink href={props.href} className={linkClassName}>
+      {props.label}
+    </NextLink>
+  }
+
+  return (
+    <a
+      target="_blank"
+      href={props.href}
+      className={linkClassName}
+      rel="noopener noreferrer"
+    >
+      {props.label}
+    </a>
+  )
+}
 
 const Biography = () => (
-  <section>
+  <section className="my-12">
     <Wrapper>
-      <div className={styles.container}>
-        <div className={styles.biographyContainer}>
-          <p className={styles.text}>
-            I&#39;m a Front End Engineer interested in{' '}
-            <b>design</b>, <b>under engineering</b> and <b>open source</b>.
-            I work at <a target='_blank' rel='noopener noreferrer' href='https://n26.com'>N26</a>.
-          </p>
+      <Metadata />
 
-          <p className={styles.text}>
-            I&#39;m focused on building products with JavaScript, specifically React and React-Native.
-          </p>
+      <div className="flex justify-between gap-8">
+        <div>
+          <h1 className="flex gap-2 pb-4 text-2xl">
+            <span className="font-bold">Hey, I'm Carlos Cuesta</span>
+            <span className="inline-block origin-[70%_70%] animate-wave">
+              👋🏼
+            </span>
+          </h1>
 
-          <p className={styles.text}>
-            When I&#39;m not coding, I&#39;m likely at the gym or surfing the city with my longboard.
-          </p>
+          <div className="grid gap-4">
+            <p className="sm:max-w-md">
+              I'm a Front End Engineer based in Barcelona. I{' '}
+              <Link href="https://github.com/carloscuesta" label="code" />,{' '}
+              <Link href="/blog" label="write" /> and build stuff on internet.
+            </p>
 
-          <p className={styles.text}>
-            You can find me on{' '}
-            <a href='https://github.com/carloscuesta' target='_blank' rel='noopener noreferrer'>GitHub</a>,{' '}
-            <a href='https://twitter.com/crloscuesta' target='_blank' rel='noopener noreferrer'>Twitter</a>{' and '}
-            <a href='https://linkedin.com/in/crloscuesta' target='_blank' rel='noopener noreferrer'>LinkedIn</a>.
-          </p>
+            <p className="sm:max-w-md">
+              I love working in-between product, engineering and developer
+              experience, currently at{' '}
+              <Link href="https://n26.com" label="N26" />.
+            </p>
+          </div>
         </div>
 
-        <div className={styles.pictureContainer}>
-          <img
-            alt='Carlos Cuesta'
-            className={`lazyload ${styles.picture}`}
-            data-src='https://res.cloudinary.com/carloscuesta/image/upload/s--ekQN9GP_--/c_scale,w_320/v1594588508/carloscuesta.jpg'
-            src='https://res.cloudinary.com/carloscuesta/image/upload/s--rq7ZUVpY--/c_scale,e_blur:100,h_120,q_10,w_120/v1594588508/carloscuesta.jpg'
-          />
-        </div>
-
+        <Image
+          alt="Carlos Cuesta"
+          src="https://res.cloudinary.com/carloscuesta/image/upload/s--ekQN9GP_--/c_scale,w_320/v1594588508/carloscuesta.jpg"
+          placeholder="blur"
+          blurDataURL="data:image/webp;base64,UklGRvQCAABXRUJQVlA4WAoAAAAgAAAAOQAAOQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggBgEAAJALAJ0BKjoAOgA+bTCSRiQjIaEwFgkAgA2JQBWHOBs/zMoLISaWACRRJkfyBI4Lxdd/xd03yJpIGFTUqOQGP4xGt8WUYj9jng+v+2wjcftkQSQUlbocxVkWWLjln0a0IfovTZIAAP70062J9GjrH7g8QW5d3F+LQ8rXmHN3okrCe1/lyHE1N4J7O4QOlbIkk3Z32UNX6AwqF01B+DCejpwmvHfxAntOE/kxlbpt/hamu8MLs/k+nwpMp4g1BIvX+zQnii+y1Kl3Frd5sNA18WL4mwthjxSBIjPSiiMNEjmgFriUlUlYCmgWI0KnfUFVrqpG5rSDeBN77cUw84dmPu7Q3pMAAAA="
+          className="hidden h-44 w-44 transform-gpu rounded-full sm:block"
+          width={176}
+          height={176}
+        />
       </div>
     </Wrapper>
   </section>

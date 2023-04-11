@@ -1,10 +1,10 @@
 ---
-dateModified: "2022-03-01 22:00"
-datePublished: "2022-03-01 22:00"
-disqusIdentifier: "writing-architecture-decision-records"
-excerpt: "An architecture decision record also known as ADR, is a document that captures an important architecture decision, including the context and the consequences."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1646170453/blog-featured-images/writing-adrs.png"
-title: "Writing Architecture Decision Records"
+dateModified: '2022-03-01 22:00'
+datePublished: '2022-03-01 22:00'
+disqusIdentifier: 'writing-architecture-decision-records'
+excerpt: 'An architecture decision record also known as ADR, is a document that captures an important architecture decision, including the context and the consequences.'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1646170453/blog-featured-images/writing-adrs.png'
+title: 'Writing Architecture Decision Records'
 ---
 
 An **architecture decision record** also known as _ADR_, is a document that captures an important architecture decision, including the context of how the decision was made and the consequences of that change.

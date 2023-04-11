@@ -3,288 +3,301 @@
 exports[`Experience should match Experience component 1`] = `
 <section>
   <div
-    className="container "
+    className="my-6 flex items-end justify-between"
   >
-    <div>
+    <div
+      className="space-y-2"
+    >
       <h2
-        className="sectionTitle sectionTitleMargin"
+        className="text-lg font-bold"
       >
-        Experience
+        Work
       </h2>
     </div>
   </div>
   <div
-    className="row"
+    className="flex"
   >
-    <div
-      className="col-xs-12 job"
-    >
-      <div
-        className="container"
-      >
-        <div
-          className="container"
-        >
-          <img
-            alt="N26"
-            className="lazyload logo"
-            data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1617353828/about-me/n26.png"
-            height={48}
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            width={48}
-          />
-        </div>
-        <div
-          className="position"
-        >
-          <p
-            className="title"
-          >
-            <a
-              href="https://n26.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              N26
-            </a>
-          </p>
-          <span
-            className="timestamp"
-          >
-            April 2021
-             – 
-            <span
-              className="currentPosition"
-            >
-              Now
-            </span>
-          </span>
-          <div
-            className="positionList"
-          >
-            <span
-              className="positionMark"
-            />
-            <p
-              className="title"
-            >
-              Lead Web Engineer
-            </p>
-            <span
-              className="timestamp"
-            >
-              September 2022
-               – 
-              <span
-                className="currentPosition"
-              >
-                Now
-              </span>
-            </span>
-            <p />
-          </div>
-          <div
-            className="positionList"
-          >
-            <span
-              className="positionMark"
-            />
-            <p
-              className="title"
-            >
-              Senior Web Engineer
-            </p>
-            <span
-              className="timestamp"
-            >
-              April 2021
-               – 
-              September 2022
-            </span>
-            <p />
-          </div>
-        </div>
-      </div>
+    <div>
+      <img
+        alt="N26"
+        className="hidden rounded-xl sm:block"
+        data-nimg="1"
+        decoding="async"
+        height={48}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1617353828%2Fabout-me%2Fn26.png&w=96&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1617353828%2Fabout-me%2Fn26.png&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1617353828%2Fabout-me%2Fn26.png&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        width={48}
+      />
     </div>
     <div
-      className="col-xs-12 job"
+      className="flex grow flex-col"
     >
-      <div
-        className="container"
+      <a
+        className="flex items-start pb-2  transition-opacity hover:opacity-50"
+        href="https://n26.com"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         <div
-          className="container"
-        >
-          <img
-            alt="Ulabox"
-            className="lazyload logo"
-            data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1593899513/about-me/ulabox.png"
-            height={48}
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            width={48}
-          />
-        </div>
-        <div
-          className="position"
+          className="grow pb-3 sm:px-4"
         >
           <p
-            className="title"
+            className="font-medium"
           >
-            <a
-              href="https://ulabox.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Ulabox
-            </a>
+            Lead Web Engineer
           </p>
-          <span
-            className="timestamp"
+          <p
+            className="opacity-50"
           >
-            January 2017
-             – 
-            March 2021
-          </span>
-          <div
-            className="positionList"
-          >
-            <span
-              className="positionMark"
-            />
-            <p
-              className="title"
-            >
-              Lead Front End Engineer
-            </p>
-            <span
-              className="timestamp"
-            >
-              March 2018
-               – 
-              March 2021
-            </span>
-            <p>
-              As a Lead Front End Engineer, one of my main tasks was to mentor coworkers of my team, contributing to their personal and professional growth. I worked very close to stakeholders to define, organise and breakdown new projects. One of the biggest challenges I faced with my team was to migrate the ulabox.com website to a new business model while refactoring the entire technology stack to Next.js and React. We had to integrate this pivot into the Ulabox application too. I've worked with the logistics team to build Android applications with React-Native for our supply chain and dark stores.
-            </p>
-          </div>
-          <div
-            className="positionList"
-          >
-            <span
-              className="positionMark"
-            />
-            <p
-              className="title"
-            >
-              Front End Engineer
-            </p>
-            <span
-              className="timestamp"
-            >
-              January 2017
-               – 
-              March 2018
-            </span>
-            <p>
-              As a Front End Engineer I contributed to the development and release of the native Ulabox application. The application is built with React-Native and is available on iOS and Android. I worked on automating the process of shipping our applications to the stores using Fastlane and Travis-CI. Also I contributed to the maintenance of our website, that was built on top of Symfony using Twig, SCSS and JavaScript.
-            </p>
-          </div>
+            N26
+          </p>
         </div>
-      </div>
-    </div>
-    <div
-      className="col-xs-12 job"
-    >
-      <div
-        className="container"
+        <span
+          className="opacity-90"
+        >
+          2022
+           – 
+          <em
+            className="font-semibold"
+          >
+            Now
+          </em>
+        </span>
+      </a>
+      <a
+        className="flex items-start pb-2  transition-opacity hover:opacity-50"
+        href="https://n26.com"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         <div
-          className="container"
-        >
-          <img
-            alt="Mediàtic"
-            className="lazyload logo"
-            data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1593899512/about-me/mediatic.png"
-            height={48}
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            width={48}
-          />
-        </div>
-        <div
-          className="position"
+          className="grow pb-3 sm:px-4"
         >
           <p
-            className="title"
+            className="font-medium"
           >
-            Front End Developer at 
-            <a
-              href="https://www.bemediatic.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Mediàtic
-            </a>
+            Senior Web Engineer
           </p>
-          <span
-            className="timestamp"
-          >
-            March 2015
-             – 
-            December 2016
-          </span>
-          <p>
-            As a Front-End Developer I created a lot of different websites for our clients using Wordpress as a CMS and HTML, CSS and JavaScript to built the sites. I helped to improve the developer experience of the company by implementing tools to improve our software development process.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      className="col-xs-12 job"
-    >
-      <div
-        className="container"
-      >
-        <div
-          className="container"
-        >
-          <img
-            alt="Friendly Rentals"
-            className="lazyload logo"
-            data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1593938160/about-me/friendlyrentals.png"
-            height={48}
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            width={48}
-          />
-        </div>
-        <div
-          className="position"
-        >
           <p
-            className="title"
+            className="opacity-50"
           >
-            Front End Developer Intern at 
-            <a
-              href="https://www.friendlyrentals.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Friendly Rentals
-            </a>
-          </p>
-          <span
-            className="timestamp"
-          >
-            October 2014
-             – 
-            February 2015
-          </span>
-          <p>
-            As an intern on Friendly Rentals I helped on building pages of the website using Bootstrap, HTML, CSS and jQuery.
+            N26
           </p>
         </div>
-      </div>
+        <span
+          className="opacity-90"
+        >
+          2021
+           – 
+          2022
+        </span>
+      </a>
     </div>
   </div>
-  <hr />
+  <div
+    className="flex"
+  >
+    <div>
+      <img
+        alt="Ulabox"
+        className="hidden rounded-xl sm:block"
+        data-nimg="1"
+        decoding="async"
+        height={48}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1593899513%2Fabout-me%2Fulabox.png&w=96&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1593899513%2Fabout-me%2Fulabox.png&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1593899513%2Fabout-me%2Fulabox.png&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        width={48}
+      />
+    </div>
+    <div
+      className="flex grow flex-col"
+    >
+      <a
+        className="flex items-start pb-2  transition-opacity hover:opacity-50"
+        href="https://ulabox.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="grow pb-3 sm:px-4"
+        >
+          <p
+            className="font-medium"
+          >
+            Lead Front End Engineer
+          </p>
+          <p
+            className="opacity-50"
+          >
+            Ulabox
+          </p>
+        </div>
+        <span
+          className="opacity-90"
+        >
+          2018
+           – 
+          2021
+        </span>
+      </a>
+      <a
+        className="flex items-start pb-2  transition-opacity hover:opacity-50"
+        href="https://ulabox.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="grow pb-3 sm:px-4"
+        >
+          <p
+            className="font-medium"
+          >
+            Front End Engineer
+          </p>
+          <p
+            className="opacity-50"
+          >
+            Ulabox
+          </p>
+        </div>
+        <span
+          className="opacity-90"
+        >
+          2017
+           – 
+          2018
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    className="flex"
+  >
+    <div>
+      <img
+        alt="Mediàtic"
+        className="hidden rounded-xl sm:block"
+        data-nimg="1"
+        decoding="async"
+        height={48}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1679519489%2Fabout-me%2Fmediatic.jpg&w=96&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1679519489%2Fabout-me%2Fmediatic.jpg&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1679519489%2Fabout-me%2Fmediatic.jpg&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        width={48}
+      />
+    </div>
+    <div
+      className="flex grow flex-col"
+    >
+      <a
+        className="flex items-start pb-2  transition-opacity hover:opacity-50"
+        href="https://www.bemediatic.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="grow pb-3 sm:px-4"
+        >
+          <p
+            className="font-medium"
+          >
+            Front End Developer
+          </p>
+          <p
+            className="opacity-50"
+          >
+            Mediàtic
+          </p>
+        </div>
+        <span
+          className="opacity-90"
+        >
+          2015
+           – 
+          2016
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    className="flex"
+  >
+    <div>
+      <img
+        alt="Friendly Rentals"
+        className="hidden rounded-xl sm:block"
+        data-nimg="1"
+        decoding="async"
+        height={48}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1593938160%2Fabout-me%2Ffriendlyrentals.png&w=96&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1593938160%2Fabout-me%2Ffriendlyrentals.png&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1593938160%2Fabout-me%2Ffriendlyrentals.png&w=96&q=75 2x"
+        style={
+          {
+            "color": "transparent",
+          }
+        }
+        width={48}
+      />
+    </div>
+    <div
+      className="flex grow flex-col"
+    >
+      <a
+        className="flex items-start pb-2  transition-opacity hover:opacity-50"
+        href="https://www.friendlyrentals.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="grow pb-3 sm:px-4"
+        >
+          <p
+            className="font-medium"
+          >
+            Front End Developer Intern
+          </p>
+          <p
+            className="opacity-50"
+          >
+            Friendly Rentals
+          </p>
+        </div>
+        <span
+          className="opacity-90"
+        >
+          2014
+           – 
+          2015
+        </span>
+      </a>
+    </div>
+  </div>
 </section>
 `;

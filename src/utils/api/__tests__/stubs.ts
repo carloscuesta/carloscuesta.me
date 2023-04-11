@@ -1,11 +1,9 @@
-export const responseCache = [
-  { title: 'Post' }
-]
+export const responseCache = [{ title: 'Post' }]
 
 export const request = (requestOptions?: RequestInit) => ({
   url: 'https://carloscuesta.me/api',
   mutator: jest.fn((value) => value),
-  requestOptions
+  requestOptions,
 })
 
 export const response = [{ name: 'Gitmoji' }]

@@ -5,7 +5,10 @@ import { fetchPosts } from 'src/utils/api/blog'
 import { fetchRepositories } from 'src/utils/api/github'
 import * as stubs from './stubs'
 
-jest.mock('next-seo', () => ({ NextSeo: 'NextSeo', SocialProfileJsonLd: 'SocialProfileJsonLd' }))
+jest.mock('next-seo', () => ({
+  NextSeo: 'NextSeo',
+  SocialProfileJsonLd: 'SocialProfileJsonLd',
+}))
 jest.mock('src/utils/api/blog')
 jest.mock('src/utils/api/github')
 
@@ -16,9 +19,7 @@ jest.mock('src/utils/api/github')
 */
 
 jest.mock('src/components/pages/index/Biography', () => 'Biography')
-jest.mock('src/components/pages/index/Contact', () => 'Contact')
-jest.mock('src/components/pages/index/Header', () => 'Header')
-jest.mock('src/components/pages/index/OpenSource', () => 'OpenSource')
+jest.mock('src/components/pages/index/Projects', () => 'Projects')
 jest.mock('src/components/pages/index/Writings', () => 'Writings')
 jest.mock('src/components/shared/SectionTitle', () => 'SectionTitle')
 jest.mock('src/components/shared/PageTitle', () => 'PageTitle')
@@ -34,8 +35,8 @@ describe('index', () => {
 
   describe('getStaticProps', () => {
     beforeAll(() => {
-      (fetchPosts as jest.Mock).mockReturnValue(stubs.posts);
-      (fetchRepositories as jest.Mock).mockReturnValue(stubs.repositories)
+      ;(fetchPosts as jest.Mock).mockReturnValue(stubs.posts)
+      ;(fetchRepositories as jest.Mock).mockReturnValue(stubs.repositories)
     })
 
     it('should return posts and repositories as props and set revalidate', async () => {
@@ -47,9 +48,9 @@ describe('index', () => {
       expect(props).toEqual({
         props: {
           posts: stubs.posts,
-          repositories: stubs.repositories
+          repositories: stubs.repositories,
         },
-        revalidate: 3600
+        revalidate: 3600,
       })
     })
   })

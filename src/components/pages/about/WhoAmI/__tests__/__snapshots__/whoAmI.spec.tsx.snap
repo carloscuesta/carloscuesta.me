@@ -1,70 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`WhoAmI should match WhoAmI component 1`] = `
-<section>
-  <div
-    className="whoAmI"
-  >
-    <p>
-      My name is Carlos Cuesta I'm a Front End Engineer based in 
-       
-      <b>
-        Barcelona
-      </b>
-       ☀️. I describe myself as a passionate developer who loves 
-      <b>
-        coding
-      </b>
-      , 
-      <b>
-        open source
-      </b>
-      , and the 
-      <b>
-        web platform
-      </b>
-       ❤️.
-    </p>
-    <p>
-      Aside from my job, I like to create and 
-      <b>
-        contribute
-      </b>
-       to 
-      <b>
-        open source
-      </b>
-       
-      projects. That helps me to learn a ton of new stuff, grow as a developer and support other open source projects. Also I enjoy writing technical things ✍️ at my 
-       
-      <a
-        href="/blog"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onTouchStart={[Function]}
-      >
-        <b>
-          blog
-        </b>
-      </a>
-      .
-    </p>
-    <p>
-      In my free time you can find me longboarding 🛹
-       
-      , at the gym 🏋️‍♂️, 
-       
-       at the beach 🏖 or on tech 
-      <b>
-        meetups
-      </b>
-       and 
-      <b>
-        conferences
-      </b>
-       around Barcelona and Europe 🗺
-    </p>
-  </div>
-  <hr />
+<section
+  className="space-y-5"
+>
+  <p>
+    <em>
+      Hey there!
+    </em>
+     👋. I'm Carlos, a Front End Engineer based in Barcelona, that loves to code and build products with a delightful user experience.
+  </p>
+  <p>
+    Currently working at
+     
+    <a
+      className="underline underline-offset-2"
+      href="https://n26.com"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      N26
+    </a>
+     
+    as a Lead Web Engineer, building the digital bank the world loves to use. Before that I worked at a grocery startup
+     
+    <a
+      className="underline underline-offset-2"
+      href="https://ulabox.com"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Ulabox
+    </a>
+    , the online supermarket.
+  </p>
+  <p>
+    I love working in between product, engineering and developer experience. Some things that make me excited are JavaScript, Open Source, CI & CD systems, simplicity, automating things and building meaningful user-centric products.
+  </p>
+  <p>
+    I was born and raised in Badalona next to the mediterranean sea and come from a background of studying Computer Science.
+  </p>
+  <p>
+    Outside of work, I'm obsessed with sports, doing open source and travelling with my family.
+  </p>
+  <img
+    alt="Carlos Cuesta About me"
+    className="pt-5"
+    data-nimg="1"
+    decoding="async"
+    height={40}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+    srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+    style={
+      {
+        "color": "transparent",
+      }
+    }
+    width={40}
+  />
 </section>
 `;

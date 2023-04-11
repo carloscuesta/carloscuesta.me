@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { join } from 'path'
+import truncate from 'lodash.truncate'
 import matter from 'gray-matter'
 import { unified } from 'unified'
 import remarkParse from 'remark-parse'
@@ -18,8 +19,8 @@ import { type Post, type PostPreview, transformPost } from './mutators'
 
 const POSTS_DIRECTORY = join(process.cwd(), 'src/posts')
 
-export const getPostSlugs = (): Array<string> => fs.readdirSync(POSTS_DIRECTORY)
-  .map((post: string) => post.replace('.md', ''))
+export const getPostSlugs = (): Array<string> =>
+  fs.readdirSync(POSTS_DIRECTORY).map((post: string) => post.replace('.md', ''))
 
 export const fetchPost = async (slug: string): Promise<Post> => {
   const post = fs.readFileSync(join(POSTS_DIRECTORY, `${slug}.md`), 'utf8')
@@ -30,20 +31,20 @@ export const fetchPost = async (slug: string): Promise<Post> => {
     .use(remarkToc, { tight: true, maxDepth: 4 })
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeSlug)
-    .use(
-      rehypeAutoLinkHeadings,
-      {
-        content: {
-          type: 'element',
-          tagName: 'span',
-          properties: { className: 'headingLink ' },
-          children: [{ type: 'text', value: '#' }]
-        }
-      }
-    )
+    .use(rehypeAutoLinkHeadings, {
+      content: {
+        type: 'element',
+        tagName: 'span',
+        properties: {
+          className:
+            'headingLink absolute left-0 -translate-x-full pr-2 opacity-0 text-neutral-500',
+        },
+        children: [{ type: 'text', value: '#' }],
+      },
+    })
     .use(rehypeExternalLinks)
     .use(rehypePrism, { ignoreMissing: true })
-    .use(rehypeWrap, { selector:'table', wrapper: 'div.responsiveTable' })
+    .use(rehypeWrap, { selector: 'table', wrapper: 'div.responsiveTable' })
     .use(rehypeStringify, { allowDangerousHtml: true })
     .use(rehypeMinify)
     .process(content)
@@ -58,13 +59,19 @@ export const fetchPosts = async (): Promise<Array<PostPreview>> => {
 
   return posts
     .sort((x, y) => {
-      return Number(new Date(y.datePublished.value)) - Number(new Date(x.datePublished.value))
+      return (
+        Number(new Date(y.datePublished.value)) -
+        Number(new Date(x.datePublished.value))
+      )
     })
     .map((post) => ({
       datePublished: post.datePublished,
-      excerpt: post.excerpt,
+      excerpt: truncate(post.excerpt, {
+        length: 100,
+        separator: ' ',
+      }),
       images: post.images,
       slug: post.slug,
-      title: post.title
+      title: post.title,
     }))
 }

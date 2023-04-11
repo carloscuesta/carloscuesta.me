@@ -10,6 +10,6 @@ async function setupMocks() {
   }
 }
 
-(async () => {
+;(async () => {
   await setupMocks()
 })()

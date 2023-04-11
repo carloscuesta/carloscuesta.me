@@ -2,7 +2,7 @@
 
 exports[`Wrapper isCompressed should render the component with children 1`] = `
 <div
-  className="wrapperCompressed"
+  className="m-[0_auto] max-w-4xl px-6 sm:px-4 max-w-[800px]"
 >
   <h1>
     Some children
@@ -15,7 +15,7 @@ exports[`Wrapper isCompressed should render the component with children 1`] = `
 
 exports[`Wrapper should render the component with children 1`] = `
 <div
-  className="wrapper"
+  className="m-[0_auto] max-w-4xl px-6 sm:px-4 "
 >
   <h1>
     Some children

@@ -1,13 +1,9 @@
-import styles from './styles.module.css'
-
 type Props = {
   year: string
 }
 
 const Year = (props: Props) => (
-  <div className='col-xs-12'>
-    <h2 className={styles.year}>{props.year}</h2>
-  </div>
+  <h2 className="mb-4 text-lg font-bold opacity-90">{props.year}</h2>
 )
 
 export default Year

@@ -10,7 +10,6 @@ jest.mock('next-seo', () => ({ NextSeo: 'NextSeo' }))
   It's more easier to manage little snapshots than big ones.
 */
 jest.mock('src/components/pages/uses/Section', () => 'Section')
-jest.mock('src/components/pages/uses/SetupImage', () => 'SetupImage')
 
 describe('uses', () => {
   describe('page', () => {

@@ -1,15 +1,15 @@
 ---
-dateModified: "2016-03-23 17:00"
-datePublished: "2016-03-23 17:00"
-disqusIdentifier: "9"
-excerpt: "How to get HTTPs for free and easily in your websites with Cloudflare."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/HTTPs_with_Cloudflare.png"
-title: "Free and easy HTTPs with Cloudflare"
+dateModified: '2016-03-23 17:00'
+datePublished: '2016-03-23 17:00'
+disqusIdentifier: '9'
+excerpt: 'How to get HTTPs for free and easily in your websites with Cloudflare.'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/HTTPs_with_Cloudflare.png'
+title: 'Free and easy HTTPs with Cloudflare'
 ---
 
 ### How to get HTTPs
 
-To get HTTPs for your website, you need a **certificate** signed by a trusted certificate authority, and you will pay for that process. But with [Cloudflare](https://cloudflare.com) you can get easily and free **HTTPs** for your site *(which currently, is what i'm using for my website and blog)*.
+To get HTTPs for your website, you need a **certificate** signed by a trusted certificate authority, and you will pay for that process. But with [Cloudflare](https://cloudflare.com) you can get easily and free **HTTPs** for your site _(which currently, is what i'm using for my website and blog)_.
 
 #### Let's get started!
 
@@ -22,7 +22,7 @@ iris.ns.cloudflare.com
 beau.ns.cloudflare.com
 ```
 
-Once the process is complete, at the `Overview` tab you will see a green bar with your site and **Status: Active**. *Note: This process can take up to 24 hours to complete.*
+Once the process is complete, at the `Overview` tab you will see a green bar with your site and **Status: Active**. _Note: This process can take up to 24 hours to complete._
 
 ![CloudFlare Active](https://res.cloudinary.com/carloscuesta/image/upload/v1458416188/etfwmd9m0f21mookp4tz.png)
 

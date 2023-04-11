@@ -1,6 +1,9 @@
 import callApi from 'src/utils/api/callApi'
 import { fetchPublishedPackages, fetchDownloadsCount } from '../index'
-import { transformPublishedPackages, transformDownloadsCount } from '../mutators'
+import {
+  transformPublishedPackages,
+  transformDownloadsCount,
+} from '../mutators'
 
 import publishedPackagesFixture from './fixtures/publishedPackages.json'
 import packageDownloadsFixture from './fixtures/downloads.json'
@@ -22,7 +25,9 @@ describe('NPM API Client', () => {
     })
 
     it('should match fetchDownloadsCount call', () => {
-      fetchDownloadsCount(publishedPackagesFixture.objects.map((pkg) => pkg.package.name))
+      fetchDownloadsCount(
+        publishedPackagesFixture.objects.map((pkg) => pkg.package.name)
+      )
 
       expect(callApiMock.mock.calls[0][0]).toMatchSnapshot()
     })
@@ -31,13 +36,17 @@ describe('NPM API Client', () => {
   describe('mutators', () => {
     describe('transformPublishedPackages', () => {
       it('should match the packages names', () => {
-        expect(transformPublishedPackages(publishedPackagesFixture)).toMatchSnapshot()
+        expect(
+          transformPublishedPackages(publishedPackagesFixture)
+        ).toMatchSnapshot()
       })
     })
 
     describe('transformDownloadsCount', () => {
       it('should aggregate all the downloads from packages', () => {
-        expect(transformDownloadsCount(packageDownloadsFixture)).toMatchSnapshot()
+        expect(
+          transformDownloadsCount(packageDownloadsFixture)
+        ).toMatchSnapshot()
       })
     })
   })

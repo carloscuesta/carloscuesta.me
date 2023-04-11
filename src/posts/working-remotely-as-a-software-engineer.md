@@ -1,10 +1,10 @@
 ---
-dateModified: "2020-08-20 16:00"
-datePublished: "2020-08-20 16:00"
-disqusIdentifier: "working-remotely-as-a-software-engineer"
+dateModified: '2020-08-20 16:00'
+datePublished: '2020-08-20 16:00'
+disqusIdentifier: 'working-remotely-as-a-software-engineer'
 excerpt: "My experience working as a Software Engineer on a remote company. I'm going to give you some tips on communication, organization and remote culture."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1597741585/blog-featured-images/Working_Remotely_as_a_Software_Engineer.png"
-title: "Working remotely as a Software Engineer"
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1597741585/blog-featured-images/Working_Remotely_as_a_Software_Engineer.png'
+title: 'Working remotely as a Software Engineer'
 ---
 
 Since March due to the _COVID-19_ 🦠, the company I work for, decided to **ditch the office** and go **full remote** 🌍.
@@ -56,7 +56,7 @@ Knowing **what** person **is working on** is really valuable for the team. It wi
 
 #### Use a software development methodology
 
-Choose a **system to distribute** the **workload** on the team. Try the different frameworks that exist out there and pick the one who works best for your team. We use **[Kanban](https://en.wikipedia.org/wiki/Kanban_(development))** flow and we're pretty happy with it.
+Choose a **system to distribute** the **workload** on the team. Try the different frameworks that exist out there and pick the one who works best for your team. We use **[Kanban](<https://en.wikipedia.org/wiki/Kanban_(development)>)** flow and we're pretty happy with it.
 
 With a methodology like Kanban you'll **reduce** the **overhead** of **organizing tasks remotely** and you'll make visible the work that every member is doing on a daily basis to the rest of the team 👀
 

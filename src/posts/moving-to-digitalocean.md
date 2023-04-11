@@ -1,10 +1,10 @@
 ---
-dateModified: "2017-10-18 10:15"
-datePublished: "2017-10-18 10:15"
-disqusIdentifier: "59cfbaac613ac70679db193e"
-excerpt: "The process of moving my website and Ghost blog from Heroku to DigitalOcean.  Provisioning up the server with Node.js, Nginx, LetsEncrypt and PM2."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Moving_to_DigitalOcean.png"
-title: "Moving to DigitalOcean"
+dateModified: '2017-10-18 10:15'
+datePublished: '2017-10-18 10:15'
+disqusIdentifier: '59cfbaac613ac70679db193e'
+excerpt: 'The process of moving my website and Ghost blog from Heroku to DigitalOcean.  Provisioning up the server with Node.js, Nginx, LetsEncrypt and PM2.'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Moving_to_DigitalOcean.png'
+title: 'Moving to DigitalOcean'
 ---
 
 Last weekend I've moved my website and blog to [**DigitalOcean**](https://www.digitalocean.com). **At the time** of **building** this **website** _2015_ I choosed [**Heroku**](https://heroku.com) as the platform to host my application, because I **didn't wanted** to **deal** with **server** **provisioning** and **maintenance**.
@@ -125,7 +125,7 @@ server {
 
 After enforcing HTTPs, we use another server block to set our `locations`. Those locations will define how Nginx should handle the requests to specific resources.
 
-As an example, if your make a request to `carloscuesta.me`, Nginx will match our `/` location and is going to *proxy_pass* the request to my `http://localhost:PORT` where the Node.js application is started.
+As an example, if your make a request to `carloscuesta.me`, Nginx will match our `/` location and is going to _proxy_pass_ the request to my `http://localhost:PORT` where the Node.js application is started.
 
 Also, we're enabling **HTTP2** and **SSL** for our server, providing the certificates and keys needed.
 

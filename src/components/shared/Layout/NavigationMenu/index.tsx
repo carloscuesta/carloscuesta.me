@@ -1,45 +1,57 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import Wrapper from 'src/components/shared/Wrapper'
-import MenuLink from './MenuLink'
+import Links from './Links'
 import Hamburger from './Hamburger'
-import styles from './styles.module.css'
+import ThemeSelector from './ThemeSelector'
 
 const NavigationMenu = () => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false)
 
   return (
-    <header className={`${styles.header} ${isHamburgerOpen ? styles.disableBackdropFilter : ''}`}>
+    <header
+      className={`sticky top-0 z-10 border-b-[1px] border-solid border-neutral-100 bg-white/75 py-2 dark:border-neutral-900 dark:bg-black/75 sm:py-3 ${
+        isHamburgerOpen ? '' : 'backdrop-blur-xl'
+      }`}
+    >
       <Wrapper>
-        <nav className={styles.navigation}>
-          <Link href='/' className={styles.logo}>
+        <nav className="flex items-center justify-between font-semibold">
+          <Link href="/" className="grid grid-flow-col items-center">
             <>
-              <img
-                alt='Carlos Cuesta'
-                className={styles.avatar}
-                height={36}
-                src='https://res.cloudinary.com/carloscuesta/image/upload/s--g0fD72tH--/c_scale,q_100,w_72/v1594588508/carloscuesta.jpg'
-                width={36}
+              <Image
+                alt="Carlos Cuesta"
+                className="mr-3 rounded-full opacity-100"
+                height={32}
+                src="https://res.cloudinary.com/carloscuesta/image/upload/s--g0fD72tH--/c_scale,q_100,w_72/v1594588508/carloscuesta.jpg"
+                width={32}
               />
 
-              Carlos Cuesta
+              <span className="font-bold">Carlos Cuesta</span>
             </>
           </Link>
 
-          <ul className={styles.links}>
-            <li><MenuLink href='/blog' text='Blog' /></li>
+          <div className="flex flex-row-reverse items-center gap-3 sm:flex-row sm:gap-4">
+            <Links
+              links={[
+                { href: '/about', text: 'About' },
+                { href: '/blog', text: 'Blog' },
+                { href: '/projects', text: 'Projects' },
+              ]}
+            />
 
-            <li><MenuLink href='/about' text='About' /></li>
+            <Hamburger
+              isOpen={isHamburgerOpen}
+              setIsOpen={setIsHamburgerOpen}
+            />
 
-            <li><MenuLink href='/opensource' text='Open Source' /></li>
-          </ul>
-
-          <Hamburger isOpen={isHamburgerOpen} setIsOpen={setIsHamburgerOpen} />
+            <ThemeSelector />
+          </div>
         </nav>
       </Wrapper>
     </header>
-  );
+  )
 }
 
 export default NavigationMenu

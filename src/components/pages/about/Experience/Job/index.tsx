@@ -1,75 +1,31 @@
-import { Fragment } from  'react'
-
-import { type JobPosition } from 'src/utils/staticData/workExperience'
-import ItemTimestamp from 'src/components/pages/about/ItemTimestamp'
-import ItemTitle from 'src/components/pages/about/ItemTitle'
+import type { Job } from '../'
 import CompanyLogo from './CompanyLogo'
-import styles from './styles.module.css'
+import Timestamp from './Timestamp'
 
-type Props = JobPosition
-
-const Job = (props: Props) => {
-  const hasJobMoreThanOnePosition = props.positions.length > 1
-
-  if (hasJobMoreThanOnePosition) {
-    const dateStart = props.positions[props.positions.length - 1].dateStart
-    const dateFinish = props.positions[0].dateFinish
-
-    return (
-      <div className={`col-xs-12 ${styles.job}`}>
-        <div className={styles.container}>
-          <CompanyLogo url={props.company.logo} name={props.company.name} />
-
-          <div className={styles.position}>
-            <ItemTitle>
-              <a target='_blank' rel='noopener noreferrer' href={props.company.link}>
-                {props.company.name}
-              </a>
-            </ItemTitle>
-
-            <ItemTimestamp dateFinish={dateFinish} dateStart={dateStart} />
-
-            {props.positions.map((position) => (
-              <div className={styles.positionList} key={position.title}>
-                <span className={styles.positionMark} />
-                <ItemTitle>{position.title}</ItemTitle>
-
-                <ItemTimestamp
-                  dateFinish={position.dateFinish}
-                  dateStart={position.dateStart}
-                />
-
-                <p>{position.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    )
-  }
-
+const Job = (props: Job) => {
   return (
-    <div className={`col-xs-12 ${styles.job}`}>
-      <div className={styles.container}>
+    <div className="flex">
+      <CompanyLogo url={props.company.logo} name={props.company.name} />
+
+      <div className="flex grow flex-col">
         {props.positions.map((position) => (
-          <Fragment key={props.company.name}>
-            <CompanyLogo url={props.company.logo} name={props.company.name} />
-
-            <div className={styles.position}>
-              <ItemTitle>
-                {`${position.title} at `}
-                <a target='_blank' rel='noopener noreferrer' href={props.company.link}>
-                  {props.company.name}
-                </a>
-              </ItemTitle>
-              <ItemTimestamp
-                dateFinish={position.dateFinish}
-                dateStart={position.dateStart}
-              />
-
-              <p>{position.description}</p>
+          <a
+            href={props.company.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-start pb-2  transition-opacity hover:opacity-50"
+            key={position.title}
+          >
+            <div className="grow pb-3 sm:px-4">
+              <p className="font-medium">{position.title}</p>
+              <p className="opacity-50">{props.company.name}</p>
             </div>
-          </Fragment>
+
+            <Timestamp
+              dateFinish={position.dateFinish}
+              dateStart={position.dateStart}
+            />
+          </a>
         ))}
       </div>
     </div>

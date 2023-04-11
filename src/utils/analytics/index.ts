@@ -5,10 +5,10 @@ const GA_TRACKING_ID = 'UA-67824860-3'
 export const trackingCode = getTrackingCode(GA_TRACKING_ID)
 
 type AnalyticsEvent = {
-  action: string,
-  category: string,
-  label: string,
-  nonInteraction?: boolean,
+  action: string
+  category: string
+  label: string
+  nonInteraction?: boolean
   value: number
 }
 
@@ -20,9 +20,9 @@ declare global {
         action: AnalyticsEvent['action'],
         label: AnalyticsEvent['label'],
         value: AnalyticsEvent['value'],
-        nonInteraction?: AnalyticsEvent['nonInteraction'],
-      ) => void 
-    };
+        nonInteraction?: AnalyticsEvent['nonInteraction']
+      ) => void
+    }
   }
 }
 

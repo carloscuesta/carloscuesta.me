@@ -37,7 +37,9 @@ describe('GitHub API Client', () => {
 
     describe('transformUserInformation', () => {
       it('should match the mutated user information', () => {
-        expect(transformUserInformation(userInformationFixture)).toMatchSnapshot()
+        expect(
+          transformUserInformation(userInformationFixture)
+        ).toMatchSnapshot()
       })
     })
   })

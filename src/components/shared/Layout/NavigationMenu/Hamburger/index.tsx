@@ -1,15 +1,27 @@
 import { useEffect } from 'react'
 import Router from 'next/router'
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
-import MenuLink from '../MenuLink'
+import Links from '../Links'
 import OpenIcon from './OpenIcon'
 import CloseIcon from './CloseIcon'
-import styles from './styles.module.css'
 
-type Props = { isOpen: boolean, setIsOpen: (isOpen: boolean) => void }
+type Props = { isOpen: boolean; setIsOpen: (isOpen: boolean) => void }
 
 const Hamburger = (props: Props) => {
-  const { setIsOpen } = props
+  const { setIsOpen, isOpen } = props
+
+  useEffect(() => {
+    if (isOpen) {
+      const documentBody = document.body
+
+      disableBodyScroll(documentBody)
+
+      return () => {
+        enableBodyScroll(documentBody)
+      }
+    }
+  }, [isOpen])
 
   useEffect(() => {
     const onRouteChangeStart = () => {
@@ -22,45 +34,38 @@ const Hamburger = (props: Props) => {
   }, [setIsOpen])
 
   return (
-    <div className={styles.hamburger}>
+    <div className="sm:hidden">
       <button
-        aria-label='Open navigation menu'
-        className={styles.button}
+        aria-label="Open navigation menu"
         onClick={() => setIsOpen(true)}
+        className="fill-black p-2 dark:fill-white"
       >
         <OpenIcon />
       </button>
 
-      {props.isOpen &&
-        <nav className={styles.menu}>
-          <div className={styles.closeContainer}>
+      {props.isOpen && (
+        <nav className="fixed bottom-0 left-0 right-0 top-0 z-10 bg-white dark:bg-black">
+          <div className="absolute right-0 py-2 px-6">
             <button
-              aria-label='Close navigation menu'
-              className={styles.button}
+              aria-label="Close navigation menu"
               onClick={() => setIsOpen(false)}
+              className="fill-black p-2 dark:fill-white"
             >
               <CloseIcon />
             </button>
           </div>
 
-          <ul className={styles.links}>
-            <li><MenuLink href='/' text='Home' /></li>
-            <li><MenuLink href='/blog' text='Blog' /></li>
-            <li><MenuLink href='/about' text='About' /></li>
-            <li>
-              <MenuLink
-                href='/opensource'
-                text='Open Source'
-              />
-            </li>
-            <li>
-              <MenuLink
-                href='https://twitter.com/intent/follow?screen_name=crloscuesta'
-                text='Twitter'
-              />
-            </li>
-          </ul>
-        </nav>}
+          <Links
+            isHamburguer
+            links={[
+              { href: '/', text: 'Home' },
+              { href: '/about', text: 'About' },
+              { href: '/blog', text: 'Blog' },
+              { href: '/projects', text: 'Projects' },
+            ]}
+          />
+        </nav>
+      )}
     </div>
   )
 }

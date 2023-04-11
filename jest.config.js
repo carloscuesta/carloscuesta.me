@@ -7,6 +7,7 @@ async function jestConfig() {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/**/__tests__/*.{js,jsx,ts,tsx}",
+      "!src/mocks/**",
     ],
     "testMatch": [
       "**/*.(spec).(js)",

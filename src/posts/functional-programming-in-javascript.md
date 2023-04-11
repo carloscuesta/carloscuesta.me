@@ -1,10 +1,10 @@
 ---
-dateModified: "2021-03-24 10:00"
-datePublished: "2021-03-24 10:00"
-disqusIdentifier: "functional-programming-in-javascript"
+dateModified: '2021-03-24 10:00'
+datePublished: '2021-03-24 10:00'
+disqusIdentifier: 'functional-programming-in-javascript'
 excerpt: "Functional programming, has become a popular trend in the JavaScript community. Let's explain in a simple way the basics of FP applied to JavaScript."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1616513220/blog-featured-images/Functional_programming_in_JavaScript.png"
-title: "Functional programming in JavaScript"
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1616513220/blog-featured-images/Functional_programming_in_JavaScript.png'
+title: 'Functional programming in JavaScript'
 ---
 
 Functional programming, often abbreviated as **FP** has become a 🔥 popular trend over the last years in the JavaScript community, but it was created on the _1950s_, long way before JavaScript 😅
@@ -23,7 +23,7 @@ Does that mean _functional_ is about just programming with the `function` keywor
 
 The _functional_ paradigm is based on the following principles:
 
-- **Immutability** 🧊: The state of not changing, or being unable to be changed. Immutability makes our code _predictable_ and free of [_side effects_](https://en.wikipedia.org/wiki/Side_effect_(computer_science)) 🐛
+- **Immutability** 🧊: The state of not changing, or being unable to be changed. Immutability makes our code _predictable_ and free of [_side effects_](<https://en.wikipedia.org/wiki/Side_effect_(computer_science)>) 🐛
 - **Declarative** 📖: Declarative programming is code that is focused on describing _what_ the code does, _outcome_.
 - **Pure functions** 🦄: Functions that given the _same input_ always return the _same output_ and have no side effects.
 - **Function composition** 🍱: The process of combining two or more functions to produce new functions or perform some operations.
@@ -46,7 +46,7 @@ Predictable code is easier to maintain and debug. In the long term, this reduces
 
 I believe that **coding is about communication**, the role of code itself is communicating with other humans before instructing the computer. This sounds a little bit _philosophical_ right 🔮?
 
-But think about your own experience as a developer; you probably spent much **more time reading** and understanding code than actually **programming** it 🧑‍💻.
+But think about your own experience as a developer; you probably spend much **more time reading** and understanding code than actually **programming** it 🧑‍💻.
 
 Writing **declarative** code, which is another principle of the _functional_ paradigm will help you to focus on describing **what** the code does, instead of _how_ it works, so code will be much more understandable for humans.
 
@@ -113,7 +113,7 @@ To solve the example using an imperative approach, we create a function that rec
 After that, we iterate our array using a `for` loop with an `if` statement to push the even numbers to the empty array in order to return them at the end of the iteration.
 
 ```js
-function getEvenNumbers (numbers) {
+function getEvenNumbers(numbers) {
   let evenNumbers = []
   for (i = 0; i < numbers.length; i++) {
     if (numbers[i] % 2 === 0) evenNumbers.push(numbers[i])
@@ -249,7 +249,7 @@ For example, imagine that as a result of calling to an API we've got the followi
       "description": "An emoji guide for your commit messages.",
       "id": 1,
       "language": "javascript",
-      "name":  "gitmoji",
+      "name": "gitmoji",
       "stargazers_count": 9500
     }
   ]
@@ -264,19 +264,19 @@ How we can solve that? Easy by making a mapping with the `Array.map` function:
 response.data.map((repository) => ({
   description: repository.description,
   name: repository.name,
-  stars: repository.stargazers_count
+  stars: repository.stargazers_count,
 }))
 ```
 
 This mapping would transform the JSON to something like this:
 
 ```js
-[
+;[
   {
     description: 'An emoji guide for your commit messages',
     name: 'gitmoji',
-    stars: 9500
-  }
+    stars: 9500,
+  },
 ]
 ```
 
@@ -294,7 +294,7 @@ const shoppingBasket = [
   { name: '🍌', type: 'fruit' },
   { name: '🥕', type: 'vegetable' },
   { name: '🍔', type: 'meat' },
-  { name: '🥔', type: 'vegetable' }
+  { name: '🥔', type: 'vegetable' },
 ]
 ```
 
@@ -316,7 +316,10 @@ shoppingBasket.filter((item) => item.type === 'fruit')
 This returns a new list:
 
 ```js
-[{ name: '🍏', type: 'fruit' }, { name: '🍌', type: 'fruit' }]
+;[
+  { name: '🍏', type: 'fruit' },
+  { name: '🍌', type: 'fruit' },
+]
 ```
 
 **Excluding filter**
@@ -330,10 +333,10 @@ shoppingBasket.filter((item) => item.type !== 'fruit')
 This returns a new list:
 
 ```js
-[
+;[
   { name: '🥕', type: 'vegetable' },
   { name: '🍔', type: 'meat' },
-  { name: '🥔', type: 'vegetable' }
+  { name: '🥔', type: 'vegetable' },
 ]
 ```
 
@@ -359,13 +362,16 @@ const shoppingBasket = [
   { name: '🍌', type: 'fruit' },
   { name: '🥕', type: 'vegetable' },
   { name: '🍔', type: 'meat' },
-  { name: '🥔', type: 'vegetable' }
+  { name: '🥔', type: 'vegetable' },
 ]
 
-shoppingBasket.reduce((accumulator, value) => ({
-  ...accumulator,
-  [value.type]: [...accumulator[value.type] || []].concat(value)
-}), {})
+shoppingBasket.reduce(
+  (accumulator, value) => ({
+    ...accumulator,
+    [value.type]: [...(accumulator[value.type] || [])].concat(value),
+  }),
+  {}
+)
 ```
 
 The outcome of this reduction is an Object that looks like this:

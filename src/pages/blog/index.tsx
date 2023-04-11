@@ -5,30 +5,34 @@ import { NextSeo } from 'next-seo'
 import { fetchPosts } from 'src/utils/api/blog'
 import { type PostPreview } from 'src/utils/api/blog/mutators'
 import PageTitle from 'src/components/shared/PageTitle'
-import BlogPost from 'src/components/shared/BlogPost'
 import Wrapper from 'src/components/shared/Wrapper'
 import Year from 'src/components/pages/blog/Year'
+import Post from 'src/components/pages/blog/Post'
 
 const Blog = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
     <NextSeo
-      canonical='https://carloscuesta.me/blog'
-      title='Carlos Cuesta – Blog'
+      canonical="https://carloscuesta.me/blog"
+      title="Carlos Cuesta – Blog"
     />
     <main>
       <Wrapper>
-        <PageTitle title='Blog' />
-        <>
-          {Object.keys(props.posts).sort(() => -1).map((year) => (
-            <div className='row' key={year}>
-              <Year year={year} />
+        <PageTitle title="Blog" />
+        <div className="grid gap-8">
+          {Object.keys(props.posts)
+            .sort(() => -1)
+            .map((year) => (
+              <section key={year}>
+                <Year year={year} />
 
-              {props.posts[year].map((post) => (
-                <BlogPost post={post} key={post.slug} />
-              ))}
-            </div>
-          ))}
-        </>
+                <ul className="grid grid-flow-row gap-3">
+                  {props.posts[year].map((post) => (
+                    <Post key={post.slug} post={post} />
+                  ))}
+                </ul>
+              </section>
+            ))}
+        </div>
       </Wrapper>
     </main>
   </>
@@ -41,11 +45,10 @@ export const getStaticProps: GetStaticProps<{
 
   return {
     props: {
-      posts: groupBy(
-        posts,
-        (post) => new Date(post.datePublished.value).getFullYear()
-      )
-    }
+      posts: groupBy(posts, (post) =>
+        new Date(post.datePublished.value).getFullYear()
+      ),
+    },
   }
 }
 

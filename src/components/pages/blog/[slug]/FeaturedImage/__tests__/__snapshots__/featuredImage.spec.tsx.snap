@@ -2,14 +2,16 @@
 
 exports[`FeaturedImage should match FeaturedImage component 1`] = `
 <header
-  className="header"
+  className="relative"
 >
   <img
     alt="post title"
-    className="lazyload image"
+    className="lazyload lazy-blur my-8 rounded-lg"
     data-src="https://res.cloudinary.com/carloscuesta/image/upload/v1454754838/kcuq34zbo1yieygmx0y6.png"
+    height={376}
     src="https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1454754838/kcuq34zbo1yieygmx0y6.png"
     title="post title"
+    width={752}
   />
 </header>
 `;

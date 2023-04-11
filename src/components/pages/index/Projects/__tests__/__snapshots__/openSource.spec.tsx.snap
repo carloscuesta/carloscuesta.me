@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpenSource should match OpenSource component 1`] = `
+<section>
+  <div
+    className="m-[0_auto] max-w-4xl px-6 sm:px-4 "
+  >
+    <div
+      className="my-6 flex items-end justify-between"
+    >
+      <div
+        className=""
+      >
+        <h2
+          className="text-lg font-bold"
+        >
+          Projects
+        </h2>
+        <h3
+          className="text-md opacity-70"
+        >
+          Selected open source projects.
+        </h3>
+      </div>
+      <a
+        className="text-sm opacity-70 transition-opacity hover:opacity-100"
+        href="/opensource"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        View all
+      </a>
+    </div>
+    <div
+      className="grid gap-x-4 gap-y-6 sm:grid-cols-2 md:grid-cols-3"
+    >
+      <a
+        className="border-neutral-150 grid gap-2.5 rounded-lg border p-4 transition-colors hover:border-neutral-400 dark:border-neutral-700 dark:hover:border-neutral-500"
+        href="https://github.com/carloscuesta/gitmoji"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="gitmoji"
+      >
+        <p
+          className="font-semibold"
+        >
+          gitmoji
+        </p>
+        <p
+          className="text-sm opacity-70"
+        >
+          An emoji guide for your commit messages. 😜 
+        </p>
+        <div
+          className="flex items-center gap-2.5 text-sm"
+        >
+          <div
+            className="flex items-center gap-1"
+          >
+            <div
+              className="h-2 w-2 rounded-full language-project-javascript"
+            />
+            <span
+              className="opacity-70"
+            >
+              javascript
+            </span>
+          </div>
+          <div
+            className="flex items-center gap-1"
+          >
+            <svg
+              className="p-[1.5px] opacity-70"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"
+              />
+            </svg>
+            <span
+              className="opacity-70"
+            >
+              7,323
+            </span>
+          </div>
+        </div>
+      </a>
+      <a
+        className="border-neutral-150 grid gap-2.5 rounded-lg border p-4 transition-colors hover:border-neutral-400 dark:border-neutral-700 dark:hover:border-neutral-500"
+        href="https://github.com/carloscuesta/gitmoji-cli"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="gitmoji-cli"
+      >
+        <p
+          className="font-semibold"
+        >
+          gitmoji-cli
+        </p>
+        <p
+          className="text-sm opacity-70"
+        >
+          A gitmoji interactive command line tool for using emojis on commits. 💻
+        </p>
+        <div
+          className="flex items-center gap-2.5 text-sm"
+        >
+          <div
+            className="flex items-center gap-1"
+          >
+            <div
+              className="h-2 w-2 rounded-full language-project-javascript"
+            />
+            <span
+              className="opacity-70"
+            >
+              javascript
+            </span>
+          </div>
+          <div
+            className="flex items-center gap-1"
+          >
+            <svg
+              className="p-[1.5px] opacity-70"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"
+              />
+            </svg>
+            <span
+              className="opacity-70"
+            >
+              2,400
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+`;

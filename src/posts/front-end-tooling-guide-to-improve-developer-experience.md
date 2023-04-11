@@ -1,10 +1,10 @@
 ---
-dateModified: "2021-02-22 10:00"
-datePublished: "2021-02-22 10:00"
-disqusIdentifier: "frontend-tooling-guide-to-improve-developer-experience"
+dateModified: '2021-02-22 10:00'
+datePublished: '2021-02-22 10:00'
+disqusIdentifier: 'frontend-tooling-guide-to-improve-developer-experience'
 excerpt: "Let's talk about how we can use frontend tools to improve the developer experience in our team and how these tools impact the reliability of shipping value into production."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1613908204/blog-featured-images/frontend-tooling-improve-dx.png"
-title: "The frontend tooling guide to improve Developer Experience"
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1613908204/blog-featured-images/frontend-tooling-improve-dx.png'
+title: 'The frontend tooling guide to improve Developer Experience'
 ---
 
 Let's talk about how we can use frontend tooling to improve the **developer experience** in our team and how these tools impact the reliability of shipping value into production **safer** and **faster**.
@@ -21,7 +21,7 @@ Keep reading then! All those problems usually indicate that you don't have the p
 
 Starting from the first line of code that is written on the editor and ending when the code is shipped and available to our users. Is the literal feeling a developer has when coding.
 
-Think about all those little things that help you to code better without having to put any attention on them.  
+Think about all those little things that help you to code better without having to put any attention on them.
 
 A few examples and common use cases of _DX_ would be:
 

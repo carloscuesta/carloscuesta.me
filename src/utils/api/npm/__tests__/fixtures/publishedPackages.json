@@ -1,5 +1,6 @@
 {
-  "objects": [{
+  "objects": [
+    {
       "package": {
         "name": "react-native-error-boundary",
         "scope": "unscoped",
@@ -29,10 +30,12 @@
           "username": "carloscuesta",
           "email": "hi@carloscuesta.me"
         },
-        "maintainers": [{
-          "username": "carloscuesta",
-          "email": "hi@carloscuesta.me"
-        }]
+        "maintainers": [
+          {
+            "username": "carloscuesta",
+            "email": "hi@carloscuesta.me"
+          }
+        ]
       },
       "score": {
         "final": 0.41841004240545115,
@@ -50,12 +53,7 @@
         "scope": "unscoped",
         "version": "3.2.18",
         "description": "A gitmoji client for using emojis on commit messages.",
-        "keywords": [
-          "gitmoji",
-          "emoji",
-          "carloscuesta",
-          "commit"
-        ],
+        "keywords": ["gitmoji", "emoji", "carloscuesta", "commit"],
         "date": "2020-12-28T23:22:55.406Z",
         "links": {
           "npm": "https://www.npmjs.com/package/gitmoji-cli",
@@ -73,10 +71,12 @@
           "username": "carloscuesta",
           "email": "hi@carloscuesta.me"
         },
-        "maintainers": [{
-          "username": "carloscuesta",
-          "email": "hi@carloscuesta.me"
-        }]
+        "maintainers": [
+          {
+            "username": "carloscuesta",
+            "email": "hi@carloscuesta.me"
+          }
+        ]
       },
       "score": {
         "final": 0.35120916063026847,
@@ -94,12 +94,7 @@
         "scope": "unscoped",
         "version": "3.1.2",
         "description": "An emoji guide for your commit messages.",
-        "keywords": [
-          "gitmoji",
-          "emoji",
-          "carloscuesta",
-          "commit"
-        ],
+        "keywords": ["gitmoji", "emoji", "carloscuesta", "commit"],
         "date": "2020-12-28T23:16:27.948Z",
         "links": {
           "npm": "https://www.npmjs.com/package/gitmojis",
@@ -117,7 +112,8 @@
           "username": "carloscuesta",
           "email": "hi@carloscuesta.me"
         },
-        "maintainers": [{
+        "maintainers": [
+          {
             "username": "carloscuesta",
             "email": "hi@carloscuesta.me"
           },
@@ -147,12 +143,7 @@
         "scope": "unscoped",
         "version": "1.1.1",
         "description": "React native layout debugger.",
-        "keywords": [
-          "react-native",
-          "layout",
-          "debug",
-          "debugger"
-        ],
+        "keywords": ["react-native", "layout", "debug", "debugger"],
         "date": "2017-01-06T23:23:17.680Z",
         "links": {
           "npm": "https://www.npmjs.com/package/react-native-layout-debug"
@@ -167,7 +158,8 @@
           "username": "carloscuesta",
           "email": "crloscuesta@gmail.com"
         },
-        "maintainers": [{
+        "maintainers": [
+          {
             "username": "carloscuesta",
             "email": "crloscuesta@gmail.com"
           },
@@ -217,10 +209,12 @@
           "username": "carloscuesta",
           "email": "hi@carloscuesta.me"
         },
-        "maintainers": [{
-          "username": "carloscuesta",
-          "email": "hi@carloscuesta.me"
-        }]
+        "maintainers": [
+          {
+            "username": "carloscuesta",
+            "email": "hi@carloscuesta.me"
+          }
+        ]
       },
       "score": {
         "final": 0.22733576222686597,
@@ -272,10 +266,12 @@
           "username": "carloscuesta",
           "email": "crloscuesta@gmail.com"
         },
-        "maintainers": [{
-          "username": "carloscuesta",
-          "email": "crloscuesta@gmail.com"
-        }]
+        "maintainers": [
+          {
+            "username": "carloscuesta",
+            "email": "crloscuesta@gmail.com"
+          }
+        ]
       },
       "score": {
         "final": 0.17117095500875718,

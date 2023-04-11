@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stats should match Stats component 1`] = `
+<section
+  className="grid gap-4 sm:grid-flow-col sm:grid-cols-3"
+>
+  <div
+    className="flex-1"
+  >
+    <article
+      className="rounded-lg border border-solid border-neutral-100 px-4 py-8 dark:border-neutral-800"
+    >
+      <p
+        className="pb-2 opacity-80"
+      >
+        GitHub Stars
+      </p>
+      <p
+        className="text-xl font-extrabold"
+      >
+        1,000
+      </p>
+    </article>
+  </div>
+  <div
+    className="flex-1"
+  >
+    <article
+      className="rounded-lg border border-solid border-neutral-100 px-4 py-8 dark:border-neutral-800"
+    >
+      <p
+        className="pb-2 opacity-80"
+      >
+        GitHub Followers
+      </p>
+      <p
+        className="text-xl font-extrabold"
+      >
+        100
+      </p>
+    </article>
+  </div>
+  <div
+    className="flex-1"
+  >
+    <article
+      className="rounded-lg border border-solid border-neutral-100 px-4 py-8 dark:border-neutral-800"
+    >
+      <p
+        className="pb-2 opacity-80"
+      >
+        NPM Downloads
+      </p>
+      <p
+        className="text-xl font-extrabold"
+      >
+        100,000
+        <span
+          className="text-sm font-medium opacity-50"
+        >
+           / year
+        </span>
+      </p>
+    </article>
+  </div>
+</section>
+`;

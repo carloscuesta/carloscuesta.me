@@ -1,10 +1,10 @@
 ---
-dateModified: "2016-02-06 15:55"
-datePublished: "2016-02-06 15:55"
-disqusIdentifier: "7"
-excerpt: "Carlos Cuesta terminal setup with ZSH and Oh-My-ZSH, using materialshell and my dotfiles."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Terminal_Setup.png"
-title: "Terminal setup"
+dateModified: '2016-02-06 15:55'
+datePublished: '2016-02-06 15:55'
+disqusIdentifier: '7'
+excerpt: 'Carlos Cuesta terminal setup with ZSH and Oh-My-ZSH, using materialshell and my dotfiles.'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Terminal_Setup.png'
+title: 'Terminal setup'
 ---
 
 **Terminal** is a place where a developer spends a lot of time, running commands, looking for outputs and doing a bunch of stuff, so better to stay comfortable and productive with it.
@@ -30,11 +30,9 @@ After setting up ZSH and Oh-My-Zsh, now we are ready to customize and put our sh
 
 I use a theme called [**materialshell**](https://github.com/carloscuesta/materialshell) that I've made for my own.
 
-
 [**Follow this guide to install and setup my terminal**.](https://github.com/carloscuesta/materialshell/blob/master/README.md)
 
 ![Carlos Cuesta Shell - MaterialShell](https://res.cloudinary.com/carloscuesta/image/upload/v1454753967/gazne7uhxuq8ugpfvile.png)
-
 
 ### Dotfiles
 

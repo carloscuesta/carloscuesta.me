@@ -1,10 +1,10 @@
 ---
-dateModified: "2016-08-16 10:55"
-datePublished: "2016-08-16 10:55"
-disqusIdentifier: "15"
-excerpt: "HyperTerm is an Open Source Project created by ZEIT. The goal of the project is to create a beautiful experience for command-line users."
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/HyperTerm_a_Terminal_built_on_open_web_standards.png"
-title: "Hyper a Terminal built on open web standards"
+dateModified: '2016-08-16 10:55'
+datePublished: '2016-08-16 10:55'
+disqusIdentifier: '15'
+excerpt: 'HyperTerm is an Open Source Project created by ZEIT. The goal of the project is to create a beautiful experience for command-line users.'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/HyperTerm_a_Terminal_built_on_open_web_standards.png'
+title: 'Hyper a Terminal built on open web standards'
 ---
 
 [Hyper](http://hyper.is) is an **Open Source** Project created by [▲ ZEIT](https://zeit.co/). The goal of the project is to create a beautiful and extensible experience for command-line interface users, built on open web standards.

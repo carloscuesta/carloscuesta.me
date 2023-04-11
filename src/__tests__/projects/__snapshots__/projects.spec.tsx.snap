@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index page should match projects page 1`] = `
+[
+  <NextSeo
+    canonical="https://carloscuesta.me/projects"
+    title="Carlos Cuesta – Projects"
+  />,
+  <main>
+    <div
+      className="m-[0_auto] max-w-4xl px-6 sm:px-4 "
+    >
+      <PageTitle
+        title="Projects"
+      />
+      <Stats
+        followers="100"
+        packageDownloads="10,000"
+        stars="10,000"
+      />
+      <Repositories
+        repositories={
+          [
+            {
+              "description": "An emoji guide for your commit messages. 😜 ",
+              "language": "javascript",
+              "name": "gitmoji",
+              "stars": {
+                "format": "7,460",
+                "value": 7460,
+              },
+              "url": "https://github.com/carloscuesta/gitmoji",
+            },
+            {
+              "description": "A gitmoji interactive command line tool for using emojis on commits. 💻",
+              "language": "javascript",
+              "name": "gitmoji-cli",
+              "stars": {
+                "format": "2,254",
+                "value": 2254,
+              },
+              "url": "https://github.com/carloscuesta/gitmoji-cli",
+            },
+            {
+              "description": "A material design theme for your terminal. ✨",
+              "language": "shell",
+              "name": "materialshell",
+              "stars": {
+                "format": "710",
+                "value": 710,
+              },
+              "url": "https://github.com/carloscuesta/materialshell",
+            },
+            {
+              "description": "A Front End development Gulp.js based workflow. 🚀",
+              "language": "javascript",
+              "name": "starterkit",
+              "stars": {
+                "format": "84",
+                "value": 84,
+              },
+              "url": "https://github.com/carloscuesta/starterkit",
+            },
+            {
+              "description": "A material design theme for Hyper based on materialshell. ✨",
+              "language": "javascript",
+              "name": "hyper-materialshell",
+              "stars": {
+                "format": "69",
+                "value": 69,
+              },
+              "url": "https://github.com/carloscuesta/hyper-materialshell",
+            },
+            {
+              "description": "A simple and reusable React-Native error boundary component 🐛",
+              "language": "javascript",
+              "name": "react-native-error-boundary",
+              "stars": {
+                "format": "47",
+                "value": 47,
+              },
+              "url": "https://github.com/carloscuesta/react-native-error-boundary",
+            },
+          ]
+        }
+      />
+    </div>
+  </main>,
+]
+`;

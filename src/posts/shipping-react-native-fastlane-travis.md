@@ -1,10 +1,10 @@
 ---
-dateModified: "2018-10-15 09:53"
-datePublished: "2018-09-19 09:53"
-disqusIdentifier: "5ae59dcdb3211a06522ad69b"
-excerpt: "The process of continuously delivering React Native apps with Fastlane and Travis CI automatically. "
-image: "https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Shipping_React_Native_apps_with_Fastlane_and_Travis.png"
-title: "Shipping React Native apps with Fastlane and Travis"
+dateModified: '2018-10-15 09:53'
+datePublished: '2018-09-19 09:53'
+disqusIdentifier: '5ae59dcdb3211a06522ad69b'
+excerpt: 'The process of continuously delivering React Native apps with Fastlane and Travis CI automatically. '
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Shipping_React_Native_apps_with_Fastlane_and_Travis.png'
+title: 'Shipping React Native apps with Fastlane and Travis'
 ---
 
 A year ago [I wrote a post](https://carloscuesta.me/blog/shipping-react-native-apps-with-fastlane/) about how Fastlane could help us to improve our **React Native** apps shipping process. At that moment even though everything was automated, the **deployment** **relied** on **one of us** with a **provisioned machine** in order to launch the rocket 🚀. We could **improve** **easily** that process **by** **continuously delivering** our apps through a **CI machine**. That's when [Travis CI](https://travis-ci.com) comes to the rescue! 👷🏻‍♂️
@@ -33,7 +33,7 @@ Now let's see in depth every step of the deployment process to understand what w
 
 We adopted the [codesigning.guide concept](https://codesigning.guide) through [_Fastlane_](http://fastlane.tools). Basically this idea comes up with having a specific **git repository** to **store** and **distribute** certificates across a development team. We store both **iOS** and **Android** code signing files on an encrypted private git repository that lives on GitHub.
 
-Then, our **CI** machine on every deploy **clones** the **repository** and **installs** the decrypted certificates. On **iOS** the CI creates an [*OS X Keychain*](https://en.wikipedia.org/wiki/Keychain_(software)) where the certificates are installed.
+Then, our **CI** machine on every deploy **clones** the **repository** and **installs** the decrypted certificates. On **iOS** the CI creates an [_OS X Keychain_](<https://en.wikipedia.org/wiki/Keychain_(software)>) where the certificates are installed.
 
 #### Version management 🔖
 
@@ -188,7 +188,7 @@ Android stage **creates** a **provisioned** [Ubuntu machine](https://docs.travis
     - ./internals/scripts/travis/gitconfig.sh
   install: yarn
   script: npm run deployment:android
-  ```
+```
 
 **iOS stage** 🍏
 
@@ -211,5 +211,5 @@ iOS stage **creates** a **provisioned** [macOS machine](https://docs.travis-ci.c
 ### Lessons learned
 
 - **Avoid human factor** as much as you can, by **automating all the things**!
--  Native ecosystem is tough, sometimes kind of frustrating and you should accept that. It's not our expertise since we're JS devs, but there's a lot of people and documentation that helps out.
--  Make **processes**.
+- Native ecosystem is tough, sometimes kind of frustrating and you should accept that. It's not our expertise since we're JS devs, but there's a lot of people and documentation that helps out.
+- Make **processes**.

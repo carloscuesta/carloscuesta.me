@@ -1,0 +1,38 @@
+{
+  "react-native-error-boundary": {
+    "downloads": 690359,
+    "package": "react-native-error-boundary",
+    "start": "2022-04-06",
+    "end": "2023-04-05"
+  },
+  "gitmoji-cli": {
+    "downloads": 174866,
+    "package": "gitmoji-cli",
+    "start": "2022-04-06",
+    "end": "2023-04-05"
+  },
+  "gitmojis": {
+    "downloads": 603694,
+    "package": "gitmojis",
+    "start": "2022-04-06",
+    "end": "2023-04-05"
+  },
+  "react-native-layout-debug": {
+    "downloads": 240,
+    "package": "react-native-layout-debug",
+    "start": "2022-04-06",
+    "end": "2023-04-05"
+  },
+  "hyper-materialshell": {
+    "downloads": 803,
+    "package": "hyper-materialshell",
+    "start": "2022-04-06",
+    "end": "2023-04-05"
+  },
+  "generator-starterkit": {
+    "downloads": 934,
+    "package": "generator-starterkit",
+    "start": "2022-04-06",
+    "end": "2023-04-05"
+  }
+}
