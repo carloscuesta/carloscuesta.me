@@ -18,10 +18,12 @@ const Uses = () => (
 
         <div>
           <Image
-            src="https://res.cloudinary.com/carloscuesta/image/upload/v1659775881/carloscuesta-setup_z1azyb.jpg"
+            src={require('./setup.jpg')}
             alt="Carlos Cuesta workspace setup"
-            width={2016}
-            height={1134}
+            className="max-w-full rounded-md"
+            placeholder="blur"
+            width={1500}
+            height={1232}
             quality={100}
           />
 
@@ -106,6 +108,21 @@ const Uses = () => (
                 category: 'Boom Arm',
                 title: 'Elgato Wave Mic Arm LP',
                 link: 'https://www.elgato.com/wave-mic-arm-lp',
+              },
+              {
+                category: 'Charger',
+                title: 'Belkin BoostCharge Pro',
+                link: 'https://www.belkin.com/es/cargador-inal%C3%A1mbrico-3-en-1-de-15-w-con-tecnolog%C3%ADa-magsafe-oficial/P-WIZ016.html',
+              },
+              {
+                category: 'Lighting',
+                title: 'Govee Flow Plus Light Bars',
+                link: 'https://eu.govee.com/collections/tv-gaming-lights/products/govee-rgbicww-wifi-bluetooth-flow-plus-light-bars',
+              },
+              {
+                category: 'Clock',
+                title: 'Mi Smart Clock',
+                link: 'https://www.mi.com/product/mi-smart-clock/',
               },
             ]}
             subTitle="Home office equipment"

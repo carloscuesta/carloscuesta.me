@@ -18,20 +18,25 @@ exports[`uses page should match uses page 1`] = `
       <div>
         <img
           alt="Carlos Cuesta workspace setup"
+          className="max-w-full rounded-md"
           data-nimg="1"
           decoding="async"
-          height={1134}
+          height={1232}
           loading="lazy"
           onError={[Function]}
           onLoad={[Function]}
-          src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1659775881%2Fcarloscuesta-setup_z1azyb.jpg&w=3840&q=100"
-          srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1659775881%2Fcarloscuesta-setup_z1azyb.jpg&w=2048&q=100 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1659775881%2Fcarloscuesta-setup_z1azyb.jpg&w=3840&q=100 2x"
+          src="/_next/image?url=%2Fimg.jpg&w=3840&q=100"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=1920&q=100 1x, /_next/image?url=%2Fimg.jpg&w=3840&q=100 2x"
           style={
             {
+              "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 1500 1232'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage preserveAspectRatio='none' filter='url(%23b)' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+              "backgroundPosition": "50% 50%",
+              "backgroundRepeat": "no-repeat",
+              "backgroundSize": "cover",
               "color": "transparent",
             }
           }
-          width={2016}
+          width={1500}
         />
         <Section
           items={
@@ -115,6 +120,21 @@ exports[`uses page should match uses page 1`] = `
                 "category": "Boom Arm",
                 "link": "https://www.elgato.com/wave-mic-arm-lp",
                 "title": "Elgato Wave Mic Arm LP",
+              },
+              {
+                "category": "Charger",
+                "link": "https://www.belkin.com/es/cargador-inal%C3%A1mbrico-3-en-1-de-15-w-con-tecnolog%C3%ADa-magsafe-oficial/P-WIZ016.html",
+                "title": "Belkin BoostCharge Pro",
+              },
+              {
+                "category": "Lighting",
+                "link": "https://eu.govee.com/collections/tv-gaming-lights/products/govee-rgbicww-wifi-bluetooth-flow-plus-light-bars",
+                "title": "Govee Flow Plus Light Bars",
+              },
+              {
+                "category": "Clock",
+                "link": "https://www.mi.com/product/mi-smart-clock/",
+                "title": "Mi Smart Clock",
               },
             ]
           }
