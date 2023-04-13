@@ -18,10 +18,11 @@ const Uses = () => (
 
         <div>
           <Image
-            src="https://res.cloudinary.com/carloscuesta/image/upload/v1659775881/carloscuesta-setup_z1azyb.jpg"
+            src="https://res.cloudinary.com/carloscuesta/image/upload/v1681384152/setup_hrbcdu.jpg"
             alt="Carlos Cuesta workspace setup"
-            width={2016}
-            height={1134}
+            className="rounded-md"
+            width={2000}
+            height={2015}
             quality={100}
           />
 

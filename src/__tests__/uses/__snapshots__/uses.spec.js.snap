@@ -18,20 +18,21 @@ exports[`uses page should match uses page 1`] = `
       <div>
         <img
           alt="Carlos Cuesta workspace setup"
+          className="rounded-md"
           data-nimg="1"
           decoding="async"
-          height={1134}
+          height={2015}
           loading="lazy"
           onError={[Function]}
           onLoad={[Function]}
-          src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1659775881%2Fcarloscuesta-setup_z1azyb.jpg&w=3840&q=100"
-          srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1659775881%2Fcarloscuesta-setup_z1azyb.jpg&w=2048&q=100 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1659775881%2Fcarloscuesta-setup_z1azyb.jpg&w=3840&q=100 2x"
+          src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1681384152%2Fsetup_hrbcdu.jpg&w=3840&q=100"
+          srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1681384152%2Fsetup_hrbcdu.jpg&w=2048&q=100 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1681384152%2Fsetup_hrbcdu.jpg&w=3840&q=100 2x"
           style={
             {
               "color": "transparent",
             }
           }
-          width={2016}
+          width={2000}
         />
         <Section
           items={
