@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 import Link from './Link'
 
@@ -8,7 +8,7 @@ type Props = {
 }
 
 const Links = (props: Props) => {
-  const pathname = `/${useRouter().pathname.split('/')[1]}`
+  const pathname = `/${usePathname()?.split('/')[1]}`
   const isIndeterminate = props.links.every((link) => link.href !== pathname)
 
   return (

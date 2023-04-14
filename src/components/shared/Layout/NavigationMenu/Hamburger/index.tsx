@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Router from 'next/router'
+import { usePathname } from 'next/navigation'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
 import Links from '../Links'
@@ -10,6 +10,7 @@ type Props = { isOpen: boolean; setIsOpen: (isOpen: boolean) => void }
 
 const Hamburger = (props: Props) => {
   const { setIsOpen, isOpen } = props
+  const pathname = usePathname()
 
   useEffect(() => {
     if (isOpen) {
@@ -24,14 +25,10 @@ const Hamburger = (props: Props) => {
   }, [isOpen])
 
   useEffect(() => {
-    const onRouteChangeStart = () => {
+    if (isOpen) {
       setIsOpen(false)
     }
-
-    Router.events.on('routeChangeStart', onRouteChangeStart)
-
-    return () => Router.events.off('routeChangeStart', onRouteChangeStart)
-  }, [setIsOpen])
+  }, [pathname])
 
   return (
     <div className="sm:hidden">
