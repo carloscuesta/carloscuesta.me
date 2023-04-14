@@ -1,3 +1,5 @@
+'use client'
+
 const Map = () => (
   <>
     <style jsx global>

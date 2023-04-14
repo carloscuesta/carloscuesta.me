@@ -1,20 +1,14 @@
 import renderer from 'react-test-renderer'
 
-import About from 'src/pages/about'
-
-jest.mock('next-seo', () => ({
-  NextSeo: 'NextSeo',
-  SocialProfileJsonLd: 'SocialProfileJsonLd',
-}))
+import About from '../page'
 
 /*
   I'm mocking the components since those are unit tested.
   So there's no point to test the rendering of them twice.
   It's more easier to manage little snapshots than big ones.
 */
-
-jest.mock('src/components/pages/about/Experience', () => 'Experience')
-jest.mock('src/components/pages/about/WhoAmI', () => 'WhoAmI')
+jest.mock('../components/Experience', () => 'Experience')
+jest.mock('../components/WhoAmI', () => 'WhoAmI')
 
 describe('about', () => {
   describe('page', () => {
