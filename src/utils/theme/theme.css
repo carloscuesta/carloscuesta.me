@@ -65,3 +65,19 @@ html {
 .language-project-html {
   background-color: #ff7043;
 }
+
+:not(pre) > code[class*='language-'],
+pre,
+.prose pre,
+pre[class*='language-'] {
+  font-family: Operator Mono, Fira Code, Consolas, monospace;
+  font-size: 1.25rem;
+  background: #1d1f21;
+  color: #f8f8f2;
+}
+
+:not(pre) > code[class*='language-'] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
