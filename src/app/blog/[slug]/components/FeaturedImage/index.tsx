@@ -1,3 +1,5 @@
+'use client'
+
 type Props = {
   image: string
   lqpiImage: string
