@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 
 import SectionTitle from 'src/components/shared/SectionTitle'
