@@ -31,7 +31,7 @@ const Repositories = (props: Props) => {
             <li key={repository.name}>
               <a
                 href={repository.url}
-                className="mb-2 grid grid gap-2 gap-2.5 rounded-md rounded-lg border border-neutral-100 p-3 p-4 transition-colors hover:border-neutral-300 dark:border-neutral-800 dark:hover:border-neutral-600"
+                className="mb-2 grid grid gap-2 gap-2.5 rounded-lg rounded-md border border-neutral-100 p-3 p-4 transition-colors hover:border-neutral-300 dark:border-neutral-800 dark:hover:border-neutral-600"
               >
                 <p className="font-semibold">{repository.name}</p>
 
