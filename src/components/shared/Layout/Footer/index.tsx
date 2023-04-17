@@ -5,7 +5,7 @@ const Footer = () => (
     <Wrapper>
       <hr className="mt-8 w-full border-t border-neutral-100 dark:border-neutral-800" />
 
-      <div className="flex items-center justify-between py-4 px-1 text-sm text-neutral-500">
+      <div className="flex items-center justify-between px-1 py-4 text-sm text-neutral-500">
         <span>Carlos Cuesta © {new Date().getFullYear()}</span>
 
         <div className="flex items-center">

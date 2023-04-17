@@ -45,7 +45,7 @@ const Hamburger = (props: Props) => {
 
       {props.isOpen && (
         <nav className="fixed bottom-0 left-0 right-0 top-0 z-10 bg-white dark:bg-black">
-          <div className="absolute right-0 py-2 px-6">
+          <div className="absolute right-0 px-6 py-2">
             <button
               aria-label="Close navigation menu"
               onClick={() => setIsOpen(false)}
