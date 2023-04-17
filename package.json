@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/carloscuesta/carloscuesta.me#readme",
   "dependencies": {
-    "@headlessui/react": "1.7.13",
+    "@headlessui/react": "1.7.14",
     "@types/lodash.truncate": "4.4.7",
     "@vercel/analytics": "^0.1.11",
     "add": "2.0.6",
