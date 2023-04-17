@@ -1,9 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Writings should match Writings component 1`] = `
-<section
-  className="jsx-69ed9c58f31e7df"
->
+<section>
+  <style>
+    
+          .scrollablePosts::-webkit-scrollbar {
+            -webkit-appearance: none;
+            display: none;
+          }
+        
+  </style>
   <div
     className="m-[0_auto] max-w-4xl px-6 sm:px-4 "
   >
@@ -35,7 +41,7 @@ exports[`Writings should match Writings component 1`] = `
       </a>
     </div>
     <div
-      className="jsx-69ed9c58f31e7df scrollablePosts -mx-2 -my-2 flex snap-x snap-mandatory overflow-x-auto"
+      className="scrollablePosts -mx-2 -my-2 flex snap-x snap-mandatory overflow-x-auto"
       data-testid="scrollablePosts"
       onScroll={[Function]}
     >

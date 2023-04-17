@@ -1,3 +1,5 @@
+'use client'
+
 import { useRef, useState } from 'react'
 import debounce from 'lodash.debounce'
 
@@ -41,7 +43,7 @@ const Writings = (props: Props) => {
 
   return (
     <section>
-      <style jsx>
+      <style>
         {`
           .scrollablePosts::-webkit-scrollbar {
             -webkit-appearance: none;
