@@ -34,6 +34,26 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
 [
   {
     "datePublished": {
+      "formatDate": "22 April 2023",
+      "formatInWords": "in almost 3 years",
+      "formatMonthDay": "Apr 22",
+      "value": "2023-04-22 22:00",
+    },
+    "excerpt": "React Miami 2023 conference review. A two days conference about React that takes places in Miami...",
+    "images": {
+      "featured": {
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1682161443/blog-featured-images/react-miami.jpg",
+      },
+      "preview": {
+        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1682161443/blog-featured-images/react-miami.jpg",
+        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1682161443/blog-featured-images/react-miami.jpg",
+      },
+    },
+    "slug": "react-miami-2023",
+    "title": "React Miami 2023",
+  },
+  {
+    "datePublished": {
       "formatDate": "29 January 2023",
       "formatInWords": "in over 2 years",
       "formatMonthDay": "Jan 29",
@@ -72,26 +92,6 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
     "slug": "using-generators-to-improve-developer-productivity",
     "title": "Using generators to improve developer productivity",
   },
-  {
-    "datePublished": {
-      "formatDate": "01 March 2022",
-      "formatInWords": "in over 1 year",
-      "formatMonthDay": "Mar 01",
-      "value": "2022-03-01 22:00",
-    },
-    "excerpt": "An architecture decision record also known as ADR, is a document that captures an important...",
-    "images": {
-      "featured": {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1646170453/blog-featured-images/writing-adrs.png",
-      },
-      "preview": {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1646170453/blog-featured-images/writing-adrs.png",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1646170453/blog-featured-images/writing-adrs.png",
-      },
-    },
-    "slug": "writing-architecture-decision-records",
-    "title": "Writing Architecture Decision Records",
-  },
 ]
 `;
 
@@ -118,6 +118,7 @@ exports[`Ghost API Client getPostSlugs should match getPostSlugs 1`] = `
   "moving-to-digitalocean",
   "moving-ulabox-to-nextjs",
   "react-amsterdam-2017",
+  "react-miami-2023",
   "react-native-meets-codepush",
   "reactiveconf-2017",
   "scalable-react-components-architecture",
