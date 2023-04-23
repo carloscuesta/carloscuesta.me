@@ -1,4 +1,4 @@
-import SectionTitle from 'src/components/shared/SectionTitle'
+import SectionTitle from 'src/components/SectionTitle'
 
 type Props = {
   items: { category: string; link?: string; title: string }[]

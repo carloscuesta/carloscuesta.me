@@ -1,6 +1,6 @@
 import { type Repository } from 'src/utils/api/github/mutators'
-import Wrapper from 'src/components/shared/Wrapper'
-import SectionTitle from 'src/components/shared/SectionTitle'
+import Wrapper from 'src/components/Wrapper'
+import SectionTitle from 'src/components/SectionTitle'
 import Project from './Project'
 
 type Props = {

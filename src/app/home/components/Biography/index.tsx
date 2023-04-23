@@ -1,7 +1,7 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
 
-import Wrapper from 'src/components/shared/Wrapper'
+import Wrapper from 'src/components/Wrapper'
 import Metadata from './Metadata'
 
 const Link = (props: { href: string; label: string }) => {

@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import SectionTitle from 'src/components/shared/SectionTitle'
+import SectionTitle from 'src/components/SectionTitle'
 import { type Repository } from 'src/utils/api/github/mutators'
 
 type Props = { repositories: Array<Repository> }

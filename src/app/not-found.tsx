@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-import PageTitle from 'src/components/shared/PageTitle'
-import Wrapper from 'src/components/shared/Wrapper'
+import PageTitle from 'src/components/PageTitle'
+import Wrapper from 'src/components/Wrapper'
 
 const links = [
   { href: '/', label: 'Home' },

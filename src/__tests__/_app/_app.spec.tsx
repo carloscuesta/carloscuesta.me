@@ -14,7 +14,7 @@ jest.mock('src/utils/analytics')
   It's more easier to manage little snapshots than big ones.
 */
 
-jest.mock('src/components/shared/Layout', () => 'Layout')
+jest.mock('src/components/Layout', () => 'Layout')
 
 describe('_app', () => {
   describe('page', () => {

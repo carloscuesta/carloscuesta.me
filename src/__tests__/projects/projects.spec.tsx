@@ -16,7 +16,7 @@ jest.mock('src/utils/api/npm')
   It's more easier to manage little snapshots than big ones.
 */
 
-jest.mock('src/components/shared/PageTitle', () => 'PageTitle')
+jest.mock('src/components/PageTitle', () => 'PageTitle')
 jest.mock('src/components/pages/projects/Repositories', () => 'Repositories')
 jest.mock('src/components/pages/projects/Stats', () => 'Stats')
 

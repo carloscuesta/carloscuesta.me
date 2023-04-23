@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import Wrapper from 'src/components/shared/Wrapper'
+import Wrapper from 'src/components/Wrapper'
 import Links from './Links'
 import Hamburger from './Hamburger'
 import ThemeSelector from './ThemeSelector'

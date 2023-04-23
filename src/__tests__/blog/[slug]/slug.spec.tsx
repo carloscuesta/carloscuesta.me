@@ -16,7 +16,7 @@ jest.mock('src/utils/api/blog')
   It's more easier to manage little snapshots than big ones.
 */
 
-jest.mock('src/components/shared/Wrapper', () => 'Wrapper')
+jest.mock('src/components/Wrapper', () => 'Wrapper')
 jest.mock('src/components/pages/blog/[slug]/Header', () => 'Header')
 jest.mock(
   'src/components/pages/blog/[slug]/FeaturedImage',

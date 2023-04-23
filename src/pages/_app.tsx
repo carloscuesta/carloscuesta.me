@@ -6,7 +6,7 @@ import 'lazysizes'
 import 'lazysizes/plugins/attrchange/ls.attrchange'
 
 import 'src/utils/theme/theme.css'
-import Layout from 'src/components/shared/Layout'
+import Layout from 'src/components/Layout'
 import { trackEvent } from 'src/utils/analytics'
 
 if (process.env.NEXT_PUBLIC_API_MOCKING === 'enabled') {

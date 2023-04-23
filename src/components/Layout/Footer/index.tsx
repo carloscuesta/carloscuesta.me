@@ -1,4 +1,4 @@
-import Wrapper from 'src/components/shared/Wrapper'
+import Wrapper from 'src/components/Wrapper'
 
 const Footer = () => (
   <footer>

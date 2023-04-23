@@ -1,8 +1,8 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
 
-import PageTitle from 'src/components/shared/PageTitle'
-import Wrapper from 'src/components/shared/Wrapper'
+import PageTitle from 'src/components/PageTitle'
+import Wrapper from 'src/components/Wrapper'
 import Section from './components/Section'
 
 export const metadata: Metadata = {

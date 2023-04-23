@@ -8,7 +8,7 @@ import Error404 from 'src/pages/404'
   It's more easier to manage little snapshots than big ones.
 */
 
-jest.mock('src/components/shared/Wrapper', () => 'Wrapper')
+jest.mock('src/components/Wrapper', () => 'Wrapper')
 
 describe('404', () => {
   describe('page', () => {

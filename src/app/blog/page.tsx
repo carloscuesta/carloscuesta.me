@@ -2,8 +2,8 @@ import { type Metadata } from 'next'
 import groupBy from 'lodash.groupby'
 
 import { fetchPosts } from 'src/utils/api/blog'
-import Wrapper from 'src/components/shared/Wrapper'
-import PageTitle from 'src/components/shared/PageTitle'
+import Wrapper from 'src/components/Wrapper'
+import PageTitle from 'src/components/PageTitle'
 import Year from './components/Year'
 import Post from './components/Post'
 

@@ -1,7 +1,7 @@
 import { SocialProfileJsonLd } from 'next-seo'
 
-import Wrapper from 'src/components/shared/Wrapper'
-import PageTitle from 'src/components/shared/PageTitle'
+import Wrapper from 'src/components/Wrapper'
+import PageTitle from 'src/components/PageTitle'
 import Experience from './components/Experience'
 import Online from './components/Online'
 import WhoAmI from './components/WhoAmI'

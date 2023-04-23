@@ -2,8 +2,8 @@ import { type Metadata } from 'next'
 
 import { fetchRepositories, fetchUserInformation } from 'src/utils/api/github'
 import { fetchPublishedPackages, fetchDownloadsCount } from 'src/utils/api/npm'
-import PageTitle from 'src/components/shared/PageTitle'
-import Wrapper from 'src/components/shared/Wrapper'
+import PageTitle from 'src/components/PageTitle'
+import Wrapper from 'src/components/Wrapper'
 import Repositories from './components/Repositories'
 import Stats from './components/Stats'
 

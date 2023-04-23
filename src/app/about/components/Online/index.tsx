@@ -1,4 +1,4 @@
-import SectionTitle from 'src/components/shared/SectionTitle'
+import SectionTitle from 'src/components/SectionTitle'
 
 const profiles = [
   {

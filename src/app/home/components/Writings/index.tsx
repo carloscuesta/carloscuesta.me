@@ -4,8 +4,8 @@ import { useRef, useState } from 'react'
 import debounce from 'lodash.debounce'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'
-import Wrapper from 'src/components/shared/Wrapper'
-import SectionTitle from 'src/components/shared/SectionTitle'
+import Wrapper from 'src/components/Wrapper'
+import SectionTitle from 'src/components/SectionTitle'
 import ScrollButtons from './ScrollButtons'
 import BlogPost from './BlogPost'
 

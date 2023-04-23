@@ -1,7 +1,7 @@
 import { ArticleJsonLd } from 'next-seo'
 
 import { getPostSlugs, fetchPost } from 'src/utils/api/blog'
-import Wrapper from 'src/components/shared/Wrapper'
+import Wrapper from 'src/components/Wrapper'
 import Header from './components/Header'
 import FeaturedImage from './components/FeaturedImage'
 import NewsletterSubscribe from './components/NewsletterSubscribe'
