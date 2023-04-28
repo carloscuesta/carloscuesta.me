@@ -8,9 +8,9 @@ import Repositories from './components/Repositories'
 import Stats from './components/Stats'
 
 export const metadata: Metadata = {
-  title: 'Uses',
+  title: 'Projects',
   alternates: {
-    canonical: '/uses',
+    canonical: '/projects',
   },
 }
 
