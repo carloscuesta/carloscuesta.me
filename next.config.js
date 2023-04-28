@@ -4,6 +4,11 @@ const withPWA = require('next-pwa')({
 })
 
 module.exports = withPWA({
+  experimental: {
+    appDir: true,
+    // https://beta.nextjs.org/docs/api-reference/next-config#servercomponentsexternalpackages
+    serverComponentsExternalPackages: ['uglify-js']
+  },
   images: {
     remotePatterns: [
       {
