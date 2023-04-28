@@ -3,7 +3,6 @@ import { Analytics } from '@vercel/analytics/react'
 import 'src/utils/theme/theme.css'
 import { trackingCode } from 'src/utils/analytics'
 import Layout from 'src/components/Layout'
-import Wrapper from 'src/components/Wrapper'
 import Providers from './providers'
 
 export const metadata = {
