@@ -6,7 +6,7 @@ type Props = {
 
 const Project = (props: Props) => (
   <a
-    className="border-neutral-150 grid gap-2.5 rounded-lg border p-4 transition-colors hover:border-neutral-400 dark:border-neutral-700 dark:hover:border-neutral-500"
+    className="border-neutral-150 grid gap-2.5 rounded-lg border p-4 transition-colors hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-600"
     href={props.repository.url}
     rel="noopener noreferrer"
     target="_blank"
