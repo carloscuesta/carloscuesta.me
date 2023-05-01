@@ -35,7 +35,7 @@
     "@vercel/analytics": "^1.0.0",
     "add": "2.0.6",
     "body-scroll-lock": "4.0.0-beta.0",
-    "date-fns": "^2.29.3",
+    "date-fns": "^2.30.0",
     "disqus-react": "^1.1.5",
     "gray-matter": "^4.0.3",
     "lazysizes": "^5.3.2",
