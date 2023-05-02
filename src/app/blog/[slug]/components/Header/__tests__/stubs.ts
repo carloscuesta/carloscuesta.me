@@ -7,4 +7,5 @@ export const props = {
   },
   readingTime: '10 min read',
   title: 'Post title',
+  slug: '/post-slug',
 }
