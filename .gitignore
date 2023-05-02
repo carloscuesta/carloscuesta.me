@@ -23,6 +23,7 @@ sitemap.xml
 
 # Environment vars
 .env
+.env.*
 .lighthouseci
 
 # next-pwa
