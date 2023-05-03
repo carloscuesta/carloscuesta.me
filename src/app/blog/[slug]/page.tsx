@@ -9,6 +9,8 @@ import ShareLinks from './components/ShareLinks'
 
 type Params = { params: { slug: string } }
 
+export const dynamicParams = false
+
 export const generateStaticParams = () =>
   getPostSlugs().map((slug) => ({ slug }))
 
