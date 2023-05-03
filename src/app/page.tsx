@@ -1,6 +1,15 @@
+import { type Metadata } from 'next'
+
 import { fetchPosts } from 'src/utils/api/blog'
 import { fetchRepositories } from 'src/utils/api/github'
 import Home from './home'
+
+export const metadata: Metadata = {
+  metadataBase: null,
+  alternates: {
+    canonical: 'https://carloscuesta.me',
+  },
+}
 
 const Index = async () => {
   const { posts, repositories } = await getData()
