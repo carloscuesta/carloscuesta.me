@@ -92,6 +92,7 @@ const Article = async ({ params }: Params) => {
             datePublished={post.datePublished}
             readingTime={post.readingTime}
             title={post.title}
+            slug={post.slug}
           />
 
           <div
