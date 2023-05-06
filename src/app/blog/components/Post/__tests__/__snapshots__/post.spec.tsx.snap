@@ -19,11 +19,18 @@ exports[`Post should render the component 1`] = `
     >
       15 Dec
     </time>
-    <p
-      className="font-medium"
+    <div
+      className="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center"
     >
-      A post
-    </p>
+      <p
+        className="font-medium"
+      >
+        A post
+      </p>
+      <p
+        className="font-mono text-sm opacity-60"
+      />
+    </div>
   </a>
 </li>
 `;
