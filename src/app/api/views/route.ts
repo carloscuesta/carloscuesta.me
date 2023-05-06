@@ -1,11 +1,9 @@
 import kv from '@vercel/kv'
 import { NextResponse } from 'next/server'
 
-export const runtime = 'edge'
+import formatViews from './formatViews'
 
-const formatViews = (views: number) => {
-  return Intl.NumberFormat('en-us').format(views) + ' views'
-}
+export const runtime = 'edge'
 
 export const GET = async () => {
   const views = await kv.hgetall<Record<string, number>>('views')

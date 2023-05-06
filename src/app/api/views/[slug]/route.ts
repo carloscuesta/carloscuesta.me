@@ -1,13 +1,11 @@
 import kv from '@vercel/kv'
 import { NextResponse, type NextRequest } from 'next/server'
 
+import formatViews from '../formatViews'
+
 export const runtime = 'edge'
 
 type Params = { slug: string }
-
-const formatViews = (views: number) => {
-  return Intl.NumberFormat('en-us').format(views) + ' views'
-}
 
 export const POST = async (
   request: NextRequest,
