@@ -8,9 +8,15 @@ const formatViews = (views: number) => {
 }
 
 export const GET = async () => {
-  const views = await kv.hgetall('views')
+  const views = await kv.hgetall<Record<string, number>>('views')
 
   return NextResponse.json({
-    views: views,
+    views: Object.entries(views || {}).reduce(
+      (memo, [key, value]) => ({
+        ...memo,
+        [key]: formatViews(value),
+      }),
+      {}
+    ),
   })
 }
