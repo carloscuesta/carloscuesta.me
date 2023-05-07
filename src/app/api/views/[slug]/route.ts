@@ -1,7 +1,7 @@
 import kv from '@vercel/kv'
 import { NextResponse, type NextRequest } from 'next/server'
 
-import formatViews from '../formatViews'
+import { transformViews } from 'src/utils/api/blog/views'
 
 export const runtime = 'edge'
 
@@ -13,5 +13,5 @@ export const POST = async (
 ) => {
   const views = await kv.hincrby('views', params.slug, 1)
 
-  return NextResponse.json({ views: formatViews(views) })
+  return NextResponse.json({ views: transformViews(views) })
 }

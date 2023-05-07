@@ -2,6 +2,7 @@ import { type Metadata } from 'next'
 import groupBy from 'lodash.groupby'
 
 import { fetchPosts } from 'src/utils/api/blog'
+import { fetchViews } from 'src/utils/api/blog/views'
 import Wrapper from 'src/components/Wrapper'
 import PageTitle from 'src/components/PageTitle'
 import Year from './components/Year'
@@ -9,10 +10,14 @@ import Post from './components/Post'
 
 const getData = async () => {
   const posts = await fetchPosts()
+  const views = await fetchViews()
 
-  return groupBy(posts, (post) =>
-    new Date(post.datePublished.value).getFullYear()
-  )
+  return {
+    posts: groupBy(posts, (post) =>
+      new Date(post.datePublished.value).getFullYear()
+    ),
+    views,
+  }
 }
 
 export const metadata: Metadata = {
@@ -23,7 +28,7 @@ export const metadata: Metadata = {
 }
 
 const Blog = async () => {
-  const posts = await getData()
+  const { posts, views } = await getData()
 
   return (
     <Wrapper>
@@ -38,7 +43,11 @@ const Blog = async () => {
 
                 <ul className="grid grid-flow-row gap-3">
                   {posts[year].map((post) => (
-                    <Post key={post.slug} post={post} />
+                    <Post
+                      key={post.slug}
+                      post={post}
+                      views={views[post.slug]}
+                    />
                   ))}
                 </ul>
               </section>

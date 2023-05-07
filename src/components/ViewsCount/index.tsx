@@ -2,7 +2,7 @@
 import { useEffect } from 'react'
 import useSWR from 'swr'
 
-type Props = { slug: string; trackView?: boolean }
+type Props = { slug: string; trackView?: boolean; views?: string }
 
 async function fetcher<JSON>(
   input: RequestInfo,
@@ -13,10 +13,15 @@ async function fetcher<JSON>(
   return response.json()
 }
 
-const ViewsCount = ({ slug, trackView = false }: Props) => {
-  const { data } = useSWR<{ views: Record<string, number> }>(
-    `/api/views`,
-    fetcher
+const ViewsCount = ({ slug, trackView = false, views }: Props) => {
+  const { data } = useSWR<{ views: Record<string, string> }>(
+    '/api/views',
+    fetcher,
+    views
+      ? {
+          fallbackData: { views: { [slug]: views } },
+        }
+      : undefined
   )
 
   useEffect(() => {
@@ -25,7 +30,7 @@ const ViewsCount = ({ slug, trackView = false }: Props) => {
     }
   }, [slug, trackView])
 
-  return <>{data?.views[slug]}</>
+  return <>{data?.views?.[slug]}</>
 }
 
 export default ViewsCount
