@@ -10,6 +10,7 @@ exports[`Post should render the component 1`] = `
     onClick={[Function]}
     onMouseEnter={[Function]}
     onTouchStart={[Function]}
+    tabIndex={0}
     title="A post"
   >
     <time

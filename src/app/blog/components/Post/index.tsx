@@ -12,6 +12,7 @@ const Post = ({ post, views }: { post: PostPreview; views: string }) => (
       href={`/blog/${post.slug}`}
       title={post.title}
       className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
+      tabIndex={0}
     >
       <time
         className="opacity-60 sm:w-20"
