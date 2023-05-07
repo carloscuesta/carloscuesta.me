@@ -34,7 +34,7 @@ const Projects = async () => {
   )
 }
 
-export const revalidate = 3600
+export const revalidate = 600
 
 const getData = async () => {
   const [repositories, userInformation, publishedPackages] = await Promise.all([

@@ -8,6 +8,8 @@ import PageTitle from 'src/components/PageTitle'
 import Year from './components/Year'
 import Post from './components/Post'
 
+export const revalidate = 60
+
 const getData = async () => {
   const posts = await fetchPosts()
   const views = await fetchViews()

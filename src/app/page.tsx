@@ -17,7 +17,7 @@ const Index = async () => {
   return <Home repositories={repositories} posts={posts} />
 }
 
-export const revalidate = 3600
+export const revalidate = 600
 
 const getData = async () => {
   const [posts, repositories] = await Promise.all([
