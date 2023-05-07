@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { type PostPreview } from 'src/utils/api/blog/mutators'
 import ViewsCount from 'src/components/ViewsCount'
 
-const Post = ({ post }: { post: PostPreview }) => (
+const Post = ({ post, views }: { post: PostPreview; views: string }) => (
   <li
     key={post.slug}
     className="-mx-3 rounded-lg transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
@@ -24,7 +24,7 @@ const Post = ({ post }: { post: PostPreview }) => (
       <div className="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center">
         <p className="font-medium">{post.title}</p>
         <p className="font-mono text-sm opacity-60">
-          <ViewsCount slug={post.slug} />
+          <ViewsCount slug={post.slug} views={views} />
         </p>
       </div>
     </Link>

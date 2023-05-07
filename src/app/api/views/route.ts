@@ -1,20 +1,11 @@
-import kv from '@vercel/kv'
 import { NextResponse } from 'next/server'
 
-import formatViews from './formatViews'
+import { fetchViews } from 'src/utils/api/blog/views'
 
 export const runtime = 'edge'
 
 export const GET = async () => {
-  const views = await kv.hgetall<Record<string, number>>('views')
+  const views = await fetchViews()
 
-  return NextResponse.json({
-    views: Object.entries(views || {}).reduce(
-      (memo, [key, value]) => ({
-        ...memo,
-        [key]: formatViews(value),
-      }),
-      {}
-    ),
-  })
+  return NextResponse.json({ views })
 }
