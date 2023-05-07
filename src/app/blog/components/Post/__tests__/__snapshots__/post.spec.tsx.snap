@@ -29,7 +29,9 @@ exports[`Post should render the component 1`] = `
       </p>
       <p
         className="font-mono text-sm opacity-60"
-      />
+      >
+        1,000 views
+      </p>
     </div>
   </a>
 </li>
