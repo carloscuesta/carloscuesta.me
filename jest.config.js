@@ -10,6 +10,7 @@ async function jestConfig() {
       "!src/mocks/**",
       // Ignoring these files as of https://github.com/vercel/next.js/issues/47299
       "!src/**/**/layout.tsx",
+      "!src/**/**/route.ts",
       "!src/**/**/page.tsx",
       "!src/**/**/not-found.tsx",
       "!src/**/**/providers.tsx",

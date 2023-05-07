@@ -1,4 +1,4 @@
-import ViewsCount from './ViewsCount'
+import ViewsCount from 'src/components/ViewsCount'
 
 type Props = {
   datePublished: { formatInWords: string; formatDate: string; value: string }
@@ -20,7 +20,7 @@ const Header = (props: Props) => (
     </span>
 
     <span className='text-sm opacity-70 before:px-1 before:content-["•"]'>
-      <ViewsCount slug={props.slug} />
+      <ViewsCount slug={props.slug} trackView />
     </span>
   </header>
 )

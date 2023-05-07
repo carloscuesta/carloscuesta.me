@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'
+import ViewsCount from 'src/components/ViewsCount'
 
 const Post = ({ post }: { post: PostPreview }) => (
   <li
@@ -20,7 +21,12 @@ const Post = ({ post }: { post: PostPreview }) => (
         {post.datePublished.formatMonthDay}
       </time>
 
-      <p className="font-medium">{post.title}</p>
+      <div className="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center">
+        <p className="font-medium">{post.title}</p>
+        <p className="font-mono text-sm opacity-60">
+          <ViewsCount slug={post.slug} />
+        </p>
+      </div>
     </Link>
   </li>
 )
