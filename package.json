@@ -33,7 +33,7 @@
     "@headlessui/react": "1.7.14",
     "@types/lodash.truncate": "4.4.7",
     "@vercel/analytics": "^1.0.1",
-    "@vercel/kv": "0.1.1",
+    "@vercel/kv": "0.1.2",
     "add": "2.0.6",
     "body-scroll-lock": "4.0.0-beta.0",
     "date-fns": "^2.30.0",
