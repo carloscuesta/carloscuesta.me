@@ -1,4 +1,5 @@
 import { Analytics } from '@vercel/analytics/react'
+import localFont from 'next/font/local'
 
 import 'src/utils/theme/theme.css'
 import { trackingCode } from 'src/utils/analytics'
@@ -36,6 +37,28 @@ export const metadata = {
     google: '78vmlhi_erc-UGybxcGwHyiUtf04wzYExTLa-4LoWio',
   },
 }
+
+const font = localFont({
+  src: [
+    {
+      path: '../../public/fonts/inter.var.latin.woff2',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/inter.var.latin.italic.woff2',
+      style: 'italic',
+    },
+  ],
+  weight: '100 900',
+  display: 'swap',
+  declarations: [
+    {
+      prop: 'unicode-range',
+      value:
+        'U+00??, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da, U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215, U+feff, U+fffd',
+    },
+  ],
+})
 
 const RootLayout = ({
   children,
@@ -121,22 +144,10 @@ const RootLayout = ({
         href="/favicon/favicon-96x96.png"
       />
       <link rel="manifest" href="/manifest.json" />
-      <link
-        as="font"
-        crossOrigin="anonymous"
-        href="/fonts/inter.var.latin.woff2"
-        rel="preload"
-        type="font/woff2"
-      />
-      <link
-        as="font"
-        crossOrigin="anonymous"
-        href="/fonts/inter.var.latin.italic.woff2"
-        rel="preload"
-        type="font/woff2"
-      />
     </head>
-    <body className="bg-white text-neutral-800 dark:bg-[rgb(5,5,5)] dark:text-neutral-200">
+    <body
+      className={`bg-white text-neutral-800 dark:bg-[rgb(5,5,5)] dark:text-neutral-200 ${font.className}`}
+    >
       <Providers>
         <Layout>{children}</Layout>
       </Providers>
