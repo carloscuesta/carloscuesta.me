@@ -14,7 +14,7 @@ async function fetcher<JSON>(
 }
 
 const ViewsCount = ({ slug, trackView = false, views }: Props) => {
-  const { data } = useSWR<{ views: Record<string, string> }>(
+  const { data, mutate } = useSWR<{ views: Record<string, string> }>(
     '/api/views',
     fetcher,
     views
@@ -27,6 +27,15 @@ const ViewsCount = ({ slug, trackView = false, views }: Props) => {
   useEffect(() => {
     if (slug && trackView) {
       fetch(`/api/views/${slug}`, { method: 'POST' })
+        .then((response) => response.json())
+        .then((payload: Record<string, string>) => {
+          mutate({
+            views: {
+              ...data?.views,
+              ...payload,
+            },
+          })
+        })
     }
   }, [slug, trackView])
 

@@ -13,5 +13,5 @@ export const POST = async (
 ) => {
   const views = await kv.hincrby('views', params.slug, 1)
 
-  return NextResponse.json({ views: transformViews(views) })
+  return NextResponse.json({ [params.slug]: transformViews(views) })
 }
