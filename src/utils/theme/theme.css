@@ -12,15 +12,6 @@ html {
   padding: 0;
 }
 
-.lazy-blur {
-  transition: all 200ms ease-in-out;
-  filter: blur(1px);
-}
-
-.lazyloaded {
-  filter: blur(0);
-}
-
 .language-project-javascript {
   background-color: #fbdd51;
 }
