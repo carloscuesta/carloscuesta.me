@@ -50,7 +50,12 @@ const WhoAmI = () => (
       travelling with my family.
     </p>
 
-    <Image src={aboutMePicture} alt="Carlos Cuesta About me" className="pt-5" />
+    <Image
+      src={aboutMePicture}
+      alt="Carlos Cuesta About me"
+      className="pt-5"
+      priority
+    />
   </section>
 )
 
