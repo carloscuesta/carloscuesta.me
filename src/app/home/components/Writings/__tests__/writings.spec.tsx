@@ -3,6 +3,13 @@ import renderer from 'react-test-renderer'
 import Writings from '../index'
 import * as stubs from './stubs'
 
+jest.mock('next/image', () => ({
+  __esModule: true,
+  default: (props: object) => {
+    return <img {...props} />
+  },
+}))
+
 describe('Writings', () => {
   it('should match Writings component', () => {
     const wrapper = renderer.create(<Writings {...stubs.props} />)

@@ -59,9 +59,12 @@ exports[`Writings should match Writings component 1`] = `
           <article>
             <img
               alt=""
-              className="lazyload mb-3 w-full rounded-lg"
-              data-src="https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png"
-              src="https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png"
+              blurDataURL="https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png"
+              className="mb-3 w-full rounded-lg"
+              height={150}
+              placeholder="blur"
+              src="https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png"
+              width={300}
             />
             <div
               className="grid gap-2"
@@ -94,9 +97,12 @@ exports[`Writings should match Writings component 1`] = `
           <article>
             <img
               alt=""
-              className="lazyload mb-3 w-full rounded-lg"
-              data-src="https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png"
-              src="https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png"
+              blurDataURL="https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png"
+              className="mb-3 w-full rounded-lg"
+              height={150}
+              placeholder="blur"
+              src="https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png"
+              width={300}
             />
             <div
               className="grid gap-2"

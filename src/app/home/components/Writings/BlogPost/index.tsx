@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'
@@ -14,11 +15,14 @@ const BlogPost = (props: Props) => (
       className="h-full rounded-lg outline-none ring-offset-4 focus-visible:ring-2 sm:flex"
     >
       <article>
-        <img
+        <Image
           alt=""
-          className="lazyload mb-3 w-full rounded-lg"
-          data-src={props.post.images.preview.src}
-          src={props.post.images.preview.lqpi}
+          blurDataURL={props.post.images.preview.lqpi}
+          className="mb-3 w-full rounded-lg"
+          height={150}
+          placeholder="blur"
+          src={props.post.images.preview.src}
+          width={300}
         />
 
         <div className="grid gap-2">
