@@ -10,6 +10,8 @@ import Post from './components/Post'
 
 export const revalidate = 60
 
+export const dynamic = 'force-static'
+
 const getData = async () => {
   const posts = await fetchPosts()
   const views = await fetchViews()
