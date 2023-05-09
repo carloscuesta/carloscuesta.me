@@ -33,5 +33,6 @@ jobs:
         LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
         KV_REST_API_URL: ${{ secrets.KV_REST_API_URL }}
         KV_REST_API_TOKEN: ${{ secrets.KV_REST_API_TOKEN }}
+        NEXT_PUBLIC_API_MOCKING: true
     - name: Upload Coverage 📈
       run: yarn run test:coverage

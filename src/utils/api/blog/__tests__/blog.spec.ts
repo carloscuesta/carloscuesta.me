@@ -7,7 +7,7 @@ import postFixture from './fixtures/post.json'
 /* Mock Date.now to avoid updating snapshots for formatDistanceToNow */
 Date.now = jest.fn(() => 1593025862540)
 
-describe('Ghost API Client', () => {
+describe('Blog API Client', () => {
   describe('getPostSlugs', () => {
     it('should match getPostSlugs', () => {
       expect(getPostSlugs()).toMatchSnapshot()
@@ -32,9 +32,9 @@ describe('Ghost API Client', () => {
 
   describe('mutators', () => {
     describe('transformPost', () => {
-      it('should match the mutated post', () => {
+      it('should match the mutated post', async () => {
         expect(
-          transformPost({
+          await transformPost({
             ...postFixture,
             html: new VFile(postFixture.html),
           })

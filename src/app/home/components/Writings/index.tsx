@@ -64,8 +64,8 @@ const Writings = (props: Props) => {
           onScroll={onScroll}
           ref={scrollablePostsRef}
         >
-          {props.posts.map((post) => (
-            <BlogPost key={post.slug} post={post} />
+          {props.posts.map((post, index) => (
+            <BlogPost isFirstItem={index === 0} key={post.slug} post={post} />
           ))}
         </div>
 

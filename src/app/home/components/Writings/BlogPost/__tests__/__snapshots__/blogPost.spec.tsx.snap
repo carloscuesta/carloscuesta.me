@@ -15,9 +15,25 @@ exports[`BlogPost should match BlogPost component 1`] = `
     <article>
       <img
         alt=""
-        className="lazyload mb-3 w-full rounded-lg"
-        data-src="https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png"
-        src="https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png"
+        className="mb-3 w-full rounded-lg"
+        data-nimg="1"
+        decoding="async"
+        fetchpriority="high"
+        height={150}
+        onError={[Function]}
+        onLoad={[Function]}
+        src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fw_500%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=640&q=75"
+        srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fw_500%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=384&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fw_500%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=640&q=75 2x"
+        style={
+          {
+            "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 300 150'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage preserveAspectRatio='none' filter='url(%23b)' x='0' y='0' height='100%25' width='100%25' href='https://res.cloudinary.com/carloscuesta/image/upload/t_lqpi-post-preview/v1454754838/kcuq34zbo1yieygmx0y6.png'/%3E%3C/svg%3E")",
+            "backgroundPosition": "50% 50%",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "cover",
+            "color": "transparent",
+          }
+        }
+        width={300}
       />
       <div
         className="grid gap-2"

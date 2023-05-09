@@ -1,9 +1,11 @@
+const { withPlaiceholder } = require("@plaiceholder/next");
+
 const withPWA = require('next-pwa')({
   disable: process.env.NODE_ENV === 'development',
   dest: 'public'
 })
 
-module.exports = withPWA({
+module.exports = withPWA(withPlaiceholder({
   experimental: {
     appDir: true,
     // https://beta.nextjs.org/docs/api-reference/next-config#servercomponentsexternalpackages
@@ -26,4 +28,4 @@ module.exports = withPWA({
       permanent: true
     }
   ]
-})
+}))
