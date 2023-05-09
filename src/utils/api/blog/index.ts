@@ -49,7 +49,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
     .use(rehypeMinify)
     .process(content)
 
-  return transformPost({ data, html, slug })
+  return await transformPost({ data, html, slug })
 }
 
 export const fetchPosts = async (): Promise<Array<PostPreview>> => {

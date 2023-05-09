@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Ghost API Client fetchPost should return a post with the slug terminal-setup 1`] = `
+exports[`Blog API Client fetchPost should return a post with the slug terminal-setup 1`] = `
 {
   "dateModified": "2016-02-06 15:55",
   "datePublished": {
@@ -20,7 +20,7 @@ exports[`Ghost API Client fetchPost should return a post with the slug terminal-
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Terminal_Setup.png",
     },
     "preview": {
-      "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1593531858/blog-featured-images/Terminal_Setup.png",
+      "lqpi": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAABcRAAAXEQHKJvM/AAAADklEQVR4nGMQRQIMyBwAGbIB+ZVuRQQAAAAASUVORK5CYII=",
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1593531858/blog-featured-images/Terminal_Setup.png",
     },
   },
@@ -30,7 +30,7 @@ exports[`Ghost API Client fetchPost should return a post with the slug terminal-
 }
 `;
 
-exports[`Ghost API Client fetchPosts should return an array of posts sorted by datePublished 1`] = `
+exports[`Blog API Client fetchPosts should return an array of posts sorted by datePublished 1`] = `
 [
   {
     "datePublished": {
@@ -45,7 +45,7 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
         "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1682161443/blog-featured-images/react-miami.jpg",
       },
       "preview": {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1682161443/blog-featured-images/react-miami.jpg",
+        "lqpi": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAABcSAAAXEgFnn9JSAAAADklEQVR4nGNgRAIMyBwAAVIAGQHQACAAAAAASUVORK5CYII=",
         "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1682161443/blog-featured-images/react-miami.jpg",
       },
     },
@@ -65,7 +65,7 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
         "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1675022732/blog-featured-images/Effective_Refactoring_with_Codemods.png",
       },
       "preview": {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1675022732/blog-featured-images/Effective_Refactoring_with_Codemods.png",
+        "lqpi": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAABcRAAAXEQHKJvM/AAAAD0lEQVR4nGNgSPiPQMgcAIa6CvnplqETAAAAAElFTkSuQmCC",
         "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1675022732/blog-featured-images/Effective_Refactoring_with_Codemods.png",
       },
     },
@@ -85,7 +85,7 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
         "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1653167435/blog-featured-images/Code_generators.png",
       },
       "preview": {
-        "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1653167435/blog-featured-images/Code_generators.png",
+        "lqpi": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAABcRAAAXEQHKJvM/AAAADklEQVR4nGMQRQIMyBwAGbIB+ZVuRQQAAAAASUVORK5CYII=",
         "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1653167435/blog-featured-images/Code_generators.png",
       },
     },
@@ -95,7 +95,7 @@ exports[`Ghost API Client fetchPosts should return an array of posts sorted by d
 ]
 `;
 
-exports[`Ghost API Client getPostSlugs should match getPostSlugs 1`] = `
+exports[`Blog API Client getPostSlugs should match getPostSlugs 1`] = `
 [
   "2016-year-in-review",
   "chrome-devtools-customization",
@@ -131,7 +131,7 @@ exports[`Ghost API Client getPostSlugs should match getPostSlugs 1`] = `
 ]
 `;
 
-exports[`Ghost API Client mutators transformPost should match the mutated post 1`] = `
+exports[`Blog API Client mutators transformPost should match the mutated post 1`] = `
 {
   "dateModified": "2016-02-06 15:55",
   "datePublished": {
@@ -148,7 +148,7 @@ exports[`Ghost API Client mutators transformPost should match the mutated post 1
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1454754838/kcuq34zbo1yieygmx0y6.png",
     },
     "preview": {
-      "lqpi": "https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1454754838/kcuq34zbo1yieygmx0y6.png",
+      "lqpi": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAABcRAAAXEQHKJvM/AAAADklEQVR4nGMQRQIMyBwAGbIB+ZVuRQQAAAAASUVORK5CYII=",
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png",
     },
   },

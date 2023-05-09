@@ -1,4 +1,5 @@
 import { format, formatDistanceToNow } from 'date-fns'
+import { getPlaiceholder } from 'plaiceholder'
 import readingTime from 'reading-time'
 import type { VFile } from 'vfile'
 
@@ -30,33 +31,39 @@ type Payload = {
   slug: string
 }
 
-export const transformPost = (payload: Payload): Post => ({
-  dateModified: payload.data.dateModified,
-  datePublished: {
-    formatInWords: formatDistanceToNow(
-      new Date(payload.data.datePublished + ' GMT+2'),
-      { addSuffix: true }
-    ),
-    formatDate: format(new Date(payload.data.datePublished), 'dd MMMM y'),
-    formatMonthDay: format(new Date(payload.data.datePublished), 'MMM dd'),
-    value: payload.data.datePublished,
-  },
-  disqusIdentifier: payload.data.disqusIdentifier,
-  excerpt: payload.data.excerpt,
-  html: payload.html.toString(),
-  images: {
-    featured: {
-      src: payload.data.image,
-    },
-    preview: {
-      src: payload.data.image.replace('/upload/', '/upload/w_500/'),
-      lqpi: payload.data.image.replace(
-        '/upload/',
-        '/upload/t_post-preview-lqpi/'
+export const transformPost = async (payload: Payload): Promise<Post> => {
+  const { base64 } = await getPlaiceholder(
+    payload.data.image.replace(
+      '/upload/',
+      '/upload/t_post-preview-lqpi-background-color/'
+    )
+  )
+
+  return {
+    dateModified: payload.data.dateModified,
+    datePublished: {
+      formatInWords: formatDistanceToNow(
+        new Date(payload.data.datePublished + ' GMT+2'),
+        { addSuffix: true }
       ),
+      formatDate: format(new Date(payload.data.datePublished), 'dd MMMM y'),
+      formatMonthDay: format(new Date(payload.data.datePublished), 'MMM dd'),
+      value: payload.data.datePublished,
     },
-  },
-  readingTime: readingTime(payload.html.toString()).text,
-  slug: payload.slug,
-  title: payload.data.title,
-})
+    disqusIdentifier: payload.data.disqusIdentifier,
+    excerpt: payload.data.excerpt,
+    html: payload.html.toString(),
+    images: {
+      featured: {
+        src: payload.data.image,
+      },
+      preview: {
+        src: payload.data.image.replace('/upload/', '/upload/w_500/'),
+        lqpi: base64,
+      },
+    },
+    readingTime: readingTime(payload.html.toString()).text,
+    slug: payload.slug,
+    title: payload.data.title,
+  }
+}
