@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import Link from 'next/link'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'
@@ -25,7 +26,9 @@ const Post = ({ post, views }: { post: PostPreview; views: string }) => (
       <div className="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center">
         <p className="font-medium">{post.title}</p>
         <p className="font-mono text-sm opacity-60">
-          <ViewsCount slug={post.slug} views={views} />
+          <Suspense>
+            <ViewsCount slug={post.slug} views={views} />
+          </Suspense>
         </p>
       </div>
     </Link>
