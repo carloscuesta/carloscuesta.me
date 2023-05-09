@@ -14,6 +14,7 @@ const FeaturedImage = (props: Props) => (
       className="my-8 rounded-lg"
       height={376}
       placeholder="blur"
+      priority
       src={props.image}
       width={752}
     />
