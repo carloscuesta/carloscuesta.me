@@ -1,4 +1,4 @@
-'use client'
+import Image from 'next/image'
 
 type Props = {
   image: string
@@ -8,14 +8,14 @@ type Props = {
 
 const FeaturedImage = (props: Props) => (
   <header className="relative">
-    <img
+    <Image
       alt={props.title}
-      className="lazyload lazy-blur my-8 rounded-lg"
-      data-src={props.image}
-      title={props.title}
-      src={props.lqpiImage}
-      width={752}
+      blurDataURL={props.lqpiImage}
+      className="my-8 rounded-lg"
       height={376}
+      placeholder="blur"
+      src={props.image}
+      width={752}
     />
   </header>
 )
