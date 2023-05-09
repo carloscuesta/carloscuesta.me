@@ -102,7 +102,7 @@ exports[`Writings should match Writings component 1`] = `
               className="mb-3 w-full rounded-lg"
               height={150}
               placeholder="blur"
-              priority={false}
+              priority={true}
               src="https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png"
               width={300}
             />
