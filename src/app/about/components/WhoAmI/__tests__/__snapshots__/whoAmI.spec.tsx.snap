@@ -48,8 +48,8 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
     className="pt-5"
     data-nimg="1"
     decoding="async"
+    fetchpriority="high"
     height={40}
-    loading="lazy"
     onError={[Function]}
     onLoad={[Function]}
     src="/_next/image?url=%2Fimg.jpg&w=96&q=75"

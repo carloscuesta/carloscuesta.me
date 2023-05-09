@@ -22,5 +22,5 @@ export const props = {
     slug: 'post-slug',
     title: 'Post Title',
   },
-  isFirstItem: true,
+  isImageLoadedWithPriority: true,
 }

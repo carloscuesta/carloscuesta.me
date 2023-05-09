@@ -9,8 +9,8 @@ exports[`FeaturedImage should match FeaturedImage component 1`] = `
     className="my-8 rounded-lg"
     data-nimg="1"
     decoding="async"
+    fetchpriority="high"
     height={376}
-    loading="lazy"
     onError={[Function]}
     onLoad={[Function]}
     src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=1920&q=75"
