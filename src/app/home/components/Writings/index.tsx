@@ -65,7 +65,11 @@ const Writings = (props: Props) => {
           ref={scrollablePostsRef}
         >
           {props.posts.map((post, index) => (
-            <BlogPost isFirstItem={index === 0} key={post.slug} post={post} />
+            <BlogPost
+              isImageLoadedWithPriority={[0, 1, 2].includes(index)}
+              key={post.slug}
+              post={post}
+            />
           ))}
         </div>
 
