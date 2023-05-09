@@ -5,6 +5,7 @@ import { type PostPreview } from 'src/utils/api/blog/mutators'
 
 type Props = {
   post: PostPreview
+  isFirstItem: boolean
 }
 
 const BlogPost = (props: Props) => (
@@ -21,6 +22,7 @@ const BlogPost = (props: Props) => (
           className="mb-3 w-full rounded-lg"
           height={150}
           placeholder="blur"
+          priority={props.isFirstItem}
           src={props.post.images.preview.src}
           width={300}
         />
