@@ -2512,10 +2512,10 @@
   resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-1.0.1.tgz#38308a626c91866cb00a249c08bf65251e9b9d81"
   integrity sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow==
 
-"@vercel/kv@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@vercel/kv/-/kv-0.1.2.tgz#ef98b1ccf44f3c90943fc20dc79f39988e8790dc"
-  integrity sha512-/cTMy9L6qcW7gMGCaicwqOK1zPfP5qlpBaF5TqnXsCB6cYRkiNG13aAodLvgthqZa6B82QNaGGcQl3OiyJFNug==
+"@vercel/kv@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@vercel/kv/-/kv-0.2.0.tgz#edd0df7a1480f66c1280ad69ad902fb8148cde78"
+  integrity sha512-cMPpNGDtbqmSiELq3OhP6h8nhjmyyFj7yEcxisD0yCEHQvL38moS+xT105lwHbt/j42pBp9jcJsdx1wYfRERSg==
   dependencies:
     "@upstash/redis" "1.20.6"
 

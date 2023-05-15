@@ -1,4 +1,4 @@
-import kv from '@vercel/kv'
+import { kv } from '@vercel/kv'
 import { NextResponse, type NextRequest } from 'next/server'
 
 import { transformViews } from 'src/utils/api/blog/views'

@@ -1,4 +1,4 @@
-import kv from '@vercel/kv'
+import { kv } from '@vercel/kv'
 
 // Keeping this in a separate file since `Edge` doesn't support specific
 // APIs (we're importing) in the index entrypoint.
