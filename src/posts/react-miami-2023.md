@@ -1,5 +1,5 @@
 ---
-dateModified: '2023-04-22 22:00'
+dateModified: '2023-05-20 07:00'
 datePublished: '2023-04-22 22:00'
 disqusIdentifier: 'react-miami-2023'
 excerpt: 'React Miami 2023 conference review. A two days conference about React that takes places in Miami Beach.'
@@ -36,16 +36,16 @@ I have to say though, that it was very refreshing to see there was a big focus a
 
 Having said that, here's the list of my favourite talks ❤️ in no particular order:
 
-- **The Unexpected States of Burnout** by [@jenn_ayy\_](https://twitter.com/jen_ayy_)
-- **On-demand Flow State: A Framework for Mental Performance** by [@anthonysheww](https://twitter.com/anthonysheww)
-- **Everything's Better With Friends** by [@threepointone](https://twitter.com/threepointone)
-- **The Best JavaScript is No JavaScript** by [@una](https://twitter.com/Una)
-- **React as a Developer Health Tool** by [@tejaskumar\_](https://twitter.com/TejasKumar_)
-- **Create Engaging “Scrollytelling” Experiences With React & GSAP** by [@julianbenegas8](https://twitter.com/julianbenegas8)
+- **The Unexpected States of Burnout** by [@jenn_ayy\_](https://twitter.com/jen_ayy_) – [🎥 Video](https://www.youtube.com/watch?v=tcN8grYAEuQ)
+- **On-demand Flow State: A Framework for Mental Performance** by [@anthonysheww](https://twitter.com/anthonysheww) – [🎥 Video](https://www.youtube.com/watch?v=S_CHo6A0bAs)
+- **Everything's Better With Friends** by [@threepointone](https://twitter.com/threepointone) – [🎥 Video](https://www.youtube.com/watch?v=wd8QTRjZZaE)
+- **The Best JavaScript is No JavaScript** by [@una](https://twitter.com/Una) – [🎥 Video](https://www.youtube.com/watch?v=aOB2f315Yu4)
+- **React as a Developer Health Tool** by [@tejaskumar\_](https://twitter.com/TejasKumar_) – [🎥 Video](https://www.youtube.com/watch?v=oNQvzML3XHw)
+- **Create Engaging “Scrollytelling” Experiences With React & GSAP** by [@julianbenegas8](https://twitter.com/julianbenegas8) – [🎥 Video](https://www.youtube.com/watch?v=ufHQG7fDLQc)
 
-All **talks were recorded** and **live streamed** through YouTube. Make sure to watch them! 👇
+All **talks were recorded** and **live streamed** through YouTube. Make sure to [watch all of them](https://www.youtube.com/watch?v=xQAK-3ELEIo&list=PL02pdjMT4gWwIDHt4mzmzbiXU-7Sk1LN5&pp=iAQB)! 👇
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/mPPZ-NUnR-4" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/xQAK-3ELEIo" frameborder="0" allowfullscreen></iframe>
 
 ### Thoughts
 
