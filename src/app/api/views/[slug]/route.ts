@@ -9,7 +9,7 @@ type Params = { slug: string }
 
 export const POST = async (
   request: NextRequest,
-  { params }: { params: Params }
+  { params }: { params: Params },
 ) => {
   const views = await kv.hincrby('views', params.slug, 1)
 

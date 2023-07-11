@@ -16,7 +16,7 @@ export const transformRepositories = (
     name: string
     stargazers_count: number
     html_url: string
-  }[]
+  }[],
 ): Repository[] => {
   return payload.map((repo) => ({
     description: repo.description,

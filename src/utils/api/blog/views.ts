@@ -18,6 +18,6 @@ export const fetchViews = async (): Promise<Record<string, string>> => {
       ...memo,
       [key]: transformViews(value),
     }),
-    {}
+    {},
   )
 }

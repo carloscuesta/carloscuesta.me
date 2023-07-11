@@ -7,7 +7,7 @@ type Props = { slug: string; trackView?: boolean; views?: string }
 
 async function fetcher<JSON>(
   input: RequestInfo,
-  init?: RequestInit
+  init?: RequestInit,
 ): Promise<JSON> {
   const response = await fetch(input, init)
 
@@ -22,7 +22,7 @@ const ViewsCount = ({ slug, trackView = false, views }: Props) => {
       ? {
           fallbackData: { views: { [slug]: views } },
         }
-      : undefined
+      : undefined,
   )
 
   useEffect(() => {

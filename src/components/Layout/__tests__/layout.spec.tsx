@@ -11,7 +11,7 @@ describe('Layout', () => {
       <Layout>
         <h1>Some children</h1>
         <h2>Hello!</h2>
-      </Layout>
+      </Layout>,
     )
 
     expect(wrapper).toMatchSnapshot()
@@ -25,7 +25,7 @@ describe('Layout', () => {
             <Layout>
               <h1>Some children</h1>
               <h2>Hello!</h2>
-            </Layout>
+            </Layout>,
           )
 
           renderer.act(() => {
@@ -45,7 +45,7 @@ describe('Layout', () => {
             <Layout>
               <h1>Some children</h1>
               <h2>Hello!</h2>
-            </Layout>
+            </Layout>,
           )
 
           renderer.act(() => {

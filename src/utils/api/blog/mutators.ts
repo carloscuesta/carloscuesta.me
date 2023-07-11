@@ -35,8 +35,8 @@ export const transformPost = async (payload: Payload): Promise<Post> => {
   const { base64 } = await getPlaiceholder(
     payload.data.image.replace(
       '/upload/',
-      '/upload/t_post-preview-lqpi-background-color/'
-    )
+      '/upload/t_post-preview-lqpi-background-color/',
+    ),
   )
 
   return {
@@ -44,7 +44,7 @@ export const transformPost = async (payload: Payload): Promise<Post> => {
     datePublished: {
       formatInWords: formatDistanceToNow(
         new Date(payload.data.datePublished + ' GMT+2'),
-        { addSuffix: true }
+        { addSuffix: true },
       ),
       formatDate: format(new Date(payload.data.datePublished), 'dd MMMM y'),
       formatMonthDay: format(new Date(payload.data.datePublished), 'MMM dd'),

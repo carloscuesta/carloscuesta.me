@@ -20,7 +20,7 @@ declare global {
         action: AnalyticsEvent['action'],
         label: AnalyticsEvent['label'],
         value: AnalyticsEvent['value'],
-        nonInteraction?: AnalyticsEvent['nonInteraction']
+        nonInteraction?: AnalyticsEvent['nonInteraction'],
       ) => void
     }
   }
@@ -33,7 +33,7 @@ export const trackEvent = (event: AnalyticsEvent) => {
       event.action,
       event.label,
       event.value,
-      event.nonInteraction
+      event.nonInteraction,
     )
   }
 }

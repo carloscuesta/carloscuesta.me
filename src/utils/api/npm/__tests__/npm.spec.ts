@@ -26,7 +26,7 @@ describe('NPM API Client', () => {
 
     it('should match fetchDownloadsCount call', () => {
       fetchDownloadsCount(
-        publishedPackagesFixture.objects.map((pkg) => pkg.package.name)
+        publishedPackagesFixture.objects.map((pkg) => pkg.package.name),
       )
 
       expect(callApiMock.mock.calls[0][0]).toMatchSnapshot()
@@ -37,7 +37,7 @@ describe('NPM API Client', () => {
     describe('transformPublishedPackages', () => {
       it('should match the packages names', () => {
         expect(
-          transformPublishedPackages(publishedPackagesFixture)
+          transformPublishedPackages(publishedPackagesFixture),
         ).toMatchSnapshot()
       })
     })
@@ -45,7 +45,7 @@ describe('NPM API Client', () => {
     describe('transformDownloadsCount', () => {
       it('should aggregate all the downloads from packages', () => {
         expect(
-          transformDownloadsCount(packageDownloadsFixture)
+          transformDownloadsCount(packageDownloadsFixture),
         ).toMatchSnapshot()
       })
     })

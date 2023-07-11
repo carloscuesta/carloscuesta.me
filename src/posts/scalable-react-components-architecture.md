@@ -50,7 +50,7 @@ class EmojiList extends React.Component {
 
   render() {
     const emojis = this.state.emojis.filter((emoji) =>
-      emoji.code.includes(this.state.searchInput.toLowerCase())
+      emoji.code.includes(this.state.searchInput.toLowerCase()),
     )
 
     return (
@@ -180,7 +180,7 @@ class EmojiList extends React.Component {
 
   render() {
     const emojis = this.state.emojis.filter((emoji) =>
-      emoji.code.includes(this.state.searchInput.toLowerCase())
+      emoji.code.includes(this.state.searchInput.toLowerCase()),
     )
 
     return (

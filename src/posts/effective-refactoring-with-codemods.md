@@ -250,13 +250,13 @@ export default function transformer(file, api) {
               .reduce(
                 (node, param) =>
                   j.optionalMemberExpression(node, j.identifier(param)),
-                source
+                source,
               ),
-            j.identifier(lastPathItem)
+            j.identifier(lastPathItem),
           ),
-          fallback
-        )
-      )
+          fallback,
+        ),
+      ),
     )
   })
 
@@ -264,7 +264,7 @@ export default function transformer(file, api) {
     .find(j.ImportDeclaration, { source: { value: 'lodash/object' } })
     .forEach((node) => {
       const importedModules = node.value.specifiers.filter(
-        ({ imported }) => imported.name !== 'get'
+        ({ imported }) => imported.name !== 'get',
       )
 
       if (importedModules.length) {

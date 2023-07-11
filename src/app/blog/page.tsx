@@ -18,7 +18,7 @@ const getData = async () => {
 
   return {
     posts: groupBy(posts, (post) =>
-      new Date(post.datePublished.value).getFullYear()
+      new Date(post.datePublished.value).getFullYear(),
     ),
     views,
   }

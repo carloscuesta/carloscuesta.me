@@ -7,7 +7,7 @@ describe('Wrapper', () => {
       <Wrapper>
         <h1>Some children</h1>
         <h2>Hello!</h2>
-      </Wrapper>
+      </Wrapper>,
     )
 
     expect(wrapper).toMatchSnapshot()
@@ -19,7 +19,7 @@ describe('Wrapper', () => {
         <Wrapper isCompressed>
           <h1>Some children</h1>
           <h2>Hello!</h2>
-        </Wrapper>
+        </Wrapper>,
       )
 
       expect(wrapper).toMatchSnapshot()
