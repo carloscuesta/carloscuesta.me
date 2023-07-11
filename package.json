@@ -98,7 +98,7 @@
     "lint-staged": "^13.2.3",
     "msw": "1.2.2",
     "next-sitemap": "^4.1.8",
-    "postcss": "8.4.24",
+    "postcss": "8.4.25",
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "0.3.0",
     "react-test-renderer": "^18.2.0",
