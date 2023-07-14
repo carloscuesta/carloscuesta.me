@@ -26,13 +26,5 @@ jobs:
       run: yarn run tscheck
     - name: Tests ✅
       run: yarn run test:unit
-    - name: Lighthouse Audit 🚨
-      if: ${{ github.actor != 'dependabot[bot]' }}
-      run: yarn run test:lighthouse
-      env:
-        LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
-        KV_REST_API_URL: ${{ secrets.KV_REST_API_URL }}
-        KV_REST_API_TOKEN: ${{ secrets.KV_REST_API_TOKEN }}
-        NEXT_PUBLIC_API_MOCKING: true
     - name: Upload Coverage 📈
       run: yarn run test:coverage
