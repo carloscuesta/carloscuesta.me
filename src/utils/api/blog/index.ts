@@ -54,7 +54,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
 
 export const fetchPosts = async (): Promise<Array<PostPreview>> => {
   const posts: Array<Post> = await Promise.all(
-    getPostSlugs().map((slug) => fetchPost(slug))
+    getPostSlugs().map((slug) => fetchPost(slug)),
   )
 
   return posts

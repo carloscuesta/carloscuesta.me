@@ -36,7 +36,11 @@ html {
 pre,
 .prose pre,
 pre[class*='language-'] {
-  font-family: Operator Mono, Fira Code, Consolas, monospace;
+  font-family:
+    Operator Mono,
+    Fira Code,
+    Consolas,
+    monospace;
   font-size: 1.25rem;
   background: #1d1f21;
   color: #f8f8f2;

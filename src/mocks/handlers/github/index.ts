@@ -7,10 +7,10 @@ const baseUrl = 'https://api.github.com'
 
 const githubHandlers = [
   rest.get(`${baseUrl}/users/carloscuesta/repos`, (_req, res, ctx) =>
-    res(ctx.json(repositories))
+    res(ctx.json(repositories)),
   ),
   rest.get(`${baseUrl}/users/carloscuesta`, (_req, res, ctx) =>
-    res(ctx.json(user))
+    res(ctx.json(user)),
   ),
 ]
 

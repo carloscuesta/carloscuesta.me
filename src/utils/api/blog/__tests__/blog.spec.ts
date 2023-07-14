@@ -37,7 +37,7 @@ describe('Blog API Client', () => {
           await transformPost({
             ...postFixture,
             html: new VFile(postFixture.html),
-          })
+          }),
         ).toMatchSnapshot()
       })
     })

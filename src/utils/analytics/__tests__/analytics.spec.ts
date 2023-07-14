@@ -27,7 +27,7 @@ describe('analytics', () => {
         stubs.event.action,
         stubs.event.label,
         stubs.event.value,
-        stubs.event.nonInteraction
+        stubs.event.nonInteraction,
       )
     })
   })

@@ -370,7 +370,7 @@ shoppingBasket.reduce(
     ...accumulator,
     [value.type]: [...(accumulator[value.type] || [])].concat(value),
   }),
-  {}
+  {},
 )
 ```
 

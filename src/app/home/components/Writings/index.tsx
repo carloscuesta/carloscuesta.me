@@ -20,7 +20,7 @@ const Writings = (props: Props) => {
 
   const onScroll = debounce(
     (event) => setScrollPosition(event.target.scrollLeft),
-    SCROLL_DEBOUNCE_MS_TIME
+    SCROLL_DEBOUNCE_MS_TIME,
   )
 
   const scrollTo = (action: 'next' | 'previous') => {

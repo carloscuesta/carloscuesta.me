@@ -2,7 +2,7 @@ import callApi, { type callApiOptions } from 'src/utils/api/callApi'
 import { transformRepositories, transformUserInformation } from './mutators'
 
 const githubApiClient = <Response, Data>(
-  options: callApiOptions<Response, Data>
+  options: callApiOptions<Response, Data>,
 ) =>
   callApi({
     mutator: options.mutator,

@@ -9,7 +9,7 @@ const Metadata = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       return setDate(
-        new Date().toLocaleTimeString('en-DE', { timeZone: 'Europe/Madrid' })
+        new Date().toLocaleTimeString('en-DE', { timeZone: 'Europe/Madrid' }),
       )
     }, 500)
 

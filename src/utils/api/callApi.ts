@@ -5,7 +5,7 @@ export type callApiOptions<Response, Data> = {
 }
 
 const callApi = async <Response, Data>(
-  options: callApiOptions<Response, Data>
+  options: callApiOptions<Response, Data>,
 ) => {
   try {
     const response = await fetch(options.url, options.requestOptions)

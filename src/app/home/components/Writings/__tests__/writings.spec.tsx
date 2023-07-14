@@ -64,7 +64,7 @@ describe('Writings', () => {
         const wrapper = renderer.create(<Writings {...stubs.props} />)
 
         expect(wrapper.root.findAllByType('button')[0].props.disabled).toBe(
-          true
+          true,
         )
       })
     })
@@ -82,7 +82,7 @@ describe('Writings', () => {
           })
 
           expect(wrapper.root.findAllByType('button')[0].props.disabled).toBe(
-            true
+            true,
           )
         })
       })
@@ -103,7 +103,7 @@ describe('Writings', () => {
           })
 
           expect(wrapper.root.findAllByType('button')[0].props.disabled).toBe(
-            false
+            false,
           )
         })
       })
@@ -127,14 +127,14 @@ describe('Writings', () => {
               .props.onScroll(
                 stubs.scrollEventMock(
                   scrollablePostsRef.scrollWidth -
-                    scrollablePostsRef.clientWidth
-                )
+                    scrollablePostsRef.clientWidth,
+                ),
               )
             jest.runAllTimers()
           })
 
           expect(wrapper.root.findAllByType('button')[1].props.disabled).toBe(
-            true
+            true,
           )
         })
       })
