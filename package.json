@@ -97,7 +97,7 @@
     "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^13.2.3",
     "msw": "1.2.3",
-    "next-sitemap": "^4.1.8",
+    "next-sitemap": "^4.2.2",
     "postcss": "8.4.27",
     "prettier": "3.0.1",
     "prettier-plugin-tailwindcss": "0.4.1",
