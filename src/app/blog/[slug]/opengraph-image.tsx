@@ -2,6 +2,7 @@ import { type Font } from 'satori'
 import { ImageResponse } from 'next/server'
 
 import { fetchPost } from 'src/utils/api/blog'
+import { fetchViews } from 'src/utils/api/blog/views'
 
 export const dynamic = 'force-static'
 export const revalidate = 60
@@ -12,16 +13,16 @@ async function getFonts(): Promise<Font[]> {
   const [interRegular, interMedium, interSemiBold, interBold] =
     await Promise.all([
       fetch(`https://rsms.me/inter/font-files/Inter-Regular.woff`).then((res) =>
-        res.arrayBuffer()
+        res.arrayBuffer(),
       ),
       fetch(`https://rsms.me/inter/font-files/Inter-Medium.woff`).then((res) =>
-        res.arrayBuffer()
+        res.arrayBuffer(),
       ),
       fetch(`https://rsms.me/inter/font-files/Inter-SemiBold.woff`).then(
-        (res) => res.arrayBuffer()
+        (res) => res.arrayBuffer(),
       ),
-      fetch(`https://rsms.me/inter/font-files/Inter-Bold.woff`).then((res) =>
-        res.arrayBuffer()
+      fetch(`https://rsms.me/inter/font-files/Inter-ExtraBold.woff`).then(
+        (res) => res.arrayBuffer(),
       ),
     ])
 
@@ -68,28 +69,55 @@ export const generateImageMetadata = async ({ params }: Params) => {
 
 export default async function Image({ params }: Params) {
   const post = await fetchPost(params.slug)
+  const views = await fetchViews()
 
   return new ImageResponse(
     (
       <div
         style={{
-          fontSize: 128,
+          fontSize: 16,
           background: 'white',
           width: '100%',
           height: '100%',
           display: 'flex',
-          alignItems: 'center',
           justifyContent: 'center',
           fontFamily: 'Inter',
+          flexDirection: 'column',
+          color: '#262626',
+          fontWeight: 400,
+          padding: '4rem',
         }}
       >
-        <span style={{ fontWeight: 700 }}>{post.title}</span>
+        <img
+          src="https://carloscuesta.me/images/carloscuesta.jpg"
+          width="90"
+          height="90"
+          style={{ borderRadius: '100%' }}
+        />
+        <span style={{ fontWeight: 700, fontSize: '2rem' }}>{post.title}</span>
+        <div
+          style={{
+            display: 'flex',
+            gap: '0.5rem',
+            fontSize: '1.25rem',
+            opacity: '0.70',
+          }}
+        >
+          <time dateTime={post.datePublished.value}>
+            {post.datePublished.formatDate}
+          </time>
+          <span>•</span>
+          <span>{post.readingTime}</span>
+          <span>•</span>
+          <span>{views[post.slug]}</span>
+        </div>
+        <span style={{ opacity: '0.5', fontSize: '1.25rem' }}>
+          carloscuesta.me
+        </span>
       </div>
     ),
     {
-      width: 1200,
-      height: 630,
       fonts: await getFonts(),
-    }
+    },
   )
 }
