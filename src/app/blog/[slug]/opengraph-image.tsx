@@ -75,17 +75,17 @@ export default async function Image({ params }: Params) {
     (
       <div
         style={{
-          fontSize: 16,
+          fontSize: '24px',
           background: 'white',
           width: '100%',
           height: '100%',
           display: 'flex',
-          justifyContent: 'center',
+          justifyContent: 'space-between',
           fontFamily: 'Inter',
           flexDirection: 'column',
-          color: '#262626',
           fontWeight: 400,
-          padding: '4rem',
+          padding: '4em',
+          gap: '1em',
         }}
       >
         <img
@@ -94,26 +94,26 @@ export default async function Image({ params }: Params) {
           height="90"
           style={{ borderRadius: '100%' }}
         />
-        <span style={{ fontWeight: 700, fontSize: '2rem' }}>{post.title}</span>
-        <div
-          style={{
-            display: 'flex',
-            gap: '0.5rem',
-            fontSize: '1.25rem',
-            opacity: '0.70',
-          }}
-        >
-          <time dateTime={post.datePublished.value}>
-            {post.datePublished.formatDate}
-          </time>
-          <span>•</span>
-          <span>{post.readingTime}</span>
-          <span>•</span>
-          <span>{views[post.slug]}</span>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1em' }}>
+          <span style={{ fontWeight: 700, fontSize: '2em' }}>{post.title}</span>
+          <div
+            style={{
+              display: 'flex',
+              gap: '0.5em',
+              fontSize: '1.05em',
+              opacity: '0.5',
+            }}
+          >
+            <time dateTime={post.datePublished.value}>
+              {post.datePublished.formatDate}
+            </time>
+            <span>•</span>
+            <span>{post.readingTime}</span>
+            <span>•</span>
+            <span>{views[post.slug]}</span>
+          </div>
         </div>
-        <span style={{ opacity: '0.5', fontSize: '1.25rem' }}>
-          carloscuesta.me
-        </span>
+        <span style={{ opacity: '0.5' }}>carloscuesta.me</span>
       </div>
     ),
     {
