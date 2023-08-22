@@ -1,4 +1,5 @@
 import { ArticleJsonLd } from 'next-seo'
+import { type Metadata } from 'next'
 
 import { getPostSlugs, fetchPost } from 'src/utils/api/blog'
 import Wrapper from 'src/components/Wrapper'
@@ -14,7 +15,9 @@ export const dynamicParams = false
 export const generateStaticParams = () =>
   getPostSlugs().map((slug) => ({ slug }))
 
-export const generateMetadata = async ({ params }: Params) => {
+export const generateMetadata = async ({
+  params,
+}: Params): Promise<Metadata> => {
   const post = await fetchPost(params.slug)
 
   return {
