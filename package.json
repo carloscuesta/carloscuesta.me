@@ -63,7 +63,7 @@
     "remark-parse": "^10.0.2",
     "remark-rehype": "^10.1.0",
     "remark-toc": "^8.0.1",
-    "sharp": "0.32.4",
+    "sharp": "0.32.5",
     "swr": "2.2.1",
     "tailwind-scrollbar-hide": "1.1.7",
     "unified": "^10.1.2",
