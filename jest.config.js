@@ -14,6 +14,7 @@ async function jestConfig() {
       "!src/**/**/page.tsx",
       "!src/**/**/not-found.tsx",
       "!src/**/**/providers.tsx",
+      "!src/**/**/opengraph-image.tsx",
     ],
     "testMatch": [
       "**/*.(spec).(js)",
