@@ -10,34 +10,29 @@ export const revalidate = 60
 type Params = { params: { slug: string } }
 
 async function getFonts(): Promise<Font[]> {
-  const [interRegular, interMedium, interSemiBold, interBold] =
-    await Promise.all([
-      fetch(`https://rsms.me/inter/font-files/Inter-Regular.woff`).then((res) =>
+  const [interLight, interSemiBold, interBold, ibmPlexMono] = await Promise.all(
+    [
+      fetch(`https://rsms.me/inter/font-files/Inter-Light.woff`).then((res) =>
         res.arrayBuffer(),
       ),
-      fetch(`https://rsms.me/inter/font-files/Inter-Medium.woff`).then((res) =>
+      fetch(`https://rsms.me/inter/font-files/Inter-Bold.woff`).then((res) =>
         res.arrayBuffer(),
-      ),
-      fetch(`https://rsms.me/inter/font-files/Inter-SemiBold.woff`).then(
-        (res) => res.arrayBuffer(),
       ),
       fetch(`https://rsms.me/inter/font-files/Inter-ExtraBold.woff`).then(
         (res) => res.arrayBuffer(),
       ),
-    ])
+      fetch(`https://fonts.cdnfonts.com/s/27347/IBMPlexMono-Light.woff`).then(
+        (res) => res.arrayBuffer(),
+      ),
+    ],
+  )
 
   return [
     {
       name: 'Inter',
-      data: interRegular,
+      data: interLight,
       style: 'normal',
-      weight: 400,
-    },
-    {
-      name: 'Inter',
-      data: interMedium,
-      style: 'normal',
-      weight: 500,
+      weight: 300,
     },
     {
       name: 'Inter',
@@ -50,6 +45,12 @@ async function getFonts(): Promise<Font[]> {
       data: interBold,
       style: 'normal',
       weight: 700,
+    },
+    {
+      name: 'IBMPlexMono',
+      data: ibmPlexMono,
+      style: 'normal',
+      weight: 400,
     },
   ]
 }
@@ -75,37 +76,62 @@ export default async function Image({ params }: Params) {
     (
       <div
         style={{
-          fontSize: '24px',
+          fontSize: '16px',
           background: 'white',
           width: '100%',
           height: '100%',
           display: 'flex',
-          justifyContent: 'space-between',
           fontFamily: 'Inter',
           flexDirection: 'column',
-          fontWeight: 400,
           padding: '4em',
           gap: '1em',
         }}
       >
-        <img
-          src="https://carloscuesta.me/images/carloscuesta.jpg"
-          width="90"
-          height="90"
-          style={{ borderRadius: '100%' }}
-        />
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1em' }}>
-          <span style={{ fontWeight: 700, fontSize: '2em' }}>{post.title}</span>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            gap: '1em',
+            alignItems: 'center',
+            marginBottom: '4rem',
+          }}
+        >
+          <img
+            src="https://carloscuesta.me/images/carloscuesta.jpg"
+            width="90"
+            height="90"
+            style={{ borderRadius: '100%' }}
+          />
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span style={{ fontWeight: 600, fontSize: '1.75em' }}>
+              Carlos Cuesta
+            </span>
+            <span style={{ fontWeight: 300, opacity: 0.7, fontSize: '1.5em' }}>
+              @crloscuesta
+            </span>
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '.5em',
+            flex: 1,
+          }}
+        >
+          <span style={{ fontWeight: 700, fontSize: '4em' }}>{post.title}</span>
           <div
             style={{
               display: 'flex',
               gap: '0.5em',
-              fontSize: '1.05em',
-              opacity: '0.5',
+              fontSize: '1.5em',
+              fontFamily: 'IBMPlexMono',
             }}
           >
             <time dateTime={post.datePublished.value}>
-              {post.datePublished.formatDate}
+              {post.datePublished.formatMonthDay},{' '}
+              {new Date(post.datePublished.value).getFullYear()}
             </time>
             <span>•</span>
             <span>{post.readingTime}</span>
@@ -113,7 +139,9 @@ export default async function Image({ params }: Params) {
             <span>{views[post.slug]}</span>
           </div>
         </div>
-        <span style={{ opacity: '0.5' }}>carloscuesta.me</span>
+        <span style={{ fontWeight: 300, opacity: 0.5, fontSize: '1.5em' }}>
+          carloscuesta.me
+        </span>
       </div>
     ),
     {
