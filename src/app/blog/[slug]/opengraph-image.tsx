@@ -77,7 +77,8 @@ export default async function Image({ params }: Params) {
       <div
         style={{
           fontSize: '16px',
-          background: 'white',
+          background: '#ffffff',
+          color: '#262626',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -116,7 +117,7 @@ export default async function Image({ params }: Params) {
           style={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '.5em',
+            gap: '1em',
             flex: 1,
           }}
         >
@@ -139,7 +140,7 @@ export default async function Image({ params }: Params) {
             <span>{views[post.slug]}</span>
           </div>
         </div>
-        <span style={{ fontWeight: 300, opacity: 0.5, fontSize: '1.5em' }}>
+        <span style={{ fontWeight: 300, opacity: 0.7, fontSize: '1.5em' }}>
           carloscuesta.me
         </span>
       </div>
