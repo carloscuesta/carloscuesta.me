@@ -35,10 +35,6 @@ export const generateMetadata = async ({
       modifiedTime: post.dateModified,
       authors: ['Carlos Cuesta'],
     },
-    other: {
-      'twitter:label1': 'Reading time',
-      'twitter:data1': post.readingTime,
-    },
   }
 }
 
