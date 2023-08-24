@@ -5,7 +5,7 @@ import { fetchPost } from 'src/utils/api/blog'
 import { fetchViews } from 'src/utils/api/blog/views'
 
 export const dynamic = 'force-static'
-export const revalidate = 60
+export const revalidate = false
 
 type Params = { params: { slug: string } }
 
