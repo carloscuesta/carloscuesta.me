@@ -10,22 +10,20 @@ export const revalidate = false
 type Params = { params: { slug: string } }
 
 async function getFonts(): Promise<Font[]> {
-  const [interLight, interSemiBold, interBold, ibmPlexMono] = await Promise.all(
-    [
-      fetch(`https://rsms.me/inter/font-files/Inter-Light.woff`).then((res) =>
-        res.arrayBuffer(),
-      ),
-      fetch(`https://rsms.me/inter/font-files/Inter-Bold.woff`).then((res) =>
-        res.arrayBuffer(),
-      ),
-      fetch(`https://rsms.me/inter/font-files/Inter-ExtraBold.woff`).then(
-        (res) => res.arrayBuffer(),
-      ),
-      fetch(`https://fonts.cdnfonts.com/s/27347/IBMPlexMono-Light.woff`).then(
-        (res) => res.arrayBuffer(),
-      ),
-    ],
-  )
+  const [interLight, interSemiBold, interBold, robotoMono] = await Promise.all([
+    fetch(`https://rsms.me/inter/font-files/Inter-Light.woff`).then((res) =>
+      res.arrayBuffer(),
+    ),
+    fetch(`https://rsms.me/inter/font-files/Inter-Bold.woff`).then((res) =>
+      res.arrayBuffer(),
+    ),
+    fetch(`https://rsms.me/inter/font-files/Inter-ExtraBold.woff`).then((res) =>
+      res.arrayBuffer(),
+    ),
+    fetch(`https://fonts.cdnfonts.com/s/16061/RobotoMono-Light.woff`).then(
+      (res) => res.arrayBuffer(),
+    ),
+  ])
 
   return [
     {
@@ -47,10 +45,10 @@ async function getFonts(): Promise<Font[]> {
       weight: 700,
     },
     {
-      name: 'IBMPlexMono',
-      data: ibmPlexMono,
+      name: 'RobotoMono',
+      data: robotoMono,
       style: 'normal',
-      weight: 400,
+      weight: 300,
     },
   ]
 }
@@ -127,7 +125,7 @@ export default async function Image({ params }: Params) {
               display: 'flex',
               gap: '0.5em',
               fontSize: '1.5em',
-              fontFamily: 'IBMPlexMono',
+              fontFamily: 'RobotoMono',
             }}
           >
             <time dateTime={post.datePublished.value}>
