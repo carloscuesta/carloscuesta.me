@@ -97,7 +97,7 @@
     "jest-environment-jsdom": "^29.6.2",
     "jest-fetch-mock": "^3.0.3",
     "lint-staged": "^14.0.0",
-    "msw": "1.2.3",
+    "msw": "1.2.5",
     "next-sitemap": "^4.2.2",
     "postcss": "8.4.28",
     "prettier": "3.0.2",
