@@ -19,7 +19,7 @@ That's when [**Fastlane**](https://fastlane.tools) comes to the rescue ⛑! In t
 Before [installing Fastlane](https://github.com/fastlane/fastlane#installation) make sure you have the latest Xcode command line tools installed, then install Fastlane ⬇️.
 
 ```bash
-$ brew install fastlane --cask
+$ brew install fastlane
 ```
 
 Once installed, create a `fastlane/` 📁 folder inside of your react-native project at the _root level_. Then, create a file called `Fastfile` within this directory ☝️.
