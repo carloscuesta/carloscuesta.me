@@ -8,8 +8,6 @@ import PageTitle from 'src/components/PageTitle'
 import Year from './components/Year'
 import Post from './components/Post'
 
-export const revalidate = 60
-
 export const dynamic = 'force-static'
 
 const getData = async () => {
