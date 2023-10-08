@@ -5,7 +5,6 @@ import { fetchRepositories } from 'src/utils/api/github'
 import Home from './home'
 
 export const metadata: Metadata = {
-  metadataBase: null,
   alternates: {
     canonical: 'https://carloscuesta.me',
   },
