@@ -21,6 +21,7 @@ export const props = {
     },
     slug: 'post-slug',
     title: 'Post Title',
+    views: '1,000 views',
   },
   isImageLoadedWithPriority: true,
 }
