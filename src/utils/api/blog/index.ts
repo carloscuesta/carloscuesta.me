@@ -15,8 +15,8 @@ import rehypeStringify from 'rehype-stringify'
 import rehypeMinify from 'rehype-preset-minify'
 import rehypeWrap from 'rehype-wrap-all'
 
+import callApi from 'src/utils/api/callApi'
 import { type Post, type PostPreview, transformPost } from './mutators'
-import { fetchViews } from './views'
 
 const POSTS_DIRECTORY = join(process.cwd(), 'src/posts')
 
@@ -57,7 +57,10 @@ export const fetchPosts = async (): Promise<Array<PostPreview>> => {
   const posts: Array<Post> = await Promise.all(
     getPostSlugs().map((slug) => fetchPost(slug)),
   )
-  const views = await fetchViews()
+  const views = await callApi({
+    url: 'https://carloscuesta.me/api/views',
+    mutator: (data: { views: Record<string, string> }) => data.views,
+  })
 
   return posts
     .sort((x, y) => {

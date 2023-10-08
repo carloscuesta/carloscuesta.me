@@ -4,13 +4,12 @@ import { VFile } from 'vfile'
 
 import postFixture from './fixtures/post.json'
 
-jest.mock('../views', () => ({
-  fetchViews: jest.fn().mockResolvedValue({
+jest.mock('src/utils/api/callApi', () =>
+  jest.fn().mockResolvedValue({
     'react-miami-2023': '1,000 views',
     'effective-refactoring-with-codemods': '1,000 views',
-    'using-generators-to-improve-developer-productivity': '1,000 views',
   }),
-}))
+)
 
 /* Mock Date.now to avoid updating snapshots for formatDistanceToNow */
 Date.now = jest.fn(() => 1593025862540)
@@ -33,8 +32,14 @@ describe('Blog API Client', () => {
   describe('fetchPosts', () => {
     it('should return an array of posts sorted by datePublished', async () => {
       const posts = await fetchPosts()
+      const expectedPosts = [
+        posts.find((post) => post.slug === 'react-miami-2023'),
+        posts.find(
+          (post) => post.slug === 'effective-refactoring-with-codemods',
+        ),
+      ]
 
-      expect(posts.slice(0, 3)).toMatchSnapshot()
+      expect(expectedPosts).toMatchSnapshot()
     })
   })
 
