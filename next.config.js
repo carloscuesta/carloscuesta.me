@@ -7,7 +7,6 @@ const withPWA = require('next-pwa')({
 
 module.exports = withPWA(withPlaiceholder({
   experimental: {
-    appDir: true,
     // https://beta.nextjs.org/docs/api-reference/next-config#servercomponentsexternalpackages
     serverComponentsExternalPackages: ['uglify-js']
   },
