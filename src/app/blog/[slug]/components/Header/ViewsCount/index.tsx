@@ -1,29 +1,13 @@
 'use client'
 
 import { useEffect } from 'react'
-import useSWR from 'swr'
 
-type Props = { slug: string; views?: string }
+import useViewsCount from 'src/utils/hooks/useViewsCount'
 
-async function fetcher<JSON>(
-  input: RequestInfo,
-  init?: RequestInit,
-): Promise<JSON> {
-  const response = await fetch(input, init)
+type Props = { slug: string }
 
-  return response.json()
-}
-
-const ViewsCount = ({ slug, views }: Props) => {
-  const { data, mutate } = useSWR<{ views: Record<string, string> }>(
-    '/api/views',
-    fetcher,
-    views
-      ? {
-          fallbackData: { views: { [slug]: views } },
-        }
-      : undefined,
-  )
+const ViewsCount = ({ slug }: Props) => {
+  const { data, mutate } = useViewsCount(slug)
 
   useEffect(() => {
     if (slug) {
