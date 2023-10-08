@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import Link from 'next/link'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'
-import ViewsCount from 'src/components/ViewsCount'
+import ViewsCount from './ViewsCount'
 
 const Post = ({ post, views }: { post: PostPreview; views: string }) => (
   <li
