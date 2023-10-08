@@ -51,6 +51,7 @@ exports[`Blog API Client fetchPosts should return an array of posts sorted by da
     },
     "slug": "react-miami-2023",
     "title": "React Miami 2023",
+    "views": "1,000 views",
   },
   {
     "datePublished": {
@@ -71,6 +72,7 @@ exports[`Blog API Client fetchPosts should return an array of posts sorted by da
     },
     "slug": "effective-refactoring-with-codemods",
     "title": "Effective Refactoring with Codemods",
+    "views": "1,000 views",
   },
   {
     "datePublished": {
@@ -91,6 +93,7 @@ exports[`Blog API Client fetchPosts should return an array of posts sorted by da
     },
     "slug": "using-generators-to-improve-developer-productivity",
     "title": "Using generators to improve developer productivity",
+    "views": "1,000 views",
   },
 ]
 `;

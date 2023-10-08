@@ -4,6 +4,14 @@ import { VFile } from 'vfile'
 
 import postFixture from './fixtures/post.json'
 
+jest.mock('../views', () => ({
+  fetchViews: jest.fn().mockResolvedValue({
+    'react-miami-2023': '1,000 views',
+    'effective-refactoring-with-codemods': '1,000 views',
+    'using-generators-to-improve-developer-productivity': '1,000 views',
+  }),
+}))
+
 /* Mock Date.now to avoid updating snapshots for formatDistanceToNow */
 Date.now = jest.fn(() => 1593025862540)
 

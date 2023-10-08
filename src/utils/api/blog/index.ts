@@ -16,6 +16,7 @@ import rehypeMinify from 'rehype-preset-minify'
 import rehypeWrap from 'rehype-wrap-all'
 
 import { type Post, type PostPreview, transformPost } from './mutators'
+import { fetchViews } from './views'
 
 const POSTS_DIRECTORY = join(process.cwd(), 'src/posts')
 
@@ -56,6 +57,7 @@ export const fetchPosts = async (): Promise<Array<PostPreview>> => {
   const posts: Array<Post> = await Promise.all(
     getPostSlugs().map((slug) => fetchPost(slug)),
   )
+  const views = await fetchViews()
 
   return posts
     .sort((x, y) => {
@@ -73,5 +75,6 @@ export const fetchPosts = async (): Promise<Array<PostPreview>> => {
       images: post.images,
       slug: post.slug,
       title: post.title,
+      views: views[post.slug],
     }))
 }
