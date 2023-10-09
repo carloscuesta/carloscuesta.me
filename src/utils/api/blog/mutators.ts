@@ -25,6 +25,12 @@ export type PostPreview = Omit<
   'dateModified' | 'disqusIdentifier' | 'html' | 'readingTime'
 > & { views: string }
 
+type Views = { views: { [key: string]: string } }
+
+export const transformPostViews = (data: Views) => ({
+  views: data.views,
+})
+
 type Payload = {
   data: { [key: string]: string }
   html: VFile

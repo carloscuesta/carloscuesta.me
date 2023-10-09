@@ -16,7 +16,12 @@ import rehypeMinify from 'rehype-preset-minify'
 import rehypeWrap from 'rehype-wrap-all'
 
 import callApi from 'src/utils/api/callApi'
-import { type Post, type PostPreview, transformPost } from './mutators'
+import {
+  type Post,
+  type PostPreview,
+  transformPost,
+  transformPostViews,
+} from './mutators'
 
 const POSTS_DIRECTORY = join(process.cwd(), 'src/posts')
 
@@ -59,7 +64,7 @@ export const fetchPosts = async (): Promise<Array<PostPreview>> => {
   )
   const views = await callApi({
     url: 'https://carloscuesta.me/api/views',
-    mutator: (data: { views: Record<string, string> }) => data.views,
+    mutator: transformPostViews,
   })
 
   return posts
@@ -78,6 +83,8 @@ export const fetchPosts = async (): Promise<Array<PostPreview>> => {
       images: post.images,
       slug: post.slug,
       title: post.title,
+      // @ts-expect-error: It's not possible to index views[key]
+      // keys are dynamic and obtained from the filesystem.
       views: views[post.slug],
     }))
 }
