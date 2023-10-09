@@ -23,7 +23,11 @@ export type Post = {
 export type PostPreview = Omit<
   Post,
   'dateModified' | 'disqusIdentifier' | 'html' | 'readingTime'
->
+> & { views: string }
+
+type Views = { views: { [key: string]: string } }
+
+export const transformPostViews = (data: Views) => data.views
 
 type Payload = {
   data: { [key: string]: string }

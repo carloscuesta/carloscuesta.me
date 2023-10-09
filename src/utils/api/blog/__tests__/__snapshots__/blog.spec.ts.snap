@@ -51,6 +51,7 @@ exports[`Blog API Client fetchPosts should return an array of posts sorted by da
     },
     "slug": "react-miami-2023",
     "title": "React Miami 2023",
+    "views": "1,000 views",
   },
   {
     "datePublished": {
@@ -71,26 +72,7 @@ exports[`Blog API Client fetchPosts should return an array of posts sorted by da
     },
     "slug": "effective-refactoring-with-codemods",
     "title": "Effective Refactoring with Codemods",
-  },
-  {
-    "datePublished": {
-      "formatDate": "23 May 2022",
-      "formatInWords": "in almost 2 years",
-      "formatMonthDay": "May 23",
-      "value": "2022-05-23 17:55",
-    },
-    "excerpt": "Let's walk through the experience and the outcome of implementing a tool to generate code. What...",
-    "images": {
-      "featured": {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1653167435/blog-featured-images/Code_generators.png",
-      },
-      "preview": {
-        "lqpi": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAABcRAAAXEQHKJvM/AAAADklEQVR4nGMQRQIMyBwAGbIB+ZVuRQQAAAAASUVORK5CYII=",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1653167435/blog-featured-images/Code_generators.png",
-      },
-    },
-    "slug": "using-generators-to-improve-developer-productivity",
-    "title": "Using generators to improve developer productivity",
+    "views": "1,000 views",
   },
 ]
 `;

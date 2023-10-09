@@ -17,4 +17,5 @@ export const post = {
   },
   slug: 'post-blog-slug',
   title: 'A post',
+  views: '1,000 views',
 }

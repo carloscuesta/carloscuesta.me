@@ -22,6 +22,7 @@ export const props = {
       },
       slug: 'post-slug',
       title: 'Post Title',
+      views: '1,000 views',
     },
     {
       dateModified: '2019-12-17 10:00',
@@ -45,6 +46,7 @@ export const props = {
       },
       slug: 'post-blog-slug',
       title: 'A post',
+      views: '1,000 views',
     },
   ],
 }

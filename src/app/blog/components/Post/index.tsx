@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { type PostPreview } from 'src/utils/api/blog/mutators'
 import ViewsCount from './ViewsCount'
 
-const Post = ({ post, views }: { post: PostPreview; views: string }) => (
+const Post = ({ post }: { post: PostPreview }) => (
   <li
     key={post.slug}
     className="-mx-3 rounded-lg transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
@@ -27,7 +27,7 @@ const Post = ({ post, views }: { post: PostPreview; views: string }) => (
         <p className="font-medium">{post.title}</p>
         <p className="font-mono text-sm opacity-60">
           <Suspense>
-            <ViewsCount slug={post.slug} views={views} />
+            <ViewsCount slug={post.slug} views={post.views} />
           </Suspense>
         </p>
       </div>
