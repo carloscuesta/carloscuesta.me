@@ -2257,10 +2257,10 @@
   dependencies:
     "@types/lodash" "*"
 
-"@types/lodash.truncate@4.4.7":
-  version "4.4.7"
-  resolved "https://registry.yarnpkg.com/@types/lodash.truncate/-/lodash.truncate-4.4.7.tgz#662a66e990b2de7002400d960c377cae95d731a3"
-  integrity sha512-9w6N3kgk3P3lN2PnSYz4V60B0OWwCtqCr2tYFpjE6O3/IODXg7e3KvI4s0Jit0QuMgGabqcQeCcAQMHyFG9emw==
+"@types/lodash.truncate@4.4.8":
+  version "4.4.8"
+  resolved "https://registry.yarnpkg.com/@types/lodash.truncate/-/lodash.truncate-4.4.8.tgz#ce784f9d7e059a21a860ce149c356ff05dd0a872"
+  integrity sha512-4RtwxBJYlpZdeIPEs23qe2ttsNQWCIJBRog4ePynMzq6fcRLeUE65VFA3Yb+RhLB2j+kkMGyKEOt1+H8OSqCyA==
   dependencies:
     "@types/lodash" "*"
 
