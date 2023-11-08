@@ -33,7 +33,7 @@
     "@headlessui/react": "1.7.17",
     "@plaiceholder/next": "2.5.0",
     "@types/lodash.truncate": "4.4.8",
-    "@vercel/analytics": "^1.0.2",
+    "@vercel/analytics": "^1.1.1",
     "@vercel/kv": "0.2.2",
     "add": "2.0.6",
     "body-scroll-lock": "4.0.0-beta.0",
