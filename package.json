@@ -79,7 +79,7 @@
     "@types/lodash.debounce": "4.0.8",
     "@types/lodash.groupby": "4.6.7",
     "@types/react": "18.2.21",
-    "@types/react-test-renderer": "18.0.5",
+    "@types/react-test-renderer": "18.0.6",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
     "autoprefixer": "10.4.16",
