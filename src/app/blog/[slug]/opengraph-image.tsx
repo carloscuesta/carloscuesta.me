@@ -1,5 +1,5 @@
 import { type Font } from 'satori'
-import { ImageResponse } from 'next/server'
+import { ImageResponse } from 'next/og'
 
 import { fetchPost } from 'src/utils/api/blog'
 import { fetchViews } from 'src/utils/api/blog/views'
