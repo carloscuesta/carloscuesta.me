@@ -8,7 +8,7 @@ const withPWA = require('next-pwa')({
 module.exports = withPWA(withPlaiceholder({
   experimental: {
     // https://beta.nextjs.org/docs/api-reference/next-config#servercomponentsexternalpackages
-    serverComponentsExternalPackages: ['uglify-js']
+    serverComponentsExternalPackages: ['uglify-js', 'plaiceholder']
   },
   images: {
     remotePatterns: [
