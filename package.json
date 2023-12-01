@@ -68,7 +68,7 @@
     "swr": "2.2.4",
     "tailwind-scrollbar-hide": "1.1.7",
     "unified": "11.0.3",
-    "yarn": "1.22.19"
+    "yarn": "1.22.21"
   },
   "devDependencies": {
     "@lhci/cli": "^0.12.0",
