@@ -6,6 +6,15 @@ import Layout from '../index'
 jest.mock('body-scroll-lock')
 
 describe('Layout', () => {
+  beforeAll(() => {
+    jest.useFakeTimers()
+    jest.setSystemTime(new Date(2023, 1, 1))
+  })
+
+  afterAll(() => {
+    jest.useRealTimers()
+  })
+
   it('should render the Layout with children', () => {
     const wrapper = renderer.create(
       <Layout>
