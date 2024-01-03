@@ -18,9 +18,9 @@ const Photos = () => {
   return (
     <section>
       <div className="grid gap-3 mx-3 my-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
-        {images.map((image) => (
+        {images.map((image, index, images) => (
           <Image
-            alt=""
+            alt={`Photo ${index + 1} of ${images.length} by Carlos Cuesta`}
             key={image}
             placeholder="blur"
             src={require(`./shots/${image}`)}
