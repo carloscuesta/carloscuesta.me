@@ -2299,10 +2299,10 @@
   dependencies:
     "@types/lodash" "*"
 
-"@types/lodash.truncate@4.4.8":
-  version "4.4.8"
-  resolved "https://registry.yarnpkg.com/@types/lodash.truncate/-/lodash.truncate-4.4.8.tgz#ce784f9d7e059a21a860ce149c356ff05dd0a872"
-  integrity sha512-4RtwxBJYlpZdeIPEs23qe2ttsNQWCIJBRog4ePynMzq6fcRLeUE65VFA3Yb+RhLB2j+kkMGyKEOt1+H8OSqCyA==
+"@types/lodash.truncate@4.4.9":
+  version "4.4.9"
+  resolved "https://registry.yarnpkg.com/@types/lodash.truncate/-/lodash.truncate-4.4.9.tgz#b6bf912b14709b5ff1514c301873e343f64aaadc"
+  integrity sha512-pR5sV0zOomdGgh5nAv5nLlnU0iHX8IJuVqIdACQjO1I6sKsB1v4tFR6HySu8peoHg74RItfvTihDUYax0fB9Kg==
   dependencies:
     "@types/lodash" "*"
 
