@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import aboutMePicture from './aboutme.png'
 
@@ -46,8 +47,11 @@ const WhoAmI = () => (
     </p>
 
     <p>
-      Outside of work, I'm obsessed with sports, doing open source and
-      travelling with my family.
+      Outside of work, I'm obsessed with sports, doing open source and{' '}
+      <Link className="underline underline-offset-2" href="/photos">
+        travelling
+      </Link>{' '}
+      with my family.
     </p>
 
     <Image
