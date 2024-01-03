@@ -1,6 +1,14 @@
 import fs from 'fs'
 import path from 'path'
+import { type Metadata } from 'next'
 import Image from 'next/image'
+
+export const metadata: Metadata = {
+  title: 'Photos',
+  alternates: {
+    canonical: '/photos',
+  },
+}
 
 const Photos = () => {
   const images = fs.readdirSync(path.resolve('src/app/photos', 'shots'))
