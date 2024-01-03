@@ -11,7 +11,9 @@ export const metadata: Metadata = {
 }
 
 const Photos = () => {
-  const images = fs.readdirSync(path.resolve('src/app/photos', 'shots'))
+  const images = fs
+    .readdirSync(path.resolve('src/app/photos', 'shots'))
+    .reverse()
 
   return (
     <section>
