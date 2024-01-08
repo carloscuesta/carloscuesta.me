@@ -58,7 +58,7 @@ const Hamburger = (props: Props) => {
               { href: '/', text: 'Home' },
               { href: '/about', text: 'About' },
               { href: '/blog', text: 'Blog' },
-              { href: '/projects', text: 'Projects' },
+              { href: '/photos', text: 'Photos' },
             ]}
           />
         </nav>

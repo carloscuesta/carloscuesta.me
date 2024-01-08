@@ -41,7 +41,19 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
     I was born and raised in Badalona next to the mediterranean sea and come from a background of studying Computer Science.
   </p>
   <p>
-    Outside of work, I'm obsessed with sports, doing open source and travelling with my family.
+    Outside of work, I'm obsessed with sports, doing open source and
+     
+    <a
+      className="underline underline-offset-2"
+      href="/photos"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      travelling
+    </a>
+     
+    with my family.
   </p>
   <img
     alt="Carlos Cuesta About me"

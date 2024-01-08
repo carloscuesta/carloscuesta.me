@@ -73,12 +73,12 @@ exports[`Layout should render the Layout with children 1`] = `
             <li>
               <a
                 className="hover:opacity-60 transition-opacity"
-                href="/projects"
+                href="/photos"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
               >
-                Projects
+                Photos
               </a>
             </li>
           </ul>
