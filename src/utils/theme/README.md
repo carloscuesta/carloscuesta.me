@@ -9,4 +9,4 @@ There are two themes on the website:
 
 The default theme will be selected using the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) property.
 
-The theme also includes the extracted critical-css of `flexboxgrid`.
+Along with the theme you'll find `sprinkles-dark.json` which serves as the syntax highlighting theme for the blog posts.
