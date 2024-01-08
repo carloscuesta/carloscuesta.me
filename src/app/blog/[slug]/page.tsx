@@ -56,7 +56,6 @@ const Article = async ({ params }: Params) => {
           }
         `}
       </style>
-      <link href="/prism.css" rel="stylesheet" type="text/css" />
 
       <ArticleJsonLd
         useAppDir={true}
