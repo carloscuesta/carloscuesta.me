@@ -18,9 +18,6 @@ out
 # OSX Files
 *.DS_Store
 
-# Sitemaps
-sitemap.xml
-
 # Environment vars
 .env
 .env.*
@@ -30,6 +27,7 @@ sitemap.xml
 public/workbox-*.js
 public/sw.js
 public/*.map
+public/*.xml
 
 # ts
 *.tsbuildinfo
