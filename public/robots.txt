@@ -1,4 +1,9 @@
-User-Agent: *
+# *
+User-agent: *
 Allow: /
 
+# Host
+Host: https://carloscuesta.me
+
+# Sitemaps
 Sitemap: https://carloscuesta.me/sitemap.xml

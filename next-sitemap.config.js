@@ -1,3 +1,4 @@
 module.exports = {
-  siteUrl: 'https://carloscuesta.me'
+  siteUrl: 'https://carloscuesta.me',
+  generateRobotsTxt: true
 }

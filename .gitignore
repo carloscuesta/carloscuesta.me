@@ -28,6 +28,7 @@ public/workbox-*.js
 public/sw.js
 public/*.map
 public/*.xml
+public/robots.txt
 
 # ts
 *.tsbuildinfo
