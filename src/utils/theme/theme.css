@@ -72,3 +72,21 @@ pre[data-theme] {
   margin-top: 1.3333333em;
   margin-bottom: 1.3333333em;
 }
+
+pre[data-theme='light'] {
+  border: 1px solid #e8eaec;
+}
+
+pre[data-theme='dark'] {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  pre[data-theme='dark'] {
+    display: block;
+  }
+
+  pre[data-theme='light'] {
+    display: none;
+  }
+}
