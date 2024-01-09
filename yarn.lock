@@ -10129,6 +10129,11 @@ speedline-core@^1.4.3:
     image-ssim "^0.2.0"
     jpeg-js "^0.4.1"
 
+sprinkles-vscode@2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/sprinkles-vscode/-/sprinkles-vscode-2.7.0.tgz#5e64d4cbc6c0d43991ac766cd689efdd5bbd1623"
+  integrity sha512-yx1GQx96msXbihvAqAKLuAHKHLgWI29TPQ2jMLdOnSeZOkRAODywm/cs0XVXuCjozvE0HrNdDtf06ILDtYMJag==
+
 sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"

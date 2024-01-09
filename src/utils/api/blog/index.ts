@@ -50,7 +50,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
     })
     .use(rehypeExternalLinks)
     .use(rehypePrettyCode, {
-      theme: require('src/utils/theme/sprinkles-dark.json'),
+      theme: require('sprinkles-vscode/themes/sprinkles-dark.json'),
     })
     .use(rehypeWrap, { selector: 'table', wrapper: 'div.responsiveTable' })
     .use(rehypeStringify, { allowDangerousHtml: true })
