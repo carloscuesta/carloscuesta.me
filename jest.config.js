@@ -22,7 +22,10 @@ async function jestConfig() {
       "**/*.(spec).(tsx)"
     ],
     "moduleNameMapper": {
-      "src/(.*)$": "<rootDir>/src/$1"
+      "src/(.*)$": "<rootDir>/src/$1",
+      // For some reason Jest is not able to resolve `rehype-pretty-code` 
+      // when running tests
+      "rehype-pretty-code": "<rootDir>/node_modules/rehype-pretty-code",
     },
     "testEnvironment": "jsdom"
   })()

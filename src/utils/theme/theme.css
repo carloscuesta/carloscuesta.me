@@ -35,19 +35,61 @@ html {
 :not(pre) > code[class*='language-'],
 pre,
 .prose pre,
-pre[class*='language-'] {
+pre[data-language] {
   font-family:
     Operator Mono,
     Fira Code,
     Consolas,
     monospace;
   font-size: 1.25rem;
-  background: #1d1f21;
-  color: #f8f8f2;
 }
 
-:not(pre) > code[class*='language-'] {
-  padding: 0.1em;
-  border-radius: 0.3em;
-  white-space: normal;
+code[data-theme],
+pre[data-theme] {
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+
+pre,
+pre[data-theme] {
+  font-family:
+    Operator Mono,
+    Fira Code,
+    Consolas,
+    monospace;
+  font-size: 1.25rem;
+  padding: 1rem 1.25rem;
+  margin: 0.5rem 0;
+  overflow: auto;
+  border-radius: 0.35rem;
+  margin-top: 1.3333333em;
+  margin-bottom: 1.3333333em;
+  background-color: var(--shiki-light-bg);
+  border: 1px solid #e8eaec;
+}
+
+code[data-theme*=' '],
+code[data-theme*=' '] span {
+  color: var(--shiki-light);
+  background-color: var(--shiki-light-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  code[data-theme*=' '],
+  code[data-theme*=' '] span {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+    border: 0;
+  }
+
+  pre,
+  pre[data-theme] {
+    background-color: var(--shiki-dark-bg);
+    border: unset;
+  }
 }
