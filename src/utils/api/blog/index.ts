@@ -8,7 +8,7 @@ import remarkGFM from 'remark-gfm'
 import remarkToc from 'remark-toc'
 import remarkRehype from 'remark-rehype'
 import rehypeSlug from 'rehype-slug'
-import rehypePrism from 'rehype-prism-plus'
+import rehypePrettyCode from 'rehype-pretty-code'
 import rehypeExternalLinks from 'rehype-external-links'
 import rehypeAutoLinkHeadings from 'rehype-autolink-headings'
 import rehypeStringify from 'rehype-stringify'
@@ -49,7 +49,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
       },
     })
     .use(rehypeExternalLinks)
-    .use(rehypePrism, { ignoreMissing: true })
+    .use(rehypePrettyCode)
     .use(rehypeWrap, { selector: 'table', wrapper: 'div.responsiveTable' })
     .use(rehypeStringify, { allowDangerousHtml: true })
     .use(rehypeMinify)
