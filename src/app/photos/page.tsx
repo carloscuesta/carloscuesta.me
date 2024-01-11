@@ -14,6 +14,7 @@ const Photos = () => {
   const images = fs
     .readdirSync(path.resolve('src/app/photos', 'shots'))
     .reverse()
+  const isAboveTheFold = (index: number) => index < 4
 
   return (
     <section>
@@ -26,6 +27,7 @@ const Photos = () => {
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1536px) 33vw, 25vw"
             src={require(`./shots/${image}`)}
             style={{ width: '100%', height: 'auto' }}
+            loading={isAboveTheFold(index) ? 'eager' : 'lazy'}
           />
         ))}
       </div>

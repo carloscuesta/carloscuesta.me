@@ -18,7 +18,8 @@ module.exports = withPWA(withPlaiceholder({
         port: '',
         pathname: '/carloscuesta/image/upload/**'
       }
-    ]
+    ],
+    deviceSizes: [640, 768, 1024, 1280, 1536],
   },
   redirects: async () => [
     {
