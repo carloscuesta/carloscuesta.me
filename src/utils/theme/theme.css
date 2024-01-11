@@ -42,8 +42,6 @@ pre[data-language] {
     Consolas,
     monospace;
   font-size: 1.25rem;
-  background: #1d1f21;
-  color: #f8f8f2;
 }
 
 code[data-theme],
@@ -71,4 +69,27 @@ pre[data-theme] {
   border-radius: 0.35rem;
   margin-top: 1.3333333em;
   margin-bottom: 1.3333333em;
+  background-color: var(--shiki-light-bg);
+  border: 1px solid #e8eaec;
+}
+
+code[data-theme*=' '],
+code[data-theme*=' '] span {
+  color: var(--shiki-light);
+  background-color: var(--shiki-light-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  code[data-theme*=' '],
+  code[data-theme*=' '] span {
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
+    border: 0;
+  }
+
+  pre,
+  pre[data-theme] {
+    background-color: var(--shiki-dark-bg);
+    border: unset;
+  }
 }
