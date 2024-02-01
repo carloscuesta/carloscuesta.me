@@ -2210,14 +2210,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/hast@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@types/hast/-/hast-3.0.0.tgz#47ebd2892a623fa7e517ba392834880ff288475e"
-  integrity sha512-SoytUJRuf68HXYqcXicQIhCrLQjqeYU2anikr4G3p3Iz+OZO5QDQpDj++gv+RenHsnUBwNZ2dumBArF8VLSk2Q==
-  dependencies:
-    "@types/unist" "*"
-
-"@types/hast@^3.0.3":
+"@types/hast@^3.0.0", "@types/hast@^3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/hast/-/hast-3.0.3.tgz#7f75e6b43bc3f90316046a287d9ad3888309f7e1"
   integrity sha512-2fYGlaDy/qyLlhidX42wAH0KBi2TCjKMH8CHmBXgRlJ3Y+OXTiqsPQ6IWarZKwF1JoUcAJdPogv1d4b0COTpmQ==
@@ -9343,10 +9336,10 @@ rehype-preset-minify@7.0.0:
     rehype-sort-attributes "^5.0.0"
     unified "^11.0.0"
 
-rehype-pretty-code@0.12.3:
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/rehype-pretty-code/-/rehype-pretty-code-0.12.3.tgz#1c066b786c9ca25c692a20810bb1e01c01df3cf7"
-  integrity sha512-6NbIit8A3hLrkKBEbNs862jVnTLeIOM2AmM0VZ/MtyHb+OuNMeCa6UZSx6UG4zrobm5tY9efTwhih1exsGYsiw==
+rehype-pretty-code@0.12.6:
+  version "0.12.6"
+  resolved "https://registry.yarnpkg.com/rehype-pretty-code/-/rehype-pretty-code-0.12.6.tgz#02ba6630523d877b464852647475a599f58d30b2"
+  integrity sha512-AW18s4eXwnb4PGwL0Y8BoUzBJr23epWNXndCKaZ52S4kl/4tsgM+406oCp5NdtPZsB0ItpaY+hCMv3kw58DLrA==
   dependencies:
     "@types/hast" "^3.0.3"
     hast-util-to-string "^3.0.0"
