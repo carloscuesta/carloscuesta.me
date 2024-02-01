@@ -1,4 +1,4 @@
-import { rest } from 'msw'
+import { http, HttpResponse } from 'msw'
 
 import repositories from './mocks/repos.json'
 import user from './mocks/user.json'
@@ -6,12 +6,10 @@ import user from './mocks/user.json'
 const baseUrl = 'https://api.github.com'
 
 const githubHandlers = [
-  rest.get(`${baseUrl}/users/carloscuesta/repos`, (_req, res, ctx) =>
-    res(ctx.json(repositories)),
+  http.get(`${baseUrl}/users/carloscuesta/repos`, () =>
+    HttpResponse.json(repositories),
   ),
-  rest.get(`${baseUrl}/users/carloscuesta`, (_req, res, ctx) =>
-    res(ctx.json(user)),
-  ),
+  http.get(`${baseUrl}/users/carloscuesta`, () => HttpResponse.json(user)),
 ]
 
 export default githubHandlers
