@@ -63,7 +63,7 @@
     "remark-parse": "11.0.0",
     "remark-rehype": "11.0.0",
     "remark-toc": "^9.0.0",
-    "satori": "0.10.9",
+    "satori": "0.10.13",
     "sharp": "0.32.6",
     "shikiji": "^0.9.0",
     "sprinkles-vscode": "2.7.0",
