@@ -12,8 +12,8 @@ const Link = (props: Props) => {
     props.isIndeterminate
       ? 'hover:opacity-60'
       : props.isActive
-      ? 'opacity-100'
-      : 'opacity-50 hover:opacity-100'
+        ? 'opacity-100'
+        : 'opacity-50 hover:opacity-100'
   } transition-opacity`
 
   if (!props.href.startsWith('/')) {
