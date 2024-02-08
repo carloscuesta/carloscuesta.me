@@ -52,8 +52,8 @@ const Uses = () => (
             },
             {
               category: 'Webcam',
-              title: 'Logitech C920',
-              link: 'https://bit.ly/3jDlMZp',
+              title: 'Elgato Facecam',
+              link: 'https://www.elgato.com/es/es/p/facecam',
             },
             {
               category: 'Keyboard',
