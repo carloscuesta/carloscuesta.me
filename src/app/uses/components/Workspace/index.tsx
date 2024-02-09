@@ -17,22 +17,22 @@ const items = [
   {
     category: 'Monitor',
     title: 'Dell U3821DW',
-    link: 'https://dub.sh/UHX1DFX',
+    link: 'https://amzn.id/UHX1DFX',
   },
   {
     category: 'Webcam',
     title: 'Elgato Facecam',
-    link: 'https://dub.sh/7wuXIVm',
+    link: 'https://amzn.id/wbWhDOO',
   },
   {
     category: 'Keyboard',
-    title: 'QK65 – QwertyKeys',
-    link: 'https://www.qwertykeys.com',
+    title: 'QK65',
+    link: 'https://qwertykeys.notion.site/QK65-Build-Guide-74e558d2ac3f4979939c9a84cb3cbf22',
   },
   {
     category: 'Mouse',
     title: 'Logitech MX Master 3S',
-    link: 'https://dub.sh/N82BPgO',
+    link: 'https://amzn.id/N82BPgO',
   },
   {
     category: 'Desk',
@@ -42,17 +42,17 @@ const items = [
   {
     category: 'Headphones',
     title: 'Airpods Pro',
-    link: 'https://dub.sh/kIND87t',
+    link: 'https://amzn.id/kIND87t',
   },
   {
     category: 'Lighting',
     title: 'BenQ Screenbar',
-    link: 'https://dub.sh/7xtEmWR',
+    link: 'https://amzn.id/7xtEmWR',
   },
   {
     category: 'Headphones',
     title: 'Bose QuietComfort 45',
-    link: 'https://dub.sh/7wuXIVm',
+    link: 'https://amzn.id/7wuXIVm',
   },
   {
     category: 'Desk',
@@ -62,27 +62,27 @@ const items = [
   {
     category: 'Monitor Arm',
     title: 'Ergotron HX',
-    link: 'https://dub.sh/Gy0rbL1',
+    link: 'https://amzn.id/Gy0rbL1',
   },
   {
     category: 'Lighting',
     title: 'Logitech Litra Glow',
-    link: 'https://dub.sh/iwfwL12',
+    link: 'https://amzn.id/iwfwL12',
   },
   {
     category: 'Microphone',
     title: 'Shure MV7',
-    link: 'https://dub.sh/WrvUvWw',
+    link: 'https://amzn.id/WrvUvWw',
   },
   {
     category: 'Boom Arm',
     title: 'Elgato Wave Mic Arm LP',
-    link: 'https://dub.sh/yScr2WM',
+    link: 'https://amzn.id/yScr2WM',
   },
   {
     category: 'Charger',
     title: 'Belkin BoostCharge Pro',
-    link: 'https://dub.sh/5IQt2Xe',
+    link: 'https://amzn.id/5IQt2Xe',
   },
   {
     category: 'Lighting',
