@@ -10,47 +10,52 @@ export const revalidate = false
 type Params = { params: { slug: string } }
 
 async function getFonts(): Promise<Font[]> {
-  const [interLight, interSemiBold, interBold, robotoMono] = await Promise.all([
-    fetch(`https://rsms.me/inter/font-files/Inter-Light.woff`).then((res) =>
-      res.arrayBuffer(),
-    ),
-    fetch(`https://rsms.me/inter/font-files/Inter-Bold.woff`).then((res) =>
-      res.arrayBuffer(),
-    ),
-    fetch(`https://rsms.me/inter/font-files/Inter-ExtraBold.woff`).then((res) =>
-      res.arrayBuffer(),
-    ),
-    fetch(`https://fonts.cdnfonts.com/s/16061/RobotoMono-Light.woff`).then(
-      (res) => res.arrayBuffer(),
-    ),
-  ])
+  try {
+    const [interLight, interSemiBold, interBold, robotoMono] =
+      await Promise.all([
+        fetch(`https://fonts.cdnfonts.com/s/19795/Inter-Light-BETA.woff`).then(
+          (res) => res.arrayBuffer(),
+        ),
+        fetch(`https://fonts.cdnfonts.com/s/19795/Inter-SemiBold.woff`).then(
+          (res) => res.arrayBuffer(),
+        ),
+        fetch(`https://fonts.cdnfonts.com/s/19795/Inter-Bold.woff`).then(
+          (res) => res.arrayBuffer(),
+        ),
+        fetch(`https://fonts.cdnfonts.com/s/16061/RobotoMono-Light.woff`).then(
+          (res) => res.arrayBuffer(),
+        ),
+      ])
 
-  return [
-    {
-      name: 'Inter',
-      data: interLight,
-      style: 'normal',
-      weight: 300,
-    },
-    {
-      name: 'Inter',
-      data: interSemiBold,
-      style: 'normal',
-      weight: 600,
-    },
-    {
-      name: 'Inter',
-      data: interBold,
-      style: 'normal',
-      weight: 700,
-    },
-    {
-      name: 'RobotoMono',
-      data: robotoMono,
-      style: 'normal',
-      weight: 300,
-    },
-  ]
+    return [
+      {
+        name: 'Inter',
+        data: interLight,
+        style: 'normal',
+        weight: 300,
+      },
+      {
+        name: 'Inter',
+        data: interSemiBold,
+        style: 'normal',
+        weight: 600,
+      },
+      {
+        name: 'Inter',
+        data: interBold,
+        style: 'normal',
+        weight: 700,
+      },
+      {
+        name: 'RobotoMono',
+        data: robotoMono,
+        style: 'normal',
+        weight: 300,
+      },
+    ]
+  } catch (error) {
+    throw new Error('Failed to fetch fonts.')
+  }
 }
 
 export const generateImageMetadata = async ({ params }: Params) => {
@@ -119,7 +124,11 @@ export default async function Image({ params }: Params) {
             flex: 1,
           }}
         >
-          <span style={{ fontWeight: 700, fontSize: '4em' }}>{post.title}</span>
+          <span
+            style={{ fontWeight: 700, fontSize: '4em', letterSpacing: '-1' }}
+          >
+            {post.title}
+          </span>
           <div
             style={{
               display: 'flex',
