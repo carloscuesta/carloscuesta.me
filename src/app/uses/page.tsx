@@ -48,12 +48,12 @@ const Uses = () => (
             {
               category: 'Monitor',
               title: 'Dell U3821DW',
-              link: 'https://www.dell.com/es-es/shop/monitor-curvo-dell-ultrasharp-38-con-concentrador-y-usb-c-u3821dw/apd/210-axnt/monitores-y-accesorios',
+              link: 'https://dub.sh/UHX1DFX',
             },
             {
               category: 'Webcam',
               title: 'Elgato Facecam',
-              link: 'https://www.elgato.com/es/es/p/facecam',
+              link: 'https://dub.sh/7wuXIVm',
             },
             {
               category: 'Keyboard',
@@ -63,7 +63,7 @@ const Uses = () => (
             {
               category: 'Mouse',
               title: 'Logitech MX Master 3S',
-              link: 'https://www.logitech.com/products/mice/mx-master-3s.910-006560.html',
+              link: 'https://dub.sh/N82BPgO',
             },
             {
               category: 'Desk Matt',
@@ -73,17 +73,17 @@ const Uses = () => (
             {
               category: 'Headphones',
               title: 'Airpods Pro',
-              link: 'https://www.apple.com/airpods-pro',
+              link: 'https://dub.sh/kIND87t',
             },
             {
               category: 'Lighting',
               title: 'BenQ Screenbar',
-              link: 'https://www.benq.com/en-us/lamps/computer-desklamp/screenbar.html',
+              link: 'https://dub.sh/7xtEmWR',
             },
             {
               category: 'Headphones',
               title: 'Bose QuietComfort 45',
-              link: 'https://www.bose.com/en_us/products/headphones/noise_cancelling_headphones/quietcomfort-headphones-45.html#v=qc45_white_smoke',
+              link: 'https://dub.sh/7wuXIVm',
             },
             {
               category: 'Anti-fatigue standing mat',
@@ -93,27 +93,27 @@ const Uses = () => (
             {
               category: 'Monitor Arm',
               title: 'Ergotron HX',
-              link: 'https://www.ergotron.com/en-us/products/product-details/45-475',
+              link: 'https://dub.sh/Gy0rbL1',
             },
             {
               category: 'Lighting',
               title: 'Logitech Litra Glow',
-              link: 'https://www.logitech.com/products/lighting/litra-glow.946-000002.html',
+              link: 'https://dub.sh/iwfwL12',
             },
             {
               category: 'Microphone',
               title: 'Shure MV7',
-              link: 'https://www.shure.com/products/microphones/mv7',
+              link: 'https://dub.sh/WrvUvWw',
             },
             {
               category: 'Boom Arm',
               title: 'Elgato Wave Mic Arm LP',
-              link: 'https://www.elgato.com/wave-mic-arm-lp',
+              link: 'https://dub.sh/yScr2WM',
             },
             {
               category: 'Charger',
               title: 'Belkin BoostCharge Pro',
-              link: 'https://www.belkin.com/es/cargador-inal%C3%A1mbrico-3-en-1-de-15-w-con-tecnolog%C3%ADa-magsafe-oficial/P-WIZ016.html',
+              link: 'https://dub.sh/5IQt2Xe',
             },
             {
               category: 'Lighting',
