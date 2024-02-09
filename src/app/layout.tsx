@@ -38,10 +38,6 @@ export const metadata = {
   },
 }
 
-if (process.env.NEXT_PUBLIC_API_MOCKING === 'enabled') {
-  require('src/mocks')
-}
-
 const font = localFont({
   src: [
     {
