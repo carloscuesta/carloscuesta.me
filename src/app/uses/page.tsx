@@ -1,9 +1,9 @@
 import { type Metadata } from 'next'
-import Image from 'next/image'
 
 import PageTitle from 'src/components/PageTitle'
 import Wrapper from 'src/components/Wrapper'
 import Workspace from './components/Workspace'
+import Photos from './components/Photos'
 
 export const metadata: Metadata = {
   title: 'Uses',
@@ -17,19 +17,8 @@ const Uses = () => (
     <main>
       <PageTitle title="Uses" />
 
-      <div>
-        <Image
-          src={require('./setup.jpg')}
-          alt="Carlos Cuesta workspace setup"
-          className="max-w-full rounded-md"
-          placeholder="blur"
-          width={1500}
-          height={1232}
-          quality={100}
-        />
-
-        <Workspace />
-      </div>
+      <Photos />
+      <Workspace />
     </main>
   </Wrapper>
 )
