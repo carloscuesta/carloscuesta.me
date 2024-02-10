@@ -1,8 +1,45 @@
+import { type Font } from 'satori'
+
 type Props = {
   url?: string
   description: string
   title: string
   withProfile?: boolean
+}
+
+export const getFonts = async (): Promise<Font[]> => {
+  const [interMedium, interBold, robotoMono] = await Promise.all([
+    fetch(`https://fonts.cdnfonts.com/s/19795/Inter-Medium.woff`).then((res) =>
+      res.arrayBuffer(),
+    ),
+    fetch(`https://fonts.cdnfonts.com/s/19795/Inter-ExtraBold.woff`).then(
+      (res) => res.arrayBuffer(),
+    ),
+    fetch(`https://fonts.cdnfonts.com/s/16061/RobotoMono-Regular.woff`).then(
+      (res) => res.arrayBuffer(),
+    ),
+  ])
+
+  return [
+    {
+      name: 'Inter',
+      data: interMedium,
+      style: 'normal',
+      weight: 600,
+    },
+    {
+      name: 'Inter',
+      data: interBold,
+      style: 'normal',
+      weight: 700,
+    },
+    {
+      name: 'RobotoMono',
+      data: robotoMono,
+      style: 'normal',
+      weight: 300,
+    },
+  ]
 }
 
 const OpengraphImage = (props: Props) => (
