@@ -53,45 +53,12 @@ const OpengraphImage = (props: Props) => (
       fontFamily: 'Inter',
     }}
   >
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        gap: '1em',
-        alignItems: 'center',
-        position: 'absolute',
-        top: 60,
-        left: 60,
-      }}
-    >
-      <img
-        src="https://carloscuesta.me/images/carloscuesta.jpg"
-        width="100"
-        height="100"
-        style={{ borderRadius: '100%' }}
-      />
-      {props.withProfile && (
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <span
-            style={{
-              fontWeight: 700,
-              fontSize: '2.75em',
-              letterSpacing: '-1px',
-            }}
-          >
-            Carlos Cuesta
-          </span>
-          <span
-            style={{
-              fontWeight: 300,
-              fontSize: '1.75em',
-            }}
-          >
-            @crloscuesta
-          </span>
-        </div>
-      )}
-    </div>
+    <img
+      src="https://carloscuesta.me/images/carloscuesta.jpg"
+      width="115"
+      height="115"
+      style={{ borderRadius: '100%', position: 'absolute', left: 60, top: 60 }}
+    />
 
     <div
       style={{
