@@ -4,16 +4,7 @@ const pictures = ['workspace-left.jpeg', 'workspace-right.jpeg']
 
 const Photos = () => (
   <>
-    <style>
-      {`
-        .workspacePhotos::-webkit-scrollbar {
-          -webkit-appearance: none;
-          display: none;
-        }
-      `}
-    </style>
-
-    <div className="overflow-x-scroll workspacePhotos flex snap-x snap-mandatory gap-4 sm:grid sm:snap-none sm:grid-cols-2">
+    <div className="overflow-x-scroll hide-scrollbar flex snap-x snap-mandatory gap-4 sm:grid sm:snap-none sm:grid-cols-2">
       {pictures.map((picture, index) => (
         <Image
           key={picture}

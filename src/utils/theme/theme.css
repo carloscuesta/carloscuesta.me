@@ -93,3 +93,10 @@ code[data-theme*=' '] span {
     border: unset;
   }
 }
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    -webkit-appearance: none;
+    display: none;
+  }
+}
