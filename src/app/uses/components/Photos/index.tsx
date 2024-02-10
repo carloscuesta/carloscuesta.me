@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const pictures = ['workspace-left.jpeg', 'workspace-right.jpeg']
+const pictures = ['workspace-left.webp', 'workspace-right.webp']
 
 const Photos = () => (
   <>
@@ -15,6 +15,7 @@ const Photos = () => (
           style={{ width: '100%', height: 'auto' }}
           className="rounded-xl snap-start"
           loading="eager"
+          quality="90"
         />
       ))}
     </div>
