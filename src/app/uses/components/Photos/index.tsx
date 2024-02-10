@@ -14,10 +14,10 @@ const Photos = () => (
     </style>
 
     <div className="overflow-x-scroll workspacePhotos flex snap-x snap-mandatory gap-4 sm:grid sm:snap-none sm:grid-cols-2">
-      {pictures.map((picture) => (
+      {pictures.map((picture, index) => (
         <Image
           key={picture}
-          alt="Carlos Cuesta workspace"
+          alt={`Carlos Cuesta's workspace, photo ${index + 1} of ${pictures.length}`}
           placeholder="blur"
           sizes="(max-width: 640px) 100vw, 50vw"
           src={require(`./${picture}`)}
