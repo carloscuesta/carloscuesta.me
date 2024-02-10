@@ -20,14 +20,6 @@ export const metadata = {
     type: 'website',
     locale: 'en-US',
     siteName: 'Carlos Cuesta',
-    images: [
-      {
-        alt: 'Carlos Cuesta',
-        height: 600,
-        url: 'https://carloscuesta.me/images/twitter-card.png',
-        width: 1200,
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
