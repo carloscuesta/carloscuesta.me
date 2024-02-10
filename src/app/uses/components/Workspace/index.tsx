@@ -94,6 +94,16 @@ const items = [
     title: 'Mi Smart Clock',
     link: 'https://www.mi.com/product/mi-smart-clock/',
   },
+  {
+    category: 'Furniture',
+    title: 'IKEA Vihals',
+    link: 'https://www.ikea.com/es/es/p/vihals-estanteria-10-baldas-blanco-70483274/',
+  },
+  {
+    category: 'Furniture',
+    title: 'IKEA Skadis',
+    link: 'https://www.ikea.com/es/es/p/skadis-tablero-perforado-blanco-00320803/',
+  },
 ] as const
 
 const Workspace = () => (
