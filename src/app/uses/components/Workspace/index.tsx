@@ -97,17 +97,17 @@ const items = [
 ] as const
 
 const Workspace = () => (
-  <div className="rounded-lg border border-b-0 dark:border-neutral-800 overflow-auto mt-6">
+  <div className="rounded-lg border border-b-0 border-neutral-200 dark:border-neutral-800 overflow-auto mt-6">
     <div className="w-full table text-sm">
-      <div className="table-header-group bg-neutral-100 dark:bg-neutral-800">
-        <div className="table-row dark:border-neutral-800">
-          <div className="border-b border-inherit table-cell -10 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 px-4">
+      <div className="table-header-group bg-neutral-50 dark:bg-neutral-800">
+        <div className="table-row border-neutral-200 dark:border-neutral-800">
+          <div className="border-b border-neutral-200 dark:border-neutral-800 table-cell -10 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 px-4">
             Category
           </div>
-          <div className="border-b border-inherit table-cell h-10 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 min-w-full px-4">
+          <div className="border-b border-neutral-200 dark:border-neutral-800 table-cell h-10 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 min-w-full px-4">
             Product
           </div>
-          <div className="border-b border-inherit table-cell"></div>
+          <div className="border-b border-neutral-200 dark:border-neutral-800 table-cell"></div>
         </div>
       </div>
 
@@ -118,16 +118,16 @@ const Workspace = () => (
             key={item.title}
             rel="noopener noreferrer"
             target="_blank"
-            className="table-row dark:border-neutral-800 transition-colors hover:bg-neutral-100/50 dark:hover:bg-neutral-800/50"
+            className="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50"
           >
-            <div className="border-b border-inherit table-cell p-2 align-middle px-4 py-3 font-medium">
+            <div className="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium">
               {item.category}
             </div>
-            <div className="border-b border-inherit table-cell p-2 align-middle px-4 py-3">
+            <div className="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3">
               {item.title}
             </div>
 
-            <div className="border-b border-inherit table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500">
+            <div className="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
