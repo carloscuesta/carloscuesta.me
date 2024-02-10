@@ -2,14 +2,6 @@
 
 exports[`Writings should match Writings component 1`] = `
 <section>
-  <style>
-    
-          .scrollablePosts::-webkit-scrollbar {
-            -webkit-appearance: none;
-            display: none;
-          }
-        
-  </style>
   <div
     className="m-[0_auto] max-w-4xl px-6 sm:px-4 "
   >
@@ -41,7 +33,7 @@ exports[`Writings should match Writings component 1`] = `
       </a>
     </div>
     <div
-      className="scrollablePosts -mx-2 -my-2 flex snap-x snap-mandatory overflow-x-auto"
+      className="hide-scrollbar -mx-2 -my-2 flex snap-x snap-mandatory overflow-x-auto"
       data-testid="scrollablePosts"
       onScroll={[Function]}
     >
