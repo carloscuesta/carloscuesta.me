@@ -56,6 +56,9 @@ const OpengraphImage = (props: Props) => {
           fontFamily: 'Inter',
           padding: '60px',
           justifyContent: 'space-between',
+          backgroundImage:
+            'radial-gradient(at 10px 10px, #d4d4d4, #d4d4d4 5%, white 5%)',
+          backgroundSize: '20px 20px',
         }}
       >
         <div
@@ -149,6 +152,10 @@ const OpengraphImage = (props: Props) => {
         display: 'flex',
         position: 'relative',
         fontFamily: 'Inter',
+        backgroundImage:
+          'radial-gradient(at 10px 10px, #d4d4d4, #d4d4d4 5%, white 5%)',
+        // linear-gradient(#f5f5f5 1px, transparent 1px), linear-gradient(to right, #f5f5f5 1px, white 1px)',
+        backgroundSize: '20px 20px',
       }}
     >
       <img

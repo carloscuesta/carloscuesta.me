@@ -5,6 +5,8 @@ exports[`OpengraphImage should match a blog post opengraph 1`] = `
   style={
     {
       "backgroundColor": "white",
+      "backgroundImage": "radial-gradient(at 10px 10px, #d4d4d4, #d4d4d4 5%, white 5%)",
+      "backgroundSize": "20px 20px",
       "display": "flex",
       "flexDirection": "column",
       "fontFamily": "Inter",
@@ -130,6 +132,8 @@ exports[`OpengraphImage should match a page opengraph 1`] = `
   style={
     {
       "backgroundColor": "white",
+      "backgroundImage": "radial-gradient(at 10px 10px, #d4d4d4, #d4d4d4 5%, white 5%)",
+      "backgroundSize": "20px 20px",
       "display": "flex",
       "fontFamily": "Inter",
       "height": "100%",
