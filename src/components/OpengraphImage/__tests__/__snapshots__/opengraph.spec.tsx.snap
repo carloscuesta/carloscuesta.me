@@ -1,0 +1,234 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpengraphImage getFonts should return an array of fonts 1`] = `
+[
+  {
+    "data": ArrayBuffer [],
+    "name": "Inter",
+    "style": "normal",
+    "weight": 600,
+  },
+  {
+    "data": ArrayBuffer [],
+    "name": "Inter",
+    "style": "normal",
+    "weight": 700,
+  },
+  {
+    "data": ArrayBuffer [],
+    "name": "RobotoMono",
+    "style": "normal",
+    "weight": 300,
+  },
+]
+`;
+
+exports[`OpengraphImage should match a blog post opengraph 1`] = `
+<div
+  style={
+    {
+      "backgroundColor": "white",
+      "backgroundImage": "radial-gradient(at 10px 10px, #d4d4d4, #d4d4d4 5%, white 5%)",
+      "backgroundSize": "20px 20px",
+      "display": "flex",
+      "flexDirection": "column",
+      "fontFamily": "Inter",
+      "height": "100%",
+      "justifyContent": "space-between",
+      "padding": "60px",
+      "position": "relative",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    style={
+      {
+        "display": "flex",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "space-between",
+        "marginBottom": "3rem",
+      }
+    }
+  >
+    <div
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "gap": "1em",
+        }
+      }
+    >
+      <img
+        height="115"
+        src="https://carloscuesta.me/images/carloscuesta.jpg"
+        style={
+          {
+            "borderRadius": "100%",
+          }
+        }
+        width="115"
+      />
+      <div
+        style={
+          {
+            "display": "flex",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <span
+          style={
+            {
+              "fontSize": "3em",
+              "fontWeight": 700,
+              "letterSpacing": "-1px",
+            }
+          }
+        >
+          Carlos Cuesta
+        </span>
+        <span
+          style={
+            {
+              "fontSize": "1.85em",
+              "fontWeight": 300,
+            }
+          }
+        >
+          @crloscuesta
+        </span>
+      </div>
+    </div>
+    <div
+      style={
+        {
+          "display": "flex",
+          "flexDirection": "column",
+          "gap": "1.25rem",
+        }
+      }
+    >
+      <div
+        style={
+          {
+            "fontSize": "4.5rem",
+            "fontWeight": 700,
+            "letterSpacing": "-2px",
+            "lineHeight": "1",
+          }
+        }
+      >
+        Writing ADRs
+      </div>
+      <div
+        style={
+          {
+            "fontSize": "2.5rem",
+          }
+        }
+      >
+        This is a test description
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      {
+        "fontFamily": "RobotoMono",
+        "fontSize": "1.75rem",
+        "fontWeight": 600,
+        "lineHeight": 1,
+      }
+    }
+  >
+    carloscuesta.me/blog
+  </div>
+</div>
+`;
+
+exports[`OpengraphImage should match a page opengraph 1`] = `
+<div
+  style={
+    {
+      "backgroundColor": "white",
+      "backgroundImage": "radial-gradient(at 10px 10px, #d4d4d4, #d4d4d4 5%, white 5%)",
+      "backgroundSize": "20px 20px",
+      "display": "flex",
+      "fontFamily": "Inter",
+      "height": "100%",
+      "position": "relative",
+      "width": "100%",
+    }
+  }
+>
+  <img
+    height="115"
+    src="https://carloscuesta.me/images/carloscuesta.jpg"
+    style={
+      {
+        "borderRadius": "100%",
+        "left": 60,
+        "position": "absolute",
+        "top": 60,
+      }
+    }
+    width="115"
+  />
+  <div
+    style={
+      {
+        "bottom": 140,
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "0.5rem",
+        "left": 60,
+        "position": "absolute",
+        "width": "65%",
+      }
+    }
+  >
+    <span
+      style={
+        {
+          "fontSize": "5.25rem",
+          "fontWeight": 700,
+          "letterSpacing": "-2px",
+          "lineHeight": "1",
+        }
+      }
+    >
+      Blog
+    </span>
+    <span
+      style={
+        {
+          "fontSize": "2.5rem",
+          "fontWeight": 600,
+        }
+      }
+    >
+      This is a test description
+    </span>
+  </div>
+  <div
+    style={
+      {
+        "borderRadius": 100,
+        "bottom": 60,
+        "fontFamily": "RobotoMono",
+        "fontSize": "1.75rem",
+        "fontWeight": 600,
+        "left": 60,
+        "lineHeight": 1,
+        "position": "absolute",
+      }
+    }
+  >
+    carloscuesta.me//
+  </div>
+</div>
+`;

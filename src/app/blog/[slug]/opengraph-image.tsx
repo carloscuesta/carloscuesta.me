@@ -1,62 +1,13 @@
-import { type Font } from 'satori'
 import { ImageResponse } from 'next/og'
 
 import { fetchPost } from 'src/utils/api/blog'
 import { fetchViews } from 'src/utils/api/blog/views'
+import OpengraphImage, { getFonts } from 'src/components/OpengraphImage'
 
 export const dynamic = 'force-static'
 export const revalidate = false
 
 type Params = { params: { slug: string } }
-
-async function getFonts(): Promise<Font[]> {
-  try {
-    const [interLight, interSemiBold, interBold, robotoMono] =
-      await Promise.all([
-        fetch(`https://fonts.cdnfonts.com/s/19795/Inter-Light-BETA.woff`).then(
-          (res) => res.arrayBuffer(),
-        ),
-        fetch(`https://fonts.cdnfonts.com/s/19795/Inter-SemiBold.woff`).then(
-          (res) => res.arrayBuffer(),
-        ),
-        fetch(`https://fonts.cdnfonts.com/s/19795/Inter-Bold.woff`).then(
-          (res) => res.arrayBuffer(),
-        ),
-        fetch(`https://fonts.cdnfonts.com/s/16061/RobotoMono-Light.woff`).then(
-          (res) => res.arrayBuffer(),
-        ),
-      ])
-
-    return [
-      {
-        name: 'Inter',
-        data: interLight,
-        style: 'normal',
-        weight: 300,
-      },
-      {
-        name: 'Inter',
-        data: interSemiBold,
-        style: 'normal',
-        weight: 600,
-      },
-      {
-        name: 'Inter',
-        data: interBold,
-        style: 'normal',
-        weight: 700,
-      },
-      {
-        name: 'RobotoMono',
-        data: robotoMono,
-        style: 'normal',
-        weight: 300,
-      },
-    ]
-  } catch (error) {
-    throw new Error('Failed to fetch fonts.')
-  }
-}
 
 export const generateImageMetadata = async ({ params }: Params) => {
   const post = await fetchPost(params.slug)
@@ -77,80 +28,11 @@ export default async function Image({ params }: Params) {
 
   return new ImageResponse(
     (
-      <div
-        style={{
-          fontSize: '16px',
-          background: '#ffffff',
-          color: '#262626',
-          width: '100%',
-          height: '100%',
-          display: 'flex',
-          fontFamily: 'Inter',
-          flexDirection: 'column',
-          padding: '4em',
-          gap: '1em',
-        }}
-      >
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            gap: '1em',
-            alignItems: 'center',
-            marginBottom: '4rem',
-          }}
-        >
-          <img
-            src="https://carloscuesta.me/images/carloscuesta.jpg"
-            width="90"
-            height="90"
-            style={{ borderRadius: '100%' }}
-          />
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span style={{ fontWeight: 600, fontSize: '1.75em' }}>
-              Carlos Cuesta
-            </span>
-            <span style={{ fontWeight: 300, opacity: 0.7, fontSize: '1.5em' }}>
-              @crloscuesta
-            </span>
-          </div>
-        </div>
-
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '1em',
-            flex: 1,
-          }}
-        >
-          <span
-            style={{ fontWeight: 700, fontSize: '4em', letterSpacing: '-1' }}
-          >
-            {post.title}
-          </span>
-          <div
-            style={{
-              display: 'flex',
-              gap: '0.5em',
-              fontSize: '1.5em',
-              fontFamily: 'RobotoMono',
-            }}
-          >
-            <time dateTime={post.datePublished.value}>
-              {post.datePublished.formatMonthDay},{' '}
-              {new Date(post.datePublished.value).getFullYear()}
-            </time>
-            <span>•</span>
-            <span>{post.readingTime}</span>
-            <span>•</span>
-            <span>{views[post.slug]}</span>
-          </div>
-        </div>
-        <span style={{ fontWeight: 300, opacity: 0.7, fontSize: '1.5em' }}>
-          carloscuesta.me
-        </span>
-      </div>
+      <OpengraphImage
+        title={post.title}
+        description={`${post.datePublished.formatMonthDay} ${new Date(post.datePublished.value).getFullYear()} • ${post.readingTime} • ${views[post.slug]}`}
+        isBlogPost
+      />
     ),
     {
       fonts: await getFonts(),
