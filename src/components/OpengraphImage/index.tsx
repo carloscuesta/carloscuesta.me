@@ -8,15 +8,12 @@ type Props = {
 }
 
 export const getFonts = async (): Promise<Font[]> => {
+  const baseUrl = 'https://carloscuesta.me/fonts/opengraph'
   const [interMedium, interBold, robotoMono] = await Promise.all([
-    fetch(`https://fonts.cdnfonts.com/s/19795/Inter-Medium.woff`).then((res) =>
+    fetch(`${baseUrl}/Inter-Medium.woff`).then((res) => res.arrayBuffer()),
+    fetch(`${baseUrl}/Inter-ExtraBold.woff`).then((res) => res.arrayBuffer()),
+    fetch(`${baseUrl}/RobotoMono-Regular.woff`).then((res) =>
       res.arrayBuffer(),
-    ),
-    fetch(`https://fonts.cdnfonts.com/s/19795/Inter-ExtraBold.woff`).then(
-      (res) => res.arrayBuffer(),
-    ),
-    fetch(`https://fonts.cdnfonts.com/s/16061/RobotoMono-Regular.woff`).then(
-      (res) => res.arrayBuffer(),
     ),
   ])
 
