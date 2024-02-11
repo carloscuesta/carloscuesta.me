@@ -1,5 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`OpengraphImage getFonts should return an array of fonts 1`] = `
+[
+  {
+    "data": ArrayBuffer [],
+    "name": "Inter",
+    "style": "normal",
+    "weight": 600,
+  },
+  {
+    "data": ArrayBuffer [],
+    "name": "Inter",
+    "style": "normal",
+    "weight": 700,
+  },
+  {
+    "data": ArrayBuffer [],
+    "name": "RobotoMono",
+    "style": "normal",
+    "weight": 300,
+  },
+]
+`;
+
 exports[`OpengraphImage should match a blog post opengraph 1`] = `
 <div
   style={
