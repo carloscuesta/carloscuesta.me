@@ -9,11 +9,11 @@ const Photos = () => (
         <Image
           key={picture}
           alt={`Carlos Cuesta's workspace, photo ${index + 1} of ${pictures.length}`}
-          placeholder="blur"
+          placeholder="empty"
           sizes="(max-width: 640px) 100vw, 50vw"
           src={require(`./${picture}`)}
           style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl snap-start"
+          className="rounded-xl snap-start border"
           loading="eager"
           quality="90"
         />
