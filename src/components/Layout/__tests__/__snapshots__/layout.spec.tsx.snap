@@ -87,8 +87,9 @@ exports[`Layout should render the Layout with children 1`] = `
           >
             <button
               aria-label="Open navigation menu"
-              className="fill-black p-2 dark:fill-white"
+              className="fill-black p-2 dark:fill-white focus:outline-none focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 rounded-lg"
               onClick={[Function]}
+              tabIndex={0}
             >
               <svg
                 fill="currentColor"

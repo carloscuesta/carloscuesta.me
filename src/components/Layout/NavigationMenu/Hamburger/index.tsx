@@ -11,6 +11,8 @@ type Props = { isOpen: boolean; setIsOpen: (isOpen: boolean) => void }
 const Hamburger = (props: Props) => {
   const { setIsOpen, isOpen } = props
   const pathname = usePathname()
+  const buttonClassName =
+    'fill-black p-2 dark:fill-white focus:outline-none focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 rounded-lg'
 
   useEffect(() => {
     if (isOpen) {
@@ -35,7 +37,8 @@ const Hamburger = (props: Props) => {
       <button
         aria-label="Open navigation menu"
         onClick={() => setIsOpen(true)}
-        className="fill-black p-2 dark:fill-white"
+        className={buttonClassName}
+        tabIndex={0}
       >
         <OpenIcon />
       </button>
@@ -46,7 +49,8 @@ const Hamburger = (props: Props) => {
             <button
               aria-label="Close navigation menu"
               onClick={() => setIsOpen(false)}
-              className="fill-black p-2 dark:fill-white"
+              className={buttonClassName}
+              tabIndex={0}
             >
               <CloseIcon />
             </button>
