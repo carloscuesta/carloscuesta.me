@@ -58,6 +58,7 @@ const Hamburger = (props: Props) => {
               { href: '/', text: 'Home' },
               { href: '/about', text: 'About' },
               { href: '/blog', text: 'Blog' },
+              { href: '/uses', text: 'Uses' },
               { href: '/photos', text: 'Photos' },
             ]}
           />
