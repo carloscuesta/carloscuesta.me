@@ -13,7 +13,7 @@ const Photos = () => (
           sizes="(max-width: 640px) 100vw, 50vw"
           src={require(`./${picture}`)}
           style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl snap-start border"
+          className="rounded-xl snap-start border dark:border-neutral-700"
           loading="eager"
           quality="90"
         />
