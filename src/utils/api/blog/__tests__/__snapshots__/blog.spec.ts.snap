@@ -108,6 +108,7 @@ exports[`Blog API Client getPostSlugs should match getPostSlugs 1`] = `
   "using-generators-to-improve-developer-productivity",
   "working-remotely-as-a-software-engineer",
   "writing-architecture-decision-records",
+  "writing-rfcs",
 ]
 `;
 
