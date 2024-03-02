@@ -1,7 +1,7 @@
 import ViewsCount from './ViewsCount'
 
 type Props = {
-  datePublished: { formatInWords: string; formatDate: string; value: string }
+  datePublished: { formatDate: string; value: string }
   readingTime: string
   title: string
   slug: string

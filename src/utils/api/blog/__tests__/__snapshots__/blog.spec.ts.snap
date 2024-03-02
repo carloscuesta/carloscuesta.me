@@ -5,7 +5,6 @@ exports[`Blog API Client fetchPost should return a post with the slug terminal-s
   "dateModified": "2016-02-06 15:55",
   "datePublished": {
     "formatDate": "06 February 2016",
-    "formatInWords": "over 4 years ago",
     "formatMonthDay": "Feb 06",
     "value": "2016-02-06 15:55",
   },
@@ -33,7 +32,6 @@ exports[`Blog API Client fetchPosts should return an array of posts sorted by da
   {
     "datePublished": {
       "formatDate": "22 April 2023",
-      "formatInWords": "in almost 3 years",
       "formatMonthDay": "Apr 22",
       "value": "2023-04-22 22:00",
     },
@@ -54,7 +52,6 @@ exports[`Blog API Client fetchPosts should return an array of posts sorted by da
   {
     "datePublished": {
       "formatDate": "29 January 2023",
-      "formatInWords": "in over 2 years",
       "formatMonthDay": "Jan 29",
       "value": "2023-01-29 22:00",
     },
@@ -116,7 +113,6 @@ exports[`Blog API Client mutators transformPost should match the mutated post 1`
   "dateModified": "2016-02-06 15:55",
   "datePublished": {
     "formatDate": "06 February 2016",
-    "formatInWords": "over 4 years ago",
     "formatMonthDay": "Feb 06",
     "value": "2016-02-06 15:55",
   },

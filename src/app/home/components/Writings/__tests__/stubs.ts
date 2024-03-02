@@ -3,7 +3,6 @@ export const props = {
     {
       dateModified: '2019-12-15 10:00',
       datePublished: {
-        formatInWords: 'A year ago',
         formatDate: '15/12/2019 10:00',
         value: '2019-12-15 10:00',
         formatMonthDay: '15 Dec',
@@ -27,7 +26,6 @@ export const props = {
     {
       dateModified: '2019-12-17 10:00',
       datePublished: {
-        formatInWords: 'A year ago',
         formatDate: '17/12/2019 10:00',
         value: '2019-12-17 10:00',
         formatMonthDay: '17 Dec',

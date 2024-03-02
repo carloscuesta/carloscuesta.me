@@ -1,4 +1,4 @@
-import { format, formatDistanceToNow } from 'date-fns'
+import { format } from 'date-fns'
 import { getPlaiceholder } from 'plaiceholder'
 import readingTime from 'reading-time'
 import type { VFile } from 'vfile'
@@ -6,7 +6,6 @@ import type { VFile } from 'vfile'
 export type Post = {
   dateModified: string
   datePublished: {
-    formatInWords: string
     formatDate: string
     formatMonthDay: string
     value: string
@@ -46,10 +45,6 @@ export const transformPost = async (payload: Payload): Promise<Post> => {
   return {
     dateModified: payload.data.dateModified,
     datePublished: {
-      formatInWords: formatDistanceToNow(
-        new Date(payload.data.datePublished + ' GMT+2'),
-        { addSuffix: true },
-      ),
       formatDate: format(new Date(payload.data.datePublished), 'dd MMMM y'),
       formatMonthDay: format(new Date(payload.data.datePublished), 'MMM dd'),
       value: payload.data.datePublished,

@@ -2,7 +2,6 @@ export const props = {
   post: {
     dateModified: '2019-12-15 10:00',
     datePublished: {
-      formatInWords: 'A year ago',
       formatDate: '15/12/2019 10:00',
       value: '2019-12-15 10:00',
       formatMonthDay: '15 Dec',
