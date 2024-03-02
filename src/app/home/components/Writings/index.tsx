@@ -47,15 +47,9 @@ const Writings = (props: Props) => {
         <SectionTitle
           subTitle="The latests posts of my blog."
           title="Writings"
-          viewAllLink="/blog"
         />
 
-        <div
-          data-testid="scrollablePosts"
-          className="hide-scrollbar -mx-2 -my-2 flex snap-x snap-mandatory overflow-x-auto"
-          onScroll={onScroll}
-          ref={scrollablePostsRef}
-        >
+        <div className="grid gap-3">
           {props.posts.map((post, index) => (
             <BlogPost
               isImageLoadedWithPriority={[0, 1, 2].includes(index)}
@@ -64,15 +58,6 @@ const Writings = (props: Props) => {
             />
           ))}
         </div>
-
-        <ScrollButtons
-          scrollTo={scrollTo}
-          scrollPosition={scrollPosition}
-          scrollPositionMaxWidth={
-            Number(scrollablePostsRef?.current?.scrollWidth) -
-            Number(scrollablePostsRef?.current?.clientWidth)
-          }
-        />
       </Wrapper>
     </section>
   )
