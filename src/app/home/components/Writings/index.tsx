@@ -13,7 +13,7 @@ const Writings = (props: Props) => {
       <Wrapper>
         <SectionTitle title="Writings" href="/blog" viewAll />
 
-        <div className="grid gap-3">
+        <ul className="grid gap-3 sm:gap-1">
           {props.posts.map((post, index) => (
             <BlogPost
               isImageLoadedWithPriority={[0, 1, 2].includes(index)}
@@ -21,7 +21,7 @@ const Writings = (props: Props) => {
               post={post}
             />
           ))}
-        </div>
+        </ul>
       </Wrapper>
     </section>
   )
