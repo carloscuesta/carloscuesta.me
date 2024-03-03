@@ -1,4 +1,3 @@
-import { type Font } from 'satori'
 import { ImageResponse } from 'next/og'
 import OpengraphImage, { getFonts } from 'src/components/OpengraphImage'
 
