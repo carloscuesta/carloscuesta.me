@@ -25,7 +25,7 @@ const getData = async () => {
   ])
 
   return {
-    posts: posts.slice(0, 6),
+    posts: posts.slice(0, 8),
     repositories: repositories
       .sort((x, y) => y.stars.value - x.stars.value)
       .slice(0, 6),

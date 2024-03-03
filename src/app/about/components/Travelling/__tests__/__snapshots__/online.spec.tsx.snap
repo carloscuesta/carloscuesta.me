@@ -2,19 +2,11 @@
 
 exports[`Travelling should render the component 1`] = `
 <section>
-  <div
-    className="my-6 flex items-end justify-between"
+  <h2
+    className="my-6 block text-lg font-bold"
   >
-    <div
-      className="space-y-2"
-    >
-      <h2
-        className="text-lg font-bold"
-      >
-        Travelling
-      </h2>
-    </div>
-  </div>
+    Travelling
+  </h2>
   <div
     className="mb-7 flex flex-col items-start justify-between sm:flex-row sm:space-x-8"
   >

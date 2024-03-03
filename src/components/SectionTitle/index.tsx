@@ -1,29 +1,32 @@
 import Link from 'next/link'
 
 type Props = {
-  subTitle?: string
   title: string
-  viewAllLink?: string
+  href?: string
+  viewAll?: boolean
 }
 
-const SectionTitle = (props: Props) => (
-  <div className="my-6 flex items-end justify-between">
-    <div className={props.subTitle ? '' : 'space-y-2'}>
-      <h2 className="text-lg font-bold">{props.title}</h2>
-      {props.subTitle && (
-        <h3 className="text-md opacity-70">{props.subTitle}</h3>
-      )}
-    </div>
-
-    {props.viewAllLink && (
+const SectionTitle = (props: Props) => {
+  if (props.href) {
+    return (
       <Link
-        className="text-sm opacity-70 transition-opacity hover:opacity-100"
-        href={props.viewAllLink}
+        className={`${props.viewAll ? 'flex' : 'inline-flex'} items-center gap-3 my-6 justify-between group cursor-pointer`}
+        href={props.href}
       >
-        View all
+        <h2 className="text-lg font-bold underline-offset-4 group-hover:underline">
+          {props.title}
+        </h2>
+
+        {props.viewAll && (
+          <span className="px-2 py-[3px] border text-center rounded-lg cursor-pointer text-xs bg-white dark:bg-neutral-900 dark:border-neutral-700">
+            View all →
+          </span>
+        )}
       </Link>
-    )}
-  </div>
-)
+    )
+  }
+
+  return <h2 className="my-6 block text-lg font-bold">{props.title}</h2>
+}
 
 export default SectionTitle

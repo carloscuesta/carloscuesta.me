@@ -1,68 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionTitle with title and subtitle should match SectionTitle component 1`] = `
-<div
-  className="my-6 flex items-end justify-between"
+<h2
+  className="my-6 block text-lg font-bold"
 >
-  <div
-    className=""
-  >
-    <h2
-      className="text-lg font-bold"
-    >
-      Title
-    </h2>
-    <h3
-      className="text-md opacity-70"
-    >
-      Subtitle
-    </h3>
-  </div>
-</div>
+  Title
+</h2>
 `;
 
 exports[`SectionTitle with title only should match SectionTitle component 1`] = `
-<div
-  className="my-6 flex items-end justify-between"
+<h2
+  className="my-6 block text-lg font-bold"
 >
-  <div
-    className="space-y-2"
-  >
-    <h2
-      className="text-lg font-bold"
-    >
-      Test
-    </h2>
-  </div>
-</div>
+  Test
+</h2>
 `;
 
 exports[`SectionTitle with title, subtitle and viewAllLink should match SectionTitle component 1`] = `
-<div
-  className="my-6 flex items-end justify-between"
+<h2
+  className="my-6 block text-lg font-bold"
 >
-  <div
-    className=""
-  >
-    <h2
-      className="text-lg font-bold"
-    >
-      Title
-    </h2>
-    <h3
-      className="text-md opacity-70"
-    >
-      Subtitle
-    </h3>
-  </div>
-  <a
-    className="text-sm opacity-70 transition-opacity hover:opacity-100"
-    href="/test"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-    onTouchStart={[Function]}
-  >
-    View all
-  </a>
-</div>
+  Title
+</h2>
 `;

@@ -1,6 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link'
+import { Suspense } from 'react'
 
+import ViewsCount from 'src/components/ViewsCount'
 import { type PostPreview } from 'src/utils/api/blog/mutators'
 
 type Props = {
@@ -9,32 +10,33 @@ type Props = {
 }
 
 const BlogPost = (props: Props) => (
-  <div className="w-full flex-none snap-start px-2 py-2 sm:w-1/2 md:w-1/3">
+  <li className="-mx-1.5">
     <Link
       href={`/blog/${props.post.slug}`}
       title={props.post.title}
-      className="h-full rounded-lg outline-none ring-offset-4 focus-visible:ring-2 sm:flex"
+      className="block p-1.5 h-full w-full rounded-md transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900 outline-none focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 text-sm"
+      tabIndex={0}
     >
-      <article>
-        <Image
-          alt=""
-          blurDataURL={props.post.images.preview.lqpi}
-          className="mb-3 w-full rounded-lg"
-          height={150}
-          placeholder="blur"
-          priority={props.isImageLoadedWithPriority}
-          src={props.post.images.preview.src}
-          width={300}
-        />
+      <article className="flex flex-col-reverse sm:flex-row sm:items-baseline sm:gap-3">
+        <time
+          className="opacity-60 sm:w-24"
+          dateTime={props.post.datePublished.value}
+          aria-label={`Written ${props.post.datePublished.formatDate}`}
+        >
+          {`${props.post.datePublished.formatMonthDay}, ${new Date(props.post.datePublished.value).getFullYear()}`}
+        </time>
 
-        <div className="grid gap-2">
-          <header className="font-semibold">{props.post.title}</header>
-
-          <p className="text-sm opacity-70">{props.post.excerpt}</p>
+        <div className="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center">
+          <header className="font-medium text-sm">{props.post.title}</header>
+          <p className="font-mono opacity-60">
+            <Suspense>
+              <ViewsCount slug={props.post.slug} views={props.post.views} />
+            </Suspense>
+          </p>
         </div>
       </article>
     </Link>
-  </div>
+  </li>
 )
 
 export default BlogPost
