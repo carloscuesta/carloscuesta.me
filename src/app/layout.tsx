@@ -2,7 +2,6 @@ import { Analytics } from '@vercel/analytics/react'
 import localFont from 'next/font/local'
 
 import 'src/utils/theme/theme.css'
-import { trackingCode } from 'src/utils/analytics'
 import Layout from 'src/components/Layout'
 import Providers from './providers'
 
@@ -64,8 +63,6 @@ const RootLayout = ({
         key="msapplication-TileImage"
         name="msapplication-TileImage"
       />
-      <link rel="preconnect" href="https://www.google-analytics.com" />
-      <link rel="dns-prefetch" href="https://www.google-analytics.com" />
       <link
         rel="apple-touch-icon"
         sizes="114x114"
@@ -144,7 +141,6 @@ const RootLayout = ({
         <Layout>{children}</Layout>
       </Providers>
       <Analytics />
-      <script dangerouslySetInnerHTML={{ __html: trackingCode }} />
     </body>
   </html>
 )
