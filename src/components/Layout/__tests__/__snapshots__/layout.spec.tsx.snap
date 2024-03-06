@@ -46,11 +46,11 @@ exports[`Layout should render the Layout with children 1`] = `
           className="flex flex-row-reverse items-center gap-3 sm:flex-row sm:gap-4"
         >
           <ul
-            className="hidden grid-flow-col gap-6 text-sm font-medium sm:grid"
+            className="hidden grid-flow-col gap-6 text-sm font-medium sm:grid group"
           >
             <li>
               <a
-                className="hover:opacity-60 transition-opacity"
+                className="group-hover:opacity-60 hover:!opacity-100 transition-opacity"
                 href="/about"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
@@ -61,7 +61,7 @@ exports[`Layout should render the Layout with children 1`] = `
             </li>
             <li>
               <a
-                className="hover:opacity-60 transition-opacity"
+                className="group-hover:opacity-60 hover:!opacity-100 transition-opacity"
                 href="/blog"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
@@ -72,7 +72,7 @@ exports[`Layout should render the Layout with children 1`] = `
             </li>
             <li>
               <a
-                className="hover:opacity-60 transition-opacity"
+                className="group-hover:opacity-60 hover:!opacity-100 transition-opacity"
                 href="/photos"
                 onClick={[Function]}
                 onMouseEnter={[Function]}

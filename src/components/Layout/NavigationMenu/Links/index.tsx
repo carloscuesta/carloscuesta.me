@@ -16,7 +16,7 @@ const Links = (props: Props) => {
       className={
         props.isHamburguer
           ? 'margin-0 flex h-full flex-1 flex-col items-center justify-center space-y-5 text-2xl'
-          : 'hidden grid-flow-col gap-6 text-sm font-medium sm:grid'
+          : 'hidden grid-flow-col gap-6 text-sm font-medium sm:grid group'
       }
     >
       {props.links.map((link) => (
