@@ -9836,17 +9836,17 @@ shebang-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
-shikiji-core@0.9.18:
-  version "0.9.18"
-  resolved "https://registry.yarnpkg.com/shikiji-core/-/shikiji-core-0.9.18.tgz#f8f4ef2885d23c7555ff2e07cc9e2e1a49d81f7a"
-  integrity sha512-PKTXptbrp/WEDjNHV8OFG9KkfhmR0pSd161kzlDDlgQ0HXAnqJYNDSjqsy1CYZMx5bSvLMy42yJj9oFTqmkNTQ==
+shikiji-core@0.10.2:
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/shikiji-core/-/shikiji-core-0.10.2.tgz#19c5cba664c12a80e726bd627a0e08313a67bd5f"
+  integrity sha512-9Of8HMlF96usXJHmCL3Gd0Fcf0EcyJUF9m8EoAKKd98mHXi0La2AZl1h6PegSFGtiYcBDK/fLuKbDa1l16r1fA==
 
-shikiji@^0.9.0:
-  version "0.9.18"
-  resolved "https://registry.yarnpkg.com/shikiji/-/shikiji-0.9.18.tgz#07288497c40470c0c9450685590e6d735ec8b488"
-  integrity sha512-/tFMIdV7UQklzN13VjF0/XFzmii6C606Jc878hNezvB8ZR8FG8FW9j0I4J9EJre0owlnPntgLVPpHqy27Gs+DQ==
+shikiji@^0.10.2:
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/shikiji/-/shikiji-0.10.2.tgz#178391422225c50c0499f4d841baaa9568a79769"
+  integrity sha512-wtZg3T0vtYV2PnqusWQs3mDaJBdCPWxFDrBM/SE5LfrX92gjUvfEMlc+vJnoKY6Z/S44OWaCRzNIsdBRWcTAiw==
   dependencies:
-    shikiji-core "0.9.18"
+    shikiji-core "0.10.2"
 
 side-channel@^1.0.4:
   version "1.0.4"
