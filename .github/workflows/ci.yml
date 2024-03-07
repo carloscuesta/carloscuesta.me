@@ -14,13 +14,14 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version-file: '.node-version'
+    - uses: pnpm/action-setup@v3
     - name: Install dependencies 📦
-      run: yarn
+      run: pnpm install
     - name: Lint 🎨
-      run: yarn run test:lint
+      run: pnpm run test:lint
     - name: TypeScript check 🏷
-      run: yarn run tscheck
+      run: pnpm run tscheck
     - name: Tests ✅
-      run: yarn run test:unit
+      run: pnpm run test:unit
     - name: Upload Coverage 📈
-      run: yarn run test:coverage
+      run: pnpm run test:coverage
