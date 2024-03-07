@@ -17,7 +17,7 @@
     "test:coverage": "codecov",
     "test:lighthouse": "yarn run build && lhci autorun",
     "postbuild": "rm -rf public/mockServiceWorker.js && next-sitemap",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
