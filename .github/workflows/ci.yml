@@ -11,16 +11,18 @@ jobs:
     - uses: actions/checkout@v4
       with:
         ref: ${{ github.event.pull_request.head.sha }}
+    - uses: pnpm/action-setup@v3
     - uses: actions/setup-node@v4
       with:
+        cache: "pnpm"
         node-version-file: '.node-version'
     - name: Install dependencies 📦
-      run: yarn
+      run: pnpm install
     - name: Lint 🎨
-      run: yarn run test:lint
+      run: pnpm run test:lint
     - name: TypeScript check 🏷
-      run: yarn run tscheck
+      run: pnpm run tscheck
     - name: Tests ✅
-      run: yarn run test:unit
+      run: pnpm run test:unit
     - name: Upload Coverage 📈
-      run: yarn run test:coverage
+      run: pnpm run test:coverage

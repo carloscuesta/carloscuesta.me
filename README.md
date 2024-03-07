@@ -10,5 +10,5 @@
 Run the following command on a terminal to clone the project, install the dependencies and start the development server.
 
 ```bash
-git clone https://github.com/carloscuesta/carloscuesta.me.git && cd carloscuesta.me && yarn install && yarn run dev
+git clone https://github.com/carloscuesta/carloscuesta.me.git && cd carloscuesta.me && pnpm install && pnpm run dev
 ```
