@@ -49,7 +49,7 @@ dependencies:
     version: 14.1.0(@babel/core@7.17.10)(react-dom@18.2.0)(react@18.2.0)
   next-pwa:
     specifier: ^5.6.0
-    version: 5.6.0(@babel/core@7.17.10)(next@14.1.0)(webpack@5.90.3)
+    version: 5.6.0(@babel/core@7.17.10)(next@14.1.0)(uglify-js@3.17.4)(webpack@5.90.3)
   next-seo:
     specifier: ^6.1.0
     version: 6.1.0(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
@@ -229,6 +229,9 @@ devDependencies:
   typescript:
     specifier: 5.3.3
     version: 5.3.3
+  uglify-js:
+    specifier: 3.17.4
+    version: 3.17.4
   vfile:
     specifier: 6.0.1
     version: 6.0.1
@@ -3119,7 +3122,7 @@ packages:
       loader-utils: 2.0.4
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.90.3
+      webpack: 5.90.3(uglify-js@3.17.4)
     dev: false
 
   /babel-plugin-dynamic-import-node@2.3.3:
@@ -3505,7 +3508,7 @@ packages:
       webpack: '>=4.0.0 <6.0.0'
     dependencies:
       del: 4.1.1
-      webpack: 5.90.3
+      webpack: 5.90.3(uglify-js@3.17.4)
     dev: false
 
   /cli-cursor@2.1.0:
@@ -7696,7 +7699,7 @@ packages:
     engines: {node: '>= 0.4.0'}
     dev: true
 
-  /next-pwa@5.6.0(@babel/core@7.17.10)(next@14.1.0)(webpack@5.90.3):
+  /next-pwa@5.6.0(@babel/core@7.17.10)(next@14.1.0)(uglify-js@3.17.4)(webpack@5.90.3):
     resolution: {integrity: sha512-XV8g8C6B7UmViXU8askMEYhWwQ4qc/XqJGnexbLV68hzKaGHZDMtHsm2TNxFcbR7+ypVuth/wwpiIlMwpRJJ5A==}
     peerDependencies:
       next: '>=9.0.0'
@@ -7705,7 +7708,7 @@ packages:
       clean-webpack-plugin: 4.0.0(webpack@5.90.3)
       globby: 11.1.0
       next: 14.1.0(@babel/core@7.17.10)(react-dom@18.2.0)(react@18.2.0)
-      terser-webpack-plugin: 5.3.3(webpack@5.90.3)
+      terser-webpack-plugin: 5.3.3(uglify-js@3.17.4)(webpack@5.90.3)
       workbox-webpack-plugin: 6.5.4(webpack@5.90.3)
       workbox-window: 6.5.4
     transitivePeerDependencies:
@@ -9964,7 +9967,7 @@ packages:
       unique-string: 2.0.0
     dev: false
 
-  /terser-webpack-plugin@5.3.10(webpack@5.90.3):
+  /terser-webpack-plugin@5.3.10(uglify-js@3.17.4)(webpack@5.90.3):
     resolution: {integrity: sha512-BKFPWlPDndPs+NGGCr1U59t0XScL5317Y0UReNrHaw9/FwhPENlq6bfgs+4yPfyP51vqC1bQ4rp1EfXW5ZSH9w==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -9985,10 +9988,11 @@ packages:
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
       terser: 5.29.1
-      webpack: 5.90.3
+      uglify-js: 3.17.4
+      webpack: 5.90.3(uglify-js@3.17.4)
     dev: false
 
-  /terser-webpack-plugin@5.3.3(webpack@5.90.3):
+  /terser-webpack-plugin@5.3.3(uglify-js@3.17.4)(webpack@5.90.3):
     resolution: {integrity: sha512-Fx60G5HNYknNTNQnzQ1VePRuu89ZVYWfjRAeT5rITuCY/1b08s49e5kSQwHDirKZWuoKOBRFS98EUUoZ9kLEwQ==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -10009,7 +10013,8 @@ packages:
       schema-utils: 3.1.1
       serialize-javascript: 6.0.0
       terser: 5.14.2
-      webpack: 5.90.3
+      uglify-js: 3.17.4
+      webpack: 5.90.3(uglify-js@3.17.4)
     dev: false
 
   /terser@5.14.2:
@@ -10293,7 +10298,6 @@ packages:
     resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
     engines: {node: '>=0.8.0'}
     hasBin: true
-    dev: false
 
   /unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
@@ -10573,7 +10577,7 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: false
 
-  /webpack@5.90.3:
+  /webpack@5.90.3(uglify-js@3.17.4):
     resolution: {integrity: sha512-h6uDYlWCctQRuXBs1oYpVe6sFcWedl0dpcVaTf/YF67J9bKvwJajFulMVSYKHrksMB3I/pIagRzDxwxkebuzKA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
@@ -10604,7 +10608,7 @@ packages:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(webpack@5.90.3)
+      terser-webpack-plugin: 5.3.10(uglify-js@3.17.4)(webpack@5.90.3)
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
@@ -10857,7 +10861,7 @@ packages:
       fast-json-stable-stringify: 2.1.0
       pretty-bytes: 5.4.1
       upath: 1.2.0
-      webpack: 5.90.3
+      webpack: 5.90.3(uglify-js@3.17.4)
       webpack-sources: 1.4.3
       workbox-build: 6.5.4
     transitivePeerDependencies:
