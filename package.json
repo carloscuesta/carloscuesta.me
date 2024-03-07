@@ -221,9 +221,6 @@
       "prettier --write"
     ]
   },
-  "volta": {
-    "node": "16.20.0"
-  },
   "msw": {
     "workerDirectory": "public"
   },
