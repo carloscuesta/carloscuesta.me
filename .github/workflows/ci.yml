@@ -11,10 +11,11 @@ jobs:
     - uses: actions/checkout@v4
       with:
         ref: ${{ github.event.pull_request.head.sha }}
+    - uses: pnpm/action-setup@v3
     - uses: actions/setup-node@v4
       with:
+        cache: "pnpm"
         node-version-file: '.node-version'
-    - uses: pnpm/action-setup@v3
     - name: Install dependencies 📦
       run: pnpm install
     - name: Lint 🎨
