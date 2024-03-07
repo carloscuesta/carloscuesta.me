@@ -125,9 +125,6 @@ dependencies:
   unified:
     specifier: 11.0.4
     version: 11.0.4
-  yarn:
-    specifier: 1.22.21
-    version: 1.22.21
 
 devDependencies:
   '@lhci/cli':
@@ -11034,13 +11031,6 @@ packages:
       y18n: 5.0.5
       yargs-parser: 21.1.1
     dev: true
-
-  /yarn@1.22.21:
-    resolution: {integrity: sha512-ynXaJsADJ9JiZ84zU25XkPGOvVMmZ5b7tmTSpKURYwgELdjucAOydqIOrOfTxVYcNXe91xvLZwcRh68SR3liCg==}
-    engines: {node: '>=4.0.0'}
-    hasBin: true
-    requiresBuild: true
-    dev: false
 
   /yauzl@2.10.0:
     resolution: {integrity: sha512-p4a9I6X6nu6IhoGmBqAcbJy1mlC4j27vEPZX9F4L4/vZT3Lyq1VkFHw/V/PUcB9Buo+DG3iHkT0x3Qya58zc3g==}

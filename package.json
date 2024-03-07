@@ -9,13 +9,13 @@
     "build": "next build",
     "dev": "next",
     "start": "next start",
-    "test": "yarn run test:lint && yarn run tscheck && yarn run test:unit && yarn run test:lighthouse",
-    "tscheck": "yarn tsc --noEmit",
+    "test": "pnpm run test:lint && pnpm run tscheck && pnpm run test:unit && pnpm run test:lighthouse",
+    "tscheck": "pnpm tsc --noEmit",
     "test:lint": "eslint src && prettier --check src",
     "test:unit": "jest --coverage",
     "test:watch": "NODE_ENV=test TZ=UTC jest --watch",
     "test:coverage": "codecov",
-    "test:lighthouse": "yarn run build && lhci autorun",
+    "test:lighthouse": "pnpm run build && lhci autorun",
     "postbuild": "rm -rf public/mockServiceWorker.js && next-sitemap",
     "prepare": "husky"
   },
@@ -69,8 +69,7 @@
     "sprinkles-vscode": "2.7.0",
     "swr": "2.2.4",
     "tailwind-scrollbar-hide": "1.1.7",
-    "unified": "11.0.4",
-    "yarn": "1.22.21"
+    "unified": "11.0.4"
   },
   "devDependencies": {
     "@lhci/cli": "^0.13.0",
