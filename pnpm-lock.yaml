@@ -5322,7 +5322,7 @@ packages:
     engines: {node: '>=6.0'}
     dependencies:
       js-yaml: 3.14.1
-      kind-of: 6.0.2
+      kind-of: 6.0.3
       section-matter: 1.0.0
       strip-bom-string: 1.0.0
     dev: false
@@ -6828,8 +6828,8 @@ packages:
       object.values: 1.1.7
     dev: true
 
-  /kind-of@6.0.2:
-    resolution: {integrity: sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==}
+  /kind-of@6.0.3:
+    resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
     dev: false
 
@@ -9298,7 +9298,7 @@ packages:
     engines: {node: '>=4'}
     dependencies:
       extend-shallow: 2.0.1
-      kind-of: 6.0.2
+      kind-of: 6.0.3
     dev: false
 
   /semver@5.7.2:
