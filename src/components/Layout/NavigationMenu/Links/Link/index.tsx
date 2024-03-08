@@ -10,7 +10,7 @@ type Props = {
 const Link = (props: Props) => {
   const className = `${
     props.isIndeterminate
-      ? 'group-hover:opacity-60 hover:!opacity-100'
+      ? 'hover:opacity-60'
       : props.isActive
         ? 'opacity-100'
         : 'opacity-50 hover:opacity-100'
