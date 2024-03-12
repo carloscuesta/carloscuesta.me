@@ -1,7 +1,25 @@
-import Image from 'next/image'
 import Link from 'next/link'
+import localFont from 'next/font/local'
 
-import aboutMePicture from './aboutme.png'
+import Polaroid from './Polaroid'
+
+const font = localFont({
+  src: [
+    {
+      path: '../../../../../public/fonts/gloria-hallelujah.woff2',
+      style: 'normal',
+    },
+  ],
+  weight: '400',
+  display: 'swap',
+  declarations: [
+    {
+      prop: 'unicode-range',
+      value:
+        'U+00??, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da, U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215, U+feff, U+fffd',
+    },
+  ],
+})
 
 const WhoAmI = () => (
   <section className="space-y-5">
@@ -54,12 +72,25 @@ const WhoAmI = () => (
       with my family.
     </p>
 
-    <Image
-      src={aboutMePicture}
-      alt="Carlos Cuesta About me"
-      className="pt-5"
-      priority
-    />
+    <div className={`flex gap-0 lg:gap-6 lg:flex-wrap ${font.className}`}>
+      <Polaroid
+        label="Wife & I ❣️"
+        src={require('./family.jpg')}
+        rotation="-3"
+      />
+      <Polaroid
+        label="Miami '23 🏖️"
+        src={require('./miami.jpg')}
+        rotation="1"
+      />
+      <div className="hidden sm:block">
+        <Polaroid
+          label="Longboard 🛹"
+          src={require('./longboard.jpg')}
+          rotation="-2"
+        />
+      </div>
+    </div>
   </section>
 )
 
