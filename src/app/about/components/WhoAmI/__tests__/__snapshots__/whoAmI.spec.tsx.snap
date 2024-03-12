@@ -69,13 +69,17 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
           data-nimg="1"
           decoding="async"
           height={240}
-          loading="lazy"
+          loading="eager"
           onError={[Function]}
           onLoad={[Function]}
           src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
           srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
           style={
             {
+              "backgroundImage": "url("data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==")",
+              "backgroundPosition": "50% 50%",
+              "backgroundRepeat": "no-repeat",
+              "backgroundSize": "cover",
               "color": "transparent",
             }
           }
@@ -102,13 +106,17 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
           data-nimg="1"
           decoding="async"
           height={240}
-          loading="lazy"
+          loading="eager"
           onError={[Function]}
           onLoad={[Function]}
           src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
           srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
           style={
             {
+              "backgroundImage": "url("data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==")",
+              "backgroundPosition": "50% 50%",
+              "backgroundRepeat": "no-repeat",
+              "backgroundSize": "cover",
               "color": "transparent",
             }
           }
@@ -138,13 +146,17 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
             data-nimg="1"
             decoding="async"
             height={240}
-            loading="lazy"
+            loading="eager"
             onError={[Function]}
             onLoad={[Function]}
             src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
             srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
             style={
               {
+                "backgroundImage": "url("data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==")",
+                "backgroundPosition": "50% 50%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
                 "color": "transparent",
               }
             }
