@@ -55,23 +55,124 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
      
     with my family.
   </p>
-  <img
-    alt="Carlos Cuesta About me"
-    className="pt-5"
-    data-nimg="1"
-    decoding="async"
-    fetchpriority="high"
-    height={40}
-    onError={[Function]}
-    onLoad={[Function]}
-    src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
-    srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-    style={
-      {
-        "color": "transparent",
-      }
-    }
-    width={40}
-  />
+  <div
+    className="py-4 flex gap-0 lg:gap-6 lg:flex-wrap className"
+  >
+    <div
+      className="select-none p-4 rounded-lg bg-gradient-to-b from-white to-neutral-100 shadow-2xl dark:from-neutral-200 dark:to-neutral-200 text-center -rotate-3 hover:scale-105 hover:rotate-0 transition-transform ease-out"
+    >
+      <div
+        className="relative h-fit w-fit overflow-hidden rounded"
+      >
+        <img
+          alt="Wife & I ❣️"
+          data-nimg="1"
+          decoding="async"
+          height={240}
+          loading="eager"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+          style={
+            {
+              "backgroundImage": "url("data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==")",
+              "backgroundPosition": "50% 50%",
+              "backgroundRepeat": "no-repeat",
+              "backgroundSize": "cover",
+              "color": "transparent",
+            }
+          }
+          width={240}
+        />
+        <div
+          className="absolute inset-0 shadow-[inset_0_0_4px_rgba(0,0,0,.3)]"
+        />
+      </div>
+      <p
+        className="mt-3 text-center text-neutral-600 dark:text-neutral-800 text-md"
+      >
+        Wife & I ❣️
+      </p>
+    </div>
+    <div
+      className="select-none p-4 rounded-lg bg-gradient-to-b from-white to-neutral-100 shadow-2xl dark:from-neutral-200 dark:to-neutral-200 text-center rotate-1 hover:scale-105 hover:rotate-0 transition-transform ease-out"
+    >
+      <div
+        className="relative h-fit w-fit overflow-hidden rounded"
+      >
+        <img
+          alt="Miami '23 🏖️"
+          data-nimg="1"
+          decoding="async"
+          height={240}
+          loading="eager"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+          style={
+            {
+              "backgroundImage": "url("data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==")",
+              "backgroundPosition": "50% 50%",
+              "backgroundRepeat": "no-repeat",
+              "backgroundSize": "cover",
+              "color": "transparent",
+            }
+          }
+          width={240}
+        />
+        <div
+          className="absolute inset-0 shadow-[inset_0_0_4px_rgba(0,0,0,.3)]"
+        />
+      </div>
+      <p
+        className="mt-3 text-center text-neutral-600 dark:text-neutral-800 text-md"
+      >
+        Miami '23 🏖️
+      </p>
+    </div>
+    <div
+      className="hidden sm:block"
+    >
+      <div
+        className="select-none p-4 rounded-lg bg-gradient-to-b from-white to-neutral-100 shadow-2xl dark:from-neutral-200 dark:to-neutral-200 text-center -rotate-2 hover:scale-105 hover:rotate-0 transition-transform ease-out"
+      >
+        <div
+          className="relative h-fit w-fit overflow-hidden rounded"
+        >
+          <img
+            alt="Longboard 🛹"
+            data-nimg="1"
+            decoding="async"
+            height={240}
+            loading="eager"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+            style={
+              {
+                "backgroundImage": "url("data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==")",
+                "backgroundPosition": "50% 50%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
+                "color": "transparent",
+              }
+            }
+            width={240}
+          />
+          <div
+            className="absolute inset-0 shadow-[inset_0_0_4px_rgba(0,0,0,.3)]"
+          />
+        </div>
+        <p
+          className="mt-3 text-center text-neutral-600 dark:text-neutral-800 text-md"
+        >
+          Longboard 🛹
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 `;
