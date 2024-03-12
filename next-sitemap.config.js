@@ -3,5 +3,5 @@ module.exports = {
   siteUrl: 'https://carloscuesta.me',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
-  exclude: ['/opengraph-image'],
+  exclude: ['*/opengraph-image'],
 }
