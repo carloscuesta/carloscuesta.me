@@ -75,18 +75,18 @@ const WhoAmI = () => (
     <div className={`flex gap-0 lg:gap-6 lg:flex-wrap ${font.className}`}>
       <Polaroid
         label="Wife & I ❣️"
-        src={require('./family.jpg')}
+        src={require('./images/family.jpg')}
         rotation="-3"
       />
       <Polaroid
         label="Miami '23 🏖️"
-        src={require('./miami.jpg')}
+        src={require('./images/miami.jpg')}
         rotation="1"
       />
       <div className="hidden sm:block">
         <Polaroid
           label="Longboard 🛹"
-          src={require('./longboard.jpg')}
+          src={require('./images/longboard.jpg')}
           rotation="-2"
         />
       </div>
