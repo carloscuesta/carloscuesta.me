@@ -59,7 +59,7 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
     className="py-4 flex gap-0 lg:gap-6 lg:flex-wrap className"
   >
     <div
-      className="select-none p-4 rounded-lg bg-gradient-to-b from-white to-gray-100 shadow-2xl dark:from-gray-200 dark:to-gray-200 text-center -rotate-3 hover:scale-105 hover:rotate-0 transition-transform ease-out"
+      className="select-none p-4 rounded-lg bg-gradient-to-b from-white to-neutral-100 shadow-2xl dark:from-neutral-200 dark:to-neutral-200 text-center -rotate-3 hover:scale-105 hover:rotate-0 transition-transform ease-out"
     >
       <div
         className="relative h-fit w-fit overflow-hidden rounded"
@@ -90,13 +90,13 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
         />
       </div>
       <p
-        className="mt-3 text-center text-gray-600 dark:text-gray-800 md:text-lg xl:text-xl"
+        className="mt-3 text-center text-neutral-600 dark:text-neutral-800 text-md"
       >
         Wife & I ❣️
       </p>
     </div>
     <div
-      className="select-none p-4 rounded-lg bg-gradient-to-b from-white to-gray-100 shadow-2xl dark:from-gray-200 dark:to-gray-200 text-center rotate-1 hover:scale-105 hover:rotate-0 transition-transform ease-out"
+      className="select-none p-4 rounded-lg bg-gradient-to-b from-white to-neutral-100 shadow-2xl dark:from-neutral-200 dark:to-neutral-200 text-center rotate-1 hover:scale-105 hover:rotate-0 transition-transform ease-out"
     >
       <div
         className="relative h-fit w-fit overflow-hidden rounded"
@@ -127,7 +127,7 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
         />
       </div>
       <p
-        className="mt-3 text-center text-gray-600 dark:text-gray-800 md:text-lg xl:text-xl"
+        className="mt-3 text-center text-neutral-600 dark:text-neutral-800 text-md"
       >
         Miami '23 🏖️
       </p>
@@ -136,7 +136,7 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
       className="hidden sm:block"
     >
       <div
-        className="select-none p-4 rounded-lg bg-gradient-to-b from-white to-gray-100 shadow-2xl dark:from-gray-200 dark:to-gray-200 text-center -rotate-2 hover:scale-105 hover:rotate-0 transition-transform ease-out"
+        className="select-none p-4 rounded-lg bg-gradient-to-b from-white to-neutral-100 shadow-2xl dark:from-neutral-200 dark:to-neutral-200 text-center -rotate-2 hover:scale-105 hover:rotate-0 transition-transform ease-out"
       >
         <div
           className="relative h-fit w-fit overflow-hidden rounded"
@@ -167,7 +167,7 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
           />
         </div>
         <p
-          className="mt-3 text-center text-gray-600 dark:text-gray-800 md:text-lg xl:text-xl"
+          className="mt-3 text-center text-neutral-600 dark:text-neutral-800 text-md"
         >
           Longboard 🛹
         </p>

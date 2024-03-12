@@ -14,7 +14,7 @@ type Props = {
 
 const Polaroid = (props: Props) => (
   <div
-    className={`select-none p-4 rounded-lg bg-gradient-to-b from-white to-gray-100 shadow-2xl dark:from-gray-200 dark:to-gray-200 text-center ${rotation[props.rotation]} hover:scale-105 hover:rotate-0 transition-transform ease-out`}
+    className={`select-none p-4 rounded-lg bg-gradient-to-b from-white to-neutral-100 shadow-2xl dark:from-neutral-200 dark:to-neutral-200 text-center ${rotation[props.rotation]} hover:scale-105 hover:rotate-0 transition-transform ease-out`}
   >
     <div className="relative h-fit w-fit overflow-hidden rounded">
       <Image
@@ -27,7 +27,7 @@ const Polaroid = (props: Props) => (
       />
       <div className="absolute inset-0 shadow-[inset_0_0_4px_rgba(0,0,0,.3)]" />
     </div>
-    <p className="mt-3 text-center text-gray-600 dark:text-gray-800 md:text-lg xl:text-xl">
+    <p className="mt-3 text-center text-neutral-600 dark:text-neutral-800 text-md">
       {props.label}
     </p>
   </div>
