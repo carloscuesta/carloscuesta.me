@@ -3,7 +3,7 @@
 exports[`Writings should match Writings component 1`] = `
 <section>
   <div
-    className="m-[0_auto] max-w-4xl px-6 sm:px-4 "
+    className="m-[0_auto] max-w-4xl px-6 sm:px-4"
   >
     <a
       className="flex items-center gap-3 my-6 justify-between group cursor-pointer"
