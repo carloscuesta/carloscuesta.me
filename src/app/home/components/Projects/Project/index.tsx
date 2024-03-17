@@ -1,5 +1,7 @@
 import { type Repository } from 'src/utils/api/github/mutators'
 
+import cn from 'src/utils/cn'
+
 type Props = {
   repository: Repository
 }
@@ -18,7 +20,10 @@ const Project = (props: Props) => (
       {props.repository.language && (
         <div className="flex items-center gap-1">
           <div
-            className={`h-2 w-2 rounded-full language-project-${props.repository.language.toLowerCase()}`}
+            className={cn(
+              'h-2 w-2 rounded-full',
+              `language-project-${props.repository.language.toLowerCase()}`,
+            )}
           ></div>
           <span className="opacity-70">{props.repository.language}</span>
         </div>

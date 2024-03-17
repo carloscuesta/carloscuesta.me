@@ -166,6 +166,9 @@ devDependencies:
   autoprefixer:
     specifier: 10.4.17
     version: 10.4.17(postcss@8.4.31)
+  classix:
+    specifier: 2.1.36
+    version: 2.1.36
   codecov:
     specifier: ^3.8.3
     version: 3.8.3
@@ -226,6 +229,9 @@ devDependencies:
   react-test-renderer:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  tailwind-merge:
+    specifier: 2.2.2
+    version: 2.2.2
   tailwindcss:
     specifier: 3.4.1
     version: 3.4.1
@@ -1226,6 +1232,13 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.0
+
+  /@babel/runtime@7.24.0:
+    resolution: {integrity: sha512-Chk32uHMg6TnQdvw2e9IlqPpFX/6NLuK0Ys2PqLb7/gL5uFn9mXvK715FGLlOLQrcO4qIkNHkvPGktzzXexsFw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.0
+    dev: true
 
   /@babel/template@7.22.15:
     resolution: {integrity: sha512-QPErUVm4uyJa60rkI73qneDacvdvzxshT3kksGqlGWYdOTIUOwJ7RDUL8sGqslY1uXWSL6xMFKEXDS3ox2uF0w==}
@@ -3495,6 +3508,10 @@ packages:
 
   /cjs-module-lexer@1.2.1:
     resolution: {integrity: sha512-jVamGdJPDeuQilKhvVn1h3knuMOZzr8QDnpk+M9aMlCaMkTDd6fBWPhiDqFvFZ07pL0liqabAiuy8SY4jGHeaw==}
+    dev: true
+
+  /classix@2.1.36:
+    resolution: {integrity: sha512-1glwI9Ho7s/Z5vqCNLj3eYU+17A9KHjLREcmzJUmZS+GnXBgS1/or5fzqhB5b59jsPxazONrajM5d9hgJgnnlA==}
     dev: true
 
   /clean-css@5.3.3:
@@ -9877,6 +9894,12 @@ packages:
 
   /symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
+    dev: true
+
+  /tailwind-merge@2.2.2:
+    resolution: {integrity: sha512-tWANXsnmJzgw6mQ07nE3aCDkCK4QdT3ThPMCzawoYA2Pws7vSTCvz3Vrjg61jVUGfFZPJzxEP+NimbcW+EdaDw==}
+    dependencies:
+      '@babel/runtime': 7.24.0
     dev: true
 
   /tailwind-scrollbar-hide@1.1.7:

@@ -3,7 +3,7 @@
 exports[`OpenSource should match OpenSource component 1`] = `
 <section>
   <div
-    className="m-[0_auto] max-w-4xl px-6 sm:px-4 "
+    className="m-[0_auto] max-w-4xl px-6 sm:px-4"
   >
     <h2
       className="my-6 block text-lg font-bold"

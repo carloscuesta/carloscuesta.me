@@ -2,6 +2,7 @@ import { Fragment, useState, useEffect } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { useTheme } from 'next-themes'
 
+import cn from 'src/utils/cn'
 import Icon from './Icon'
 
 const themes = [
@@ -24,11 +25,14 @@ const ThemeSwitch = () => {
         <div className="relative">
           <Listbox.Button
             aria-label="Select theme"
-            className={`relative flex h-10 w-10 items-center justify-center rounded-full outline-none transition-opacity hover:opacity-100 focus-visible:ring-2 focus-visible:ring-neutral-200 dark:focus:ring-neutral-600 ${
+            className={cn(
+              'relative flex h-10 w-10 items-center justify-center rounded-full outline-none',
+              'transition-opacity hover:opacity-100 focus-visible:ring-2',
+              'focus-visible:ring-neutral-200 dark:focus:ring-neutral-600',
               open
                 ? 'bg-neutral-100 opacity-100 dark:bg-neutral-800'
-                : 'opacity-50'
-            }`}
+                : 'opacity-50',
+            )}
           >
             {mounted && resolvedTheme ? (
               <Icon theme={resolvedTheme} />
@@ -59,9 +63,10 @@ const ThemeSwitch = () => {
                   {({ selected }) => (
                     <>
                       <span
-                        className={`block cursor-default truncate ${
-                          selected ? 'font-medium' : 'font-normal'
-                        }`}
+                        className={cn(
+                          'block cursor-default truncate',
+                          selected ? 'font-medium' : 'font-normal',
+                        )}
                       >
                         {theme.label}
                       </span>

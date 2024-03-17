@@ -6,7 +6,7 @@ exports[`Layout should render the Layout with children 1`] = `
     className="sticky top-0 z-10 border-b-[1px] border-solid border-neutral-100 bg-white/75 py-2 dark:border-neutral-900 dark:bg-black/75 sm:py-3 backdrop-blur-xl"
   >
     <div
-      className="m-[0_auto] max-w-4xl px-6 sm:px-4 "
+      className="m-[0_auto] max-w-4xl px-6 sm:px-4"
     >
       <nav
         className="flex items-center justify-between font-semibold"
@@ -136,7 +136,7 @@ exports[`Layout should render the Layout with children 1`] = `
   </h2>,
   <footer>
     <div
-      className="m-[0_auto] max-w-4xl px-6 sm:px-4 "
+      className="m-[0_auto] max-w-4xl px-6 sm:px-4"
     >
       <hr
         className="mt-8 w-full border-t border-neutral-100 dark:border-neutral-800"

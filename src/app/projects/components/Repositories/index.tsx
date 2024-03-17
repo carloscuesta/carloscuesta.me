@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 
+import cn from 'src/utils/cn'
 import SectionTitle from 'src/components/SectionTitle'
 import { type Repository } from 'src/utils/api/github/mutators'
 
@@ -33,7 +34,7 @@ const Repositories = (props: Props) => {
             <li key={repository.name}>
               <a
                 href={repository.url}
-                className="mb-2 grid grid gap-2 gap-2.5 rounded-lg rounded-md border border-neutral-100 p-3 p-4 transition-colors hover:border-neutral-300 dark:border-neutral-800 dark:hover:border-neutral-600"
+                className="mb-2 grid gap-2.5 rounded-md border border-neutral-100 p-4 transition-colors hover:border-neutral-300 dark:border-neutral-800 dark:hover:border-neutral-600"
               >
                 <p className="font-semibold">{repository.name}</p>
 
@@ -44,7 +45,10 @@ const Repositories = (props: Props) => {
                     {repository.language && (
                       <div className="flex items-center gap-1.5">
                         <div
-                          className={`h-2 w-2 rounded-full language-project-${repository.language.toLowerCase()}`}
+                          className={cn(
+                            'h-2 w-2 rounded-full',
+                            `language-project-${repository.language.toLowerCase()}`,
+                          )}
                         />
                         <span className="opacity-70">
                           {repository.language}

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import localFont from 'next/font/local'
 
+import cn from 'src/utils/cn'
 import Polaroid from './Polaroid'
 
 const font = localFont({
@@ -72,7 +73,9 @@ const WhoAmI = () => (
       with my family.
     </p>
 
-    <div className={`py-4 flex gap-0 lg:gap-6 lg:flex-wrap ${font.className}`}>
+    <div
+      className={cn('py-4 flex gap-0 lg:gap-6 lg:flex-wrap', font.className)}
+    >
       <Polaroid
         label="Wife & I ❣️"
         src={require('./images/family.jpg')}

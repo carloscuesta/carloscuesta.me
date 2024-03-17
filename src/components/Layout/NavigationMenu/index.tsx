@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import cn from 'src/utils/cn'
 import Wrapper from 'src/components/Wrapper'
 import Links from './Links'
 import Hamburger from './Hamburger'
@@ -14,9 +15,11 @@ const NavigationMenu = () => {
 
   return (
     <header
-      className={`sticky top-0 z-10 border-b-[1px] border-solid border-neutral-100 bg-white/75 py-2 dark:border-neutral-900 dark:bg-black/75 sm:py-3 ${
-        isHamburgerOpen ? '' : 'backdrop-blur-xl'
-      }`}
+      className={cn(
+        'sticky top-0 z-10 border-b-[1px] border-solid border-neutral-100 bg-white/75 py-2',
+        'dark:border-neutral-900 dark:bg-black/75 sm:py-3',
+        isHamburgerOpen ? '' : 'backdrop-blur-xl',
+      )}
     >
       <Wrapper>
         <nav className="flex items-center justify-between font-semibold">
