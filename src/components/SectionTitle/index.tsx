@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+import cn from 'src/utils/cn'
+
 type Props = {
   title: string
   href?: string
@@ -10,7 +12,10 @@ const SectionTitle = (props: Props) => {
   if (props.href) {
     return (
       <Link
-        className={`${props.viewAll ? 'flex' : 'inline-flex'} items-center gap-3 my-6 justify-between group cursor-pointer`}
+        className={cn(
+          props.viewAll ? 'flex' : 'inline-flex',
+          'items-center gap-3 my-6 justify-between group cursor-pointer',
+        )}
         href={props.href}
       >
         <h2 className="text-lg font-bold underline-offset-4 group-hover:underline">

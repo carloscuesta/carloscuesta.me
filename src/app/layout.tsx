@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/react'
 import localFont from 'next/font/local'
 
 import 'src/utils/theme/theme.css'
+import cn from 'src/utils/cn'
 import Layout from 'src/components/Layout'
 import Providers from './providers'
 
@@ -64,7 +65,10 @@ const RootLayout = ({
       <link rel="manifest" href="/manifest.json" />
     </head>
     <body
-      className={`bg-white text-neutral-800 dark:bg-[rgb(5,5,5)] dark:text-neutral-200 ${font.className}`}
+      className={cn(
+        'bg-white text-neutral-800 dark:bg-[rgb(5,5,5)] dark:text-neutral-200',
+        font.className,
+      )}
     >
       <Providers>
         <Layout>{children}</Layout>
