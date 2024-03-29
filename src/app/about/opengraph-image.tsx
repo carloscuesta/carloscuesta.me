@@ -14,7 +14,7 @@ export default async function Image() {
       <OpengraphImage
         title="About me"
         url="about"
-        description="Front-End Engineer based in Barcelona, that loves to code and build products."
+        description="Front-End Engineer based in Barcelona, that loves to code and build products"
       />
     ),
     {
