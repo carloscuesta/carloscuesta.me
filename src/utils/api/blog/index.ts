@@ -85,7 +85,6 @@ export const fetchPosts = async (): Promise<Array<PostPreview>> => {
         length: 100,
         separator: ' ',
       }),
-      images: post.images,
       slug: post.slug,
       title: post.title,
       views: views[post.slug],

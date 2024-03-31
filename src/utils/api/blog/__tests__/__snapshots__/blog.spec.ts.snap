@@ -36,15 +36,6 @@ exports[`Blog API Client fetchPosts should return an array of posts sorted by da
       "value": "2023-04-22 22:00",
     },
     "excerpt": "React Miami 2023 conference review. A two days conference about React that takes places in Miami...",
-    "images": {
-      "featured": {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1682161443/blog-featured-images/react-miami.jpg",
-      },
-      "preview": {
-        "lqpi": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAABcSAAAXEgFnn9JSAAAADklEQVR4nGNgRAIMyBwAAVIAGQHQACAAAAAASUVORK5CYII=",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1682161443/blog-featured-images/react-miami.jpg",
-      },
-    },
     "slug": "react-miami-2023",
     "title": "React Miami 2023",
     "views": "1,000 views",
@@ -56,15 +47,6 @@ exports[`Blog API Client fetchPosts should return an array of posts sorted by da
       "value": "2023-01-29 22:00",
     },
     "excerpt": "A codemod is a tool that helps you with large-scale refactors. In this article I'm going to...",
-    "images": {
-      "featured": {
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1675022732/blog-featured-images/Effective_Refactoring_with_Codemods.png",
-      },
-      "preview": {
-        "lqpi": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAABcRAAAXEQHKJvM/AAAAD0lEQVR4nGNgSPiPQMgcAIa6CvnplqETAAAAAElFTkSuQmCC",
-        "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1675022732/blog-featured-images/Effective_Refactoring_with_Codemods.png",
-      },
-    },
     "slug": "effective-refactoring-with-codemods",
     "title": "Effective Refactoring with Codemods",
     "views": "1,000 views",
