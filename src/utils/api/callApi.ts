@@ -14,7 +14,7 @@ const callApi = async <Response, Data>(
 
     return dataTransformed
   } catch (exception) {
-    throw Error('ERROR @ callApi: ' + exception)
+    throw Error(`ERROR @ callApi: ${options.url} ` + exception)
   }
 }
 
