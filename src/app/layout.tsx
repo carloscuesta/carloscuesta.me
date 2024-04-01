@@ -1,5 +1,6 @@
 import { Analytics } from '@vercel/analytics/react'
 import localFont from 'next/font/local'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import 'src/utils/theme/theme.css'
 import cn from 'src/utils/cn'
@@ -74,6 +75,7 @@ const RootLayout = ({
       <Providers>
         <Layout>{children}</Layout>
       </Providers>
+      <SpeedInsights />
       <Analytics />
     </body>
   </html>
