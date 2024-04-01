@@ -8,7 +8,10 @@ const githubApiClient = <Response, Data>(
     mutator: options.mutator,
     url: `https://api.github.com${options.url}`,
     requestOptions: {
-      headers: { Accept: 'application/vnd.github.v3+json' },
+      headers: {
+        Accept: 'application/vnd.github.v3+json',
+        Authorization: `Bearer ${process.env.GITHUB_API_TOKEN}`,
+      },
     },
   })
 

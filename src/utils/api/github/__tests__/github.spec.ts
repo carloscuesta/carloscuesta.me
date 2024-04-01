@@ -13,6 +13,7 @@ describe('GitHub API Client', () => {
   describe('apiCalls', () => {
     beforeEach(() => {
       callApiMock.mockReset()
+      process.env.GITHUB_API_TOKEN = 'test'
     })
 
     it('should match fetchRepositories call', () => {
