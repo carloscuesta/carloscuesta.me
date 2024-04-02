@@ -73,7 +73,7 @@
   },
   "devDependencies": {
     "@lhci/cli": "^0.13.0",
-    "@tailwindcss/typography": "0.5.10",
+    "@tailwindcss/typography": "0.5.12",
     "@testing-library/react": "14.2.1",
     "@types/body-scroll-lock": "3.1.2",
     "@types/jest": "29.5.10",
