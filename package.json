@@ -85,7 +85,7 @@
     "autoprefixer": "10.4.17",
     "classix": "2.1.36",
     "codecov": "^3.8.3",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "eslint-config-next": "^14.0.4",
     "eslint-config-prettier": "9.1.0",
     "eslint-import-resolver-alias": "^1.1.2",
