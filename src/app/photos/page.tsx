@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/photos',
   },
+  openGraph: {
+    url: '/photos',
+  },
 }
 
 const Photos = () => {

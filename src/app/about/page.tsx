@@ -12,6 +12,9 @@ export const metadata = {
   alternates: {
     canonical: '/about',
   },
+  openGraph: {
+    url: '/about',
+  },
 }
 
 const About = () => (

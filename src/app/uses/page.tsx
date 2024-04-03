@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/uses',
   },
+  openGraph: {
+    url: '/uses',
+  },
 }
 
 const Uses = () => (

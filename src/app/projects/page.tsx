@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/projects',
   },
+  openGraph: {
+    url: '/projects',
+  },
 }
 
 const Projects = async () => {
