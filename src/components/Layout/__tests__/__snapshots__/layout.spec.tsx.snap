@@ -144,12 +144,12 @@ exports[`Layout should render the Layout with children 1`] = `
     Hello!
   </h2>,
   <footer>
+    <hr
+      className="mt-8 border-neutral-100 dark:border-neutral-800"
+    />
     <div
       className="m-[0_auto] max-w-4xl px-6 sm:px-4"
     >
-      <hr
-        className="mt-8 w-full border-t border-neutral-100 dark:border-neutral-800"
-      />
       <div
         className="flex items-center justify-between px-1 py-4 text-sm text-neutral-500"
       >
