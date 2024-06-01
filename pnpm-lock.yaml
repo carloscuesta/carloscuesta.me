@@ -24,8 +24,8 @@ importers:
         specifier: 0.2.2
         version: 0.2.2(encoding@0.1.13)
       '@vercel/speed-insights':
-        specifier: 1.0.10
-        version: 1.0.10(next@14.2.3(@babel/core@7.17.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+        specifier: 1.0.11
+        version: 1.0.11(next@14.2.3(@babel/core@7.17.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
       body-scroll-lock:
         specifier: 4.0.0-beta.0
         version: 4.0.0-beta.0
@@ -1439,8 +1439,8 @@ packages:
     resolution: {integrity: sha512-mqnQOB6bkp4h5eObxfLNIlhlVqOGSH8cWOlC5pDVWTjX3zL8dETO1ZBl6M74HBmeBjbD5+J7wDJklRigY6UNKw==}
     engines: {node: '>=14.6'}
 
-  '@vercel/speed-insights@1.0.10':
-    resolution: {integrity: sha512-4uzdKB0RW6Ff2FkzshzjZ+RlJfLPxgm/00i0XXgxfMPhwnnsk92YgtqsxT9OcPLdJUyVU1DqFlSWWjIQMPkh0g==}
+  '@vercel/speed-insights@1.0.11':
+    resolution: {integrity: sha512-l9hzSNmJvb2Yqpgd/BzpiT0J0aQDdtqxOf3Xm+iW4PICxVvhY1ef7Otdx4GXI+88dVkws57qMzXiShz19gXzSQ==}
     peerDependencies:
       '@sveltejs/kit': ^1 || ^2
       next: '>= 13'
@@ -7623,7 +7623,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@vercel/speed-insights@1.0.10(next@14.2.3(@babel/core@7.17.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)':
+  '@vercel/speed-insights@1.0.11(next@14.2.3(@babel/core@7.17.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)':
     optionalDependencies:
       next: 14.2.3(@babel/core@7.17.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react: 18.2.0
