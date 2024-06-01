@@ -61,7 +61,7 @@
     "rehype-wrap-all": "^1.1.0",
     "remark-gfm": "4.0.0",
     "remark-parse": "11.0.0",
-    "remark-rehype": "11.0.0",
+    "remark-rehype": "11.1.0",
     "remark-toc": "^9.0.0",
     "satori": "0.10.13",
     "sharp": "0.32.6",
