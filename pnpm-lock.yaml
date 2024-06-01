@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@headlessui/react':
-        specifier: 2.0.0
-        version: 2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 2.0.4
+        version: 2.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@plaiceholder/next':
         specifier: 2.5.0
         version: 2.5.0(next@14.2.3(@babel/core@7.17.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(sharp@0.32.6)
@@ -792,8 +792,8 @@ packages:
   '@formatjs/intl-localematcher@0.5.2':
     resolution: {integrity: sha512-txaaE2fiBMagLrR4jYhxzFO6wEdEG4TPMqrzBAcbr4HFUYzH/YC+lg6OIzKCHm8WgDdyQevxbAAV1OgcXctuGw==}
 
-  '@headlessui/react@2.0.0':
-    resolution: {integrity: sha512-yIqnDA8GuCXnNtDG9x42AXdibsWVSY+YuzdKl402xi0XJBAoIjsmwv7INeZpYnSEB6MEh2i6FyAMztZqQnf6mQ==}
+  '@headlessui/react@2.0.4':
+    resolution: {integrity: sha512-16d/rOLeYsFsmPlRmXGu8DCBzrWD0zV1Ccx3n73wN87yFu8Y9+X04zflv8EJEt9TAYRyLKOmQXUnOnqQl6NgpA==}
     engines: {node: '>=10'}
     peerDependencies:
       react: ^18
@@ -6760,7 +6760,7 @@ snapshots:
     dependencies:
       tslib: 2.6.2
 
-  '@headlessui/react@2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@headlessui/react@2.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@floating-ui/react': 0.26.13(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@react-aria/focus': 3.17.0(react@18.2.0)
