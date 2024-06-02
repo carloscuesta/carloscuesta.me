@@ -12,7 +12,7 @@ const Projects = (props: Props) => (
     <Wrapper>
       <SectionTitle title="Projects" />
 
-      <div className="grid gap-x-4 gap-y-6 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
         {props.repositories.map((repository) => (
           <Project repository={repository} key={repository.name} />
         ))}
