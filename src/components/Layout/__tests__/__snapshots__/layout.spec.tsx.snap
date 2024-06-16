@@ -36,11 +36,6 @@ exports[`Layout should render the Layout with children 1`] = `
             }
             width={32}
           />
-          <span
-            className="font-bold"
-          >
-            Carlos Cuesta
-          </span>
         </a>
         <div
           className="flex flex-row-reverse items-center gap-3 sm:flex-row sm:gap-4"

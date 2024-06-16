@@ -32,8 +32,6 @@ const NavigationMenu = () => {
                 src="https://res.cloudinary.com/carloscuesta/image/upload/s--g0fD72tH--/c_scale,q_100,w_72/v1594588508/carloscuesta.jpg"
                 width={32}
               />
-
-              <span className="font-bold">Carlos Cuesta</span>
             </>
           </Link>
 
