@@ -84,8 +84,8 @@ importers:
         specifier: 7.0.0
         version: 7.0.0
       rehype-pretty-code:
-        specifier: 0.13.1
-        version: 0.13.1(shiki@1.6.1)
+        specifier: 0.13.2
+        version: 0.13.2(shiki@1.6.1)
       rehype-slug:
         specifier: ^6.0.0
         version: 6.0.0
@@ -4786,11 +4786,11 @@ packages:
   rehype-preset-minify@7.0.0:
     resolution: {integrity: sha512-bZ/k4Th7I3n2+6qOM7fMysvfGWNrSeJ6ACStZpdAnZMIHx50onj4l+fMBfI8oZEOxQXZUINw7L20Hxg/Qr6N4g==}
 
-  rehype-pretty-code@0.13.1:
-    resolution: {integrity: sha512-Lw3cZohiw5J2NMMD0M11W9HlIKrZ7JjxfJmY0nxVa/HG5oMT+kkhcrUEFB5ajaEk/E9uR8+n9AmQbGJci9/TqA==}
+  rehype-pretty-code@0.13.2:
+    resolution: {integrity: sha512-F+PaFMscfJOcSHcR2b//+hk/0jT56hmGDqXcVD6VC9j0CUSGiqv8YxaWUyhR7qEIRRSbzAVxx+0uxzk+akXs+w==}
     engines: {node: '>=18'}
     peerDependencies:
-      shiki: ^1.0.0
+      shiki: ^1.3.0
 
   rehype-remove-comments@6.0.0:
     resolution: {integrity: sha512-RrJPQcVkJPZqX0Go0IAxiplgiTAkOdRbkjtPymVIDJwcgA37iZiWFCimVXP33CdMDSouAPQbTkuV32NgI8x67g==}
@@ -11881,7 +11881,7 @@ snapshots:
       rehype-sort-attributes: 5.0.0
       unified: 11.0.4
 
-  rehype-pretty-code@0.13.1(shiki@1.6.1):
+  rehype-pretty-code@0.13.2(shiki@1.6.1):
     dependencies:
       '@types/hast': 3.0.4
       hast-util-to-string: 3.0.0
