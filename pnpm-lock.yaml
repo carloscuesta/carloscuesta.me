@@ -163,8 +163,8 @@ importers:
         specifier: 10.4.19
         version: 10.4.19(postcss@8.4.38)
       classix:
-        specifier: 2.1.36
-        version: 2.1.36
+        specifier: 2.1.38
+        version: 2.1.38
       codecov:
         specifier: ^3.8.3
         version: 3.8.3(encoding@0.1.13)
@@ -1988,8 +1988,8 @@ packages:
   cjs-module-lexer@1.2.1:
     resolution: {integrity: sha512-jVamGdJPDeuQilKhvVn1h3knuMOZzr8QDnpk+M9aMlCaMkTDd6fBWPhiDqFvFZ07pL0liqabAiuy8SY4jGHeaw==}
 
-  classix@2.1.36:
-    resolution: {integrity: sha512-1glwI9Ho7s/Z5vqCNLj3eYU+17A9KHjLREcmzJUmZS+GnXBgS1/or5fzqhB5b59jsPxazONrajM5d9hgJgnnlA==}
+  classix@2.1.38:
+    resolution: {integrity: sha512-vl59khsZzN4cFpEC+K05kz3ArSQUJuIOKppR/8979wkC4vWGiKR7nuvD396tiViGrcztk4W6/9VlgV+tqVrGgw==}
 
   clean-css@5.3.3:
     resolution: {integrity: sha512-D5J+kHaVb/wKSFcyyV75uCn8fiY4sV38XJoe4CUyGQ+mOU/fMVYUdH1hJC+CJQ5uY3EnW27SbJYS4X8BiLrAFg==}
@@ -8219,7 +8219,7 @@ snapshots:
 
   cjs-module-lexer@1.2.1: {}
 
-  classix@2.1.36: {}
+  classix@2.1.38: {}
 
   clean-css@5.3.3:
     dependencies:
