@@ -52,7 +52,7 @@ importers:
         version: 14.2.3(@babel/core@7.17.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       next-pwa:
         specifier: ^5.6.0
-        version: 5.6.0(@babel/core@7.17.10)(@types/babel__core@7.1.14)(next@14.2.3(@babel/core@7.17.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(uglify-js@3.17.4)(webpack@5.90.3(uglify-js@3.17.4))
+        version: 5.6.0(@babel/core@7.17.10)(@types/babel__core@7.1.14)(next@14.2.3(@babel/core@7.17.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(uglify-js@3.18.0)(webpack@5.90.3(uglify-js@3.18.0))
       next-seo:
         specifier: ^6.5.0
         version: 6.5.0(next@14.2.3(@babel/core@7.17.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -235,8 +235,8 @@ importers:
         specifier: 5.4.5
         version: 5.4.5
       uglify-js:
-        specifier: 3.17.4
-        version: 3.17.4
+        specifier: 3.18.0
+        version: 3.18.0
       vfile:
         specifier: 6.0.1
         version: 6.0.1
@@ -5607,8 +5607,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  uglify-js@3.17.4:
-    resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
+  uglify-js@3.18.0:
+    resolution: {integrity: sha512-SyVVbcNBCk0dzr9XL/R/ySrmYf0s372K6/hFklzgcp2lBFyXtw4I7BOdDjlLhE1aVqaI/SHWXWmYdlZxuyF38A==}
     engines: {node: '>=0.8.0'}
     hasBin: true
 
@@ -7982,14 +7982,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-loader@8.2.5(@babel/core@7.17.10)(webpack@5.90.3(uglify-js@3.17.4)):
+  babel-loader@8.2.5(@babel/core@7.17.10)(webpack@5.90.3(uglify-js@3.18.0)):
     dependencies:
       '@babel/core': 7.17.10
       find-cache-dir: 3.3.1
       loader-utils: 2.0.4
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.90.3(uglify-js@3.17.4)
+      webpack: 5.90.3(uglify-js@3.18.0)
 
   babel-plugin-dynamic-import-node@2.3.3:
     dependencies:
@@ -8247,10 +8247,10 @@ snapshots:
     dependencies:
       source-map: 0.6.1
 
-  clean-webpack-plugin@4.0.0(webpack@5.90.3(uglify-js@3.17.4)):
+  clean-webpack-plugin@4.0.0(webpack@5.90.3(uglify-js@3.18.0)):
     dependencies:
       del: 4.1.1
-      webpack: 5.90.3(uglify-js@3.17.4)
+      webpack: 5.90.3(uglify-js@3.18.0)
 
   cli-cursor@2.1.0:
     dependencies:
@@ -11159,14 +11159,14 @@ snapshots:
 
   netmask@2.0.2: {}
 
-  next-pwa@5.6.0(@babel/core@7.17.10)(@types/babel__core@7.1.14)(next@14.2.3(@babel/core@7.17.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(uglify-js@3.17.4)(webpack@5.90.3(uglify-js@3.17.4)):
+  next-pwa@5.6.0(@babel/core@7.17.10)(@types/babel__core@7.1.14)(next@14.2.3(@babel/core@7.17.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(uglify-js@3.18.0)(webpack@5.90.3(uglify-js@3.18.0)):
     dependencies:
-      babel-loader: 8.2.5(@babel/core@7.17.10)(webpack@5.90.3(uglify-js@3.17.4))
-      clean-webpack-plugin: 4.0.0(webpack@5.90.3(uglify-js@3.17.4))
+      babel-loader: 8.2.5(@babel/core@7.17.10)(webpack@5.90.3(uglify-js@3.18.0))
+      clean-webpack-plugin: 4.0.0(webpack@5.90.3(uglify-js@3.18.0))
       globby: 11.1.0
       next: 14.2.3(@babel/core@7.17.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      terser-webpack-plugin: 5.3.3(uglify-js@3.17.4)(webpack@5.90.3(uglify-js@3.17.4))
-      workbox-webpack-plugin: 6.5.4(@types/babel__core@7.1.14)(webpack@5.90.3(uglify-js@3.17.4))
+      terser-webpack-plugin: 5.3.3(uglify-js@3.18.0)(webpack@5.90.3(uglify-js@3.18.0))
+      workbox-webpack-plugin: 6.5.4(@types/babel__core@7.1.14)(webpack@5.90.3(uglify-js@3.18.0))
       workbox-window: 6.5.4
     transitivePeerDependencies:
       - '@babel/core'
@@ -11824,7 +11824,7 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.4
       hast-util-is-event-handler: 3.0.0
-      uglify-js: 3.17.4
+      uglify-js: 3.18.0
       unist-util-visit: 5.0.0
 
   rehype-minify-javascript-script@5.0.0:
@@ -11833,7 +11833,7 @@ snapshots:
       hast-util-from-string: 3.0.0
       hast-util-is-javascript: 3.0.0
       hast-util-to-string: 3.0.0
-      uglify-js: 3.17.4
+      uglify-js: 3.18.0
       unist-util-visit: 5.0.0
 
   rehype-minify-javascript-url@5.0.0:
@@ -11841,7 +11841,7 @@ snapshots:
       '@types/hast': 3.0.4
       hast-util-is-element: 3.0.0
       html-url-attributes: 3.0.0
-      uglify-js: 3.17.4
+      uglify-js: 3.18.0
       unist-util-visit: 5.0.0
 
   rehype-minify-json-script@4.0.0:
@@ -12685,27 +12685,27 @@ snapshots:
       type-fest: 0.16.0
       unique-string: 2.0.0
 
-  terser-webpack-plugin@5.3.10(uglify-js@3.17.4)(webpack@5.90.3(uglify-js@3.17.4)):
+  terser-webpack-plugin@5.3.10(uglify-js@3.18.0)(webpack@5.90.3(uglify-js@3.18.0)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
       terser: 5.29.1
-      webpack: 5.90.3(uglify-js@3.17.4)
+      webpack: 5.90.3(uglify-js@3.18.0)
     optionalDependencies:
-      uglify-js: 3.17.4
+      uglify-js: 3.18.0
 
-  terser-webpack-plugin@5.3.3(uglify-js@3.17.4)(webpack@5.90.3(uglify-js@3.17.4)):
+  terser-webpack-plugin@5.3.3(uglify-js@3.18.0)(webpack@5.90.3(uglify-js@3.18.0)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 3.1.1
       serialize-javascript: 6.0.0
       terser: 5.14.2
-      webpack: 5.90.3(uglify-js@3.17.4)
+      webpack: 5.90.3(uglify-js@3.18.0)
     optionalDependencies:
-      uglify-js: 3.17.4
+      uglify-js: 3.18.0
 
   terser@5.14.2:
     dependencies:
@@ -12902,7 +12902,7 @@ snapshots:
 
   typescript@5.4.5: {}
 
-  uglify-js@3.17.4: {}
+  uglify-js@3.18.0: {}
 
   unbox-primitive@1.0.2:
     dependencies:
@@ -13089,7 +13089,7 @@ snapshots:
 
   webpack-sources@3.2.3: {}
 
-  webpack@5.90.3(uglify-js@3.17.4):
+  webpack@5.90.3(uglify-js@3.18.0):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.5
@@ -13112,7 +13112,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(uglify-js@3.17.4)(webpack@5.90.3(uglify-js@3.17.4))
+      terser-webpack-plugin: 5.3.10(uglify-js@3.18.0)(webpack@5.90.3(uglify-js@3.18.0))
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
@@ -13304,12 +13304,12 @@ snapshots:
 
   workbox-sw@6.5.4: {}
 
-  workbox-webpack-plugin@6.5.4(@types/babel__core@7.1.14)(webpack@5.90.3(uglify-js@3.17.4)):
+  workbox-webpack-plugin@6.5.4(@types/babel__core@7.1.14)(webpack@5.90.3(uglify-js@3.18.0)):
     dependencies:
       fast-json-stable-stringify: 2.1.0
       pretty-bytes: 5.4.1
       upath: 1.2.0
-      webpack: 5.90.3(uglify-js@3.17.4)
+      webpack: 5.90.3(uglify-js@3.18.0)
       webpack-sources: 1.4.3
       workbox-build: 6.5.4(@types/babel__core@7.1.14)
     transitivePeerDependencies:
