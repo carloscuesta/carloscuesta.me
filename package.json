@@ -69,7 +69,7 @@
     "sprinkles-vscode": "2.7.0",
     "swr": "2.2.5",
     "tailwind-scrollbar-hide": "1.1.7",
-    "unified": "11.0.4"
+    "unified": "11.0.5"
   },
   "devDependencies": {
     "@lhci/cli": "^0.13.0",
