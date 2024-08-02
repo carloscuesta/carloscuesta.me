@@ -238,8 +238,8 @@ importers:
         specifier: 3.18.0
         version: 3.18.0
       vfile:
-        specifier: 6.0.1
-        version: 6.0.1
+        specifier: 6.0.2
+        version: 6.0.2
 
 packages:
 
@@ -5727,8 +5727,8 @@ packages:
   vfile-message@4.0.2:
     resolution: {integrity: sha512-jRDZ1IMLttGj41KcZvlrYAaI3CfqpLpfpf+Mfig13viT6NKvRzWZ+lXz0Y5D60w6uJIBAOGq9mSHf0gktF0duw==}
 
-  vfile@6.0.1:
-    resolution: {integrity: sha512-1bYqc7pt6NIADBJ98UiG0Bn/CHIVOoZ/IyEkqIruLg0mE1BKzkOXY2D6CSqQIcKqgadppE5lrxgWXJmXd7zZJw==}
+  vfile@6.0.2:
+    resolution: {integrity: sha512-zND7NlS8rJYb/sPqkb13ZvbbUoExdbi4w3SfRrMq6R3FvnLQmmfpajJNITuuYm6AZ5uao9vy4BAos3EXBPf2rg==}
 
   w3c-hr-time@1.0.2:
     resolution: {integrity: sha512-z8P5DvDNjKDoFIHK7q8r8lackT6l+jo/Ye3HOle7l9nICP9lf1Ci25fy9vHd0JOWewkIFzXIEig3TdKT7JQ5fQ==}
@@ -9547,7 +9547,7 @@ snapshots:
       devlop: 1.1.0
       hast-util-from-parse5: 8.0.1
       parse5: 7.0.0
-      vfile: 6.0.1
+      vfile: 6.0.2
       vfile-message: 4.0.2
 
   hast-util-from-parse5@8.0.1:
@@ -9557,7 +9557,7 @@ snapshots:
       devlop: 1.1.0
       hastscript: 8.0.0
       property-information: 6.0.1
-      vfile: 6.0.1
+      vfile: 6.0.2
       vfile-location: 5.0.2
       web-namespaces: 2.0.1
 
@@ -9620,7 +9620,7 @@ snapshots:
       parse5: 7.0.0
       unist-util-position: 5.0.0
       unist-util-visit: 5.0.0
-      vfile: 6.0.1
+      vfile: 6.0.2
       web-namespaces: 2.0.1
       zwitch: 2.0.4
 
@@ -11993,7 +11993,7 @@ snapshots:
       '@types/mdast': 4.0.1
       mdast-util-to-hast: 13.0.2
       unified: 11.0.5
-      vfile: 6.0.1
+      vfile: 6.0.2
 
   remark-stringify@11.0.0:
     dependencies:
@@ -12897,7 +12897,7 @@ snapshots:
       extend: 3.0.2
       is-plain-obj: 4.0.0
       trough: 2.0.2
-      vfile: 6.0.1
+      vfile: 6.0.2
 
   unique-string@2.0.0:
     dependencies:
@@ -12999,14 +12999,14 @@ snapshots:
   vfile-location@5.0.2:
     dependencies:
       '@types/unist': 3.0.0
-      vfile: 6.0.1
+      vfile: 6.0.2
 
   vfile-message@4.0.2:
     dependencies:
       '@types/unist': 3.0.0
       unist-util-stringify-position: 4.0.0
 
-  vfile@6.0.1:
+  vfile@6.0.2:
     dependencies:
       '@types/unist': 3.0.0
       unist-util-stringify-position: 4.0.0
