@@ -12,7 +12,7 @@ exports[`Layout should render the Layout with children 1`] = `
         className="flex items-center justify-between font-semibold"
       >
         <a
-          className="grid grid-flow-col items-center"
+          className="grid grid-flow-col items-center rounded-full overflow-hidden"
           href="/"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -20,7 +20,7 @@ exports[`Layout should render the Layout with children 1`] = `
         >
           <img
             alt="Carlos Cuesta"
-            className="mr-3 rounded-full opacity-100"
+            className="rounded-full opacity-100"
             data-nimg="1"
             decoding="async"
             height={32}

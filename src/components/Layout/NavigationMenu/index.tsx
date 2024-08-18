@@ -23,11 +23,14 @@ const NavigationMenu = () => {
     >
       <Wrapper>
         <nav className="flex items-center justify-between font-semibold">
-          <Link href="/" className="grid grid-flow-col items-center">
+          <Link
+            href="/"
+            className="grid grid-flow-col items-center rounded-full overflow-hidden"
+          >
             <>
               <Image
                 alt="Carlos Cuesta"
-                className="mr-3 rounded-full opacity-100"
+                className="rounded-full opacity-100"
                 height={32}
                 src="https://res.cloudinary.com/carloscuesta/image/upload/s--g0fD72tH--/c_scale,q_100,w_72/v1594588508/carloscuesta.jpg"
                 width={32}
