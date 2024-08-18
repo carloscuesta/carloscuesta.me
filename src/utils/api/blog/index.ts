@@ -54,6 +54,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
         dark: require('sprinkles-vscode/themes/sprinkles-dark.json'),
         light: require('sprinkles-vscode/themes/sprinkles-light.json'),
       },
+      defaultLang: 'plaintext',
     })
     .use(rehypeWrap, { selector: 'table', wrapper: 'div.responsiveTable' })
     .use(rehypeStringify, { allowDangerousHtml: true })
