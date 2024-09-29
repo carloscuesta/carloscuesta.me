@@ -14,6 +14,7 @@ import rehypeAutoLinkHeadings from 'rehype-autolink-headings'
 import rehypeStringify from 'rehype-stringify'
 import rehypeMinify from 'rehype-preset-minify'
 import rehypeWrap from 'rehype-wrap-all'
+import { addCopyButton } from 'shiki-transformer-copy-button'
 
 import callApi from 'src/utils/api/callApi'
 import {
@@ -55,6 +56,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
         light: require('sprinkles-vscode/themes/sprinkles-light.json'),
       },
       defaultLang: 'plaintext',
+      transformers: [addCopyButton()],
     })
     .use(rehypeWrap, { selector: 'table', wrapper: 'div.responsiveTable' })
     .use(rehypeStringify, { allowDangerousHtml: true })

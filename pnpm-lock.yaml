@@ -116,6 +116,9 @@ importers:
       shiki:
         specifier: 1.15.2
         version: 1.15.2
+      shiki-transformer-copy-button:
+        specifier: 0.0.3
+        version: 0.0.3
       sprinkles-vscode:
         specifier: 2.7.0
         version: 2.7.0
@@ -3099,6 +3102,9 @@ packages:
   hastscript@8.0.0:
     resolution: {integrity: sha512-dMOtzCEd3ABUeSIISmrETiKuyydk1w0pa+gE/uormcTpSYuaNJPbX1NU3JLyscSLjwAQM8bWMhhIlnCqnRvDTw==}
 
+  hastscript@9.0.0:
+    resolution: {integrity: sha512-jzaLBGavEDKHrc5EfFImKN7nZKKBdSLIdGvCwDZ9TfzbF2ffXiov8CKE445L2Z1Ek2t/m4SKQ2j6Ipv7NyUolw==}
+
   headers-polyfill@4.0.2:
     resolution: {integrity: sha512-EWGTfnTqAO2L/j5HZgoM/3z82L7necsJ0pO9Tp0X1wil3PDLrkypTBRgVO2ExehEEvUycejZD3FuRaXpZZc3kw==}
 
@@ -5068,6 +5074,9 @@ packages:
   shebang-regex@3.0.0:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
+
+  shiki-transformer-copy-button@0.0.3:
+    resolution: {integrity: sha512-MPwtpYEWWhLFVBaEY/IeI34tBNuynu2n/khHEysTa1ijodLauS7fg38FTBthML3WxpE/Z5kRdZeitRQx7FJgdA==}
 
   shiki@1.15.2:
     resolution: {integrity: sha512-M+7QZQZiZw/cZeizrC/yryG3eeG8pTUhu7ZaHxVyzPNFIRIlN46YBciquoNPCiXiwLnx6JB62f3lSuSYQrus1w==}
@@ -9730,6 +9739,14 @@ snapshots:
       property-information: 6.0.1
       space-separated-tokens: 2.0.1
 
+  hastscript@9.0.0:
+    dependencies:
+      '@types/hast': 3.0.4
+      comma-separated-tokens: 2.0.2
+      hast-util-parse-selector: 4.0.0
+      property-information: 6.0.1
+      space-separated-tokens: 2.0.1
+
   headers-polyfill@4.0.2: {}
 
   hex-rgb@4.3.0: {}
@@ -12282,6 +12299,10 @@ snapshots:
       shebang-regex: 3.0.0
 
   shebang-regex@3.0.0: {}
+
+  shiki-transformer-copy-button@0.0.3:
+    dependencies:
+      hastscript: 9.0.0
 
   shiki@1.15.2:
     dependencies:
