@@ -3,15 +3,15 @@ import SectionTitle from 'src/components/SectionTitle'
 const profiles = [
   {
     name: 'Twitter',
-    url: 'https://twitter.com/crloscuesta',
+    url: '/follow/x',
   },
   {
     name: 'GitHub',
-    url: 'https://github.com/carloscuesta',
+    url: '/follow/github',
   },
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/crloscuesta/',
+    url: '/follow/linkedin',
   },
   {
     name: 'Email',

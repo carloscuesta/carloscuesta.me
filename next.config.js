@@ -41,6 +41,21 @@ module.exports = withPWA(
         destination: '/projects',
         permanent: true,
       },
+      {
+        source: '/follow/linkedin',
+        destination: 'https://www.linkedin.com/in/crloscuesta',
+        permanent: true,
+      },
+      {
+        source: '/follow/x',
+        destination: 'https://twitter.com/crloscuesta',
+        permanent: true,
+      },
+      {
+        source: '/follow/github',
+        destination: 'https://github.com/carloscuesta',
+        permanent: true,
+      },
     ],
     headers: async () => [
       {
