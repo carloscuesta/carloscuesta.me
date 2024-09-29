@@ -10,7 +10,7 @@ const Footer = () => (
 
         <div className="flex items-center">
           <a
-            href="https://twitter.com/crloscuesta"
+            href="/follow/x"
             aria-label="Visit my Twitter"
             className="p-3 text-neutral-500 transition-colors hover:text-neutral-800 dark:hover:text-neutral-300"
           >
@@ -29,7 +29,7 @@ const Footer = () => (
           </a>
 
           <a
-            href="https://github.com/carloscuesta/"
+            href="/follow/github"
             aria-label="Visit my GitHub"
             className="p-3 text-neutral-500 transition-colors hover:text-neutral-800 dark:hover:text-neutral-300"
           >
@@ -48,7 +48,7 @@ const Footer = () => (
           </a>
 
           <a
-            href="https://www.linkedin.com/in/crloscuesta"
+            href="/follow/linkedin"
             aria-label="Visit my LinkedIn"
             className="p-3 text-neutral-500 transition-colors hover:text-neutral-800 dark:hover:text-neutral-300"
           >

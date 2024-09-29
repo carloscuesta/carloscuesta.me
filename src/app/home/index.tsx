@@ -20,7 +20,6 @@ const Home = (props: Props) => {
         name="Carlos Cuesta"
         url="https://carloscuesta.me"
         sameAs={[
-          'http://instagram.com/crloscuesta',
           'https://github.com/carloscuesta',
           'https://twitter.com/crloscuesta',
           'https://www.linkedin.com/in/crloscuesta',

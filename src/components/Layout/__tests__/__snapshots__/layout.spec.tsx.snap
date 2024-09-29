@@ -158,7 +158,7 @@ exports[`Layout should render the Layout with children 1`] = `
           <a
             aria-label="Visit my Twitter"
             className="p-3 text-neutral-500 transition-colors hover:text-neutral-800 dark:hover:text-neutral-300"
-            href="https://twitter.com/crloscuesta"
+            href="/follow/x"
           >
             <svg
               height="14"
@@ -176,7 +176,7 @@ exports[`Layout should render the Layout with children 1`] = `
           <a
             aria-label="Visit my GitHub"
             className="p-3 text-neutral-500 transition-colors hover:text-neutral-800 dark:hover:text-neutral-300"
-            href="https://github.com/carloscuesta/"
+            href="/follow/github"
           >
             <svg
               height="16"
@@ -194,7 +194,7 @@ exports[`Layout should render the Layout with children 1`] = `
           <a
             aria-label="Visit my LinkedIn"
             className="p-3 text-neutral-500 transition-colors hover:text-neutral-800 dark:hover:text-neutral-300"
-            href="https://www.linkedin.com/in/crloscuesta"
+            href="/follow/linkedin"
           >
             <svg
               height="16"
