@@ -14,7 +14,6 @@
     "test:lint": "eslint src && prettier --check src",
     "test:unit": "jest --coverage",
     "test:watch": "NODE_ENV=test TZ=UTC jest --watch",
-    "test:coverage": "codecov",
     "test:lighthouse": "pnpm run build && lhci autorun",
     "postbuild": "rm -rf public/mockServiceWorker.js && next-sitemap",
     "prepare": "husky"
@@ -84,7 +83,6 @@
     "@typescript-eslint/parser": "5.62.0",
     "autoprefixer": "10.4.20",
     "classix": "2.1.38",
-    "codecov": "^3.8.3",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.0.4",
     "eslint-config-prettier": "9.1.0",
