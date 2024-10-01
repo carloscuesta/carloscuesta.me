@@ -134,6 +134,10 @@ In the **traditional** approach, the focus is primarily on the **data**, where t
 
 On the other hand, **Server-Driven UIs** shift the focus to the **user-interface** itself. The server is responsible for defining the components tree and the client's role is to render the tree as it is.
 
+### Building Server-Driven UIs
+
+![SDUI Component Tree](https://res.cloudinary.com/carloscuesta/image/upload/v1727786653/building-sdui-tree.jpg)
+
 ### Benefits of Server-Driven UIs
 
 #### Immediate changes and faster iterations
@@ -159,7 +163,5 @@ Defining the UI on the server enables highly adaptable and dynamic interfaces th
 - **A/B Testing**: Experiment with different designs and features by serving different variants to user groups.
 
 - **Release flags**: Gradually roll out new features by enabling them for a subset of users.
-
-### Building Server-Driven UIs
 
 ### Challenges of Server-Driven UIs
