@@ -33,9 +33,6 @@ A contract is defined between the client and the server, adhering to a specific 
 
 The client will fetch the **data** from the server and will transform it into a user-interface.
 
-<details>
-  <summary>Reveal JSON 👈</summary>
-
 ```json
 {
   "title": "Top Technology Podcasts",
@@ -67,16 +64,11 @@ The client will fetch the **data** from the server and will transform it into a 
 }
 ```
 
-</details>
-
 #### Server-Driven UI
 
-Whereas, with _SDUI_ the server will send a **tree**-like **structure of components** to the client. Each component represents a part of the UI and contains information about what to render and the properties the component needs.
+With _SDUI_ the server will send a **tree**-like **structure of components** to the client. Each component represents a part of the UI and contains information about what to render and the properties the component needs.
 
 The client will **traverse** this **tree**, rendering each component as specified by the server.
-
-<details>
-  <summary>Reveal JSON 👈</summary>
 
 ```json
 [
@@ -125,14 +117,6 @@ The client will **traverse** this **tree**, rendering each component as specifie
   }
 ]
 ```
-
-</details>
-
-#### Traditional 🆚 Server-Driven UIs
-
-In the **traditional** approach, the focus is primarily on the **data**, where the client is responsible for fetching and transforming it into a user-interface.
-
-On the other hand, **Server-Driven UIs** shift the focus to the **user-interface** itself. The server is responsible for defining the components tree and the client's role is to render the tree as it is.
 
 ### Building Server-Driven UIs
 
