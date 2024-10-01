@@ -128,15 +128,11 @@ The client will **traverse** this **tree**, rendering each component as specifie
 
 Server-Driven UIs allow you to **push immediate bug fixes** and updates **without** having to **release** an **update** to the clients.
 
-This is especially useful in environments like as native mobile apps, where updates typically require going through a review process and waiting for users to install the new update.
-
-Changes made on the server will be reflected instantly on the client side.
+This is especially useful in environments like mobile apps, where updates typically require going through a review process and waiting for users to install the new update.
 
 #### Reduce client-side complexity
 
 By **shifting** the **UI logic** to the **server**, Server-Driven UIs make the **client** ligther and **simpler**. The client only needs to focus on rendering the components provided by the server.
-
-This helps clients to be more maintainable as they no longer need to manage UI or layout logic.
 
 #### Dynamic user-interfaces
 
