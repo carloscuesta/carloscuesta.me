@@ -120,7 +120,153 @@ The client will **traverse** this **tree**, rendering each component as specifie
 
 ### Building Server-Driven UIs
 
-![SDUI Component Tree](https://res.cloudinary.com/carloscuesta/image/upload/v1727786653/building-sdui-tree.jpg)
+Now that we understand the concept behind Server-Driven UIs, let's explore how to build them in a practical scenario.
+
+We will break down the process into the following steps:
+
+1. **Define the component tree**: Define the components and the tree that represents the user-interface.
+2. **Implement the components**: Create a component for each definition.
+3. **Build the rendering engine**: Traverse the JSON tree and render each component as specified.
+
+#### Define the component tree
+
+Based on the JSON response we defined previously, here's how we're going to break down the user-interface into components:
+
+- `Title`: The main title of the page.
+- `SectionTitle`: The title of a section.
+- `PodcastList`: A list of podcasts.
+- `Podcast`: The podcast item.
+- `EpisodeList`: A list of episodes.
+- `Episode`: The episode item.
+
+![SDUI Component Tree](https://res.cloudinary.com/carloscuesta/image/upload/v1727870288/building-sdui-component-tree.jpg)
+
+#### Implement the components
+
+After defining the tree, it's time to build the components. I will be doing it with [React](https://react.dev) and [Tailwind](https://tailwindcss.com/) but you can use any other library.
+
+<details>
+  <summary>Toggle components code 👈</summary>
+
+```jsx
+const Title = (props: { text: string }) => (
+  <h1 className="text-3xl font-extrabold">{props.text}</h1>
+)
+```
+
+```jsx
+const SubTitle = (props: { text: string }) => (
+  <div className="flex items-center gap-x-1">
+    <h2 className="text-lg font-bold">{props.text}</h2>
+    <ChevronRight className="opacity-60" size={20} />
+  </div>
+)
+```
+
+```jsx
+const PodcastList = (props: Props) => (
+  <ul className="grid grid-flow-col grid-cols-4 gap-x-4">
+    {props.children}
+  </ul>
+)
+```
+
+```jsx
+const Podcast = (props: Props) => (
+  <div className="text-sm">
+    <Image
+      alt={props.title + ' ' + props.description}
+      width={200}
+      height={200}
+      className="rounded-lg mb-2"
+      src={props.image}
+    />
+    <p className="font-bold">{props.rank}</p>
+    <p>{props.title}</p>
+    <p className="opacity-60">{props.description}</p>
+  </div>
+)
+```
+
+```jsx
+const EpisodeList = (props: Props) => (
+  <ul className="grid gap-2">{props.children}</ul>
+)
+```
+
+```jsx
+const Episode = (props: Props) => (
+  <div className="flex flex-row gap-x-4 items-start text-sm">
+    <Image
+      alt={props.title}
+      width={90}
+      height={90}
+      className="rounded-lg"
+      src={props.image}
+    />
+    <p className="font-bold">{props.rank}</p>
+    <div className="flex-1 pb-4 border-b-[1px]">
+      <p className="text-xs font-semibold opacity-60">{props.publishedAt}</p>
+      <p className="font-semibold py-1">{props.title}</p>
+      <p className="text-xs opacity-60">{props.duration}</p>
+    </div>
+  </div>
+)
+```
+
+</details>
+
+#### Build the rendering engine
+
+This is where the magic happens 🪄. We are going to implement our rendering engine by **traversing** the **component tree** and **matching each node** with the corresponding **component**.
+
+To do that, first we define a map of components that we will use to match the `type` of each node with every component.
+
+```jsx
+import Title from './components/Title'
+import SectionTitle from './components/SectionTitle'
+import PodcastList from './components/PodcastList'
+import Podcast from './components/Podcast'
+import Episode from './components/Episode'
+import EpisodeList from './components/EpisodeList'
+
+const SDUI_COMPONENTS = {
+  EpisodeList,
+  PodcastList,
+  Podcast,
+  Episode,
+  SectionTitle,
+  Title,
+} as const
+```
+
+Then, we create a component that using **recursion** will **traverse** the **tree** and render it. In case you're not familiar with _recursion_ here's a [video from Sam Selikoff](https://www.youtube.com/watch?v=6UU2Ey4KZr8) that explains it very well.
+
+```jsx
+const SduiRenderer = ({ component }) => {
+  const Component = SDUI_COMPONENTS[component.type]
+
+  if (!Component) return null
+
+  return (
+    <Component {...component.props}>
+      {component.children?.map((component, idx) => (
+        <SduiRenderer key={`c-${idx}`} component={component} />
+      ))}
+    </Component>
+  )
+}
+
+const Page = () => {
+  return data.map((component, idx) => (
+    <SduiRenderer key={`b-${idx}`} component={component} />
+  ))
+}
+```
+
+Here's how all the pieces come together 🕹️, feel free to play around with the response to see how the user-interface reacts 😜
+
+<iframe src="https://stackblitz.com/edit/server-driven-uis?embed=1&file=app%2Fdata%2Findex.tsx&theme=light&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"></iframe>
 
 ### Benefits of Server-Driven UIs
 
