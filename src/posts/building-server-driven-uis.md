@@ -291,3 +291,9 @@ Defining the UI on the server enables highly adaptable and dynamic interfaces th
 - **Release flags**: Gradually roll out new features by enabling them for a subset of users.
 
 ### Challenges of Server-Driven UIs
+
+1. **State management**: Synchronizing state between the client and the server can be challenging, specially when dealing with complex interactions as the server needs to keep up with the client's state and update the UI accordingly.
+2. **Offline support**: Server-Driven UIs rely on the server, managing the user experience when offline can be challenging. Caching and pre-fetching stategies can help mitigate this.
+3. **Performance considerations**: Efficient network requests, payload optimization, low latency along with a good client-side rendering performance are crucial to ensure a smooth user experience.
+
+### Conclusion
