@@ -36,7 +36,7 @@
     "@vercel/kv": "0.2.2",
     "@vercel/speed-insights": "1.0.12",
     "body-scroll-lock": "4.0.0-beta.0",
-    "date-fns": "^3.6.0",
+    "date-fns": "^4.1.0",
     "disqus-react": "^1.1.5",
     "feed": "4.2.2",
     "gray-matter": "^4.0.3",
