@@ -9,7 +9,9 @@ type Props = {
 
 const Header = (props: Props) => (
   <header className="mb-6 pb-4">
-    <h1 className="mb-2 text-4xl font-extrabold">{props.title}</h1>
+    <h1 className="mb-2 text-4xl font-extrabold tracking-tight">
+      {props.title}
+    </h1>
 
     <time className="text-sm opacity-70" dateTime={props.datePublished.value}>
       {props.datePublished.formatDate}
