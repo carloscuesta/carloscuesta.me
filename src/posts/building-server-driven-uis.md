@@ -2,7 +2,7 @@
 dateModified: '2024-10-04 10:00'
 datePublished: '2024-10-04 10:00'
 disqusIdentifier: 'building-server-driven-uis'
-excerpt: ''
+excerpt: 'Server-Driven UIs known as SDUI is an architectural pattern that aims to reduce client-side complexity by building user-interfaces from the server over APIs. This is transforming the way apps are developed, fostering dynamic and flexible UIs.'
 image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1728038996/blog-featured-images/Building-Server-Driven-UIs.png'
 title: 'Building Server-Driven UIs'
 ---
