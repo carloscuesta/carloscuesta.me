@@ -32,6 +32,14 @@ html {
   background-color: #ff7043;
 }
 
+.prose a[href]:not([href^="#"]) {
+  @apply no-underline text-blue-600 underline-offset-2 dark:text-blue-400
+}
+
+.prose a[href]:not([href^="#"]):hover {
+  @apply underline
+}
+
 .prose h1 a,
 .prose h2 a,
 .prose h3 a,
