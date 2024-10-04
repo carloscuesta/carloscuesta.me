@@ -40,6 +40,22 @@ html {
   @apply underline
 }
 
+.prose ol, .prose ol ol {
+  counter-reset: item;
+}
+
+.prose ol > li, .prose ol ol li {
+  counter-increment: item;
+}
+
+.prose ol > li::marker {
+  content: counters(item, ".") "." " ";
+}
+
+.prose ol ol li::marker {
+  content: counters(item, ".") " ";
+}
+
 .prose h1 a,
 .prose h2 a,
 .prose h3 a,

@@ -34,7 +34,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
   const html = await unified()
     .use(remarkParse)
     .use(remarkGFM)
-    .use(remarkToc, { tight: true, maxDepth: 4 })
+    .use(remarkToc, { tight: true, maxDepth: 4, ordered: true })
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeSlug)
     .use(rehypeAutoLinkHeadings, { behavior: 'wrap' })
