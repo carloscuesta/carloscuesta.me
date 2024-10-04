@@ -75,6 +75,7 @@ exports[`Blog API Client fetchPosts should return an array of posts sorted by da
 exports[`Blog API Client getPostSlugs should match getPostSlugs 1`] = `
 [
   "2016-year-in-review",
+  "building-server-driven-uis",
   "chrome-devtools-customization",
   "composing-uis-with-finite-state-machines",
   "debugging-with-the-javascript-console",
