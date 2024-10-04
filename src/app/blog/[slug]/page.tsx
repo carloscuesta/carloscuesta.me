@@ -74,7 +74,7 @@ const Article = async ({ params }: Params) => {
 
           <div
             dangerouslySetInnerHTML={{ __html: post.html }}
-            className="prose prose-lg relative max-w-full dark:prose-invert prose-headings:scroll-mt-16 prose-headings:font-semibold prose-img:rounded-lg"
+            className="prose prose-neutral relative max-w-full dark:prose-invert prose-headings:scroll-mt-16 prose-img:rounded-lg"
           />
 
           <ShareLinks
