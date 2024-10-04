@@ -77,6 +77,8 @@ const Article = async ({ params }: Params) => {
             className="prose prose-neutral relative max-w-full dark:prose-invert prose-headings:scroll-mt-16 prose-img:rounded-lg"
           />
 
+          <hr className="mt-12 border-neutral-100 dark:border-neutral-800" />
+
           <ShareLinks
             canonicalUrl={canonicalUrl}
             slug={post.slug}
