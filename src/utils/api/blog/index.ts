@@ -37,17 +37,7 @@ export const fetchPost = async (slug: string): Promise<Post> => {
     .use(remarkToc, { tight: true, maxDepth: 4 })
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeSlug)
-    .use(rehypeAutoLinkHeadings, {
-      content: {
-        type: 'element',
-        tagName: 'span',
-        properties: {
-          className:
-            'headingLink absolute left-0 -translate-x-full pr-2 opacity-0 text-neutral-500',
-        },
-        children: [{ type: 'text', value: '#' }],
-      },
-    })
+    .use(rehypeAutoLinkHeadings, { behavior: 'wrap' })
     .use(rehypeExternalLinks)
     .use(rehypePrettyCode, {
       theme: {

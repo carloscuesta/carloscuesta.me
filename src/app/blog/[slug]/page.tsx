@@ -44,19 +44,6 @@ const Article = async ({ params }: Params) => {
 
   return (
     <article className="postDetail">
-      <style>
-        {`
-          .prose h1:hover .headingLink,
-          .prose h2:hover .headingLink,
-          .prose h3:hover .headingLink,
-          .prose h4:hover .headingLink,
-          .prose h5:hover .headingLink,
-          .prose h6:hover .headingLink {
-            opacity: 1;
-          }
-        `}
-      </style>
-
       <ArticleJsonLd
         useAppDir={true}
         authorName="Carlos Cuesta"
