@@ -113,19 +113,17 @@ code[data-theme*=' '] span {
   background-color: var(--shiki-light-bg);
 }
 
-@media (prefers-color-scheme: dark) {
-  code[data-theme*=' '],
-  code[data-theme*=' '] span {
-    color: var(--shiki-dark);
-    background-color: var(--shiki-dark-bg);
-    border: 0;
-  }
+.dark code[data-theme*=' '],
+.dark code[data-theme*=' '] span {
+  color: var(--shiki-dark);
+  background-color: var(--shiki-dark-bg);
+  border: 0;
+}
 
-  pre,
-  pre[data-theme] {
-    background-color: var(--shiki-dark-bg);
-    border: unset;
-  }
+.dark pre,
+.dark pre[data-theme] {
+  background-color: var(--shiki-dark-bg);
+  border: unset;
 }
 
 @layer utilities {
