@@ -91,21 +91,11 @@ pre[data-theme] {
 pre,
 .prose pre,
 pre[data-language] {
-  font-family:
-    Operator Mono,
-    Fira Code,
-    Consolas,
-    monospace;
   font-size: 1rem;
 }
 
 pre,
 pre[data-theme] {
-  font-family:
-    Operator Mono,
-    Fira Code,
-    Consolas,
-    monospace;
   font-size: 1rem;
   padding: 1rem 1.25rem;
   margin: 0.5rem 0;
