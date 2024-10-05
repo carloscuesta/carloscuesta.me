@@ -50,10 +50,12 @@ html {
 
 .prose ol > li::marker {
   content: counters(item, ".") "." " ";
+  @apply font-mono text-sm;
 }
 
 .prose ol ol li::marker {
   content: counters(item, ".") " ";
+  @apply font-mono text-sm;
 }
 
 .prose h1 a,
