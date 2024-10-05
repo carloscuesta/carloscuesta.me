@@ -11,7 +11,7 @@ title: 'Building Server-Driven UIs'
 
 This is not just theory. Some of the biggest names in the tech industry adopted Server-Driven UIs, such as: [Airbnb](https://medium.com/airbnb-engineering/a-deep-dive-into-airbnbs-server-driven-ui-system-842244c5f5), **Instagram** and [Shopify](https://shopify.engineering/server-driven-ui-in-shop-app)—just to name a few. _Spoiler_: we also use this at [N26](https://n26.com).
 
-In this article we will explore what are Server-Driven UIs, their benefits, and how to implement them 🙏
+In this post we will explore what are Server-Driven UIs, their benefits and how to implement them 🙏
 
 ### Table of contents
 
