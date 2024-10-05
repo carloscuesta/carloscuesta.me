@@ -40,6 +40,14 @@ html {
   @apply underline
 }
 
+.prose a[href^="#"] {
+  @apply no-underline underline-offset-2
+}
+
+.prose a[href^="#"]:hover {
+  @apply underline
+}
+
 .prose ol, .prose ol ol {
   counter-reset: item;
 }
@@ -50,12 +58,12 @@ html {
 
 .prose ol > li::marker {
   content: counters(item, ".") "." " ";
-  @apply font-mono text-sm;
+  @apply text-sm;
 }
 
 .prose ol ol li::marker {
   content: counters(item, ".") " ";
-  @apply font-mono text-sm;
+  @apply text-sm;
 }
 
 .prose h1 a,
