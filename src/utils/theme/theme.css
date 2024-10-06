@@ -32,37 +32,39 @@ html {
   background-color: #ff7043;
 }
 
-.prose a[href]:not([href^="#"]) {
-  @apply no-underline text-blue-600 underline-offset-2 dark:text-blue-400
+.prose a[href]:not([href^='#']) {
+  @apply no-underline text-blue-600 underline-offset-2 dark:text-blue-400;
 }
 
-.prose a[href]:not([href^="#"]):hover {
-  @apply underline
+.prose a[href]:not([href^='#']):hover {
+  @apply underline;
 }
 
-.prose a[href^="#"] {
-  @apply no-underline underline-offset-2
+.prose a[href^='#'] {
+  @apply no-underline underline-offset-2;
 }
 
-.prose a[href^="#"]:hover {
-  @apply underline
+.prose a[href^='#']:hover {
+  @apply underline;
 }
 
-.prose ol, .prose ol ol {
+.prose ol,
+.prose ol ol {
   counter-reset: item;
 }
 
-.prose ol > li, .prose ol ol li {
+.prose ol > li,
+.prose ol ol li {
   counter-increment: item;
 }
 
 .prose ol > li::marker {
-  content: counters(item, ".") "." " ";
+  content: counters(item, '.') '.' ' ';
   @apply text-sm;
 }
 
 .prose ol ol li::marker {
-  content: counters(item, ".") " ";
+  content: counters(item, '.') ' ';
   @apply text-sm;
 }
 
@@ -72,7 +74,7 @@ html {
 .prose h4 a,
 .prose h5 a,
 .prose h6 a {
-  @apply no-underline font-bold
+  @apply no-underline font-bold;
 }
 
 .prose h1 a:hover,
@@ -81,7 +83,7 @@ html {
 .prose h4 a:hover,
 .prose h5 a:hover,
 .prose h6 a:hover {
-  @apply underline
+  @apply underline;
 }
 
 code[data-theme],
@@ -102,8 +104,9 @@ pre[data-language] {
   font-size: 1rem;
 }
 
-.prose code::after, .prose code::before {
-  @apply content-none
+.prose code::after,
+.prose code::before {
+  @apply content-none;
 }
 
 pre,
@@ -163,22 +166,22 @@ code[data-line-numbers] > [data-line]::before {
   width: 0.75rem;
   margin-right: 2rem;
   text-align: right;
-  @apply text-neutral-400 dark:text-neutral-600
+  @apply text-neutral-400 dark:text-neutral-600;
 }
 
 code[data-line-numbers] > [data-highlighted-line]::before {
-  @apply text-neutral-700 dark:text-neutral-300
+  @apply text-neutral-700 dark:text-neutral-300;
 }
 
-code[data-line-numbers-max-digits="2"] > [data-line]::before {
+code[data-line-numbers-max-digits='2'] > [data-line]::before {
   width: 1.25rem;
 }
 
-code[data-line-numbers-max-digits="3"] > [data-line]::before {
+code[data-line-numbers-max-digits='3'] > [data-line]::before {
   width: 1.75rem;
 }
 
-code[data-line-numbers-max-digits="4"] > [data-line]::before {
+code[data-line-numbers-max-digits='4'] > [data-line]::before {
   width: 2.25rem;
 }
 
@@ -188,7 +191,7 @@ figcaption + pre[data-theme] {
 }
 
 [data-rehype-pretty-code-title] {
-  @apply rounded-t-md px-4 py-2 border border-b-0 font-semibold font-mono dark:border-0 dark:bg-[#333739] dark:text-neutral-300
+  @apply rounded-t-md px-4 py-2 border border-b-0 font-semibold font-mono dark:border-0 dark:bg-[#333739] dark:text-neutral-300;
 }
 
 @layer utilities {
