@@ -150,6 +150,36 @@ code[data-theme*=' '] span {
   border: unset;
 }
 
+code[data-line-numbers] {
+  counter-reset: line;
+}
+
+code[data-line-numbers] > [data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  width: 0.75rem;
+  margin-right: 2rem;
+  text-align: right;
+  @apply text-neutral-400 dark:text-neutral-600
+}
+
+code[data-line-numbers] > [data-highlighted-line]::before {
+  @apply text-neutral-700 dark:text-neutral-300
+}
+
+code[data-line-numbers-max-digits="2"] > [data-line]::before {
+  width: 1.25rem;
+}
+
+code[data-line-numbers-max-digits="3"] > [data-line]::before {
+  width: 1.75rem;
+}
+
+code[data-line-numbers-max-digits="4"] > [data-line]::before {
+  width: 2.25rem;
+}
+
 @layer utilities {
   .hide-scrollbar::-webkit-scrollbar {
     -webkit-appearance: none;
