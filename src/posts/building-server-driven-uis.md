@@ -11,7 +11,7 @@ title: 'Building Server-Driven UIs'
 
 This is not just theory. Some of the biggest names in the tech industry adopted Server-Driven UIs, such as: [Airbnb](https://medium.com/airbnb-engineering/a-deep-dive-into-airbnbs-server-driven-ui-system-842244c5f5), **Instagram** and [Shopify](https://shopify.engineering/server-driven-ui-in-shop-app)—just to name a few. _Spoiler_: we also use this at [N26](https://n26.com).
 
-In this article we will explore what are Server-Driven UIs, their benefits, and how to implement them 🙏
+In this post we will explore what are Server-Driven UIs, their benefits and how to implement them 🙏
 
 ### Table of contents
 
@@ -150,13 +150,13 @@ After defining the tree, it's time to build the components. I will be doing it w
 <details>
   <summary>Toggle components code 👈</summary>
 
-```jsx
+```jsx title="app/components/Title/index.tsx"
 const Title = (props: { text: string }) => (
   <h1 className="text-3xl font-extrabold">{props.text}</h1>
 )
 ```
 
-```jsx
+```jsx title="app/components/SubTitle/index.tsx"
 const SubTitle = (props: { text: string }) => (
   <div className="flex items-center gap-x-1">
     <h2 className="text-lg font-bold">{props.text}</h2>
@@ -165,7 +165,7 @@ const SubTitle = (props: { text: string }) => (
 )
 ```
 
-```jsx
+```jsx title="app/components/PodcastList/index.tsx"
 const PodcastList = (props: Props) => (
   <ul className="grid grid-flow-col grid-cols-4 gap-x-4">
     {props.children}
@@ -173,7 +173,7 @@ const PodcastList = (props: Props) => (
 )
 ```
 
-```jsx
+```jsx title="app/components/Podcast/index.tsx"
 const Podcast = (props: Props) => (
   <div className="text-sm">
     <Image
@@ -190,13 +190,13 @@ const Podcast = (props: Props) => (
 )
 ```
 
-```jsx
+```jsx title="app/components/EpisodeList/index.tsx"
 const EpisodeList = (props: Props) => (
   <ul className="grid gap-2">{props.children}</ul>
 )
 ```
 
-```jsx
+```jsx title="app/components/Episode/index.tsx"
 const Episode = (props: Props) => (
   <div className="flex flex-row gap-x-4 items-start text-sm">
     <Image
@@ -224,7 +224,7 @@ This is where the magic happens 🪄. We are going to implement our rendering en
 
 To do that, first we define a map of components that we will use to match the `type` of each node with every component.
 
-```jsx
+```jsx title="app/page.tsx"
 import Title from './components/Title'
 import SectionTitle from './components/SectionTitle'
 import PodcastList from './components/PodcastList'
@@ -244,7 +244,7 @@ const SDUI_COMPONENTS = {
 
 Then, we create a component that using **recursion** will **traverse** the **tree** and render it. In case you're not familiar with _recursion_ here's a [video from Sam Selikoff](https://www.youtube.com/watch?v=6UU2Ey4KZr8) that explains it very well.
 
-```jsx
+```jsx title="app/page.tsx"
 const SduiRenderer = ({ component }) => {
   const Component = SDUI_COMPONENTS[component.type]
 

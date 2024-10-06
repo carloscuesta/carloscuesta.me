@@ -8,7 +8,9 @@ type Props = {
 
 const ShareLinks = (props: Props) => (
   <section className="my-8">
-    <p className="pb-6 text-2xl font-semibold">Enjoyed the article? 😍</p>
+    <p className="pb-6 text-xl font-bold tracking-tight">
+      Enjoyed the article? 😍
+    </p>
     <div className="grid grid-cols-1 gap-3 sm:grid-flow-col sm:grid-cols-[repeat(3,max-content)]">
       <Button
         label="Share on Twitter"

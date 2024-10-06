@@ -44,19 +44,6 @@ const Article = async ({ params }: Params) => {
 
   return (
     <article className="postDetail">
-      <style>
-        {`
-          .prose h1:hover .headingLink,
-          .prose h2:hover .headingLink,
-          .prose h3:hover .headingLink,
-          .prose h4:hover .headingLink,
-          .prose h5:hover .headingLink,
-          .prose h6:hover .headingLink {
-            opacity: 1;
-          }
-        `}
-      </style>
-
       <ArticleJsonLd
         useAppDir={true}
         authorName="Carlos Cuesta"
@@ -87,8 +74,10 @@ const Article = async ({ params }: Params) => {
 
           <div
             dangerouslySetInnerHTML={{ __html: post.html }}
-            className="prose prose-lg relative max-w-full dark:prose-invert prose-headings:scroll-mt-16 prose-headings:font-semibold prose-img:rounded-lg"
+            className="prose prose-neutral relative max-w-full dark:prose-invert prose-headings:scroll-mt-16 prose-img:rounded-lg"
           />
+
+          <hr className="mt-12 border-neutral-100 dark:border-neutral-800" />
 
           <ShareLinks
             canonicalUrl={canonicalUrl}
