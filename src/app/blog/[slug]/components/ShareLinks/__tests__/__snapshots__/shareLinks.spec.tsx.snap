@@ -5,7 +5,7 @@ exports[`ShareLinks should match ShareLinks component 1`] = `
   className="my-8"
 >
   <p
-    className="pb-6 text-2xl font-semibold"
+    className="pb-6 text-xl font-bold tracking-tight"
   >
     Enjoyed the article? 😍
   </p>
@@ -13,7 +13,7 @@ exports[`ShareLinks should match ShareLinks component 1`] = `
     className="grid grid-cols-1 gap-3 sm:grid-flow-col sm:grid-cols-[repeat(3,max-content)]"
   >
     <a
-      className="hover:text-neutral-1000 shadow-xs flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
+      className="shadow-xs text-sm flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
       href="https://twitter.com/intent/tweet?text=This is a post&url=https://www.example.com/blog/this-is-a-post&via=crloscuesta"
       rel="noopener noreferrer"
       target="_blank"
@@ -21,7 +21,7 @@ exports[`ShareLinks should match ShareLinks component 1`] = `
       Share on Twitter
     </a>
     <a
-      className="hover:text-neutral-1000 shadow-xs flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
+      className="shadow-xs text-sm flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
       href="https://twitter.com/search?q=https://www.example.com/blog/this-is-a-post"
       rel="noopener noreferrer"
       target="_blank"
@@ -29,7 +29,7 @@ exports[`ShareLinks should match ShareLinks component 1`] = `
       Discuss on Twitter
     </a>
     <a
-      className="hover:text-neutral-1000 shadow-xs flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
+      className="shadow-xs text-sm flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
       href="https://github.com/carloscuesta/carloscuesta.me/edit/master/src/posts/this-is-a-post.md"
       rel="noopener noreferrer"
       target="_blank"

@@ -5,7 +5,7 @@ exports[`Header should match Header component 1`] = `
   className="mb-6 pb-4"
 >
   <h1
-    className="mb-2 text-4xl font-extrabold"
+    className="mb-2 text-4xl font-extrabold tracking-tight"
   >
     Post title
   </h1>
