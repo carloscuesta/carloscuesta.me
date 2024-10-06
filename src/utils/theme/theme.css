@@ -106,13 +106,11 @@ pre,
 pre[data-theme] {
   font-size: 1rem;
   padding: 1rem 0;
-  margin: 0.5rem 0;
   overflow: auto;
-  border-radius: 0.35rem;
-  margin-top: 1.3333333em;
-  margin-bottom: 1.3333333em;
+  border-radius: 0;
   background-color: var(--shiki-light-bg);
   border: 1px solid #e8eaec;
+  @apply rounded-md;
 }
 
 pre [data-line] {
@@ -178,6 +176,15 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
 
 code[data-line-numbers-max-digits="4"] > [data-line]::before {
   width: 2.25rem;
+}
+
+figcaption + pre[data-theme] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+[data-rehype-pretty-code-title] {
+  @apply rounded-t-md px-4 py-2 border border-b-0 font-semibold font-mono dark:border-0 dark:bg-[#333739] dark:text-neutral-300
 }
 
 @layer utilities {
