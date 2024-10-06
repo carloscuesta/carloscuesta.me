@@ -102,6 +102,10 @@ pre[data-language] {
   font-size: 1rem;
 }
 
+.prose code::after, .prose code::before {
+  @apply content-none
+}
+
 pre,
 pre[data-theme] {
   font-size: 1rem;
