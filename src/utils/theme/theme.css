@@ -115,17 +115,33 @@ pre[data-theme] {
   border: 1px solid #e8eaec;
 }
 
-code[data-theme*=' '],
-code[data-theme*=' '] span {
-  color: var(--shiki-light);
+pre [data-line] {
+  padding: 0 1.25rem;
+}
+
+[data-highlighted-line] {
+  background: #f6f8fa;
+}
+
+code[data-theme*=' '] {
   background-color: var(--shiki-light-bg);
 }
 
-.dark code[data-theme*=' '],
-.dark code[data-theme*=' '] span {
-  color: var(--shiki-dark);
+code[data-theme*=' '] span {
+  color: var(--shiki-light);
+}
+
+.dark [data-highlighted-line] {
+  background: #333739;
+}
+
+.dark code[data-theme*=' '] {
   background-color: var(--shiki-dark-bg);
   border: 0;
+}
+
+.dark code[data-theme*=' '] span {
+  color: var(--shiki-dark);
 }
 
 .dark pre,
