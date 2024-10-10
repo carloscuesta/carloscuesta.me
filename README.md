@@ -3,12 +3,13 @@
 [![Build Status](https://img.shields.io/github/actions/workflow/status/carloscuesta/carloscuesta.me/ci.yml?branch=master&style=flat-square)](https://github.com/carloscuesta/carloscuesta.me/actions?query=workflow%3ACI+branch%3Amaster)
 [![Coverage](https://img.shields.io/codecov/c/github/carloscuesta/carloscuesta.me?style=flat-square)](https://codecov.io/gh/carloscuesta/carloscuesta.me)
 
-**Carlos Cuesta** personal site, built with [Next.js](https://nextjs.org/). This repository contains the **source code** that powers `carloscuesta.me`.
+**Carlos Cuesta** site, built with [Next.js](https://nextjs.org/). This is the secret sauce behind `carloscuesta.me`.
 
 ## Development
 
-Run the following command on a terminal to clone the project, install the dependencies and start the development server.
+To run the project locally, clone the repository, install the dependencies and run the dev server.
 
 ```bash
-git clone https://github.com/carloscuesta/carloscuesta.me.git && cd carloscuesta.me && pnpm install && pnpm run dev
+git clone git@github.com:carloscuesta/carloscuesta.me.git
+pnpm install && pnpm run dev
 ```
