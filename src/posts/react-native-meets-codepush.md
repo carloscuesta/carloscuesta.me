@@ -86,7 +86,7 @@ I've created a **demo application** for this post, to **show** how **CodePush wo
 
 The first time we open the app, as you can see at the metrics screenshot, CodePush checks for updates and silently downloads a new one. As I said before, on the next app start the update will be installed. 💯
 
-<img src="https://res.cloudinary.com/carloscuesta/image/upload/v1505066571/vmv0aqiqu0y0l0evthd7.gif" alt="react-native codepush demo" style="width:374px;display:block;margin:auto;">
+<img src="https://res.cloudinary.com/carloscuesta/image/upload/v1505066571/vmv0aqiqu0y0l0evthd7.gif" alt="react-native codepush demo" style="width:374px;display:block;margin:auto;"/>
 
 ### Limitations
 

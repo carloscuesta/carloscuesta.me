@@ -21,7 +21,7 @@ We're going to create an `EmojiList` component and then we are going to refactor
 
 As I mentioned before, we can start really simple and small, without following any pattern. This is our `EmojiList` component contained in a single function.
 
-<iframe src="https://codesandbox.io/embed/3vjxn0ykyq?autoresize=1&module=%2Fsrc%2Fcomponents%2FEmojiList.js&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<iframe src="https://codesandbox.io/embed/3vjxn0ykyq?autoresize=1&module=%2Fsrc%2Fcomponents%2FEmojiList.js&view=preview" class="codeExplorer" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 If you open the _CodeSandbox sidebar_ you'll see that our file tree looks like this:
 
@@ -97,7 +97,7 @@ If we take a look at the image, it's easy to identify that we can **break** up o
 
 We're going to **create** a **folder** for **each** **component**, with two files, an `index.js` that is going to hold all the code for the component and the `styles.js`. That's one of the good things about this pattern. Every component defines his own UI and styles, **isolating** this piece of **code from** another **components** that **doesn't need to know anything about them**.
 
-<iframe src="https://codesandbox.io/embed/lx8ykrljl9?autoresize=1&module=%2Fsrc%2Fcomponents%2FEmojiList.js&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<iframe src="https://codesandbox.io/embed/lx8ykrljl9?autoresize=1&module=%2Fsrc%2Fcomponents%2FEmojiList.js&view=preview" class="codeExplorer" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 Notice that inside the `EmojiList` folder, (_that is a component_), we add two nested components that only will be used within the `EmojiList` component. Again, that's because these two components aren't going to be used out of that context. This helps reducing the visual clutter a lot.
 
