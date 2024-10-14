@@ -268,7 +268,7 @@ const Page = () => {
 
 Here's how all the pieces come together 🕹️, feel free to play around with the response to see how the user-interface reacts 😜
 
-<iframe src="https://stackblitz.com/edit/server-driven-uis?embed=1&file=app%2Fdata%2Findex.tsx&theme=light&view=preview&ctl=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"></iframe>
+<iframe src="https://stackblitz.com/edit/server-driven-uis?embed=1&file=app%2Fdata%2Findex.tsx&theme=light&view=preview&ctl=1" class="codeExplorer"></iframe>
 
 ### Benefits of Server-Driven UIs
 

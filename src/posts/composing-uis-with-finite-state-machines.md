@@ -148,7 +148,7 @@ Take a look at the CodeSandbox below 👇 and try to break the UI:
 - Try to click the button multiple times 👈
 - Simulate a slow network connection 🐌
 
-<iframe src="https://codesandbox.io/embed/composing-uis-with-fsm-hkty2?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.js&theme=dark&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<iframe src="https://codesandbox.io/embed/composing-uis-with-fsm-hkty2?fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.js&theme=dark&view=preview" class="codeExplorer" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 The first thing I did was to define all the UI for every state in our machine. Using a simple `switch` statement to do the conditional rendering:
 
