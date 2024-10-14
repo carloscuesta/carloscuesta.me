@@ -190,6 +190,10 @@ figcaption + pre[data-theme] {
   border-top-right-radius: 0;
 }
 
+.codeExplorer {
+  @apply overflow-hidden w-full h-[500px] border-0 rounded-[4px];
+}
+
 [data-rehype-pretty-code-title] {
   @apply rounded-t-md px-4 py-2 border border-b-0 font-semibold font-mono dark:border-0 dark:bg-[#333739] dark:text-neutral-300;
 }
