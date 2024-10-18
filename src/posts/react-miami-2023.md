@@ -17,9 +17,9 @@ The convention center is located very close to the beach, so you can enjoy the s
 
 Finding the registration desk was tricky because the place is huge, but once there, everything was easy and smooth. React Miami probably has the best **swag** I've seen in a conference, the designs of the t-shirt and stickers are awesome! 😍
 
-<div class="grid grid-cols-2 gap-x-4">
-  <img class='my-5' src="https://res.cloudinary.com/carloscuesta/image/upload/v1682217521/reactmiami-badge_gihm3m.jpg" alt="React Miami 2023 Badge"/>
-  <img class='my-5' src="https://res.cloudinary.com/carloscuesta/image/upload/v1682217521/trees_k1g2pu.jpg" alt="Miami Palm Trees"/>
+<div className="grid grid-cols-2 gap-x-4">
+  <img className='my-5' src="https://res.cloudinary.com/carloscuesta/image/upload/v1682217521/reactmiami-badge_gihm3m.jpg" alt="React Miami 2023 Badge"/>
+  <img className='my-5' src="https://res.cloudinary.com/carloscuesta/image/upload/v1682217521/trees_k1g2pu.jpg" alt="Miami Palm Trees"/>
 </div>
 
 The conference was organized in a **single track** which is **great** because you can **attend all the talks** you want without having to choose between them. The schedule was very well made with a good balance between talks and breaks.
