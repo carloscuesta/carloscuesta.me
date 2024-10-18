@@ -21,7 +21,7 @@ We're going to create an `EmojiList` component and then we are going to refactor
 
 As I mentioned before, we can start really simple and small, without following any pattern. This is our `EmojiList` component contained in a single function.
 
-<iframe src="https://codesandbox.io/embed/3vjxn0ykyq?autoresize=1&module=%2Fsrc%2Fcomponents%2FEmojiList.js&view=preview" class="codeExplorer" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<iframe src="https://codesandbox.io/embed/3vjxn0ykyq?autoresize=1&module=%2Fsrc%2Fcomponents%2FEmojiList.js&view=preview" className="codeExplorer" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 If you open the _CodeSandbox sidebar_ you'll see that our file tree looks like this:
 
@@ -91,13 +91,13 @@ Let's start refactoring the single component into multiple ones by [breaking up 
 
 If we take a look at the image, it's easy to identify that we can **break** up our **UI** in **three** different **components**: 🛠
 
-- <span style="color: #039be5">**`EmojiList`**</span>: Combines the smaller components and shares the state down.
-  - <span style="color: #d81b60">**`SearchInput`**</span>: Receives user input and displays the search bar.
-  - <span style="color: #fbc02d">**`EmojiListItem`**</span>: Displays the List Item for each emoji, with the _icon_, _name_ and _description_.
+- `EmojiList`: Combines the smaller components and shares the state down.
+  - `SearchInput`: Receives user input and displays the search bar.
+  - `EmojiListItem`: Displays the List Item for each emoji, with the _icon_, _name_ and _description_.
 
 We're going to **create** a **folder** for **each** **component**, with two files, an `index.js` that is going to hold all the code for the component and the `styles.js`. That's one of the good things about this pattern. Every component defines his own UI and styles, **isolating** this piece of **code from** another **components** that **doesn't need to know anything about them**.
 
-<iframe src="https://codesandbox.io/embed/lx8ykrljl9?autoresize=1&module=%2Fsrc%2Fcomponents%2FEmojiList.js&view=preview" class="codeExplorer" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<iframe src="https://codesandbox.io/embed/lx8ykrljl9?autoresize=1&module=%2Fsrc%2Fcomponents%2FEmojiList.js&view=preview" className="codeExplorer" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 Notice that inside the `EmojiList` folder, (_that is a component_), we add two nested components that only will be used within the `EmojiList` component. Again, that's because these two components aren't going to be used out of that context. This helps reducing the visual clutter a lot.
 
@@ -117,11 +117,11 @@ Notice that inside the `EmojiList` folder, (_that is a component_), we add two n
 
 Now let's isolate and separate the code into the three components from the smallest to the biggest one:
 
-`EmojiListItem/`
+**EmojiListItem**
 
 This component renders every emoji item that will appear on the list.
 
-```jsx
+```jsx title="src/EmojiList/EmojiListItem/index.js"
 import React from 'react'
 
 import styles from './styles'
@@ -139,11 +139,11 @@ const EmojiListItem = (props) => (
 export default EmojiListItem
 ```
 
-`SearchInput/`
+**SearchInput**
 
 This component receives the user input and updates the state of the parent component.
 
-```jsx
+```jsx title="src/EmojiList/SearchInput/index.js"
 import React from 'react'
 
 import styles from './styles'
@@ -161,11 +161,11 @@ const SearchInput = (props) => (
 export default SearchInput
 ```
 
-`EmojiList/`
+**EmojiList**
 
 This is the top level component, holds the state and data of our example and imports the other components to recreate the whole UI of our tiny application. Isolating components makes the render method more readable and easier to understand ✨.
 
-```jsx
+```jsx title="src/EmojiList/index.js"
 import React from 'react'
 
 import SearchInput from './SearchInput'

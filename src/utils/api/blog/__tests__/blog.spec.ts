@@ -1,6 +1,5 @@
 import { getPostSlugs, fetchPost, fetchPosts } from '../index'
 import { transformPost } from '../mutators'
-import { VFile } from 'vfile'
 
 import postFixture from './fixtures/post.json'
 
@@ -46,12 +45,7 @@ describe('Blog API Client', () => {
   describe('mutators', () => {
     describe('transformPost', () => {
       it('should match the mutated post', async () => {
-        expect(
-          await transformPost({
-            ...postFixture,
-            html: new VFile(postFixture.html),
-          }),
-        ).toMatchSnapshot()
+        expect(await transformPost(postFixture)).toMatchSnapshot()
       })
     })
   })

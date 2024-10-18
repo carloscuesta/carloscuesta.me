@@ -2,18 +2,6 @@ import fs from 'fs'
 import { join } from 'path'
 import truncate from 'lodash.truncate'
 import matter from 'gray-matter'
-import { unified } from 'unified'
-import remarkParse from 'remark-parse'
-import remarkGFM from 'remark-gfm'
-import remarkToc from 'remark-toc'
-import remarkRehype from 'remark-rehype'
-import rehypeSlug from 'rehype-slug'
-import rehypePrettyCode from 'rehype-pretty-code'
-import rehypeExternalLinks from 'rehype-external-links'
-import rehypeAutoLinkHeadings from 'rehype-autolink-headings'
-import rehypeStringify from 'rehype-stringify'
-import rehypeMinify from 'rehype-preset-minify'
-import rehypeWrap from 'rehype-wrap-all'
 
 import callApi from 'src/utils/api/callApi'
 import {
@@ -30,34 +18,13 @@ export const getPostSlugs = (): Array<string> =>
 
 export const fetchPost = async (slug: string): Promise<Post> => {
   const post = fs.readFileSync(join(POSTS_DIRECTORY, `${slug}.md`), 'utf8')
-  const { data, content } = matter(post)
-  const html = await unified()
-    .use(remarkParse)
-    .use(remarkGFM)
-    .use(remarkToc, { tight: true, maxDepth: 4, ordered: true })
-    .use(remarkRehype, { allowDangerousHtml: true })
-    .use(rehypeSlug)
-    .use(rehypeAutoLinkHeadings, { behavior: 'wrap' })
-    .use(rehypeExternalLinks)
-    .use(rehypePrettyCode, {
-      theme: {
-        dark: require('sprinkles-vscode/themes/sprinkles-dark.json'),
-        light: require('sprinkles-vscode/themes/sprinkles-light.json'),
-      },
-      defaultLang: 'plaintext',
-    })
-    .use(rehypeWrap, { selector: 'table', wrapper: 'div.responsiveTable' })
-    .use(rehypeStringify, { allowDangerousHtml: true })
-    .use(rehypeMinify)
-    .process(content)
+  const { data, content: source } = matter(post)
 
-  return await transformPost({ data, html, slug })
+  return await transformPost({ data, source, slug })
 }
 
 export const fetchPosts = async (): Promise<Array<PostPreview>> => {
-  const posts: Array<Post> = await Promise.all(
-    getPostSlugs().map((slug) => fetchPost(slug)),
-  )
+  const posts = await Promise.all(getPostSlugs().map((slug) => fetchPost(slug)))
   const views = await callApi({
     url: 'https://carloscuesta.me/api/views',
     mutator: transformPostViews,
