@@ -1,7 +1,6 @@
 import { format } from 'date-fns'
 import { getPlaiceholder } from 'plaiceholder'
 import readingTime from 'reading-time'
-import type { VFile } from 'vfile'
 
 export type Post = {
   dateModified: string
@@ -12,7 +11,7 @@ export type Post = {
   }
   disqusIdentifier: string
   excerpt: string
-  html: string
+  source: string
   images: { featured: { src: string }; preview: { lqpi: string; src: string } }
   readingTime: string
   slug: string
@@ -21,7 +20,7 @@ export type Post = {
 
 export type PostPreview = Omit<
   Post,
-  'dateModified' | 'disqusIdentifier' | 'html' | 'readingTime'
+  'dateModified' | 'disqusIdentifier' | 'source' | 'readingTime'
 > & { views: string }
 
 type Views = { views: { [key: string]: string } }
@@ -30,7 +29,7 @@ export const transformPostViews = (data: Views) => data.views
 
 type Payload = {
   data: { [key: string]: string }
-  html: VFile
+  source: string
   slug: string
 }
 
@@ -51,7 +50,7 @@ export const transformPost = async (payload: Payload): Promise<Post> => {
     },
     disqusIdentifier: payload.data.disqusIdentifier,
     excerpt: payload.data.excerpt,
-    html: payload.html.toString(),
+    source: payload.source,
     images: {
       featured: {
         src: payload.data.image,
@@ -61,7 +60,7 @@ export const transformPost = async (payload: Payload): Promise<Post> => {
         lqpi: base64,
       },
     },
-    readingTime: readingTime(payload.html.toString()).text,
+    readingTime: readingTime(payload.source).text,
     slug: payload.slug,
     title: payload.data.title,
   }
