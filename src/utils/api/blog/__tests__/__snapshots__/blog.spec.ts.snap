@@ -10,8 +10,6 @@ exports[`Blog API Client fetchPost should return a post with the slug terminal-s
   },
   "disqusIdentifier": "7",
   "excerpt": "Carlos Cuesta terminal setup with ZSH and Oh-My-ZSH, using materialshell and my dotfiles.",
-  "html": "<p><strong>Terminal</strong> is a place where a developer spends a lot of time, running commands, looking for outputs and doing a bunch of stuff, so better to stay comfortable and productive with it.<h3 id=shell><a href=#shell>Shell</a></h3><p>I use <a href=http://www.zsh.org rel=nofollow><strong>ZSH</strong></a> as my main shell along with <a href=http://ohmyz.sh rel=nofollow><strong>Oh-My-Zsh</strong></a>. By default, OS X comes with bash, a simpler shell. To setup ZSH and install Oh-My-Zsh run:<figure data-rehype-pretty-code-figure><pre class="Dark Light Sprinkles"data-language=language-bash data-theme="Sprinkles Dark Sprinkles Light"style=--shiki-dark:#FFFFFF;--shiki-light:#1B1F23;--shiki-dark-bg:#1D1F21;--shiki-light-bg:#FFFFFF tabindex=0><code data-language=language-bash data-theme="Sprinkles Dark Sprinkles Light"style=display:grid><span data-line><span>$ chsh -s /bin/zsh</span></span>
-<span data-line><span>$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</span></span></code></pre></figure><p>To see what shell are you using run:<figure data-rehype-pretty-code-figure><pre class="Dark Light Sprinkles"data-language=language-bash data-theme="Sprinkles Dark Sprinkles Light"style=--shiki-dark:#FFFFFF;--shiki-light:#1B1F23;--shiki-dark-bg:#1D1F21;--shiki-light-bg:#FFFFFF tabindex=0><code data-language=language-bash data-theme="Sprinkles Dark Sprinkles Light"style=display:grid><span data-line><span>$ echo $SHELL</span></span></code></pre></figure><h3 id=ui><a href=#ui>UI</a></h3><p>After setting up ZSH and Oh-My-Zsh, now we are ready to customize and put our shell on steroids.<p>I use a theme called <a href=https://github.com/carloscuesta/materialshell rel=nofollow><strong>materialshell</strong></a> that I've made for my own.<p><a href=https://github.com/carloscuesta/materialshell/blob/master/README.md rel=nofollow><strong>Follow this guide to install and setup my terminal</strong>.</a><p><img alt="Carlos Cuesta Shell - MaterialShell"src=https://res.cloudinary.com/carloscuesta/image/upload/v1454753967/gazne7uhxuq8ugpfvile.png><h3 id=dotfiles><a href=#dotfiles>Dotfiles</a></h3><p>I have my own <a href=https://github.com/carloscuesta/dotfiles rel=nofollow><strong>dotfiles repository</strong></a> with all my shell configuration files, where you can take a look to learn and be more productive with your shell.",
   "images": {
     "featured": {
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Terminal_Setup.png",
@@ -23,6 +21,38 @@ exports[`Blog API Client fetchPost should return a post with the slug terminal-s
   },
   "readingTime": "1 min read",
   "slug": "terminal-setup",
+  "source": "
+**Terminal** is a place where a developer spends a lot of time, running commands, looking for outputs and doing a bunch of stuff, so better to stay comfortable and productive with it.
+
+### Shell
+
+I use [**ZSH**](http://www.zsh.org) as my main shell along with [**Oh-My-Zsh**](http://ohmyz.sh). By default, OS X comes with bash, a simpler shell. To setup ZSH and install Oh-My-Zsh run:
+
+\`\`\`language-bash
+$ chsh -s /bin/zsh
+$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+\`\`\`
+
+To see what shell are you using run:
+
+\`\`\`language-bash
+$ echo $SHELL
+\`\`\`
+
+### UI
+
+After setting up ZSH and Oh-My-Zsh, now we are ready to customize and put our shell on steroids.
+
+I use a theme called [**materialshell**](https://github.com/carloscuesta/materialshell) that I've made for my own.
+
+[**Follow this guide to install and setup my terminal**.](https://github.com/carloscuesta/materialshell/blob/master/README.md)
+
+![Carlos Cuesta Shell - MaterialShell](https://res.cloudinary.com/carloscuesta/image/upload/v1454753967/gazne7uhxuq8ugpfvile.png)
+
+### Dotfiles
+
+I have my own [**dotfiles repository**](https://github.com/carloscuesta/dotfiles) with all my shell configuration files, where you can take a look to learn and be more productive with your shell.
+",
   "title": "Terminal setup",
 }
 `;
@@ -120,7 +150,6 @@ exports[`Blog API Client mutators transformPost should match the mutated post 1`
   },
   "disqusIdentifier": "7",
   "excerpt": "Carlos Cuesta terminal setup with ZSH and Oh-My-ZSH, using materialshell and my dotfiles.",
-  "html": "",
   "images": {
     "featured": {
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1454754838/kcuq34zbo1yieygmx0y6.png",
@@ -130,8 +159,24 @@ exports[`Blog API Client mutators transformPost should match the mutated post 1`
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png",
     },
   },
-  "readingTime": "0 min read",
+  "readingTime": "1 min read",
   "slug": "terminal-setup",
+  "source": "<p><strong>Terminal</strong> is a place where a developer spends a lot of time, running commands, looking for outputs and doing a bunch of stuff, so better to stay comfortable and productive with it.</p>
+<h3>Shell</h3>
+<p>I use <a href="http://www.zsh.org"><strong>ZSH</strong></a> as my main shell along with <a href="http://ohmyz.sh"><strong>Oh-My-Zsh</strong></a>. By default, OS X comes with bash, a simpler shell. To setup ZSH and install Oh-My-Zsh run:</p>
+<pre><code class="language-language-bash">$ chsh -s /bin/zsh
+$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+</code></pre>
+<p>To see what shell are you using run:</p>
+<pre><code class="language-language-bash">$ echo $SHELL
+</code></pre>
+<h3>UI</h3>
+<p>After setting up ZSH and Oh-My-Zsh, now we are ready to customize and put our shell on steroids.</p>
+<p>I use a theme called <a href="https://github.com/carloscuesta/materialshell"><strong>materialshell</strong></a> that I've made for my own.</p>
+<p><a href="https://github.com/carloscuesta/materialshell/blob/master/README.md"><strong>Follow this guide to install and setup my terminal</strong>.</a></p>
+<p><img src="https://res.cloudinary.com/carloscuesta/image/upload/v1454753967/gazne7uhxuq8ugpfvile.png" alt="Carlos Cuesta Shell - MaterialShell"></p>
+<h3>Dotfiles</h3>
+<p>I have my own <a href="https://github.com/carloscuesta/dotfiles"><strong>dotfiles repository</strong></a> with all my shell configuration files, where you can take a look to learn and be more productive with your shell.</p>",
   "title": "Terminal setup",
 }
 `;
