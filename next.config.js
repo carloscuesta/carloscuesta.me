@@ -15,7 +15,7 @@ const cspHeader = `
     base-uri 'self';
     form-action 'self';
     frame-ancestors 'none';
-    frame-src https://codesandbox.io https://youtube.com https://stackblitz.com https://*.staticblitz.com;
+    frame-src https://codesandbox.io https://*.youtube.com https://stackblitz.com https://*.staticblitz.com;
     ${process.env.NODE_ENV === 'development' ? '' : 'upgrade-insecure-requests'};
 `
 
