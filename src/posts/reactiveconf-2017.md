@@ -13,7 +13,7 @@ title: 'ReactiveConf 2017'
 
 The conference day started with the registration, a backpack with a cool t-shirt, socks and stickers was given to every attendee.
 
-![ReactiveConf 2017 Main Stage](https://res.cloudinary.com/carloscuesta/image/upload/reactiveconf-2017-carloscuesta.png)
+![ReactiveConf 2017 Main Stage](https://res.cloudinary.com/carloscuesta/image/upload/v1729420478/cmjvgmqgcjujfheipskc.jpg)
 
 ### Venue and talks
 
