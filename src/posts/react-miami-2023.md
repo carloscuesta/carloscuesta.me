@@ -45,7 +45,7 @@ Having said that, here's the list of my favourite talks ❤️ in no particular 
 
 All **talks were recorded** and **live streamed** through YouTube. Make sure to [watch all of them](https://www.youtube.com/watch?v=xQAK-3ELEIo&list=PL02pdjMT4gWwIDHt4mzmzbiXU-7Sk1LN5&pp=iAQB)! 👇
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/xQAK-3ELEIo" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/xQAK-3ELEIo" frameBorder="0" allowFullScreen></iframe>
 
 ### Thoughts
 
