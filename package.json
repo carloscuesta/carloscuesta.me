@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/carloscuesta/carloscuesta.me#readme",
   "dependencies": {
+    "@codesandbox/sandpack-react": "2.19.9",
     "@headlessui/react": "2.0.4",
     "@plaiceholder/next": "2.5.0",
     "@types/lodash.truncate": "4.4.9",
