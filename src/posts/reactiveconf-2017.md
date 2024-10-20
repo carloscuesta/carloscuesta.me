@@ -13,7 +13,7 @@ title: 'ReactiveConf 2017'
 
 The conference day started with the registration, a backpack with a cool t-shirt, socks and stickers was given to every attendee.
 
-![ReactiveConf 2017 Main Stage](https://res.cloudinary.com/carloscuesta/image/upload/reactiveconf-2017-carloscuesta.png)
+![ReactiveConf 2017 Main Stage](https://res.cloudinary.com/carloscuesta/image/upload/v1729420478/cmjvgmqgcjujfheipskc.jpg)
 
 ### Venue and talks
 
@@ -36,7 +36,7 @@ Having said that, these are my favourite talks ⭐️:
 
 All **talks were recorded** and **live streamed** through the [ReactiveConf youtube channel](https://www.youtube.com/channel/UCBHdUnixTWymmXBIw12Y8Qg). Be sure to take a look into it! 👇
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/62xd25kEZ3o?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/62xd25kEZ3o?rel=0" frameBorder="0" allowFullScreen></iframe>
 
 ### Final thoughts
 

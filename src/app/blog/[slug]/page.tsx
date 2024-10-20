@@ -5,6 +5,7 @@ import { getPostSlugs, fetchPost } from 'src/utils/api/blog'
 import Wrapper from 'src/components/Wrapper'
 import Header from './components/Header'
 import FeaturedImage from './components/FeaturedImage'
+import MdxContent from './components/MdxContent'
 import NewsletterSubscribe from './components/NewsletterSubscribe'
 import ShareLinks from './components/ShareLinks'
 
@@ -72,10 +73,7 @@ const Article = async ({ params }: Params) => {
             slug={post.slug}
           />
 
-          <div
-            dangerouslySetInnerHTML={{ __html: post.html }}
-            className="prose prose-neutral relative max-w-full dark:prose-invert prose-headings:scroll-mt-16 prose-img:rounded-lg"
-          />
+          <MdxContent source={post.source} />
 
           <hr className="mt-12 border-neutral-100 dark:border-neutral-800" />
 
