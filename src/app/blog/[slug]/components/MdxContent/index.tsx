@@ -17,7 +17,7 @@ type Props = {
 const components = { img: Image } as const
 
 const MdxContent = (props: Props) => (
-  <div className="prose prose:pre prose-neutral relative max-w-full dark:prose-invert prose-headings:scroll-mt-16 prose-img:rounded-lg">
+  <div className="prose prose-neutral relative max-w-full dark:prose-invert prose-headings:scroll-mt-16 prose-img:rounded-lg">
     <MDXRemote
       source={props.source}
       options={{
