@@ -9,12 +9,13 @@ import rehypeMinify from 'rehype-preset-minify'
 import rehypeWrap from 'rehype-wrap-all'
 import rehypeImageSize from 'rehype-probe-image-size'
 import Image from './Image'
+import Playground from './Playground'
 
 type Props = {
   source: string
 }
 
-const components = { img: Image } as const
+const components = { img: Image, Playground } as const
 
 const MdxContent = (props: Props) => (
   <div className="prose prose-neutral relative max-w-full dark:prose-invert prose-headings:scroll-mt-16 prose-img:rounded-lg">
