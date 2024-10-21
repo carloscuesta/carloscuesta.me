@@ -9,16 +9,15 @@ import MdxContent from './components/MdxContent'
 import NewsletterSubscribe from './components/NewsletterSubscribe'
 import ShareLinks from './components/ShareLinks'
 
-type Params = { params: { slug: string } }
+type Params = { params: Promise<{ slug: string }> }
 
 export const dynamicParams = false
 
 export const generateStaticParams = () =>
   getPostSlugs().map((slug) => ({ slug }))
 
-export const generateMetadata = async ({
-  params,
-}: Params): Promise<Metadata> => {
+export const generateMetadata = async (props: Params): Promise<Metadata> => {
+  const params = await props.params
   const post = await fetchPost(params.slug)
 
   return {
@@ -39,7 +38,8 @@ export const generateMetadata = async ({
   }
 }
 
-const Article = async ({ params }: Params) => {
+const Article = async (props: Params) => {
+  const params = await props.params
   const post = await fetchPost(params.slug)
   const canonicalUrl = `https://carloscuesta.me/blog/${post.slug}`
 
