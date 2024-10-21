@@ -86,13 +86,12 @@ html {
   @apply underline;
 }
 
-code[data-theme],
-pre[data-theme] {
+code[data-theme] {
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  line-height: 1.75;
+  line-height: 20px;
   tab-size: 4;
   hyphens: none;
 }
@@ -109,15 +108,13 @@ pre[data-language] {
   @apply content-none;
 }
 
-pre,
 pre[data-theme] {
-  font-size: 1rem;
   padding: 1rem 0;
   overflow: auto;
   border-radius: 0;
   background-color: var(--shiki-light-bg);
   border: 1px solid #e8eaec;
-  @apply rounded-md;
+  @apply rounded-md text-sm font-mono;
 }
 
 pre [data-line] {
