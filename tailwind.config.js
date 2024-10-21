@@ -1,9 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx,md}"
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx,md}'],
   theme: {
     extend: {
       keyframes: {
@@ -15,14 +13,19 @@ module.exports = {
           '40%': { transform: 'rotate(9.0deg)' },
           '50%': { transform: 'rotate(0.0deg)' },
           '100%': { transform: 'rotate(0.0deg)' },
-        }
+        },
       },
       animation: {
         wave: 'wave 1.2s ease infinite',
-      }
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            pre: false,
+          },
+        },
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 }
