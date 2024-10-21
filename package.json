@@ -210,11 +210,11 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx,css}": [
+    "src/**/*.{ts,tsx}": [
       "eslint --cache --fix",
       "prettier --write"
     ],
-    "src/**/*.md": [
+    "src/**/*.{css,md}": [
       "prettier --write"
     ]
   },
