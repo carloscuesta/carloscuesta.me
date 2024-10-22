@@ -4,7 +4,7 @@ import localFont from 'next/font/local'
 import cn from 'src/utils/cn'
 import Polaroid from './Polaroid'
 
-const font = localFont({
+const gloria = localFont({
   src: [
     {
       path: '../../../../../public/fonts/gloria-hallelujah.woff2',
@@ -74,7 +74,7 @@ const WhoAmI = () => (
     </p>
 
     <div
-      className={cn('py-4 flex gap-0 lg:gap-6 lg:flex-wrap', font.className)}
+      className={cn('py-4 flex gap-0 lg:gap-6 lg:flex-wrap', gloria.className)}
     >
       <Polaroid
         label="Wife & I ❣️"
