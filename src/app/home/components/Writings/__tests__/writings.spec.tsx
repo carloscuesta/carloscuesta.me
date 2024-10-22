@@ -1,12 +1,12 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import Writings from '../index'
 import * as stubs from './stubs'
 
 describe('Writings', () => {
   it('should match Writings component', () => {
-    const wrapper = renderer.create(<Writings {...stubs.props} />)
+    const { container } = render(<Writings {...stubs.props} />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })

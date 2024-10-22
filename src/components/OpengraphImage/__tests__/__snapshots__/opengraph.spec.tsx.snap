@@ -24,211 +24,91 @@ exports[`OpengraphImage getFonts should return an array of fonts 1`] = `
 `;
 
 exports[`OpengraphImage should match a blog post opengraph 1`] = `
-<div
-  style={
-    {
-      "backgroundColor": "white",
-      "backgroundImage": "radial-gradient(at 10px 10px, #d4d4d4, #d4d4d4 5%, white 5%)",
-      "backgroundSize": "20px 20px",
-      "display": "flex",
-      "flexDirection": "column",
-      "fontFamily": "Inter",
-      "height": "100%",
-      "justifyContent": "space-between",
-      "padding": "60px",
-      "position": "relative",
-      "width": "100%",
-    }
-  }
->
+<div>
   <div
-    style={
-      {
-        "display": "flex",
-        "flex": 1,
-        "flexDirection": "column",
-        "justifyContent": "space-between",
-        "marginBottom": "3rem",
-      }
-    }
+    style="background-color: white; width: 100%; height: 100%; display: flex; flex-direction: column; position: relative; font-family: Inter; padding: 60px; justify-content: space-between; background-size: 20px 20px;"
   >
     <div
-      style={
-        {
-          "alignItems": "center",
-          "display": "flex",
-          "flexDirection": "row",
-          "gap": "1em",
-        }
-      }
+      style="display: flex; flex-direction: column; justify-content: space-between; flex: 1; margin-bottom: 3rem;"
     >
-      <img
-        height="115"
-        src="https://carloscuesta.me/images/carloscuesta.jpg"
-        style={
-          {
-            "borderRadius": "100%",
-          }
-        }
-        width="115"
-      />
       <div
-        style={
-          {
-            "display": "flex",
-            "flexDirection": "column",
-          }
-        }
+        style="display: flex; flex-direction: row; gap: 1em; align-items: center;"
       >
-        <span
-          style={
-            {
-              "fontSize": "3em",
-              "fontWeight": 700,
-              "letterSpacing": "-1px",
-            }
-          }
+        <img
+          height="115"
+          src="https://carloscuesta.me/images/carloscuesta.jpg"
+          style="border-radius: 100%;"
+          width="115"
+        />
+        <div
+          style="display: flex; flex-direction: column;"
         >
-          Carlos Cuesta
-        </span>
-        <span
-          style={
-            {
-              "fontSize": "1.85em",
-              "fontWeight": 300,
-            }
-          }
+          <span
+            style="font-weight: 700; font-size: 3em; letter-spacing: -1px;"
+          >
+            Carlos Cuesta
+          </span>
+          <span
+            style="font-weight: 300; font-size: 1.85em;"
+          >
+            @crloscuesta
+          </span>
+        </div>
+      </div>
+      <div
+        style="display: flex; flex-direction: column; gap: 1.25rem;"
+      >
+        <div
+          style="font-size: 4.5rem; font-weight: 700; letter-spacing: -2px; line-height: 1;"
         >
-          @crloscuesta
-        </span>
+          Writing ADRs
+        </div>
+        <div
+          style="font-size: 2.5rem;"
+        >
+          This is a test description
+        </div>
       </div>
     </div>
     <div
-      style={
-        {
-          "display": "flex",
-          "flexDirection": "column",
-          "gap": "1.25rem",
-        }
-      }
+      style="font-size: 1.75rem; line-height: 1; font-weight: 600; font-family: RobotoMono;"
     >
-      <div
-        style={
-          {
-            "fontSize": "4.5rem",
-            "fontWeight": 700,
-            "letterSpacing": "-2px",
-            "lineHeight": "1",
-          }
-        }
-      >
-        Writing ADRs
-      </div>
-      <div
-        style={
-          {
-            "fontSize": "2.5rem",
-          }
-        }
-      >
-        This is a test description
-      </div>
+      carloscuesta.me/blog
     </div>
-  </div>
-  <div
-    style={
-      {
-        "fontFamily": "RobotoMono",
-        "fontSize": "1.75rem",
-        "fontWeight": 600,
-        "lineHeight": 1,
-      }
-    }
-  >
-    carloscuesta.me/blog
   </div>
 </div>
 `;
 
 exports[`OpengraphImage should match a page opengraph 1`] = `
-<div
-  style={
-    {
-      "backgroundColor": "white",
-      "backgroundImage": "radial-gradient(at 10px 10px, #d4d4d4, #d4d4d4 5%, white 5%)",
-      "backgroundSize": "20px 20px",
-      "display": "flex",
-      "fontFamily": "Inter",
-      "height": "100%",
-      "position": "relative",
-      "width": "100%",
-    }
-  }
->
-  <img
-    height="115"
-    src="https://carloscuesta.me/images/carloscuesta.jpg"
-    style={
-      {
-        "borderRadius": "100%",
-        "left": 60,
-        "position": "absolute",
-        "top": 60,
-      }
-    }
-    width="115"
-  />
+<div>
   <div
-    style={
-      {
-        "bottom": 140,
-        "display": "flex",
-        "flexDirection": "column",
-        "gap": "0.5rem",
-        "left": 60,
-        "position": "absolute",
-        "width": "65%",
-      }
-    }
+    style="background-color: white; width: 100%; height: 100%; display: flex; position: relative; font-family: Inter; background-size: 20px 20px;"
   >
-    <span
-      style={
-        {
-          "fontSize": "5.25rem",
-          "fontWeight": 700,
-          "letterSpacing": "-2px",
-          "lineHeight": "1",
-        }
-      }
+    <img
+      height="115"
+      src="https://carloscuesta.me/images/carloscuesta.jpg"
+      style="border-radius: 100%; position: absolute; left: 60px; top: 60px;"
+      width="115"
+    />
+    <div
+      style="display: flex; flex-direction: column; gap: 0.5rem; position: absolute; bottom: 140px; left: 60px; width: 65%;"
     >
-      Blog
-    </span>
-    <span
-      style={
-        {
-          "fontSize": "2.5rem",
-          "fontWeight": 600,
-        }
-      }
+      <span
+        style="font-size: 5.25rem; font-weight: 700; letter-spacing: -2px; line-height: 1;"
+      >
+        Blog
+      </span>
+      <span
+        style="font-size: 2.5rem; font-weight: 600;"
+      >
+        This is a test description
+      </span>
+    </div>
+    <div
+      style="position: absolute; bottom: 60px; left: 60px; font-size: 1.75rem; line-height: 1; font-weight: 600; border-radius: 100px; font-family: RobotoMono;"
     >
-      This is a test description
-    </span>
-  </div>
-  <div
-    style={
-      {
-        "borderRadius": 100,
-        "bottom": 60,
-        "fontFamily": "RobotoMono",
-        "fontSize": "1.75rem",
-        "fontWeight": 600,
-        "left": 60,
-        "lineHeight": 1,
-        "position": "absolute",
-      }
-    }
-  >
-    carloscuesta.me//
+      carloscuesta.me//
+    </div>
   </div>
 </div>
 `;

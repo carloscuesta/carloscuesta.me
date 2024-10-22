@@ -1,12 +1,12 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import Stats from '../index'
 import * as stubs from './stubs'
 
 describe('Stats', () => {
   it('should match Stats component', () => {
-    const wrapper = renderer.create(<Stats {...stubs.props} />)
+    const { container } = render(<Stats {...stubs.props} />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })

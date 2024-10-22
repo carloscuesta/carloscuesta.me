@@ -1,4 +1,4 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import MdxContent from '../index'
 import * as stubs from './stubs'
@@ -9,8 +9,8 @@ jest.mock('next-mdx-remote/rsc', () => ({
 
 describe('Header', () => {
   it('should match MdxContent component', () => {
-    const wrapper = renderer.create(<MdxContent {...stubs.props} />)
+    const { container } = render(<MdxContent {...stubs.props} />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })

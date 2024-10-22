@@ -1,11 +1,11 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import Biography from '../index'
 
 describe('Biography', () => {
   it('should match Biography component', () => {
-    const wrapper = renderer.create(<Biography />)
+    const { container } = render(<Biography />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })

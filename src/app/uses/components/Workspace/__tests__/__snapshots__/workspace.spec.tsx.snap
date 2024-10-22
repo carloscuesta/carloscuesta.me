@@ -1,0 +1,732 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Workspace should match Workspace component 1`] = `
+<div>
+  <div
+    class="rounded-lg border border-b-0 border-neutral-200 dark:border-neutral-800 overflow-auto mt-6"
+  >
+    <div
+      class="w-full table text-sm"
+    >
+      <div
+        class="table-header-group bg-neutral-50 dark:bg-neutral-800"
+      >
+        <div
+          class="table-row border-neutral-200 dark:border-neutral-800"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell -10 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 px-4"
+          >
+            Category
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell h-10 text-left align-middle font-medium text-neutral-500 dark:text-neutral-400 min-w-full px-4"
+          >
+            Product
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell"
+          />
+        </div>
+      </div>
+      <div
+        class="table-row-group"
+      >
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://store.hermanmiller.com/standing-desks/jarvis-bamboo-standing-desk/100439172.html?lang=en_US&sku=100439172"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Desk
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Jarvis Bamboo Standing Desk
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://support.apple.com/kb/SP854"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Laptop
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            MacBook Pro 14 M1 Pro, 16 GB
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://www.hermanmiller.com/en_eur/products/seating/office-chairs/aeron-chairs/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Chair
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Herman Miller Aeron
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://amzn.id/UHX1DFX"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Monitor
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Dell U3821DW
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://amzn.id/wbWhDOO"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Webcam
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Elgato Facecam
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://qwertykeys.notion.site/QK65-Build-Guide-74e558d2ac3f4979939c9a84cb3cbf22"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Keyboard
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            QK65
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://amzn.id/N82BPgO"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Mouse
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Logitech MX Master 3S
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://oakywood.shop/products/grey-felt-cork-desk-mat"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Desk
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Oakywood Merino Wool Felt & Cork Grey
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://amzn.id/kIND87t"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Headphones
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Airpods Pro
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://amzn.id/7xtEmWR"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Lighting
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            BenQ Screenbar
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://amzn.id/7wuXIVm"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Headphones
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Bose QuietComfort 45
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://en.aeris.de/products/aeris-muvmat-schwarz-ohne-bezug"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Desk
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Muvmat
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://amzn.id/Gy0rbL1"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Monitor Arm
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Ergotron HX
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://amzn.id/iwfwL12"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Lighting
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Logitech Litra Glow
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://amzn.id/WrvUvWw"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Microphone
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Shure MV7
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://amzn.id/yScr2WM"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Boom Arm
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Elgato Wave Mic Arm LP
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://amzn.id/5IQt2Xe"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Charger
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Belkin BoostCharge Pro
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://eu.govee.com/collections/tv-gaming-lights/products/govee-rgbicww-wifi-bluetooth-flow-plus-light-bars"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Lighting
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Govee Flow Plus Light Bars
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://www.mi.com/product/mi-smart-clock/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Clock
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Mi Smart Clock
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://www.ikea.com/es/es/p/vihals-estanteria-10-baldas-blanco-70483274/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Furniture
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            IKEA Vihals
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://www.ikea.com/es/es/p/skadis-tablero-perforado-blanco-00320803/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Furniture
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            IKEA Skadis
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

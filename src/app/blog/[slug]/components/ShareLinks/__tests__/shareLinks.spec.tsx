@@ -1,12 +1,12 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import ShareLinks from '../index'
 import * as stubs from './stubs'
 
 describe('ShareLinks', () => {
   it('should match ShareLinks component', () => {
-    const wrapper = renderer.create(<ShareLinks {...stubs.props} />)
+    const { container } = render(<ShareLinks {...stubs.props} />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })

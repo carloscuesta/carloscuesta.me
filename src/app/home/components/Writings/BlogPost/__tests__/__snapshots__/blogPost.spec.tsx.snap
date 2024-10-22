@@ -1,43 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BlogPost should match BlogPost component 1`] = `
-<li
-  className="-mx-1.5"
->
-  <a
-    className="block p-1.5 h-full w-full rounded-md transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900 outline-none focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 text-sm"
-    href="/blog/post-slug"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    title="Post Title"
+<div>
+  <li
+    class="-mx-1.5"
   >
-    <article
-      className="flex flex-col-reverse sm:flex-row sm:items-baseline sm:gap-3"
+    <a
+      class="block p-1.5 h-full w-full rounded-md transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900 outline-none focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 text-sm"
+      href="/blog/post-slug"
+      tabindex="0"
+      title="Post Title"
     >
-      <time
-        aria-label="Written 15/12/2019 10:00"
-        className="opacity-60 sm:w-24"
-        dateTime="2019-12-15 10:00"
+      <article
+        class="flex flex-col-reverse sm:flex-row sm:items-baseline sm:gap-3"
       >
-        15 Dec, 2019
-      </time>
-      <div
-        className="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center"
-      >
-        <header
-          className="font-medium text-sm"
+        <time
+          aria-label="Written 15/12/2019 10:00"
+          class="opacity-60 sm:w-24"
+          datetime="2019-12-15 10:00"
         >
-          Post Title
-        </header>
-        <p
-          className="font-mono opacity-60"
+          15 Dec, 2019
+        </time>
+        <div
+          class="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center"
         >
-          1,000 views
-        </p>
-      </div>
-    </article>
-  </a>
-</li>
+          <header
+            class="font-medium text-sm"
+          >
+            Post Title
+          </header>
+          <p
+            class="font-mono opacity-60"
+          >
+            1,000 views
+          </p>
+        </div>
+      </article>
+    </a>
+  </li>
+</div>
 `;

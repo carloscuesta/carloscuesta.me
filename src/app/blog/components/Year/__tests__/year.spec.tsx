@@ -1,11 +1,11 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import Year from '../index'
 
 describe('Year', () => {
   it('should match Year component', () => {
-    const wrapper = renderer.create(<Year year={'2020'} />)
+    const { container } = render(<Year year={'2020'} />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })

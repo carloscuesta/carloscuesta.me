@@ -1,11 +1,11 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import WhoAmI from '../index'
 
 describe('WhoAmI', () => {
   it('should match WhoAmI component', () => {
-    const wrapper = renderer.create(<WhoAmI />)
+    const { container } = render(<WhoAmI />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })

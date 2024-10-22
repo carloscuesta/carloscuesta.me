@@ -1,11 +1,11 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import Online from '../'
 
 describe('Online', () => {
   it('should render the component', () => {
-    const wrapper = renderer.create(<Online />)
+    const { container } = render(<Online />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })

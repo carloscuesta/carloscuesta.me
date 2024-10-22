@@ -1,4 +1,4 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import SectionTitle from '../index'
 import * as stubs from './stubs'
@@ -6,25 +6,25 @@ import * as stubs from './stubs'
 describe('SectionTitle', () => {
   describe('with title and subtitle', () => {
     it('should match SectionTitle component', () => {
-      const wrapper = renderer.create(<SectionTitle {...stubs.props} />)
+      const { container } = render(<SectionTitle {...stubs.props} />)
 
-      expect(wrapper).toMatchSnapshot()
+      expect(container).toMatchSnapshot()
     })
   })
 
   describe('with title, subtitle and viewAllLink', () => {
     it('should match SectionTitle component', () => {
-      const wrapper = renderer.create(<SectionTitle {...stubs.propsWithLink} />)
+      const { container } = render(<SectionTitle {...stubs.propsWithLink} />)
 
-      expect(wrapper).toMatchSnapshot()
+      expect(container).toMatchSnapshot()
     })
   })
 
   describe('with title only', () => {
     it('should match SectionTitle component', () => {
-      const wrapper = renderer.create(<SectionTitle title="Test" />)
+      const { container } = render(<SectionTitle title="Test" />)
 
-      expect(wrapper).toMatchSnapshot()
+      expect(container).toMatchSnapshot()
     })
   })
 })

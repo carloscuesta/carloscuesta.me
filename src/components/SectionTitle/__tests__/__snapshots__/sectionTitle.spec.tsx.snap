@@ -1,25 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionTitle with title and subtitle should match SectionTitle component 1`] = `
-<h2
-  className="my-6 block text-lg font-bold"
->
-  Title
-</h2>
+<div>
+  <h2
+    class="my-6 block text-lg font-bold"
+  >
+    Title
+  </h2>
+</div>
 `;
 
 exports[`SectionTitle with title only should match SectionTitle component 1`] = `
-<h2
-  className="my-6 block text-lg font-bold"
->
-  Test
-</h2>
+<div>
+  <h2
+    class="my-6 block text-lg font-bold"
+  >
+    Test
+  </h2>
+</div>
 `;
 
 exports[`SectionTitle with title, subtitle and viewAllLink should match SectionTitle component 1`] = `
-<h2
-  className="my-6 block text-lg font-bold"
->
-  Title
-</h2>
+<div>
+  <h2
+    class="my-6 block text-lg font-bold"
+  >
+    Title
+  </h2>
+</div>
 `;

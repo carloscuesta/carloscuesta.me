@@ -2,18 +2,17 @@
 
 exports[`DisqusComments when the component is in viewport should render the Disqus component 1`] = `
 <div>
-  <DiscussionEmbed
-    config={
-      {
-        "identifier": "post-disqus-identifier",
-        "language": "en",
-        "title": "Post Title",
-        "url": "https://carloscuesta.me/canonical-url",
-      }
-    }
-    shortname="carloscuesta"
-  />
+  <div>
+    <discussionembed
+      config="[object Object]"
+      shortname="carloscuesta"
+    />
+  </div>
 </div>
 `;
 
-exports[`DisqusComments when the component is not in viewport should not render the Disqus component 1`] = `<div />`;
+exports[`DisqusComments when the component is not in viewport should not render the Disqus component 1`] = `
+<div>
+  <div />
+</div>
+`;

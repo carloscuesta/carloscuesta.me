@@ -1,110 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Writings should match Writings component 1`] = `
-<section>
-  <div
-    className="m-[0_auto] max-w-4xl px-6 sm:px-4"
-  >
-    <a
-      className="flex items-center gap-3 my-6 justify-between group cursor-pointer"
-      href="/blog"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      onTouchStart={[Function]}
+<div>
+  <section>
+    <div
+      class="m-[0_auto] max-w-4xl px-6 sm:px-4"
     >
-      <h2
-        className="text-lg font-bold underline-offset-4 group-hover:underline"
+      <a
+        class="flex items-center gap-3 my-6 justify-between group cursor-pointer"
+        href="/blog"
       >
-        Writings
-      </h2>
-      <span
-        className="px-2 py-[3px] border text-center rounded-lg cursor-pointer text-xs bg-white dark:bg-neutral-900 dark:border-neutral-700"
-      >
-        View all →
-      </span>
-    </a>
-    <ul
-      className="grid gap-3 sm:gap-1"
-    >
-      <li
-        className="-mx-1.5"
-      >
-        <a
-          className="block p-1.5 h-full w-full rounded-md transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900 outline-none focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 text-sm"
-          href="/blog/post-slug"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-          title="Post Title"
+        <h2
+          class="text-lg font-bold underline-offset-4 group-hover:underline"
         >
-          <article
-            className="flex flex-col-reverse sm:flex-row sm:items-baseline sm:gap-3"
-          >
-            <time
-              aria-label="Written 15/12/2019 10:00"
-              className="opacity-60 sm:w-24"
-              dateTime="2019-12-15 10:00"
-            >
-              15 Dec, 2019
-            </time>
-            <div
-              className="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center"
-            >
-              <header
-                className="font-medium text-sm"
-              >
-                Post Title
-              </header>
-              <p
-                className="font-mono opacity-60"
-              >
-                1,000 views
-              </p>
-            </div>
-          </article>
-        </a>
-      </li>
-      <li
-        className="-mx-1.5"
-      >
-        <a
-          className="block p-1.5 h-full w-full rounded-md transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900 outline-none focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 text-sm"
-          href="/blog/post-blog-slug"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-          title="A post"
+          Writings
+        </h2>
+        <span
+          class="px-2 py-[3px] border text-center rounded-lg cursor-pointer text-xs bg-white dark:bg-neutral-900 dark:border-neutral-700"
         >
-          <article
-            className="flex flex-col-reverse sm:flex-row sm:items-baseline sm:gap-3"
+          View all →
+        </span>
+      </a>
+      <ul
+        class="grid gap-3 sm:gap-1"
+      >
+        <li
+          class="-mx-1.5"
+        >
+          <a
+            class="block p-1.5 h-full w-full rounded-md transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900 outline-none focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 text-sm"
+            href="/blog/post-slug"
+            tabindex="0"
+            title="Post Title"
           >
-            <time
-              aria-label="Written 17/12/2019 10:00"
-              className="opacity-60 sm:w-24"
-              dateTime="2019-12-17 10:00"
+            <article
+              class="flex flex-col-reverse sm:flex-row sm:items-baseline sm:gap-3"
             >
-              17 Dec, 2019
-            </time>
-            <div
-              className="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center"
+              <time
+                aria-label="Written 15/12/2019 10:00"
+                class="opacity-60 sm:w-24"
+                datetime="2019-12-15 10:00"
+              >
+                15 Dec, 2019
+              </time>
+              <div
+                class="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center"
+              >
+                <header
+                  class="font-medium text-sm"
+                >
+                  Post Title
+                </header>
+                <p
+                  class="font-mono opacity-60"
+                >
+                  1,000 views
+                </p>
+              </div>
+            </article>
+          </a>
+        </li>
+        <li
+          class="-mx-1.5"
+        >
+          <a
+            class="block p-1.5 h-full w-full rounded-md transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900 outline-none focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 text-sm"
+            href="/blog/post-blog-slug"
+            tabindex="0"
+            title="A post"
+          >
+            <article
+              class="flex flex-col-reverse sm:flex-row sm:items-baseline sm:gap-3"
             >
-              <header
-                className="font-medium text-sm"
+              <time
+                aria-label="Written 17/12/2019 10:00"
+                class="opacity-60 sm:w-24"
+                datetime="2019-12-17 10:00"
               >
-                A post
-              </header>
-              <p
-                className="font-mono opacity-60"
+                17 Dec, 2019
+              </time>
+              <div
+                class="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center"
               >
-                1,000 views
-              </p>
-            </div>
-          </article>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
+                <header
+                  class="font-medium text-sm"
+                >
+                  A post
+                </header>
+                <p
+                  class="font-mono opacity-60"
+                >
+                  1,000 views
+                </p>
+              </div>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
 `;

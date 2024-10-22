@@ -1,11 +1,11 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import NewsletterSubscribe from '../index'
 
 describe('NewsletterSubscribe', () => {
   it('should match NewsletterSubscribe component', () => {
-    const wrapper = renderer.create(<NewsletterSubscribe />)
+    const { container } = render(<NewsletterSubscribe />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })
