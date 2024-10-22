@@ -1,5 +1,5 @@
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
-import renderer from 'react-test-renderer'
+import { act, render, screen, waitFor } from '@testing-library/react'
 
 import Layout from '../index'
 
@@ -16,57 +16,67 @@ describe('Layout', () => {
   })
 
   it('should render the Layout with children', () => {
-    const wrapper = renderer.create(
+    const { container } = render(
       <Layout>
         <h1>Some children</h1>
         <h2>Hello!</h2>
       </Layout>,
     )
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 
   describe('Hamburguer', () => {
     describe('when the menu is closed', () => {
       describe('when user clicks on the icon', () => {
-        it('should open the navigation menu and lock the body scroll', () => {
-          const wrapper = renderer.create(
+        it('should open the navigation menu and lock the body scroll', async () => {
+          render(
             <Layout>
               <h1>Some children</h1>
               <h2>Hello!</h2>
             </Layout>,
           )
 
-          renderer.act(() => {
-            wrapper.root.findAllByType('button')[0].props.onClick()
+          act(() => {
+            screen.getByLabelText('Open navigation menu').click()
           })
 
-          expect(disableBodyScroll).toHaveBeenCalledWith(document.body)
-          expect(wrapper.root.findAllByType('nav').length).toBe(2)
+          await waitFor(() => {
+            expect(disableBodyScroll).toHaveBeenCalledWith(document.body)
+          })
+
+          expect(screen.getByLabelText('Close navigation menu')).toBeVisible()
         })
       })
     })
 
     describe('when the menu is opened', () => {
       describe('when user clicks on the icon', () => {
-        it('should close the navigation menu and release the scroll', () => {
-          const wrapper = renderer.create(
+        it('should close the navigation menu and release the scroll', async () => {
+          render(
             <Layout>
               <h1>Some children</h1>
               <h2>Hello!</h2>
             </Layout>,
           )
 
-          renderer.act(() => {
-            wrapper.root.findAllByType('button')[0].props.onClick()
+          act(() => {
+            screen.getByLabelText('Open navigation menu').click()
           })
 
-          renderer.act(() => {
-            wrapper.root.findAllByType('button')[1].props.onClick()
+          await waitFor(() => {
+            expect(disableBodyScroll).toHaveBeenCalledWith(document.body)
           })
 
-          expect(enableBodyScroll).toHaveBeenCalledWith(document.body)
-          expect(wrapper.root.findAllByType('nav').length).toBe(1)
+          act(() => {
+            screen.getByLabelText('Close navigation menu').click()
+          })
+
+          await waitFor(() => {
+            expect(enableBodyScroll).toHaveBeenCalledWith(document.body)
+          })
+
+          expect(screen.getByLabelText('Open navigation menu')).toBeVisible()
         })
       })
     })

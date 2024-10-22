@@ -1,11 +1,11 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import Experience from '../index'
 
 describe('Experience', () => {
   it('should match Experience component', () => {
-    const wrapper = renderer.create(<Experience />)
+    const { container } = render(<Experience />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })

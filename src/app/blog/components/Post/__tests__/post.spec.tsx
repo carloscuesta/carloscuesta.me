@@ -1,12 +1,12 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import Post from '../'
 import * as stubs from './stubs'
 
 describe('Post', () => {
   it('should render the component', () => {
-    const wrapper = renderer.create(<Post post={stubs.post} />)
+    const { container } = render(<Post post={stubs.post} />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })

@@ -1,27 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header should match Header component 1`] = `
-<header
-  className="mb-6 pb-4"
->
-  <h1
-    className="mb-2 text-4xl font-extrabold tracking-tight"
+<div>
+  <header
+    class="mb-6 pb-4"
   >
-    Post title
-  </h1>
-  <time
-    className="text-sm opacity-70"
-    dateTime="2019-12-15 10:00"
-  >
-    15/12/2019
-  </time>
-  <span
-    className="text-sm opacity-70 before:px-1 before:content-["•"]"
-  >
-    10 min read
-  </span>
-  <span
-    className="text-sm opacity-70 before:px-1 before:content-["•"]"
-  />
-</header>
+    <h1
+      class="mb-2 text-4xl font-extrabold tracking-tight"
+    >
+      Post title
+    </h1>
+    <time
+      class="text-sm opacity-70"
+      datetime="2019-12-15 10:00"
+    >
+      15/12/2019
+    </time>
+    <span
+      class="text-sm opacity-70 before:px-1 before:content-["•"]"
+    >
+      10 min read
+    </span>
+    <span
+      class="text-sm opacity-70 before:px-1 before:content-["•"]"
+    >
+      <viewscount
+        slug="/post-slug"
+      />
+    </span>
+  </header>
+</div>
 `;

@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PageTitle should match PageTitle component 1`] = `
-<h1
-  className="my-6 text-xl font-bold"
->
-  Some title
-</h1>
+<div>
+  <h1
+    class="my-6 text-xl font-bold"
+  >
+    Some title
+  </h1>
+</div>
 `;

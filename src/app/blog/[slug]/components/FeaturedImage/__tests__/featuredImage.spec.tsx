@@ -1,12 +1,12 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import FeaturedImage from '../index'
 import * as stubs from './stubs'
 
 describe('FeaturedImage', () => {
   it('should match FeaturedImage component', () => {
-    const wrapper = renderer.create(<FeaturedImage {...stubs.props} />)
+    const { container } = render(<FeaturedImage {...stubs.props} />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })

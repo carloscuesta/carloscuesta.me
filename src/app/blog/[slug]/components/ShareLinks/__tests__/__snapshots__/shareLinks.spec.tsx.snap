@@ -1,41 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ShareLinks should match ShareLinks component 1`] = `
-<section
-  className="my-8"
->
-  <p
-    className="pb-6 text-xl font-bold tracking-tight"
+<div>
+  <section
+    class="my-8"
   >
-    Enjoyed the article? 😍
-  </p>
-  <div
-    className="grid grid-cols-1 gap-3 sm:grid-flow-col sm:grid-cols-[repeat(3,max-content)]"
-  >
-    <a
-      className="shadow-xs text-sm flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
-      href="https://twitter.com/intent/tweet?text=This is a post&url=https://www.example.com/blog/this-is-a-post&via=crloscuesta"
-      rel="noopener noreferrer"
-      target="_blank"
+    <p
+      class="pb-6 text-xl font-bold tracking-tight"
     >
-      Share on Twitter
-    </a>
-    <a
-      className="shadow-xs text-sm flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
-      href="https://twitter.com/search?q=https://www.example.com/blog/this-is-a-post"
-      rel="noopener noreferrer"
-      target="_blank"
+      Enjoyed the article? 😍
+    </p>
+    <div
+      class="grid grid-cols-1 gap-3 sm:grid-flow-col sm:grid-cols-[repeat(3,max-content)]"
     >
-      Discuss on Twitter
-    </a>
-    <a
-      className="shadow-xs text-sm flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
-      href="https://github.com/carloscuesta/carloscuesta.me/edit/master/src/posts/this-is-a-post.md"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Edit post
-    </a>
-  </div>
-</section>
+      <a
+        class="shadow-xs text-sm flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
+        href="https://twitter.com/intent/tweet?text=This is a post&url=https://www.example.com/blog/this-is-a-post&via=crloscuesta"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Share on Twitter
+      </a>
+      <a
+        class="shadow-xs text-sm flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
+        href="https://twitter.com/search?q=https://www.example.com/blog/this-is-a-post"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Discuss on Twitter
+      </a>
+      <a
+        class="shadow-xs text-sm flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
+        href="https://github.com/carloscuesta/carloscuesta.me/edit/master/src/posts/this-is-a-post.md"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Edit post
+      </a>
+    </div>
+  </section>
+</div>
 `;

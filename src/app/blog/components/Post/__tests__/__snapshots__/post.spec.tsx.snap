@@ -1,39 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Post should render the component 1`] = `
-<li
-  className="-mx-3 rounded-lg transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
->
-  <a
-    className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
-    href="/blog/post-blog-slug"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    title="A post"
+<div>
+  <li
+    class="-mx-3 rounded-lg transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900"
   >
-    <time
-      aria-label="Written 15/12/2019"
-      className="opacity-60 sm:w-20"
-      dateTime="2019-12-15 10:00"
+    <a
+      class="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
+      href="/blog/post-blog-slug"
+      tabindex="0"
+      title="A post"
     >
-      15 Dec
-    </time>
-    <div
-      className="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center"
-    >
-      <p
-        className="font-medium"
+      <time
+        aria-label="Written 15/12/2019"
+        class="opacity-60 sm:w-20"
+        datetime="2019-12-15 10:00"
       >
-        A post
-      </p>
-      <p
-        className="font-mono text-sm opacity-60"
+        15 Dec
+      </time>
+      <div
+        class="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center"
       >
-        1,000 views
-      </p>
-    </div>
-  </a>
-</li>
+        <p
+          class="font-medium"
+        >
+          A post
+        </p>
+        <p
+          class="font-mono text-sm opacity-60"
+        >
+          1,000 views
+        </p>
+      </div>
+    </a>
+  </li>
+</div>
 `;

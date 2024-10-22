@@ -1,119 +1,111 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Biography should match Biography component 1`] = `
-<section
-  className="my-12"
->
-  <div
-    className="m-[0_auto] max-w-4xl px-6 sm:px-4"
+<div>
+  <section
+    class="my-12"
   >
     <div
-      className="flex text-sm lowercase opacity-60"
+      class="m-[0_auto] max-w-4xl px-6 sm:px-4"
     >
-      <span
-        className="block w-[62px] whitespace-nowrap"
-      />
       <div
-        className="flex gap-1.5"
+        class="flex text-sm lowercase opacity-60"
       >
-        <span>
-          ·
-        </span>
-        <a
-          href="https://maps.apple.com/place?q=Barcelona&ll=41.3826807%2C2.1770239&auid=2262861905204318884&lsp=7618&address=Barcelona%2C%20Spain"
-          rel="noopener noreferrer nofollow"
-          target="_blank"
-        >
-          Barcelona, Spain
-        </a>
-      </div>
-    </div>
-    <div
-      className="flex justify-between gap-8"
-    >
-      <div>
-        <h1
-          className="flex gap-2 pb-4 text-2xl"
-        >
-          <span
-            className="font-bold"
-          >
-            Hey, I'm Carlos Cuesta
-          </span>
-          <span
-            className="inline-block origin-[70%_70%] animate-wave"
-          >
-            👋🏼
-          </span>
-        </h1>
+        <span
+          class="block w-[62px] whitespace-nowrap"
+        />
         <div
-          className="grid gap-4"
+          class="flex gap-1.5"
         >
-          <p
-            className="sm:max-w-md"
+          <span>
+            ·
+          </span>
+          <a
+            href="https://maps.apple.com/place?q=Barcelona&ll=41.3826807%2C2.1770239&auid=2262861905204318884&lsp=7618&address=Barcelona%2C%20Spain"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
           >
-            I'm a Front End Engineer based in Barcelona. I
-             
-            <a
-              className="underline-offset-2 underline"
-              href="https://github.com/carloscuesta"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              code
-            </a>
-            ,
-             
-            <a
-              className="underline-offset-2 underline"
-              href="/blog"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              write
-            </a>
-             and build stuff on internet.
-          </p>
-          <p
-            className="sm:max-w-md"
-          >
-            I love working in-between product, engineering and developer experience, currently at
-             
-            <a
-              className="underline-offset-2 underline"
-              href="https://n26.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              N26
-            </a>
-            .
-          </p>
+            Barcelona, Spain
+          </a>
         </div>
       </div>
-      <img
-        alt="Carlos Cuesta"
-        className="hidden h-44 w-44 transform-gpu rounded-full sm:block"
-        data-nimg="1"
-        decoding="async"
-        height={176}
-        loading="lazy"
-        onError={[Function]}
-        onLoad={[Function]}
-        src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--ekQN9GP_--%2Fc_scale%2Cw_320%2Fv1594588508%2Fcarloscuesta.jpg&w=384&q=75"
-        srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--ekQN9GP_--%2Fc_scale%2Cw_320%2Fv1594588508%2Fcarloscuesta.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--ekQN9GP_--%2Fc_scale%2Cw_320%2Fv1594588508%2Fcarloscuesta.jpg&w=384&q=75 2x"
-        style={
-          {
-            "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 176 176'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='data:image/webp;base64,UklGRvQCAABXRUJQVlA4WAoAAAAgAAAAOQAAOQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggBgEAAJALAJ0BKjoAOgA+bTCSRiQjIaEwFgkAgA2JQBWHOBs/zMoLISaWACRRJkfyBI4Lxdd/xd03yJpIGFTUqOQGP4xGt8WUYj9jng+v+2wjcftkQSQUlbocxVkWWLjln0a0IfovTZIAAP70062J9GjrH7g8QW5d3F+LQ8rXmHN3okrCe1/lyHE1N4J7O4QOlbIkk3Z32UNX6AwqF01B+DCejpwmvHfxAntOE/kxlbpt/hamu8MLs/k+nwpMp4g1BIvX+zQnii+y1Kl3Frd5sNA18WL4mwthjxSBIjPSiiMNEjmgFriUlUlYCmgWI0KnfUFVrqpG5rSDeBN77cUw84dmPu7Q3pMAAAA='/%3E%3C/svg%3E")",
-            "backgroundPosition": "50% 50%",
-            "backgroundRepeat": "no-repeat",
-            "backgroundSize": "cover",
-            "color": "transparent",
-          }
-        }
-        width={176}
-      />
+      <div
+        class="flex justify-between gap-8"
+      >
+        <div>
+          <h1
+            class="flex gap-2 pb-4 text-2xl"
+          >
+            <span
+              class="font-bold"
+            >
+              Hey, I'm Carlos Cuesta
+            </span>
+            <span
+              class="inline-block origin-[70%_70%] animate-wave"
+            >
+              👋🏼
+            </span>
+          </h1>
+          <div
+            class="grid gap-4"
+          >
+            <p
+              class="sm:max-w-md"
+            >
+              I'm a Front End Engineer based in Barcelona. I
+               
+              <a
+                class="underline-offset-2 underline"
+                href="https://github.com/carloscuesta"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                code
+              </a>
+              ,
+               
+              <a
+                class="underline-offset-2 underline"
+                href="/blog"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                write
+              </a>
+               and build stuff on internet.
+            </p>
+            <p
+              class="sm:max-w-md"
+            >
+              I love working in-between product, engineering and developer experience, currently at
+               
+              <a
+                class="underline-offset-2 underline"
+                href="https://n26.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                N26
+              </a>
+              .
+            </p>
+          </div>
+        </div>
+        <img
+          alt="Carlos Cuesta"
+          class="hidden h-44 w-44 transform-gpu rounded-full sm:block"
+          data-nimg="1"
+          decoding="async"
+          height="176"
+          loading="lazy"
+          src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--ekQN9GP_--%2Fc_scale%2Cw_320%2Fv1594588508%2Fcarloscuesta.jpg&w=384&q=75"
+          srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--ekQN9GP_--%2Fc_scale%2Cw_320%2Fv1594588508%2Fcarloscuesta.jpg&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--ekQN9GP_--%2Fc_scale%2Cw_320%2Fv1594588508%2Fcarloscuesta.jpg&w=384&q=75 2x"
+          style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+          width="176"
+        />
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 `;

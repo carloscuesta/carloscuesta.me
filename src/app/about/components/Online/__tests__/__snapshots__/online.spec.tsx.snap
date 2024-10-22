@@ -1,55 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Online should render the component 1`] = `
-<section>
-  <h2
-    className="my-6 block text-lg font-bold"
-  >
-    Online
-  </h2>
-  <ul
-    className="grid grid-cols-2 gap-3 sm:grid-flow-col sm:grid-cols-[repeat(4,min-content)]"
-  >
-    <li>
-      <a
-        className="hover:text-neutral-1000 shadow-xs flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 text-sm font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
-        href="/follow/x"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Twitter
-      </a>
-    </li>
-    <li>
-      <a
-        className="hover:text-neutral-1000 shadow-xs flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 text-sm font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
-        href="/follow/github"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        GitHub
-      </a>
-    </li>
-    <li>
-      <a
-        className="hover:text-neutral-1000 shadow-xs flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 text-sm font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
-        href="/follow/linkedin"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        LinkedIn
-      </a>
-    </li>
-    <li>
-      <a
-        className="hover:text-neutral-1000 shadow-xs flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 text-sm font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
-        href="mailto:hi@carloscuesta.me"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Email
-      </a>
-    </li>
-  </ul>
-</section>
+<div>
+  <section>
+    <h2
+      class="my-6 block text-lg font-bold"
+    >
+      Online
+    </h2>
+    <ul
+      class="grid grid-cols-2 gap-3 sm:grid-flow-col sm:grid-cols-[repeat(4,min-content)]"
+    >
+      <li>
+        <a
+          class="hover:text-neutral-1000 shadow-xs flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 text-sm font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
+          href="/follow/x"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Twitter
+        </a>
+      </li>
+      <li>
+        <a
+          class="hover:text-neutral-1000 shadow-xs flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 text-sm font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
+          href="/follow/github"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a
+          class="hover:text-neutral-1000 shadow-xs flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 text-sm font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
+          href="/follow/linkedin"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a
+          class="hover:text-neutral-1000 shadow-xs flex flex-none cursor-pointer items-center justify-center rounded-md border border-neutral-400 border-opacity-30 bg-transparent px-4 py-2 text-sm font-semibold leading-none text-neutral-700 opacity-100 transition-all hover:border-opacity-50 hover:shadow-sm dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-neutral-600 dark:hover:text-white sm:space-x-2"
+          href="mailto:hi@carloscuesta.me"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Email
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>
 `;

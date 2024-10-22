@@ -1,12 +1,14 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 
 import Header from '../index'
 import * as stubs from './stubs'
 
+jest.mock('../ViewsCount', () => 'ViewsCount')
+
 describe('Header', () => {
   it('should match Header component', () => {
-    const wrapper = renderer.create(<Header {...stubs.props} />)
+    const { container } = render(<Header {...stubs.props} />)
 
-    expect(wrapper).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })

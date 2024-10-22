@@ -1,30 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FeaturedImage should match FeaturedImage component 1`] = `
-<header
-  className="relative"
->
-  <img
-    alt="post title"
-    className="my-8 rounded-lg"
-    data-nimg="1"
-    decoding="async"
-    fetchpriority="high"
-    height={376}
-    onError={[Function]}
-    onLoad={[Function]}
-    src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=1920&q=75"
-    srcSet="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=828&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=1920&q=75 2x"
-    style={
-      {
-        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 752 376'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='https://res.cloudinary.com/carloscuesta/image/upload/t_post-preview-lqpi/v1454754838/kcuq34zbo1yieygmx0y6.png'/%3E%3C/svg%3E")",
-        "backgroundPosition": "50% 50%",
-        "backgroundRepeat": "no-repeat",
-        "backgroundSize": "cover",
-        "color": "transparent",
-      }
-    }
-    width={752}
-  />
-</header>
+<div>
+  <header
+    class="relative"
+  >
+    <img
+      alt="post title"
+      class="my-8 rounded-lg"
+      data-nimg="1"
+      decoding="async"
+      fetchpriority="high"
+      height="376"
+      src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=1920&q=75"
+      srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=828&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=1920&q=75 2x"
+      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+      width="752"
+    />
+  </header>
+</div>
 `;

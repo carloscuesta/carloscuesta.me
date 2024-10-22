@@ -1,4 +1,4 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import { useInView } from 'react-intersection-observer'
 
 import DisqusComments from '../index'
@@ -14,7 +14,7 @@ jest.mock('disqus-react', () => ({
 
 describe('DisqusComments', () => {
   it('should call useInView with the following options', () => {
-    renderer.create(<DisqusComments {...stubs.props} />)
+    render(<DisqusComments {...stubs.props} />)
 
     expect(useInView).toHaveBeenCalledWith({
       rootMargin: '440px',
@@ -24,9 +24,9 @@ describe('DisqusComments', () => {
 
   describe('when the component is not in viewport', () => {
     it('should not render the Disqus component', () => {
-      const wrapper = renderer.create(<DisqusComments {...stubs.props} />)
+      const { container } = render(<DisqusComments {...stubs.props} />)
 
-      expect(wrapper).toMatchSnapshot()
+      expect(container).toMatchSnapshot()
     })
   })
 
@@ -36,9 +36,9 @@ describe('DisqusComments', () => {
     })
 
     it('should render the Disqus component', () => {
-      const wrapper = renderer.create(<DisqusComments {...stubs.props} />)
+      const { container } = render(<DisqusComments {...stubs.props} />)
 
-      expect(wrapper).toMatchSnapshot()
+      expect(container).toMatchSnapshot()
     })
   })
 })
