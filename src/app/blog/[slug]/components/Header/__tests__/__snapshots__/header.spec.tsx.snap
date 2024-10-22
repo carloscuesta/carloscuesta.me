@@ -24,7 +24,7 @@ exports[`Header should match Header component 1`] = `
     <span
       class="text-sm opacity-70 before:px-1 before:content-["•"]"
     >
-      <viewscount
+      <div
         slug="/post-slug"
       />
     </span>
