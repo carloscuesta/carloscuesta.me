@@ -15,6 +15,8 @@ async function jestConfig() {
       '!src/**/**/not-found.tsx',
       '!src/**/**/providers.tsx',
       '!src/**/**/opengraph-image.tsx',
+      // Unable to transformIgnorePatterns with jest
+      '!src/app/blog/[slug]/components/MdxContent/**/**.tsx',
     ],
     testMatch: ['**/*.(spec).(js)', '**/*.(spec).(ts)', '**/*.(spec).(tsx)'],
     moduleNameMapper: {
@@ -29,7 +31,11 @@ async function jestConfig() {
 
   // Add ignores for specific ESM packages so they are transformed by Jest
   // See: https://github.com/vercel/next.js/issues/35634
-  nextJestConfig.transformIgnorePatterns[0] = '/node_modules/(!unified|jest-runner)/'
+  // https://github.com/jestjs/jest/issues/12984
+  nextJestConfig.transformIgnorePatterns.push(
+    '/node_modules/(?!.pnpm)(?!(remark-gfm)/)',
+    '/node_modules/.pnpm/(?!(remark-gfm))',
+  )
 
   return nextJestConfig
 }
