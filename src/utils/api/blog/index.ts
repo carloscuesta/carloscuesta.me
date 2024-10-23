@@ -1,7 +1,6 @@
 import fs from 'fs'
 import { join } from 'path'
 import truncate from 'lodash.truncate'
-import matter from 'gray-matter'
 
 import callApi from 'src/utils/api/callApi'
 import {
@@ -12,15 +11,26 @@ import {
 } from './mutators'
 
 const POSTS_DIRECTORY = join(process.cwd(), 'src/posts')
+const POST_EXTENSION = '.mdx'
 
 export const getPostSlugs = (): Array<string> =>
-  fs.readdirSync(POSTS_DIRECTORY).map((post: string) => post.replace('.md', ''))
+  fs
+    .readdirSync(POSTS_DIRECTORY)
+    .map((post: string) => post.replace(POST_EXTENSION, ''))
 
 export const fetchPost = async (slug: string): Promise<Post> => {
-  const post = fs.readFileSync(join(POSTS_DIRECTORY, `${slug}.md`), 'utf8')
-  const { data, content: source } = matter(post)
+  const {
+    frontmatter,
+    default: source,
+    readingTime,
+  } = await import(`src/posts/${slug}${POST_EXTENSION}`)
 
-  return await transformPost({ data, source, slug })
+  return await transformPost({
+    data: frontmatter,
+    source,
+    slug,
+    readingTime: readingTime.text,
+  })
 }
 
 export const fetchPosts = async (): Promise<Array<PostPreview>> => {
@@ -39,11 +49,7 @@ export const fetchPosts = async (): Promise<Array<PostPreview>> => {
     })
     .map((post) => ({
       datePublished: post.datePublished,
-      excerpt: truncate(post.excerpt, {
-        length: 100,
-        separator: ' ',
-      }),
-      images: post.images,
+      excerpt: truncate(post.excerpt, { length: 100, separator: ' ' }),
       slug: post.slug,
       title: post.title,
       views: views[post.slug],
