@@ -12,12 +12,18 @@ import {
 } from './mutators'
 
 const POSTS_DIRECTORY = join(process.cwd(), 'src/posts')
+const POST_EXTENSION = '.mdx'
 
 export const getPostSlugs = (): Array<string> =>
-  fs.readdirSync(POSTS_DIRECTORY).map((post: string) => post.replace('.md', ''))
+  fs
+    .readdirSync(POSTS_DIRECTORY)
+    .map((post: string) => post.replace(POST_EXTENSION, ''))
 
 export const fetchPost = async (slug: string): Promise<Post> => {
-  const post = fs.readFileSync(join(POSTS_DIRECTORY, `${slug}.md`), 'utf8')
+  const post = fs.readFileSync(
+    join(POSTS_DIRECTORY, `${slug}${POST_EXTENSION}`),
+    'utf8',
+  )
   const { data, content: source } = matter(post)
 
   return await transformPost({ data, source, slug })
