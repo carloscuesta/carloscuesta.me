@@ -20,7 +20,7 @@ export type Post = {
 
 export type PostPreview = Omit<
   Post,
-  'dateModified' | 'disqusIdentifier' | 'source' | 'readingTime'
+  'dateModified' | 'disqusIdentifier' | 'source' | 'readingTime' | 'images'
 > & { views: string }
 
 type Views = { views: { [key: string]: string } }

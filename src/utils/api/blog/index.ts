@@ -49,11 +49,7 @@ export const fetchPosts = async (): Promise<Array<PostPreview>> => {
     })
     .map((post) => ({
       datePublished: post.datePublished,
-      excerpt: truncate(post.excerpt, {
-        length: 100,
-        separator: ' ',
-      }),
-      images: post.images,
+      excerpt: truncate(post.excerpt, { length: 100, separator: ' ' }),
       slug: post.slug,
       title: post.title,
       views: views[post.slug],
