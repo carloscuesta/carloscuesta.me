@@ -17,14 +17,14 @@ At time of writing this post, I'm using greenkeeper in my opensource projects, a
 
 As I said the main reason for using greenkeeper is to **stay up to date** with the dependencies, **know** the **changes and fixes** introduced in every **release** and see if they break your **build**.
 
-```language-bash
+```shell
 $ npm i -g greenkeeper
 $ greenkeeper login
 ```
 
 After installing and login, you will have to enable greenkeeper for each repository you want to.
 
-```language-bash
+```shell
 $ cd github/repo
 $ greenkeeper enable
 ```

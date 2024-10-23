@@ -25,7 +25,7 @@ See an example of an Hyper [theme](https://github.com/zeit/hyperpower) and [pack
 
 To install a plugin, open the configuration file with `CMD+,` and add the plugin name into your `plugins` list like this:
 
-```language-javascript
+```js
 plugins: ['hyperterm-materialshell']
 ```
 

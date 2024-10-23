@@ -17,7 +17,7 @@ First, if you are not registered, [create an account in Cloudflare](https://www.
 
 After that you will need to add your site to Cloudflare introducing your URL. Cloudflare will start to scan your website DNS, choose the **free plan** and **point** your **domain Nameservers** to the ones provided by Cloudflare, e.g:
 
-```language-shell
+```shell
 iris.ns.cloudflare.com
 beau.ns.cloudflare.com
 ```

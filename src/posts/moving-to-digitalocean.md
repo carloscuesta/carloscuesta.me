@@ -40,7 +40,7 @@ After spinning up a **5$ droplet**, the first thing I did was **disabling** **ro
 
 #### UFW
 
-```language-shell
+```shell
 $ sudo ufw allow 'Nginx Full' && sudo ufw allow OpenSSH
 $ sudo ufw enable && sudo ufw status
 
@@ -58,27 +58,27 @@ When I was on **Heroku**, I used **Cloudflare** to obtain **SSL** 🔒. But **Le
 
 To get your SSL certificate, first, you need to install [certbot](https://certbot.eff.org).
 
-```language-bash
+```shell
 $ sudo add-apt-repository ppa:certbot/certbot
 $ sudo apt-get update && sudo apt-get install python-certbot-nginx
 ```
 
 Then, open your Nginx configuration file find `server_name` directive and set your domain.
 
-```language-bash
+```shell
 server_name example.com www.example.com;
 ```
 
 Verify the configuration and if you have no errors, reload it.
 
-```language-bash
+```shell
 $ sudo nginx -t
 $ sudo systemctl reload nginx
 ```
 
 Now it's time to **obtain** our **SSL certificates** for the domain specified at the Nginx config file.
 
-```language-bash
+```shell
 $ sudo certbot --nginx -d example.com -d www.example.com
 ```
 
@@ -90,13 +90,13 @@ If that's successful, certbot will ask how you'd like to configure your HTTPS. F
 
 **LetsEncrypt certificates** are **only valid** for **ninety days**, however the Certbot cli includes an option to **renew** our **SSL** certificates and we can **automate** this process with a [crontab](https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-on-a-vps).
 
-```language-bash
+```shell
 $ sudo crontab -e
 ```
 
 Add a new line inside the crontab file and save it. Basically you're asking to your server to run the `certbot renew --quiet` command every day at 04:00.
 
-```language-bash
+```shell
 0 4 * * * /usr/bin/certbot renew --quiet
 ```
 
@@ -114,7 +114,7 @@ I use **Nginx** as a **reverse proxy** against the applications that are running
 
 The first block of my configuration file, redirects all the requests to https.
 
-```language-bash
+```shell
 server {
   listen         80;
   listen    [::]:80;
@@ -129,7 +129,7 @@ As an example, if your make a request to `carloscuesta.me`, Nginx will match our
 
 Also, we're enabling **HTTP2** and **SSL** for our server, providing the certificates and keys needed.
 
-```language-bash
+```shell
 server {
   listen 443 ssl http2 default_server;
   listen [::]:443 ssl http2 default_server;

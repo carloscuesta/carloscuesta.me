@@ -18,13 +18,13 @@ title: 'How to deploy Static Sites with Surge'
 
 To install **Surge** just run:
 
-```language-shell
+```shell
 $ npm i -g surge
 ```
 
 After that you will need to create a surge account providing an email and password. Once you're registered and logged in, you can deploy a static site running `surge`
 
-```language-shell
+```shell
 $ surge login
 $ surge
 ```
@@ -37,7 +37,7 @@ You'll be asked for the **path or folder** you want to deploy and the **domain**
 
 Use the `list` command to get a to see every project you’ve published on Surge. To delete a site on Surge just run `teardown`
 
-```language-shell
+```shell
 $ surge list
 $ surge teardown
 ```
