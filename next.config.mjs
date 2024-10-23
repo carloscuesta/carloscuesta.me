@@ -1,8 +1,9 @@
-const { withPlaiceholder } = require("@plaiceholder/next");
+import { withPlaiceholder } from '@plaiceholder/next'
+import createPWA from 'next-pwa'
 
-const withPWA = require('next-pwa')({
+const withPWA = createPWA({
   disable: process.env.NODE_ENV === 'development',
-  dest: 'public'
+  dest: 'public',
 })
 
 const cspHeader = `
@@ -19,7 +20,7 @@ const cspHeader = `
     ${process.env.NODE_ENV === 'development' ? '' : 'upgrade-insecure-requests'};
 `
 
-module.exports = withPWA(
+export default withPWA(
   withPlaiceholder({
     // https://nextjs.org/docs/app/api-reference/next-config-js/serverExternalPackages
     serverExternalPackages: ['uglify-js', 'plaiceholder'],
