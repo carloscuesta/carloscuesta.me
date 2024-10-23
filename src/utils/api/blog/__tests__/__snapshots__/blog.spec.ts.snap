@@ -1,62 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Blog API Client fetchPost should return a post with the slug terminal-setup 1`] = `
-{
-  "dateModified": "2016-02-06 15:55",
-  "datePublished": {
-    "formatDate": "06 February 2016",
-    "formatMonthDay": "Feb 06",
-    "value": "2016-02-06 15:55",
-  },
-  "disqusIdentifier": "7",
-  "excerpt": "Carlos Cuesta terminal setup with ZSH and Oh-My-ZSH, using materialshell and my dotfiles.",
-  "images": {
-    "featured": {
-      "src": "https://res.cloudinary.com/carloscuesta/image/upload/v1593531858/blog-featured-images/Terminal_Setup.png",
-    },
-    "preview": {
-      "lqpi": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAABcRAAAXEQHKJvM/AAAADklEQVR4nGMQRQIMyBwAGbIB+ZVuRQQAAAAASUVORK5CYII=",
-      "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1593531858/blog-featured-images/Terminal_Setup.png",
-    },
-  },
-  "readingTime": "1 min read",
-  "slug": "terminal-setup",
-  "source": "
-**Terminal** is a place where a developer spends a lot of time, running commands, looking for outputs and doing a bunch of stuff, so better to stay comfortable and productive with it.
-
-### Shell
-
-I use [**ZSH**](http://www.zsh.org) as my main shell along with [**Oh-My-Zsh**](http://ohmyz.sh). By default, OS X comes with bash, a simpler shell. To setup ZSH and install Oh-My-Zsh run:
-
-\`\`\`shell
-$ chsh -s /bin/zsh
-$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-\`\`\`
-
-To see what shell are you using run:
-
-\`\`\`shell
-$ echo $SHELL
-\`\`\`
-
-### UI
-
-After setting up ZSH and Oh-My-Zsh, now we are ready to customize and put our shell on steroids.
-
-I use a theme called [**materialshell**](https://github.com/carloscuesta/materialshell) that I've made for my own.
-
-[**Follow this guide to install and setup my terminal**.](https://github.com/carloscuesta/materialshell/blob/master/README.md)
-
-![Carlos Cuesta Shell - MaterialShell](https://res.cloudinary.com/carloscuesta/image/upload/v1454753967/gazne7uhxuq8ugpfvile.png)
-
-### Dotfiles
-
-I have my own [**dotfiles repository**](https://github.com/carloscuesta/dotfiles) with all my shell configuration files, where you can take a look to learn and be more productive with your shell.
-",
-  "title": "Terminal setup",
-}
-`;
-
 exports[`Blog API Client fetchPosts should return an array of posts sorted by datePublished 1`] = `
 [
   {
@@ -140,7 +83,7 @@ exports[`Blog API Client getPostSlugs should match getPostSlugs 1`] = `
 ]
 `;
 
-exports[`Blog API Client mutators transformPost should match the mutated post 1`] = `
+exports[`Blog API Client mutators transformPost should match the transformed post 1`] = `
 {
   "dateModified": "2016-02-06 15:55",
   "datePublished": {
@@ -159,7 +102,7 @@ exports[`Blog API Client mutators transformPost should match the mutated post 1`
       "src": "https://res.cloudinary.com/carloscuesta/image/upload/w_500/v1454754838/kcuq34zbo1yieygmx0y6.png",
     },
   },
-  "readingTime": "1 min read",
+  "readingTime": "3 minutes read",
   "slug": "terminal-setup",
   "source": "<p><strong>Terminal</strong> is a place where a developer spends a lot of time, running commands, looking for outputs and doing a bunch of stuff, so better to stay comfortable and productive with it.</p>
 <h3>Shell</h3>

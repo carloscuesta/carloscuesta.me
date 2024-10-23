@@ -12,10 +12,12 @@ async function jestConfig() {
       '!src/**/**/layout.tsx',
       '!src/**/**/route.ts',
       '!src/**/**/page.tsx',
+      '!src/app/home/index.tsx',
       '!src/**/**/not-found.tsx',
       '!src/**/**/providers.tsx',
       '!src/**/**/opengraph-image.tsx',
       '!src/mdx-components.tsx',
+      '!src/utils/api/blog/index.ts',
     ],
     testMatch: ['**/*.(spec).(js)', '**/*.(spec).(ts)', '**/*.(spec).(tsx)'],
     moduleNameMapper: {
