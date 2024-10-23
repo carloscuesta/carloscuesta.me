@@ -5,7 +5,6 @@ import { getPostSlugs, fetchPost } from 'src/utils/api/blog'
 import Wrapper from 'src/components/Wrapper'
 import Header from './components/Header'
 import FeaturedImage from './components/FeaturedImage'
-import MdxContent from './components/MdxContent'
 import NewsletterSubscribe from './components/NewsletterSubscribe'
 import ShareLinks from './components/ShareLinks'
 

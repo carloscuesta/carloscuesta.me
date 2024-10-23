@@ -15,8 +15,6 @@ async function jestConfig() {
       '!src/**/**/not-found.tsx',
       '!src/**/**/providers.tsx',
       '!src/**/**/opengraph-image.tsx',
-      // Unable to transformIgnorePatterns with jest
-      '!src/app/blog/[slug]/components/MdxContent/**/**.tsx',
       '!src/mdx-components.tsx',
     ],
     testMatch: ['**/*.(spec).(js)', '**/*.(spec).(ts)', '**/*.(spec).(tsx)'],
