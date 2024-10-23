@@ -7,7 +7,7 @@
   "description": "Carlos Cuesta website.",
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "start": "next start",
     "test": "pnpm run test:lint && pnpm run tscheck && pnpm run test:unit && pnpm run test:lighthouse",
     "tscheck": "pnpm tsc --noEmit",
