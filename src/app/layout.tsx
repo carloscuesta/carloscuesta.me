@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/react'
 import localFont from 'next/font/local'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import type { JSX } from 'react'
 
 import 'src/utils/theme/theme.css'
 import cn from 'src/utils/cn'

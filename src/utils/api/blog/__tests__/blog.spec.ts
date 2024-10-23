@@ -39,7 +39,7 @@ describe('Blog API Client', () => {
       ]
 
       expect(expectedPosts).toMatchSnapshot()
-    })
+    }, 10_000)
   })
 
   describe('mutators', () => {

@@ -21,10 +21,8 @@ const cspHeader = `
 
 module.exports = withPWA(
   withPlaiceholder({
-    experimental: {
-      // https://beta.nextjs.org/docs/api-reference/next-config#servercomponentsexternalpackages
-      serverComponentsExternalPackages: ['uglify-js', 'plaiceholder'],
-    },
+    // https://nextjs.org/docs/app/api-reference/next-config-js/serverExternalPackages
+    serverExternalPackages: ['uglify-js', 'plaiceholder'],
     images: {
       remotePatterns: [
         {

@@ -3,8 +3,11 @@ import localFont from 'next/font/local'
 
 import cn from 'src/utils/cn'
 import Polaroid from './Polaroid'
+import family from './images/family.jpg'
+import miami from './images/miami.jpg'
+import longboard from './images/longboard.jpg'
 
-const font = localFont({
+const gloria = localFont({
   src: [
     {
       path: '../../../../../public/fonts/gloria-hallelujah.woff2',
@@ -74,24 +77,12 @@ const WhoAmI = () => (
     </p>
 
     <div
-      className={cn('py-4 flex gap-0 lg:gap-6 lg:flex-wrap', font.className)}
+      className={cn('py-4 flex gap-0 lg:gap-6 lg:flex-wrap', gloria.className)}
     >
-      <Polaroid
-        label="Wife & I ❣️"
-        src={require('./images/family.jpg')}
-        rotation="-3"
-      />
-      <Polaroid
-        label="Miami '23 🏖️"
-        src={require('./images/miami.jpg')}
-        rotation="1"
-      />
+      <Polaroid label="Wife & I ❣️" src={family} rotation="-3" />
+      <Polaroid label="Miami '23 🏖️" src={miami} rotation="1" />
       <div className="hidden sm:block">
-        <Polaroid
-          label="Longboard 🛹"
-          src={require('./images/longboard.jpg')}
-          rotation="-2"
-        />
+        <Polaroid label="Longboard 🛹" src={longboard} rotation="-2" />
       </div>
     </div>
   </section>

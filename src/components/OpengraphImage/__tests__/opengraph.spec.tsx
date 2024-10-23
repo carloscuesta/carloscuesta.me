@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import fetch, { enableFetchMocks } from 'jest-fetch-mock'
+import { enableFetchMocks } from 'jest-fetch-mock'
 
 import OpengraphImage, { getFonts } from '..'
 

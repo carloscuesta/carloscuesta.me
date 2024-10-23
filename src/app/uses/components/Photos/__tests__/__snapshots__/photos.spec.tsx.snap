@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Photos should match Photos component 1`] = `
+<div>
+  <div
+    class="overflow-x-scroll hide-scrollbar flex snap-x snap-mandatory gap-4 sm:grid sm:snap-none sm:grid-cols-2"
+  >
+    <img
+      alt="Carlos Cuesta's workspace, photo 1 of 2"
+      class="rounded-xl snap-start border dark:border-neutral-700"
+      data-nimg="1"
+      decoding="async"
+      height="40"
+      loading="eager"
+      sizes="(max-width: 640px) 100vw, 50vw"
+      src="/_next/image?url=%2Fimg.jpg&w=3840&q=90"
+      srcset="/_next/image?url=%2Fimg.jpg&w=384&q=90 384w, /_next/image?url=%2Fimg.jpg&w=640&q=90 640w, /_next/image?url=%2Fimg.jpg&w=750&q=90 750w, /_next/image?url=%2Fimg.jpg&w=828&q=90 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=90 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=90 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=90 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=90 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=90 3840w"
+      style="color: transparent; width: 100%; height: auto;"
+      width="40"
+    />
+    <img
+      alt="Carlos Cuesta's workspace, photo 2 of 2"
+      class="rounded-xl snap-start border dark:border-neutral-700"
+      data-nimg="1"
+      decoding="async"
+      height="40"
+      loading="eager"
+      sizes="(max-width: 640px) 100vw, 50vw"
+      src="/_next/image?url=%2Fimg.jpg&w=3840&q=90"
+      srcset="/_next/image?url=%2Fimg.jpg&w=384&q=90 384w, /_next/image?url=%2Fimg.jpg&w=640&q=90 640w, /_next/image?url=%2Fimg.jpg&w=750&q=90 750w, /_next/image?url=%2Fimg.jpg&w=828&q=90 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=90 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=90 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=90 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=90 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=90 3840w"
+      style="color: transparent; width: 100%; height: auto;"
+      width="40"
+    />
+  </div>
+</div>
+`;

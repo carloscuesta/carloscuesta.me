@@ -19,6 +19,6 @@ In my blog I'll be talking about a lot of things related to the **front end deve
 
 To finish my first post, all I want to say is the first thing that a developer makes when he writes his first lines of code.
 
-```language-javascript
-console.log('Hello World!');
+```js
+console.log('Hello World!')
 ```

@@ -13,14 +13,14 @@ title: 'Terminal setup'
 
 I use [**ZSH**](http://www.zsh.org) as my main shell along with [**Oh-My-Zsh**](http://ohmyz.sh). By default, OS X comes with bash, a simpler shell. To setup ZSH and install Oh-My-Zsh run:
 
-```language-bash
+```shell
 $ chsh -s /bin/zsh
 $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 To see what shell are you using run:
 
-```language-bash
+```shell
 $ echo $SHELL
 ```
 
