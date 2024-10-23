@@ -1,6 +1,6 @@
+import type { JSX } from 'react'
 import { format } from 'date-fns'
 import { getPlaiceholder } from 'plaiceholder'
-import readingTime from 'reading-time'
 
 export type Post = {
   dateModified: string
@@ -11,7 +11,7 @@ export type Post = {
   }
   disqusIdentifier: string
   excerpt: string
-  source: string
+  source: () => JSX.Element
   images: { featured: { src: string }; preview: { lqpi: string; src: string } }
   readingTime: string
   slug: string
@@ -29,8 +29,9 @@ export const transformPostViews = (data: Views) => data.views
 
 type Payload = {
   data: { [key: string]: string }
-  source: string
+  source: () => JSX.Element
   slug: string
+  readingTime: string
 }
 
 export const transformPost = async (payload: Payload): Promise<Post> => {
@@ -60,7 +61,7 @@ export const transformPost = async (payload: Payload): Promise<Post> => {
         lqpi: base64,
       },
     },
-    readingTime: readingTime(payload.source).text,
+    readingTime: payload.readingTime,
     slug: payload.slug,
     title: payload.data.title,
   }

@@ -70,6 +70,7 @@ const cspHeader = `
 export default withPWA(
   withPlaiceholder(
     withMDX({
+      pageExtensions: ['ts', 'tsx', 'mdx'],
       // https://nextjs.org/docs/app/api-reference/next-config-js/serverExternalPackages
       serverExternalPackages: ['uglify-js', 'plaiceholder'],
       images: {

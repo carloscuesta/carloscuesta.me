@@ -73,7 +73,9 @@ const Article = async (props: Params) => {
             slug={post.slug}
           />
 
-          <MdxContent source={post.source} />
+          <div className="prose prose-neutral relative max-w-full dark:prose-invert prose-headings:scroll-mt-16 prose-img:rounded-lg">
+            {post.source()}
+          </div>
 
           <hr className="mt-12 border-neutral-100 dark:border-neutral-800" />
 
