@@ -65,6 +65,7 @@
     "remark-frontmatter": "5.0.0",
     "remark-gfm": "4.0.0",
     "remark-mdx-frontmatter": "5.0.0",
+    "remark-reading-time": "2.0.1",
     "remark-toc": "^9.0.0",
     "satori": "0.10.13",
     "sharp": "0.32.6",
