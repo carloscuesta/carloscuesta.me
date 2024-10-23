@@ -28,14 +28,6 @@ async function jestConfig() {
     setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   })()
 
-  // Add ignores for specific ESM packages so they are transformed by Jest
-  // See: https://github.com/vercel/next.js/issues/35634
-  // https://github.com/jestjs/jest/issues/12984
-  nextJestConfig.transformIgnorePatterns.push(
-    '/node_modules/(?!.pnpm)(?!(remark-gfm)/)',
-    '/node_modules/.pnpm/(?!(remark-gfm))',
-  )
-
   return nextJestConfig
 }
 
