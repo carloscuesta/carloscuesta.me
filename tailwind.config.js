@@ -18,6 +18,14 @@ module.exports = {
       animation: {
         wave: 'wave 1.2s ease infinite',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            pre: false,
+            code: false,
+          },
+        },
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
