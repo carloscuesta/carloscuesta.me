@@ -44,7 +44,6 @@ const withMDX = createMDX({
             dark,
             light,
           },
-          defaultLang: 'plaintext',
         },
       ],
       [rehypeWrap, { selector: 'table', wrapper: 'div.responsiveTable' }],
