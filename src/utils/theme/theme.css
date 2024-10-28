@@ -86,6 +86,10 @@ html {
   @apply underline;
 }
 
+code {
+  @apply text-sm py-[1px] px-1 inline-block rounded-md border bg-neutral-50 text-neutral-800 dark:bg-neutral-900 dark:border-neutral-700 dark:text-white;
+}
+
 code[data-theme],
 pre[data-theme] {
   white-space: pre;
