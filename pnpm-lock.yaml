@@ -234,9 +234,6 @@ importers:
       uglify-js:
         specifier: 3.19.3
         version: 3.19.3
-      vfile:
-        specifier: 6.0.2
-        version: 6.0.2
 
 packages:
 
