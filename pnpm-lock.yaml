@@ -156,9 +156,6 @@ importers:
       '@types/react':
         specifier: npm:types-react@19.0.0-rc.1
         version: types-react@19.0.0-rc.1
-      '@types/react-test-renderer':
-        specifier: 18.0.7
-        version: 18.0.7
       '@typescript-eslint/eslint-plugin':
         specifier: 5.62.0
         version: 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
@@ -225,9 +222,6 @@ importers:
       prettier-plugin-tailwindcss:
         specifier: 0.6.1
         version: 0.6.1(prettier@3.3.3)
-      react-test-renderer:
-        specifier: ^18.2.0
-        version: 18.2.0(react@19.0.0-rc-65a56d0e-20241020)
       tailwind-merge:
         specifier: 2.5.2
         version: 2.5.2
@@ -1456,9 +1450,6 @@ packages:
 
   '@types/react-dom@18.2.11':
     resolution: {integrity: sha512-zq6Dy0EiCuF9pWFW6I6k6W2LdpUixLE4P6XjXU1QHLfak3GPACQfLwEuHzY5pOYa4hzj1d0GxX/P141aFjZsyg==}
-
-  '@types/react-test-renderer@18.0.7':
-    resolution: {integrity: sha512-1+ANPOWc6rB3IkSnElhjv6VLlKg2dSv/OWClUyZimbLsQyBn8Js9Vtdsi3UICJ2rIQ3k2la06dkB+C92QfhKmg==}
 
   '@types/resolve@1.17.1':
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
@@ -4962,16 +4953,6 @@ packages:
   react-is@18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
 
-  react-shallow-renderer@16.15.0:
-    resolution: {integrity: sha512-oScf2FqQ9LFVQgA73vr86xl2NaOIX73rh+YFqcOp68CWj56tSfgtGKrEbyhCj0rSijyG9M1CYprTh39fBi5hzA==}
-    peerDependencies:
-      react: ^16.0.0 || ^17.0.0 || ^18.0.0
-
-  react-test-renderer@18.2.0:
-    resolution: {integrity: sha512-JWD+aQ0lh2gvh4NM3bBM42Kx+XybOxCpgYK7F8ugAlpaTSnWsX+39Z4XkOykGZAHrjwwTZT3x3KxswVWxHPUqA==}
-    peerDependencies:
-      react: ^18.2.0
-
   react@19.0.0-rc-65a56d0e-20241020:
     resolution: {integrity: sha512-rZqpfd9PP/A97j9L1MR6fvWSMgs3khgIyLd0E+gYoCcLrxXndj+ySPRVlDPDC3+f7rm8efHNL4B6HeapqU6gzw==}
     engines: {node: '>=0.10.0'}
@@ -5273,9 +5254,6 @@ packages:
   saxes@6.0.0:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
     engines: {node: '>=v12.22.7'}
-
-  scheduler@0.23.0:
-    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
 
   scheduler@0.25.0-rc-65a56d0e-20241020:
     resolution: {integrity: sha512-HxWcXSy0sNnf+TKRkMwyVD1z19AAVQ4gUub8m7VxJUUfSu3J4lr1T+AagohKEypiW5dbQhJuCtAumPY6z9RQ1g==}
@@ -7959,10 +7937,6 @@ snapshots:
     dependencies:
       '@types/react': types-react@19.0.0-rc.1
     optional: true
-
-  '@types/react-test-renderer@18.0.7':
-    dependencies:
-      '@types/react': types-react@19.0.0-rc.1
 
   '@types/resolve@1.17.1':
     dependencies:
@@ -12388,19 +12362,6 @@ snapshots:
 
   react-is@18.2.0: {}
 
-  react-shallow-renderer@16.15.0(react@19.0.0-rc-65a56d0e-20241020):
-    dependencies:
-      object-assign: 4.1.1
-      react: 19.0.0-rc-65a56d0e-20241020
-      react-is: 18.2.0
-
-  react-test-renderer@18.2.0(react@19.0.0-rc-65a56d0e-20241020):
-    dependencies:
-      react: 19.0.0-rc-65a56d0e-20241020
-      react-is: 18.2.0
-      react-shallow-renderer: 16.15.0(react@19.0.0-rc-65a56d0e-20241020)
-      scheduler: 0.23.0
-
   react@19.0.0-rc-65a56d0e-20241020: {}
 
   read-cache@1.0.0:
@@ -12893,10 +12854,6 @@ snapshots:
   saxes@6.0.0:
     dependencies:
       xmlchars: 2.2.0
-
-  scheduler@0.23.0:
-    dependencies:
-      loose-envify: 1.4.0
 
   scheduler@0.25.0-rc-65a56d0e-20241020: {}
 
