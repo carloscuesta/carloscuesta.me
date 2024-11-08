@@ -12,7 +12,7 @@ const Post = ({ post }: { post: PostPreview }) => (
     <Link
       href={`/blog/${post.slug}`}
       title={post.title}
-      className="flex flex-col-reverse gap-1 rounded-lg px-3 py-3 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-3 sm:py-4"
+      className="flex flex-col-reverse gap-1 rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-500 sm:flex-row sm:gap-2 sm:py-2"
       tabIndex={0}
     >
       <time
