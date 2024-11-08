@@ -1,9 +1,7 @@
 import Wrapper from 'src/components/Wrapper'
 
 const Footer = () => (
-  <footer>
-    <hr className="mt-8 border-neutral-100 dark:border-neutral-800" />
-
+  <footer className="mt-8">
     <Wrapper>
       <div className="flex items-center justify-between px-1 py-4 text-sm text-neutral-500">
         <span>Carlos Cuesta © {new Date().getFullYear()}</span>
