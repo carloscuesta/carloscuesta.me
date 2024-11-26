@@ -14,8 +14,8 @@ import remarkFrontmatter from 'remark-frontmatter'
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 import remarkReadingTime from 'remark-reading-time'
 import readingMdxTime from 'remark-reading-time/mdx.js'
-import dark from 'sprinkles-vscode/themes/sprinkles-dark.json' assert { type: 'json' }
-import light from 'sprinkles-vscode/themes/sprinkles-light.json' assert { type: 'json' }
+import dark from 'sprinkles-vscode/themes/sprinkles-dark.json' with { type: 'json' }
+import light from 'sprinkles-vscode/themes/sprinkles-light.json' with { type: 'json' }
 
 const withPWA = createPWA({
   disable: process.env.NODE_ENV === 'development',
