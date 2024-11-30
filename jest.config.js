@@ -18,6 +18,8 @@ async function jestConfig() {
       '!src/**/**/opengraph-image.tsx',
       '!src/mdx-components.tsx',
       '!src/utils/api/blog/index.ts',
+      '!src/app/blog/[slug]/components/Playground/index.tsx',
+      '!src/app/blog/[slug]/components/SandpackCSS/index.tsx',
     ],
     testMatch: ['**/*.(spec).(js)', '**/*.(spec).(ts)', '**/*.(spec).(tsx)'],
     moduleNameMapper: {
