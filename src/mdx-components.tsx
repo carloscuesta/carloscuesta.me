@@ -1,5 +1,6 @@
 import { MDXComponents } from 'mdx/types'
 import Image, { ImageProps } from 'next/image'
+import Playground from './app/blog/[slug]/components/Playground'
 
 const components = {
   img: (props) => (
@@ -9,6 +10,7 @@ const components = {
       {...(props as ImageProps)}
     />
   ),
+  Playground,
 } satisfies MDXComponents
 
 declare global {
