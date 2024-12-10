@@ -85,7 +85,7 @@
     "autoprefixer": "10.4.20",
     "classix": "2.1.38",
     "eslint": "^8.57.0",
-    "eslint-config-next": "15.0.2",
+    "eslint-config-next": "15.0.4",
     "eslint-config-prettier": "9.1.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-import-resolver-typescript": "3.6.3",
