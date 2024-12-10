@@ -100,7 +100,7 @@
     "msw": "2.4.9",
     "next-sitemap": "^4.2.3",
     "postcss": "8.4.49",
-    "prettier": "3.3.3",
+    "prettier": "3.4.2",
     "prettier-plugin-tailwindcss": "0.6.9",
     "tailwind-merge": "2.5.2",
     "tailwindcss": "3.4.4",
