@@ -33,7 +33,7 @@
     "@headlessui/react": "2.2.0",
     "@mdx-js/loader": "3.1.0",
     "@mdx-js/react": "3.1.0",
-    "@next/mdx": "15.0.2",
+    "@next/mdx": "15.1.0",
     "@plaiceholder/next": "2.5.0",
     "@types/lodash.truncate": "4.4.9",
     "@types/mdx": "2.0.13",
