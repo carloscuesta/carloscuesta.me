@@ -1,7 +1,7 @@
 const NewsletterSubscribe = () => (
   <form
     className="my-8"
-    action="https://buttondown.email/api/emails/embed-subscribe/carloscuesta"
+    action="https://buttondown.com/api/emails/embed-subscribe/carloscuesta"
     method="post"
     target="popupwindow"
   >

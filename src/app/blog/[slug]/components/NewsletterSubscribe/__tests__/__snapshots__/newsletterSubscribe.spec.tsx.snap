@@ -3,7 +3,7 @@
 exports[`NewsletterSubscribe should match NewsletterSubscribe component 1`] = `
 <div>
   <form
-    action="https://buttondown.email/api/emails/embed-subscribe/carloscuesta"
+    action="https://buttondown.com/api/emails/embed-subscribe/carloscuesta"
     class="my-8"
     method="post"
     target="popupwindow"
