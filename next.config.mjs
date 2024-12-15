@@ -1,19 +1,6 @@
 import { withPlaiceholder } from '@plaiceholder/next'
 import createPWA from 'next-pwa'
 import createMDX from '@next/mdx'
-import remarkGFM from 'remark-gfm'
-import remarkToc from 'remark-toc'
-import rehypeSlug from 'rehype-slug'
-import rehypePrettyCode from 'rehype-pretty-code'
-import rehypeExternalLinks from 'rehype-external-links'
-import rehypeAutoLinkHeadings from 'rehype-autolink-headings'
-import rehypeMinify from 'rehype-preset-minify'
-import rehypeWrap from 'rehype-wrap-all'
-import rehypeImageSize from 'rehype-probe-image-size'
-import remarkFrontmatter from 'remark-frontmatter'
-import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
-import remarkReadingTime from 'remark-reading-time'
-import readingMdxTime from 'remark-reading-time/mdx.js'
 import dark from 'sprinkles-vscode/themes/sprinkles-dark.json' with { type: 'json' }
 import light from 'sprinkles-vscode/themes/sprinkles-light.json' with { type: 'json' }
 
@@ -25,20 +12,20 @@ const withPWA = createPWA({
 const withMDX = createMDX({
   options: {
     remarkPlugins: [
-      remarkGFM,
-      [remarkToc, { tight: true, maxDepth: 4, ordered: true }],
-      remarkFrontmatter,
-      remarkMdxFrontmatter,
-      remarkReadingTime,
-      readingMdxTime,
+      'remark-gfm',
+      ['remark-toc', { tight: true, maxDepth: 4, ordered: true }],
+      'remark-frontmatter',
+      'remark-mdx-frontmatter',
+      'remark-reading-time',
+      'remark-reading-time/mdx.js',
     ],
     rehypePlugins: [
-      rehypeSlug,
-      rehypeImageSize,
-      [rehypeAutoLinkHeadings, { behavior: 'wrap' }],
-      rehypeExternalLinks,
+      'rehype-slug',
+      'rehype-probe-image-size',
+      ['rehype-autolink-headings', { behavior: 'wrap' }],
+      'rehype-external-links',
       [
-        rehypePrettyCode,
+        'rehype-pretty-code',
         {
           theme: {
             dark,
@@ -46,8 +33,11 @@ const withMDX = createMDX({
           },
         },
       ],
-      [rehypeWrap, { selector: 'table', wrapper: 'div.responsiveTable' }],
-      rehypeMinify,
+      [
+        'rehype-wrap-all',
+        { selector: 'table', wrapper: 'div.responsiveTable' },
+      ],
+      'rehype-preset-minify',
     ],
   },
 })
