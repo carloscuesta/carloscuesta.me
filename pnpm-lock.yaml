@@ -169,8 +169,8 @@ importers:
         specifier: 10.4.20
         version: 10.4.20(postcss@8.4.49)
       classix:
-        specifier: 2.1.38
-        version: 2.1.38
+        specifier: 2.2.0
+        version: 2.2.0
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
@@ -2237,8 +2237,8 @@ packages:
   cjs-module-lexer@1.2.1:
     resolution: {integrity: sha512-jVamGdJPDeuQilKhvVn1h3knuMOZzr8QDnpk+M9aMlCaMkTDd6fBWPhiDqFvFZ07pL0liqabAiuy8SY4jGHeaw==}
 
-  classix@2.1.38:
-    resolution: {integrity: sha512-vl59khsZzN4cFpEC+K05kz3ArSQUJuIOKppR/8979wkC4vWGiKR7nuvD396tiViGrcztk4W6/9VlgV+tqVrGgw==}
+  classix@2.2.0:
+    resolution: {integrity: sha512-RBvlC0wwmDxyPjA+i1e09KuVQEGcJJz/w/bQ1Hxbz2I4NDetFOvrtIBknRhmO2gBUdOrIkMnYZWiGIjdBcNRVA==}
 
   clean-css@5.3.3:
     resolution: {integrity: sha512-D5J+kHaVb/wKSFcyyV75uCn8fiY4sV38XJoe4CUyGQ+mOU/fMVYUdH1hJC+CJQ5uY3EnW27SbJYS4X8BiLrAFg==}
@@ -9067,7 +9067,7 @@ snapshots:
 
   cjs-module-lexer@1.2.1: {}
 
-  classix@2.1.38: {}
+  classix@2.2.0: {}
 
   clean-css@5.3.3:
     dependencies:
