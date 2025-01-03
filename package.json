@@ -64,7 +64,7 @@
     "remark-mdx-frontmatter": "5.0.0",
     "remark-reading-time": "2.0.1",
     "remark-toc": "^9.0.0",
-    "satori": "0.10.13",
+    "satori": "0.12.0",
     "sharp": "0.32.6",
     "shiki": "1.24.0",
     "sprinkles-vscode": "2.7.0",
