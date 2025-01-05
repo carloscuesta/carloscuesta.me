@@ -112,7 +112,7 @@ exports[`Experience should match Experience component 1`] = `
       >
         <a
           class="flex items-start pb-2  transition-opacity hover:opacity-50"
-          href="https://ulabox.com"
+          href="#"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -140,7 +140,7 @@ exports[`Experience should match Experience component 1`] = `
         </a>
         <a
           class="flex items-start pb-2  transition-opacity hover:opacity-50"
-          href="https://ulabox.com"
+          href="#"
           rel="noopener noreferrer"
           target="_blank"
         >

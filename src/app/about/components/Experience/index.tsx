@@ -32,7 +32,7 @@ const work: Job[] = [
   },
   {
     company: {
-      link: 'https://ulabox.com',
+      link: '#',
       logo: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593899513/about-me/ulabox.png',
       name: 'Ulabox',
     },

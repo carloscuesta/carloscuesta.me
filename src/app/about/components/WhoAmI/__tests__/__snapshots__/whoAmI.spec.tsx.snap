@@ -23,17 +23,7 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
         N26
       </a>
        
-      as a Lead Web Engineer, building the digital bank the world loves to use. Before that I worked at a grocery startup
-       
-      <a
-        class="underline underline-offset-2"
-        href="https://ulabox.com"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Ulabox
-      </a>
-      , the online supermarket.
+      as a Lead Web Engineer, building the digital bank the world loves to use. Before that I worked at a startup called Ulabox, an online supermarket.
     </p>
     <p>
       I love working in between product, engineering and developer experience. Some things that make me excited are JavaScript, Open Source, CI & CD systems, simplicity, automating things and building meaningful user-centric products.

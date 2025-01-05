@@ -44,16 +44,7 @@ const WhoAmI = () => (
         N26
       </a>{' '}
       as a Lead Web Engineer, building the digital bank the world loves to use.
-      Before that I worked at a grocery startup{' '}
-      <a
-        href="https://ulabox.com"
-        className="underline underline-offset-2"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Ulabox
-      </a>
-      , the online supermarket.
+      Before that I worked at a startup called Ulabox, an online supermarket.
     </p>
 
     <p>
