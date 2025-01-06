@@ -104,7 +104,7 @@
     "prettier-plugin-tailwindcss": "0.6.9",
     "tailwind-merge": "2.5.2",
     "tailwindcss": "3.4.4",
-    "typescript": "5.4.5",
+    "typescript": "5.7.2",
     "uglify-js": "3.19.3"
   },
   "eslintConfig": {
