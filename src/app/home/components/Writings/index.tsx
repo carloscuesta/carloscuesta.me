@@ -14,12 +14,8 @@ const Writings = (props: Props) => {
         <SectionTitle title="Writings" href="/blog" viewAll />
 
         <ul className="grid gap-3 sm:gap-1">
-          {props.posts.map((post, index) => (
-            <BlogPost
-              isImageLoadedWithPriority={[0, 1, 2].includes(index)}
-              key={post.slug}
-              post={post}
-            />
+          {props.posts.map((post) => (
+            <BlogPost key={post.slug} post={post} />
           ))}
         </ul>
       </Wrapper>
