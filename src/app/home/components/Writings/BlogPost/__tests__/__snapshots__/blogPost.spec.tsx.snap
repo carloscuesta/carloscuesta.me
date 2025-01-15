@@ -6,7 +6,7 @@ exports[`BlogPost should match BlogPost component 1`] = `
     class="-mx-1.5"
   >
     <a
-      class="block p-1.5 h-full w-full rounded-md transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900 outline-none focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 text-sm"
+      class="block p-1.5 h-full w-full rounded-md transition-all focus-within:bg-neutral-100 hover:bg-neutral-100 dark:focus-within:bg-neutral-900 dark:hover:bg-neutral-900 outline-none focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 text-[15px]"
       href="/blog/post-slug"
       tabindex="0"
       title="Post Title"
@@ -16,7 +16,7 @@ exports[`BlogPost should match BlogPost component 1`] = `
       >
         <time
           aria-label="Written 15/12/2019 10:00"
-          class="opacity-60 sm:w-24"
+          class="opacity-60 sm:w-[6.25rem]"
           datetime="2019-12-15 10:00"
         >
           15 Dec, 2019
@@ -25,12 +25,12 @@ exports[`BlogPost should match BlogPost component 1`] = `
           class="grid flex-1 grid-flow-col items-baseline justify-between gap-10 md:items-center"
         >
           <header
-            class="font-medium text-sm"
+            class="font-medium"
           >
             Post Title
           </header>
           <p
-            class="font-mono opacity-60"
+            class="font-mono opacity-60 text-sm"
           >
             1,000 views
           </p>

@@ -43,7 +43,8 @@ const Biography = () => (
             <p className="sm:max-w-md">
               I'm a Front End Engineer based in Barcelona. I{' '}
               <Link href="https://github.com/carloscuesta" label="code" />,{' '}
-              <Link href="/blog" label="write" /> and build stuff on internet.
+              <Link href="/blog" label="write" /> and run{' '}
+              <Link href="https://bueno.studio" label="bueno.studio" />.
             </p>
 
             <p className="sm:max-w-md">

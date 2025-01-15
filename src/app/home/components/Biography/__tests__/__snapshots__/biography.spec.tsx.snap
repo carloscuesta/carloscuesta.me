@@ -73,7 +73,17 @@ exports[`Biography should match Biography component 1`] = `
               >
                 write
               </a>
-               and build stuff on internet.
+               and run
+               
+              <a
+                class="underline-offset-2 underline"
+                href="https://bueno.studio"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                bueno.studio
+              </a>
+              .
             </p>
             <p
               class="sm:max-w-md"
