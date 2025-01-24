@@ -48,7 +48,7 @@ const ThemeSwitch = () => {
           >
             <Listbox.Options
               static
-              className="w-42 bg-blur absolute right-0 mt-2 max-h-60 origin-top-right overflow-auto rounded-xl bg-white p-2 text-base shadow-lg ring-1 ring-black ring-opacity-5 backdrop-blur-lg focus:outline-hidden dark:bg-neutral-900 sm:text-sm xl:left-0 xl:right-[unset]"
+              className="w-32 bg-blur absolute right-0 mt-2 max-h-60 origin-top-right overflow-auto rounded-xl bg-white p-2 text-base shadow-lg ring-1 ring-black/5 backdrop-blur-lg focus:outline-none dark:bg-neutral-900 sm:text-sm xl:left-0 xl:right-[unset]"
             >
               {themes.map((theme) => (
                 <Listbox.Option
