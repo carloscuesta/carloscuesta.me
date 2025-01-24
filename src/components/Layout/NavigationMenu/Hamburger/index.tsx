@@ -12,7 +12,7 @@ const Hamburger = (props: Props) => {
   const { setIsOpen, isOpen } = props
   const pathname = usePathname()
   const buttonClassName =
-    'fill-black p-2 dark:fill-white focus:outline-none focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 rounded-lg'
+    'fill-black p-2 dark:fill-white focus:outline-hidden focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 rounded-lg'
 
   useEffect(() => {
     if (isOpen) {

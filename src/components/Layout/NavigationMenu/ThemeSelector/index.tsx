@@ -26,7 +26,7 @@ const ThemeSwitch = () => {
           <Listbox.Button
             aria-label="Select theme"
             className={cn(
-              'relative flex h-10 w-10 items-center justify-center rounded-full outline-none',
+              'relative flex h-10 w-10 items-center justify-center rounded-full outline-hidden',
               'transition-opacity hover:opacity-100 focus-visible:ring-2',
               'focus-visible:ring-neutral-200 dark:focus:ring-neutral-600',
               open
@@ -48,7 +48,7 @@ const ThemeSwitch = () => {
           >
             <Listbox.Options
               static
-              className="w-42 bg-blur absolute right-0 mt-2 max-h-60 origin-top-right overflow-auto rounded-xl bg-white p-2 text-base shadow-lg ring-1 ring-black ring-opacity-5 backdrop-blur-lg focus:outline-none dark:bg-neutral-900 sm:text-sm xl:left-0 xl:right-[unset]"
+              className="w-42 bg-blur absolute right-0 mt-2 max-h-60 origin-top-right overflow-auto rounded-xl bg-white p-2 text-base shadow-lg ring-1 ring-black ring-opacity-5 backdrop-blur-lg focus:outline-hidden dark:bg-neutral-900 sm:text-sm xl:left-0 xl:right-[unset]"
             >
               {themes.map((theme) => (
                 <Listbox.Option

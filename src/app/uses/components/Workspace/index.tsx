@@ -128,7 +128,7 @@ const Workspace = () => (
             key={item.title}
             rel="noopener noreferrer"
             target="_blank"
-            className="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+            className="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           >
             <div className="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium">
               {item.category}

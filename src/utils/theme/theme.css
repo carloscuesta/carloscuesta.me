@@ -1,202 +1,222 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-body,
-html {
-  background-color: var(--background);
-  color: var(--text);
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
+@config '../../../tailwind.config.js';
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 }
 
-.language-project-javascript {
-  background-color: #fbdd51;
-}
-
-.language-project-typescript {
-  background-color: #3178c6;
-}
-
-.language-project-shell {
-  background-color: #89e051;
-}
-
-.language-project-css {
-  background-color: #7e57c2;
-}
-
-.language-project-html {
-  background-color: #ff7043;
-}
-
-.prose a[href]:not([href^='#']) {
-  @apply no-underline text-blue-600 underline-offset-2 dark:text-blue-400;
-}
-
-.prose a[href]:not([href^='#']):hover {
-  @apply underline;
-}
-
-.prose a[href^='#'] {
-  @apply no-underline underline-offset-2;
-}
-
-.prose a[href^='#']:hover {
-  @apply underline;
-}
-
-.prose ol,
-.prose ol ol {
-  counter-reset: item;
-}
-
-.prose ol > li,
-.prose ol ol li {
-  counter-increment: item;
-}
-
-.prose ol > li::marker {
-  content: counters(item, '.') '.' ' ';
-  @apply text-sm;
-}
-
-.prose ol ol li::marker {
-  content: counters(item, '.') ' ';
-  @apply text-sm;
-}
-
-.prose h1 a,
-.prose h2 a,
-.prose h3 a,
-.prose h4 a,
-.prose h5 a,
-.prose h6 a {
-  @apply no-underline font-bold;
-}
-
-.prose h1 a:hover,
-.prose h2 a:hover,
-.prose h3 a:hover,
-.prose h4 a:hover,
-.prose h5 a:hover,
-.prose h6 a:hover {
-  @apply underline;
-}
-
-code {
-  @apply text-sm py-[1px] px-1 inline-block rounded-md border bg-neutral-50 text-neutral-800 dark:bg-neutral-900 dark:border-neutral-700 dark:text-white;
-}
-
-code[data-theme],
-pre[data-theme] {
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.75;
-  tab-size: 4;
-  hyphens: none;
-}
-
-.prose code::after,
-.prose code::before {
-  @apply content-none;
-}
-
-pre[data-theme] {
-  font-size: 1rem;
-  padding: 1rem 0;
-  overflow: auto;
-  border-radius: 0;
-  background-color: var(--shiki-light-bg);
-  border: 1px solid #e8eaec;
-  @apply rounded-md;
-}
-
-pre [data-line] {
-  padding: 0 1.25rem;
-}
-
-[data-highlighted-line] {
-  background: #f6f8fa;
-}
-
-code[data-theme*=' '] {
-  background-color: var(--shiki-light-bg);
-}
-
-code[data-theme*=' '] span {
-  color: var(--shiki-light);
-}
-
-.dark [data-highlighted-line] {
-  background: #333739;
-}
-
-.dark code[data-theme*=' '] {
-  background-color: var(--shiki-dark-bg);
-  border: 0;
-}
-
-.dark code[data-theme*=' '] span {
-  color: var(--shiki-dark);
-}
-
-.dark pre,
-.dark pre[data-theme] {
-  background-color: var(--shiki-dark-bg);
-  border: unset;
-}
-
-code[data-line-numbers] {
-  counter-reset: line;
-}
-
-code[data-line-numbers] > [data-line]::before {
-  counter-increment: line;
-  content: counter(line);
-  display: inline-block;
-  width: 0.75rem;
-  margin-right: 2rem;
-  text-align: right;
-  @apply text-neutral-400 dark:text-neutral-600;
-}
-
-code[data-line-numbers] > [data-highlighted-line]::before {
-  @apply text-neutral-700 dark:text-neutral-300;
-}
-
-code[data-line-numbers-max-digits='2'] > [data-line]::before {
-  width: 1.25rem;
-}
-
-code[data-line-numbers-max-digits='3'] > [data-line]::before {
-  width: 1.75rem;
-}
-
-code[data-line-numbers-max-digits='4'] > [data-line]::before {
-  width: 2.25rem;
-}
-
-figcaption + pre[data-theme] {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.codeExplorer {
-  @apply overflow-hidden w-full h-[500px] border-0 rounded-[4px];
-}
-
-[data-rehype-pretty-code-title] {
-  @apply rounded-t-md px-4 py-2 border border-b-0 font-semibold font-mono dark:border-0 dark:bg-[#333739] dark:text-neutral-300;
+@utility hide-scrollbar {
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    display: none;
+  }
 }
 
 @layer utilities {
-  .hide-scrollbar::-webkit-scrollbar {
-    -webkit-appearance: none;
-    display: none;
+  body,
+  html {
+    background-color: var(--background);
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+
+  .language-project-javascript {
+    background-color: #fbdd51;
+  }
+
+  .language-project-typescript {
+    background-color: #3178c6;
+  }
+
+  .language-project-shell {
+    background-color: #89e051;
+  }
+
+  .language-project-css {
+    background-color: #7e57c2;
+  }
+
+  .language-project-html {
+    background-color: #ff7043;
+  }
+
+  .prose a[href]:not([href^='#']) {
+    @apply no-underline text-blue-600 underline-offset-2 dark:text-blue-400;
+  }
+
+  .prose a[href]:not([href^='#']):hover {
+    @apply underline;
+  }
+
+  .prose a[href^='#'] {
+    @apply no-underline underline-offset-2;
+  }
+
+  .prose a[href^='#']:hover {
+    @apply underline;
+  }
+
+  .prose ol,
+  .prose ol ol {
+    counter-reset: item;
+  }
+
+  .prose ol > li,
+  .prose ol ol li {
+    counter-increment: item;
+  }
+
+  .prose ol > li::marker {
+    content: counters(item, '.') '.' ' ';
+    @apply text-sm;
+  }
+
+  .prose ol ol li::marker {
+    content: counters(item, '.') ' ';
+    @apply text-sm;
+  }
+
+  .prose h1 a,
+  .prose h2 a,
+  .prose h3 a,
+  .prose h4 a,
+  .prose h5 a,
+  .prose h6 a {
+    @apply no-underline font-bold;
+  }
+
+  .prose h1 a:hover,
+  .prose h2 a:hover,
+  .prose h3 a:hover,
+  .prose h4 a:hover,
+  .prose h5 a:hover,
+  .prose h6 a:hover {
+    @apply underline;
+  }
+
+  code {
+    @apply text-sm py-[1px] px-1 inline-block rounded-md border bg-neutral-50 text-neutral-800 dark:bg-neutral-900 dark:border-neutral-700 dark:text-white;
+  }
+
+  code[data-theme],
+  pre[data-theme] {
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.75;
+    tab-size: 4;
+    hyphens: none;
+  }
+
+  .prose code::after,
+  .prose code::before {
+    @apply content-none;
+  }
+
+  pre[data-theme] {
+    font-size: 1rem;
+    padding: 1rem 0;
+    overflow: auto;
+    border-radius: 0;
+    background-color: var(--shiki-light-bg);
+    border: 1px solid #e8eaec;
+    @apply rounded-md;
+  }
+
+  pre [data-line] {
+    padding: 0 1.25rem;
+  }
+
+  [data-highlighted-line] {
+    background: #f6f8fa;
+  }
+
+  code[data-theme*=' '] {
+    background-color: var(--shiki-light-bg);
+  }
+
+  code[data-theme*=' '] span {
+    color: var(--shiki-light);
+  }
+
+  .dark [data-highlighted-line] {
+    background: #333739;
+  }
+
+  .dark code[data-theme*=' '] {
+    background-color: var(--shiki-dark-bg);
+    border: 0;
+  }
+
+  .dark code[data-theme*=' '] span {
+    color: var(--shiki-dark);
+  }
+
+  .dark pre,
+  .dark pre[data-theme] {
+    background-color: var(--shiki-dark-bg);
+    border: unset;
+  }
+
+  code[data-line-numbers] {
+    counter-reset: line;
+  }
+
+  code[data-line-numbers] > [data-line]::before {
+    counter-increment: line;
+    content: counter(line);
+    display: inline-block;
+    width: 0.75rem;
+    margin-right: 2rem;
+    text-align: right;
+    @apply text-neutral-400 dark:text-neutral-600;
+  }
+
+  code[data-line-numbers] > [data-highlighted-line]::before {
+    @apply text-neutral-700 dark:text-neutral-300;
+  }
+
+  code[data-line-numbers-max-digits='2'] > [data-line]::before {
+    width: 1.25rem;
+  }
+
+  code[data-line-numbers-max-digits='3'] > [data-line]::before {
+    width: 1.75rem;
+  }
+
+  code[data-line-numbers-max-digits='4'] > [data-line]::before {
+    width: 2.25rem;
+  }
+
+  figcaption + pre[data-theme] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .codeExplorer {
+    @apply overflow-hidden w-full h-[500px] border-0 rounded-[4px];
+  }
+
+  [data-rehype-pretty-code-title] {
+    @apply rounded-t-md px-4 py-2 border border-b-0 font-semibold font-mono dark:border-0 dark:bg-[#333739] dark:text-neutral-300;
   }
 }

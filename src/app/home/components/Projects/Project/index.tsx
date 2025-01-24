@@ -8,7 +8,7 @@ type Props = {
 
 const Project = (props: Props) => (
   <a
-    className="border-neutral-150 grid gap-2.5 rounded-xl border py-4 px-5 hover:bg-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-all focus-within:bg-neutral-100 dark:focus-within:bg-neutral-900 outline-none focus:border-neutral-300 dark:focus:border-neutral-500"
+    className="border-neutral-150 grid gap-2.5 rounded-xl border py-4 px-5 hover:bg-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-all focus-within:bg-neutral-100 dark:focus-within:bg-neutral-900 outline-hidden focus:border-neutral-300 dark:focus:border-neutral-500"
     href={props.repository.url}
     rel="noopener noreferrer"
     target="_blank"
