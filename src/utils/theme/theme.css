@@ -162,12 +162,12 @@
     background: #333739;
   }
 
-  .dark code[data-theme*=''] {
+  .dark code[data-theme] {
     background-color: var(--shiki-dark-bg);
     border: 0;
   }
 
-  .dark code[data-theme*=''] span {
+  .dark code[data-theme] span {
     color: var(--shiki-dark);
   }
 
