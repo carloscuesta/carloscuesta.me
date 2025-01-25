@@ -33,7 +33,7 @@ exports[`Workspace should match Workspace component 1`] = `
         class="table-row-group"
       >
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://store.hermanmiller.com/standing-desks/jarvis-bamboo-standing-desk/100439172.html?lang=en_US&sku=100439172"
           rel="noopener noreferrer"
           target="_blank"
@@ -66,7 +66,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://support.apple.com/kb/SP854"
           rel="noopener noreferrer"
           target="_blank"
@@ -99,7 +99,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://www.hermanmiller.com/en_eur/products/seating/office-chairs/aeron-chairs/"
           rel="noopener noreferrer"
           target="_blank"
@@ -132,7 +132,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://amzn.id/UHX1DFX"
           rel="noopener noreferrer"
           target="_blank"
@@ -165,7 +165,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://amzn.id/wbWhDOO"
           rel="noopener noreferrer"
           target="_blank"
@@ -198,7 +198,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://qwertykeys.notion.site/QK65-Build-Guide-74e558d2ac3f4979939c9a84cb3cbf22"
           rel="noopener noreferrer"
           target="_blank"
@@ -231,7 +231,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://amzn.id/N82BPgO"
           rel="noopener noreferrer"
           target="_blank"
@@ -264,7 +264,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://oakywood.shop/products/grey-felt-cork-desk-mat"
           rel="noopener noreferrer"
           target="_blank"
@@ -297,7 +297,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://amzn.id/kIND87t"
           rel="noopener noreferrer"
           target="_blank"
@@ -330,7 +330,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://amzn.id/7xtEmWR"
           rel="noopener noreferrer"
           target="_blank"
@@ -363,7 +363,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://amzn.id/7wuXIVm"
           rel="noopener noreferrer"
           target="_blank"
@@ -396,7 +396,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://en.aeris.de/products/aeris-muvmat-schwarz-ohne-bezug"
           rel="noopener noreferrer"
           target="_blank"
@@ -429,7 +429,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://amzn.id/Gy0rbL1"
           rel="noopener noreferrer"
           target="_blank"
@@ -462,7 +462,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://amzn.id/iwfwL12"
           rel="noopener noreferrer"
           target="_blank"
@@ -495,7 +495,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://amzn.id/WrvUvWw"
           rel="noopener noreferrer"
           target="_blank"
@@ -528,7 +528,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://amzn.id/yScr2WM"
           rel="noopener noreferrer"
           target="_blank"
@@ -561,7 +561,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://amzn.id/5IQt2Xe"
           rel="noopener noreferrer"
           target="_blank"
@@ -594,7 +594,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://eu.govee.com/collections/tv-gaming-lights/products/govee-rgbicww-wifi-bluetooth-flow-plus-light-bars"
           rel="noopener noreferrer"
           target="_blank"
@@ -627,7 +627,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://www.mi.com/product/mi-smart-clock/"
           rel="noopener noreferrer"
           target="_blank"
@@ -660,7 +660,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://www.ikea.com/es/es/p/vihals-estanteria-10-baldas-blanco-70483274/"
           rel="noopener noreferrer"
           target="_blank"
@@ -693,7 +693,7 @@ exports[`Workspace should match Workspace component 1`] = `
           </div>
         </a>
         <a
-          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-none focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://www.ikea.com/es/es/p/skadis-tablero-perforado-blanco-00320803/"
           rel="noopener noreferrer"
           target="_blank"

@@ -64,7 +64,7 @@ exports[`Layout should render the Layout with children 1`] = `
           >
             <button
               aria-label="Open navigation menu"
-              class="fill-black p-2 dark:fill-white focus:outline-none focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 rounded-lg"
+              class="fill-black p-2 dark:fill-white focus:outline-hidden focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-500 rounded-lg"
               tabindex="0"
             >
               <svg
@@ -87,7 +87,7 @@ exports[`Layout should render the Layout with children 1`] = `
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-label="Select theme"
-              class="relative flex h-10 w-10 items-center justify-center rounded-full outline-none transition-opacity hover:opacity-100 focus-visible:ring-2 focus-visible:ring-neutral-200 dark:focus:ring-neutral-600 opacity-50"
+              class="relative flex h-10 w-10 items-center justify-center rounded-full outline-hidden transition-opacity hover:opacity-100 focus-visible:ring-2 focus-visible:ring-neutral-200 dark:focus:ring-neutral-600 opacity-50"
               data-headlessui-state=""
               id="headlessui-listbox-button-:r2:"
               type="button"
