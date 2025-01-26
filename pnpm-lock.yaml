@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@types/react': npm:types-react@19.0.0-rc.1
-
 importers:
 
   .:
@@ -22,10 +19,10 @@ importers:
         version: 3.1.0(webpack@5.90.3(uglify-js@3.19.3))
       '@mdx-js/react':
         specifier: 3.1.0
-        version: 3.1.0(react@19.0.0)(types-react@19.0.0-rc.1)
+        version: 3.1.0(@types/react@19.0.8)(react@19.0.0)
       '@next/mdx':
         specifier: 15.1.6
-        version: 15.1.6(@mdx-js/loader@3.1.0(webpack@5.90.3(uglify-js@3.19.3)))(@mdx-js/react@3.1.0(react@19.0.0)(types-react@19.0.0-rc.1))
+        version: 15.1.6(@mdx-js/loader@3.1.0(webpack@5.90.3(uglify-js@3.19.3)))(@mdx-js/react@3.1.0(@types/react@19.0.8)(react@19.0.0))
       '@plaiceholder/next':
         specifier: 2.5.0
         version: 2.5.0(next@15.1.6(@babel/core@7.17.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(sharp@0.32.6)
@@ -149,7 +146,7 @@ importers:
         version: 6.6.3
       '@testing-library/react':
         specifier: 16.2.0
-        version: 16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@18.2.11)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(types-react@19.0.0-rc.1)
+        version: 16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@18.2.11)(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@types/body-scroll-lock':
         specifier: 3.1.2
         version: 3.1.2
@@ -160,8 +157,8 @@ importers:
         specifier: 4.6.9
         version: 4.6.9
       '@types/react':
-        specifier: npm:types-react@19.0.0-rc.1
-        version: types-react@19.0.0-rc.1
+        specifier: 19.0.8
+        version: 19.0.8
       '@typescript-eslint/eslint-plugin':
         specifier: 8.21.0
         version: 8.21.0(@typescript-eslint/parser@8.21.0(eslint@8.57.0)(typescript@5.7.3))(eslint@8.57.0)(typescript@5.7.3)
@@ -1157,7 +1154,7 @@ packages:
   '@mdx-js/react@3.1.0':
     resolution: {integrity: sha512-QjHtSaoameoalGnKDT3FoIl4+9RwyTmo9ZJGBdLOks/YOiWHoRDI3PUwEzOE7kEmGcV3AFcp9K6dYu9rEuKLAQ==}
     peerDependencies:
-      '@types/react': npm:types-react@19.0.0-rc.1
+      '@types/react': '>=16'
       react: '>=16'
 
   '@mswjs/interceptors@0.37.5':
@@ -1520,7 +1517,7 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       '@testing-library/dom': ^10.0.0
-      '@types/react': npm:types-react@19.0.0-rc.1
+      '@types/react': ^18.0.0 || ^19.0.0
       '@types/react-dom': ^18.0.0 || ^19.0.0
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
@@ -1650,6 +1647,9 @@ packages:
 
   '@types/react-dom@18.2.11':
     resolution: {integrity: sha512-zq6Dy0EiCuF9pWFW6I6k6W2LdpUixLE4P6XjXU1QHLfak3GPACQfLwEuHzY5pOYa4hzj1d0GxX/P141aFjZsyg==}
+
+  '@types/react@19.0.8':
+    resolution: {integrity: sha512-9P/o1IGdfmQxrujGbIMDyYaaCykhLKc0NGCtYcECNUr9UAaDe4gwvV9bR6tvd5Br1SG0j+PBpbKr2UYY8CwqSw==}
 
   '@types/resolve@1.17.1':
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
@@ -6292,9 +6292,6 @@ packages:
   typedarray-to-buffer@3.1.5:
     resolution: {integrity: sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==}
 
-  types-react@19.0.0-rc.1:
-    resolution: {integrity: sha512-RshndUfqTW6K3STLPis8BtAYCGOkMbtvYsi90gmVNDZBXUyUc5juf2PE9LfS/JmOlUIRO8cWTS/1MTnmhjDqyQ==}
-
   typescript@5.7.3:
     resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
     engines: {node: '>=14.17'}
@@ -8097,10 +8094,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@mdx-js/react@3.1.0(react@19.0.0)(types-react@19.0.0-rc.1)':
+  '@mdx-js/react@3.1.0(@types/react@19.0.8)(react@19.0.0)':
     dependencies:
       '@types/mdx': 2.0.13
-      '@types/react': types-react@19.0.0-rc.1
+      '@types/react': 19.0.8
       react: 19.0.0
 
   '@mswjs/interceptors@0.37.5':
@@ -8120,12 +8117,12 @@ snapshots:
     dependencies:
       fast-glob: 3.3.1
 
-  '@next/mdx@15.1.6(@mdx-js/loader@3.1.0(webpack@5.90.3(uglify-js@3.19.3)))(@mdx-js/react@3.1.0(react@19.0.0)(types-react@19.0.0-rc.1))':
+  '@next/mdx@15.1.6(@mdx-js/loader@3.1.0(webpack@5.90.3(uglify-js@3.19.3)))(@mdx-js/react@3.1.0(@types/react@19.0.8)(react@19.0.0))':
     dependencies:
       source-map: 0.7.4
     optionalDependencies:
       '@mdx-js/loader': 3.1.0(webpack@5.90.3(uglify-js@3.19.3))
-      '@mdx-js/react': 3.1.0(react@19.0.0)(types-react@19.0.0-rc.1)
+      '@mdx-js/react': 3.1.0(@types/react@19.0.8)(react@19.0.0)
 
   '@next/swc-darwin-arm64@15.1.6':
     optional: true
@@ -8484,14 +8481,14 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
 
-  '@testing-library/react@16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@18.2.11)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(types-react@19.0.0-rc.1)':
+  '@testing-library/react@16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@18.2.11)(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.7
       '@testing-library/dom': 10.4.0
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     optionalDependencies:
-      '@types/react': types-react@19.0.0-rc.1
+      '@types/react': 19.0.8
       '@types/react-dom': 18.2.11
 
   '@tootallnate/once@2.0.0': {}
@@ -8629,8 +8626,12 @@ snapshots:
 
   '@types/react-dom@18.2.11':
     dependencies:
-      '@types/react': types-react@19.0.0-rc.1
+      '@types/react': 19.0.8
     optional: true
+
+  '@types/react@19.0.8':
+    dependencies:
+      csstype: 3.1.1
 
   '@types/resolve@1.17.1':
     dependencies:
@@ -14495,10 +14496,6 @@ snapshots:
   typedarray-to-buffer@3.1.5:
     dependencies:
       is-typedarray: 1.0.0
-
-  types-react@19.0.0-rc.1:
-    dependencies:
-      csstype: 3.1.1
 
   typescript@5.7.3: {}
 

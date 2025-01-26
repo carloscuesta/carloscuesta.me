@@ -80,7 +80,7 @@
     "@types/body-scroll-lock": "3.1.2",
     "@types/jest": "29.5.14",
     "@types/lodash.groupby": "4.6.9",
-    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react": "19.0.8",
     "@typescript-eslint/eslint-plugin": "8.21.0",
     "@typescript-eslint/parser": "8.21.0",
     "classix": "2.2.1",
@@ -228,10 +228,5 @@
     "semi": false,
     "singleQuote": true
   },
-  "packageManager": "pnpm@9.1.4",
-  "pnpm": {
-    "overrides": {
-      "@types/react": "npm:types-react@19.0.0-rc.1"
-    }
-  }
+  "packageManager": "pnpm@9.1.4"
 }
