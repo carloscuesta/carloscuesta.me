@@ -146,7 +146,8 @@
       "react/react-in-jsx-scope": "off",
       "@next/next/no-img-element": "off",
       "@typescript-eslint/no-var-requires": "off",
-      "react/no-unescaped-entities": "off"
+      "react/no-unescaped-entities": "off",
+      "@typescript-eslint/no-require-imports": "off"
     },
     "overrides": [
       {
