@@ -17,13 +17,13 @@ type Props = {
 const Polaroid = (props: Props) => (
   <div
     className={cn(
-      'select-none p-4 rounded-lg bg-gradient-to-b from-white to-neutral-100 shadow-2xl',
+      'select-none p-4 rounded-lg bg-linear-to-b from-white to-neutral-100 shadow-2xl',
       'dark:from-neutral-200 dark:to-neutral-200 text-center hover:scale-105 hover:rotate-0',
       'transition-transform ease-out',
       rotation[props.rotation],
     )}
   >
-    <div className="relative h-fit w-fit overflow-hidden rounded">
+    <div className="relative h-fit w-fit overflow-hidden rounded-sm">
       <Image
         alt={props.label}
         height="240"

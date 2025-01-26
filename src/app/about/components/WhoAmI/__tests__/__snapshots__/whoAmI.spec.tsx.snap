@@ -47,10 +47,10 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
       class="py-4 flex gap-0 lg:gap-6 lg:flex-wrap className"
     >
       <div
-        class="select-none p-4 rounded-lg bg-gradient-to-b from-white to-neutral-100 shadow-2xl dark:from-neutral-200 dark:to-neutral-200 text-center hover:scale-105 hover:rotate-0 transition-transform ease-out -rotate-3"
+        class="select-none p-4 rounded-lg bg-linear-to-b from-white to-neutral-100 shadow-2xl dark:from-neutral-200 dark:to-neutral-200 text-center hover:scale-105 hover:rotate-0 transition-transform ease-out -rotate-3"
       >
         <div
-          class="relative h-fit w-fit overflow-hidden rounded"
+          class="relative h-fit w-fit overflow-hidden rounded-sm"
         >
           <img
             alt="Wife & I ❣️"
@@ -74,10 +74,10 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
         </p>
       </div>
       <div
-        class="select-none p-4 rounded-lg bg-gradient-to-b from-white to-neutral-100 shadow-2xl dark:from-neutral-200 dark:to-neutral-200 text-center hover:scale-105 hover:rotate-0 transition-transform ease-out rotate-1"
+        class="select-none p-4 rounded-lg bg-linear-to-b from-white to-neutral-100 shadow-2xl dark:from-neutral-200 dark:to-neutral-200 text-center hover:scale-105 hover:rotate-0 transition-transform ease-out rotate-1"
       >
         <div
-          class="relative h-fit w-fit overflow-hidden rounded"
+          class="relative h-fit w-fit overflow-hidden rounded-sm"
         >
           <img
             alt="Miami '23 🏖️"
@@ -104,10 +104,10 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
         class="hidden sm:block"
       >
         <div
-          class="select-none p-4 rounded-lg bg-gradient-to-b from-white to-neutral-100 shadow-2xl dark:from-neutral-200 dark:to-neutral-200 text-center hover:scale-105 hover:rotate-0 transition-transform ease-out -rotate-2"
+          class="select-none p-4 rounded-lg bg-linear-to-b from-white to-neutral-100 shadow-2xl dark:from-neutral-200 dark:to-neutral-200 text-center hover:scale-105 hover:rotate-0 transition-transform ease-out -rotate-2"
         >
           <div
-            class="relative h-fit w-fit overflow-hidden rounded"
+            class="relative h-fit w-fit overflow-hidden rounded-sm"
           >
             <img
               alt="Longboard 🛹"

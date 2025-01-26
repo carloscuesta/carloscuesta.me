@@ -15,7 +15,7 @@ exports[`OpenSource should match OpenSource component 1`] = `
         class="grid gap-5 sm:grid-cols-2 md:grid-cols-3"
       >
         <a
-          class="border-neutral-150 grid gap-2.5 rounded-xl border py-4 px-5 hover:bg-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-all focus-within:bg-neutral-100 dark:focus-within:bg-neutral-900 outline-none focus:border-neutral-300 dark:focus:border-neutral-500"
+          class="border-neutral-150 grid gap-2.5 rounded-xl border py-4 px-5 hover:bg-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-all focus-within:bg-neutral-100 dark:focus-within:bg-neutral-900 outline-hidden focus:border-neutral-300 dark:focus:border-neutral-500"
           href="https://github.com/carloscuesta/gitmoji"
           rel="noopener noreferrer"
           target="_blank"
@@ -69,7 +69,7 @@ exports[`OpenSource should match OpenSource component 1`] = `
           </div>
         </a>
         <a
-          class="border-neutral-150 grid gap-2.5 rounded-xl border py-4 px-5 hover:bg-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-all focus-within:bg-neutral-100 dark:focus-within:bg-neutral-900 outline-none focus:border-neutral-300 dark:focus:border-neutral-500"
+          class="border-neutral-150 grid gap-2.5 rounded-xl border py-4 px-5 hover:bg-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-all focus-within:bg-neutral-100 dark:focus-within:bg-neutral-900 outline-hidden focus:border-neutral-300 dark:focus:border-neutral-500"
           href="https://github.com/carloscuesta/gitmoji-cli"
           rel="noopener noreferrer"
           target="_blank"
