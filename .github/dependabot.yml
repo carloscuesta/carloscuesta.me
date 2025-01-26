@@ -5,6 +5,11 @@ updates:
   schedule:
     interval: monthly
     time: "04:00"
+  groups:
+      dependencies:
+        dependency-type: 'production'
+      devDependencies:
+        dependency-type: 'development'
   open-pull-requests-limit: 10
 - package-ecosystem: 'github-actions'
   directory: '/'
