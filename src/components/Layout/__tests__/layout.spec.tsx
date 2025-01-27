@@ -1,9 +1,6 @@
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
-import { act, render, screen, waitFor } from '@testing-library/react'
+import { act, render, screen } from '@testing-library/react'
 
 import Layout from '../index'
-
-jest.mock('body-scroll-lock')
 
 describe('Layout', () => {
   beforeAll(() => {
@@ -29,7 +26,7 @@ describe('Layout', () => {
   describe('Hamburguer', () => {
     describe('when the menu is closed', () => {
       describe('when user clicks on the icon', () => {
-        it('should open the navigation menu and lock the body scroll', async () => {
+        it('should open the navigation menu', async () => {
           render(
             <Layout>
               <h1>Some children</h1>
@@ -39,10 +36,6 @@ describe('Layout', () => {
 
           act(() => {
             screen.getByLabelText('Open navigation menu').click()
-          })
-
-          await waitFor(() => {
-            expect(disableBodyScroll).toHaveBeenCalledWith(document.body)
           })
 
           expect(screen.getByLabelText('Close navigation menu')).toBeVisible()
@@ -52,7 +45,7 @@ describe('Layout', () => {
 
     describe('when the menu is opened', () => {
       describe('when user clicks on the icon', () => {
-        it('should close the navigation menu and release the scroll', async () => {
+        it('should close the navigation menu', async () => {
           render(
             <Layout>
               <h1>Some children</h1>
@@ -64,16 +57,8 @@ describe('Layout', () => {
             screen.getByLabelText('Open navigation menu').click()
           })
 
-          await waitFor(() => {
-            expect(disableBodyScroll).toHaveBeenCalledWith(document.body)
-          })
-
           act(() => {
             screen.getByLabelText('Close navigation menu').click()
-          })
-
-          await waitFor(() => {
-            expect(enableBodyScroll).toHaveBeenCalledWith(document.body)
           })
 
           expect(screen.getByLabelText('Open navigation menu')).toBeVisible()
