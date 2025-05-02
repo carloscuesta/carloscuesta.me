@@ -8,11 +8,12 @@ export const runtime = 'edge'
 type Params = { slug: string }
 
 export const POST = async (
-  request: NextRequest,
+  _request: NextRequest,
   props: { params: Promise<Params> },
 ) => {
   const params = await props.params
-  const views = await kv.hincrby('views', params.slug, 1)
+  const increment = process.env.NODE_ENV === 'development' ? 0 : 1
+  const views = await kv.hincrby('views', params.slug, increment)
 
   return NextResponse.json({ [params.slug]: transformViews(views) })
 }
