@@ -1,0 +1,217 @@
+---
+dateModified: '2025-05-03 16:00'
+datePublished: '2025-05-03 16:00'
+disqusIdentifier: 'why-you-should-automate-your-dotfiles'
+excerpt: ' After a decade refining my macOS dev setup, I rebuilt everything with chezmoi. From dotfiles to apps and system tweaks, all automated with a single command.'
+image: 'https://res.cloudinary.com/carloscuesta/image/upload/v1746281807/blog-featured-images/Automated_macOS_Dev_Setup.png'
+title: 'Automated macOS Dev Setup'
+---
+
+One of my first GitHub open source projects I created 10 years ago was my [`dotfiles`](https://github.com/carloscuesta/dotfiles) repository. Everything started as a place to store my configuration files as a backup and a way to showcase my setup with friends.
+
+Since then, it has evolved into an ever-changing collection of scripts, tools, and configurations files I use to set up my development environment.
+
+A few weeks ago, I decided to completely rewrite my dotfiles with a tool called [`chezmoi`](https://chezmoi.io) and it has been a complete game changer! 🤯
+
+### Table of Contents
+
+### Where I'm coming from
+
+For years, I managed my dotfiles with a [handcrafted shell script system](https://github.com/carloscuesta/dotfiles/tree/8349276b50adcea534ecad2a84b7d173ab2d94a6). Those scripts, created the dotfiles, prompted for user input and installed software through [brew](http://brew.sh).
+
+It worked well for a good while, but it had a few limitations that I was not happy with:
+
+- **Complex to maintain**: As my setup changed, the scripts were getting more complex over time, and I was spending too much time maintaining them. Debugging failures wasn't always straightforward.
+- **Machine-to-machine differences**: I use different machines (personal and work) each with different needs and configurations.
+- **Difficult to track changes**: When I made updates to the repo, I had to remember to run the setup script on all machines often skipping certain steps to avoid overwriting local changes.
+
+### Where I'm at now
+
+I finally decided to give [`chezmoi`](https://chezmoi.io) a try after hearing about it many times and I'm so glad I did 😍. It has **completely changed the way** I **manage** my **dotfiles**.
+
+With just a **single command**, I can setup a fresh machine into my complete personal environment, with all my **dotfiles**, **applications**, **tools** and **system settings** included.
+
+```sh
+curl -sfL https://raw.githubusercontent.com/carloscuesta/dotfiles/master/.setup.sh | bash
+```
+
+![Chezmoi setup script](https://res.cloudinary.com/carloscuesta/image/upload/v1746169949/chezmoi-setup.png)
+
+I know, it feels like magic! 🪄, but let me show you how it works 🤓. You can follow along using my [dotfiles repository](http://github.com/carloscuesta/dotfiles).
+
+### Dotfiles
+
+Dotfiles store configuration for many tools and apps on the system, from the shell to the editor, Git SSH, you name it. Chezmoi works by creating a **1:1 mapping** between the **files** in your **repository** and their **destination** on your **system**.
+
+Files prefixed with a `dot_` are treated as _dotfiles_. For example, a file named `dot_zshrc` in the repo will be created as `~/.zshrc` on your machine. By default, all files in the repository are managed by chezmoi, unless explicitly ignored.
+
+<details>
+  <summary>Toggle dotfiles tree 👈</summary>
+
+```text
+.
+├── dot_config
+│   ├── ghostty
+│   │   └── config
+│   ├── git
+│   │   ├── config.tmpl
+│   │   └── ignore
+│   ├── npm
+│   │   └── config
+│   └── starship
+│       └── starship.toml
+├── dot_dotfiles
+│   ├── dot_aliases
+│   ├── dot_exports
+│   ├── dot_extra
+│   └── dot_functions
+├── dot_ssh
+│   └── config.tmpl
+└──dot_zshrc
+```
+
+</details>
+
+Looking at the tree above, you can start to see how dotfiles will be structured once applied to the system. But **there's more**, did you notice `.tmpl` files? 👀
+
+**Template files**
+
+The `.tmpl` files are [Go templates](https://golang.org/pkg/text/template/) that allow you to generate dotfiles with **dynamic content**, like environment variables, user input or other system information.
+
+For example, `dot_config/git/config.tmpl` is a **template** that gets **compiled** **into** a proper Git config **file** based on predefined variables and user prompts:
+
+mention this is based on prompts and variables (not sure if remove the reference to dot_ssh/config.tmp)
+
+```bash title="dot_config/git/config.tmpl"
+[user]
+  name = Carlos Cuesta
+  email = {{ .email }}
+  signingkey = {{ .chezmoi.homeDir }}/.ssh/{{ .gitSigningKeyName }}.pub
+```
+
+Once the dotfiles are applied, `chezmoi` will replace the `{{ .variables }}` with the actual values. You can define variables and prompts in the [`.chezmoi.<format>.tml`](https://www.chezmoi.io/reference/special-files/chezmoi-format-tmpl/) file.
+
+```bash title=".chezmoi.json.tmpl"
+{
+  "data": {
+    "email": {{ promptString "What is your email" | quote }},
+    "setSshKey": {{ promptBool "Do you want to set up an SSH key" }},
+    "gitSigningKeyName": "id_github"
+  }
+}
+```
+
+The [templating engine](https://www.chezmoi.io/user-guide/templating/) is very powerful and there's a lot you can do with it, including: conditionals, functions and more.
+
+This lets you keep your dotfiles clean, **portable**, and **tailored to each machine**, without hardcoding sensitive data or environment-specific settings.
+
+### Hooks
+
+Another key part of the setup is **installing software**, **tools**, and applying macOS system settings. This is where [hooks](https://www.chezmoi.io/reference/configuration-file/hooks/) come into play, they let you automate tasks, like running scripts at the different stages of the setup process.
+
+Here's how I use them in my setup:
+
+#### Apply macOS system defaults
+
+I've been using macOS for more than 15 years now, and I’m very picky about how my system is configured. From keyboard layout to trackpad, finder and dock settings, there are a bunch of preferences I always change to match my workflow.
+
+Instead of applying these manually every time, I use a [**run once hook**](https://github.com/carloscuesta/dotfiles/blob/master/run_once_after_setup-system-settings.sh.tmpl) to automate it all. It makes the experience of setting up a new mac easy and consistent, every single time.
+
+```bash title="run_once_after_setup-system-settings.sh.tmpl"
+{{- if eq .chezmoi.os "darwin" }}
+echo "🍏  Setting macOS defaults"
+defaults write ...
+{{ end -}}
+```
+
+#### Install apps, tools and packages
+
+I use [Homebrew](https://brew.sh) alongside an inline [Brewfile](https://docs.brew.sh/Brew-Bundle-and-Brewfile) to install all the apps, tools, and packages I need to provision my development environment.
+
+Instead of installing them manually, I use a [**run on change hook**](https://github.com/carloscuesta/dotfiles/blob/master/run_onchange_brew-packages.sh.tmpl) that runs every time the `Brewfile` changes.
+
+```bash title="run_onchange_brew-packages.sh.tmpl"
+{{- if eq .chezmoi.os "darwin" -}}
+brew bundle --file=/dev/stdin <<EOF
+brew "..."
+cask "..."
+EOF
+{{ end -}}
+```
+
+#### Install shell packages
+
+Last but not least another [**run on change hook**](https://github.com/carloscuesta/dotfiles/blob/master/run_onchange_install-shell-packages.sh) to install zsh plugins and Ghostty themes, to make my terminal look like this:
+
+![Terminal setup](https://res.cloudinary.com/carloscuesta/image/upload/v1746257512/light-terminal_lsksv5.png#light-mode-only)
+![Terminal setup](https://res.cloudinary.com/carloscuesta/image/upload/v1746257524/dark-terminal_tyvcmo.png#dark-mode-only)
+
+### Setup script
+
+To **glue** everything together, I have a simple shell script that I can run via curl. This script is the entry point to my dotfiles and it's responsible for:
+
+1. Installing `xcode` command line tools.
+2. Installing `brew`.
+3. Installing `oh-my-zsh`.
+4. Installing `chezmoi`.
+5. Initializing dotfiles or update them if they're already set up.
+
+<details>
+  <summary>Toggle setup script 👈</summary>
+
+```bash title=".setup.sh"
+#!/bin/bash
+set -eufo pipefail
+echo "🚀  Setting up @carloscuesta dotfiles."
+
+if xcode-select -p &> /dev/null; then
+  echo "✅  Xcode command line tools are already installed."
+else
+  echo "🔧  Installing Xcode command line tools..."
+  xcode-select --install &> /dev/null
+  echo "✅  Xcode command line tools installed successfully."
+fi
+
+if which -s "brew"; then
+  echo "✅  Homebrew is already installed."
+else
+  echo "🍺  Installing Homebrew"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo "✅  Homebrew installed successfully."
+fi
+
+if [ -f ~/.oh-my-zsh/oh-my-zsh.sh ]; then
+  echo "✅  oh-my-zsh is already installed."
+else
+  echo "💻  Installing oh-my-zsh"
+  yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  echo "✅  oh-my-zsh installed successfully."
+fi
+
+if which -s "chezmoi"; then
+  echo "✅  Chezmoi is already installed."
+else
+  echo "⚪️  Installing Chezmoi"
+  brew install chezmoi
+fi
+
+if [ -d "$HOME/.local/share/chezmoi/.git" ]; then
+  echo "ℹ️  Chezmoi already initialized, pulling latest changes..."
+  chezmoi update
+  echo "✅  Chezmoi updated"
+else
+  chezmoi init carloscuesta
+  chezmoi apply
+  echo "✅  Chezmoi initialized"
+fi
+```
+
+</details>
+
+### Conclusion
+
+I'm very satisfied with how my new dotfiles management system turned out. It's way more **simple**, **scalable** and **flexible** than what I had before.
+
+If you're on the fence about trying out `chezmoi` I genuinely recommend giving it a go. Start small and build up from there.
+
+Let me know if you end up using it, I’d love to see your setup! 😍
