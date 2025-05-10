@@ -1,11 +1,29 @@
 import SectionTitle from 'src/components/SectionTitle'
 import JobPosition from './Job'
 
+type Month =
+  | '01'
+  | '02'
+  | '03'
+  | '04'
+  | '05'
+  | '06'
+  | '07'
+  | '08'
+  | '09'
+  | '10'
+  | '11'
+  | '12'
+
+type Year = `20${string}`
+
+type DateFormat = `${Month}/${string}/${Year}`
+
 export type Job = {
   company: { link: string; logo: string; name: string }
   positions: {
-    dateFinish: string | null
-    dateStart: string
+    dateFinish: DateFormat | null
+    dateStart: DateFormat
     title: string
   }[]
 }
