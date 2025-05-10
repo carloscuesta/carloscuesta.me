@@ -19,7 +19,7 @@ const work: Job[] = [
     },
     positions: [
       {
-        dateFinish: null,
+        dateFinish: '05/16/2025',
         dateStart: '09/01/2022',
         title: 'Lead Web Engineer',
       },
