@@ -13,6 +13,60 @@ exports[`Experience should match Experience component 1`] = `
     >
       <div>
         <img
+          alt="Apple"
+          class="hidden rounded-xl sm:block"
+          data-nimg="1"
+          decoding="async"
+          height="48"
+          loading="lazy"
+          src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1747049867%2Fabout-me%2Fapple.png&w=96&q=75"
+          srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1747049867%2Fabout-me%2Fapple.png&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1747049867%2Fabout-me%2Fapple.png&w=96&q=75 2x"
+          style="color: transparent;"
+          width="48"
+        />
+      </div>
+      <div
+        class="flex grow flex-col"
+      >
+        <a
+          class="flex items-start pb-2  transition-opacity hover:opacity-50"
+          href="https://apple.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="grow pb-3 sm:px-4"
+          >
+            <p
+              class="font-medium"
+            >
+              Senior Software Engineer
+            </p>
+            <p
+              class="opacity-50"
+            >
+              Apple
+            </p>
+          </div>
+          <span
+            class="opacity-90"
+          >
+            2025
+             – 
+            <em
+              class="font-semibold"
+            >
+              Now
+            </em>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div
+      class="flex"
+    >
+      <div>
+        <img
           alt="N26"
           class="hidden rounded-xl sm:block"
           data-nimg="1"
@@ -53,11 +107,7 @@ exports[`Experience should match Experience component 1`] = `
           >
             2022
              – 
-            <em
-              class="font-semibold"
-            >
-              Now
-            </em>
+            2025
           </span>
         </a>
         <a
