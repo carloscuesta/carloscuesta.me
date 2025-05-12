@@ -92,11 +92,11 @@ exports[`Biography should match Biography component 1`] = `
                
               <a
                 class="underline-offset-2 underline"
-                href="https://n26.com"
+                href="https://apple.com"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                N26
+                Apple
               </a>
               .
             </p>
