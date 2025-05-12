@@ -31,6 +31,20 @@ export type Job = {
 const work: Job[] = [
   {
     company: {
+      link: 'https://apple.com',
+      logo: 'https://res.cloudinary.com/carloscuesta/image/upload/v1747049867/about-me/apple.png',
+      name: 'Apple',
+    },
+    positions: [
+      {
+        dateFinish: null,
+        dateStart: '05/19/2025',
+        title: 'Senior Software Engineer',
+      },
+    ],
+  },
+  {
+    company: {
       link: 'https://n26.com',
       logo: 'https://res.cloudinary.com/carloscuesta/image/upload/v1617353828/about-me/n26.png',
       name: 'N26',
