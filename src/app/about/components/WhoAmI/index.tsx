@@ -36,15 +36,15 @@ const WhoAmI = () => (
     <p>
       Currently working at{' '}
       <a
-        href="https://n26.com"
+        href="https://apple.com"
         className="underline underline-offset-2"
         target="_blank"
         rel="noopener noreferrer"
       >
-        N26
+        Apple
       </a>{' '}
-      as a Lead Web Engineer, building the digital bank the world loves to use.
-      Before that I worked at a startup called Ulabox, an online supermarket.
+      as a Senior Software Engineer. Before that I worked at N26, building the
+      digital bank the world loves to use.
     </p>
 
     <p>

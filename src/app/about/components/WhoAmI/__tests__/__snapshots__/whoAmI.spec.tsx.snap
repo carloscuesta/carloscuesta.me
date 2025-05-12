@@ -16,14 +16,14 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
        
       <a
         class="underline underline-offset-2"
-        href="https://n26.com"
+        href="https://apple.com"
         rel="noopener noreferrer"
         target="_blank"
       >
-        N26
+        Apple
       </a>
        
-      as a Lead Web Engineer, building the digital bank the world loves to use. Before that I worked at a startup called Ulabox, an online supermarket.
+      as a Senior Software Engineer. Before that I worked at N26, building the digital bank the world loves to use.
     </p>
     <p>
       I love working in between product, engineering and developer experience. Some things that make me excited are JavaScript, Open Source, CI & CD systems, simplicity, automating things and building meaningful user-centric products.
