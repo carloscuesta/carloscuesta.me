@@ -1,16 +1,48 @@
 import SectionTitle from 'src/components/SectionTitle'
 import JobPosition from './Job'
 
+type Month =
+  | '01'
+  | '02'
+  | '03'
+  | '04'
+  | '05'
+  | '06'
+  | '07'
+  | '08'
+  | '09'
+  | '10'
+  | '11'
+  | '12'
+
+type Year = `20${string}`
+
+type DateFormat = `${Month}/${string}/${Year}`
+
 export type Job = {
   company: { link: string; logo: string; name: string }
   positions: {
-    dateFinish: string | null
-    dateStart: string
+    dateFinish: DateFormat | null
+    dateStart: DateFormat
     title: string
   }[]
 }
 
 const work: Job[] = [
+  {
+    company: {
+      link: 'https://apple.com',
+      logo: 'https://res.cloudinary.com/carloscuesta/image/upload/v1747049867/about-me/apple.png',
+      name: 'Apple',
+    },
+    positions: [
+      {
+        dateFinish: null,
+        dateStart: '05/19/2025',
+        title: 'Senior Software Engineer',
+      },
+    ],
+  },
   {
     company: {
       link: 'https://n26.com',
@@ -19,7 +51,7 @@ const work: Job[] = [
     },
     positions: [
       {
-        dateFinish: null,
+        dateFinish: '05/16/2025',
         dateStart: '09/01/2022',
         title: 'Lead Web Engineer',
       },

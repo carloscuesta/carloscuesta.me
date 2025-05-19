@@ -50,7 +50,7 @@ const Biography = () => (
             <p className="sm:max-w-md">
               I love working in-between product, engineering and developer
               experience, currently at{' '}
-              <Link href="https://n26.com" label="N26" />.
+              <Link href="https://apple.com" label="Apple" />.
             </p>
           </div>
         </div>
