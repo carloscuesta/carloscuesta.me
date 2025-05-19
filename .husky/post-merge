@@ -1,0 +1,19 @@
+UPDATED_FILES=($(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD))
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
+update_local_dependencies() {
+  local LOCKFILE="pnpm-lock.yaml"
+  local DEFAULT_BRANCH="master"
+
+  if [[ $CI = true ]] || [[ $CURRENT_BRANCH == DEFAULT_BRANCH ]]; then
+    exit 0
+  fi
+
+  if [[ " ${UPDATED_FILES[@]} " =~ " $LOCKFILE " ]]; then
+    echo "\nℹ️ Upstream dependencies changed, updating local dependencies\n"
+    pnpm install --reporter=silent
+    echo "\n✅ Local dependencies updated\n"
+  fi
+}
+
+update_local_dependencies
