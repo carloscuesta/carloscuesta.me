@@ -265,6 +265,39 @@ exports[`Workspace should match Workspace component 1`] = `
         </a>
         <a
           class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
+          href="https://www.logitech.com/en-eu/shop/p/lift-vertical-ergonomic-mouse"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3 font-medium"
+          >
+            Mouse
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
+          >
+            Logitech Lift
+          </div>
+          <div
+            class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"
+          >
+            <svg
+              class="w-4 h-4 m-auto"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M6.22 4.22a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06L8.94 8 6.22 5.28a.75.75 0 0 1 0-1.06Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </a>
+        <a
+          class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
           href="https://oakywood.shop/products/grey-felt-cork-desk-mat"
           rel="noopener noreferrer"
           target="_blank"

@@ -35,6 +35,11 @@ const items = [
     link: 'https://amzn.id/N82BPgO',
   },
   {
+    category: 'Mouse',
+    title: 'Logitech Lift',
+    link: 'https://www.logitech.com/en-eu/shop/p/lift-vertical-ergonomic-mouse',
+  },
+  {
     category: 'Desk',
     title: 'Oakywood Merino Wool Felt & Cork Grey',
     link: 'https://oakywood.shop/products/grey-felt-cork-desk-mat',
