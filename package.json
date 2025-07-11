@@ -65,7 +65,7 @@
     "remark-reading-time": "2.0.2",
     "remark-toc": "^9.0.0",
     "satori": "0.13.1",
-    "sharp": "0.32.6",
+    "sharp": "0.34.3",
     "shiki": "3.4.2",
     "sprinkles-vscode": "3.1.0",
     "swr": "2.3.3"
@@ -80,8 +80,10 @@
     "@types/jest": "29.5.14",
     "@types/lodash.groupby": "4.6.9",
     "@types/react": "19.1.6",
+    "@types/ungap__structured-clone": "1.2.0",
     "@typescript-eslint/eslint-plugin": "8.33.1",
     "@typescript-eslint/parser": "8.33.1",
+    "@ungap/structured-clone": "1.3.0",
     "classix": "2.2.2",
     "eslint": "^8.57.0",
     "eslint-config-next": "15.3.3",
@@ -227,5 +229,5 @@
     "semi": false,
     "singleQuote": true
   },
-  "packageManager": "pnpm@9.1.4"
+  "packageManager": "pnpm@10.13.1"
 }
