@@ -1,14 +1,14 @@
+import { type Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import localFont from 'next/font/local'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import type { JSX } from 'react'
 
 import 'src/utils/theme/theme.css'
 import cn from 'src/utils/cn'
 import Layout from 'src/components/Layout'
 import Providers from './providers'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
     absolute: 'Carlos Cuesta – Front End Engineer',
     template: 'Carlos Cuesta – %s',
@@ -55,11 +55,7 @@ const font = localFont({
   ],
 })
 
-const RootLayout = ({
-  children,
-}: {
-  children: JSX.Element[] | JSX.Element
-}) => (
+const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html suppressHydrationWarning lang="en">
     <head>
       <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
