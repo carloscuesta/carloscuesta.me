@@ -1,9 +1,7 @@
-import type { JSX } from 'react'
-
 import NavigationMenu from './NavigationMenu'
 import Footer from './Footer'
 
-type Props = { children: JSX.Element[] | JSX.Element }
+type Props = { children: React.ReactNode }
 
 const Layout = (props: Props) => (
   <>

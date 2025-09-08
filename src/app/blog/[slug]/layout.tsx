@@ -1,11 +1,6 @@
-import type { JSX } from 'react'
 import SandpackCSS from './components/SandpackCSS'
 
-const SlugLayout = ({
-  children,
-}: {
-  children: JSX.Element[] | JSX.Element
-}) => (
+const SlugLayout = ({ children }: { children: React.ReactNode }) => (
   <>
     <SandpackCSS />
     {children}
