@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`OpengraphImage getFonts should return an array of fonts 1`] = `
 [
@@ -26,10 +26,10 @@ exports[`OpengraphImage getFonts should return an array of fonts 1`] = `
 exports[`OpengraphImage should match a blog post opengraph 1`] = `
 <div>
   <div
-    style="background-color: white; width: 100%; height: 100%; display: flex; flex-direction: column; position: relative; font-family: Inter; padding: 60px; justify-content: space-between; background-size: 20px 20px;"
+    style="background-color: white; width: 100%; height: 100%; display: flex; flex-direction: column; position: relative; font-family: Inter; padding: 60px; justify-content: space-between; background-image: radial-gradient(at 10px 10px, #d4d4d4, #d4d4d4 5%, white 5%); background-size: 20px 20px;"
   >
     <div
-      style="display: flex; flex-direction: column; justify-content: space-between; flex: 1; margin-bottom: 3rem;"
+      style="display: flex; flex-direction: column; justify-content: space-between; flex: 1 1 0%; margin-bottom: 3rem;"
     >
       <div
         style="display: flex; flex-direction: row; gap: 1em; align-items: center;"
@@ -82,7 +82,7 @@ exports[`OpengraphImage should match a blog post opengraph 1`] = `
 exports[`OpengraphImage should match a page opengraph 1`] = `
 <div>
   <div
-    style="background-color: white; width: 100%; height: 100%; display: flex; position: relative; font-family: Inter; background-size: 20px 20px;"
+    style="background-color: white; width: 100%; height: 100%; display: flex; position: relative; font-family: Inter; background-image: radial-gradient(at 10px 10px, #d4d4d4, #d4d4d4 5%, white 5%); background-size: 20px 20px;"
   >
     <img
       height="115"

@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`WhoAmI should match WhoAmI component 1`] = `
 <div>
@@ -60,7 +60,7 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
             loading="eager"
             src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
             srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
-            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==);"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==");"
             width="240"
           />
           <div
@@ -87,7 +87,7 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
             loading="eager"
             src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
             srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
-            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==);"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==");"
             width="240"
           />
           <div
@@ -117,7 +117,7 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
               loading="eager"
               src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
               srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
-              style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==);"
+              style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==");"
               width="240"
             />
             <div
