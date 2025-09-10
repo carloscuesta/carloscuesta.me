@@ -48,7 +48,7 @@ describe('callApi', () => {
 
       await expect(async () => {
         await callApi(request)
-      }).rejects.toThrowError()
+      }).rejects.toThrow()
     })
   })
 })
