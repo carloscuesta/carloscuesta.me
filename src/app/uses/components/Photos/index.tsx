@@ -18,7 +18,7 @@ const Photos = () => (
           style={{ width: '100%', height: 'auto' }}
           className="rounded-xl snap-start border dark:border-neutral-700"
           loading="eager"
-          quality="90"
+          quality={90}
         />
       ))}
     </div>

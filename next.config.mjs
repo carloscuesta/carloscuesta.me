@@ -81,6 +81,7 @@ export default withPWA(
             pathname: '/carloscuesta/image/upload/**',
           },
         ],
+        qualities: [90],
         deviceSizes: [640, 768, 1024, 1280, 1536],
       },
       redirects: async () => [
