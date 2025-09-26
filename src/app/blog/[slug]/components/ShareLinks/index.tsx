@@ -21,11 +21,6 @@ const ShareLinks = (props: Props) => (
         label="Discuss on Twitter"
         href={`https://twitter.com/search?q=${props.canonicalUrl}`}
       />
-
-      <Button
-        label="Edit post"
-        href={`https://github.com/carloscuesta/carloscuesta.me/edit/master/src/posts/${props.slug}.md`}
-      />
     </div>
   </section>
 )
