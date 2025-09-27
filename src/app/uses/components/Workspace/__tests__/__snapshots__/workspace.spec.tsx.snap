@@ -331,7 +331,7 @@ exports[`Workspace should match Workspace component 1`] = `
         </a>
         <a
           class="table-row border-neutral-200 dark:border-neutral-800 transition-colors hover:bg-neutral-200/50 dark:hover:bg-neutral-800/50 outline-hidden focus:bg-neutral-200/50 dark:focus:bg-neutral-800/50"
-          href="https://amzn.id/kIND87t"
+          href="https://www.apple.com/airpods-pro/"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -343,7 +343,7 @@ exports[`Workspace should match Workspace component 1`] = `
           <div
             class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle px-4 py-3"
           >
-            Airpods Pro
+            Airpods Pro 3
           </div>
           <div
             class="border-b border-neutral-200 dark:border-neutral-800 table-cell p-2 align-middle text-neutral-400 dark:text-neutral-500"

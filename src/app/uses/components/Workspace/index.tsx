@@ -46,8 +46,8 @@ const items = [
   },
   {
     category: 'Headphones',
-    title: 'Airpods Pro',
-    link: 'https://amzn.id/kIND87t',
+    title: 'Airpods Pro 3',
+    link: 'https://www.apple.com/airpods-pro/',
   },
   {
     category: 'Lighting',
