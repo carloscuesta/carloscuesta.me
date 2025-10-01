@@ -12,7 +12,7 @@ jobs:
       with:
         ref: ${{ github.event.pull_request.head.sha }}
     - uses: pnpm/action-setup@v4
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v5
       with:
         cache: "pnpm"
         node-version-file: '.node-version'
