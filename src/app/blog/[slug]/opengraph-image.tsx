@@ -10,6 +10,8 @@ export const revalidate = false
 type Params = { params: { slug: string } }
 
 export const generateImageMetadata = async ({ params }: Params) => {
+  if (!params.slug) return []
+
   const post = await fetchPost(params.slug)
 
   return [
@@ -22,8 +24,10 @@ export const generateImageMetadata = async ({ params }: Params) => {
   ]
 }
 
-export default async function Image({ params }: Params) {
-  const post = await fetchPost(params.slug)
+type ImageParams = { params: Promise<{ slug: string }> }
+
+export default async function Image({ params }: ImageParams) {
+  const post = await fetchPost((await params).slug)
   const views = await fetchViews()
 
   return new ImageResponse(
