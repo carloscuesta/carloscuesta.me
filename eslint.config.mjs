@@ -1,4 +1,3 @@
-import { FlatCompat } from '@eslint/eslintrc'
 import js from '@eslint/js'
 import globals from 'globals'
 import typescriptEslint from '@typescript-eslint/eslint-plugin'
@@ -7,15 +6,6 @@ import nextPlugin from '@next/eslint-plugin-next'
 import importPlugin from 'eslint-plugin-import'
 import pluginJest from 'eslint-plugin-jest'
 import react from 'eslint-plugin-react'
-import { dirname } from 'path'
-import { fileURLToPath } from 'url'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-})
 
 export default [
   js.configs.recommended,
