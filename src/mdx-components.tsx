@@ -1,4 +1,4 @@
-import { MDXComponents } from 'mdx/types'
+import { type MDXComponents } from 'mdx/types'
 import Image, { ImageProps } from 'next/image'
 import Playground from './app/blog/[slug]/components/Playground'
 import cn from 'src/utils/cn'
@@ -23,9 +23,7 @@ const components = {
   Playground,
 } satisfies MDXComponents
 
-declare global {
-  type MDXProvidedComponents = typeof components
-}
+type MDXProvidedComponents = typeof components
 
 export function useMDXComponents(): MDXProvidedComponents {
   return components
