@@ -1,8 +1,8 @@
-import type { Job } from '../'
+import type { Job as JobItem } from '../'
 import CompanyLogo from './CompanyLogo'
 import Timestamp from './Timestamp'
 
-const Job = (props: Job) => {
+const Job = (props: JobItem) => {
   return (
     <div className="flex">
       <CompanyLogo url={props.company.logo} name={props.company.name} />
