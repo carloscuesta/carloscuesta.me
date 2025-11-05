@@ -1,4 +1,4 @@
-import { SocialProfileJsonLd } from 'next-seo'
+import { ProfilePageJsonLd } from 'next-seo'
 
 import { type PostPreview } from 'src/utils/api/blog/mutators'
 import { type Repository } from 'src/utils/api/github/mutators'
@@ -14,16 +14,17 @@ type Props = {
 const Home = (props: Props) => {
   return (
     <main>
-      <SocialProfileJsonLd
-        useAppDir
-        type="Person"
-        name="Carlos Cuesta"
-        url="https://carloscuesta.me"
-        sameAs={[
-          'https://github.com/carloscuesta',
-          'https://twitter.com/crloscuesta',
-          'https://www.linkedin.com/in/crloscuesta',
-        ]}
+      <ProfilePageJsonLd
+        mainEntity={{
+          name: 'Carlos Cuesta',
+          image: 'https://carloscuesta.me/images/carloscuesta.jpg',
+          sameAs: [
+            'https://carloscuesta.me',
+            'https://github.com/carloscuesta',
+            'https://twitter.com/crloscuesta',
+            'https://www.linkedin.com/in/crloscuesta',
+          ],
+        }}
       />
 
       <Biography />
