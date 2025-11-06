@@ -45,15 +45,12 @@ const Article = async (props: Params) => {
   return (
     <article className="postDetail">
       <ArticleJsonLd
-        useAppDir={true}
-        authorName="Carlos Cuesta"
+        author="Carlos Cuesta"
         dateModified={post.dateModified}
         datePublished={post.datePublished.value}
         description={post.excerpt}
-        images={[post.images.featured.src]}
-        publisherLogo="/images/carloscuesta.jpg"
-        publisherName="Carlos Cuesta"
-        title={post.title}
+        image={post.images.featured.src}
+        headline={post.title}
         url={canonicalUrl}
       />
 
