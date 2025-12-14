@@ -10,13 +10,11 @@ export const size = {
 
 export default async function Image() {
   return new ImageResponse(
-    (
-      <OpengraphImage
-        title="Projects"
-        url="projects"
-        description="Explore all my projects and insightful stats about them"
-      />
-    ),
+    <OpengraphImage
+      title="Projects"
+      url="projects"
+      description="Explore all my projects and insightful stats about them"
+    />,
     {
       fonts: await getFonts(),
     },

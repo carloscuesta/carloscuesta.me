@@ -31,13 +31,11 @@ export default async function Image({ params }: ImageParams) {
   const views = await fetchViews()
 
   return new ImageResponse(
-    (
-      <OpengraphImage
-        title={post.title}
-        description={`${post.datePublished.formatMonthDay} ${new Date(post.datePublished.value).getFullYear()} • ${post.readingTime} • ${views[post.slug]}`}
-        isBlogPost
-      />
-    ),
+    <OpengraphImage
+      title={post.title}
+      description={`${post.datePublished.formatMonthDay} ${new Date(post.datePublished.value).getFullYear()} • ${post.readingTime} • ${views[post.slug]}`}
+      isBlogPost
+    />,
     {
       fonts: await getFonts(),
     },
