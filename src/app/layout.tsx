@@ -55,6 +55,10 @@ const font = localFont({
   ],
 })
 
+if (process.env.NEXT_PUBLIC_API_MOCKING === 'enabled') {
+  require('../mocks')
+}
+
 const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html suppressHydrationWarning lang="en">
     <head>
