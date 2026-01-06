@@ -31,11 +31,6 @@ const items = [
   },
   {
     category: 'Mouse',
-    title: 'Logitech MX Master 3S',
-    link: 'https://amzn.id/N82BPgO',
-  },
-  {
-    category: 'Mouse',
     title: 'Logitech Lift',
     link: 'https://www.logitech.com/en-eu/shop/p/lift-vertical-ergonomic-mouse',
   },
