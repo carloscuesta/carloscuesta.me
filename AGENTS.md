@@ -10,7 +10,7 @@ This is Carlos Cuesta's personal website built with:
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS 4
 - **Package Manager**: pnpm 10.21.0
-- **Node Version**: 22
+- **Node Version**: 24
 - **Content**: MDX
 - **Testing**: Jest with React Testing Library
 - **Deployment**: Vercel
