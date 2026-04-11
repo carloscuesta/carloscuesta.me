@@ -58,8 +58,8 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
             decoding="async"
             height="240"
             loading="eager"
-            src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
-            srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+            src="/_next/image?url=%2Fimg.jpg&w=640&q=90"
+            srcset="/_next/image?url=%2Fimg.jpg&w=256&q=90 1x, /_next/image?url=%2Fimg.jpg&w=640&q=90 2x"
             style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==");"
             width="240"
           />
@@ -85,8 +85,8 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
             decoding="async"
             height="240"
             loading="eager"
-            src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
-            srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+            src="/_next/image?url=%2Fimg.jpg&w=640&q=90"
+            srcset="/_next/image?url=%2Fimg.jpg&w=256&q=90 1x, /_next/image?url=%2Fimg.jpg&w=640&q=90 2x"
             style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==");"
             width="240"
           />
@@ -115,8 +115,8 @@ exports[`WhoAmI should match WhoAmI component 1`] = `
               decoding="async"
               height="240"
               loading="eager"
-              src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
-              srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+              src="/_next/image?url=%2Fimg.jpg&w=640&q=90"
+              srcset="/_next/image?url=%2Fimg.jpg&w=256&q=90 1x, /_next/image?url=%2Fimg.jpg&w=640&q=90 2x"
               style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAANTU1P///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==");"
               width="240"
             />
