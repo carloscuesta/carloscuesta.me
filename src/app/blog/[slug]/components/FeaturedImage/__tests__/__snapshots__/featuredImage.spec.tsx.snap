@@ -11,8 +11,8 @@ exports[`FeaturedImage should match FeaturedImage component 1`] = `
       data-nimg="1"
       decoding="async"
       height="376"
-      src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=1920&q=75"
-      srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=828&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=1920&q=75 2x"
+      src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=1536&q=90"
+      srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=768&q=90 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fv1454754838%2Fkcuq34zbo1yieygmx0y6.png&w=1536&q=90 2x"
       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
       width="752"
     />

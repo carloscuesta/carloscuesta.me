@@ -22,8 +22,8 @@ exports[`Layout should render the Layout with children 1`] = `
             decoding="async"
             height="32"
             loading="lazy"
-            src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--g0fD72tH--%2Fc_scale%2Cq_100%2Cw_72%2Fv1594588508%2Fcarloscuesta.jpg&w=64&q=75"
-            srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--g0fD72tH--%2Fc_scale%2Cq_100%2Cw_72%2Fv1594588508%2Fcarloscuesta.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--g0fD72tH--%2Fc_scale%2Cq_100%2Cw_72%2Fv1594588508%2Fcarloscuesta.jpg&w=64&q=75 2x"
+            src="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--g0fD72tH--%2Fc_scale%2Cq_100%2Cw_72%2Fv1594588508%2Fcarloscuesta.jpg&w=64&q=90"
+            srcset="/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--g0fD72tH--%2Fc_scale%2Cq_100%2Cw_72%2Fv1594588508%2Fcarloscuesta.jpg&w=32&q=90 1x, /_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fcarloscuesta%2Fimage%2Fupload%2Fs--g0fD72tH--%2Fc_scale%2Cq_100%2Cw_72%2Fv1594588508%2Fcarloscuesta.jpg&w=64&q=90 2x"
             style="color: transparent;"
             width="32"
           />
