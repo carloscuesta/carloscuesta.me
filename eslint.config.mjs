@@ -40,7 +40,7 @@ export default [
     },
     settings: {
       react: {
-        version: 'detect',
+        version: '19.0',
       },
       'import/resolver': {
         alias: {
