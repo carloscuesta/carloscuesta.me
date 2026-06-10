@@ -20,7 +20,7 @@ type Year = `20${string}`
 type DateFormat = `${Month}/${string}/${Year}`
 
 export type Job = {
-  company: { link: string; logo: string; name: string }
+  company: { link: string | null; logo: string; name: string }
   positions: {
     dateFinish: DateFormat | null
     dateStart: DateFormat
@@ -64,7 +64,7 @@ const work: Job[] = [
   },
   {
     company: {
-      link: '#',
+      link: null,
       logo: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593899513/about-me/ulabox.png',
       name: 'Ulabox',
     },
@@ -97,7 +97,7 @@ const work: Job[] = [
   },
   {
     company: {
-      link: 'https://www.friendlyrentals.com',
+      link: null,
       logo: 'https://res.cloudinary.com/carloscuesta/image/upload/v1593938160/about-me/friendlyrentals.png',
       name: 'Friendly Rentals',
     },

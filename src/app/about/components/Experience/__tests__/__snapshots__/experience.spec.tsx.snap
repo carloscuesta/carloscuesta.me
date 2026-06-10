@@ -160,11 +160,8 @@ exports[`Experience should match Experience component 1`] = `
       <div
         class="flex grow flex-col"
       >
-        <a
-          class="flex items-start pb-2  transition-opacity hover:opacity-50"
-          href="#"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="flex items-start pb-2"
         >
           <div
             class="grow pb-3 sm:px-4"
@@ -187,12 +184,9 @@ exports[`Experience should match Experience component 1`] = `
              – 
             2021
           </span>
-        </a>
-        <a
-          class="flex items-start pb-2  transition-opacity hover:opacity-50"
-          href="#"
-          rel="noopener noreferrer"
-          target="_blank"
+        </div>
+        <div
+          class="flex items-start pb-2"
         >
           <div
             class="grow pb-3 sm:px-4"
@@ -215,7 +209,7 @@ exports[`Experience should match Experience component 1`] = `
              – 
             2018
           </span>
-        </a>
+        </div>
       </div>
     </div>
     <div
@@ -288,11 +282,8 @@ exports[`Experience should match Experience component 1`] = `
       <div
         class="flex grow flex-col"
       >
-        <a
-          class="flex items-start pb-2  transition-opacity hover:opacity-50"
-          href="https://www.friendlyrentals.com"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="flex items-start pb-2"
         >
           <div
             class="grow pb-3 sm:px-4"
@@ -315,7 +306,7 @@ exports[`Experience should match Experience component 1`] = `
              – 
             2015
           </span>
-        </a>
+        </div>
       </div>
     </div>
   </section>
