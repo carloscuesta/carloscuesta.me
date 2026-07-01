@@ -66,9 +66,9 @@
     "remark-toc": "^9.0.0",
     "satori": "0.26.0",
     "sharp": "0.34.3",
-    "shiki": "4.2.0",
+    "shiki": "4.3.0",
     "sprinkles-vscode": "4.0.0",
-    "swr": "2.4.1"
+    "swr": "2.4.2"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
