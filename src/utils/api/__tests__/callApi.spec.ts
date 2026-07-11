@@ -1,13 +1,9 @@
-import fetch, { enableFetchMocks } from 'jest-fetch-mock'
+import fetch from 'jest-fetch-mock'
 
 import callApi from '../callApi'
 import * as stubs from './stubs'
 
 describe('callApi', () => {
-  beforeAll(() => {
-    enableFetchMocks()
-  })
-
   describe('when callApi has no requestOptions', () => {
     beforeAll(() => {
       fetch.mockResponse(JSON.stringify(stubs.response))
