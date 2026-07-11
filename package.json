@@ -107,7 +107,7 @@
     "prettier-plugin-tailwindcss": "0.8.0",
     "tailwind-merge": "3.6.0",
     "tailwindcss": "4.3.2",
-    "typescript": "7.0.2",
+    "typescript": "6.0.3",
     "uglify-js": "3.19.3"
   },
   "lint-staged": {
