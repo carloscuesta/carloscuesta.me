@@ -10,7 +10,7 @@
     "dev": "next dev",
     "start": "next start",
     "test": "pnpm run test:lint && pnpm run tscheck && pnpm run test:unit && pnpm run test:lighthouse",
-    "tscheck": "pnpm tsc --noEmit",
+    "tscheck": "pnpm tsc6 --noEmit",
     "test:lint": "eslint src && prettier --check src",
     "test:unit": "jest --coverage",
     "test:watch": "NODE_ENV=test TZ=UTC jest --watch",
@@ -107,7 +107,7 @@
     "prettier-plugin-tailwindcss": "0.8.0",
     "tailwind-merge": "3.6.0",
     "tailwindcss": "4.3.2",
-    "typescript": "6.0.3",
+    "typescript": "npm:@typescript/typescript6",
     "uglify-js": "3.19.3"
   },
   "lint-staged": {
