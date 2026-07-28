@@ -102,7 +102,7 @@
     "lint-staged": "^17.0.8",
     "msw": "2.15.0",
     "next-sitemap": "^4.2.3",
-    "postcss": "8.5.18",
+    "postcss": "8.5.19",
     "prettier": "3.9.5",
     "prettier-plugin-tailwindcss": "0.8.0",
     "tailwind-merge": "3.6.0",
