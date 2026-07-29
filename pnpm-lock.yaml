@@ -19,13 +19,13 @@ importers:
         version: 2.2.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@mdx-js/loader':
         specifier: 3.1.1
-        version: 3.1.1(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3))
+        version: 3.1.1(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
       '@mdx-js/react':
         specifier: 3.1.1
         version: 3.1.1(@types/react@19.2.17)(react@19.2.7)
       '@next/mdx':
         specifier: 16.2.9
-        version: 16.2.9(@mdx-js/loader@3.1.1(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3)))(@mdx-js/react@3.1.1(@types/react@19.2.17)(react@19.2.7))
+        version: 16.2.9(@mdx-js/loader@3.1.1(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)))(@mdx-js/react@3.1.1(@types/react@19.2.17)(react@19.2.7))
       '@plaiceholder/next':
         specifier: 2.5.0
         version: 2.5.0(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(sharp@0.34.3)
@@ -61,7 +61,7 @@ importers:
         version: 16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       next-pwa:
         specifier: ^5.6.0
-        version: 5.6.0(@babel/core@7.29.7)(@types/babel__core@7.20.5)(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3))
+        version: 5.6.0(@babel/core@7.29.7)(@types/babel__core@7.20.5)(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
       next-seo:
         specifier: ^7.2.0
         version: 7.2.0(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
@@ -226,8 +226,8 @@ importers:
         specifier: ^4.2.3
         version: 4.2.3(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))
       postcss:
-        specifier: 8.5.18
-        version: 8.5.18
+        specifier: 8.5.19
+        version: 8.5.19
       prettier:
         specifier: 3.9.5
         version: 3.9.5
@@ -2417,6 +2417,11 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
+  acorn@8.18.0:
+    resolution: {integrity: sha512-lGq+9yr1/GuAWaVYIHRjvvySG5/4VfKIvC8EWxStPdcDh/Ka7FG3twP6v4d5BkravUilhIAsG4Qj83t02LWUPQ==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
   agent-base@7.1.4:
     resolution: {integrity: sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==}
     engines: {node: '>= 14'}
@@ -3256,8 +3261,8 @@ packages:
   electron-to-chromium@1.5.389:
     resolution: {integrity: sha512-cEto7aeOqBfU1D+c5py5pE+ooscKE75JifxLBdFUZsqAxRS6y7kebtxAZvICszSl05gPjYHDTjY+lXpyGvpJbg==}
 
-  electron-to-chromium@1.5.396:
-    resolution: {integrity: sha512-yHiw2Y3C3H9U6TMbOfoWK/BPreiOPXRfTWPBwQBoZG6/8TB6eOPnsy5oaRYuatR7Fw2SJ4kKforgufeo7fq0EQ==}
+  electron-to-chromium@1.5.397:
+    resolution: {integrity: sha512-khGTy9U9x02KEtsKM8vx5A62BsRmcOsIgDpWr1ImE32Ax8GxHGPHZf+Eu9H8zOOyHJnB0jTbseyTHbq2XCT8yw==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -5608,8 +5613,8 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.18:
-    resolution: {integrity: sha512-xdB1oSLHbz1vRWgCDalrCqEFTWzFlhqFC5tIHLMOSUIjhm3XXQ1qrFy8S/ESr1JYRRXqM3c1QFiMZUJdUTqyMQ==}
+  postcss@8.5.19:
+    resolution: {integrity: sha512-Mz8SaolMd8nB+G13WkORcxQKHZ/NE4xXevtkJHVuG+guo9/wYKlIMTKAqGdEmYOXR2ijPjTYNHssizdaVSUNdQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -8858,12 +8863,12 @@ snapshots:
 
   '@marijn/find-cluster-break@1.0.2': {}
 
-  '@mdx-js/loader@3.1.1(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3))':
+  '@mdx-js/loader@3.1.1(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))':
     dependencies:
       '@mdx-js/mdx': 3.1.1
       source-map: 0.7.6
     optionalDependencies:
-      webpack: 5.90.3(postcss@8.5.18)(uglify-js@3.19.3)
+      webpack: 5.90.3(postcss@8.5.19)(uglify-js@3.19.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -8927,11 +8932,11 @@ snapshots:
     dependencies:
       fast-glob: 3.3.1
 
-  '@next/mdx@16.2.9(@mdx-js/loader@3.1.1(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3)))(@mdx-js/react@3.1.1(@types/react@19.2.17)(react@19.2.7))':
+  '@next/mdx@16.2.9(@mdx-js/loader@3.1.1(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)))(@mdx-js/react@3.1.1(@types/react@19.2.17)(react@19.2.7))':
     dependencies:
       source-map: 0.7.6
     optionalDependencies:
-      '@mdx-js/loader': 3.1.1(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3))
+      '@mdx-js/loader': 3.1.1(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
       '@mdx-js/react': 3.1.1(@types/react@19.2.17)(react@19.2.7)
 
   '@next/swc-darwin-arm64@16.2.11':
@@ -9247,7 +9252,7 @@ snapshots:
       '@alloc/quick-lru': 5.2.0
       '@tailwindcss/node': 4.3.2
       '@tailwindcss/oxide': 4.3.2
-      postcss: 8.5.18
+      postcss: 8.5.19
       tailwindcss: 4.3.2
 
   '@tailwindcss/typography@0.5.20(tailwindcss@4.3.2)':
@@ -9743,9 +9748,9 @@ snapshots:
       mime-types: 2.1.35
       negotiator: 0.6.3
 
-  acorn-import-assertions@1.9.0(acorn@8.17.0):
+  acorn-import-assertions@1.9.0(acorn@8.18.0):
     dependencies:
-      acorn: 8.17.0
+      acorn: 8.18.0
 
   acorn-jsx@5.3.2(acorn@8.15.0):
     dependencies:
@@ -9758,6 +9763,8 @@ snapshots:
   acorn@8.15.0: {}
 
   acorn@8.17.0: {}
+
+  acorn@8.18.0: {}
 
   agent-base@7.1.4: {}
 
@@ -9957,14 +9964,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-loader@8.2.5(@babel/core@7.29.7)(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3)):
+  babel-loader@8.2.5(@babel/core@7.29.7)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)):
     dependencies:
       '@babel/core': 7.29.7
       find-cache-dir: 3.3.1
       loader-utils: 2.0.4
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.90.3(postcss@8.5.18)(uglify-js@3.19.3)
+      webpack: 5.90.3(postcss@8.5.19)(uglify-js@3.19.3)
 
   babel-plugin-dynamic-import-node@2.3.3:
     dependencies:
@@ -10122,7 +10129,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.11.5
       caniuse-lite: 1.0.30001806
-      electron-to-chromium: 1.5.396
+      electron-to-chromium: 1.5.397
       node-releases: 2.0.51
       update-browserslist-db: 1.2.3(browserslist@4.28.7)
 
@@ -10242,10 +10249,10 @@ snapshots:
 
   clean-set@1.1.2: {}
 
-  clean-webpack-plugin@4.0.0(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3)):
+  clean-webpack-plugin@4.0.0(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)):
     dependencies:
       del: 4.1.1
-      webpack: 5.90.3(postcss@8.5.18)(uglify-js@3.19.3)
+      webpack: 5.90.3(postcss@8.5.19)(uglify-js@3.19.3)
 
   cli-cursor@2.1.0:
     dependencies:
@@ -10575,7 +10582,7 @@ snapshots:
 
   electron-to-chromium@1.5.389: {}
 
-  electron-to-chromium@1.5.396: {}
+  electron-to-chromium@1.5.397: {}
 
   emittery@0.13.1: {}
 
@@ -13633,14 +13640,14 @@ snapshots:
 
   netmask@2.0.2: {}
 
-  next-pwa@5.6.0(@babel/core@7.29.7)(@types/babel__core@7.20.5)(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3)):
+  next-pwa@5.6.0(@babel/core@7.29.7)(@types/babel__core@7.20.5)(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)):
     dependencies:
-      babel-loader: 8.2.5(@babel/core@7.29.7)(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3))
-      clean-webpack-plugin: 4.0.0(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3))
+      babel-loader: 8.2.5(@babel/core@7.29.7)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
+      clean-webpack-plugin: 4.0.0(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
       globby: 11.1.0
       next: 16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      terser-webpack-plugin: 5.3.3(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3))
-      workbox-webpack-plugin: 6.5.4(@types/babel__core@7.20.5)(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3))
+      terser-webpack-plugin: 5.3.3(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
+      workbox-webpack-plugin: 6.5.4(@types/babel__core@7.20.5)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
       workbox-window: 6.5.4
     transitivePeerDependencies:
       - '@babel/core'
@@ -13983,7 +13990,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postcss@8.5.18:
+  postcss@8.5.19:
     dependencies:
       nanoid: 3.3.16
       picocolors: 1.1.1
@@ -15285,26 +15292,26 @@ snapshots:
       type-fest: 0.16.0
       unique-string: 2.0.0
 
-  terser-webpack-plugin@5.3.3(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3)):
+  terser-webpack-plugin@5.3.3(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 3.1.1
       serialize-javascript: 6.0.0
       terser: 5.14.2
-      webpack: 5.90.3(postcss@8.5.18)(uglify-js@3.19.3)
+      webpack: 5.90.3(postcss@8.5.19)(uglify-js@3.19.3)
     optionalDependencies:
       uglify-js: 3.19.3
 
-  terser-webpack-plugin@5.6.1(postcss@8.5.18)(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3)):
+  terser-webpack-plugin@5.6.1(postcss@8.5.19)(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.49.0
-      webpack: 5.90.3(postcss@8.5.18)(uglify-js@3.19.3)
+      webpack: 5.90.3(postcss@8.5.19)(uglify-js@3.19.3)
     optionalDependencies:
-      postcss: 8.5.18
+      postcss: 8.5.19
       uglify-js: 3.19.3
 
   terser@5.14.2:
@@ -15317,7 +15324,7 @@ snapshots:
   terser@5.49.0:
     dependencies:
       '@jridgewell/source-map': 0.3.11
-      acorn: 8.17.0
+      acorn: 8.18.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
@@ -15769,15 +15776,15 @@ snapshots:
 
   webpack-sources@3.5.1: {}
 
-  webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3):
+  webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.9
       '@webassemblyjs/ast': 1.14.1
       '@webassemblyjs/wasm-edit': 1.14.1
       '@webassemblyjs/wasm-parser': 1.14.1
-      acorn: 8.17.0
-      acorn-import-assertions: 1.9.0(acorn@8.17.0)
+      acorn: 8.18.0
+      acorn-import-assertions: 1.9.0(acorn@8.18.0)
       browserslist: 4.28.7
       chrome-trace-event: 1.0.4
       enhanced-resolve: 5.24.3
@@ -15792,7 +15799,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.3.3
-      terser-webpack-plugin: 5.6.1(postcss@8.5.18)(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3))
+      terser-webpack-plugin: 5.6.1(postcss@8.5.19)(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
       watchpack: 2.5.2
       webpack-sources: 3.5.1
     transitivePeerDependencies:
@@ -16000,12 +16007,12 @@ snapshots:
 
   workbox-sw@6.5.4: {}
 
-  workbox-webpack-plugin@6.5.4(@types/babel__core@7.20.5)(webpack@5.90.3(postcss@8.5.18)(uglify-js@3.19.3)):
+  workbox-webpack-plugin@6.5.4(@types/babel__core@7.20.5)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)):
     dependencies:
       fast-json-stable-stringify: 2.1.0
       pretty-bytes: 5.4.1
       upath: 1.2.0
-      webpack: 5.90.3(postcss@8.5.18)(uglify-js@3.19.3)
+      webpack: 5.90.3(postcss@8.5.19)(uglify-js@3.19.3)
       webpack-sources: 1.4.3
       workbox-build: 6.5.4(@types/babel__core@7.20.5)
     transitivePeerDependencies:
