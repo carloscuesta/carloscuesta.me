@@ -19,13 +19,13 @@ importers:
         version: 2.2.10(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@mdx-js/loader':
         specifier: 3.1.1
-        version: 3.1.1(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
+        version: 3.1.1(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3))
       '@mdx-js/react':
         specifier: 3.1.1
         version: 3.1.1(@types/react@19.2.17)(react@19.2.7)
       '@next/mdx':
         specifier: 16.2.9
-        version: 16.2.9(@mdx-js/loader@3.1.1(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)))(@mdx-js/react@3.1.1(@types/react@19.2.17)(react@19.2.7))
+        version: 16.2.9(@mdx-js/loader@3.1.1(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3)))(@mdx-js/react@3.1.1(@types/react@19.2.17)(react@19.2.7))
       '@plaiceholder/next':
         specifier: 2.5.0
         version: 2.5.0(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(sharp@0.34.3)
@@ -61,7 +61,7 @@ importers:
         version: 16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       next-pwa:
         specifier: ^5.6.0
-        version: 5.6.0(@babel/core@7.29.7)(@types/babel__core@7.20.5)(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
+        version: 5.6.0(@babel/core@7.29.7)(@types/babel__core@7.20.5)(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3))
       next-seo:
         specifier: ^7.2.0
         version: 7.2.0(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
@@ -226,8 +226,8 @@ importers:
         specifier: ^4.2.3
         version: 4.2.3(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))
       postcss:
-        specifier: 8.5.19
-        version: 8.5.19
+        specifier: 8.5.23
+        version: 8.5.23
       prettier:
         specifier: 3.9.5
         version: 3.9.5
@@ -2695,6 +2695,11 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
+  baseline-browser-mapping@2.11.12:
+    resolution: {integrity: sha512-r7WnVImvVCeFpf2DOXfy41aPWzeNg3H/A2X4dKmy1QL0MSyyk/e7z8ihJ3N6Nn2PsdhkVlqnEfnUE4a05P2aTA==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
   baseline-browser-mapping@2.11.5:
     resolution: {integrity: sha512-xJo6a6YZnwZfnyGmQKWMbVOcii7XRibjOskRh+WJ9UHQoX16xrQrcIgAMQOzfvs8XiLMx6ih/fsLPF73iY2D1A==}
     engines: {node: '>=6.0.0'}
@@ -3261,8 +3266,8 @@ packages:
   electron-to-chromium@1.5.389:
     resolution: {integrity: sha512-cEto7aeOqBfU1D+c5py5pE+ooscKE75JifxLBdFUZsqAxRS6y7kebtxAZvICszSl05gPjYHDTjY+lXpyGvpJbg==}
 
-  electron-to-chromium@1.5.397:
-    resolution: {integrity: sha512-khGTy9U9x02KEtsKM8vx5A62BsRmcOsIgDpWr1ImE32Ax8GxHGPHZf+Eu9H8zOOyHJnB0jTbseyTHbq2XCT8yw==}
+  electron-to-chromium@1.5.401:
+    resolution: {integrity: sha512-H6ViHN68nGYlChEvlIU67fn8O2/tpbWQPwck98yaJmh+08LSvHiydzDQ6oXNccLU3kNRVIRS9A4mA7CG+i6fLQ==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -3303,8 +3308,8 @@ packages:
     resolution: {integrity: sha512-aNnGCvbJ/RIyWo1IuhNdVjnNF+EjH9wpzpNHt+ci/m9He9LJvUN8wrCcXjp9cWsGNAuvSpVFTx/vraAFQ8qGjQ==}
     engines: {node: '>=10.13.0'}
 
-  enhanced-resolve@5.24.3:
-    resolution: {integrity: sha512-PwKooW9JUzh5chmYfHM3IQl5OkK2u2Nm011MgeZrss3JmFraUx/fqrf78kk8GUMYoibx/14MdwTl/1WKkG7TpQ==}
+  enhanced-resolve@5.24.5:
+    resolution: {integrity: sha512-L1l8TNvomm6UVW5B253AGxQagSQr+vGwhMlrrfRS2qmhx46AMpMVJKQYLvWYbysTMY8VoicOvzHzoHMbyzB+4A==}
     engines: {node: '>=10.13.0'}
 
   enquirer@2.4.1:
@@ -5244,8 +5249,8 @@ packages:
     resolution: {integrity: sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  nanoid@3.3.16:
-    resolution: {integrity: sha512-bzlKTyNJ7+LdGIIwy8ijFpIqEQIvafahV7eYykJ8Cvh42EdJeODoJ6gUJXpQJvej1BddH8OqTXZNE/KfbWAu8Q==}
+  nanoid@3.3.17:
+    resolution: {integrity: sha512-xQLf0A3HOMlgHq0n247/LRuAOYmB7dXJ/DvAxGvsSBij45XtBSmQycu+F8ODbHwns/XyFZagyL1+J0Offw1E0g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -5356,6 +5361,10 @@ packages:
 
   node-releases@2.0.51:
     resolution: {integrity: sha512-wRNIrw4DmVLKQlbgOMdkMx27Wrpzes2hh5Jtbi2bjPd+4wJstWIqP5A+lscnqbm0xxmT5Bpg8Lec5ItEBwx6BQ==}
+    engines: {node: '>=18'}
+
+  node-releases@2.0.52:
+    resolution: {integrity: sha512-MRlTqhAfoMx/4mhEbPo3Hi02g9LJZaJkka69V6h67Cb1gjrAG0jsTE4CZX1eptNx+VCAwJmfpnDIF4P0Nh1A7A==}
     engines: {node: '>=18'}
 
   normalize-path@3.0.0:
@@ -5613,8 +5622,8 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.19:
-    resolution: {integrity: sha512-Mz8SaolMd8nB+G13WkORcxQKHZ/NE4xXevtkJHVuG+guo9/wYKlIMTKAqGdEmYOXR2ijPjTYNHssizdaVSUNdQ==}
+  postcss@8.5.23:
+    resolution: {integrity: sha512-g50586zr4bZmwFiTlflMu8E0bDTb5I5gertgwAKmsdUlTQIhZtunzUlD1WSzwcVWPoAVpsrA6vlfCD7oXvRwgg==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -6645,8 +6654,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  terser@5.49.0:
-    resolution: {integrity: sha512-SNiDnXyHSrxVcIOtVbULzcTmniUiwcV7Nwdyj1twVubeTmbjoa8p69KKDpfkdoOavuM4/GRm1+ykI8qqnavHoA==}
+  terser@5.49.1:
+    resolution: {integrity: sha512-7A2xlQ5EnGT8KPA92dUh6RbRYTVw8hEaEN9L1K68l4UOXFuV511NnAqObGoRqGOQofQcMypisu1s3xawCEHrvA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -8863,12 +8872,12 @@ snapshots:
 
   '@marijn/find-cluster-break@1.0.2': {}
 
-  '@mdx-js/loader@3.1.1(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))':
+  '@mdx-js/loader@3.1.1(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3))':
     dependencies:
       '@mdx-js/mdx': 3.1.1
       source-map: 0.7.6
     optionalDependencies:
-      webpack: 5.90.3(postcss@8.5.19)(uglify-js@3.19.3)
+      webpack: 5.90.3(postcss@8.5.23)(uglify-js@3.19.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -8932,11 +8941,11 @@ snapshots:
     dependencies:
       fast-glob: 3.3.1
 
-  '@next/mdx@16.2.9(@mdx-js/loader@3.1.1(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)))(@mdx-js/react@3.1.1(@types/react@19.2.17)(react@19.2.7))':
+  '@next/mdx@16.2.9(@mdx-js/loader@3.1.1(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3)))(@mdx-js/react@3.1.1(@types/react@19.2.17)(react@19.2.7))':
     dependencies:
       source-map: 0.7.6
     optionalDependencies:
-      '@mdx-js/loader': 3.1.1(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
+      '@mdx-js/loader': 3.1.1(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3))
       '@mdx-js/react': 3.1.1(@types/react@19.2.17)(react@19.2.7)
 
   '@next/swc-darwin-arm64@16.2.11':
@@ -9252,7 +9261,7 @@ snapshots:
       '@alloc/quick-lru': 5.2.0
       '@tailwindcss/node': 4.3.2
       '@tailwindcss/oxide': 4.3.2
-      postcss: 8.5.19
+      postcss: 8.5.23
       tailwindcss: 4.3.2
 
   '@tailwindcss/typography@0.5.20(tailwindcss@4.3.2)':
@@ -9964,14 +9973,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-loader@8.2.5(@babel/core@7.29.7)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)):
+  babel-loader@8.2.5(@babel/core@7.29.7)(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3)):
     dependencies:
       '@babel/core': 7.29.7
       find-cache-dir: 3.3.1
       loader-utils: 2.0.4
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.90.3(postcss@8.5.19)(uglify-js@3.19.3)
+      webpack: 5.90.3(postcss@8.5.23)(uglify-js@3.19.3)
 
   babel-plugin-dynamic-import-node@2.3.3:
     dependencies:
@@ -10053,6 +10062,8 @@ snapshots:
 
   base64-js@1.5.1: {}
 
+  baseline-browser-mapping@2.11.12: {}
+
   baseline-browser-mapping@2.11.5: {}
 
   basic-ftp@5.0.5: {}
@@ -10127,10 +10138,10 @@ snapshots:
 
   browserslist@4.28.7:
     dependencies:
-      baseline-browser-mapping: 2.11.5
+      baseline-browser-mapping: 2.11.12
       caniuse-lite: 1.0.30001806
-      electron-to-chromium: 1.5.397
-      node-releases: 2.0.51
+      electron-to-chromium: 1.5.401
+      node-releases: 2.0.52
       update-browserslist-db: 1.2.3(browserslist@4.28.7)
 
   bser@2.1.1:
@@ -10249,10 +10260,10 @@ snapshots:
 
   clean-set@1.1.2: {}
 
-  clean-webpack-plugin@4.0.0(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)):
+  clean-webpack-plugin@4.0.0(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3)):
     dependencies:
       del: 4.1.1
-      webpack: 5.90.3(postcss@8.5.19)(uglify-js@3.19.3)
+      webpack: 5.90.3(postcss@8.5.23)(uglify-js@3.19.3)
 
   cli-cursor@2.1.0:
     dependencies:
@@ -10582,7 +10593,7 @@ snapshots:
 
   electron-to-chromium@1.5.389: {}
 
-  electron-to-chromium@1.5.397: {}
+  electron-to-chromium@1.5.401: {}
 
   emittery@0.13.1: {}
 
@@ -10613,7 +10624,7 @@ snapshots:
       graceful-fs: 4.2.11
       tapable: 2.3.3
 
-  enhanced-resolve@5.24.3:
+  enhanced-resolve@5.24.5:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.3.3
@@ -13618,7 +13629,7 @@ snapshots:
 
   mute-stream@3.0.0: {}
 
-  nanoid@3.3.16: {}
+  nanoid@3.3.17: {}
 
   napi-postinstall@0.3.4: {}
 
@@ -13640,14 +13651,14 @@ snapshots:
 
   netmask@2.0.2: {}
 
-  next-pwa@5.6.0(@babel/core@7.29.7)(@types/babel__core@7.20.5)(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)):
+  next-pwa@5.6.0(@babel/core@7.29.7)(@types/babel__core@7.20.5)(next@16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3)):
     dependencies:
-      babel-loader: 8.2.5(@babel/core@7.29.7)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
-      clean-webpack-plugin: 4.0.0(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
+      babel-loader: 8.2.5(@babel/core@7.29.7)(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3))
+      clean-webpack-plugin: 4.0.0(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3))
       globby: 11.1.0
       next: 16.2.11(@babel/core@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      terser-webpack-plugin: 5.3.3(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
-      workbox-webpack-plugin: 6.5.4(@types/babel__core@7.20.5)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
+      terser-webpack-plugin: 5.3.3(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3))
+      workbox-webpack-plugin: 6.5.4(@types/babel__core@7.20.5)(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3))
       workbox-window: 6.5.4
     transitivePeerDependencies:
       - '@babel/core'
@@ -13728,6 +13739,8 @@ snapshots:
   node-int64@0.4.0: {}
 
   node-releases@2.0.51: {}
+
+  node-releases@2.0.52: {}
 
   normalize-path@3.0.0: {}
 
@@ -13986,13 +13999,13 @@ snapshots:
 
   postcss@8.4.31:
     dependencies:
-      nanoid: 3.3.16
+      nanoid: 3.3.17
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postcss@8.5.19:
+  postcss@8.5.23:
     dependencies:
-      nanoid: 3.3.16
+      nanoid: 3.3.17
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -15292,26 +15305,26 @@ snapshots:
       type-fest: 0.16.0
       unique-string: 2.0.0
 
-  terser-webpack-plugin@5.3.3(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)):
+  terser-webpack-plugin@5.3.3(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 3.1.1
       serialize-javascript: 6.0.0
       terser: 5.14.2
-      webpack: 5.90.3(postcss@8.5.19)(uglify-js@3.19.3)
+      webpack: 5.90.3(postcss@8.5.23)(uglify-js@3.19.3)
     optionalDependencies:
       uglify-js: 3.19.3
 
-  terser-webpack-plugin@5.6.1(postcss@8.5.19)(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)):
+  terser-webpack-plugin@5.6.1(postcss@8.5.23)(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
-      terser: 5.49.0
-      webpack: 5.90.3(postcss@8.5.19)(uglify-js@3.19.3)
+      terser: 5.49.1
+      webpack: 5.90.3(postcss@8.5.23)(uglify-js@3.19.3)
     optionalDependencies:
-      postcss: 8.5.19
+      postcss: 8.5.23
       uglify-js: 3.19.3
 
   terser@5.14.2:
@@ -15321,7 +15334,7 @@ snapshots:
       commander: 2.20.3
       source-map-support: 0.5.21
 
-  terser@5.49.0:
+  terser@5.49.1:
     dependencies:
       '@jridgewell/source-map': 0.3.11
       acorn: 8.18.0
@@ -15776,7 +15789,7 @@ snapshots:
 
   webpack-sources@3.5.1: {}
 
-  webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3):
+  webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.9
@@ -15787,7 +15800,7 @@ snapshots:
       acorn-import-assertions: 1.9.0(acorn@8.18.0)
       browserslist: 4.28.7
       chrome-trace-event: 1.0.4
-      enhanced-resolve: 5.24.3
+      enhanced-resolve: 5.24.5
       es-module-lexer: 1.7.0
       eslint-scope: 5.1.1
       events: 3.3.0
@@ -15799,7 +15812,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.3.3
-      terser-webpack-plugin: 5.6.1(postcss@8.5.19)(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3))
+      terser-webpack-plugin: 5.6.1(postcss@8.5.23)(uglify-js@3.19.3)(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3))
       watchpack: 2.5.2
       webpack-sources: 3.5.1
     transitivePeerDependencies:
@@ -16007,12 +16020,12 @@ snapshots:
 
   workbox-sw@6.5.4: {}
 
-  workbox-webpack-plugin@6.5.4(@types/babel__core@7.20.5)(webpack@5.90.3(postcss@8.5.19)(uglify-js@3.19.3)):
+  workbox-webpack-plugin@6.5.4(@types/babel__core@7.20.5)(webpack@5.90.3(postcss@8.5.23)(uglify-js@3.19.3)):
     dependencies:
       fast-json-stable-stringify: 2.1.0
       pretty-bytes: 5.4.1
       upath: 1.2.0
-      webpack: 5.90.3(postcss@8.5.19)(uglify-js@3.19.3)
+      webpack: 5.90.3(postcss@8.5.23)(uglify-js@3.19.3)
       webpack-sources: 1.4.3
       workbox-build: 6.5.4(@types/babel__core@7.20.5)
     transitivePeerDependencies:
