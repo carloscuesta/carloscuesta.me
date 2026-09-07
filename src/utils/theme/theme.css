@@ -82,6 +82,10 @@
     background-color: #7e57c2;
   }
 
+  .language-project-go {
+    background-color: rgb(0, 173, 216);
+  }
+
   .language-project-html {
     background-color: #ff7043;
   }
