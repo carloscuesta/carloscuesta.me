@@ -1,3 +1,19 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "routes": [
+    {
+      "src": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "(?:curl|HTTPie|xh)/.*"
+        }
+      ],
+      "missing": [{ "type": "header", "key": "x-original" }],
+      "dest": "/index.txt",
+      "headers": { "Content-Type": "text/plain; charset=utf-8" },
+      "status": 200
+    }
+  ]
 }

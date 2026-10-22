@@ -40,6 +40,8 @@
     "@vercel/analytics": "^2.0.1",
     "@vercel/kv": "3.0.0",
     "@vercel/speed-insights": "2.0.0",
+    "ansi-styles": "7.0.0",
+    "chalk": "6.0.1",
     "date-fns": "^4.4.0",
     "feed": "6.0.0",
     "lodash.groupby": "^4.6.0",
