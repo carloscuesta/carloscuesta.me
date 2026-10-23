@@ -46,7 +46,7 @@ export async function GET() {
     .sort((x, y) => y.stars.value - x.stars.value)
     .slice(0, 6)
 
-  const recentPosts = posts.slice(0, 3)
+  const recentPosts = posts.slice(0, 6)
 
   const padRight = (text: string, width: number) => {
     return text + ' '.repeat(Math.max(0, width - text.length))
